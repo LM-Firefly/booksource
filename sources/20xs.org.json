@@ -1,0 +1,34 @@
+{
+    "name": "20小说",
+    "url": "www.20xs.org",
+    "version": 104,
+    "search": {
+        "url": "https://www.20xs.org/search.html@post->searchtype=all&searchkey=${key}",
+        "charset": "UTF-8",
+        "list": "#sitembox > dl",
+        "name": "h3 > a",
+        "author": ".book_other > span:nth-child(1)",
+        "cover": "dt > a > img",
+        "summary": ".book_des",
+        "detail": "h3 > a"
+    },
+    "detail": {
+        "name": "",
+        "author": "",
+        "cover": "",
+        "summary": "",
+        "status": "meta[property=og:novel:status]@attr->content",
+        "update": "meta[property=og:novel:update_time]@attr->content",
+        "lastChapter": "meta[property=og:novel:latest_chapter_name]@attr->content",
+        "catalog": ""
+    },
+    "catalog": {
+        "list": "#list > dl > dd:gt(12)",
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": "#content > p:not(p:nth-last-of-type(1))",
+        "purify": ["(喜欢).+?(速度最快。)"]
+    }
+}

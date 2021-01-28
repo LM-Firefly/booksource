@@ -1,0 +1,108 @@
+{
+    "name": "飞卢小说网",
+    "url": "faloo.com",
+    "version": 102,
+    "search": {
+        "url": "https://wap.faloo.com/category/0/1.html?k=${key}",
+        "charset": "gb2312",   
+        "list": ".book_vessel",
+        "name": ".show_title2 > a",
+        "author": ".show_author > a",
+        "cover": ".book_vessel_left > a > img",
+        "detail": ".show_title2 > a"
+    },
+    "detail": {
+        "summary": "#info2@match->(?<=).+(?=飞卢小说网提醒：本小说及人物纯属虚构，如有雷同，纯属巧合，切勿模仿。)@replace->【收起】->",
+        "status": "dd:nth-child(3) > h2@match->(?<=状态：).+",
+        "category": ".dd_box:nth-child(3) > span > a",
+        "words": ".dd_box:nth-child(4) > h2@match->(?<=字数：).+",
+        "update": ".time",
+        "lastChapter": ".chap",
+        "catalog": "li:nth-child(4) > div:nth-child(2) > a"
+    },
+    "catalog": {
+        "list": "[onclick=BookEx.listLink(this);]",
+        "name": "a@replace->V->",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": "#content",
+        "filter": ["@a","@b","@script","@br"],
+        "purify": ["本章为图片章节，如果无法显示请设置您的浏览器为可以显示图片。","本书由飞卢小说网提供。","本书来自：wap.faloo.com。"]
+    },
+    "auth": {
+        "login": "https://u.faloo.com/regist/Login.aspx",
+        "cookie": "faloo.com",
+        "verify": "KeenFire",
+        "logged": "KeenFire",
+        "vip": "#content > a:nth-child(4)@equal->订阅本章节>>"
+    },
+    "rank": [
+        {
+            "title":"轻小说",
+            "url": "https://wap.faloo.com/category/97/${key}/${page}.html",
+            "page": 1,
+            "categories": [{"key": "98", "value": "轻幻想"},{"key": "99", "value": "重幻想"},{"key": "100", "value": "日常类"}]
+        },
+        {
+            "title":"玄幻奇幻",
+            "url": "https://wap.faloo.com/category/1/${key}/${page}.html",
+            "page": 1,
+            "categories": [{"key": "28", "value": "异世大陆"},{"key": "50", "value": "神话传说"},{"key": "29", "value": "东方玄幻"},{"key": "30", "value": "转世重生"},{"key": "31", "value": "王朝争霸"},{"key": "56", "value": "上古神话"},{"key": "32", "value": "变身情缘"},{"key": "81", "value": "穿越附身"}]
+        },
+        {
+            "title":"武侠仙侠",
+            "url": "https://wap.faloo.com/category/6/${key}/${page}.html",
+            "page": 1,
+            "categories": [{"key": "26", "value": "传统武侠"},{"key": "25", "value": "武侠修真"},{"key": "27", "value": "浪子异侠"},{"key": "78", "value": "古典仙侠"},{"key": "79", "value": "星际修真"},{"key": "80", "value": "现代修真"}]
+        },
+        {
+            "title":"同人小说",
+            "url": "https://wap.faloo.com/category/44/${key}/${page}.html",
+            "page": 1,
+            "categories": [{"key": "69", "value": "动漫同人"},{"key": "53", "value": "小说同人"},{"key": "52", "value": "影视同人"}]
+        },
+        {
+            "title":"都市言情",
+            "url": "https://wap.faloo.com/category/4/${key}/${page}.html",
+            "page": 1,
+            "categories": [{"key": "13", "value": "浪漫言情"},{"key": "14", "value": "都市生活"},{"key": "45", "value": "都市异能"},{"key": "15", "value": "商海沉浮"},{"key": "17", "value": "宦海风云"},{"key": "16", "value": "职场生涯"},{"key": "18", "value": "豪门恩怨"}]
+        },
+        {
+            "title":"军事历史",
+            "url": "https://wap.faloo.com/category/3/${key}/${page}.html",
+            "page": 1,
+            "categories": [{"key": "71", "value": "穿越时空"},{"key": "19", "value": "架空历史"},{"key": "72", "value": "历史传记"},{"key": "73", "value": "三国梦想"},{"key": "74", "value": "人文历史"},{"key": "20", "value": "现代战争"},{"key": "76", "value": "战争幻想"},{"key": "21", "value": "特种军旅"}]
+        },
+        {
+            "title":"科幻网游",
+            "url": "https://wap.faloo.com/category/2/${key}/${page}.html",
+            "page": 1,
+            "categories": [{"key": "33", "value": "虚拟网游"},{"key": "70", "value": "电子竞技"},{"key": "101", "value": "超黑科技"},{"key": "102", "value": "星际科幻"},{"key": "36", "value": "足球运动"},{"key": "35", "value": "篮球运动"},{"key": "34", "value": "其它竞技"}]
+        },
+        {
+            "title":"恐怖灵异",
+            "url": "https://wap.faloo.com/category/5/${key}/${page}.html",
+            "page": 1,
+            "categories": [{"key": "24", "value": "恐怖惊悚"},{"key": "22", "value": "推理悬念"},{"key": "23", "value": "灵异神怪"},{"key": "65", "value": "神秘时空"}]
+        },
+        {
+            "title":"青春校园",
+            "url": "https://wap.faloo.com/category/7/${key}/${page}.html",
+            "page": 1,
+            "categories": [{"key": "10", "value": "菁菁校园"},{"key": "11", "value": "校园言情"},{"key": "12", "value": "另类校园"},{"key": "90", "value": "贵爵童话"},{"key": "55", "value": "魔法校园"},{"key": "89", "value": "校园同人"}]
+        },
+        {
+            "title":"女生小说",
+            "url": "https://wap.faloo.com/category/54/${key}/${page}.html",
+            "page": 1,
+            "categories": [{"key": "91", "value": "古色添香"},{"key": "92", "value": "都市豪门"},{"key": "93", "value": "纯爱耽美"},{"key": "94", "value": "穿越架空"},{"key": "95", "value": "豪门恩怨"},{"key": "96", "value": "幻想精灵"},{"key": "48", "value": "古典言情"}]
+        },
+        {
+            "title":"短篇其他",
+            "url": "https://wap.faloo.com/category/9/${key}/${page}.html",
+            "page": 1,
+            "categories": [{"key": "47", "value": "历史演义"},{"key": "58", "value": "散文诗词"},{"key": "59", "value": "休闲美文"},{"key": "42", "value": "短篇小说"},{"key": "63", "value": "改编剧本"},{"key": "43", "value": "其他小说"}]
+        }
+    ]
+}

@@ -1,0 +1,111 @@
+{
+  "name": "丹书铁卷",
+  "url": "www.dstiejuan.com",
+  "version": 113,
+  "search": {
+    "url": "https://www.dstiejuan.com/search.html@post->searchkey=${key}",
+    "charset": "UTF-8",
+    "list": ".library > li",
+    "name": ".bookname",
+    "author": ".author",
+    "cover": ".bookimg > img",
+    "detail": ".bookname"
+  },
+  "detail": {
+    "summary": ".intro",
+    "status": "meta[property=og:novel:status]@attr->content",
+    "category": "meta[property=og:novel:category]@attr->content",
+    "words": ".detail@match->(?<=字数：).+(?= 点击：)",
+    "update": "meta[property=og:novel:update_time]@attr->content",
+    "lastChapter": "meta[property=og:novel:latest_chapter_name]@attr->content",
+    "catalog": "meta[property=og:novel:read_url]@attr->content"
+  },
+  "catalog": {
+    "list": ".read > dl > dd",
+    "name": "a",
+    "chapter": "a"
+  },
+  "chapter": {
+    "content": "#content"
+  },
+  "rank": [
+    {
+      "title": "总点击榜",
+      "url": "https://www.dstiejuan.com/top/allvisit/${page}.html",
+      "page": 1,
+      "size": 50,
+      "categories": [],
+      "list": ".rank.zoom > .on",
+      "name": ".on > a:matchesOwn(.+)",
+      "author": "p.action + p > a:nth-child(1)",
+      "cover": "img",
+      "summary": ".intro",
+      "detail": "a"
+    },
+    {
+      "title": "日点击榜",
+      "url": "https://www.dstiejuan.com/top/dayvisit.html",
+      "page": 1,
+      "size": 50,
+      "categories": [],
+      "list": ".rank.zoom > .on",
+      "name": ".on > a:matchesOwn(.+)",
+      "author": "p.action + p > a:nth-child(1)",
+      "cover": "img",
+      "summary": ".intro",
+      "detail": "a"
+    },
+    {
+      "title": "总推荐榜",
+      "url": "https://www.dstiejuan.com/top/allvote/${page}.html",
+      "page": 1,
+      "size": 50,
+      "categories": [],
+      "list": ".rank.zoom > .on",
+      "name": ".on > a:matchesOwn(.+)",
+      "author": "p.action + p > a:nth-child(1)",
+      "cover": "img",
+      "summary": ".intro",
+      "detail": "a"
+    },
+    {
+      "title": "总收藏榜",
+      "url": "https://www.dstiejuan.com/top/goodnum/${page}.html",
+      "page": 1,
+      "size": 50,
+      "categories": [],
+      "list": ".rank.zoom > .on",
+      "name": ".on > a:matchesOwn(.+)",
+      "author": "p.action + p > a:nth-child(1)",
+      "cover": "img",
+      "summary": ".intro",
+      "detail": "a"
+    },
+    {
+      "title": "强推榜",
+      "url": "https://www.dstiejuan.com/top/toptime/${page}.html",
+      "page": 1,
+      "size": 50,
+      "categories": [],
+      "list": ".rank.zoom > .on",
+      "name": ".on > a:matchesOwn(.+)",
+      "author": "p.action + p > a:nth-child(1)",
+      "cover": "img",
+      "summary": ".intro",
+      "detail": "a"
+    },
+    {
+      "title": "新书榜",
+      "url": "https://www.dstiejuan.com/top/goodnew/${page}.html",
+      "page": 1,
+      "size": 50,
+      "categories": [],
+      "list": ".rank.zoom > .on",
+      "name": ".on > a:matchesOwn(.+)",
+      "author": "p.action + p > a:nth-child(1)",
+      "cover": "img",
+      "summary": ".intro",
+      "detail": "a"
+    }
+  ]
+}

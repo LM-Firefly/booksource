@@ -1,0 +1,42 @@
+{
+    "name": "书山中文网",
+    "url": "shushan.zhangyue.net",
+    "version": 102,
+    "search": {
+        "url": "http://shushan.zhangyue.net/search/${key}/",
+         "charset": "UTF-8",
+        "list": ".result-list>ul>li",
+        "name": ".book-info>a",
+        "author": "span.author-name",
+        "summary":"p.paragragh",
+        "cover": "a > img@attr->data-src",
+        "detail": ".book-info>a@replace->shushan->wap.shushan"
+    },
+    "detail": {
+        "status": ".right-info>.serial-tag:nth-child(2)",
+        "summary":".book-intro-con",
+        "category":".tag-container",
+        "words":".book-stats>.book-status-item:nth-child(1)@match->.+(?= 字数)",
+        "update": ".update-time@replace->更新->",
+        "lastChapter": ".chapter-name", 
+        "catalog": "http://wap.shushan.zhangyue.net/index.php?c=book&m=chapter_list&bid=${.btn-add-collection@attr->data-bid}"
+    },
+    "catalog": {
+        "list": "$..list[*]",
+        "name": "$.title",
+        "chapter": "http://wap.shushan.zhangyue.net/index.php?c=book&m=content&bid=${$params.bid}&cid=${$.chapterid}"
+    },  
+    "chapter": {
+        "content":"$..data"
+    }    ,
+    "auth": {
+        "login": "http://wap.shushan.zhangyue.net/user/login",
+        "cookie": "shushan.zhangyue.net",
+        "verify": "__Male_",
+        "logged": "__Male_",
+        "vip":"$.code@equalNot->200",
+        "buy":"$.code@equal->200",
+        "recharge":"@replace->index.php?c=book&m=content&bid=->book/@replace->&cid=->/"
+      } 
+  }
+  

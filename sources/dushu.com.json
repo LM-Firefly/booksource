@@ -1,0 +1,173 @@
+{
+    "name": "读书网",
+    "url": "www.dushu.com",
+    "version": 101,
+    "search": {
+        "url": "https://www.dushu.com/search.aspx?wd=${key}&f=0&r=3&t=0",
+        "list":".searchlist > ul > li",
+        "name": "h3",
+        "author": "div > p:nth-child(3)",
+        "cover": "a > img@attr->data-original",
+        "summary": ".disc",
+        "detail": "h3 > a"
+    },
+    "detail": {
+        "name": "h1",
+        "author": ".book-details-left > table > tbody > tr:nth-child(1) > td:nth-child(2)",
+        "cover": ".pic > img",
+        "summary": ".bookdetails-left > div:nth-child(4) > div > div"
+    },
+    "catalog": {
+        "list": "#ctl00_c1_volumes_ctl00_chapters > tbody > tr > td",
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": ".content_txt"
+    },
+    "rank": [
+        {
+            "title":"小说作品",
+            "url": "https://www.dushu.com/lianzai/${key}_${page}.html",
+            "page": 1,
+            "categories": [{"key": "1115", "value": "全部"},{"key": "1126", "value": "言情小说"},{"key": "1127", "value": "青春小说"},{"key": "1128", "value": "都市小说"},{"key": "1129", "value": "历史小说"},{"key": "1130", "value": "科幻小说"},{"key": "1131", "value": "军事小说"},{"key": "1132", "value": "官场商战"},{"key": "1133", "value": "悬疑推理"},{"key": "1134", "value": "武侠玄幻"},{"key": "1135", "value": "灵异恐怖"},{"key": "1136", "value": "社会乡土"},{"key": "1138", "value": "现当代小说"},{"key": "1139", "value": "外国小说"},{"key": "1199", "value": "古典小说"}],
+            "list":".bookslist > ul > li",
+            "name": "h3",
+            "author": "div > p:nth-child(3)",
+            "cover": "a > img@attr->data-original",
+            "summary": ".disc",
+            "detail": "h3 > a"
+        },
+        {
+            "title":"经济管理",
+            "url": "https://www.dushu.com/lianzai/${key}_${page}.html",
+            "page": 1,
+            "categories": [{"key": "1116", "value": "全部"},{"key": "1140", "value": "企业管理"},{"key": "1141", "value": "经济金融"},{"key": "1142", "value": "投资理财"},{"key": "1143", "value": "市场营销"},{"key": "1145", "value": "通俗读物"}],            
+            "list":".bookslist > ul > li",
+            "name": "h3",
+            "author": "div > p:nth-child(3)",
+            "cover": "a > img@attr->data-original",
+            "summary": ".disc",
+            "detail": "h3 > a"
+        },
+        {
+            "title":"成功励志",
+            "url": "https://www.dushu.com/lianzai/${key}_${page}.html",
+            "page": 1,
+            "categories": [{"key": "1117", "value": "全部"},{"key": "1146", "value": "成功学"},{"key": "1147", "value": "人在职场"},{"key": "1148", "value": "演讲口才"},{"key": "1149", "value": "人际处事"},{"key": "1150", "value": "心灵修养"},{"key": "1151", "value": "性格与情绪"},{"key": "1152", "value": "青少年励志"}],
+            "list":".bookslist > ul > li",
+            "name": "h3",
+            "author": "div > p:nth-child(3)",
+            "cover": "a > img@attr->data-original",
+            "summary": ".disc",
+            "detail": "h3 > a"
+        },
+        {
+            "title":"历史传记",
+            "url": "https://www.dushu.com/lianzai/${key}_${page}.html",
+            "page": 1,
+            "categories": [{"key": "1118", "value": "全部"},{"key": "1153", "value": "中国史"},{"key": "1154", "value": "世界各国史"},{"key": "1155", "value": "历史普及读物"},{"key": "1156", "value": "人物传记"}],
+            "list":".bookslist > ul > li",
+            "name": "h3",
+            "author": "div > p:nth-child(3)",
+            "cover": "a > img@attr->data-original",
+            "summary": ".disc",
+            "detail": "h3 > a"
+        },
+        {
+            "title":"两性情感",
+            "url": "https://www.dushu.com/lianzai/${key}.html",
+            "categories": [{"key": "1119", "value": "全部"},{"key": "1157", "value": "两性关系"},{"key": "1159", "value": "情感恋爱"}],            
+            "list":".bookslist > ul > li",
+            "name": "h3",
+            "author": "div > p:nth-child(3)",
+            "cover": "a > img@attr->data-original",
+            "summary": ".disc",
+            "detail": "h3 > a"
+        },
+        {
+            "title":"生活时尚",
+            "url": "https://www.dushu.com/lianzai/${key}_${page}.html",
+            "page": 1,
+            "categories": [{"key": "1120", "value": "全部"},{"key": "1160", "value": "烹调饮食"},{"key": "1161", "value": "健康养生"},{"key": "1164", "value": "旅游地理"},{"key": "1165", "value": "家居手工"},{"key": "1166", "value": "美容塑身"},{"key": "1167", "value": "运动健身"},{"key": "1168", "value": "休闲娱乐"}],
+            "list":".bookslist > ul > li",
+            "name": "h3",
+            "author": "div > p:nth-child(3)",
+            "cover": "a > img@attr->data-original",
+            "summary": ".disc",
+            "detail": "h3 > a"
+        },
+        {
+            "title":"文学艺术",
+            "url": "https://www.dushu.com/lianzai/${key}_${page}.html",
+            "page": 1,
+            "categories": [{"key": "1121", "value": "全部"},{"key": "1169", "value": "散文随笔"},{"key": "1170", "value": "绘本画册"},{"key": "1171", "value": "美术设计"},{"key": "1172", "value": "音乐戏剧"},{"key": "1173", "value": "纪实文学"},{"key": "1174", "value": "文学理论"},{"key": "1175", "value": "诗词歌赋"},{"key": "1176", "value": "世界名著"},{"key": "1200", "value": "民间文学"},{"key": "1201", "value": "艺术理论"},{"key": "1202", "value": "影视艺术"},{"key": "1203", "value": "书法摄影"}],
+            "list":".bookslist > ul > li",
+            "name": "h3",
+            "author": "div > p:nth-child(3)",
+            "cover": "a > img@attr->data-original",
+            "summary": ".disc",
+            "detail": "h3 > a"
+        },
+        {
+            "title":"社会科学",
+            "url": "https://www.dushu.com/lianzai/${key}_${page}.html",
+            "page": 1,
+            "categories": [{"key": "1122", "value": "全部"},{"key": "1177", "value": "社会学"},{"key": "1178", "value": "心理学"},{"key": "1179", "value": "哲学宗教"},{"key": "1180", "value": "军事法律"},{"key": "1181", "value": "时事政治"},{"key": "1182", "value": "文化"},{"key": "1183", "value": "教育考试"}],            
+            "list":".bookslist > ul > li",
+            "name": "h3",
+            "author": "div > p:nth-child(3)",
+            "cover": "a > img@attr->data-original",
+            "summary": ".disc",
+            "detail": "h3 > a"
+        },
+        {
+            "title":"亲子少儿",
+            "url": "https://www.dushu.com/lianzai/${key}_${page}.html",
+            "page": 1,
+            "categories": [{"key": "1123", "value": "全部"},{"key": "1185", "value": "孕产育儿"},{"key": "1187", "value": "儿童文学"}],
+            "list":".bookslist > ul > li",
+            "name": "h3",
+            "author": "div > p:nth-child(3)",
+            "cover": "a > img@attr->data-original",
+            "summary": ".disc",
+            "detail": "h3 > a"
+        },
+        {
+            "title":"科学技术",
+            "url": "https://www.dushu.com/lianzai/${key}_${page}.html",
+            "page": 1,
+            "categories": [{"key": "1125", "value": "全部"},{"key": "1194", "value": "科普读物"},{"key": "1195", "value": "自然科学"},{"key": "1196", "value": "医学"},{"key": "1197", "value": "工业技术"},{"key": "1198", "value": "其他"}],            
+            "list":".bookslist > ul > li",
+            "name": "h3",
+            "author": "div > p:nth-child(3)",
+            "cover": "a > img@attr->data-original",
+            "summary": ".disc",
+            "detail": "h3 > a"
+        },
+        {
+            "title":"国学/古籍",
+            "url": "https://www.dushu.com/guoxue/${key}_${page}.html",
+            "page": 1,
+            "categories": [{"key": "1001", "value": "史部"},{"key": "1002", "value": "子部"},{"key": "1003", "value": "集部"},{"key": "1004", "value": "诗部"},{"key": "1005", "value": "儒部"},{"key": "1006", "value": "易部"},{"key": "1007", "value": "艺部"},{"key": "1008", "value": "医部"},{"key": "1009", "value": "丛部"},{"key": "1010", "value": "佛部"},{"key": "1011", "value": "道部"}],            
+            "list":".bookslist > ul > li",
+            "name": "h3",
+            "author": "div > p:nth-child(3)",
+            "cover": "a > img@attr->data-original",
+            "summary": ".disc",
+            "detail": "h3 > a"
+        },
+        {
+            "title":"计算机/网络",
+            "url": "https://www.dushu.com/lianzai/${key}_${page}.html",
+            "page": 1,
+            "categories": [{"key": "1124", "value": "全部"},{"key": "1189", "value": "软硬件开发"},{"key": "1192", "value": "家庭与办公"},{"key": "1193", "value": "IT人文"}],
+            "list":".bookslist > ul > li",
+            "name": "h3",
+            "author": "div > p:nth-child(3)",
+            "cover": "a > img@attr->data-original",
+            "summary": ".disc",
+            "detail": "h3 > a"
+        }
+    ]
+}

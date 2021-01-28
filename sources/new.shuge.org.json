@@ -1,0 +1,58 @@
+{
+    "name": "书格",
+    "url": "new.shuge.org",
+    "version": 100,
+    "search": {
+        "url": "https://new.shuge.org/?s=${key}",
+        "charset": "UTF-8",
+        "list": ".grid-entry",
+        "name": "h2 > a",
+        "author": ".blog-categories@match->(?<=类目：)(.+)",
+        "cover": ".av_table_col > a > img",
+        "summary": ".grid-entry-excerpt",
+        "detail": "a"
+    },
+    "detail": {
+        "name": "",
+        "author": "",
+        "cover": "",
+        "summary": "",
+        "status": "",
+        "update": "",
+        "lastChapter": "",
+        "catalog": ""
+    },
+    "catalog": {
+        "list": ".avia-button-wrap",
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": ".av_textblock_section:nth-child(4)  > .avia_textblock"
+    },"rank": [
+        {
+            "title":"传统分部",
+            "url": "https://new.shuge.org/collection/${key}/page/${page}/",
+            "page": 1,
+            "size": 9,
+            "categories": [{"key": "jing", "value": "经部"}, {"key": "shi", "value": "史部"}, {"key": "zi", "value": "子部"}, {"key": "leishu", "value": "类书"}, {"key": "ji", "value": "集部"}, {"key": "cong", "value": "丛书部"}],
+            "cover": "img"
+        },
+        {
+            "title":"现代分部",
+            "url": "https://new.shuge.org/collection/${key}/page/${page}/",
+            "page": 1,
+            "size": 9,
+            "categories": [{"key": "general", "value": "总类"}, {"key": "philosophy", "value": "哲学类"},{"key": "religion", "value": "宗教玄学类"},{"key": "sciences", "value": "科学类"},{"key": "technologics", "value": "应用科学类"},{"key": "social", "value": "社会科学类"},{"key": "history", "value": "史地类"},{"key": "world", "value": "世界史地"},{"key": "china", "value": "中国史地"},{"key": "literature", "value": "语言文学类"},{"key": "art", "value": "艺术类"}],
+            "cover": "img"
+        },
+        {
+            "title":"特殊类别",
+            "url": "https://new.shuge.org/collection/${key}/page/${page}/",
+            "page": 1,
+            "size": 9,
+            "categories": [{"key": "painting", "value": "绘画"}, {"key": "calligraphy", "value": "法书"}, {"key": "manuscript", "value": "手稿"}, {"key": "rubbings", "value": "碑帖"}, {"key": "map", "value": "舆图"}, {"key": "photographs", "value": "影响"}],
+            "cover": "img"
+        }
+    ]
+}

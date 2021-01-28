@@ -1,0 +1,35 @@
+{
+    "name": "147小说",
+    "url": "www.147xiaoshuo.com",
+    "version": 101,
+    "search": {
+        "url": "http://www.147xiaoshuo.com/search.php?keyword=${key}",
+		"charset": "utf-8",
+        "list": "#bookcase_list>tr",
+        "name": "td:nth-child(1)>a",
+        "author": "td:nth-child(3)",
+        "cover": "",
+        "detail": "td:nth-child(1)>a"
+    },
+    "detail": {
+        "name": "meta[property=og:novel:book_name]@attr->content",
+        "author": "meta[property=og:novel:author]@attr->content",
+        "cover": "meta[property=og:image]@attr->content",
+        "summary": "#intro",
+        "status": "meta[property=og:novel:status]@attr->content",
+        "update": "meta[property=og:novel:update_time]@attr->content",
+        "lastChapter": "meta[property=og:novel:latest_chapter_name]@attr->content",
+        "catalog": ""
+    },
+    "catalog": {
+        "list": "#list>dl>dd",
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": "#content>p",
+        "purify": [
+            "(●|【)(147小说)(.*?)(●|】)"
+        ]
+    }
+}

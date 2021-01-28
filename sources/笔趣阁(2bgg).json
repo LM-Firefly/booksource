@@ -1,0 +1,32 @@
+{
+    "name": "笔趣阁(2bgg)",
+    "url": "www.2bqg.com",
+    "version": 100,
+    "search": {
+        "url": "https://2bqg.com/home/search@post->action=search&q=${key}",
+		"charset": "utf-8",
+        "list": "ul>.item-cover",
+        "name": "h3",
+        "author": "",
+        "cover": "img",
+        "detail": "a"
+    },
+    "detail": {
+        "name": "meta[property=og:novel:book_name]@attr->content",
+        "author": "meta[property=og:novel:author]@attr->content",
+        "cover": "meta[property=og:image]@attr->content",
+        "summary": "#intro",
+        "status": "meta[property=og:novel:status]@attr->content",
+        "update": "meta[property=og:novel:update_time]@attr->content",
+        "lastChapter": "meta[property=og:novel:latest_chapter_name]@attr->content",
+        "catalog": ""
+    },
+    "catalog": {
+        "list": "#list>dl>dd",
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": "#content"
+    }
+}

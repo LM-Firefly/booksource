@@ -1,0 +1,26 @@
+{
+    "name": "在线阅读网",
+    "url": "www.yuedu88.com",
+    "version": 100,
+    "search": {
+        "url": "http://www.yuedu88.com/search.php?q=${key}",
+        "list": "li",
+        "name": "li",
+        "detail": "a"
+    },
+    "detail": {
+        "author": "em > b",
+        "cover": "p > img",
+        "summary": "#more1 > p",
+        "lastChapter": "span > a"
+    },
+    "catalog": {
+        "list": "li",
+        "name": "a",
+        "chapter": "a",
+        "page": ".now-page+a"
+    },
+    "chapter": {
+        "content": "#BookText"
+    }
+}

@@ -1,0 +1,63 @@
+{
+    "name": "鲸鱼阅读",
+    "url": "jingyu.com",
+    "version": 102,
+    "search": {
+        "url": "http://www.jingyu.com/search/?kw=${key}",
+        "list": ".novel",
+        "name": ".title",
+        "author": ".brief > span > a:nth-child(1)",
+        "cover": ".novel-cover > a > img@attr->data-src",
+        "detail": ".title > a"
+    },
+    "detail": {
+        "summary": "li:nth-child(1) > p",
+        "status": ".novel_status@attr->data-status@equal->1",
+        "category": ".details > p:nth-child(2) > a",
+        "words": ".details > p:nth-child(3) > i:nth-child(2)",
+        "lastChapter": ".update@match->(?<=最新章节：).+",
+        "catalog": ".details > div > a:nth-child(3)"
+    },
+    "catalog": {
+        "list": ".chapter-list > li",
+        "name": "a",
+        "chapter": "a@match->(?<=/chapter/).+(?=.html)@replace->http://www.jingyu.com/chaplist/->http://m.jingyu.com/novel/read?cid="
+    },
+    "chapter": {
+        "content": ".js-chapterContent",
+        "filter": ["@p.name","@div","@a","@span","@img"]
+    },
+    "auth": {
+        "login": "http://m.jingyu.com/qhpass",
+        "cookie": "jingyu.com",
+        "verify": "__guid",
+        "logged": "u",
+        "vip": ".subscribe-btn@equal->购买本章"
+    },
+    "rank": [
+        {
+            "title":"男频",
+            "url": "http://www.jingyu.com/search/stack?category=${key}&sortBy=4&pn=${page}",
+            "page": 1,
+            "categories": [{"key": "11", "value": "玄幻"},{"key": "12", "value": "奇幻"},{"key": "13", "value": "武侠"},{"key": "14", "value": "仙侠"},{"key": "15", "value": "都市"},{"key": "16", "value": "军事"},{"key": "17", "value": "历史"},{"key": "18", "value": "游戏"},{"key": "19", "value": "体育"},{"key": "20", "value": "科幻"},{"key": "21", "value": "灵异"},{"key": "22", "value": "二次元"}],
+            "list":"li.book",
+            "name": "h3",
+            "author": "p:nth-child(2) > a:nth-child(1)",
+            "cover": ".cover@attr->data-src",
+            "summary": ".intr@match->(?<=简介：).+",
+            "detail": "h3 > a"
+        },
+        {
+            "title":"女频",
+            "url": "http://www.jingyu.com/search/stack?category=${key}&sortBy=4&pn=${page}",
+            "page": 1,
+            "categories": [{"key": "37", "value": "短言情"},{"key": "31", "value": "古代言情"},{"key": "32", "value": "现代言情"},{"key": "33", "value": "同人耽美"},{"key": "34", "value": "仙侠武侠"},{"key": "35", "value": "玄幻魔幻"},{"key": "36", "value": "青春校园"},{"key": "38", "value": "悬疑灵异"},{"key": "39", "value": "科幻游戏"}],
+            "list":"li.book",
+            "name": "h3",
+            "author": "p:nth-child(2) > a:nth-child(1)",
+            "cover": ".cover@attr->data-src",
+            "summary": ".intr@match->(?<=简介：).+",
+            "detail": "h3 > a"
+        }
+    ]
+}

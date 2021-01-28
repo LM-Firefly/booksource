@@ -1,0 +1,35 @@
+{
+    "name": "全小说",
+    "url": "qxs.la",
+    "version": 102,
+    "search": {
+        "url": "https://qxs.la/s_${key}",
+        "charset": "UTF-8",
+        "list": ".list_content",
+        "name": ".cc2 > a",
+        "author": ".cc4 > a",
+        "cover": "",
+        "summary": "",
+        "detail": ".cc2 > a"
+    },
+    "detail": {
+        "name": "",
+        "author": "",
+        "cover": "",
+        "summary": ".desc@match->(?<=简介：)(.+)",
+        "status": "",
+        "update": ".f_l.t_l.w4@match->(?<=（).+(?=）)",
+        "lastChapter": ".f_l.t_l.w4 > a",
+        "catalog": ""
+    },
+    "catalog": {
+        "list": ".chapter",
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": "#content",
+        "filter": ["@div"],
+        "purify": ["：/[a-z].*?[a-z]）","２２ｆｆ．ｃｏｍ","第(.+)章(.+)\\n"]
+    }
+}

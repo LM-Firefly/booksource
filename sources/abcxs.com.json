@@ -1,0 +1,28 @@
+{
+    "name": "ABC小说网",
+    "url": "www.abcxs.com",
+    "version": 100,
+    "search": {
+        "url": "https://www.abcxs.com/s.php?s=3166108066185075505&ie=gbk&q=${key}",
+        "charset": "gbk",
+        "list": ".wrap > div > div > div",
+        "name": "h4",
+        "author": ".author@match->(?<=作者：).+",
+        "cover": "img",
+        "summary": ".bookinfo > p",
+        "detail": "h4 > a"
+    },
+    "detail": {
+        "status": "#info > p:nth-child(3)@match->(?<=状 态：).+",
+        "update": "#info > p:nth-child(5)@match->(?<=最后更新：).+",
+        "lastChapter": "#info > p:nth-child(6) > a"
+    },
+    "catalog": {
+        "list": "dd:nth-child(n+9)",
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": "#content"
+    }
+}

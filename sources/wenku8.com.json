@@ -1,0 +1,64 @@
+{
+    "name": "轻小说文库",
+    "url": "wenku8.com",
+    "version": 103,
+    "search": {
+        "url": "https://www.wenku8.net/modules/article/search.php?searchtype=articlename&searchkey=${key}@header->cookie:PHPSESSID=qn911o0bbn63oknl5jem04i5oedo0vth",
+        "charset": "gbk",
+        "list": "#content > table > tbody > tr > td > div",
+        "name": "b",
+        "author": "p@match->(?<=作者:)(.+?)(?=/)",
+        "cover": "img",
+        "detail": "a"
+    },
+    "detail": {
+        "name": "td:nth-child(1) > span > b",
+        "author": "div > table > tbody > tr:nth-child(2) > td:nth-child(2)@match->(?<=：)(.+)",
+        "cover": "td > img",
+        "summary": "#content > div > table:nth-child(4) > tbody > tr > td:nth-child(2)@match->(?<=内容简介：)(.+)",
+        "status": "#content > div > table > tbody > tr:nth-child(2) > td:nth-child(3)",
+        "category": "#content > div > table > tbody > tr:nth-child(2) > td:nth-child(1)@match->(?<=类：)(.+)",
+        "words": "#content > div > table > tbody > tr:nth-child(2) > td:nth-child(5)@match->(?<=：)(.+?)(?=字)",
+        "update": "#content > div > table > tbody > tr:nth-child(2) > td:nth-child(4)@match->(?<=：)(.+)",
+        "lastChapter": "td:nth-child(2) > span > a"
+    },
+    "rank": [
+        {
+            "title":"排行榜",
+            "url": "https://www.wenku8.net/modules/article/toplist.php?sort=${key}&page=${page}",
+            "page": 1,
+            "size": 20,
+            "categories": [
+                {"key": "allvisit", "value": "总排行榜"}, {"key": "monthvisit", "value": "月排行榜"},
+                {"key": "weekvisit", "value": "周排行榜"}, {"key": "dayvisit", "value": "日排行榜"},
+                {"key": "allvote", "value": "总推荐榜"}, {"key": "monthvote", "value": "月推荐榜"},
+                {"key": "weekvote", "value": "周推荐榜"}, {"key": "dayvote", "value": "日推荐榜"},
+                {"key": "anime", "value": "动画化排行"},
+                {"key": "postdate", "value": "最新入库"}, {"key": "lastupdate", "value": "最近更新"},
+                {"key": "goodnum", "value": "总收藏榜"}, {"key": "size", "value": "字数排行"}
+            ]
+        },
+        {
+            "title":"文库分类",
+            "url": "https://www.wenku8.net/modules/article/articlelist.php?class=${key}&page=${page}",
+            "page": 1,
+            "size": 20,
+            "categories": [
+                {"key": "", "value": "全部轻小说"},
+                {"key": "1", "value": "电击·文库"}, {"key": "2", "value": "富士·见库"},
+                {"key": "3", "value": "角川·文库"}, {"key": "4", "value": "MFJ·文库"}, 
+                {"key": "5", "value": "FAMI·通文"}, {"key": "6", "value": "G A·文库"}, 
+                {"key": "7", "value": "H J·文库"}, {"key": "8", "value": "壹迅·文库"},
+                {"key": "9", "value": "集英·文库"}, {"key": "10", "value": "小学馆"},
+                {"key": "11", "value": "讲谈社"}, {"key": "12", "value": "少女文库"},
+                {"key": "13", "value": "其他文库"}, {"key": "14", "value": "游戏剧本"}
+            ]
+        },
+        {
+            "title":"完结全本",
+            "url": "https://www.wenku8.net/modules/article/articlelist.php?fullflag=1&page=${page}",
+            "page": 1,
+            "size": 20
+        }
+    ]
+}

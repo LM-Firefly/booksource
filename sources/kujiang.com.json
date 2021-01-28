@@ -1,0 +1,34 @@
+{
+    "name": "酷匠网",
+    "url": "kujiang.com",
+    "version": 101,
+    "search": {
+        "url": "http://www.kujiang.com/search?keyword=${key}",
+        "list": ".border-bottom.gap-bottom",
+        "name": "h5 > a",
+        "author": ".kjauthor > a",
+        "cover": "a > img",
+        "detail": "h5 > a"
+    },
+    "detail": {
+        "status": ".kjstatus",
+        "summary": ".book_intro",
+        "category": ".kjaside-tagslist > li",
+        "words": ".book_size@match->.+(?= 字)",
+        "update": "li:nth-child(5) > span:nth-child(2)",
+        "lastChapter": "li:nth-child(5) > span:nth-child(1) > a",
+        "catalog": ".catalog_last_nine > div > a"
+    },
+    "catalog": {
+        "list": "ul.kjlist>li",
+        "booklet": {
+            "name": ".kjblue",
+            "list": ".third"
+          },
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": ".content > p"
+    }
+}

@@ -1,0 +1,126 @@
+{
+    "name": "萌文库",
+    "url": "xs.kdays.net",
+    "version": 100,
+    "search": {
+        "url": "http://xs.kdays.net/search/name?w=${key}",
+        "list": ".book",
+        "name": "h3",
+        "author": "p:nth-child(3)@match->(?<=作者:).+",
+        "cover": "img",
+        "detail": "h3 > a"
+    },
+    "detail": {
+        "summary": "blockquote",
+        "lastChapter": ".last-chapter > a@match->(?<=最新章节:).+",
+        "catalog": ".read-btn"    
+    },
+    "catalog": {
+        "list": ".info-side > ul > li",
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": "article > p"
+    },
+    "rank": [
+        {
+            "title":"全部",
+            "url": "http://xs.kdays.net/list/all?page=${page}",
+            "page": 1,
+            "author": ".author@match->(?<=作者:).+",
+            "summary": "blockquote"
+        },
+        {
+            "title":"热血",
+            "url": "http://xs.kdays.net/list/all?type=1&page=${page}",
+            "page": 1,
+            "author": ".author@match->(?<=作者:).+",
+            "summary": "blockquote"
+        },
+        {
+            "title":"冒险",
+            "url": "http://xs.kdays.net/list/all?type=2&page=${page}",
+            "page": 1,
+            "author": ".author@match->(?<=作者:).+",
+            "summary": "blockquote"
+        },
+        {
+            "title":"运动",
+            "url": "http://xs.kdays.net/list/all?type=3&page=${page}",
+            "page": 1,
+            "author": ".author@match->(?<=作者:).+",
+            "summary": "blockquote"
+        },
+        {
+            "title":"魔幻",
+            "url": "http://xs.kdays.net/list/all?type=4&page=${page}",
+            "page": 1,
+            "author": ".author@match->(?<=作者:).+",
+            "summary": "blockquote"
+        },
+        {
+            "title":"武侠",
+            "url": "http://xs.kdays.net/list/all?type=5&page=${page}",
+            "page": 1,
+            "author": ".author@match->(?<=作者:).+",
+            "summary": "blockquote"
+        },
+        {
+            "title":"校园",
+            "url": "http://xs.kdays.net/list/all?type=6&page=${page}",
+            "page": 1,
+            "author": ".author@match->(?<=作者:).+",
+            "summary": "blockquote"
+        },
+        {
+            "title":"治愈",
+            "url": "http://xs.kdays.net/list/all?type=8&page=${page}",
+            "page": 1,
+            "author": ".author@match->(?<=作者:).+",
+            "summary": "blockquote"
+        },
+        {
+            "title":"推理",
+            "url": "http://xs.kdays.net/list/all?type=9&page=${page}",
+            "page": 1,
+            "author": ".author@match->(?<=作者:).+",
+            "summary": "blockquote"
+        },
+        {
+            "title":"惊悚",
+            "url": "http://xs.kdays.net/list/all?type=10&page=${page}",
+            "page": 1,
+            "author": ".author@match->(?<=作者:).+",
+            "summary": "blockquote"
+        },
+        {
+            "title":"科幻",
+            "url": "http://xs.kdays.net/list/all?type=11&page=${page}",
+            "page": 1,
+            "author": ".author@match->(?<=作者:).+",
+            "summary": "blockquote"
+        },
+        {
+            "title":"社会",
+            "url": "http://xs.kdays.net/list/all?type=12&page=${page}",
+            "page": 1,
+            "author": ".author@match->(?<=作者:).+",
+            "summary": "blockquote"
+        },
+        {
+            "title":"GAL",
+            "url": "http://xs.kdays.net/list/all?type=13&page=${page}",
+            "page": 1,
+            "author": ".author@match->(?<=作者:).+",
+            "summary": "blockquote"
+        },
+        {
+            "title":"动画化",
+            "url": "http://xs.kdays.net/list/all?type=14&page=${page}",
+            "page": 1,
+            "author": ".author@match->(?<=作者:).+",
+            "summary": "blockquote"
+        }                                
+    ]
+}

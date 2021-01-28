@@ -1,0 +1,28 @@
+{
+    "name": "笔趣阁99",
+    "url": "www.bqg99.cc",
+    "version": 101,
+    "search": {
+        "url": "https://www.bqg99.cc/s.php?q=${key}",
+        "list": ".bookbox",
+        "name": ".bookname",
+        "author": ".author@match->(?<=作者：).+",
+        "cover": ".bookimg > a > img",
+        "detail": ".bookname > a"
+    },
+    "detail": {
+        "summary": ".intro@match->(?<=简介：).+",
+        "status": ".small > span:nth-child(3)@match->(?<=状态：).+",
+        "update": "span:nth-child(5)@match->(?<=更新时间：).+",
+        "lastChapter": "span:nth-child(6) > a"
+    },
+    "catalog": {
+        "list": "dl > dd",      
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": "#content",
+        "purify": ["请记住本书首发域名：www.bqg99.cc。笔趣阁手机版更新最快网址：m.bqg99.cc"]
+    }
+}
