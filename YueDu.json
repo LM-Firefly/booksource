@@ -4586,12 +4586,12 @@
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "52书库",
         "bookSourceType": 0,
-        "bookSourceUrl": "https:\/\/www.52shuku.vip\/",
+        "bookSourceUrl": "https://www.52shuku.vip/",
         "bookUrlPattern": "",
         "customOrder": 0,
         "enabled": true,
         "enabledExplore": true,
-        "exploreUrl": "星际::https:\/\/www.52shuku.vip\/tuijian\/xingjiwen\/<,index_{{page}}.html>\n穿书::https:\/\/www.52shuku.vip\/tuijian\/chuanshu\/index<,_{{page}}>.html\n重生::https:\/\/www.52shuku.vip\/chongsheng\/<,index_{{page}}.html>\n种田::tuijian\/zhongtianwen\/<,index_{{page}}.html>\n修仙::https:\/\/www.52shuku.vip\/zuozhe\/xiuxian<,_{{page}}>.html\n网游::wangyou\/<,index_{{page}}.html>\n科幻::tuijian\/kehuan\/<,index_{{page}}.html>\n女配::https:\/\/www.52shuku.vip\/tuijian\/nvpeiwen\/<,index_{{page}}.html>\n娱乐圈::https:\/\/www.52shuku.vip\/tuijian\/yulequan\/<,index_{{page}}.html>\n美食::https:\/\/www.52shuku.vip\/tuijian\/meishiwen\/<,index_{{page}}.html>\n末世::https:\/\/www.52shuku.vip\/tuijian\/moshiwen\/<,index_{{page}}.html>\n玄学::tuijian\/xuanxue\/<,index_{{page}}.html>\n空间::tuijian\/kongjianwen\/<,index_{{page}}.html>\n系统::tuijian\/xitong\/<,index_{{page}}.html>\n白月光::tuijian\/baiyueguang\/<,index_{{page}}.html>\n炮灰::zuozhe\/paohui\/<,index_{{page}}.html>\n甜宠::tuijian\/chongwentianwen\/<,index_{{page}}.html>\n虐文::tuijian\/nuewen\/<,index_{{page}}.html>\n爽文::tuijian\/shuangwen\/<,index_{{page}}.html>\n女强::tuijian\/nvqiangwen\/<,index_{{page}}.html>\n百合::gl\/<,index_{{page}}.html>\n言情精选::yanqing\/<,index_{{page}}.html>\n文学::wenxue\/<,index_{{page}}.html>",
+        "exploreUrl": "星际::https://www.52shuku.vip/tuijian/xingjiwen/<,index_{{page}}.html>\n穿书::https://www.52shuku.vip/tuijian/chuanshu/index<,_{{page}}>.html\n重生::https://www.52shuku.vip/chongsheng/<,index_{{page}}.html>\n种田::tuijian/zhongtianwen/<,index_{{page}}.html>\n修仙::https://www.52shuku.vip/zuozhe/xiuxian<,_{{page}}>.html\n网游::wangyou/<,index_{{page}}.html>\n科幻::tuijian/kehuan/<,index_{{page}}.html>\n女配::https://www.52shuku.vip/tuijian/nvpeiwen/<,index_{{page}}.html>\n娱乐圈::https://www.52shuku.vip/tuijian/yulequan/<,index_{{page}}.html>\n美食::https://www.52shuku.vip/tuijian/meishiwen/<,index_{{page}}.html>\n末世::https://www.52shuku.vip/tuijian/moshiwen/<,index_{{page}}.html>\n玄学::tuijian/xuanxue/<,index_{{page}}.html>\n空间::tuijian/kongjianwen/<,index_{{page}}.html>\n系统::tuijian/xitong/<,index_{{page}}.html>\n白月光::tuijian/baiyueguang/<,index_{{page}}.html>\n炮灰::zuozhe/paohui/<,index_{{page}}.html>\n甜宠::tuijian/chongwentianwen/<,index_{{page}}.html>\n虐文::tuijian/nuewen/<,index_{{page}}.html>\n爽文::tuijian/shuangwen/<,index_{{page}}.html>\n女强::tuijian/nvqiangwen/<,index_{{page}}.html>\n百合::gl/<,index_{{page}}.html>\n言情精选::yanqing/<,index_{{page}}.html>\n文学::wenxue/<,index_{{page}}.html>",
         "header": "",
         "lastUpdateTime": 0,
         "loginUrl": "",
@@ -4620,7 +4620,7 @@
             "chapterName": "tag.a@text",
             "chapterUrl": "tag.a@href"
         },
-        "searchUrl": "https:\/\/www.52shuku.vip\/e\/search\/,{\n  \"method\": \"POST\",\n  \"body\": \"tbname=article&tempid=1&show=title%2Cwriter&keyboard={{key}}\"\n}",
+        "searchUrl": "https://www.52shuku.vip/e/search/,{\n  \"method\": \"POST\",\n  \"body\": \"tbname=article&tempid=1&show=title%2Cwriter&keyboard={{key}}\"\n}",
         "weight": 1
     },
     {
