@@ -1,0 +1,151 @@
+{
+    "name": "云文学",
+    "url": "www.yunwenxue.com",
+    "version": 100,
+    "search": {
+        "url": "http://www.yunwenxue.com/index.php?r=books/index&skw=${key}",
+        "list": ".mod_wlst",
+        "name": "dt > a",
+        "author": ".author > span@match->(?<=作者：).+",
+        "cover": "a > img",
+        "detail": "dt > a"
+    },
+    "detail": {
+        "cover": "a > img",
+        "summary": "#intro_tab",
+        "status": "#info_tab > span:nth-child(2)@match->(?<=作品状态：).+",
+        "update": "div:nth-child(1) > div > em",
+        "lastChapter": "div:nth-child(1) > div > span:nth-child(3)",
+        "catalog": ".more > a:nth-child(1)"
+    },
+    "catalog": {
+        "list": ".panel_lst > ul > li",
+        "name": "em",
+        "chapter": ".t"
+    },
+    "chapter": {
+        "content": ".cont_txt"
+    },
+    "rank": [
+        {
+            "title":"小说",
+            "url": "http://www.yunwenxue.com/index.php?r=books/index&p=${page}&cid=${key}",
+            "page": 1,
+            "categories": [{"key": "44", "value": "小说"},{"key": "48", "value": "幻想小说"},{"key": "47","value": "浪漫小说"},{"key": "46", "value": "社会小说"},{"key": "45", "value": "历史小说"},{"key":"49", "value": "中短篇小说"}]
+        },
+        {
+            "title":"悬疑推理",
+            "url": "http://www.yunwenxue.com/index.php?r=books/index&p=${page}&cid=${key}",
+            "page": 1,
+            "categories": [{"key": "150", "value": "悬疑推理"},{"key": "154", "value": "盗墓冒险"},{"key":"153","value": "推理刑侦"},{"key": "152", "value": "恐怖悬疑"},{"key": "151", "value": "灵异奇谈"}]
+        },
+        {
+            "title":"科幻游戏",
+            "url": "http://www.yunwenxue.com/index.php?r=books/index&p=${page}&cid=${key}",
+            "page": 1,
+            "categories": [{"key": "141", "value": "科幻游戏"},{"key": "149", "value": "电子竞技"},{"key": "148","value": "游戏异界"},{"key": "147", "value": "虚拟网游"},{"key": "146", "value": "时空探险"},{"key": "145", "value": "末世危机"},{"key": "144", "value": "数字科技"},{"key": "143","value": "古武机甲"},{"key": "142", "value": "未来星际"}]
+        },
+        {
+            "title":"武侠仙侠",
+            "url": "http://www.yunwenxue.com/index.php?r=books/index&p=${page}&cid=${key}",
+            "page": 1,
+            "categories": [{"key": "134", "value": "武侠仙侠"},{"key": "140", "value": "国术武技"},{"key": "139","value": "武侠江湖"},{"key": "138", "value": "上古洪荒"},{"key": "137", "value": "现代修真"},{"key":"136", "value": "异界修真"},{"key":"135", "value": "古典仙侠"}]
+        },
+        {
+            "title":"历史军事",
+            "url": "http://www.yunwenxue.com/index.php?r=books/index&p=${page}&cid=${key}",
+            "page": 1,
+            "categories": [{"key": "127", "value": "历史军事"},{"key": "133", "value": "谍战特工"},{"key":"132","value": "军旅生涯"},{"key": "131", "value": "军事战争"},{"key": "130", "value": "外国历史"},{"key": "129", "value": "架空王朝"},{"key": "128", "value": "历史时空"}]
+        },
+        {
+            "title":"玄幻奇幻",
+            "url": "http://www.yunwenxue.com/index.php?r=books/index&p=${page}&cid=${key}",
+            "page": 1,
+            "categories": [{"key": "122", "value": "玄幻奇幻"},{"key": "126", "value": "远古神话"},{"key": "125","value": "异界大陆"},{"key": "124", "value": "西方奇幻"},{"key": "123", "value": "东方玄幻"}]
+        },
+        {
+            "title":"都市言情",
+            "url": "http://www.yunwenxue.com/index.php?r=books/index&p=${page}&cid=${key}",
+            "page": 1,
+            "categories": [{"key": "114", "value": "都市言情"},{"key": "121", "value": "魔幻仙缘"},{"key": "120","value": "古代言情"},{"key": "119", "value": "现代言情"},{"key": "118", "value": "异术超能"},{"key":"117", "value": "娱乐豪门"},{"key": "116", "value": "官场商海"},{"key":"115", "value": "都市生活"}]
+        },
+        {
+            "title":"青春幻想",
+            "url": "http://www.yunwenxue.com/index.php?r=books/index&p=${page}&cid=${key}",
+            "page": 1,
+            "categories": [{"key": "109", "value": "青春幻想"},{"key": "113", "value": "浪漫幻想"},{"key":"112","value": "素锦年华"},{"key": "111", "value": "青春爱情"},{"key": "110", "value": "校园生活"}]
+        },
+        {
+            "title":"文集选集",
+            "url": "http://www.yunwenxue.com/index.php?r=books/index&p=${page}&cid=${key}",
+            "page": 1,
+            "categories": [{"key": "107", "value": "丛书"},{"key": "106","value": "文库"},{"key": "102", "value": "文集选集"},{"key": "105", "value": "作品选集"},{"key": "103", "value": "作家文集"},{"key": "104", "value": "作家自选集"}]
+        },
+        {
+            "title":"文学理论",
+            "url": "http://www.yunwenxue.com/index.php?r=books/index&p=${page}&cid=${key}",
+            "page": 1,
+            "categories": [{"key": "99", "value": "创作论"},{"key": "94", "value": "文学理论"},{"key": "100","value": "论文专著"},{"key": "98", "value": "文学评论"},{"key": "97", "value": "比较文学"},{"key":"96", "value": "文艺美学"},{"key": "95", "value": "学术研究"},{"key":"101", "value": "文学批评史"}]
+        },
+        {
+            "title":"外国文学",
+            "url": "http://www.yunwenxue.com/index.php?r=books/index&p=${page}&cid=${key}",
+            "page": 1,
+            "categories": [{"key": "87", "value": "外国文学"},{"key": "92", "value": "外国传记"},{"key":"91","value": "外国散文"},{"key": "90", "value": "外国诗歌"},{"key": "89", "value": "外国名著"},{"key": "88", "value": "外国小说"},{"key": "93", "value": "外国影视艺术"}]
+        },
+        {
+            "title":"古典文学",
+            "url": "http://www.yunwenxue.com/index.php?r=books/index&p=${page}&cid=${key}",
+            "page": 1,
+            "categories": [{"key": "81", "value": "古籍"},{"key": "80", "value": "古典文学"},{"key": "86","value": "神话传说"},{"key": "85", "value": "史书传记"},{"key": "84", "value": "散文辞赋"},{"key": "83", "value": "古典小说"},{"key": "82", "value": "文学名著"}]
+        },
+        {
+            "title":"儿童文学",
+            "url": "http://www.yunwenxue.com/index.php?r=books/index&p=${page}&cid=${key}",
+            "page": 1,
+            "categories": [{"key": "75", "value": "寓言"},{"key": "74","value": "童话"},{"key": "72", "value": "儿歌"},{"key": "73", "value": "儿童诗"},{"key": "70", "value": "儿童文学"},{"key": "78", "value": "儿童曲艺"},{"key":"77", "value": "儿童散文"},{"key":"76", "value": "儿童小说"},{"key": "71", "value": "幼儿文学"},{"key": "79", "value": "儿童科学文艺"}]
+        },
+        {
+            "title":"诗歌词曲",
+            "url": "http://www.yunwenxue.com/index.php?r=books/index&p=${page}&cid=${key}",
+            "page": 1,
+            "categories": [{"key": "65", "value": "诗歌词曲"},{"key": "69", "value": "韵文"},{"key":"68","value": "歌曲"},{"key": "67", "value": "现代诗"},{"key": "66", "value": "旧体诗词"}]
+        },
+        {
+            "title":"影视戏剧",
+            "url": "http://www.yunwenxue.com/index.php?r=books/index&p=${page}&cid=${key}",
+            "page": 1,
+            "categories": [{"key": "62", "value": "影评"},{"key": "59", "value": "影视戏剧"},{"key": "64", "value": "曲艺文学"},{"key": "63","value": "戏剧文学"},{"key": "61", "value": "影视小说"},{"key": "60", "value": "影视剧本"}]
+        },
+        {
+            "title":"散文随笔",
+            "url": "http://www.yunwenxue.com/index.php?r=books/index&p=${page}&cid=${key}",
+            "page": 1,
+            "categories": [{"key": "58", "value": "杂著"},{"key": "55", "value": "传记"},{"key":"54", "value": "杂文"},{"key": "53", "value": "纪实"},{"key": "52", "value": "随笔"},{"key":"51", "value": "散文"},{"key": "57", "value": "回忆录"},{"key": "50", "value": "散文随笔"},{"key": "56","value": "报告文学"}]
+        },
+        {
+            "title":"创意剧本",
+            "url": "http://www.yunwenxue.com/index.php?r=books/index&p=${page}&cid=${key}",
+            "page": 1,
+            "categories": [{"key": "35", "value": "创意剧本"},{"key": "38", "value": "创意动漫剧本"},{"key": "37","value": "创意舞台剧本"},{"key": "36", "value": "创意影视剧本"}]
+        },
+        {
+            "title":"创意美文",
+            "url": "http://www.yunwenxue.com/index.php?r=books/index&p=${page}&cid=${key}",
+            "page": 1,
+            "categories": [{"key": "30", "value": "创意美文"},{"key": "33", "value": "创意杂文"},{"key":"32","value": "创意散文"},{"key": "31", "value": "创意诗歌"}]
+        },
+        {
+            "title":"创意小说",
+            "url": "http://www.yunwenxue.com/index.php?r=books/index&p=${page}&cid=${key}",
+            "page": 1,
+            "categories": [{"key": "25", "value": "创意小说 "},{"key": "29", "value": "创意微小说"},{"key":"28","value": "创意短篇小说"},{"key": "27", "value": "创意中篇小说"},{"key": "26", "value": "创意长篇小说"}]
+        },
+        {
+            "title":"多媒体文学",
+            "url": "http://www.yunwenxue.com/index.php?r=books/index&p=${page}&cid=${key}",
+            "page": 1,
+            "categories": [{"key": "42", "value": "影视文学 "},{"key": "41","value": "动漫文学"},{"key": "40", "value": "摄影文学"},{"key": "39", "value": "多媒体文学"}]
+        }
+    ]
+}

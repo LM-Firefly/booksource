@@ -12,6 +12,9 @@
 8jzw.com.json
 8kana.com.json
 9txs.com.json
+E文学.json
+LIST.TXT
+abcxs.com.json
 aikanshu8.com.json
 app-cdn.jjwxc.net.json
 app.bailianyu.com.json
@@ -20,13 +23,16 @@ app2.motie.com.json
 b.faloo.com.json
 baihexs.com.json
 baishuzhai.com.json
+beund.com.json
 biqubao.com.json
 biquge.com.cn.json
 biquge.se.json
 biquge.tv.json
 bjcan.com.json
 bjhanyang.com.json
+book.jiyili.net.json
 book.tiexue.net.json
+bqg99.cc.json
 cbaigui.com.json
 clewx.com.json
 cngdwx.com.json
@@ -37,9 +43,9 @@ douban.com.json
 doufu.la.json
 dstiejuan.com.json
 dushu.baidu.com.json
+dushu.com.json
 dushu369.com.json
 ebtang.com.json
-E文学.json
 faloo.com.json
 fx361.com.json
 gongzicp.com.json
@@ -62,7 +68,6 @@ lingyi.org.json
 linovel.net.json
 linovelib.com.json
 list.bat
-LIST.TXT
 lucifer-club.com.json
 lwxsw.cc.json
 m.biyuwu.cc.json
@@ -71,6 +76,7 @@ m.hongxiu.com.json
 m.qidian.com.json
 m.qinqinxsw.com.json
 m.suyueg.com.json
+m.yamibo.com.json
 m.yuedu.163.com.json
 magnet-novels.com.json
 meegoq.com.json
@@ -114,7 +120,10 @@ wzzw.la.json
 xiang5.com.json
 xiaoshuowa.com.json
 xrzww.com.json
+xs.kdays.net.json
 xsbiquge.com.json
+yamibo.com.json
+yayayd.com.json
 ymoxuan.org.json
 yoduzw.com.json
 yomou.syosetu.com.json
@@ -122,6 +131,8 @@ youdubook.com.json
 yousuu.com.json
 yuanzun.tw.json
 yuedu.163.com.json
+yuedu88.com.json
+yunwenxue.com.json
 yz4.chaoxing.com.json
 zhaishuw.com.json
 zhaishuyuan.com.json
@@ -130,6 +141,7 @@ zhuwenxs.com.json
 zongheng.com.json
 ztv.la.json
 zuopinj.com.json
+zwda.com.json
 万书网.json
 丝路文学网.json
 书书网.json

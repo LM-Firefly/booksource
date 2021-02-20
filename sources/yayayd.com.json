@@ -1,0 +1,27 @@
+{
+    "name": "丫丫阅读网",
+    "url": "www.yayayd.com",
+    "version": 101,
+    "search": {
+        "url": "https://www.yayayd.com/search/result.html?searchtype=all&searchkey=${key}",
+        "list": ".main > div > div > ul > li",
+        "name": "h3",
+        "author": "span:nth-child(2)@match->(?<=作者：).+",
+        "cover": "li > a > img",
+        "summary": "li > div > p",
+        "detail": "h3 > a"
+    },
+    "detail": {
+        "status": ".label > span:nth-child(1)",
+        "catalog": ".LatestChapter > ul > li:nth-child(2) > a"
+    },
+    "catalog": {
+        "list": ".mulu_list.clear > li",
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": ".pt-read-text > p",
+         "page": ".pt-nextchapter:matches(下一页)"
+    }
+}
