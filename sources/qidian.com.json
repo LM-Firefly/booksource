@@ -1,14 +1,14 @@
 {
     "name": "起点中文网",
     "url": "qidian.com",
-    "version": 102,
+    "version": 105,
     "search": {
-        "url": "https://m.qidian.com/majax/search/list?kw=${key}",
-        "list": "$..records[*]",
-        "name": "$.bName",
-        "author": "$.bAuth",
-        "cover": "$.imgUrl",
-        "detail": "/book/${$.bid}"
+        "url": "https://m.qidian.com/search?kw=${key}",
+        "list": "li.book-li",
+        "name": ".book-title",
+        "author": "span.book-author@match->(?<=作者 )(.+)",
+        "cover": "img",
+        "detail": "a"
     },
     "detail": {
         "summary": "content",
@@ -45,51 +45,68 @@
     "rank": [
         {
             "title":"风云榜",
-            "url": "https://m.qidian.com/majax/rank/yuepiaolist?gender=male&catId=${key}&pageNum=${page}",
+            "url": "https://www.qidian.com/rank/yuepiao?chn=${key}&page=${page}",
             "page": 1,
             "size": 20,
             "categories": [{"key": "-1", "value": "全站"}, {"key": "21", "value": "玄幻"}, {"key": "1", "value": "奇幻"}, {"key": "2", "value": "武侠"}, {"key": "22", "value": "仙侠"}, {"key": "4", "value": "都市"}, {"key": "5", "value": "历史"}, {"key": "6", "value": "军事"}, {"key": "7", "value": "游戏"}, {"key": "8", "value": "体育"}, {"key": "9", "value": "科幻"}, {"key": "10", "value": "悬疑"}],
-            "cover": "https://bookcover.yuewen.com/qdbimg/349573/${$.bid}/150"
+            "list": ".book-img-text > ul > li",
+            "name": "h4",
+            "author": "p.author > a.name",
+            "cover": ".book-img-box > a >  img",
+            "summary": "p.intro",
+            "detail": ".book-img-box > a"
         },
         {
             "title":"畅销榜",
-            "url": "https://m.qidian.com/majax/rank/hotsaleslist?gender=male&catId=${key}&pageNum=${page}",
+            "url": "https://www.qidian.com/rank/hotsales?style=1&chn=${key}&page=${page}",
             "page": 1,
             "size": 20,
             "categories": [{"key": "-1", "value": "全站"}, {"key": "21", "value": "玄幻"}, {"key": "1", "value": "奇幻"}, {"key": "2", "value": "武侠"}, {"key": "22", "value": "仙侠"}, {"key": "4", "value": "都市"}, {"key": "5", "value": "历史"}, {"key": "6", "value": "军事"}, {"key": "7", "value": "游戏"}, {"key": "8", "value": "体育"}, {"key": "9", "value": "科幻"}, {"key": "10", "value": "悬疑"}],
-            "cover": "https://bookcover.yuewen.com/qdbimg/349573/${$.bid}/150"
+            "list": ".book-img-text > ul > li",
+            "name": "h4",
+            "author": "p.author > a.name",
+            "cover": ".book-img-box > a >  img",
+            "summary": "p.intro",
+            "detail": ".book-img-box > a"
         },
         {
             "title":"新书榜",
-            "url": "https://m.qidian.com/majax/recommend/newBooklist?gender=${key}&pageNum=${page}",
+            "url": "https://www.qidian.com/rank/signnewbook?style=1&chn=${key}&page=${page}",
             "page": 1,
             "size": 20,
-            "categories": [{"key": "male", "value": "男频"}, {"key": "female", "value": "女频"}],
-            "cover": "https://bookcover.yuewen.com/qdbimg/349573/${$.bid}/150"
-        },
-        {
-            "title":"完结榜",
-            "url": "https://m.qidian.com/majax/recommend/bestSelllist?gender=${key}&pageNum=${page}",
-            "page": 1,
-            "size": 20,
-            "categories": [{"key": "male", "value": "男频"}, {"key": "female", "value": "女频"}],
-            "cover": "https://bookcover.yuewen.com/qdbimg/349573/${$.bid}/150"
+            "categories": [{"key": "-1", "value": "全站"}, {"key": "21", "value": "玄幻"}, {"key": "1", "value": "奇幻"}, {"key": "2", "value": "武侠"}, {"key": "22", "value": "仙侠"}, {"key": "4", "value": "都市"}, {"key": "5", "value": "历史"}, {"key": "6", "value": "军事"}, {"key": "7", "value": "游戏"}, {"key": "8", "value": "体育"}, {"key": "9", "value": "科幻"}, {"key": "10", "value": "悬疑"}],
+            "list": ".book-img-text > ul > li",
+            "name": "h4",
+            "author": "p.author > a.name",
+            "cover": ".book-img-box > a >  img",
+            "summary": "p.intro",
+            "detail": ".book-img-box > a"
         },
         {
             "title":"阅读榜",
-            "url": "https://m.qidian.com/majax/rank/readIndexlist?gender=male&catId=${key}&pageNum=${page}",
+            "url": "https://www.qidian.com/rank/readIndex?style=1&chn=${key}&page=${page}",
             "page": 1,
             "size": 20,
             "categories": [{"key": "-1", "value": "全站"}, {"key": "21", "value": "玄幻"}, {"key": "1", "value": "奇幻"}, {"key": "2", "value": "武侠"}, {"key": "22", "value": "仙侠"}, {"key": "4", "value": "都市"}, {"key": "5", "value": "历史"}, {"key": "6", "value": "军事"}, {"key": "7", "value": "游戏"}, {"key": "8", "value": "体育"}, {"key": "9", "value": "科幻"}, {"key": "10", "value": "悬疑"}],
-            "cover": "https://bookcover.yuewen.com/qdbimg/349573/${$.bid}/150"
+            "list": ".book-img-text > ul > li",
+            "name": "h4",
+            "author": "p.author > a.name",
+            "cover": ".book-img-box > a >  img",
+            "summary": "p.intro",
+            "detail": ".book-img-box > a"
         },
         {
             "title":"推荐榜",
-            "url": "https://m.qidian.com/majax/rank/reclist?gender=male&catId=${key}&pageNum=${page}",
+            "url": "https://www.qidian.com/rank/recom?style=1&chn=${key}&page=${page}",
             "page": 1,
             "size": 20,
             "categories": [{"key": "-1", "value": "全站"}, {"key": "21", "value": "玄幻"}, {"key": "1", "value": "奇幻"}, {"key": "2", "value": "武侠"}, {"key": "22", "value": "仙侠"}, {"key": "4", "value": "都市"}, {"key": "5", "value": "历史"}, {"key": "6", "value": "军事"}, {"key": "7", "value": "游戏"}, {"key": "8", "value": "体育"}, {"key": "9", "value": "科幻"}, {"key": "10", "value": "悬疑"}],
-            "cover": "https://bookcover.yuewen.com/qdbimg/349573/${$.bid}/150"
+            "list": ".book-img-text > ul > li",
+            "name": "h4",
+            "author": "p.author > a.name",
+            "cover": ".book-img-box > a >  img",
+            "summary": "p.intro",
+            "detail": ".book-img-box > a"
         }
     ]
 }

@@ -1,0 +1,19 @@
+{
+    "name": "优书网",
+    "url": "yousuu.com",
+    "version": 100,
+    "search": {
+        "url": "https://www.yousuu.com/api/search?type=title&value=${key}&from=search",
+        "list": "$..books[*]",
+        "name": "$.title",
+        "author": "$.author",
+        "cover": "$.cover",
+        "detail": "/book/${$.bookId}"
+    },
+    "detail": {
+        "status": ".status",
+        "summary": "script:containsData(Book)@match->(?<=description\":\")(.+?)(?=\"\\},\"followCommentsCount)",
+        "category": ".el-tag",
+        "words": ".book-word-count@match->(?<=本书字数：)(.+?)(?=字)"
+    }
+}

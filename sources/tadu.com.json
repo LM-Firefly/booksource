@@ -1,73 +1,75 @@
 {
     "name": "塔读",
     "url": "tadu.com",
-    "version": 101,
+    "version": 103,
     "search": {
-        "url": "https://www.tadu.com/search@post->query=${key}",
-        "list": "ul.bookList > li",
-        "name": "a.bookNm",
-        "author": "a.authorNm",
-        "cover": ".bookImg > img@attr->data-src@replace->media7->media3@replace->125_100->276_200",
-        "detail": "a.bookNm"
+        "url": "http://211.151.212.66/ci/search/result?searchcontent=${key}&page=1&type=3&readLike=0&searchType=3@header->X-Client:version=6.6.68.1673@header->COOKIE:sessionid=cc3bedf27c3148e28274e4887e1e3a3a",
+        "list": "$.data.bookList",
+        "name": "$.name",
+        "author": "$.author",
+        "cover": "$.picUrl",
+        "detail": "http://211.151.212.66/ci/book/info?bookId=${$.bookId}@header->X-Client:version=6.6.68.1673@header->COOKIE:sessionid=cc3bedf27c3148e28274e4887e1e3a3a"
     },
     "detail": {
-        "summary": ".bookIntro > div > p",
-        "status": ".sortList > a@equal->连载中",
-        "category": "div.boxCenter.navList > a:nth-child(4)",
-        "words": ".datum > span:nth-child(1) > em",
-        "update": ".newUpdate > span@replace->更新时间：->",
-        "lastChapter": ".newUpdate > a",
-        "catalog": ".readBtn > a:nth-child(2)"
+        "status": "$.data.bookInfo.isSerial@equal->true",
+        "summary": "$.data.bookInfo.intro",
+        "category": "$.data.bookInfo.categoryName",
+        "words": "$.data.bookInfo.numOfChars@replace->字->",
+        "update": "$.data.bookInfo.newPartUpdateDate",
+        "lastChapter": "$.data.bookInfo.newPartTitle",
+        "catalog": "http://211.151.212.66/ci/qingmeng/book/directory/list?book_id=${$.data.bookInfo.id}&sort=asc@header->X-Client:version=6.6.68.1673@header->COOKIE:sessionid=cc3bedf27c3148e28274e4887e1e3a3a"
+    },
+    "catalog": {
+        "list": "$.data.chapters",
+        "name": "$.chapterName",
+        "chapter": "http://media3.tadu.com/${$.chapterUrl}@replace->_.tdz->.txt"
+    },
+    "chapter": {
     },
     "rank": [
         {
-            "title":"男频榜",
-            "url": "https://www.tadu.com/store/${key}-a-0-5-a-20-p-${page}-98",
+            "title":"男频",
+            "url": "http://211.151.212.66/ci/categories/secondCategorys/?categoryid=${key}&thirdcategory=0&activitytype=0&bookstatus=0&sorttype=0&chars=0&publishDate=&readingAge=1&bookType=0&page=${page}@header->X-Client:version=6.6.68.1673@header->COOKIE:sessionid=cc3bedf27c3148e28274e4887e1e3a3a",
             "page": 1,
-            "size": 20,
-            "categories": [
-                {"key": "98", "value": "全部"}, {"key": "99", "value": "东方玄幻"}, {"key": "103", "value": "现代都市"},
-                {"key": "135", "value": "脑洞创意"}, {"key": "108", "value": "历史架空"}, {"key": "113", "value": "军事战争"},
-                {"key": "112", "value": "游戏竞技"}, {"key": "109", "value": "武侠仙侠"}, {"key": "111", "value": "科幻末世"},
-                {"key": "128", "value": "灵异玄幻"}, {"key": "107", "value": "西方奇幻"}, {"key": "281", "value": "短篇小说"}
-            ]
+            "categories": [{"key": "99", "value": "东方玄幻"},{"key": "103", "value": "现代都市"},{"key": "135", "value": "脑洞创意"},{"key": "108", "value": "历史架空"},{"key": "113", "value": "军事战争"},{"key": "112", "value": "游戏竞技"},{"key": "109", "value": "武侠仙侠"},{"key": "111", "value": "科幻末世"},{"key": "128", "value": "灵异玄幻"},{"key": "107", "value": "西方奇幻"},{"key": "281", "value": "短篇小说"}],
+            "list": "$.data.bookList",
+            "name": "$.title",
+            "author": "$.authors",
+            "cover": "$.coverImage",
+            "detail": "http://211.151.212.66/ci/book/info?bookId=${$.bookId}@header->X-Client:version=6.6.68.1673@header->COOKIE:sessionid=cc3bedf27c3148e28274e4887e1e3a3a"
         },
         {
-            "title":"女频榜",
-            "url": "https://www.tadu.com/store/${key}-a-0-5-a-20-p-${page}-122",
+            "title":"女频",
+            "url": "http://211.151.212.66/ci/categories/secondCategorys/?categoryid=${key}&thirdcategory=0&activitytype=0&bookstatus=0&sorttype=0&chars=0&publishDate=&readingAge=1&bookType=0&page=${page}@header->X-Client:version=6.6.68.1673@header->COOKIE:sessionid=cc3bedf27c3148e28274e4887e1e3a3a",
             "page": 1,
-            "size": 20,
-            "categories": [
-                {"key": "122", "value": "全部"}, {"key": "129", "value": "古代言情"}, {"key": "133", "value": "幻想言情"},
-                {"key": "104", "value": "现代言情"}, {"key": "105", "value": "浪漫青春"}, {"key": "288", "value": "悬疑小说"},
-                {"key": "291", "value": "短篇小说"}
-            ]
+            "categories": [{"key": "129", "value": "古代言情"},{"key": "133", "value": "幻想言情"},{"key": "104", "value": "现代言情"},{"key": "105", "value": "浪漫青春"},{"key": "288", "value": "悬疑小说"},{"key": "291", "value": "短篇小说"}],
+            "list": "$.data.bookList",
+            "name": "$.title",
+            "author": "$.authors",
+            "cover": "$.coverImage",
+            "detail": "http://211.151.212.66/ci/book/info?bookId=${$.bookId}@header->X-Client:version=6.6.68.1673@header->COOKIE:sessionid=cc3bedf27c3148e28274e4887e1e3a3a"
         },
         {
-            "title":"出版榜",
-            "url": "https://www.tadu.com/store/${key}-a-0-5-a-20-p-${page}-79",
+            "title":"出版",
+            "url": "http://211.151.212.66/ci/categories/secondCategorys/?categoryid=${key}&thirdcategory=0&activitytype=0&bookstatus=0&sorttype=0&chars=0&publishDate=&readingAge=1&bookType=0&page=${page}@header->X-Client:version=6.6.68.1673@header->COOKIE:sessionid=cc3bedf27c3148e28274e4887e1e3a3a",
             "page": 1,
-            "size": 20,
-            "categories": [
-                {"key": "79", "value": "全部"}, {"key": "81", "value": "现代都市"}, {"key": "83", "value": "青春文学"},
-                {"key": "85", "value": "悬疑灵异"}, {"key": "88", "value": "励志成功"}, {"key": "115", "value": "官场沉浮"},
-                {"key": "92", "value": "职场商战"}, {"key": "86", "value": "铁血军事"}, {"key": "84", "value": "历史风云"},
-                {"key": "102", "value": "影视娱乐"}, {"key": "32", "value": "经管理财"}, {"key": "121", "value": "教育教辅"},
-                {"key": "82", "value": "纪实传记"}, {"key": "4", "value": "奇幻科幻"}, {"key": "87", "value": "生活休闲"},
-                {"key": "10", "value": "武侠仙侠"}, {"key": "89", "value": "童话寓言"}, {"key": "3", "value": "社科科普"},
-                {"key": "90", "value": "外国名著"}, {"key": "91", "value": "古典名著"}, {"key": "93", "value": "当代文学"},
-                {"key": "138", "value": "两性伦理"}, {"key": "139", "value": "言情小说"}
-            ]
+            "categories": [{"key": "81", "value": "现代都市"},{"key": "83", "value": "青春文学"},{"key": "85", "value": "悬疑灵异"},{"key": "88", "value": "励志成功"},{"key": "115", "value": "官场沉浮"},{"key": "92", "value": "职场商战"},{"key": "86", "value": "铁血军事"},{"key": "84", "value": "历史风云"},{"key": "102", "value": "影视娱乐"},{"key": "32", "value": "经管理财"},{"key": "121", "value": "教育教辅"},{"key": "82", "value": "纪实传记"},{"key": "4", "value": "奇幻科幻"},{"key": "87", "value": "生活休闲"},{"key": "10", "value": "武侠仙侠"},{"key": "89", "value": "童话寓言"},{"key": "3", "value": "社科科普"},{"key": "90", "value": "外国名著"},{"key": "91", "value": "古典名著"},{"key": "93", "value": "当代文学"},{"key": "138", "value": "两性伦理"},{"key": "139", "value": "言情小说"}],
+            "list": "$.data.bookList",
+            "name": "$.title",
+            "author": "$.authors",
+            "cover": "$.coverImage",
+            "detail": "http://211.151.212.66/ci/book/info?bookId=${$.bookId}@header->X-Client:version=6.6.68.1673@header->COOKIE:sessionid=cc3bedf27c3148e28274e4887e1e3a3a"
         },
         {
-            "title":"二次元榜",
-            "url": "https://www.tadu.com/store/${key}-a-0-5-a-20-p-${page}-270",
+            "title":"二次元",
+            "url": "http://211.151.212.66/ci/categories/secondCategorys/?categoryid=${key}&thirdcategory=0&activitytype=0&bookstatus=0&sorttype=0&chars=0&publishDate=&readingAge=1&bookType=0&page=${page}@header->X-Client:version=6.6.68.1673@header->COOKIE:sessionid=cc3bedf27c3148e28274e4887e1e3a3a",
             "page": 1,
-            "size": 20,
-            "categories": [
-                {"key": "270", "value": "全部"}, {"key": "271", "value": "异能 • 幻想"}, {"key": "272", "value": "校园 • 青春"},
-                {"key": "273", "value": "动漫 • 同人"}, {"key": "274", "value": "日常 • 变身"}, {"key": "275", "value": "剑与魔法"}
-            ]
+            "categories": [{"key": "271", "value": "异能 • 幻想"},{"key": "272", "value": "校园 • 青春"},{"key": "273", "value": "动漫 • 同人"},{"key": "274", "value": "日常 • 变身"},{"key": "275", "value": "剑与魔法"}],
+            "list": "$.data.bookList",
+            "name": "$.title",
+            "author": "$.authors",
+            "cover": "$.coverImage",
+            "detail": "http://211.151.212.66/ci/book/info?bookId=${$.bookId}@header->X-Client:version=6.6.68.1673@header->COOKIE:sessionid=cc3bedf27c3148e28274e4887e1e3a3a"
         }
     ]
 }

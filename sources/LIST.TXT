@@ -33,6 +33,7 @@ cngdwx.com.json
 daocaorenshuwu.com.json
 dhzw8.com.json
 dlib.wxlib.cn.json
+douban.com.json
 doufu.la.json
 dstiejuan.com.json
 dushu.baidu.com.json
@@ -59,7 +60,9 @@ kujiang.com.json
 lewenxsw.com.json
 lingyi.org.json
 linovel.net.json
+linovelib.com.json
 list.bat
+LIST.TXT
 lucifer-club.com.json
 lwxsw.cc.json
 m.biyuwu.cc.json
@@ -71,6 +74,7 @@ m.suyueg.com.json
 m.yuedu.163.com.json
 magnet-novels.com.json
 meegoq.com.json
+mm.sfacg.com.json
 motie.com.json
 nbaxiaoshuo.com.json
 new.shuge.org.json
@@ -115,6 +119,7 @@ ymoxuan.org.json
 yoduzw.com.json
 yomou.syosetu.com.json
 youdubook.com.json
+yousuu.com.json
 yuanzun.tw.json
 yuedu.163.com.json
 yz4.chaoxing.com.json

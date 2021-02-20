@@ -1,0 +1,18 @@
+{
+    "name": "豆瓣读书",
+    "url": "douban.com",
+    "version": 101,
+    "search": {
+        "url": "https://www.douban.com/search?cat=1001&q=${key}",
+        "list": ".result-list > .result",
+        "name": "h3 > a",
+        "author": ".subject-cast@match->(.+?)(?= /)",
+        "cover": "img",
+        "detail": "h3 > a"
+    },
+    "detail": {
+        "summary": ".intro:not(:has(.a_show_full))",
+        "category": "#db-tags-section > .indent",
+        "words": "#info@match->(?<=页数:)(.+?)(?= )"
+    }
+}

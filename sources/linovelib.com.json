@@ -1,0 +1,214 @@
+{
+    "name": "哔哩轻小说",
+    "url": "linovelib.com",
+    "remarks": "该网站5秒内只能搜索1次资源",
+    "version": 100,
+    "search": {
+        "url": "https://www.linovelib.com/s/@post->searchkey=${key}&searchtype=all",
+        "list": ".search-result-list",
+        "name": "h2",
+        "author": ".bookinfo > a:nth-child(1)",
+        "cover": "a > img",
+        "detail": "h2 > a"
+    },
+    "detail": {
+        "name": ".book-name",
+        "author": ".au-name",
+        "cover": ".book-img > img",
+        "summary": ".book-dec > p",
+        "status": ".state",
+        "category": ".book-label > span",
+        "words": ".nums > span:nth-child(1) > i",
+        "update": ".book-new-chapter > div:nth-child(2) > div",
+        "lastChapter": ".book-new-chapter > div:nth-child(2) > a",
+        "catalog": ".read-btn"
+    },
+    "catalog": {
+        "list": ".chapter-list > li",
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": "#TextContent",
+        "page": ".mlfy_page > a:nth-child(5):matches(下一章)",
+        "purify": ["（本章未完）"]
+    },
+    "rank": [
+        {
+            "title":"全部",
+            "url": "https://www.linovelib.com/wenku/lastupdate_0_0_0_0_0_0_0_${page}_0.html",
+            "page": 1,
+            "list":".bookbox",
+            "name": ".bookname",
+            "author": ".bookilnk > span:nth-child(1)",
+            "cover": ".bookimg > a > img@attr->data-original",
+            "summary": ".bookintro",
+            "detail": ".bookname > a"
+        },
+        {
+            "title":"一迅社",
+            "url": "https://www.linovelib.com/wenku/lastupdate_0_8_0_0_0_0_0_${page}_0.html",
+            "page": 1,
+            "list":".bookbox",
+            "name": ".bookname",
+            "author": ".bookilnk > span:nth-child(1)",
+            "cover": ".bookimg > a > img@attr->data-original",
+            "summary": ".bookintro",
+            "detail": ".bookname > a"
+        },
+        {
+            "title":"集英社",
+            "url": "https://www.linovelib.com/wenku/lastupdate_0_9_0_0_0_0_0_${page}_0.html",
+            "page": 1,
+            "list":".bookbox",
+            "name": ".bookname",
+            "author": ".bookilnk > span:nth-child(1)",
+            "cover": ".bookimg > a > img@attr->data-original",
+            "summary": ".bookintro",
+            "detail": ".bookname > a"
+        },
+        {
+            "title":"小学馆",
+            "url": "https://www.linovelib.com/wenku/lastupdate_0_10_0_0_0_0_0_${page}_0.html",
+            "page": 1,
+            "list":".bookbox",
+            "name": ".bookname",
+            "author": ".bookilnk > span:nth-child(1)",
+            "cover": ".bookimg > a > img@attr->data-original",
+            "summary": ".bookintro",
+            "detail": ".bookname > a"
+        },
+        {
+            "title":"讲谈社",
+            "url": "https://www.linovelib.com/wenku/lastupdate_0_11_0_0_0_0_0_${page}_0.html",
+            "page": 1,
+            "list":".bookbox",
+            "name": ".bookname",
+            "author": ".bookilnk > span:nth-child(1)",
+            "cover": ".bookimg > a > img@attr->data-original",
+            "summary": ".bookintro",
+            "detail": ".bookname > a"
+        },
+        {
+            "title":"GA文库",
+            "url": "https://www.linovelib.com/wenku/lastupdate_0_6_0_0_0_0_0_${page}_0.html",
+            "page": 1,
+            "list":".bookbox",
+            "name": ".bookname",
+            "author": ".bookilnk > span:nth-child(1)",
+            "cover": ".bookimg > a > img@attr->data-original",
+            "summary": ".bookintro",
+            "detail": ".bookname > a"
+        },
+        {
+            "title":"HJ文库",
+            "url": "https://www.linovelib.com/wenku/lastupdate_0_7_0_0_0_0_0_${page}_0.html",
+            "page": 1,
+            "list":".bookbox",
+            "name": ".bookname",
+            "author": ".bookilnk > span:nth-child(1)",
+            "cover": ".bookimg > a > img@attr->data-original",
+            "summary": ".bookintro",
+            "detail": ".bookname > a"
+        },
+        {
+            "title":"电击文库",
+            "url": "https://www.linovelib.com/wenku/lastupdate_0_1_0_0_0_0_0_${page}_0.html",
+            "page": 1,
+            "list":".bookbox",
+            "name": ".bookname",
+            "author": ".bookilnk > span:nth-child(1)",
+            "cover": ".bookimg > a > img@attr->data-original",
+            "summary": ".bookintro",
+            "detail": ".bookname > a"
+        },
+        {
+            "title":"角川文库",
+            "url": "https://www.linovelib.com/wenku/lastupdate_0_3_0_0_0_0_0_${page}_0.html",
+            "page": 1,
+            "list":".bookbox",
+            "name": ".bookname",
+            "author": ".bookilnk > span:nth-child(1)",
+            "cover": ".bookimg > a > img@attr->data-original",
+            "summary": ".bookintro",
+            "detail": ".bookname > a"
+        },
+        {
+            "title":"少女文库",
+            "url": "https://www.linovelib.com/wenku/lastupdate_0_12_0_0_0_0_0_${page}_0.html",
+            "page": 1,
+            "list":".bookbox",
+            "name": ".bookname",
+            "author": ".bookilnk > span:nth-child(1)",
+            "cover": ".bookimg > a > img@attr->data-original",
+            "summary": ".bookintro",
+            "detail": ".bookname > a"
+        },
+        {
+            "title":"其他文库",
+            "url": "https://www.linovelib.com/wenku/lastupdate_0_13_0_0_0_0_0_${page}_0.html",
+            "page": 1,
+            "list":".bookbox",
+            "name": ".bookname",
+            "author": ".bookilnk > span:nth-child(1)",
+            "cover": ".bookimg > a > img@attr->data-original",
+            "summary": ".bookintro",
+            "detail": ".bookname > a"
+        },
+        {
+            "title":"轻改漫画",
+            "url": "https://www.linovelib.com/wenku/lastupdate_0_15_0_0_0_0_0_${page}_0.html",
+            "page": 1,
+            "list":".bookbox",
+            "name": ".bookname",
+            "author": ".bookilnk > span:nth-child(1)",
+            "cover": ".bookimg > a > img@attr->data-original",
+            "summary": ".bookintro",
+            "detail": ".bookname > a"
+        },
+        {
+            "title":"MF文库J",
+            "url": "https://www.linovelib.com/wenku/lastupdate_0_4_0_0_0_0_0_${page}_0.html",
+            "page": 1,
+            "list":".bookbox",
+            "name": ".bookname",
+            "author": ".bookilnk > span:nth-child(1)",
+            "cover": ".bookimg > a > img@attr->data-original",
+            "summary": ".bookintro",
+            "detail": ".bookname > a"
+        },
+        {
+            "title":"Fami通文库",
+            "url": "https://www.linovelib.com/wenku/lastupdate_0_5_0_0_0_0_0_${page}_0.html",
+            "page": 1,
+            "list":".bookbox",
+            "name": ".bookname",
+            "author": ".bookilnk > span:nth-child(1)",
+            "cover": ".bookimg > a > img@attr->data-original",
+            "summary": ".bookintro",
+            "detail": ".bookname > a"
+        },
+        {
+            "title":"富士见文库",
+            "url": "https://www.linovelib.com/wenku/lastupdate_0_2_0_0_0_0_0_${page}_0.html",
+            "page": 1,
+            "list":".bookbox",
+            "name": ".bookname",
+            "author": ".bookilnk > span:nth-child(1)",
+            "cover": ".bookimg > a > img@attr->data-original",
+            "summary": ".bookintro",
+            "detail": ".bookname > a"
+        },
+        {
+            "title":"华文轻小说",
+            "url": "https://www.linovelib.com/wenku/lastupdate_0_14_0_0_0_0_0_${page}_0.html",
+            "page": 1,
+            "list":".bookbox",
+            "name": ".bookname",
+            "author": ".bookilnk > span:nth-child(1)",
+            "cover": ".bookimg > a > img@attr->data-original",
+            "summary": ".bookintro",
+            "detail": ".bookname > a"
+        }
+    ]
+}

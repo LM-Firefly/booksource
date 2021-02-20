@@ -1,14 +1,14 @@
 {
     "name": "息壤中文网",
     "url": "xrzww.com",
-    "version": 101,
+    "version": 102,
     "search": {
-        "url": "https://pre-api.xrzww.com/api/search?type=1&keyword=${key}",
+        "url": "https://android-api.xrzww.com/api/search?keyword=${key}&type=1",
         "list": "$.data.data",
         "name": "$.novel_name",
         "author": "$.novel_author",
         "cover": "http://oss.xrzww.com/${$.novel_cover}",
-        "detail": "https://pre-api.xrzww.com/api/detail?novel_id=${$.novel_id}"
+        "detail": "https://android-api.xrzww.com/api/detail?novel_id=${$.novel_id}"
     },
     "detail": {
         "summary": "$.data.novel_info",
@@ -16,12 +16,13 @@
         "category": "$.data.novel_tags@replace->,-> ",
         "words": "$.data.novel_wordnumber",
         "lastChapter": "$.data.novel_newcname",
-        "catalog": "https://pre-api.xrzww.com/api/directoryList?nid=${$.data.novel_id}&orderBy=0"
+        "update": "$.data.novel_uptime",
+        "catalog": "https://android-api.xrzww.com/api/directoryList?nid=${$.data.novel_id}"
     },
     "catalog": {
         "list": "$.data.data",
         "name": "$.chapter_name",
-        "chapter": "https://pre-api.xrzww.com/api/newRead?nid=${$.chapter_nid}&vid=${$.chapter_vid}&chapter_id=${$.chapter_id}&chapter_order=${$.chapter_order}"
+        "chapter": "https://android-api.xrzww.com/api/readNew?chapter_id=${$.chapter_id}&nid=${$.chapter_nid}&chapter_order=${$.chapter_order}&vid=${$.chapter_vid}"
     },
     "chapter": {
         "content": "$.data.content"
