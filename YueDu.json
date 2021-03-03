@@ -10979,6 +10979,141 @@
         "weight": 0
     },
     {
+        "bookSourceGroup": "🍺特优",
+        "bookSourceName": "🍺爱下电子书",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https:\/\/m.aixdzs.com",
+        "bookUrlPattern": "",
+        "customOrder": -2210,
+        "enabled": true,
+        "enabledExplore": true,
+        "exploreUrl": "玄幻奇幻::\/sort\/1\/?page={{page}}\n修真仙侠::\/sort\/2\/?page={{page}}\n都市青春::\/sort\/3\/?page={{page}}\n历史军事::\/sort\/4\/?page={{page}}\n网游竞技::\/sort\/5\/?page={{page}}\n科幻灵异::\/sort\/6\/?page={{page}}\n言情穿越::\/sort\/7\/?page={{page}}\n耽美同人::\/sort\/8\/?page={{page}}\n台言古言::\/sort\/9\/?page={{page}}\n武侠小说::\/sort\/10\/?page={{page}}\n古典文学::\/sort\/11\/?page={{page}}\n侦探推理::\/sort\/12\/?page={{page}}\n外国文学::\/sort\/13\/?page={{page}}\n当代现代::\/sort\/14\/?page={{page}}\n童话故事::\/sort\/15\/?page={{page}}\n传记纪实::\/sort\/16\/?page={{page}}\n韩流青春::\/sort\/17\/?page={{page}}\n影视文学::\/sort\/18\/?page={{page}}\n其他类别::https:\/\/m.aixdzs.com\/sort\/0\/?page={{page}}",
+        "header": "{\n  \"User-Agent\": \"Mozilla\/5.0 (Linux; Android 9; ONEPLUS A5000 Build\/PKQ1.180716.001; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/71.0.3578.99 Mobile Safari\/537.36\"\n}",
+        "lastUpdateTime": 0,
+        "loginUrl": "",
+        "ruleBookInfo": {
+            "author": "",
+            "coverUrl": "tag.img.0@src",
+            "intro": "id.intro@text",
+            "kind": "",
+            "lastChapter": "",
+            "name": "h4@text",
+            "tocUrl": "class.book-act@tag.a@href"
+        },
+        "ruleContent": {
+            "content": "section@html"
+        },
+        "ruleExplore": {},
+        "ruleSearch": {
+            "author": "class.book-author@text",
+            "bookList": "@css:ul li:has(img)",
+            "bookUrl": "h3@a@href",
+            "coverUrl": "tag.img@src",
+            "intro": "tag.p.0@a@text",
+            "kind": "class.lightgreen@text",
+            "lastChapter": "tag.p.2@a@text",
+            "name": "h3@a@text",
+            "wordCount": "class.smallblue@text"
+        },
+        "ruleToc": {
+            "chapterList": "@css:ul li a",
+            "chapterName": "text",
+            "chapterUrl": "href",
+            "nextTocUrl": "@js:\nvar n=result.match(\/共(\\d+)章\/)[1];\nn = parseInt(n\/50);\nif(n>=2){var list=[];\nfor(var i=2;i<=n+1;i++){\nvar url=baseUrl+'?page='+i;\nlist.push(url);\n}\nlist}"
+        },
+        "searchUrl": "\/search\/?k={{key}}&page={{page}}",
+        "weight": 0
+    },
+    {
+        "bookSourceComment": "该书源的正文规则与替换规则可用于所有开头是\n天才一秒钟。。。。。的乱码网站，\n如遇到，请复制该源的正文规则和替换规则到那个源，\n由酷安@天天gg大佬提供",
+        "bookSourceGroup": "🍺特优",
+        "bookSourceName": "🍺新乐文",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https:\/\/www.js-zkhb.com",
+        "customOrder": 25,
+        "enabled": true,
+        "enabledExplore": true,
+        "lastUpdateTime": 1605596716031,
+        "ruleBookInfo": {
+            "coverUrl": "class.ku-top@img@src",
+            "kind": "class.kt-01@a@text",
+            "lastChapter": "id.chapters@tag.li.-1@a@text",
+            "wordCount": "class.u-btn01@text"
+        },
+        "ruleContent": {
+            "content": "@js:\nvar sourceChars=[\"%uE800\",\"%uE801\",\"%uE802\",\"%uE803\",\"%uE804\",\"%uE805\",\"%uE806\",\"%uE807\",\"%uE808\",\"%uE809\",\"%uE80A\",\"%uE80B\",\"%uE80C\",\"%uE80D\",\"%uE80E\",\"%uE80F\",\"%uE810\",\"%uE811\",\"%uE812\",\"%uE813\",\"%uE814\",\"%uE815\",\"%uE816\",\"%uE817\",\"%uE818\",\"%uE819\",\"%uE81A\",\"%uE81B\",\"%uE81C\",\"%uE81D\",\"%uE81E\",\"%uE81F\",\"%uE820\",\"%uE821\",\"%uE822\",\"%uE823\",\"%uE824\",\"%uE825\",\"%uE826\",\"%uE827\",\"%uE828\",\"%uE829\",\"%uE82A\",\"%uE82B\",\"%uE82C\",\"%uE82D\",\"%uE82E\",\"%uE82F\",\"%uE830\",\"%uE831\",\"%uE832\",\"%uE833\",\"%uE834\",\"%uE835\",\"%uE836\",\"%uE837\",\"%uE838\",\"%uE839\",\"%uE83A\",\"%uE83B\",\"%uE83C\",\"%uE83D\",\"%uE83E\",\"%uE83F\",\"%uE840\",\"%uE841\",\"%uE842\",\"%uE843\",\"%uE844\",\"%uE845\",\"%uE846\",\"%uE847\",\"%uE848\",\"%uE849\",\"%uE84A\",\"%uE84B\",\"%uE84C\",\"%uE84D\",\"%uE84E\",\"%uE84F\",\"%uE850\",\"%uE851\",\"%uE852\",\"%uE853\",\"%uE854\",\"%uE855\",\"%uE856\",\"%uE857\",\"%uE858\",\"%uE859\",\"%uE85A\",\"%uE85B\",\"%uE85C\",\"%uE85D\",\"%uE85E\",\"%uE85F\",\"%uE860\",\"%uE861\",\"%uE862\",\"%uE863\"]\n\nvar displayChars=\"的一是了我不人在他有这个上们来到时大地为子中你说生国年着就那和要她出也得里后自以会家可下而过天去能对小多然于心学么之都好看起发当没成只如事把还用第样道想作种开美总从无情己面最女但现前些所同日手又行意动\";\n\nvar slect=\"i\";\n\nfunction convertChar(str) {\nlet index = sourceChars.indexOf(str)\nif(index != -1) return displayChars[index]\n}\n\nvar doc = org.jsoup.Jsoup.parse(result).select('#txt');\ndoc.select(slect).toArray().forEach(ele=>{\nlet str = escape(ele.text());\nele.text(convertChar(str))\n})\ndoc.select(\"h1\").remove();\ndoc.html()+'❌';",
+            "nextContentUrl": "text.下一章@href",
+            "replaceRegex": "##天才一秒钟记住本网站《.*》更新最快的小说网站!\\n|《.*》来源.*|第.*章(：).*[威微]信里搜索公众号: .*|下载APP阅读优势：[\\s\\S]+|这本小说的最新章节您已经读完[\\s\\S]+|，，，，|\\s*❌\\s*"
+        },
+        "ruleExplore": {},
+        "ruleSearch": {
+            "author": "h3@text##.*?作者：",
+            "bookList": "@css:.shlist li:lt(10)",
+            "bookUrl": "tag.a.0@href",
+            "intro": "tag.p@html",
+            "lastChapter": "tag.a.0@href<js>java.ajax(result)<\/js>id.chapters@tag.li.-1@a@text",
+            "name": "h3@text##\\s*作者：.*"
+        },
+        "ruleToc": {
+            "chapterList": "id.chapters@li@a",
+            "chapterName": "text",
+            "chapterUrl": "href"
+        },
+        "searchUrl": "https:\/\/www.js-zkhb.com\/search.html?keyword={{key}}&submit=yes",
+        "weight": 0
+    },
+    {
+        "bookSourceComment": "",
+        "bookSourceGroup": "🍺特优",
+        "bookSourceName": "🍺8文库",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https:\/\/www.8wenku.com",
+        "customOrder": -38455,
+        "enabled": true,
+        "enabledExplore": true,
+        "exploreUrl": "玄幻小说::\/xuanhuan\/1_{{page}}.html&&穿越小说::\/chuanyue\/4_{{page}}.html&&网游小说::\/wangyou\/5_{{page}}.html&&科幻小说::\/kehuan\/6_{{page}}.html&&排行榜单::\/paihangbang\/&&完本小说::\/wanben\/1_{{page}}&&",
+        "header": "{\n  \"User-Agent\": \"Mozilla\/5.0 (Linux; Android 8.1.0; JKM-AL00b Build\/HUAWEIJKM-AL00b; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/66.0.3359.126 MQQBrowser\/6.2 TBS\/044807 Mobile Safari\/537.36\"\n}",
+        "lastUpdateTime": 1613007465181,
+        "ruleBookInfo": {
+            "author": "[property=\"og:novel:author\"]@content",
+            "coverUrl": "[property=\"og:image\"]@content",
+            "intro": "[property=\"og:description\"]@content",
+            "kind": "[property=\"og:novel:category\"]@content",
+            "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
+            "name": "[property=\"og:novel:book_name\"]@content"
+        },
+        "ruleContent": {
+            "content": "#content@html",
+            "nextContentUrl": "text.下一页@href||text.下一章@href"
+        },
+        "ruleExplore": {
+            "author": ".s5@text",
+            "bookList": ".l ul li||.box ul li",
+            "bookUrl": "tag.a.0@href",
+            "coverUrl": "tag.a.0@href<js>\nvar id = result.match(\/(\\d+)$\/)[1];\nvar iid = parseInt(id\/1000);\n'http:\/\/www.8wenku.com\/files\/article\/image\/'+iid+'\/'+id+'\/'+id+'s.jpg';\n<\/js>",
+            "intro": "",
+            "lastChapter": "tag.a.1@text",
+            "name": "tag.a.0@text||a@text##总|周|月|日|更多"
+        },
+        "ruleSearch": {
+            "author": "tag.td.2@text",
+            "bookList": "tr#nr",
+            "bookUrl": "tag.a.0@href",
+            "coverUrl": "tag.a.0@href<js>\nvar id = result.match(\/(\\d+)$\/)[1];\nvar iid = parseInt(id\/1000);\n'http:\/\/www.8wenku.com\/files\/article\/image\/'+iid+'\/'+id+''\/'+id+'s.jpg';\n<\/js>",
+            "kind": "tag.td.5@text",
+            "lastChapter": "tag.a.1@text",
+            "name": "tag.a.0@text",
+            "wordCount": "tag.td.3@text"
+        },
+        "ruleToc": {
+            "chapterList": "#list dl dd a",
+            "chapterName": "text",
+            "chapterUrl": "href"
+        },
+        "searchUrl": "https:\/\/www.8wenku.com\/modules\/article\/search.php?searchkey={{key}}&searchtype=articlename&page={{page}},{\"charset\": \"gbk\"}",
+        "weight": 0
+    },
+    {
         "bookSourceComment": "",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺格格党小说网",
