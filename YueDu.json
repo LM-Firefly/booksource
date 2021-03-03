@@ -10936,6 +10936,51 @@
     {
         "bookSourceComment": "",
         "bookSourceGroup": "🍺特优",
+        "bookSourceName": "🍺雷云阁",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https:\/\/www.leiyungewx.com",
+        "bookUrlPattern": "",
+        "customOrder": 4,
+        "enabled": true,
+        "enabledExplore": true,
+        "exploreUrl": "首页::https:\/\/www.leiyungewx.com\/\n玄幻::https:\/\/www.leiyungewx.com\/list\/1_{{page}}.shtml\n武侠::https:\/\/www.leiyungewx.com\/list\/2_{{page}}.shtml\n言情::https:\/\/www.leiyungewx.com\/list\/3_{{page}}.shtml\n历史::https:\/\/www.leiyungewx.com\/list\/4_{{page}}.shtml\n穿越::https:\/\/www.leiyungewx.com\/list\/5_{{page}}.shtml\n网游::https:\/\/www.leiyungewx.com\/list\/6_{{page}}.shtml\n科幻::https:\/\/www.leiyungewx.com\/list\/7_{{page}}.shtml\n同人::https:\/\/www.leiyungewx.com\/list\/8_{{page}}.shtml\n女生::https:\/\/www.leiyungewx.com\/list\/9_{{page}}.shtml\n其他::https:\/\/www.leiyungewx.com\/list\/10_{{page}}.shtml",
+        "header": "",
+        "lastUpdateTime": 1614104567263,
+        "loginUrl": "",
+        "ruleBookInfo": {
+            "author": "class.excerpt@tag.a.1@text",
+            "kind": "class.excerpt@tag.a.0@text",
+            "lastChapter": "class.wrapper@tag.h2@tag.a.1@text",
+            "name": "class.wrapper@tag.h1@text",
+            "tocUrl": "class.wrapper@tag.h2@tag.a.0@href"
+        },
+        "ruleContent": {
+            "content": "id.content@html",
+            "nextContentUrl": ""
+        },
+        "ruleExplore": {
+            "bookList": "",
+            "bookUrl": "",
+            "name": ""
+        },
+        "ruleSearch": {
+            "author": "",
+            "bookList": "li.min-width",
+            "bookUrl": "tag.a.1@href",
+            "lastChapter": "li.min-width@ownText##\\[|\\]|\\：",
+            "name": "tag.a.1@text"
+        },
+        "ruleToc": {
+            "chapterList": "class.min-width",
+            "chapterName": "class.min-width@text",
+            "chapterUrl": "tag.a@href"
+        },
+        "searchUrl": "https:\/\/www.leiyungewx.com\/modules\/article\/search.php,{\n\"charset\": \"gbk\",\n\"method\":\"POST\",\n\"body\":\"searchkey={{key}}&page={{page}}\"\n}",
+        "weight": 0
+    },
+    {
+        "bookSourceComment": "",
+        "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺格格党小说网",
         "bookSourceType": 0,
         "bookSourceUrl": "https://www.52ggd.com",
