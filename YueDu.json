@@ -10937,65 +10937,48 @@
         "weight": 0
     },
     {
-        "bookSourceComment": "",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺中文书城",
         "bookSourceType": 0,
-        "bookSourceUrl": "https://cread.com",
-        "bookUrlPattern": "",
-        "customOrder": 1054,
+        "bookSourceUrl": "http:\/\/m.cread.com",
+        "customOrder": -855,
         "enabled": true,
         "enabledExplore": true,
+        "exploreUrl": "综合::\/bookstore\/0\/0\/0\/{{page}}\n热读::\/bookstore\/0\/0\/1\/{{page}}\n更新::\/bookstore\/0\/0\/2\/{{page}}\n点击::\/bookstore\/0\/0\/3\/{{page}}\n订阅::\/bookstore\/0\/0\/4\/{{page}}\n东方玄幻::\/bookstore\/1\/1100\/0\/{{page}}\n都市小说::\/bookstore\/1\/1200\/0\/{{page}}\n西方奇幻::\/bookstore\/1\/1300\/0\/{{page}}\n武侠仙侠::\/bookstore\/1\/1400\/0\/{{page}}\n架空历史::\/bookstore\/1\/1500\/0\/{{page}}\n科幻未来::\/bookstore\/1\/1600\/0\/{{page}}\n网游竞技::\/bookstore\/1\/1700\/0\/{{page}}\n悬疑惊悚::\/bookstore\/1\/1800\/0\/{{page}}\n古代言情::\/bookstore\/2\/2100\/0\/{{page}}\n幻想言情::\/bookstore\/2\/2200\/0\/{{page}}\n都市言情::\/bookstore\/2\/2300\/0\/{{page}}\n总裁豪门::\/bookstore\/2\/2400\/0\/{{page}}\n青春校园::\/bookstore\/2\/2500\/0\/{{page}}\n唯美同人::\/bookstore\/2\/2600\/0\/{{page}}\n文学小说::\/bookstore\/3\/3100\/0\/{{page}}\n经典名著::\/bookstore\/3\/3200\/0\/{{page}}\n经管励志::\/bookstore\/3\/3300\/0\/{{page}}\n生活休闲::\/bookstore\/3\/3400\/0\/{{page}}\n婚姻家庭::\/bookstore\/3\/3500\/0\/{{page}}\n科普教育::\/bookstore\/3\/3600\/0\/{{page}}\n纪实传记::\/bookstore\/3\/3700\/0\/{{page}}\n亲子育儿::\/bookstore\/3\/3800\/0\/{{page}}\n工具百科::\/bookstore\/3\/3900\/0\/{{page}}\n新书榜::\/topbook_bangdan.aspx?phid=10&page={{page}}\/{{page}}\n热搜榜::\/topbook_bangdan.aspx?phid=11&page={{page}}\/{{page}}\n畅销榜::\/topbook_bangdan.aspx?phid=12&page={{page}}\/{{page}}\n男生追书榜::\/topbook_bangdan.aspx?phid=13&page={{page}}\/{{page}}\n女生人气榜::\/topbook_bangdan.aspx?phid=14&page={{page}}\/{{page}}\n男生完结榜::\/topbook_bangdan.aspx?phid=15&page={{page}}\/{{page}}\n女生完结榜::\/topbook_bangdan.aspx?phid=16&page={{page}}\/{{page}}\n出版好评榜::\/topbook_bangdan.aspx?phid=17&page={{page}}\/{{page}}",
+        "header": "{\n    \"User-Agent\": \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/77.0.3865.120 Safari\/537.36\",\n    \"Accept-Language\":\"zh-CN,zh;q=0.9\"\n}",
         "lastUpdateTime": 0,
-        "loginUrl": "",
+        "loginUrl": "http:\/\/m.cread.com\/user\/login.aspx",
         "ruleBookInfo": {
-            "author": "",
-            "coverUrl": "",
-            "init": "",
-            "intro": "",
-            "kind": "",
-            "lastChapter": "",
-            "name": "",
-            "tocUrl": "",
+            "author": "##作者：([^<]+)<##$1###",
+            "coverUrl": "class.ui_bookinfo_cover@img@src",
+            "intro": "class.jianjie_intro@text",
+            "kind": "class.ui_bookinfo_tag@li@text",
+            "lastChapter": "class.zw_flex.1@span@text",
+            "name": "class.ui_head_bookname@text",
+            "tocUrl": "class.ui_bookinfo_catalog zw_box@a@href",
             "wordCount": ""
         },
         "ruleContent": {
-            "content": "@js:result.replace(/.*　|.*\u0001/,\"\")",
-            "nextContentUrl": "",
-            "sourceRegex": "",
-            "webJs": ""
+            "content": "id.uiContent@html"
         },
-        "ruleExplore": {
-            "author": "",
-            "bookList": "",
-            "bookUrl": "",
-            "coverUrl": "",
-            "intro": "",
-            "kind": "",
-            "lastChapter": "",
-            "name": "",
-            "wordCount": ""
-        },
+        "ruleExplore": {},
         "ruleSearch": {
-            "author": "author",
-            "bookList": "$.result.dataList",
-            "bookUrl": "/book/getCatalogAndBook?cnid=3022&uid=168260955&son=CU&osv=9&idSign=&bookid={$.bookId}",
-            "coverUrl": "cover",
-            "intro": "summary",
-            "kind": "categoryName",
+            "author": "class.ui_authorname@text",
+            "bookList": "id.uiUL@li",
+            "bookUrl": "tag.a.0@href",
+            "coverUrl": "img@src",
+            "intro": "class.intro@text",
+            "kind": "{{@@class.lb_score@text}}分",
             "lastChapter": "",
-            "name": "$.bookName@put:{book:bookId}",
-            "wordCount": ""
+            "name": "class.bookname@text"
         },
         "ruleToc": {
-            "chapterList": "$.result.bookData[*].chapter[*]",
-            "chapterName": "$.name",
-            "chapterUrl": "/book/content?cnid=3022&uid=168260955&packname=com.chineseall.singlebook&vcode=156&channelId=3022&aid=b972c73cd7081a2d&net=4G&son=CU&osv=9&idSign=&bid=@get:{book}&chapterIds={$.id}",
-            "isVip": "",
-            "nextTocUrl": "",
-            "updateTime": ""
+            "chapterList": "class.ul_catalog@li@a",
+            "chapterName": "class.title@text",
+            "chapterUrl": "href##$##,{\"webView\":true}",
+            "isVip": ""
         },
-        "searchUrl": "https://cread.com/search/search?&pageNo={{page}}&keyWordType=0&pageSize=20&keyWord={{key}}",
+        "searchUrl": "http:\/\/shenma.cread.com\/searchbook.aspx?key={{key}}&type=1",
         "weight": 0
     },
     {
