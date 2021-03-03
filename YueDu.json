@@ -311,68 +311,67 @@
         "weight": 0
     },
     {
-        "bookSourceComment": "",
-        "bookSourceGroup": "🍺特优",
+        "bookSourceUrl": "http:\/\/www.88xiaoshuo.com",
+        "bookSourceType": "0",
         "bookSourceName": "🍺88小说",
-        "bookSourceType": 0,
-        "bookSourceUrl": "http://www.88xiaoshuo.com",
-        "bookUrlPattern": "",
-        "customOrder": -38443,
-        "enabled": true,
-        "enabledExplore": true,
-        "exploreUrl": "",
-        "header": "",
-        "lastUpdateTime": 1604290886142,
+        "bookSourceGroup": "🍺特优",
         "loginUrl": "",
-        "ruleBookInfo": {
-            "author": "class.synopsisArea_detail@tag.p.0@text##作者：",
-            "coverUrl": "class.synopsisArea_detail@tag.img@src",
-            "init": "",
-            "intro": "class.review@text",
-            "kind": "class.synopsisArea_detail@tag.p.1@text##类别：",
-            "lastChapter": "",
+        "bookUrlPattern": "",
+        "header": "",
+        "searchUrl": "http:\/\/m.88xiaoshuo.com\/so.html,{\n  \"method\": \"POST\",\n  \"body\": \"keyword={{key}}\"\n}",
+        "exploreUrl": "",
+        "enabled": true,
+        "enabledExplore": false,
+        "weight": 0,
+        "customOrder": 0,
+        "lastUpdateTime": 0,
+        "ruleSearch": {
+            "bookList": "class.hot_sale",
             "name": "class.title.0@text",
-            "tocUrl": "class.recommend@tag.h2.1@tag.a@href",
-            "wordCount": ""
-        },
-        "ruleContent": {
-            "content": "id.chaptercontent@textNodes",
-            "nextContentUrl": "",
-            "sourceRegex": "",
-            "webJs": ""
+            "author": "class.author.0@text##.*作者：",
+            "kind": "class.author.0@text##(.*) | 作者：##$1###",
+            "wordCount": "",
+            "lastChapter": "class.author.1@tag.a@text",
+            "intro": "",
+            "coverUrl": "",
+            "bookUrl": "class.hot_sale.0@tag.a@href"
         },
         "ruleExplore": {
-            "author": "",
             "bookList": "",
-            "bookUrl": "",
-            "coverUrl": "",
-            "intro": "",
-            "kind": "",
-            "lastChapter": "",
             "name": "",
-            "wordCount": ""
-        },
-        "ruleSearch": {
-            "author": "class.author.0@text##.*作者：",
-            "bookList": "class.hot_sale",
-            "bookUrl": "class.hot_sale.0@tag.a@href",
-            "coverUrl": "",
+            "author": "",
+            "kind": "",
+            "wordCount": "",
+            "lastChapter": "",
             "intro": "",
-            "kind": "class.author.0@text##(.*) | 作者：##$1###",
-            "lastChapter": "class.author.1@tag.a@text",
+            "coverUrl": "",
+            "bookUrl": ""
+        },
+        "ruleBookInfo": {
+            "init": "",
             "name": "class.title.0@text",
-            "wordCount": ""
+            "author": "class.synopsisArea_detail@tag.p.0@text##作者：",
+            "kind": "class.synopsisArea_detail@tag.p.1@text##类别：",
+            "wordCount": "",
+            "lastChapter": "",
+            "intro": "class.review@text",
+            "coverUrl": "class.synopsisArea_detail@tag.img@src",
+            "tocUrl": "class.recommend@tag.h2.1@tag.a@href"
         },
         "ruleToc": {
             "chapterList": "id.chapterlist@tag.p!0",
             "chapterName": "tag.a@text",
             "chapterUrl": "tag.a@href",
             "isVip": "",
-            "nextTocUrl": "",
-            "updateTime": ""
+            "updateTime": "",
+            "nextTocUrl": ""
         },
-        "searchUrl": "http://m.88xiaoshuo.com/so.html,{\n  \"method\": \"POST\",\n  \"body\": \"keyword={{key}}\"\n}",
-        "weight": 0
+        "ruleContent": {
+            "content": "id.chaptercontent@textNodes",
+            "nextContentUrl": "",
+            "webJs": "",
+            "sourceRegex": ""
+        }
     },
     {
         "bookSourceComment": "",
@@ -419,6 +418,63 @@
             "nextTocUrl": "text.下一页@href"
         },
         "searchUrl": "/search.html,{\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}\"\n}",
+        "weight": 0
+    },
+    {
+        "bookSourceComment": "haxc",
+        "bookSourceGroup": "🍺特优",
+        "bookSourceName": "🍺大海中文网",
+        "bookSourceType": 0,
+        "bookSourceUrl": "http:\/\/m.dhzw.cc",
+        "customOrder": -38471,
+        "enabled": true,
+        "enabledExplore": true,
+        "exploreUrl": "玄幻小说::\/list\/1_{{page}}.html\n言情小说::\/list\/2_{{page}}.html\n仙侠小说::\/list\/3_{{page}}.html\n都市小说::\/list\/4_{{page}}.html\n历史小说::\/list\/5_{{page}}.html\n网游小说::\/list\/6_{{page}}.html\n竞技小说::\/list\/7_{{page}}.html\n科幻小说::\/list\/8_{{page}}.html",
+        "header": "",
+        "lastUpdateTime": 1609125730344,
+        "loginUrl": "",
+        "ruleBookInfo": {
+            "author": "[property=\"og:novel:author\"]@content",
+            "coverUrl": "[property=\"og:image\"]@content",
+            "init": "",
+            "intro": "class.intro@text",
+            "kind": "[property=\"og:novel:category\"]@content",
+            "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
+            "name": "[property=\"og:novel:book_name\"]@content",
+            "tocUrl": "class.more@tag.a@href"
+        },
+        "ruleContent": {
+            "content": "id.nr1@html",
+            "imageStyle": "",
+            "nextContentUrl": "id.pb_next@href"
+        },
+        "ruleExplore": {
+            "author": "",
+            "bookList": "",
+            "bookUrl": "",
+            "coverUrl": "",
+            "intro": "",
+            "name": ""
+        },
+        "ruleSearch": {
+            "author": "class.mr15@text##作者:",
+            "bookList": "class.list-item",
+            "bookUrl": "tag.a.0@href",
+            "coverUrl": "tag.img@src",
+            "intro": "class.fs12.1@text",
+            "kind": "",
+            "lastChapter": "",
+            "name": "class.article@tag.a.0@text",
+            "wordCount": ""
+        },
+        "ruleToc": {
+            "chapterList": "ul@tag.li!0",
+            "chapterName": "tag.a@text",
+            "chapterUrl": "tag.a.0@href",
+            "isVip": "",
+            "nextTocUrl": "text.下一页@href"
+        },
+        "searchUrl": "http:\/\/m.dhzw.cc\/modules\/article\/search.php?searchtype=articlename&searchkey={{key}}&t_btnsearch=,{\"charset\":\"gbk\"}",
         "weight": 0
     },
     {
