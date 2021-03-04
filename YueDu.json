@@ -8788,53 +8788,6 @@
     {
         "bookSourceComment": "",
         "bookSourceGroup": "🍑耽美",
-        "bookSourceName": "🍑优阅读书",
-        "bookSourceType": 0,
-        "bookSourceUrl": "https://euyue.com/",
-        "bookUrlPattern": "",
-        "customOrder": -20695,
-        "enabled": true,
-        "enabledExplore": true,
-        "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko, By Black Prism) Chrome/90.0.4402.0 Safari/537.36\"\n}",
-        "lastUpdateTime": 0,
-        "loginUrl": "",
-        "ruleBookInfo": {
-            "author": "class.author@tag.a@text",
-            "coverUrl": "class.detail@tag.img@src",
-            "intro": "class.intro.0@tag.p.0@textNodes",
-            "kind": "",
-            "lastChapter": "class.new@tag.a@text",
-            "name": "class.name@text",
-            "tocUrl": "class.now@tag.a@href",
-            "wordCount": "class.layui-bg-red@text"
-        },
-        "ruleContent": {
-            "content": "class.content@tag.p!-1@text",
-            "imageStyle": "0"
-        },
-        "ruleExplore": {},
-        "ruleSearch": {
-            "author": "class.data.0@tag.a@text",
-            "bookList": "class.list@tag.li",
-            "bookUrl": "tag.a.0@href",
-            "coverUrl": "tag.img@src",
-            "intro": "class.intro@text",
-            "kind": "tag.span@text",
-            "lastChapter": "class.data.1@tag.a@text",
-            "name": "class.bookname@tag.a@text"
-        },
-        "ruleToc": {
-            "chapterList": "class.read@tag.li",
-            "chapterName": "tag.a@text",
-            "chapterUrl": "tag.a@href",
-            "nextTocUrl": "text.下一页@href"
-        },
-        "searchUrl": "/search.html,{\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}\"\n}",
-        "weight": 0
-    },
-    {
-        "bookSourceComment": "",
-        "bookSourceGroup": "🍑耽美",
         "bookSourceName": "🍑笔趣阁中国",
         "bookSourceType": 0,
         "bookSourceUrl": "https://djychina.com/",
@@ -9162,50 +9115,45 @@
         "weight": 0
     },
     {
-        "bookSourceComment": "",
         "bookSourceGroup": "🍑耽美",
         "bookSourceName": "🍑腐书网",
         "bookSourceType": 0,
-        "bookSourceUrl": "https://fubooks.org/",
-        "bookUrlPattern": "",
-        "customOrder": -20692,
+        "bookSourceUrl": "https:\/\/m.fubooks.org",
+        "customOrder": -2314,
         "enabled": true,
         "enabledExplore": true,
-        "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko, By Black Prism) Chrome/90.0.4402.0 Safari/537.36\"\n}",
         "lastUpdateTime": 0,
-        "loginUrl": "",
         "ruleBookInfo": {
-            "author": "class.author@tag.a@text",
-            "coverUrl": "class.detail@tag.img@src",
-            "intro": "class.intro.0@tag.p.0@textNodes",
-            "kind": "",
-            "lastChapter": "class.new@tag.a@text",
+            "author": "class.author@tag.a.0@text",
+            "coverUrl": "[property=\"og:image\"]@content",
+            "intro": "[name=\"description\"]@content",
+            "kind": "class.author@tag.a.1@text",
+            "lastChapter": "class@new@tag.text",
             "name": "class.name@text",
             "tocUrl": "class.now@tag.a@href",
-            "wordCount": "class.layui-bg-red@text"
+            "wordCount": "class.detail@tag.span.1@text"
         },
         "ruleContent": {
-            "content": "class.content@tag.p!-1@text",
-            "imageStyle": "0"
+            "content": "class.content@tag.p!-1@textNodes"
         },
         "ruleExplore": {},
         "ruleSearch": {
-            "author": "class.data.0@tag.a@text",
+            "author": "class.data.0@tag.a.0@text",
             "bookList": "class.list@tag.li",
-            "bookUrl": "tag.a.0@href",
+            "bookUrl": "tag.a@href",
             "coverUrl": "tag.img@src",
             "intro": "class.intro@text",
-            "kind": "tag.span@text",
+            "kind": "class.data@tag.span@text",
             "lastChapter": "class.data.1@tag.a@text",
-            "name": "class.bookname@tag.a@text"
+            "name": "tag.a.1@text"
         },
         "ruleToc": {
-            "chapterList": "class.read@tag.li",
-            "chapterName": "tag.a@text",
-            "chapterUrl": "tag.a@href",
-            "nextTocUrl": "text.下一页@href"
+            "chapterList": "class.read@tag.li@tag.a",
+            "chapterName": "text",
+            "chapterUrl": "href",
+            "nextTocUrl": "class.pagelist@tag.option@value"
         },
-        "searchUrl": "/search.html,{\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}\"\n}",
+        "searchUrl": "https:\/\/m.fubooks.org\/search.html,{\n\"method\": \"POST\",\n\"body\": \"searchkey={{key}}\"\n}",
         "weight": 0
     },
     {
