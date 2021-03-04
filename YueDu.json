@@ -1363,28 +1363,27 @@
         "weight": 0
     },
     {
-        "bookSourceComment": "error:timeout\n",
+        "bookSourceComment": "点击地址栏下载\n1230之后的版本可用",
         "bookSourceGroup": "🍺特优",
-        "bookSourceName": "🍺知轩藏书",
+        "bookSourceName": "🍺知轩藏书me",
         "bookSourceType": 0,
-        "bookSourceUrl": "https://www.zxcs.me",
+        "bookSourceUrl": "https:\/\/www.zxcs.me",
         "bookUrlPattern": "",
-        "customOrder": -37098,
         "enabled": true,
         "enabledExplore": true,
-        "exploreUrl": "都市::https://www.zxcs.me/sort/23<,/page/{{page}}>\n武侠::https://www.zxcs.me/sort/36<,/page/{{page}}>\n仙侠::https://www.zxcs.me/sort/37<,/page/{{page}}>\n奇幻::https://www.zxcs.me/sort/38<,/page/{{page}}>\n玄幻::https://www.zxcs.me/sort/39<,/page/{{page}}>\n科幻::https://www.zxcs.me/sort/40<,/page/{{page}}>\n灵异::https://www.zxcs.me/sort/41<,/page/{{page}}>\n历史::https://www.zxcs.me/sort/42<,/page/{{page}}>\n军事::https://www.zxcs.me/sort/43<,/page/{{page}}>\n竞技::https://www.zxcs.me/sort/44<,/page/{{page}}>\n游戏::https://www.zxcs.me/sort/45<,/page/{{page}}>\n二次元::https://www.zxcs.me/sort/55<,/page/{{page}}>",
+        "exploreUrl": "都市::\/sort\/23\/page\/{{page}}\n历史::\/sort\/42\/page\/{{page}}\n军事::\/sort\/43\/page\/{{page}}\n武侠::\/sort\/36\/page\/{{page}}\n\n灵异::\/sort\/41\/page\/{{page}}\n仙侠::\/sort\/37\/page\/{{page}}\n奇幻::\/sort\/38\/page\/{{page}}\n玄幻::\/sort\/39\/page\/{{page}}\n\n科幻::\/sort\/40\/page\/{{page}}\n竞技::\/sort\/44\/page\/{{page}}\n游戏::\/sort\/45\/page\/{{page}}\n次元::\/sort\/55\/page\/{{page}}\n\n\n架空历史::\/tag\/架空历史\/page\/{{page}}\n清史民国::\/tag\/清史民国\/page\/{{page}}\n军事战争::\/tag\/军事战争\/page\/{{page}}\n\n官场沉浮::\/tag\/官场沉浮\/page\/{{page}}\n娱乐明星::\/tag\/娱乐明星\/page\/{{page}}\n\n都市生活::\/tag\/都市生活\/page\/{{page}}\n异术超能::\/tag\/异术超能\/page\/{{page}}\n\n灵异奇谈::\/tag\/灵异奇谈\/page\/{{page}}\n恐怖惊悚::\/tag\/恐怖惊悚\/page\/{{page}}\n悬疑探险::\/tag\/悬疑探险\/page\/{{page}}\n推理侦探::\/tag\/推理侦探\/page\/{{page}}\n\n传统武侠::\/tag\/传统武侠\/page\/{{page}}\n武侠幻想::\/tag\/武侠幻想\/page\/{{page}}\n同人小说::\/tag\/同人小说\/page\/{{page}}\n\n 新 入 库 ::\/map.html",
         "header": "",
-        "lastUpdateTime": 1601177478714,
-        "loginUrl": "随源 v20.4.1",
+        "loginUrl": "",
         "ruleBookInfo": {
             "author": "",
-            "coverUrl": "@css:#content > a img@src<js>var 木=['replace'];(function(成,川){var 夏=function(雨){while(--雨){成['push'](成['shift']());}};夏(++川);}(木,0x8f));var 成=function(蝉,紫){蝉=蝉-0x0;var 川=木[蝉];return 川;};String(result)[成('0x0')](/.*nocover.*/,'');</js>",
+            "canReName": "true",
+            "coverUrl": "id.content@tag.img@src",
             "init": "",
             "intro": "<js>eval(function(d,e,a,c,b,f){b=function(a){return(a<e?\"\":b(parseInt(a/e)))+(35<(a%=e)?String.fromCharCode(a+29):a.toString(36))};if(!\"\".replace(/^/,String)){for(;a--;)f[b(a)]=c[a]||b(a);c=[function(a){return f[a]}];b=function(){return\"\\\\w+\"};a=1}for(;a--;)c[a]&&(d=d.replace(new RegExp(\"\\\\b\"+b(a)+\"\\\\b\",\"g\"),c[a]));return d}(\"1 7=H.E.C.B(z);1 8=y.x(e.9(/.+s\\\\//,'r://q.m.f/w/h/j/k.l?I=n&o='));1 c=['\\u4ed9\\u8349','\\u7cae\\u8349','\\u5e72\\u8349','\\u67af\\u8349','\\u6bd2\\u8349'];1 4=6(8).t(',').u((v,i)=>('\\ud83c\\udff7\\ufe0f'+c[i]+' \\u27a3 '+v+'\\u4eba'+'   ').5(0,A));1 d=6(7.b('#4').D())+'<2>'+6(7.b('p:F(\\u5185\\u5bb9\\u7b80\\u4ecb)').G()).9(/.+\\u3011\\uff1a/g,'');'<2>'+4.5(0,3).a('  ')+'<2>'+4.5(3).a('  ')+'<2>'+d;\",\n45,45,\" var br  vote slice String J res replace join select voteTags intro baseUrl me  plugins  cgz_xinqing cgz_xinqing_action php zxcs show id  www http post split map  content ajax java result 12 parse Jsoup text jsoup contains html org action\".split(\" \"),0,{}));</js><js>var 颜=['$1\\x0a','replace'];(function(青,云){var 叶=function(泉){while(--泉){青['push'](青['shift']());}};叶(++云);}(颜,0x17c));var 青=function(辰,蓝){辰=辰-0x0;var 云=颜[辰];return 云;};String(result)[青('0x1')](/<\\/?p>/g,'\\x0a')['replace'](/(？|[…]+)/g,青('0x0'))[青('0x1')](/[\\t\\n]+/g,'\\x0a')[青('0x1')](/^/,'\\x0a');</js>",
-            "kind": "",
+            "kind": "class.date@tag.a!0@text",
             "lastChapter": "",
             "name": "",
-            "tocUrl": "",
+            "tocUrl": "class.down_2@tag.a@href",
             "wordCount": ""
         },
         "ruleContent": {
@@ -1405,9 +1404,9 @@
             "wordCount": ""
         },
         "ruleSearch": {
-            "author": "dt a@text##.+作者：<js>var 石=['trim'];(function(柏,巧){var 斯=function(蝉){while(--蝉){柏['push'](柏['shift']());}};斯(++巧);}(石,0x1ce));var 柏=function(望,信){望=望-0x0;var 巧=石[望];return 巧;};String(result)['replace'](/\\S+[:：]/,'')[柏('0x0')]();</js>",
-            "bookList": "dl[id]",
-            "bookUrl": "dt a@href",
+            "author": "tag.a.0@text##.*作者：",
+            "bookList": "id.plist||id.content@tag.li",
+            "bookUrl": "tag.a.0@href",
             "coverUrl": "",
             "intro": ".des@text##.+】：|[\\s\\t]+|优质订阅书源.+<js>var 安=['replace'];(function(琼,石){var 苁=function(莲){while(--莲){琼['push'](琼['shift']());}};苁(++石);}(安,0x101));var 琼=function(藤,零){藤=藤-0x0;var 石=安[藤];return 石;};String(result)[琼('0x0')](/[\\s\\t\\n]+|<\\/?p>/g,'');</js>",
             "kind": "@css:.des + dd > a@text<js>\nvar tags = String(result)\n  .replace(/\\[|\\]/g, '')\n  .trim()\n  .split(/[\\s,]+/);\nvar lastTag = tags.pop();\ntags.push('发布者：' + lastTag);\ntags.join(',');\n</js><js>var 泽=['filter','$1000','join','split','replace','trim'];(function(飞,石){var 节=function(辰){while(--辰){飞['push'](飞['shift']());}};节(++石);}(泽,0x93));var 飞=function(石,节){石=石-0x0;var 南=泽[石];return 南;};var res=String(String(result))[飞('0x1')](/[\\[\\]]/g,'')['replace'](/[\\n\\s\\t]+/g,'\\x20')['replace'](/[^,]*[:：]/g,'')[飞('0x1')](/(\\d)[k千]/gi,飞('0x4'))[飞('0x1')](/(\\.\\d)\\d+/g,'$1')[飞('0x1')](/(\\d+)(\\d)\\d{7}/g,'$1.$2亿')['replace'](/(\\d+)(\\d)\\d{3}/g,'$1.$2万')[飞('0x1')](/\\.0([万亿])/g,'$1')['replace'](/已?(连载|完结|完本|完成)中?/,'$1')[飞('0x1')](/完[本成]/,'完结')[飞('0x1')](/^,|,$/g,'')[飞('0x1')](/,{2,}/g,',')[飞('0x2')]();var arr=res[飞('0x0')](/\\s*,\\s*/);arr[飞('0x3')](function(石,节){return arr['indexOf'](石)==节;})[飞('0x5')](',');</js>",
@@ -1416,14 +1415,13 @@
             "wordCount": ".des@text##.*大小】：(.+?)\\s*【.*##$1<js>var 巧=['replace','$1.$2万','$1000','$1字'];(function(华,康){var 博=function(栀){while(--栀){华['push'](华['shift']());}};博(++康);}(巧,0x114));var 华=function(石,节){石=石-0x0;var 康=巧[石];return 康;};String(result)['replace'](/[^,]*[:：]/,'')['replace'](/(\\d)k/i,华('0x2'))[华('0x0')](/(\\d+)(\\d)\\d{7}/g,'$1.$2亿')[华('0x0')](/(\\d+)(\\d)\\d{3}/g,华('0x1'))[华('0x0')](/\\.0([万亿])/g,'$1')['trim']()['replace'](/([\\d万亿])字?$/,华('0x3'));</js>"
         },
         "ruleToc": {
-            "chapterList": "h1",
+            "chapterList": "class.downfile.-1@tag.a",
             "chapterName": "text##《|》|作者：.+<js>var 仁=['\\x20·\\x20$1','$1\\x20','trim','$1\\x20·\\x20$2','$1\\x20$2','replace'];(function(曲,云){var 莲=function(华){while(--华){曲['push'](曲['shift']());}};莲(++云);}(仁,0x100));var 曲=function(竹,蓝){竹=竹-0x0;var 云=仁[竹];return 云;};String(result)['replace'](/[更最]新\\S{0,2}[：:\\s]\\s*/g,'')[曲('0x1')](/\\s*最新章节[:：]?/,'')[曲('0x1')](/(.*\\S.*)[\\(（\\[［{｛<〈〈〔【〖].*?[〗】〕〉〉>｝}］\\]）\\)](.*)/g,曲('0x0'))['replace'](/(.*)[\\(（\\[［{｛<〈〈〔【〖].*?[〗】〕〉〉>｝}］\\]）\\)](.*\\S.*)/g,'$1\\x20$2')[曲('0x1')](/[\\(（\\[［{｛<〈〈〔【〖〗】〕〉〉>｝}］\\]）\\)]/g,'')[曲('0x1')](/第\\S+卷\\s*[^第]*(第[^章]+章)/,'$1')['replace'](/(第[^章]+章)\\s*/,曲('0x3'))['replace'](/\\s*(\\d+-\\d+(-\\d+)).*/,曲('0x2'))[曲('0x1')](/([^\\d-])(\\d+-\\d+)[^-]*$/,曲('0x5'))['replace'](/ {2,}/g,'\\x20')[曲('0x4')]();</js>",
             "chapterUrl": "<js>baseUrl.replace(/post\\//, 'download.php?id=')</js>",
-            "isVip": "",
             "nextTocUrl": "",
             "updateTime": ""
         },
-        "searchUrl": "https://www.zxcs.me/?keyword={{key}}",
+        "searchUrl": "\/?keyword={{key}}&page={{page}}",
         "weight": 0
     },
     {
