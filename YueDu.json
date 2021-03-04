@@ -1039,12 +1039,12 @@
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺51小说",
         "bookSourceType": 0,
-        "bookSourceUrl": "https://51xs.site",
-        "customOrder": -37648,
+        "bookSourceUrl": "https:\/\/51xs.site",
+        "customOrder": -3559,
         "enabled": true,
         "enabledExplore": true,
-        "exploreUrl": "玄幻::/novel/category/Ng_{{page}}.html\n校园::/novel/category/Nw_{{page}}.html\n都市::/novel/category/OQ_{{page}}.html\n言情::/novel/category/MTI_{{page}}.html\n武侠::/novel/category/MTY_{{page}}.html\n历史::/novel/category/MTc_{{page}}.html\n官场::/novel/category/MTE_{{page}}.html\n耽美::/novel/category/MjM_{{page}}.html\n仙侠::/novel/category/MjI_{{page}}.html\n古典::/novel/category/MjE_{{page}}.html\n网游::/novel/category/MjA_{{page}}.html\n同人::/novel/category/MTk_{{page}}.html\n穿越::/novel/category/MTg_{{page}}.html\n乡土::/novel/category/MTU_{{page}}.html\n女尊::/novel/category/MTQ_{{page}}.html\n惊悚::/novel/category/MTM_{{page}}.html\n异能::/novel/category/MTA_{{page}}.html\n单篇::/novel/category/OA_{{page}}.html",
-        "lastUpdateTime": 1602811944906,
+        "exploreUrl": "玄幻::\/novel\/category\/Ng_{{page}}.html\n校园::\/novel\/category\/Nw_{{page}}.html\n都市::\/novel\/category\/OQ_{{page}}.html\n言情::\/novel\/category\/MTI_{{page}}.html\n武侠::\/novel\/category\/MTY_{{page}}.html\n历史::\/novel\/category\/MTc_{{page}}.html\n官场::\/novel\/category\/MTE_{{page}}.html\n耽美::\/novel\/category\/MjM_{{page}}.html\n仙侠::\/novel\/category\/MjI_{{page}}.html\n古典::\/novel\/category\/MjE_{{page}}.html\n网游::\/novel\/category\/MjA_{{page}}.html\n同人::\/novel\/category\/MTk_{{page}}.html\n穿越::\/novel\/category\/MTg_{{page}}.html\n乡土::\/novel\/category\/MTU_{{page}}.html\n女尊::\/novel\/category\/MTQ_{{page}}.html\n惊悚::\/novel\/category\/MTM_{{page}}.html\n异能::\/novel\/category\/MTA_{{page}}.html\n单篇::\/novel\/category\/OA_{{page}}.html",
+        "lastUpdateTime": 1600084095678,
         "ruleBookInfo": {
             "author": "class.table@tag.td.1@text##作者：",
             "intro": "class.intro@text",
@@ -1069,7 +1069,7 @@
             "chapterName": "tag.a@text",
             "chapterUrl": "tag.a@href"
         },
-        "searchUrl": "https://51xs.site/novel/search.html?keywords={{key}}",
+        "searchUrl": "https:\/\/51xs.site\/novel\/search.html?keywords={{key}}",
         "weight": 0
     },
     {
