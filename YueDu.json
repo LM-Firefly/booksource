@@ -946,11 +946,12 @@
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺人生小说",
         "bookSourceType": 0,
-        "bookSourceUrl": "https://renshengxs.com",
-        "customOrder": -37779,
+        "bookSourceUrl": "https:\/\/m.renshengxs.com",
+        "customOrder": -3630,
         "enabled": true,
         "enabledExplore": true,
-        "lastUpdateTime": 1604053725257,
+        "exploreUrl": "玄幻奇幻::\/xuanhuan\/{{page}}.html\n武侠仙侠::\/wuxia\/{{page}}.html\n都市生活::\/dushi\/{{page}}.html\n历史军事::\/lishi\/{{page}}.html\n游戏竞技::\/youxi\/{{page}}.html\n科幻未来::\/kehuan\/{{page}}.html\n恐怖悬疑::\/xuanyi\/{{page}}.html\n经典网文::\/jingdian\/{{page}}.html\n古代言情::\/guyan\/{{page}}.html\n现代言情::\/xianyan\/{{page}}.html\n幻想奇缘::\/huanqing\/{{page}}.html\n青春校园::\/qingchun\/{{page}}.html\n网络情缘::\/wangluo\/{{page}}.html\n科幻空间::\/mmkehuan\/{{page}}.html\n鬼怪灵异::\/lingyi\/{{page}}.html\n言情美文::\/yanqing\/{{page}}.html\nN  次  元::\/nciyuan\/{{page}}.html\n二  次  元::\/erciyuan\/{{page}}.html\n                                                                      ::\n点击榜::\/allvisit\/{{page}}.html\n推荐榜::\/allvote\/{{page}}.html\n收藏榜::\/goodnum\/{{page}}.html\n字数榜::\/size\/{{page}}.html\n新书入库::\/postdate\/{{page}}.html\n最近更新::\/lastupdate\/{{page}}.html\n全本小说::\/quanben\/all\/{{page}}.html",
+        "lastUpdateTime": 1604038832392,
         "ruleBookInfo": {
             "author": "[property=\"og:novel:author\"]@content",
             "coverUrl": "[property=\"og:image\"]@content",
@@ -958,7 +959,7 @@
             "kind": "[property=\"og:novel:category\"]@content",
             "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
             "name": "[property=\"og:title\"]@content",
-            "tocUrl": "@js:result=baseUrl##xs(\\d+).html##$1\\/",
+            "tocUrl": "@js:result=baseUrl##xs(\\d+).html##$1\\\/",
             "wordCount": "[property=\"og:novel:status\"]@content"
         },
         "ruleContent": {
@@ -983,7 +984,7 @@
             "chapterUrl": "tag.a@href",
             "nextTocUrl": "option@value"
         },
-        "searchUrl": "/search.html,{\n\"charset\": \"\",\n\"method\": \"POST\",\n\"body\": \"searchkey={{key}}\"\n}",
+        "searchUrl": "\/search.html,{\n\"charset\": \"\",\n\"method\": \"POST\",\n\"body\": \"searchkey={{key}}\"\n}",
         "weight": 0
     },
     {
