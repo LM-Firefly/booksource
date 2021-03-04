@@ -655,42 +655,6 @@
         "searchUrl": "https:\/\/www.lwtxt.net\/search.html?searchkey={{key}}"
     },
     {
-        "bookSourceComment": "",
-        "bookSourceGroup": "🍺特优",
-        "bookSourceName": "🍺青果阅读",
-        "bookSourceType": 0,
-        "bookSourceUrl": "https://qingoo.cn",
-        "customOrder": -38186,
-        "enabled": true,
-        "enabledExplore": true,
-        "exploreUrl": "  风云榜  ::https://qingoo.cn/api/read/v1/m/ranks/click/year?q=%E7%94%B7%E9%A2%91&page={{page}}&limit=10\n  完本榜  ::https://qingoo.cn/api/read/v1/m/ranks/finish/year?page={{page}}&limit=10&q=\n  收藏榜  ::https://qingoo.cn/api/read/v1/m/ranks/follows/year?page={{page}}&limit=10&q=\n  字数榜  ::https://qingoo.cn/api/read/v1/m/ranks/word/year?page={{page}}&limit=10&q=\n  新书榜  ::https://qingoo.cn/api/read/v1/m/ranks/fresh/year?q=&page={{page}}&limit=10\n  留存榜  ::https://qingoo.cn/api/read/v1/m/ranks/retention/year?page={{page}}&limit=10&q=\n玄幻奇幻::https://qingoo.cn/api/read/v1/type/boy?q=玄幻奇幻&page={{page}}&limit=10\n武侠仙侠::https://qingoo.cn/api/read/v1/type/boy?q=武侠仙侠&page={{page}}&limit=10\n都市小说::https://qingoo.cn/api/read/v1/type/boy?q=都市小说&page={{page}}&limit=10\n悬疑惊悚::https://qingoo.cn/api/read/v1/type/boy?q=悬疑惊悚&page={{page}}&limit=10\n科幻灵异::https://qingoo.cn/api/read/v1/type/boy?q=科幻灵异&page={{page}}&limit=10\n热血青春::https://qingoo.cn/api/read/v1/type/boy?q=热血青春&page={{page}}&limit=10\n历史军事::https://qingoo.cn/api/read/v1/type/boy?q=历史军事&page={{page}}&limit=10\n乡村生活::https://qingoo.cn/api/read/v1/type/boy?q=乡村生活&page={{page}}&limit=10\nN の次元::https://qingoo.cn/api/read/v1/type/boy?q=二次元&page={{page}}&limit=10",
-        "lastUpdateTime": 1603345635892,
-        "ruleBookInfo": {
-            "intro": "@JSon:$.model.description",
-            "tocUrl": "https://www.qingoo.cn/book?name={$.model.name}&author={$.model.author.name}&bookId={$.model.id}&index=0"
-        },
-        "ruleContent": {
-            "content": "id.content@p@html"
-        },
-        "ruleExplore": {},
-        "ruleSearch": {
-            "author": "$.author.name",
-            "bookList": "$.model.result_list||$.model.books_data",
-            "bookUrl": "https://qingoo.cn/api/read/v1/book/{$.id}/",
-            "coverUrl": "$..image",
-            "kind": "$.category",
-            "lastChapter": "$.chapter.name",
-            "name": "$.name"
-        },
-        "ruleToc": {
-            "chapterList": "id.list@li",
-            "chapterName": "span@text",
-            "chapterUrl": "id@js:result=result-1;baseUrl.replace(/index=\\d+/,'')+'index='+result"
-        },
-        "searchUrl": "https://api.qingoo.cn/v3/books/routings?word={{key}}&page={{page}}&packagename=com.quduquxie&os=android&udid=67F3842FD40F2C342C017FFEB349536C&appversion=34&ch=qg0004_001",
-        "weight": 0
-    },
-    {
         "bookSourceComment": "error:搜索内容为空并且没有发现\n",
         "bookSourceGroup": "💵正版",
         "bookSourceName": "💵豆瓣读书",
