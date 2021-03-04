@@ -1590,39 +1590,45 @@
         "weight": 0
     },
     {
-        "bookSourceComment": "",
+        "bookSourceComment": "酷安",
         "bookSourceGroup": "🍑耽美",
         "bookSourceName": "🍑耽美小说",
         "bookSourceType": 0,
-        "bookSourceUrl": "https://www.dmxs.me/",
-        "customOrder": -36869,
-        "enabled": true,
+        "bookSourceUrl": "https:\/\/www.dmxs.org",
+        "enabled": false,
         "enabledExplore": true,
-        "exploreUrl": "近代现代::/book/<,index_{{page}}.html>\n古代架空::/gdjk/<,index_{{page}}.html>\n穿越重生::/cycs/<,index_{{page}}.html>\n玄幻灵异::/xhly/<,index_{{page}}.html>\n网游竞技::/wyjj/<,index_{{page}}.html>\n推理悬疑::/tlxy/<,index_{{page}}.html>\n BL同人 ::/BLTR/<,index_{{page}}.html>\n GL百合 ::/GLBH/<,index_{{page}}.html>",
-        "lastUpdateTime": 1602881322817,
+        "exploreUrl": "总排行::\/hot\/index<,_{{page}}>.html\n周榜::\/hot_zhou\/index<,_{{page}}>.html\n月榜::\/hot_yue\/index<,_{{page}}>.html\n\n\n♯近代现代♯::\/book\/index<,_{{page}}>.html\nTop100::\/hot4\/index<,_{{page}}>.html\n\n♯古代架空♯::\/gdjk\/index<,_{{page}}>.html\nTop100::\/hot5\/index<,_{{page}}>.html\n\n♯穿越重生♯::\/cycs\/index<,_{{page}}>.html\nTop100::\/hot6\/index<,_{{page}}>.html\n\n♯玄幻灵异♯::\/xhly\/index<,_{{page}}>.html\nTop100::\/hot7\/index<,_{{page}}>.html\n\n♯网游竞技♯::\/wyjj\/index<,_{{page}}>.html\nTop100::\/hot8\/index<,_{{page}}>.html\n\n♯推理悬疑♯::\/tlxy\/index<,_{{page}}>.html\nTop100::\/hot9\/index<,_{{page}}>.html\n\n♯ BL 同人 ♯::\/BLTR\/index<,_{{page}}>.html\nTop100::\/hot10\/index<,_{{page}}>.html\n\n♯ GL 百合 ♯::\/GLBH\/index<,_{{page}}>.html\nTop100::\/hot11\/index<,_{{page}}>.html",
+        "header": "",
         "ruleBookInfo": {
-            "intro": "class.book_info@p@text",
-            "kind": "class.tags@a@text"
+            "author": "",
+            "canReName": "true",
+            "init": "",
+            "intro": "class.infos@tag.p@textNodes##^##<br>",
+            "kind": "class.tags@tag.a@text&&class.date@ownText##作者：",
+            "lastChapter": "",
+            "name": "",
+            "tocUrl": ""
         },
         "ruleContent": {
             "content": "class.read_chapterDetail@html"
         },
         "ruleExplore": {},
         "ruleSearch": {
-            "author": "class.autor@text##作者：",
-            "bookList": "class.books m-cols@class.bk",
-            "bookUrl": "tag.a.0@href",
-            "intro": "tag.p@text",
-            "lastChapter": "class.date@text",
-            "name": "h3@text",
+            "author": "class.autor@text",
+            "bookList": "@css:.bk a",
+            "bookUrl": "href",
+            "intro": "tag.p@textNodes",
+            "kind": "class.date@text",
+            "lastChapter": "{{'完本'}}",
+            "name": "tag.h3@text",
             "wordCount": "class.size@text"
         },
         "ruleToc": {
-            "chapterList": "class.book_list clearfix@li@a",
-            "chapterName": "text",
+            "chapterList": "@css:.book_list li a",
+            "chapterName": "text##章##节",
             "chapterUrl": "href"
         },
-        "searchUrl": "/e/search/index.php,{\n  \"charset\": \"gbk\",\n  \"method\": \"POST\",\n  \"body\": \"keyboard={{key}}&show=title&classid=0\"\n}",
+        "searchUrl": "\/e\/search\/index.php,{\n\"charset\": \"gbk\",\n\"method\": \"POST\",\n\"body\": \"keyboard={{key}}&show=title&classid=0\"\n}",
         "weight": 0
     },
     {
