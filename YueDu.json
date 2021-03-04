@@ -1262,68 +1262,67 @@
         "weight": 0
     },
     {
-        "bookSourceComment": "",
+        "bookSourceUrl": "https:\/\/www.d586.com",
+        "bookSourceType": "0",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺D586小说网",
-        "bookSourceType": 0,
-        "bookSourceUrl": "https://www.d586.com",
+        "loginUrl": "",
         "bookUrlPattern": "",
-        "customOrder": -37218,
+        "header": "{\"User-Agent\":\"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/77.0.3865.120 Safari\/537.36\"}",
+        "searchUrl": "https:\/\/www.d586.com\/search.html,{\n\"charset\": \"gbk\",\n     \"method\": \"POST\",\n     \"body\": \"searchtype=all&searchkey={{key}}\",\n     \"headers\": {\"User-Agent\":\"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/77.0.3865.120 Safari\/537.36\"},\n     \"webView\": true\n }",
+        "exploreUrl": "玄幻奇幻::https:\/\/www.d586.com\/xuanhuan\/\n武侠仙侠::https:\/\/www.d586.com\/wuxia\/\n都市生活::https:\/\/www.d586.com\/dushi\/\n历史军事::https:\/\/www.d586.com\/lishi\/\n游戏竞技::https:\/\/www.d586.com\/youxi\/\n科幻未来::https:\/\/www.d586.com\/kehuan\/\n恐怖悬疑::https:\/\/www.d586.com\/xuanyi\/\n二次元::https:\/\/www.d586.com\/erciyuan\/\n经典网文::https:\/\/www.d586.com\/jingdian\/\n古代言情::https:\/\/www.d586.com\/guyan\/\n现代言情::https:\/\/www.d586.com\/xianyan\/\n幻想奇缘::https:\/\/www.d586.com\/huanqing\/\n青春校园::https:\/\/www.d586.com\/qingchun\/\n网络情缘::https:\/\/www.d586.com\/wangluo\/\n科幻空间::https:\/\/www.d586.com\/mmkehuan\/\n鬼怪灵异::https:\/\/www.d586.com\/lingyi\/\nN次元::https:\/\/www.d586.com\/Nciyuan\/\n言情美文::https:\/\/www.d586.com\/yanqing\/\n",
         "enabled": true,
         "enabledExplore": true,
-        "exploreUrl": "玄幻奇幻::https://www.d586.com/xuanhuan/\n武侠仙侠::https://www.d586.com/wuxia/\n都市生活::https://www.d586.com/dushi/\n历史军事::https://www.d586.com/lishi/\n游戏竞技::https://www.d586.com/youxi/\n科幻未来::https://www.d586.com/kehuan/\n恐怖悬疑::https://www.d586.com/xuanyi/\n二次元::https://www.d586.com/erciyuan/\n经典网文::https://www.d586.com/jingdian/\n古代言情::https://www.d586.com/guyan/\n现代言情::https://www.d586.com/xianyan/\n幻想奇缘::https://www.d586.com/huanqing/\n青春校园::https://www.d586.com/qingchun/\n网络情缘::https://www.d586.com/wangluo/\n科幻空间::https://www.d586.com/mmkehuan/\n鬼怪灵异::https://www.d586.com/lingyi/\nN次元::https://www.d586.com/Nciyuan/\n言情美文::https://www.d586.com/yanqing/\n",
-        "header": "{\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4402.0 Safari/537.36\"}",
+        "weight": 0,
+        "customOrder": 0,
         "lastUpdateTime": 0,
-        "loginUrl": "",
-        "ruleBookInfo": {
-            "author": "",
-            "coverUrl": "",
-            "init": "",
-            "intro": "",
-            "kind": "",
-            "lastChapter": "",
-            "name": "",
-            "tocUrl": "",
-            "wordCount": ""
-        },
-        "ruleContent": {
-            "content": "id.content@html",
-            "nextContentUrl": "",
-            "sourceRegex": "",
-            "webJs": ""
+        "ruleSearch": {
+            "bookList": "id.sitembox@tag.dl",
+            "name": "tag.a.1@text",
+            "author": "class.book_other.0@tag.span.0@text",
+            "kind": "class.book_other.0@tag.span.2@text",
+            "wordCount": "class.book_other.0@tag.span.3@text",
+            "lastChapter": "class.book_other.1@tag.a.0@text",
+            "intro": "class.book_des@text",
+            "coverUrl": "tag.img.0@src",
+            "bookUrl": "tag.a.1@href"
         },
         "ruleExplore": {
-            "author": "tag.a.2@text",
             "bookList": "id.newscontent@tag.li||class.novelslist2@tag.li.!0",
-            "bookUrl": "tag.a.0@href",
-            "coverUrl": "",
-            "intro": "",
-            "kind": "class.s1@text##\\[|\\]",
-            "lastChapter": "tag.a.1@text",
             "name": "tag.a.0@text",
-            "wordCount": "class.s5@text"
+            "author": "tag.a.2@text",
+            "kind": "class.s1@text##\\[|\\]",
+            "wordCount": "class.s5@text",
+            "lastChapter": "tag.a.1@text",
+            "intro": "",
+            "coverUrl": "",
+            "bookUrl": "tag.a.0@href"
         },
-        "ruleSearch": {
-            "author": "class.book_other.0@tag.span.0@text",
-            "bookList": "id.sitembox@tag.dl",
-            "bookUrl": "tag.a.1@href",
-            "coverUrl": "tag.img.0@src",
-            "intro": "class.book_des@text",
-            "kind": "class.book_other.0@tag.span.2@text",
-            "lastChapter": "class.book_other.1@tag.a.0@text",
-            "name": "tag.a.1@text",
-            "wordCount": "class.book_other.0@tag.span.3@text"
+        "ruleBookInfo": {
+            "init": "",
+            "name": "",
+            "author": "",
+            "kind": "",
+            "wordCount": "",
+            "lastChapter": "",
+            "intro": "",
+            "coverUrl": "",
+            "tocUrl": ""
         },
         "ruleToc": {
             "chapterList": "id.list@tag.dd.!0:1:2:3:4:5:6:7:8:9:10:11",
             "chapterName": "tag.a@text",
             "chapterUrl": "tag.a@href",
             "isVip": "",
-            "nextTocUrl": "",
-            "updateTime": ""
+            "updateTime": "",
+            "nextTocUrl": ""
         },
-        "searchUrl": "https://www.d586.com/search.html,{\n\"charset\": \"gbk\",\n     \"method\": \"POST\",\n     \"body\": \"searchtype=all&searchkey={{key}}\",\n     \"headers\": {\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4402.0 Safari/537.36\"},\n     \"webView\": true\n }",
-        "weight": 0
+        "ruleContent": {
+            "content": "id.content@html",
+            "nextContentUrl": "",
+            "webJs": "",
+            "sourceRegex": ""
+        }
     },
     {
         "bookSourceComment": "error:Timed out waiting for 60000 ms\n",
