@@ -1128,46 +1128,47 @@
         "searchUrl": "https:\/\/www.lwtxt.net\/search.html?searchkey={{key}}"
     },
     {
-        "bookSourceComment": "",
+        "bookSourceComment": "完本\n校对\n搜索间隔10秒",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺新奇书网",
         "bookSourceType": 0,
-        "bookSourceUrl": "https://xsqishu.com",
-        "customOrder": -37368,
-        "enabled": true,
+        "bookSourceUrl": "https:\/\/m.xsqishu.com",
+        "enabled": false,
         "enabledExplore": true,
-        "lastUpdateTime": 1602987116056,
         "ruleBookInfo": {
-            "author": "class.tm10@text##作者：",
-            "coverUrl": "class.pic.0@img@src",
+            "author": "",
+            "canReName": "true",
+            "coverUrl": "class.pic.0@tag.img@src",
             "intro": "class.con@text",
-            "kind": "class.gray.1@text##分类：",
-            "lastChapter": "class.gray.4@text##更新：",
-            "name": "class.title.0@text",
-            "tocUrl": "text.全文在线阅读@href",
+            "kind": "class.gray.1@text&&class.gray.3@text##分类：|进度：",
+            "lastChapter": "",
+            "name": "",
+            "tocUrl": "class.greenbtn.0@tag.a@href",
             "wordCount": ""
         },
         "ruleContent": {
-            "content": "class.articlecon@html##声明\\:本书由.*支持正版\\.",
-            "nextContentUrl": ""
+            "content": "",
+            "nextContentUrl": "",
+            "replaceRegex": ""
         },
         "ruleExplore": {},
         "ruleSearch": {
             "author": "class.bookauthor@text",
-            "bookList": "class.listtxt!0",
+            "bookList": "class.main@tag.ul!0",
             "bookUrl": "tag.a@href",
             "coverUrl": "",
             "intro": "",
             "kind": "",
-            "name": "class.bookname@text",
+            "lastChapter": "{{'点击地址栏下载📥'}}",
+            "name": "tag.a@text",
             "wordCount": ""
         },
         "ruleToc": {
-            "chapterList": "class.cataloglist@a",
-            "chapterName": "tag.li@text",
-            "chapterUrl": "tag.a@href"
+            "chapterList": "-@css:.bookbutton a",
+            "chapterName": "text##([A-Z]{3})##{{'点击地址栏下载📥'}}{{@@$1}}###",
+            "chapterUrl": "href"
         },
-        "searchUrl": "/e/search/index.php,{\n\"charset\": \"gbk\",\n\"method\": \"POST\",\n\"body\": \"show=title,writer&tbname=book&tempid=1&keyboard={{key}}&page={{page}}\"\n}",
+        "searchUrl": "\/e\/search\/index.php,{\n\"charset\": \"gbk\",\n\"method\": \"POST\",\n\"body\": \"show=title,writer&tbname=book&tempid=1&keyboard={{key}}\"\n}",
         "weight": 0
     },
     {
