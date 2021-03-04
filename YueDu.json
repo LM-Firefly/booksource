@@ -535,53 +535,6 @@
     {
         "bookSourceComment": "",
         "bookSourceGroup": "🍺特优",
-        "bookSourceName": "🍺19楼文学",
-        "bookSourceType": 0,
-        "bookSourceUrl": "https://19wo.com",
-        "bookUrlPattern": "",
-        "customOrder": -38395,
-        "enabled": true,
-        "enabledExplore": true,
-        "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko, By Black Prism) Chrome/90.0.4402.0 Safari/537.36\"\n}",
-        "lastUpdateTime": 0,
-        "loginUrl": "",
-        "ruleBookInfo": {
-            "author": "class.author@tag.a@text",
-            "coverUrl": "class.detail@tag.img@src",
-            "intro": "class.intro.0@tag.p.0@textNodes",
-            "kind": "",
-            "lastChapter": "class.new@tag.a@text",
-            "name": "class.name@text",
-            "tocUrl": "class.now@tag.a@href",
-            "wordCount": "class.layui-bg-red@text"
-        },
-        "ruleContent": {
-            "content": "class.content@tag.p!-1@text",
-            "imageStyle": "0"
-        },
-        "ruleExplore": {},
-        "ruleSearch": {
-            "author": "class.data.0@tag.a@text",
-            "bookList": "class.list@tag.li",
-            "bookUrl": "tag.a.0@href",
-            "coverUrl": "tag.img@src",
-            "intro": "class.intro@text",
-            "kind": "tag.span@text",
-            "lastChapter": "class.data.1@tag.a@text",
-            "name": "class.bookname@tag.a@text"
-        },
-        "ruleToc": {
-            "chapterList": "class.read@tag.li",
-            "chapterName": "tag.a@text",
-            "chapterUrl": "tag.a@href",
-            "nextTocUrl": "text.下一页@href"
-        },
-        "searchUrl": "/search.html,{\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}\"\n}",
-        "weight": 0
-    },
-    {
-        "bookSourceComment": "",
-        "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺59书库",
         "bookSourceType": 0,
         "bookSourceUrl": "https://59shuku.com",
