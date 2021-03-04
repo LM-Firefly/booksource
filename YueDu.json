@@ -854,6 +854,40 @@
         "weight": 0
     },
     {
+        "bookSourceGroup": "🍺特优",
+        "bookSourceName": "🍺读文族",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https:\/\/www.duwenzu.com",
+        "bookUrlPattern": "",
+        "customOrder": -4198,
+        "enabled": false,
+        "enabledExplore": false,
+        "header": "{\n  \"User-Agent\": \"Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/78.0.3904.96 Safari\/537.36\"\n}",
+        "lastUpdateTime": 0,
+        "loginUrl": "",
+        "ruleBookInfo": {
+            "intro": "id.intro@text"
+        },
+        "ruleContent": {
+            "content": "id.content@html"
+        },
+        "ruleExplore": {},
+        "ruleSearch": {
+            "author": "tag.td.2@text",
+            "bookList": "class.grid@tag.tr!0",
+            "bookUrl": "tag.td.0@tag.a@href@js:result.replace(\/https\/,\"http\")",
+            "lastChapter": "tag.td.1@text",
+            "name": "tag.td.0@tag.a@text"
+        },
+        "ruleToc": {
+            "chapterList": "id.list@tag.a!0:1:2:3:4:5:6:7:8",
+            "chapterName": "text",
+            "chapterUrl": "href"
+        },
+        "searchUrl": "https:\/\/www.duwenzu.com\/modules\/article\/search.php,{\n  \"charset\": \"gbk\",\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}\"\n}",
+        "weight": 0
+    },
+    {
         "bookSourceComment": "",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺爱好中文",
@@ -1986,81 +2020,6 @@
         "ruleSearch": "{\n  \"bookList\": \"\",\n  \"name\": \"\"\n}",
         "ruleToc": "{\n  \"chapterList\": \"$.songs\",\n  \"chapterName\": \"title\",\n  \"chapterUrl\": \"url\",\n  \"updateTime\": \"created_time\"\n}",
         "searchUrl": "{{key}}"
-    },
-    {
-        "bookSourceComment": "",
-        "bookSourceGroup": "📥下载",
-        "bookSourceName": "📥书荒部落",
-        "bookSourceType": 0,
-        "bookSourceUrl": "https://noveless.com",
-        "bookUrlPattern": "",
-        "customOrder": -36700,
-        "enabled": true,
-        "enabledExplore": true,
-        "exploreUrl": "玄幻·奇幻::https://noveless.com/alltext/fantasy/page/{{page}}\n科幻·灵异::https://noveless.com/alltext/sci-fi/page/{{page}}\n网游·竞技::https://noveless.com/alltext/game/page/{{page}}\n都市·娱乐::https://noveless.com/alltext/city/page/{{page}}\n历史·军事::https://noveless.com/alltext/history/page/{{page}}\n重生·穿越::https://noveless.com/alltext/reborn/page/{{page}}\n言情小说::https://noveless.com/alltext/%e8%a8%80%e6%83%85%e5%b0%8f%e8%af%b4/page/{{page}}/\n精校全本::https://noveless.com/alltext/page/{{page}}",
-        "lastUpdateTime": 1603037591473,
-        "loginUrl": "",
-        "ruleBookInfo": {
-            "author": "class.wp-block-code.0@text##作者：",
-            "lastChapter": "class.xydown_down_link@p@html<js>java.put(\"a\",result);result=null;</js>",
-            "tocUrl": "text.点击下载@href"
-        },
-        "ruleContent": {
-            "content": "@js:String(\"点击章节链接下载\"+baseUrl+\"\\n\"+java.get(\"a\")).replace(/下载地址：/,\"\").replace(/点击下载/,\"\").replace(/\\s/g,\"\\n\")"
-        },
-        "ruleExplore": {},
-        "ruleSearch": {
-            "bookList": "class.excerpt excerpt-one",
-            "bookUrl": "h2@a@href",
-            "coverUrl": "img@data-original",
-            "intro": "class.note@text",
-            "name": "h2@a@text"
-        },
-        "ruleToc": {
-            "chapterList": "class.list@a",
-            "chapterName": "text",
-            "chapterUrl": "href"
-        },
-        "searchUrl": "https://noveless.com/?s={{key}}",
-        "weight": 0
-    },
-    {
-        "bookSourceComment": "",
-        "bookSourceGroup": "💵正版",
-        "bookSourceName": "💵文章阅读网",
-        "bookSourceType": 0,
-        "bookSourceUrl": "https://duwenzhang.com",
-        "bookUrlPattern": "",
-        "customOrder": -36641,
-        "enabled": true,
-        "enabledExplore": true,
-        "exploreUrl": "精品美文::/meiwen.php\n文章排行::/paihangbang.php?num=1\n爱情文章::index.php?action=list&id=1&totalresult=16300&pageno={{page}}\n亲情文章::index.php?action=list&id=2&totalresult=50870&pageno={{page}}\n友情文章::index.php?action=list&id=3&totalresult=12500&pageno={{page}}\n生活随笔::index.php?action=list&id=8&totalresult=15040&pageno={{page}}\n校园文章::index.php?action=list&id=4&totalresult=22300&pageno={{page}}\n经典文章::index.php?action=list&id=5&totalresult=22300&pageno={{page}}\n人生哲理::index.php?action=list&id=6&totalresult=22300&pageno={{page}}\n励志文章::index.php?action=list&id=7&totalresult=22300&pageno={{page}}\n搞笑文章::index.php?action=list&id=9&totalresult=22300&pageno={{page}}\n心情日记::index.php?action=list&id=69&totalresult=22300&pageno={{page}}\n英语文章::index.php?action=list&id=10&totalresult=22300&pageno={{page}}\n原创文章::index.php?action=list&id=73&totalresult=22003&pageno={{page}}\n原创诗歌::index.php?action=list&id=84&totalresult=22003&pageno={{page}}\nnull",
-        "lastUpdateTime": 1602911346215,
-        "loginUrl": "",
-        "ruleBookInfo": {
-            "intro": "class.con@p@textNodes"
-        },
-        "ruleContent": {
-            "content": "class.con@p@textNodes"
-        },
-        "ruleExplore": {
-            "bookList": "class.spl||class.nav",
-            "bookUrl": "tag.a.0@href",
-            "name": "tag.a.0@text"
-        },
-        "ruleSearch": {
-            "bookList": "class.nav",
-            "bookUrl": "tag.a.0@href",
-            "intro": "class.con@text",
-            "lastChapter": "##\\[(\\d+-\\d+)\\]##$1###",
-            "name": "tag.a@text"
-        },
-        "ruleToc": {
-            "chapterList": "tag.html",
-            "chapterName": "class.nav@text"
-        },
-        "searchUrl": "https://duwenzhang.com/index.php?action=searchaction,{\n  \"method\": \"POST\",\n  \"body\": \"keyword={{key}}&type=1\"\n}",
-        "weight": 0
     },
     {
         "bookSourceComment": "",
