@@ -1877,80 +1877,60 @@
         "weight": 0
     },
     {
-        "bookSourceComment": "",
-        "bookSourceGroup": "🎼音乐",
-        "bookSourceName": "🎼虾米",
-        "bookSourceType": 1,
-        "bookSourceUrl": "https://www.gequdaquan.net-xiami",
-        "customOrder": -36724,
-        "enabled": true,
-        "enabledExplore": true,
-        "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 8.1.0; JKM-AL00b Build/HUAWEIJKM-AL00b; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/90.0.4402.0 Mobile Safari/537.36\"}",
-        "lastUpdateTime": 1605072958612,
-        "ruleBookInfo": {
-            "coverUrl": "@js:\npic=java.get('pic');\njson=java.ajax('https://www.gequdaquan.net/gqss/api.php,\\{\"method\":\"POST\",\"body\":\"types=pic&source=xiami&id='+pic+'\"\\}');\nJSON.parse(json).url",
-            "intro": "<br>{$.lyric}##\\[.*\\]",
-            "name": "",
-            "tocUrl": "https://www.gequdaquan.net/gqss/api.php?callback=jQuery111302660538360515685_{{Date.now()}},{\"method\":\"POST\",\"body\":\"types=url&source=xiami&id=@get:{id}\"}"
-        },
-        "ruleContent": {},
-        "ruleExplore": {},
-        "ruleSearch": {
-            "author": "$.artist[*]",
-            "bookList": "$.[*]",
-            "bookUrl": "https://www.gequdaquan.net/gqss/api.php,{\"method\":\"POST\",\"body\":\"types=lyric&source=xiami&id={{$.lyric_id}}\"}",
-            "coverUrl": "",
-            "kind": "$.album",
-            "name": "$.name@put:{name:$.name,id:$.url_id,pic:$.pic_id}"
-        },
-        "ruleToc": {
-            "chapterList": "@js:json=result.match(/(\\{[\\s\\S]+?\\})/)[1];\nurl=JSON.parse(json).url;\nname=java.get(\"name\");\nresult=[{text:name,href:url}]",
-            "chapterName": "text",
-            "chapterUrl": "href"
-        },
-        "searchUrl": "https://www.gequdaquan.net/gqss/api.php,{\n\"method\": \"POST\",\n\"body\": \"types=search&count=20&source=xiami&pages=1&name={{key}}\"\n}",
-        "weight": 0
-    },
-    {
-        "bookSourceComment": "",
         "bookSourceGroup": "🎼音乐",
         "bookSourceName": "🎼抖音歌曲",
         "bookSourceType": 1,
-        "bookSourceUrl": "https://douyingequ.com",
-        "customOrder": -36712,
+        "bookSourceUrl": "https:\/\/m.douyingequ.com",
+        "loginUrl": "",
+        "ruleFindUrl": "",
+        "ruleFindList": "",
+        "ruleFindName": "",
+        "ruleFindAuthor": "",
+        "ruleFindKind": "",
+        "ruleFindLastChapter": "",
+        "ruleFindIntroduce": "",
+        "ruleFindCoverUrl": "",
+        "ruleFindNoteUrl": "",
+        "ruleSearchUrl": "",
+        "ruleBookUrlPattern": "",
+        "ruleSearchList": "",
+        "ruleSearchName": "",
+        "ruleSearchAuthor": "",
+        "ruleSearchKind": "",
+        "ruleSearchLastChapter": "",
+        "ruleSearchIntroduce": "",
+        "ruleSearchCoverUrl": "",
+        "ruleSearchNoteUrl": "",
+        "ruleBookInfoInit": "",
+        "ruleBookName": "",
+        "ruleBookAuthor": "",
+        "ruleBookKind": "",
+        "ruleBookLastChapter": "",
+        "ruleIntroduce": "",
+        "ruleCoverUrl": "",
+        "ruleChapterUrl": "",
+        "ruleChapterUrlNext": "",
+        "ruleChapterList": "",
+        "ruleChapterName": "",
+        "ruleContentUrl": "",
+        "ruleBookContent": "",
+        "ruleContentUrlNext": "",
+        "httpUserAgent": "",
+        "serialNumber": 0,
+        "weight": 0,
+        "enable": true,
+        "customOrder": 32,
         "enabled": true,
         "enabledExplore": true,
-        "exploreUrl": "抖音英文歌曲::https://douyingequ.com/douyinyingwen.htm\n抖音中文歌曲::https://douyingequ.com/douyinzhongwen.htm\n抖音最火歌曲::https://douyingequ.com/douyinbang.htm\n抖音最新歌曲::https://douyingequ.com/douyinnew.htm\n抖音BGM::https://douyingequ.com/douyinbgm.htm\n抖音十大歌曲::https://douyingequ.com/douyinshenqu.htm",
+        "exploreUrl": "抖音英文歌曲::https:\/\/m.douyingequ.com\/douyinyingwen.htm\n抖音中文歌曲::https:\/\/m.douyingequ.com\/douyinzhongwen.htm\n抖音最火歌曲::https:\/\/m.douyingequ.com\/douyinbang.htm\n抖音最新歌曲::https:\/\/m.douyingequ.com\/douyinnew.htm\n抖音BGM::https:\/\/m.douyingequ.com\/douyinbgm.htm\n抖音十大歌曲::https:\/\/m.douyingequ.com\/douyinshenqu.htm",
         "lastUpdateTime": 0,
-        "ruleBookInfo": {
-            "intro": "id.lrc@html##.*网站"
-        },
-        "ruleContent": {
-            "content": "tag.mip-audio@src",
-            "sourceRegex": ""
-        },
-        "ruleExplore": {
-            "author": "class.t-singer@text",
-            "bookList": "class.musicList@li",
-            "bookUrl": "a@href",
-            "coverUrl": "tag.img@src",
-            "kind": "class.t-t-b@text",
-            "name": "class.t-song@text"
-        },
-        "ruleSearch": {
-            "bookList": "",
-            "bookUrl": "",
-            "coverUrl": "",
-            "name": ""
-        },
-        "ruleToc": {
-            "chapterList": "html",
-            "chapterName": "class.playerSong@text",
-            "chapterUrl": "href"
-        },
-        "searchUrl": "",
-        "weight": 0
-    },
+        "ruleBookInfo": "{\n  \"intro\": \"id.lrc@html##.*网站\"\n}",
+        "ruleContent": "{\n  \"content\": \"tag.mip-audio@src\",\n  \"sourceRegex\": \"\"\n}",
+        "ruleExplore": "{\n  \"author\": \"class.t-singer@text\",\n  \"bookList\": \"class.musicList@li\",\n  \"bookUrl\": \"a@href\",\n  \"coverUrl\": \"tag.img@src\",\n  \"kind\": \"class.t-t-b@text\",\n  \"name\": \"class.t-song@text\"\n}",
+        "ruleSearch": "{\n  \"bookList\": \"\",\n  \"bookUrl\": \"\",\n  \"coverUrl\": \"\",\n  \"name\": \"\"\n}",
+        "ruleToc": "{\n  \"chapterList\": \"html\",\n  \"chapterName\": \"class.playerSong@text\",\n  \"chapterUrl\": \"href\"\n}",
+        "searchUrl": "{{key}}"
+    }
     {
         "bookSourceComment": "",
         "bookSourceGroup": "🎼音乐",
