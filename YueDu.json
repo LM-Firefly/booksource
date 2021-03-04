@@ -988,94 +988,50 @@
         "weight": 0
     },
     {
-        "bookSourceComment": "",
         "bookSourceGroup": "🍺特优",
-        "bookSourceName": "🍺166小说",
+        "bookSourceName": "🍺搜小说",
         "bookSourceType": 0,
-        "bookSourceUrl": "https://www.juyit.com",
-        "bookUrlPattern": "",
-        "customOrder": -37763,
+        "bookSourceUrl": "https:\/\/m.soxs.cc\/",
+        "customOrder": 10160,
         "enabled": true,
         "enabledExplore": true,
-        "exploreUrl": "仙侠::/c1/{{page}}.html\n玄幻::/c2/{{page}}.html\n历史::/c3/{{page}}.html\n言情::/c4/{{page}}.html\n都市::/c5/{{page}}.html\n科幻::/c6/{{page}}.html\n网游::/c7/{{page}}.html\n同人::/c8/{{page}}.html\n穿越::/c10/{{page}}.html\n悬疑::/c11/{{page}}.html\n综合::/c9/{{page}}.html\n全本::/quanben/{{page}}.html",
-        "header": "",
-        "lastUpdateTime": 1606455509890,
+        "exploreUrl": "玄幻奇幻::https:\/\/m.soxs.cc\/xuanhuan\/<,{{page}}.html>\n武侠仙侠::\/wuxia\/<,{{page}}.html>\n科幻未来::\/kehuan\/<,{{page}}.html>\n历史军事::\/lishi\/<,{{page}}.html>\n游戏竞技::\/youxi\/<,{{page}}.html>\n灵异悬疑::\/lingyi\/<,{{page}}.html>\n都市生活::\/dushi\/<,{{page}}.html>\n青春校园::\/xiaoyuan\/<,{{page}}.html>\n古代言情::\/hunlian\/<,{{page}}.html>\n现代言情::\/zongcai\/<,{{page}}.html>\n幻想奇缘::\/chuanyue\/<,{{page}}.html>\n耽美同人::\/tongren\/<,{{page}}.html>\n新书入库::\/xinshu\/<,{{page}}.html>",
+        "lastUpdateTime": 0,
         "ruleBookInfo": {
-            "author": "address a@text",
+            "author": "class.author@tag.a@text",
             "coverUrl": "img@src",
-            "intro": "ol@html",
-            "kind": "ol a@text##(?:小说)?大作$|^好看的",
-            "lastChapter": "dd:contains(最新章节：) a@text",
-            "name": "h1@text",
-            "tocUrl": ""
+            "init": "class.detail",
+            "intro": "class.intro@tag.p.0@text",
+            "kind": "class.layui-btn layui-btn-xs layui-btn-radius@text",
+            "lastChapter": "class.new@tag.a@text",
+            "name": "class.name@text",
+            "tocUrl": "",
+            "wordCount": "class.layui-btn layui-btn-xs layui-bg-red@text"
         },
         "ruleContent": {
-            "content": "@js:r=java.getElement(\".Book_Text\");\nr.select(\":not(.Book_Text,br)\").remove();\nr.html()",
-            "replaceRegex": "##\\(本章免费\\)|166小说阅读网|本书由潇湘书院首?发?，请勿转载！"
+            "content": "class.content@html"
         },
         "ruleExplore": {
-            "author": "cite@text##作者：([^\\s<]+)##$1##",
-            "bookList": "ul.list_box li",
-            "bookUrl": "tag.a.0@href",
+            "bookList": ""
+        },
+        "ruleSearch": {
+            "author": "tag.p.1@tag.a@text",
+            "bookList": "class.list@tag.li",
+            "bookUrl": "tag.p.0@tag.a@href",
             "coverUrl": "img@src",
-            "intro": "tag.p.0@ownText",
-            "kind": "cite@text##类别：\\[([^\\s<\\]]+)[\\s\\S]*状态：([^\\s<]+)##$1,$2##",
-            "lastChapter": "em a@text",
-            "name": "tag.a.0@text",
-            "wordCount": "text.字数：@text##字数："
-        },
-        "ruleSearch": {
-            "author": "",
-            "bookList": ".result:has(a[href~=[^\\d]/\\d+(/|\\.html)$])",
-            "bookUrl": "tag.a.0@href\n##((/\\d*?)\\d{1,3})(?:/|\\.html)##https://www.juyit.com/xiaoshuo$2$1/##\n##o//##o/0/",
-            "coverUrl": "tag.a.0@href\n##/(\\d*?)(\\d{1,3})(?:/|\\.html)##https://www.juyit.com/files/article/image/$1/$1$2/$1$2s.jpg##\n##e//##e/0/",
-            "intro": "class.c-abstract@text",
-            "kind": "",
-            "lastChapter": "",
-            "name": "tag.a.0@text##(?!^)(?:[.|,_/\\s\\[\\]（()）【〖〗】。-]|[^\\u4e00-\\u9fa5a-zA-Z0-9]?(?:小说)?(?:完[整结]|加料|番外)|最新(?:章节|小说|更新|\\.)|全[文本集]|全部章节|(?:手机)?(?:小说|免费|免费小说|免费全[文本]|在线)(?:全[文本集]|大全|免费|在线|阅读|下载|章节|\\.)|章节(?:目录|列表)|无广告|无弹窗|无防盗|[(（\\[])[\\S\\s]*"
+            "intro": "tag.p.2@text",
+            "kind": "tag.p.1@tag.span.0@text",
+            "lastChapter": "tag.p.3@tag.a@text",
+            "name": "tag.p.0@tag.a@text",
+            "wordCount": "tag.p.1@tag.span.1@text"
         },
         "ruleToc": {
-            "chapterList": "@css::not(dt)+dt~dd a",
-            "chapterName": "text",
-            "chapterUrl": "href"
-        },
-        "searchUrl": "https://zhannei.baidu.com/cse/search?q={{key}}&p={{page-1}}&s=1467101277038279352&wt=1&pn=10&ht=1",
-        "weight": 0
-    },
-    {
-        "bookSourceComment": "error:timeout\n",
-        "bookSourceGroup": "🍺特优",
-        "bookSourceName": "🍺搜小说①",
-        "bookSourceType": 0,
-        "bookSourceUrl": "https://www.soxs.cc",
-        "customOrder": -37738,
-        "enabled": true,
-        "enabledExplore": true,
-        "lastUpdateTime": 1602846049292,
-        "ruleBookInfo": {
-            "author": "class.info_right@tag.h6@tag.a.0@text",
-            "coverUrl": "class.book_cover@tag.img@src",
-            "intro": "id.intro@text",
-            "name": "class.info_right@tag.h1@text"
-        },
-        "ruleContent": {
-            "content": "class.content@textNodes##您可以在百度里搜索\\“.*\\”查找最新章节！"
-        },
-        "ruleExplore": {},
-        "ruleSearch": {
-            "author": "class.s4@text",
-            "bookList": "class.novelslist2@tag.li",
-            "bookUrl": "class.s2@tag.a.0@href",
-            "kind": "class.s1@tag.a.0@text",
-            "lastChapter": "class.s3@tag.a.0@text",
-            "name": "class.s2@tag.a.0@text"
-        },
-        "ruleToc": {
-            "chapterList": "class.novel_list.1@tag.dd",
+            "chapterList": "class.read@tag.li",
             "chapterName": "tag.a@text",
-            "chapterUrl": "tag.a@href"
+            "chapterUrl": "tag.a@href",
+            "nextTocUrl": "text.下一页@href"
         },
-        "searchUrl": "https://www.soxs.cc/search.html,{\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}&page={{page}}\"\n}",
+        "searchUrl": "https:\/\/m.soxs.cc\/search.html,{\r\n  \"method\": \"POST\",\r\n  \"body\": \"searchtype=all&searchkey={{key}}\"\r\n}\r\n",
         "weight": 0
     },
     {
