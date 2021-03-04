@@ -2573,41 +2573,38 @@
         "weight": 0
     },
     {
-        "bookSourceComment": "",
         "bookSourceGroup": "🍺特优",
-        "bookSourceName": "🍺天天中文网",
+        "bookSourceName": "🍺天天中文",
         "bookSourceType": 0,
-        "bookSourceUrl": "https://www.ttzw.com",
+        "bookSourceUrl": "https:\/\/www.ttzw.com",
         "bookUrlPattern": "",
-        "customOrder": -3820,
-        "enabled": true,
-        "enabledExplore": true,
+        "customOrder": -2744,
+        "enabled": false,
+        "enabledExplore": false,
         "lastUpdateTime": 0,
         "loginUrl": "",
         "ruleBookInfo": {
-            "coverUrl": ".imgbox@img@src",
-            "intro": "//meta[@property=\"og:description\"]/@content"
+            "intro": "\/\/meta[@property=\"og:description\"]\/@content"
         },
         "ruleContent": {
             "content": "id.content@textNodes",
-            "imageStyle": "0",
-            "nextContentUrl": "text.下一页@href"
+            "imageStyle": "0"
         },
         "ruleExplore": {},
         "ruleSearch": {
             "author": ".s4@text",
-            "bookList": ".txt-list@li!0",
-            "bookUrl": ".s2@a@href",
+            "bookList": "\/\/*[@class=\"search-list\"]\/ul\/li[position()>1 and position()<5]",
+            "bookUrl": ".s2@a@href##https##http",
             "kind": ".s1@text##\\[|\\]",
             "lastChapter": ".s3@text",
             "name": ".s2@text"
         },
         "ruleToc": {
-            "chapterList": "class.section-box!0@li@a",
-            "chapterName": "text",
+            "chapterList": "\/\/*[@id=\"list\"]\/\/dt[2]\/following-sibling::dd\/a",
+            "chapterName": "text##^(\\d+)(.{0,})$##第$1章$2",
             "chapterUrl": "href"
         },
-        "searchUrl": "https://www.ttzw.tv/ar.php?keyWord={{key}}",
+        "searchUrl": "https:\/\/www.ttzw.com\/ar.php?keyWord={{key}}",
         "weight": 0
     },
     {
