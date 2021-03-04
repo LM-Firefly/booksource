@@ -776,80 +776,6 @@
     {
         "bookSourceComment": "",
         "bookSourceGroup": "🎨漫画",
-        "bookSourceName": "🎨MOXI动漫",
-        "bookSourceType": 0,
-        "bookSourceUrl": "https://www.moxidongman.com",
-        "bookUrlPattern": "",
-        "customOrder": -38063,
-        "enabled": true,
-        "enabledExplore": true,
-        "exploreUrl": "最新更新::https://www.moxidongman.com",
-        "lastUpdateTime": 1603283499742,
-        "loginUrl": "",
-        "ruleBookInfo": {
-            "intro": "class.color-hui@text",
-            "kind": "class.box-details@tag.p.2@tag.span.0@text##类型："
-        },
-        "ruleContent": {
-            "content": ":_S001_g1D1pXhojSnKJMnS0GLTtODkATMuQJsYG6AYupNrSgRBDvl2W16c7n58RAPtuIRD\n"
-        },
-        "ruleExplore": {},
-        "ruleSearch": {
-            "bookList": "class.comic-list@tag.li",
-            "bookUrl": "tag.a.0@href",
-            "coverUrl": "tag.img@src",
-            "lastChapter": "tag.span.1@text",
-            "name": "tag.span.0@text"
-        },
-        "ruleToc": {
-            "chapterList": "class.catalog-order@tag.a",
-            "chapterName": "text",
-            "chapterUrl": "href"
-        },
-        "searchUrl": "#",
-        "weight": 0
-    },
-    {
-        "bookSourceComment": "",
-        "bookSourceGroup": "🎨漫画",
-        "bookSourceName": "🎨522漫画",
-        "bookSourceType": 0,
-        "bookSourceUrl": "https://www.love127.com",
-        "bookUrlPattern": "",
-        "customOrder": -38053,
-        "enabled": true,
-        "enabledExplore": true,
-        "exploreUrl": "热血::https://www.love127.com/rexue/{{page}}.html\n格斗::https://www.love127.com/gedou/{{page}}.html\n科幻::https://www.love127.com/kehuan/{{page}}.html\n竞技::https://www.love127.com/jingji/{{page}}.html\n搞笑::https://www.love127.com/gaoxiao/{{page}}.html\n推理::https://www.love127.com/tuili/{{page}}.html\n恐怖::https://www.love127.com/kongbu/{{page}}.html\n耽美::https://www.love127.com/danmei/{{page}}.html\n少女::https://www.love127.com/shaonv/{{page}}.html\n恋爱::https://www.love127.com/lianai/{{page}}.html\n生活::https://www.love127.com/shenghuo/{{page}}.html\n战争::https://www.love127.com/zhanzheng/{{page}}.html\n故事::https://www.love127.com/gushi/{{page}}.html\n冒险::https://www.love127.com/maoxian/{{page}}.html\n魔幻::https://www.love127.com/mohuan/{{page}}.html\n玄幻::https://www.love127.com/xuanhuan/{{page}}.html\n校园::https://www.love127.com/xiaoyuan/{{page}}.html\n悬疑::https://www.love127.com/xuanyi/{{page}}.html\n萌系::https://www.love127.com/mengxi/{{page}}.html\n穿越::https://www.love127.com/chuanyue/{{page}}.html\n后宫::https://www.love127.com/hougong/{{page}}.html\n都市::https://www.love127.com/dushi/{{page}}.html\n武侠::https://www.love127.com/wuxia/{{page}}.html\n历史::https://www.love127.com/lishi/{{page}}.html\n同人::https://www.love127.com/tongren/{{page}}.html\n励志::https://www.love127.com/lizhi/{{page}}.html\n百合::https://www.love127.com/baihe/{{page}}.html\n治愈::https://www.love127.com/zhiyu/{{page}}.html\n机甲::https://www.love127.com/jijia/{{page}}.html\n纯爱::https://www.love127.com/chunai/{{page}}.html\n美食::https://www.love127.com/meishi/{{page}}.html\n血腥::https://www.love127.com/xuexing/{{page}}.html\n僵尸::https://www.love127.com/jiangshi/{{page}}.html\n恶搞::https://www.love127.com/egao/{{page}}.html\n虐心::https://www.love127.com/nuexin/{{page}}.html\n动作::https://www.love127.com/dongzuo/{{page}}.html\n惊险::https://www.love127.com/jingxian/{{page}}.html\n唯美::https://www.love127.com/weimei/{{page}}.html\n震撼::https://www.love127.com/zhenhan/{{page}}.html\n复仇::https://www.love127.com/fuchou/{{page}}.html\n侦探::https://www.love127.com/zhentan/{{page}}.html\n脑洞::https://www.love127.com/naodong/{{page}}.html\n奇幻::https://www.love127.com/qihuan/{{page}}.html\n宫斗::https://www.love127.com/gongdou/{{page}}.html\n爆笑::https://www.love127.com/baoxiao/{{page}}.html\n运动::https://www.love127.com/yundong/{{page}}.html\n青春::https://www.love127.com/qingchun/{{page}}.html\n灵异::https://www.love127.com/lingyi/{{page}}.html\n古风::https://www.love127.com/gufeng/{{page}}.html\n权谋::https://www.love127.com/quanmou/{{page}}.html\n节操::https://www.love127.com/jiecao/{{page}}.html\n明星::https://www.love127.com/mingxing/{{page}}.html\n暗黑::https://www.love127.com/anhei/{{page}}.html\n社会::https://www.love127.com/shehui/{{page}}.html\n浪漫::https://www.love127.com/langman/{{page}}.html\n栏目::https://www.love127.com/lanmu/{{page}}.html\n仙侠::https://www.love127.com/xianxia/{{page}}.html\n日韩::https://www.love127.com/rihan/{{page}}.html\n内地::https://www.love127.com/neidi/{{page}}.html\n港台::https://www.love127.com/gangntai/{{page}}.html\n欧美::https://www.love127.com/oumei/{{page}}.html\n其他::https://www.love127.com/qita/{{page}}.html\nTV版::https://www.love127.com/tvban/{{page}}.html\n少年::https://www.love127.com/shaonianqu/{{page}}.html\n少女::https://www.love127.com/shaonvqu/{{page}}.html\n青年::https://www.love127.com/qingnian/{{page}}.html\n少儿::https://www.love127.com/shaoer/{{page}}.html\n彩色::https://www.love127.com/caise/{{page}}.html\n黑白::https://www.love127.com/heibai/{{page}}.html\n全部::https://www.love127.com/all/{{page}}.html\n完结::https://www.love127.com/wanjie/{{page}}.html\n连载中::https://www.love127.com/lianzai/{{page}}.html\n最新更新::https://www.love127.com/new/\n排行榜::https://www.love127.com/paihang/",
-        "lastUpdateTime": 1603246321106,
-        "loginUrl": "",
-        "ruleBookInfo": {
-            "author": "class.txtItme.1@text",
-            "intro": "tag.meta.6@content",
-            "kind": "class.txtItme.2@text"
-        },
-        "ruleContent": {
-            "content": ":_S001_vMMQZsSqq66JHArA5uAkiWqB0kMo8ouvbZxDSfsJv/5wFHHQxEKuiud6r6A2xqzh7D6DQhBLrQWX\nE5AlXfxYd081jHz2Mhll1vZXtHjGBvsN7qbNlBSKk7NYbsUa4Ym4RmK1o2bSyNSQp+OKiBX4tShJ\n5Q7jyAagQgweBf2r+wt2OJF0oqLeVr7iifQWNfC4PNEzlfks4QQlq5niyqfXthpJr3EQU9tKhzXp\nvM5OrTm+7I/LU0Tke9Bubcql+rU908gcYCIxAY5Y9XRduSCPyErynbEzppCwc+JAG/WBuVy5dSw8\nBecD8nD7Xr+LAisLJXjgTix3nE2QHoRZE/3kmd3MC6OYY6bydnIC3gY8b/ifxfzoza7Ub1PurI86\ndFtGsPv69jlrDkJg93uqJrs6x5Q4KJUw5iry1kCtpVEiiH9KDVY6lRW0T/wsy/Lju3FoLe799cQN\nXo9xV5gHB0WqcliYO6x5pTJzOWEi3RGMNCWwyoAY7u+56meF/9V3p5yz\n"
-        },
-        "ruleExplore": {},
-        "ruleSearch": {
-            "bookList": "class.cy_main@tag.ul",
-            "bookUrl": "tag.a.0@href@js:\"https://love127.com\"+result",
-            "coverUrl": "tag.img@src",
-            "kind": "class.biaoqian@tag.a@text",
-            "lastChapter": "class.updata@tag.span@text||class.zuixin@tag.a@text||class.sx@tag.span.4@tag.a@text",
-            "name": "class.title@tag.a@text"
-        },
-        "ruleToc": {
-            "chapterList": "-id.list@tag.li",
-            "chapterName": "tag.a@text",
-            "chapterUrl": "tag.a@href"
-        },
-        "searchUrl": "https://www.love127.com/statics/search.aspx?key={{key}}&button=%E6%90%9C%E7%B4%A2",
-        "weight": 0
-    },
-    {
-        "bookSourceComment": "",
-        "bookSourceGroup": "🎨漫画",
         "bookSourceName": "🎨微博动漫",
         "bookSourceType": 0,
         "bookSourceUrl": "https://manhua.weibo.com",
@@ -925,44 +851,6 @@
             "chapterUrl": "tag.a@href"
         },
         "searchUrl": "https://ssmh.cc/search/?keyword={{key}}",
-        "weight": 0
-    },
-    {
-        "bookSourceComment": "",
-        "bookSourceGroup": "🎨漫画",
-        "bookSourceName": "🎨优酷漫画",
-        "bookSourceType": 0,
-        "bookSourceUrl": "https://www.ykmh.com/",
-        "bookUrlPattern": "",
-        "customOrder": -38026,
-        "enabled": true,
-        "enabledExplore": true,
-        "exploreUrl": "全部::https://www.ykmh.com//list/p-{{page}}\n日本::https://www.ykmh.com//list/area-%E6%97%A5%E6%9C%AC-p-{{page}}\n港台::https://www.ykmh.com//list/area-%E6%B8%AF%E5%8F%B0-p-{{page}}\n欧美::https://www.ykmh.com//list/area-%E6%AC%A7%E7%BE%8E-p-{{page}}\n韩国::https://www.ykmh.com//list/area-%E9%9F%A9%E5%9B%BD-p-{{page}}\n国产::https://www.ykmh.com//list/area-%E5%9B%BD%E4%BA%A7-p-{{page}}\n热血::https://www.ykmh.com//list/smid-1-p-{{page}}\n武侠::https://www.ykmh.com//list/smid-2-p-{{page}}\n搞笑::https://www.ykmh.com//list/smid-3-p-{{page}}\n耽美::https://www.ykmh.com//list/smid-4-p-{{page}}\n爱情::https://www.ykmh.com//list/smid-5-p-{{page}}\n科幻::https://www.ykmh.com//list/smid-6-p-{{page}}\n魔法::https://www.ykmh.com//list/smid-7-p-{{page}}\n神魔::https://www.ykmh.com//list/smid-8-p-{{page}}\n竞技::https://www.ykmh.com//list/smid-9-p-{{page}}\n格斗::https://www.ykmh.com//list/smid-10-p-{{page}}\n机战::https://www.ykmh.com//list/smid-11-p-{{page}}\n体育::https://www.ykmh.com//list/smid-12-p-{{page}}\n运动::https://www.ykmh.com//list/smid-13-p-{{page}}\n校园::https://www.ykmh.com//list/smid-14-p-{{page}}\n励志::https://www.ykmh.com//list/smid-15-p-{{page}}\n历史::https://www.ykmh.com//list/smid-16-p-{{page}}\n伪娘::https://www.ykmh.com//list/smid-17-p-{{page}}\n百合::https://www.ykmh.com//list/smid-18-p-{{page}}\n后宫::https://www.ykmh.com//list/smid-19-p-{{page}}\n治愈::https://www.ykmh.com//list/smid-20-p-{{page}}\n美食::https://www.ykmh.com//list/smid-21-p-{{page}}\n推理::https://www.ykmh.com//list/smid-22-p-{{page}}\n悬疑::https://www.ykmh.com//list/smid-23-p-{{page}}\n恐怖::https://www.ykmh.com//list/smid-24-p-{{page}}\n职场::https://www.ykmh.com//list/smid-25-p-{{page}}\n剧情::https://www.ykmh.com//list/smid-27-p-{{page}}\n生活::https://www.ykmh.com//list/smid-28-p-{{page}}\n幻想::https://www.ykmh.com//list/smid-29-p-{{page}}\n战争::https://www.ykmh.com//list/smid-30-p-{{page}}\n仙侠::https://www.ykmh.com//list/smid-33-p-{{page}}\n古风::https://www.ykmh.com//list/smid-36-p-{{page}}\n玄幻::https://www.ykmh.com//list/smid-37-p-{{page}}\n穿越::https://www.ykmh.com//list/smid-38-p-{{page}}\n性转换::https://www.ykmh.com//list/smid-40-p-{{page}}\n冒险::https://www.ykmh.com//list/smid-41-p-{{page}}\n其他::https://www.ykmh.com//list/smid-32-p-{{page}}\n奇幻::https://www.ykmh.com//list/smid-42-p-{{page}}\n排行榜::https://www.ykmh.com//rank/<,_{{page}}>",
-        "lastUpdateTime": 1603283608137,
-        "loginUrl": "",
-        "ruleBookInfo": {
-            "intro": "id.bookIntro@text",
-            "kind": "class.cont-list@tag.dl.3@tag.dd@tag.a!0@text"
-        },
-        "ruleContent": {
-            "content": ":_S001_vMMQZsSqq66JHArA5uAkie0HggcTlAN5afH0/yptEIEvlmVwblO+qHdJcpdWjSAEsETOd3HaezR4\n9lVT34ar+CpGj4tQ73skR9Fzb98BJ1sQegGFppnytuyDhPjvUAo5k2wrJMuJ2zkOPNX+umdC9jYz\nRWQkJObabXTCEagutReIPE6El0ROphVqoXlkGd9at2hp624SnQqJVXpAaY+eUu3i5nux9ZjX3PSQ\nj2x+iNB0H7Ohbt4MI0e6aolxOCOcuI/buc8cXknyKC28rnAgsDErs0UYzJrOEjbsdsrIdK0aukeH\nf2+hhNCGe+vHjXzFF53rLiPuq8Qcd7CRfzZUiybyt+YG60HXSRuM4V0RL3SM12ecCz/IBQm/XkWC\n4AurmRJvyBMQcQoWramExlT0xIQwds8udd/1ddpuVkTy8ujGc41/DQRB7s/ngmhQO6SU\n"
-        },
-        "ruleExplore": {},
-        "ruleSearch": {
-            "author": "tag.dd.0@tag.a@text",
-            "bookList": "-class.cont-list@tag.li||id.contList@tag.li",
-            "bookUrl": "tag.a.0@href",
-            "coverUrl": "tag.img@data-src||tag.img@src",
-            "kind": "class.thumb.0@text",
-            "lastChapter": "tag.dd.2@tag.a@text",
-            "name": "tag.h3.0@text||class.bcover@title"
-        },
-        "ruleToc": {
-            "chapterList": "-id.chapterList@tag.li",
-            "chapterName": "tag.a@text",
-            "chapterUrl": "tag.a@href"
-        },
-        "searchUrl": "https://www.ykmh.com//search/q_{{key}}-p-{{page}}",
         "weight": 0
     },
     {
