@@ -1473,80 +1473,15 @@
         "weight": 0
     },
     {
-        "bookSourceComment": "",
-        "bookSourceGroup": "🍺特优",
-        "bookSourceName": "🍺毕曲萨阅读",
-        "bookSourceType": 0,
-        "bookSourceUrl": "https://www.biqusa.com",
-        "bookUrlPattern": "",
-        "customOrder": -36967,
-        "enabled": true,
-        "enabledExplore": true,
-        "exploreUrl": "",
-        "header": "",
-        "lastUpdateTime": 0,
-        "loginUrl": "",
-        "ruleBookInfo": {
-            "author": "id.info@a.0@text",
-            "coverUrl": "tag.img@src",
-            "init": "",
-            "intro": "id.intro@text",
-            "kind": "",
-            "lastChapter": "",
-            "name": "id.info@h1@text",
-            "tocUrl": "",
-            "wordCount": ""
-        },
-        "ruleContent": {
-            "content": "id.content@textNodes",
-            "nextContentUrl": "",
-            "sourceRegex": "",
-            "webJs": ""
-        },
-        "ruleExplore": {
-            "author": "",
-            "bookList": "",
-            "bookUrl": "",
-            "coverUrl": "",
-            "intro": "",
-            "kind": "",
-            "lastChapter": "",
-            "name": "",
-            "wordCount": ""
-        },
-        "ruleSearch": {
-            "author": "class.s4@text",
-            "bookList": "class.novelslist2@li!0",
-            "bookUrl": "tag.a.0@href",
-            "coverUrl": "",
-            "intro": "",
-            "kind": "",
-            "lastChapter": "class.s3@a@text",
-            "name": "class.s2@text",
-            "wordCount": "class.s6@text"
-        },
-        "ruleToc": {
-            "chapterList": "id.list@tag.dd!0:1:2:3:4:5:6:7:8:9:10:11",
-            "chapterName": "tag.a.0@text",
-            "chapterUrl": "tag.a.0@href",
-            "isVip": "",
-            "nextTocUrl": "",
-            "updateTime": ""
-        },
-        "searchUrl": "https://www.biqusa.com/search.html?name={{key}},{\n  \"charset\": \"utf-8\"\n}",
-        "weight": 0
-    },
-    {
-        "bookSourceComment": "",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺百墨阁",
         "bookSourceType": 0,
-        "bookSourceUrl": "https://www.baimoge.com",
-        "customOrder": -36940,
+        "bookSourceUrl": "https:\/\/www.baimoge.com",
+        "customOrder": -2024,
         "enabled": true,
         "enabledExplore": true,
-        "exploreUrl": "玄幻魔法::/fenlei_1_{{page}}.html\n仙侠修真::/fenlei_2_{{page}}.html\n都市言情::/fenlei_3_{{page}}.html\n历史军事::/fenlei_4_{{page}}.html\n灵异悬疑::/fenlei_5_{{page}}.html\n科幻小说::/fenlei_6_{{page}}.html\n综合其他::/fenlei_7_{{page}}.html\n完本小说::/quanben/",
-        "lastUpdateTime": 1602900844636,
+        "exploreUrl": "玄幻魔法::\/fenlei_1_{{page}}.html\n仙侠修真::\/fenlei_2_{{page}}.html\n都市言情::\/fenlei_3_{{page}}.html\n历史军事::\/fenlei_4_{{page}}.html\n灵异悬疑::\/fenlei_5_{{page}}.html\n科幻小说::\/fenlei_6_{{page}}.html\n综合其他::\/fenlei_7_{{page}}.html\n完本小说::\/quanben\/",
+        "lastUpdateTime": 0,
         "ruleBookInfo": {
             "author": "[property=\"og:novel:author\"]@content",
             "coverUrl": "[property=\"og:image\"]@content",
@@ -1562,7 +1497,7 @@
             "author": "class.s4@text",
             "bookList": "class.l@tag.li",
             "bookUrl": "tag.a.0@href",
-            "coverUrl": "tag.a.0@href##.+\\D((\\d+)\\d{3})\\D##https://www.baimoge.com/files/article/image/$2/$1/$1s.jpg###",
+            "coverUrl": "tag.a.0@href##.+\\D((\\d+)\\d{3})\\D##https:\/\/www.baimoge.com\/files\/article\/image\/$2\/$1\/$1s.jpg###",
             "kind": "class.s1@text&&class.s5@text##\\[|\\]",
             "lastChapter": "class.s3@text",
             "name": "class.s2@text"
