@@ -1325,14 +1325,14 @@
         }
     },
     {
-        "bookSourceComment": "error:Timed out waiting for 60000 ms\n",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺三五第一小说网",
         "bookSourceType": 0,
         "bookSourceUrl": "https://www.35d1.com",
-        "customOrder": -37213,
-        "enabled": true,
-        "enabledExplore": true,
+        "bookSourceUrl": "https:\/\/www.35d1.com",
+        "customOrder": 0,
+        "enabled": false,
+        "enabledExplore": false,
         "lastUpdateTime": 0,
         "ruleBookInfo": {
             "author": "id.info.0@tag.p.0@text##作者：(.*) 最后更新：##$1##",
@@ -1356,11 +1356,11 @@
             "name": "class.odd.0@tag.a.0@text"
         },
         "ruleToc": {
-            "chapterList": "@js:\nvar data=result.match(/<\\/dt>[^@]*<\\/dt>([^@]*)<\\/dl>/)[1];//只取有用的部分\nvar datalist=data.split(\"<dd>\");//数据切开\nvar list=[],len=datalist.length;\nif(len>1){\n\tfor(var i=1;i<len;i++){\n\t\tvar temp=datalist[i].match(/<a href=\"(.*)\">(.*)<\\/a>/);\n\t\tlist.push({\n\t\t\t\"chapterName\":temp[2],\n\t\t\t\"chapterUrl\":temp[1]\n\t\t});\n\t}\n}\nlist;",
+            "chapterList": "@js:\nvar data=result.match(\/<\\\/dt>[^@]*<\\\/dt>([^@]*)<\\\/dl>\/)[1];\/\/只取有用的部分\nvar datalist=data.split(\"<dd>\");\/\/数据切开\nvar list=[],len=datalist.length;\nif(len>1){\n\tfor(var i=1;i<len;i++){\n\t\tvar temp=datalist[i].match(\/<a href=\"(.*)\">(.*)<\\\/a>\/);\n\t\tlist.push({\n\t\t\t\"chapterName\":temp[2],\n\t\t\t\"chapterUrl\":temp[1]\n\t\t});\n\t}\n}\nlist;",
             "chapterName": "chapterName",
             "chapterUrl": "chapterUrl"
         },
-        "searchUrl": "https://www.35d1.com/modules/article/search.php,{\n\"method\": \"POST\",\n\"body\": \"searchkey={{key}}&searchtype=articlename\",\n\"webView\": true\n}",
+        "searchUrl": "https:\/\/www.35d1.com\/modules\/article\/search.php,{\n\"method\": \"POST\",\n\"body\": \"searchkey={{key}}&searchtype=articlename\",\n\"webView\": true\n}",
         "weight": 0
     },
     {
