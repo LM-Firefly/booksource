@@ -535,100 +535,6 @@
     {
         "bookSourceComment": "",
         "bookSourceGroup": "🍺特优",
-        "bookSourceName": "🍺七彩中文",
-        "bookSourceType": 0,
-        "bookSourceUrl": "https://qicaizw.com",
-        "bookUrlPattern": "",
-        "customOrder": -38399,
-        "enabled": true,
-        "enabledExplore": true,
-        "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko, By Black Prism) Chrome/90.0.4402.0 Safari/537.36\"\n}",
-        "lastUpdateTime": 0,
-        "loginUrl": "",
-        "ruleBookInfo": {
-            "author": "class.author@tag.a@text",
-            "coverUrl": "class.detail@tag.img@src",
-            "intro": "class.intro.0@tag.p.0@textNodes",
-            "kind": "",
-            "lastChapter": "class.new@tag.a@text",
-            "name": "class.name@text",
-            "tocUrl": "class.now@tag.a@href",
-            "wordCount": "class.layui-bg-red@text"
-        },
-        "ruleContent": {
-            "content": "class.content@tag.p!-1@text",
-            "imageStyle": "0"
-        },
-        "ruleExplore": {},
-        "ruleSearch": {
-            "author": "class.data.0@tag.a@text",
-            "bookList": "class.list@tag.li",
-            "bookUrl": "tag.a.0@href",
-            "coverUrl": "tag.img@src",
-            "intro": "class.intro@text",
-            "kind": "tag.span@text",
-            "lastChapter": "class.data.1@tag.a@text",
-            "name": "class.bookname@tag.a@text"
-        },
-        "ruleToc": {
-            "chapterList": "class.read@tag.li",
-            "chapterName": "tag.a@text",
-            "chapterUrl": "tag.a@href",
-            "nextTocUrl": "text.下一页@href"
-        },
-        "searchUrl": "/search.html,{\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}\"\n}",
-        "weight": 0
-    },
-    {
-        "bookSourceComment": "",
-        "bookSourceGroup": "🍺特优",
-        "bookSourceName": "🍺2K小说",
-        "bookSourceType": 0,
-        "bookSourceUrl": "https://2kxsw.com",
-        "bookUrlPattern": "",
-        "customOrder": -38397,
-        "enabled": true,
-        "enabledExplore": true,
-        "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko, By Black Prism) Chrome/90.0.4402.0 Safari/537.36\"\n}",
-        "lastUpdateTime": 1604173363511,
-        "loginUrl": "",
-        "ruleBookInfo": {
-            "author": "class.author@tag.a@text",
-            "coverUrl": "class.detail@tag.img@src",
-            "intro": "class.intro.0@tag.p.0@textNodes",
-            "kind": "",
-            "lastChapter": "class.new@tag.a@text",
-            "name": "class.name@text",
-            "tocUrl": "class.now@tag.a@href",
-            "wordCount": "class.layui-bg-red@text"
-        },
-        "ruleContent": {
-            "content": "class.content@tag.p!-1@text",
-            "imageStyle": "0"
-        },
-        "ruleExplore": {},
-        "ruleSearch": {
-            "author": "class.data.0@tag.a@text",
-            "bookList": "class.list@tag.li",
-            "bookUrl": "tag.a.0@href",
-            "coverUrl": "tag.img@src",
-            "intro": "class.intro@text",
-            "kind": "tag.span@text",
-            "lastChapter": "class.data.1@tag.a@text",
-            "name": "class.bookname@tag.a@text"
-        },
-        "ruleToc": {
-            "chapterList": "class.read@tag.li",
-            "chapterName": "tag.a@text",
-            "chapterUrl": "tag.a@href",
-            "nextTocUrl": "text.下一页@href"
-        },
-        "searchUrl": "/search.html,{\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}\"\n}",
-        "weight": 0
-    },
-    {
-        "bookSourceComment": "",
-        "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺19楼文学",
         "bookSourceType": 0,
         "bookSourceUrl": "https://19wo.com",
@@ -8046,6 +7952,44 @@
             "chapterUrl": "a@href"
         },
         "searchUrl": "https:\/\/www.2shu8.cc\/s_{{key}}",
+        "weight": 0
+    },
+    {
+        "bookSourceGroup": "🍺特优",
+        "bookSourceName": "🍺2K中文",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https:\/\/www.2kzw.com",
+        "bookUrlPattern": "",
+        "customOrder": 6,
+        "enabled": true,
+        "enabledExplore": false,
+        "lastUpdateTime": 1606789654224,
+        "loginUrl": "",
+        "ruleBookInfo": {
+            "coverUrl": "img@data-original",
+            "intro": "class.info-main-intro@p@textNodes##展开全部",
+            "kind": "",
+            "lastChapter": "class.diswap info-main-wap border3-1@tag.a.2@text##最新章节："
+        },
+        "ruleContent": {
+            "content": "class.content@p@textNodes"
+        },
+        "ruleExplore": {},
+        "ruleSearch": {
+            "author": "span@text",
+            "bookList": "class.border3 commend flex flex-between category-commend@children",
+            "bookUrl": "a@href",
+            "coverUrl": "img@data-original",
+            "intro": "class.intro@text",
+            "lastChapter": "",
+            "name": "h3@text"
+        },
+        "ruleToc": {
+            "chapterList": "class.info-chapters flex flex-wrap.1@a",
+            "chapterName": "text",
+            "chapterUrl": "href"
+        },
+        "searchUrl": "\/search,{\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}\"\n}",
         "weight": 0
     },
     {
