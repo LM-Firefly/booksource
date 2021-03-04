@@ -1511,53 +1511,40 @@
         "weight": 0
     },
     {
-        "bookSourceComment": "error:timeout\n",
+        "bookSourceComment": "",
         "bookSourceGroup": "🍑耽美",
         "bookSourceName": "🍑新世纪小说",
         "bookSourceType": 0,
-        "bookSourceUrl": "https://www.2100xs.com",
-        "customOrder": -36884,
+        "bookSourceUrl": "https:\/\/www.2100xs.com",
+        "customOrder": 10773,
         "enabled": true,
         "enabledExplore": true,
-        "exploreUrl": "玄幻奇幻::/xuanhuan/\n武侠修真::/wuxia/\n都市言情::/yanqing/\n历史军事::/lishi/\n侦探推理::/zhentan/\n网游竞技::/wangyou/\n科幻小说::/kehuan/\n恐怖灵异::/koubu/\n其他小说::/othersbooks/\n全本小说::/quanben/",
-        "lastUpdateTime": 1599824609811,
+        "lastUpdateTime": 1606663028234,
         "ruleBookInfo": {
-            "author": "[property=\"og:novel:author\"]@content",
-            "coverUrl": "[property=\"og:image\"]@content",
-            "intro": "id.intro@tag.p@textNodes##各位书友要.*",
-            "kind": "[property=\"og:novel:category\"]@content&&[property=\"og:novel:status\"]@content",
-            "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
-            "name": "[property=\"og:novel:book_name\"]@content",
-            "wordCount": "[property=\"og:novel:update_time\"]@content"
+            "author": "id.info@tag.p.0@text",
+            "coverUrl": "id.fmimg@tag.img@src",
+            "intro": "id.intro@tag.p@text",
+            "name": "id.info@tag.h1@text"
         },
         "ruleContent": {
-            "content": "id.content@html##天才一秒记住.*|https://www.2100xs.com.*"
+            "content": "class.showtxt@textNodes"
         },
-        "ruleExplore": {
-            "author": "class.s4@text",
-            "bookList": "class.l@li",
-            "bookUrl": "tag.a@href",
-            "coverUrl": "tag.a.0@href##.+\\D((\\d+)\\d{3})\\D##https://www.2100xs.com/files/article/image/$2/$1/$1s.jpg###",
-            "lastChapter": "class.s3@text",
-            "name": "class.s2@text",
-            "wordCount": "class.s5@text"
-        },
+        "ruleExplore": {},
         "ruleSearch": {
             "author": "class.author@text",
             "bookList": "class.bookbox",
             "bookUrl": "class.bookname.0@tag.a.0@href",
             "coverUrl": "class.bookimg@tag.img@src",
-            "intro": "tag.p@textNodes",
             "kind": "class.cat@text##.*分类：",
             "lastChapter": "class.update@tag.a@text",
             "name": "class.bookname.0@tag.a.0@text"
         },
         "ruleToc": {
             "chapterList": "class.listmain@tag.dd!0:1:2:3:4:5",
-            "chapterName": "tag.a@text",
-            "chapterUrl": "tag.a@href"
+            "chapterName": "tag.a.0@text",
+            "chapterUrl": "tag.a.0@href"
         },
-        "searchUrl": "https://www.2100xs.com/s.php?ie=gbk&q={{key}}",
+        "searchUrl": "https:\/\/www.2100xs.com\/s.php?ie=gbk&q={{key}}",
         "weight": 0
     },
     {
