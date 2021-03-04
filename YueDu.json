@@ -2162,19 +2162,19 @@
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺若晨文学",
         "bookSourceType": 0,
-        "bookSourceUrl": "https://ruochenwx.com",
-        "customOrder": -3586,
+        "bookSourceUrl": "https:\/\/m.ruochenwx.com",
+        "customOrder": -2062,
         "enabled": true,
         "enabledExplore": true,
-        "exploreUrl": "总排行榜::/top/allvisit/{{page}}.html\n月排行榜::/top/monthvisit/{{page}}.html\n周排行榜::/top/weekvisit/{{page}}.html\n日排行榜::/top/dayvisit/{{page}}.html\n总推荐榜::/top/allvote/{{page}}.html\n月推荐榜::/top/monthvote/{{page}}.html\n周推荐榜::/top/weekvote/{{page}}.html\n日推荐榜::/top/dayvote/{{page}}.html\n总收藏榜::/top/goodnum/{{page}}.html\n字数排行::/top/size/{{page}}.html\n本站强推::/top/toptime/{{page}}.html\n总新书榜::/top/goodnew/{{page}}.html\n最新入库::/top/postdate/{{page}}.html\n最近更新::/top/lastupdate/{{page}}.html\n【连载】::\n玄幻魔法::/shuku/0_1_1_{{page}}.html\n仙侠修真::/shuku/0_2_1_{{page}}.html\n都市言情::/shuku/0_3_1_{{page}}.html\n历史军事::/shuku/0_4_1_{{page}}.html\n网游动漫::/shuku/0_5_1_{{page}}.html\n女频科幻::/shuku/0_6_1_{{page}}.html\n其他类型::/shuku/0_7_1_{{page}}.html\n【完本】::\n玄幻魔法::/shuku/0_1_2_{{page}}.html\n仙侠修真::/shuku/0_2_2_{{page}}.html\n都市言情::/shuku/0_3_2_{{page}}.html\n历史军事::/shuku/0_4_2_{{page}}.html\n网游动漫::/shuku/0_5_2_{{page}}.html\n女频科幻::/shuku/0_6_2_{{page}}.html\n其他类型::/shuku/0_7_2_{{page}}.html",
-        "lastUpdateTime": 1605102308936,
+        "exploreUrl": "玄幻魔法::https:\/\/m.ruochenwx.com\/list\/1\/{{page}}.html&&仙侠修真::https:\/\/m.ruochenwx.com\/list\/2\/{{page}}.html&&都市言情::https:\/\/m.ruochenwx.com\/list\/3\/{{page}}.html&&历史军事::https:\/\/m.ruochenwx.com\/list\/4\/{{page}}.html&&网游动漫::https:\/\/m.ruochenwx.com\/list\/5\/{{page}}.html&&女频科幻::https:\/\/m.ruochenwx.com\/list\/6\/{{page}}.html&&完本小说::https:\/\/m.ruochenwx.com\/wanben\/&&总排行榜::https:\/\/m.ruochenwx.com\/top\/allvisit\/{{page}}.html&&总推荐榜::https:\/\/m.ruochenwx.com\/top\/allvote\/{{page}}.html&&月排行榜::https:\/\/m.ruochenwx.com\/top\/monthvisit\/{{page}}.html&&月推荐榜::https:\/\/m.ruochenwx.com\/top\/monthvote\/{{page}}.html&&周排行榜::https:\/\/m.ruochenwx.com\/top\/weekvisit\/{{page}}.html&&周推荐榜::https:\/\/m.ruochenwx.com\/top\/weekvote\/{{page}}.html&&最新入库::https:\/\/m.ruochenwx.com\/top\/postdate\/{{page}}.html&&最近更新::https:\/\/m.ruochenwx.com\/top\/lastupdate\/{{page}}.html&&总收藏榜::https:\/\/m.ruochenwx.com\/top\/goodnum\/{{page}}.html&&字数排行::https:\/\/m.ruochenwx.com\/top\/size\/{{page}}.html&&本站推荐::https:\/\/m.ruochenwx.com\/top\/toptime\/{{page}}.html",
+        "lastUpdateTime": 1612369494252,
         "ruleBookInfo": {
             "author": "",
             "coverUrl": "",
-            "intro": "",
+            "intro": "[name=\"description\"]@content",
             "kind": "",
             "lastChapter": "",
-            "name": "",
+            "name": "h1@text##列表",
             "wordCount": ".layui-bg-red@text"
         },
         "ruleContent": {
@@ -2182,25 +2182,34 @@
             "nextContentUrl": "text.下一页@href",
             "replaceRegex": "##.*最新章节！|-->>|本章未完.*|喜欢.*速度最快。|.*若晨文学！"
         },
-        "ruleExplore": {},
-        "ruleSearch": {
-            "author": "tag.a.2@text",
+        "ruleExplore": {
+            "author": "class.data.0@a@text",
             "bookList": "@css:ul.list li",
             "bookUrl": "tag.a.1@href",
+            "coverUrl": "img@src",
+            "intro": ".intro@textNodes",
+            "kind": "class.data.0@span@text",
+            "lastChapter": "class.data.1@a@text",
+            "name": ".bookname@text"
+        },
+        "ruleSearch": {
+            "author": "h3@text##.*?\\((.*?)\\)最新章节全文阅读全文阅读.*##$1###",
+            "bookList": "tag.article",
+            "bookUrl": "tag.a.0@href\n<js>java.ajax(result)<\/js>\n##window.location.replace\\(\"([^\"]+)\"\\);##$1###<js>result.replace('www.','m.').replace('down.html','')<\/js>",
             "coverUrl": "tag.img@src",
-            "intro": "tag.p.2@text",
-            "kind": "tag.span@text",
-            "lastChapter": "tag.a.3@text",
-            "name": "tag.a.1@text"
+            "intro": "",
+            "kind": "",
+            "lastChapter": "",
+            "name": "h3@text##(.*?)\\((.*?)\\)最新章节全文阅读.*##$1###"
         },
         "ruleToc": {
             "chapterList": "@css:ul.read li a",
             "chapterName": "text",
             "chapterUrl": "href",
-            "nextTocUrl": "@js:\nvar n=result.match(/共 (\\d+) 章/)[1];\nn = parseInt(n/20);\nif(n>=2){var list=[];\nfor(var i=2;i<=n+1;i++){\nvar url=baseUrl+'?page='+i;\nlist.push(url);\n}\nlist}",
+            "nextTocUrl": "@js:\nvar n=result.match(\/共 (\\d+) 章\/)[1];\nn = parseInt(n\/20);\nif(n>=2){var list=[];\nfor(var i=2;i<=n+1;i++){\nvar url=baseUrl+'?page='+i;\nlist.push(url);\n}\nlist}",
             "updateTime": ""
         },
-        "searchUrl": "/search/,{\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}\"\n}",
+        "searchUrl": "https:\/\/m.baidu.com\/from=1022560v\/ssid=0\/s?pn={{page*10-10}}&word={{key}} site:ruochenwx.com",
         "weight": 0
     },
     {
