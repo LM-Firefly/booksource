@@ -442,6 +442,52 @@
         "weight": 0
     },
     {
+        "bookSourceGroup": "🍺特优",
+        "bookSourceName": "🍺思路客",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https:\/\/www.siluke.tv",
+        "bookUrlPattern": "",
+        "customOrder": 128,
+        "enabled": true,
+        "enabledExplore": true,
+        "exploreUrl": "玄幻奇幻::\/ny_1<,_{{page}}>\/\n武侠仙侠::\/ny_2<,_{{page}}>\/\n都市言情::\/ny_3<,_{{page}}>\/\n历史军事::\/ny_4<,_{{page}}>\/\n科幻灵异::\/ny_5<,_{{page}}>\/\n网游竞技::\/ny_6<,_{{page}}>\/\n女频频道::\/ny_7<,_{{page}}>\/",
+        "lastUpdateTime": 0,
+        "loginUrl": "",
+        "ruleBookInfo": {
+            "coverUrl": "id.fmimg@tag.img.0@src",
+            "intro": "id.intro@tag.p.0@text"
+        },
+        "ruleContent": {
+            "content": "id.content@textNodes##[a-zA-Z]+.V[^\\s]*[a-zA-Z]|[a-zA-Z]+.v[^\\s]*[a-zA-Z]|≦.*≧|..039;|\\[.*cn\\]|\\[.*info\\]"
+        },
+        "ruleExplore": {
+            "author": "class.s5@text",
+            "bookList": "id.newscontent@class.l@tag.li",
+            "bookUrl": "class.s2@tag.a@href",
+            "coverUrl": "class.s2@tag.a@href<js>\nvar id = result.match(\/(\\d+)\\\/?$\/)[1];\nvar iid = parseInt(id\/1000);\n'\/cover\/'+iid+'\/'+id+'.jpg';\n<\/js>",
+            "kind": "class.s3@text##.*\\(|\\)",
+            "lastChapter": "class.s3@tag.a@text",
+            "name": "class.s2@tag.a@text"
+        },
+        "ruleSearch": {
+            "author": "class.result-game-item-info-tag.0@tag.span.1@text",
+            "bookList": "class.result-item result-game-item",
+            "bookUrl": "class.result-item-title.0@tag.a.0@href",
+            "coverUrl": "tag.img.0@src",
+            "intro": "class.result-game-item-desc@text",
+            "kind": "class.result-game-item-info-tag.1@tag.span.1@text&&class.result-game-item-info-tag.2@tag.span.1@text",
+            "lastChapter": "class.result-game-item-info-tag.3@tag.a.0@text",
+            "name": "class.result-item-title.0@tag.a.0@text##免费|最新章.*"
+        },
+        "ruleToc": {
+            "chapterList": "id.list@tag.dd",
+            "chapterName": "tag.a@text",
+            "chapterUrl": "tag.a.0@href"
+        },
+        "searchUrl": "https:\/\/www.siluke.tv\/search.php?q={{key}}",
+        "weight": 0
+    },
+    {
         "bookSourceComment": "",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺八八读书网",
@@ -2020,45 +2066,6 @@
         "ruleSearch": "{\n  \"bookList\": \"\",\n  \"name\": \"\"\n}",
         "ruleToc": "{\n  \"chapterList\": \"$.songs\",\n  \"chapterName\": \"title\",\n  \"chapterUrl\": \"url\",\n  \"updateTime\": \"created_time\"\n}",
         "searchUrl": "{{key}}"
-    },
-    {
-        "bookSourceComment": "",
-        "bookSourceGroup": "🔞特殊",
-        "bookSourceName": "🔞无限小说网",
-        "bookSourceType": 0,
-        "bookSourceUrl": "https://siluks.com",
-        "bookUrlPattern": "",
-        "customOrder": -36536,
-        "enabled": true,
-        "enabledExplore": true,
-        "exploreUrl": "最近入库::https://siluks.com/top-postdate<,/{{page}}>.html\n总点击榜::https://siluks.com/top-allvisit<,/{{page}}>.html\n总推荐榜::https://siluks.com/top-vote<,/{{page}}>.html\n总收藏榜::https://siluks.com/top-mark<,/{{page}}>.html\n总下载榜::https://siluks.com/top-down<,/{{page}}>.html\n总评论榜::https://siluks.com/top-comment<,/{{page}}>.html\n总评分榜::https://siluks.com/top-star_score<,/{{page}}>.html\n全本小说::https://siluks.com/over<,/{{page}}>.html\n玄幻小说::https://siluks.com/sort-xuanhuan<,/{{page}}>.html\n武侠小说::https://siluks.com/sort-wuxia<,/{{page}}>.html\n都市小说::https://siluks.com/sort-dushi<,/{{page}}>.html\n历史小说::https://siluks.com/sort-lishi<,/{{page}}>.html\n青春小说::https://siluks.com/sort-qc<,/{{page}}>.html\n游戏小说::https://siluks.com/sort-youxi<,/{{page}}>.html\n悬疑小说::https://siluks.com/sort-xy<,/{{page}}>.html\n科幻小说::https://siluks.com/sort-kehuan<,/{{page}}>.html\n言情小说::https://siluks.com/sort-yq<,/{{page}}>.html\n其他小说::https://siluks.com/sort-qita<,/{{page}}>.html",
-        "lastUpdateTime": 1605083521581,
-        "loginUrl": "",
-        "ruleBookInfo": {
-            "coverUrl": "class.block_img2@img@src",
-            "intro": "class.intro_info@tag.p.0@text",
-            "lastChapter": "class.block_txt2@tag.p.6@a@text",
-            "tocUrl": "text.章节目录@href"
-        },
-        "ruleContent": {
-            "content": "class.content@p@textNodes"
-        },
-        "ruleExplore": {},
-        "ruleSearch": {
-            "author": "class.author@text",
-            "bookList": "class.bookbox",
-            "bookUrl": "a@href",
-            "coverUrl": "img@src",
-            "lastChapter": "class.update@a@text",
-            "name": "class.bookname@a@text"
-        },
-        "ruleToc": {
-            "chapterList": "class.chapter@li@a",
-            "chapterName": "text",
-            "chapterUrl": "href"
-        },
-        "searchUrl": "https://siluks.com/search/result.html?searchkey={{key}}&submit=",
-        "weight": 0
     },
     {
         "bookSourceComment": "",
