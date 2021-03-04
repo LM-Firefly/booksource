@@ -488,38 +488,48 @@
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺糯米小说网",
         "bookSourceType": 0,
-        "bookSourceUrl": "https://www.nuomi9.com/",
+        "bookSourceUrl": "https:\/\/www.nuomi9.com",
         "bookUrlPattern": "",
-        "customOrder": -38405,
+        "customOrder": 0,
         "enabled": true,
         "enabledExplore": true,
         "exploreUrl": "最新入库::https://www.nuomi9.com/\n全本小说::https://www.nuomi9.com/quanben/\n玄幻小说::https://www.nuomi9.com/xuanhuan/{{page}}.html\n修真小说::https://www.nuomi9.com/xianxia/{{page}}.html\n都市小说::https://www.nuomi9.com/dushi/{{page}}.html\n历史小说::https://www.nuomi9.com/junshi/{{page}}.html\n网游小说::https://www.nuomi9.com/wangyou/{{page}}.html\n科幻小说::https://www.nuomi9.com/kehuan/{{page}}.html\n言情小说::https://www.nuomi9.com/yanqing/{{page}}.html\n其它小说::https://www.nuomi9.com/qita/{{page}}.html",
-        "lastUpdateTime": 1605089268923,
-        "loginUrl": "",
+        "header": "{\n  \"User-Agent\": \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/82.0.4080.0 Safari\/537.36 Edg\/82.0.453.0\"\n}",
+        "lastUpdateTime": 1613057876119,
         "ruleBookInfo": {
-            "coverUrl": "id.fmimg@img@src",
-            "intro": "id.intro@text",
-            "lastChapter": "id.info@tag.p.3@a@text"
+            "author": "author",
+            "coverUrl": "cover",
+            "init": "<js> \nvar J = org.jsoup.Jsoup.parse(result);\nvar o = selector => String(J.select(selector).text()) ;\nvar og = selector => String(J.select('[property=\"og:' + selector + '\"]').attr('content'));\nvar book = {\n\tname: og('novel:book_name').replace(\/(全文|小说|免费阅读|最新章节).*|[(（].*[）)]\/g, ''),\n\tauthor: og('novel:author'),\n\tkind: og('novel:category') + ',' + og('novel:status').replace(\/中|已\/, ''),\n\tlatest: og('novel:latest_chapter_name').replace(\/^(正文|VIP章节|章节目录|最新章节)?(\\s+|_)|[\\(（【].*[求更谢乐发推].*\/g, '') + ' • ' + og('novel:update_time').replace(\/(T|\\s).*\/, ' ').replace(\/\\\/\/g, '-'),\n\tintro: '　　最近更新:' + og('novel:update_time').replace(\/(T|\\s).*\/, ' ').replace(\/\\\/\/g, '-') + '\\n' + og('description').replace(\/.*(观看小说|简介)[:：]|分享书籍.*|各位书友.*\/g, '').replace(\/\\s+\/g, '\\n'),\n\tcover: og('image'),\n\turl: og('novel:read_url'),\n};\nbook;\n<\/js>",
+            "intro": "intro",
+            "kind": "kind",
+            "lastChapter": "latest",
+            "name": "name",
+            "tocUrl": "url",
+            "wordCount": ""
         },
         "ruleContent": {
-            "content": "id.content@html##天才一秒记住.*"
+            "content": "id.content@html##天才一秒记住.*",
+            "nextContentUrl": "",
+            "replaceRegex": "##(?<=[\\u4e00-\\u9fa5，、])\\n\\s*"
         },
         "ruleExplore": {},
         "ruleSearch": {
-            "author": "class.s4@text||class.s5@text",
-            "bookList": "class.novelslist2@ul@li||class.r@ul@li||class.l@ul@li",
-            "bookUrl": "a@href",
-            "coverUrl": "a@href##/book/(\\d+)/(\\d+)/##/imagesnew/$1/$2/$2.jpg",
-            "kind": "class.s1@text||class.s2@textNodes##《|》|\\[|]",
-            "lastChapter": "class.s3@a@text",
-            "name": "class.s2@a@text"
+            "author": "author",
+            "bookList": ".novelslist2 li!0\n<js>\nresult.toArray().slice(0, 3).map(el => {\n\tvar url = String(el.select('a:eq(0)').attr('href')).replace(\/^\\\/\/, baseUrl.match(\/(.+?\\\/\\\/[^\\\/]+\\\/)\/)[1]);\n\tvar J = org.jsoup.Jsoup.parse(java.ajax(url));\n\tvar o = selector => String(J.select(selector).text());\n\tvar og = selector => String(J.select('[property=\"og:' + selector + '\"]').attr('content'));\n\treturn {\n\t\tname: og('novel:book_name').replace(\/(全文|小说|免费阅读|最新章节).*|[(（].*[）)]\/g, ''),\n\t\tauthor: og('novel:author'),\n\t\tkind: og('novel:category') + ',' + og('novel:status').replace(\/中|已\/, ''),\n\t\tlatest: og('novel:latest_chapter_name').replace(\/^(正文|VIP章节|最新章节)?(\\s+|_)|[\\(（【].*[求更谢乐发推].*\/g, '') + ' • ' + og('novel:update_time').replace(\/(T|\\s).*\/, ' ').replace(\/\\\/\/g, '-'),\n\t\tintro: og('description').replace(\/.*(观看小说|简介)[:：]|各位书友.*\/g, '').replace(\/\\s+\/g, ''),\n\t\tcover: og('image'),\n\t\turl: url,\n\t};\n}); \n<\/js>",
+            "bookUrl": "url",
+            "coverUrl": "cover",
+            "intro": "intro",
+            "kind": "kind",
+            "lastChapter": "latest",
+            "name": "name",
+            "wordCount": ""
         },
         "ruleToc": {
-            "chapterList": "id.list@dd@a",
-            "chapterName": "text",
+            "chapterList": "#list dd a",
+            "chapterName": "text##[【（](求(评|订阅|[全首][订定]|收藏|月票)|(推荐票|\\d+字)加更|第?[一二三四五六七八九十]{1,3}更).*?[）】]",
             "chapterUrl": "href"
         },
-        "searchUrl": "https://www.nuomi9.com/web/search.php?q={{key}}&p={{page}}",
+        "searchUrl": "https:\/\/www.nuomi9.com\/web\/search.php?q={{key}}",
         "weight": 0
     },
     {
