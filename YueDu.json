@@ -1425,15 +1425,14 @@
         "weight": 0
     },
     {
-        "bookSourceComment": "error:timeout\n",
         "bookSourceGroup": "🍺特优",
-        "bookSourceName": "🍺十二文学",
+        "bookSourceName": "🍺十二文学网",
         "bookSourceType": 0,
-        "bookSourceUrl": "https://www.12txt.com",
-        "customOrder": -37090,
+        "bookSourceUrl": "https:\/\/www.12txt.com",
+        "customOrder": 0,
         "enabled": true,
         "enabledExplore": true,
-        "exploreUrl": "",
+        "exploreUrl": "玄幻::\/xuanhuan\/{{page}}.html\n武侠::\/wuxia\/{{page}}.html\n都市::\/dushi\/{{page}}.html\n历史::\/lishi\/{{page}}.html\n游戏::\/youxi\/{{page}}.html\n科幻::\/kehuan\/{{page}}.html\n恐怖::\/xuanyi\/{{page}}.html\n二次元::\/xuanhuan\/{{page}}.html\n经典::\/xuanhuan\/{{page}}.html\n古代::\/guyan\/{{page}}.html\n现代::\/xianyan\/{{page}}.html\n幻想::\/husnqing\/{{page}}.html\n青春::\/qingchun\/{{page}}.html\n网络::\/wangluo\/{{page}}.html\n科幻::\/mmkehuan\/{{page}}.html\n鬼怪::\/lingyi\/{{page}}.html\nN次元::\/Nciyuan\/{{page}}.html\n言情::\/yanqing\/{{page}}.html",
         "lastUpdateTime": 0,
         "ruleBookInfo": {
             "author": "id.info@tag.p.0@tag.a@text",
@@ -1446,13 +1445,13 @@
             "content": "id.content@html##.*十二文学网更新速度.*"
         },
         "ruleExplore": {
-            "author": "",
-            "bookList": "",
-            "bookUrl": "",
-            "kind": "",
-            "lastChapter": "",
-            "name": "",
-            "wordCount": ""
+            "author": "class.s4@text",
+            "bookList": "id.newscontent@ul@li",
+            "bookUrl": "tag.a.0@href",
+            "kind": "class.s1@text",
+            "lastChapter": "class.s3@text",
+            "name": "tag.a.0@text",
+            "wordCount": "class.s5@text"
         },
         "ruleSearch": {
             "author": "class.book_other.0@tag.span.0@text",
@@ -1470,7 +1469,7 @@
             "chapterName": "text",
             "chapterUrl": "href"
         },
-        "searchUrl": "/search.html,{\n \"method\": \"POST\",\n \"body\": \"searchtype=all&searchkey={{key}}\"\n}",
+        "searchUrl": "https:\/\/www.12txt.com\/search.html,{\n \"method\": \"POST\",\n \"body\": \"searchtype=all&searchkey={{key}}\"\n}",
         "weight": 0
     },
     {
