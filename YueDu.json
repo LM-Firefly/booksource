@@ -1037,45 +1037,6 @@
     {
         "bookSourceComment": "",
         "bookSourceGroup": "🍺特优",
-        "bookSourceName": "🍺24中文",
-        "bookSourceType": 0,
-        "bookSourceUrl": "https://www.24zw.com",
-        "bookUrlPattern": "",
-        "customOrder": -37658,
-        "enabled": true,
-        "enabledExplore": true,
-        "exploreUrl": "最近更新::https://www.24zw.com/top_lastupdate/{{page}}.html\n最新入库::https://www.24zw.com/top_postdate/{{page}}.html\n新书热榜::https://www.24zw.com/top_newhot/{{page}}.html\n月勤更榜::https://www.24zw.com/top_monthvote/{{page}}.html\n总点击榜::https://www.24zw.com/top_allvisit/{{page}}.html\n总推荐榜::https://www.24zw.com/top_allvote/{{page}}.html\n总收藏榜::https://www.24zw.com/top_goodnum/{{page}}.html\n总字数榜::https://www.24zw.com/top_words/{{page}}.html\n总月票榜::https://www.24zw.com/top_allvipvote/{{page}}.html\n总鲜花榜::https://www.24zw.com/top_allflower/{{page}}.html\n全部分类::https://www.24zw.com/0/{{page}}.html\n玄幻奇幻::https://www.24zw.com/xuanhuan/{{page}}.html\n都市青春::https://www.24zw.com/dushi/{{page}}.html\n武侠仙侠::https://www.24zw.com/xianxia/{{page}}.html\n历史军事::https://www.24zw.com/lishi/{{page}}.html\n女生言情::https://www.24zw.com/yanqing/{{page}}.html\n网游竞技::https://www.24zw.com/youxi/{{page}}.html\n科幻灵异::https://www.24zw.com/kehuan/{{page}}.html\n二次元の::https://www.24zw.com/2cy/{{page}}.html",
-        "lastUpdateTime": 0,
-        "loginUrl": "",
-        "ruleBookInfo": {
-            "coverUrl": "class.g_thumb@img@src",
-            "intro": "class.h112 mb15 det-abt lh1d8 c_strong fs16 hm-scroll@p@text",
-            "lastChapter": "class.ell lst-chapter dib vam@text"
-        },
-        "ruleContent": {
-            "content": "id.TextContent@textNodes"
-        },
-        "ruleExplore": {},
-        "ruleSearch": {
-            "author": "class.vam mr10.1@text||class.c_small mb5 mr15 ell ttc fs16.0@span@text",
-            "bookList": "class.ser-ret lh1d5@li||class.g_row lis-mn j_bookList@li",
-            "bookUrl": "a@href",
-            "coverUrl": "img@_src",
-            "kind": "class.vam mr10.0@text||class.c_small mb5 mr15 ell ttc fs16.1@span@text",
-            "lastChapter": "class.vam@a@text",
-            "name": "h3@a@text||h2@text"
-        },
-        "ruleToc": {
-            "chapterList": "id.chapterList@li@a",
-            "chapterName": "text",
-            "chapterUrl": "href"
-        },
-        "searchUrl": "https://www.24zw.com/search.html,{\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}&submit=\"\n}",
-        "weight": 0
-    },
-    {
-        "bookSourceComment": "",
-        "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺51小说",
         "bookSourceType": 0,
         "bookSourceUrl": "https://51xs.site",
