@@ -2530,12 +2530,12 @@
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺小说吧",
         "bookSourceType": 0,
-        "bookSourceUrl": "https://xiaos8.com",
+        "bookSourceUrl": "https:\/\/m.xiaos8.com",
         "bookUrlPattern": "",
         "customOrder": -4567,
         "enabled": true,
         "enabledExplore": true,
-        "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko, By Black Prism) Chrome/90.0.4402.0 Safari/537.36\"\n}",
+        "header": "{\n  \"User-Agent\": \"Mozilla\/5.0 (Windows NT 10.0; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko, By Black Prism) Chrome\/99.0 Safari\/537.36\"\n}",
         "lastUpdateTime": 1608287647033,
         "loginUrl": "",
         "ruleBookInfo": {
@@ -2569,7 +2569,7 @@
             "chapterUrl": "tag.a@href",
             "nextTocUrl": "text.下一页@href"
         },
-        "searchUrl": "/search.html,{\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}\"\n}",
+        "searchUrl": "\/search.html,{\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}\"\n}",
         "weight": 0
     },
     {
