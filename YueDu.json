@@ -1175,46 +1175,6 @@
     {
         "bookSourceComment": "",
         "bookSourceGroup": "🍺特优",
-        "bookSourceName": "🍺爱下电子书",
-        "bookSourceType": 0,
-        "bookSourceUrl": "https://aixdzs.com",
-        "customOrder": -1837,
-        "enabled": true,
-        "enabledExplore": true,
-        "exploreUrl": "玄幻奇幻::/sort/1?page={{page}}&w=1\n修真仙侠::/sort/2?page={{page}}&w=1\n都市青春::/sort/3?page={{page}}&w=1\n历史军事::/sort/4?page={{page}}&w=1\n网游竞技::/sort/5?page={{page}}&w=1\n科幻灵异::/sort/6?page={{page}}&w=1\n言情穿越::/sort/7?page={{page}}&w=1\n耽美同人::/sort/8?page={{page}}&w=1\n台言古言::/sort/9?page={{page}}&w=1\n传统武侠::/sort/10?page={{page}}&w=1\n古典文学::/sort/11?page={{page}}&w=1\n侦探推理::/sort/12?page={{page}}&w=1\n外国文学::/sort/13?page={{page}}&w=1\n当代现代::/sort/14?page={{page}}&w=1\n童话故事::/sort/15?page={{page}}&w=1\n传记纪实::/sort/16?page={{page}}&w=1\n韩流青春::/sort/17?page={{page}}&w=1\n影视文学::/sort/18?page={{page}}&w=1\n其他类别::/sort/0?page={{page}}&w=1",
-        "lastUpdateTime": 0,
-        "ruleBookInfo": {
-            "intro": "id.intro@textNodes##内容简介.",
-            "tocUrl": "class.book-act@tag.a.0@href"
-        },
-        "ruleContent": {
-            "content": "tag.section@tag.p@text",
-            "imageStyle": "0"
-        },
-        "ruleExplore": {},
-        "ruleSearch": {
-            "author": "tag.a.3@text",
-            "bookList": "class.ix-list@tag.li",
-            "bookUrl": "tag.a.1@href",
-            "coverUrl": "tag.img@src",
-            "intro": "tag.p.0@text##内容简介.",
-            "kind": "tag.span.0@text&&tag.em.0@text",
-            "lastChapter": "tag.a.2@text",
-            "name": "tag.a.1@text",
-            "wordCount": "tag.em.1@text"
-        },
-        "ruleToc": {
-            "chapterList": "class.ix-list ix-border-t@tag.li@tag.a",
-            "chapterName": "text",
-            "chapterUrl": "href",
-            "nextTocUrl": "class.pager-r@tag.a@href"
-        },
-        "searchUrl": "/search/?k={{key}}&page={{page}}",
-        "weight": 0
-    },
-    {
-        "bookSourceComment": "",
-        "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺燃文小说",
         "bookSourceType": 0,
         "bookSourceUrl": "https://www.ranwen8.com",
