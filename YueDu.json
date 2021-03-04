@@ -277,35 +277,46 @@
         "bookSourceGroup": "💵正版",
         "bookSourceName": "💵言情小说吧",
         "bookSourceType": 0,
-        "bookSourceUrl": "https://xs8.cn",
+        "bookSourceUrl": "https:\/\/www.xs8.cn",
         "bookUrlPattern": "",
-        "customOrder": -38699,
+        "customOrder": -38478,
         "enabled": true,
         "enabledExplore": true,
-        "lastUpdateTime": 1602759836932,
+        "exploreUrl": "                                   女生频道                          ::\n古代言情::\/all?pageNum={{page}}&catId=30013\n浪漫青春::\/all?pageNum={{page}}&catId=30031\n玄幻言情::\/all?pageNum={{page}}&catId=30001\n仙侠奇缘::\/all?pageNum={{page}}&catId=30008\n悬疑::\/all?pageNum={{page}}&catId=30036\n科幻空间::\/all?pageNum={{page}}&catId=30042\n游戏竞技::\/all?pageNum={{page}}&catId=30050\n短篇小说::\/all?pageNum={{page}}&catId=30083\n轻小说::\/all?pageNum={{page}}&catId=30055\n                                  男生频道                          ::\n玄幻::\/all?pageNum={{page}}&catId=20001\n奇幻::\/all?pageNum={{page}}&catId=20005\n武侠::\/all?pageNum={{page}}&catId=20010\n仙侠::\/all?pageNum={{page}}&catId=20014\n都市::\/all?pageNum={{page}}&catId=20019\n现实::\/all?pageNum={{page}}&catId=20065\n军事::\/all?pageNum={{page}}&catId=20032\n历史::\/all?pageNum={{page}}&catId=20028\n游戏::\/all?pageNum={{page}}&catId=20050\n体育::\/all?pageNum={{page}}&catId=20054\n科幻悬疑::\/all?pageNum={{page}}&catId=20042\n轻小说::\/all?pageNum={{page}}&catId=20059\n短篇::\/all?pageNum={{page}}&catId=20076",
+        "lastUpdateTime": 1610616882195,
         "loginUrl": "",
         "ruleBookInfo": {
             "author": "class.book-rand-a@a@text||class.book-info@h1@a@text##\\s+著",
             "coverUrl": "class.book-cover@src||id.bookImg@img@src",
             "intro": "id.bookSummary@content@text||class.intro@text",
+            "lastChapter": "class.update@a@text##更新至",
             "name": "class.book-cell.0@h2@text||class.book-info@h1@em@text",
             "tocUrl": "class.book-meta book-status@href"
         },
         "ruleContent": {
             "content": "class.read-content j_readContent@p@text"
         },
-        "ruleExplore": {},
+        "ruleExplore": {
+            "author": "tag.h4@text",
+            "bookList": "class.right-book-list@li",
+            "bookUrl": "tag.a@href",
+            "coverUrl": "img@src",
+            "intro": "class.intro@text",
+            "kind": "class.org@text",
+            "name": "tag.h3@text",
+            "wordCount": "class.blue@text"
+        },
         "ruleSearch": {
             "author": "class.book-author@textNodes",
             "bookList": "class.book-li",
-            "bookUrl": "class.book-layout@href@js:result.replace(\"/book\",\"https://www.xs8.cn/book\")",
+            "bookUrl": "class.book-layout@href@js:result.replace(\"\/book\",\"https:\/\/www.xs8.cn\/book\")",
             "coverUrl": "class.book-cover@src",
             "name": "h4@text"
         },
         "ruleToc": {
-            "chapterList": "class.chapter-li jsChapter||class.volume@ul@li",
-            "chapterName": "a@span@text||a@text",
-            "chapterUrl": "a@href@js:result.replace(\"/book\",\"https://www.xs8.cn/chapter\")"
+            "chapterList": "class.volume@ul@li@a||id.volume@li@span",
+            "chapterName": "text",
+            "chapterUrl": "a@href@js:result.replace(\"\/book\",\"https:\/\/www.xs8.cn\/chapter\")"
         },
         "searchUrl": "",
         "weight": 0
