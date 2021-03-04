@@ -1548,15 +1548,14 @@
         "weight": 0
     },
     {
-        "bookSourceComment": "error:timeout\n",
         "bookSourceGroup": "🍑耽美",
         "bookSourceName": "🍑腐书网",
         "bookSourceType": 0,
-        "bookSourceUrl": "https://fubooks.org",
-        "customOrder": -36878,
+        "bookSourceUrl": "https:\/\/m.fubooks.org",
+        "customOrder": -2314,
         "enabled": true,
         "enabledExplore": true,
-        "lastUpdateTime": 1602574055624,
+        "lastUpdateTime": 0,
         "ruleBookInfo": {
             "author": "class.author@tag.a.0@text",
             "coverUrl": "[property=\"og:image\"]@content",
@@ -1587,7 +1586,7 @@
             "chapterUrl": "href",
             "nextTocUrl": "class.pagelist@tag.option@value"
         },
-        "searchUrl": "https://fubooks.org/search.html,{\n\"method\": \"POST\",\n\"body\": \"searchkey={{key}}\"\n}",
+        "searchUrl": "https:\/\/m.fubooks.org\/search.html,{\n\"method\": \"POST\",\n\"body\": \"searchkey={{key}}\"\n}",
         "weight": 0
     },
     {
