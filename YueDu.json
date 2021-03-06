@@ -4970,6 +4970,137 @@
         "weight": 0
     },
     {
+        "bookSourceComment": "",
+        "bookSourceGroup": "🍺特优",
+        "bookSourceName": "🍺爱看书吧aikanshuba",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https:\/\/m.aikanshuba.cc",
+        "customOrder": 0,
+        "enabled": true,
+        "enabledExplore": false,
+        "lastUpdateTime": 1615026942936,
+        "ruleBookInfo": {
+            "coverUrl": "class.tu@tag.img@src",
+            "intro": "class.jj@tag.p.-1@text",
+            "kind": "class.tab1.0@tag.p.0@text&&class.tab1.0@tag.p.1@text",
+            "lastChapter": "##更新：(.*)<\/p>[\\w\\W]+最新：<a href=\".*\">(.*)<\/a>##$2•$1###",
+            "wordCount": "class.tab1.0@tag.p.2@text"
+        },
+        "ruleContent": {
+            "content": "id.novelcontent@textNodes##本章未完.*",
+            "imageStyle": "0",
+            "nextContentUrl": "text.下一页@href"
+        },
+        "ruleExplore": {},
+        "ruleSearch": {
+            "author": "tag.p.2@tag.a@text",
+            "bookList": "class.user_content@class.content_link",
+            "bookUrl": "tag.p.1@tag.a@href",
+            "kind": "tag.p.0@tag.a@text##[(.*)]##$1###",
+            "name": "tag.p.1@tag.a@text"
+        },
+        "ruleToc": {
+            "chapterList": "class.info_chapters@class.p2.1@tag.li",
+            "chapterName": "tag.a@text",
+            "chapterUrl": "tag.a@href",
+            "nextTocUrl": "text.下一页@href"
+        },
+        "searchUrl": "\/s.php,{\n\"charset\": \"gbk\",\n\"method\": \"POST\",\n\"body\": \"type=articlename&s={{key}}\"\n}",
+        "weight": 0
+    },
+    {
+        "bookSourceGroup": "🍺特优",
+        "bookSourceName": "🍺稻草人书屋20dcr",
+        "bookSourceType": 0,
+        "bookSourceUrl": "http:\/\/www.20dcr.com",
+        "bookUrlPattern": "",
+        "customOrder": 157,
+        "enabled": true,
+        "enabledExplore": true,
+        "exploreUrl": "玄幻::\/xuanhuan<,{{page}}>.html\n奇幻::\/qihuan<,{{page}}>.html\n武侠::\/wuxia<,{{page}}>.html\n仙侠::\/xianxia<,{{page}}>.html\n都市::\/dushi<,{{page}}>.html\n轻改::\/qing<,{{page}}>.html\n历史::\/lishi<,{{page}}>.html\n军事::\/junshi<,{{page}}>.html\n游戏::\/youxi<,{{page}}>.html\n科幻::\/kehuan<,{{page}}>.html\n灵异::\/lingyi<,{{page}}>.html\n言情::\/yanqing<,{{page}}>.html\n耽美::\/danmei<,{{page}}>.html\n当代::\/dangdai<,{{page}}>.html\n侦探::\/zhentan<,{{page}}>.html\n儿童::\/ertong<,{{page}}>.html\n名著::\/mingzhu<,{{page}}>.html\n励志::\/lizhi<,{{page}}>.html\n悬疑::\/xuanyi<,{{page}}>.html\n经管::\/jingguan<,{{page}}>.html\n同人::\/tongren<,{{page}}>.html\n传记::\/zhuanji<,{{page}}>.html\n散文::\/sanwen<,{{page}}>.html\n外国::\/waiguo<,{{page}}>.htmli\n畅销::\/chuban<,{{page}}>.html\n杂志::\/zazhi<,{{page}}>.html\n漫画::\/manhua<,{{page}}>.html\n纪实::\/jishi<,{{page}}>.html\n幽默::\/youmo<,{{page}}>.html\n健康::\/health<,{{page}}>.html\n诗集::\/poetry<,{{page}}>.html\n学习::\/xuexi<,{{page}}>.html\n心理::\/xinli<,{{page}}>.html\n宗教::\/foxue<,{{page}}>.html\n哲学::\/zhexue<,{{page}}>.html\n旅游::\/travel<,{{page}}>.html\n科普::\/kepu<,{{page}}>.html\n育儿::\/yuer<,{{page}}>.html\n女性::\/woman<,{{page}}>.html\n文化::\/culture<,{{page}}>.html\n官场::\/guanchang<,{{page}}>.html\n青春::\/youth<,{{page}}>.html\n网络::\/net<,{{page}}>.html\n国学::\/guoxue<,{{page}}>.html\n逻辑::\/logic<,{{page}}>.html\n创业::\/cuangye<,{{page}}>.html\n次元::\/erciyuan<,{{page}}>.html\n英文::\/english<,{{page}}>.html\n其他::\/other<,{{page}}>.html",
+        "lastUpdateTime": 0,
+        "loginUrl": "",
+        "ruleBookInfo": {
+            "author": "##:author\"[^\"]+\"([^\"]+)##$1###",
+            "coverUrl": "##:image\"[^\"]+\"([^\"]+)##$1###",
+            "intro": "@css:.book-detail@textNodes",
+            "kind": "##category\"[^\"]+\"([^\"]+)##$1###",
+            "lastChapter": "##chapter_name\"[^\"]+\"([^\"]+)##$1###",
+            "name": "##book_name\"[^\"]+\"([^\"]+)##$1###"
+        },
+        "ruleContent": {
+            "content": "<js>var doc=org.jsoup.Jsoup.parse(result).getElementById('cont-text');doc.select('script,style,[class]').remove();doc.html()<\/js>",
+            "nextContentUrl": "@css::containsOwn(下一页)@href"
+        },
+        "ruleExplore": {
+            "author": "@css:td:eq(2)@text",
+            "bookList": "@css:.col-md-12.mb10",
+            "bookUrl": "@css:a:not([class])@href",
+            "coverUrl": "@css:img@data-original",
+            "intro": "@css:.media-info@text",
+            "name": "@css:h4@text"
+        },
+        "ruleSearch": {
+            "author": "@css:td:eq(1)@text",
+            "bookList": "@css:tbody>tr",
+            "bookUrl": "@css:td:eq(0)>a@href",
+            "name": "@css:td:eq(0)>a@title"
+        },
+        "ruleToc": {
+            "chapterList": "@css:#all-chapter a",
+            "chapterName": "text",
+            "chapterUrl": "href"
+        },
+        "searchUrl": "http:\/\/www.20dcr.com\/plus\/search.php?q={{key}}",
+        "weight": 0
+    },
+    {
+        "bookSourceGroup": "🍺特优",
+        "bookSourceName": "🍺稻草人书屋07dcr",
+        "bookSourceType": 0,
+        "bookSourceUrl": "http:\/\/www.07dcr.com\/",
+        "bookUrlPattern": "",
+        "customOrder": 157,
+        "enabled": true,
+        "enabledExplore": true,
+        "exploreUrl": "玄幻::\/xuanhuan<,{{page}}>.html\n奇幻::\/qihuan<,{{page}}>.html\n武侠::\/wuxia<,{{page}}>.html\n仙侠::\/xianxia<,{{page}}>.html\n都市::\/dushi<,{{page}}>.html\n轻改::\/qing<,{{page}}>.html\n历史::\/lishi<,{{page}}>.html\n军事::\/junshi<,{{page}}>.html\n游戏::\/youxi<,{{page}}>.html\n科幻::\/kehuan<,{{page}}>.html\n灵异::\/lingyi<,{{page}}>.html\n言情::\/yanqing<,{{page}}>.html\n耽美::\/danmei<,{{page}}>.html\n当代::\/dangdai<,{{page}}>.html\n侦探::\/zhentan<,{{page}}>.html\n儿童::\/ertong<,{{page}}>.html\n名著::\/mingzhu<,{{page}}>.html\n励志::\/lizhi<,{{page}}>.html\n悬疑::\/xuanyi<,{{page}}>.html\n经管::\/jingguan<,{{page}}>.html\n同人::\/tongren<,{{page}}>.html\n传记::\/zhuanji<,{{page}}>.html\n散文::\/sanwen<,{{page}}>.html\n外国::\/waiguo<,{{page}}>.htmli\n畅销::\/chuban<,{{page}}>.html\n杂志::\/zazhi<,{{page}}>.html\n漫画::\/manhua<,{{page}}>.html\n纪实::\/jishi<,{{page}}>.html\n幽默::\/youmo<,{{page}}>.html\n健康::\/health<,{{page}}>.html\n诗集::\/poetry<,{{page}}>.html\n学习::\/xuexi<,{{page}}>.html\n心理::\/xinli<,{{page}}>.html\n宗教::\/foxue<,{{page}}>.html\n哲学::\/zhexue<,{{page}}>.html\n旅游::\/travel<,{{page}}>.html\n科普::\/kepu<,{{page}}>.html\n育儿::\/yuer<,{{page}}>.html\n女性::\/woman<,{{page}}>.html\n文化::\/culture<,{{page}}>.html\n官场::\/guanchang<,{{page}}>.html\n青春::\/youth<,{{page}}>.html\n网络::\/net<,{{page}}>.html\n国学::\/guoxue<,{{page}}>.html\n逻辑::\/logic<,{{page}}>.html\n创业::\/cuangye<,{{page}}>.html\n次元::\/erciyuan<,{{page}}>.html\n英文::\/english<,{{page}}>.html\n其他::\/other<,{{page}}>.html",
+        "lastUpdateTime": 0,
+        "loginUrl": "",
+        "ruleBookInfo": {
+            "author": "##:author\"[^\"]+\"([^\"]+)##$1###",
+            "coverUrl": "##:image\"[^\"]+\"([^\"]+)##$1###",
+            "intro": "@css:.book-detail@textNodes",
+            "kind": "##category\"[^\"]+\"([^\"]+)##$1###",
+            "lastChapter": "##chapter_name\"[^\"]+\"([^\"]+)##$1###",
+            "name": "##book_name\"[^\"]+\"([^\"]+)##$1###"
+        },
+        "ruleContent": {
+            "content": "<js>var doc=org.jsoup.Jsoup.parse(result).getElementById('cont-text');doc.select('script,style,[class]').remove();doc.html()<\/js>",
+            "nextContentUrl": "@css::containsOwn(下一页)@href"
+        },
+        "ruleExplore": {
+            "author": "@css:td:eq(2)@text",
+            "bookList": "@css:.col-md-12.mb10",
+            "bookUrl": "@css:a:not([class])@href",
+            "coverUrl": "@css:img@data-original",
+            "intro": "@css:.media-info@text",
+            "name": "@css:h4@text"
+        },
+        "ruleSearch": {
+            "author": "@css:td:eq(1)@text",
+            "bookList": "@css:tbody>tr",
+            "bookUrl": "@css:td:eq(0)>a@href",
+            "name": "@css:td:eq(0)>a@title"
+        },
+        "ruleToc": {
+            "chapterList": "@css:#all-chapter a",
+            "chapterName": "text",
+            "chapterUrl": "href"
+        },
+        "searchUrl": "http:\/\/www.07dcr.com\/plus\/search.php?q={{key}}",
+        "weight": 0
+    },
+    {
         "bookSourceComment": "haxc",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺爱看书吧",
