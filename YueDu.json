@@ -1820,44 +1820,45 @@
     {
         "bookSourceComment": "",
         "bookSourceGroup": "🍺特优",
-        "bookSourceName": "🍺书 海 阁",
+        "bookSourceName": "🍺书海阁",
         "bookSourceType": 0,
-        "bookSourceUrl": "https://www.xinshuhaige.com",
-        "bookUrlPattern": "",
-        "customOrder": 26,
+        "bookSourceUrl": "https:\/\/www.shg.tw",
+        "bookUrlPattern": ".+\\\/\\d+\\\/",
+        "customOrder": 181,
         "enabled": true,
         "enabledExplore": true,
-        "exploreUrl": "",
-        "header": "",
-        "lastUpdateTime": 1601042403395,
+        "exploreUrl": "都市::\/dushi\/{{page}}.html\n现言::\/yanqing\/{{page}}.html\n古言::\/guyan\/{{page}}.html\n青春::\/qingchun\/{{page}}.html\n玄幻::\/xuanhuan\/{{page}}.html\n武侠::\/wuxia\/{{page}}.html\n悬疑::\/xuanyi\/{{page}}.html\n历史::\/lishi\/{{page}}.html\n游戏::\/youxi\/{{page}}.html\n科幻::\/kehuan\/{{page}}.html\n二次元::\/erciyuan\/{{page}}.html\n新书::\/xinshu\/{{page}}.html\n最新章节::\/lastupdate\/{{page}}.html\n日点击榜::\/dayvisit\/{{page}}.html\n周点击榜::\/weekvisit\/{{page}}.html\n月点击榜::\/monthvisit\/{{page}}.html\n总点击榜::\/allvisit\/{{page}}.html\n总收藏榜::\/goodnum\/{{page}}.html\n总字数榜::\/size\/{{page}}.html\n强推榜::\/toptime\/{{page}}.html\n新书榜::\/goodnew\/{{page}}.html",
+        "lastUpdateTime": 0,
         "loginUrl": "",
         "ruleBookInfo": {
-            "author": "h6.0@tag.a@text",
-            "coverUrl": "class.book_cover@img@src",
-            "intro": "id.intro@text##Tags：",
-            "kind": "class.nowplace@tag.a.1@text",
-            "lastChapter": "h5.0@tag.a@text",
-            "name": "class.info_right@h1@text",
-            "wordCount": "h5.1@text##更新时间："
+            "author": "$4",
+            "coverUrl": "$2",
+            "init": ":(?=<meta property)(?:[^\"]*\"){11}(?:书海阁[^\"]+观看小说:)?([^\"]*)\"(?:([^\"]*)\"){8}(?:([^\"]*)\"){4}(?:([^\"]*)\"){4}(?:([^\"]*)\"){4}(?:([^\"]*)\"){4}(?:([^\"]*)\"){8}(?:([^\"]*)\"){4}",
+            "intro": "　　$1",
+            "kind": "$3,$7,$8",
+            "name": "$5",
+            "tocUrl": "$6"
         },
         "ruleContent": {
-            "content": "class.content@html##.*最新章节地址[\\s\\S]+|因未知原因.*?找到回家的路！|您可以在.*?查找最新章节！"
+            "content": "class.content@textNodes##您可以在百度里搜索[^\\n]+\\n",
+            "imageStyle": "0.0"
         },
         "ruleExplore": {},
         "ruleSearch": {
-            "author": "class.s4@text",
-            "bookList": "class.novelslist2@li!0",
-            "bookUrl": "tag.a.1@href",
-            "lastChapter": "class.s3@a@text",
-            "name": "class.s2@text",
-            "wordCount": "class.s5@text"
+            "author": "$5",
+            "bookList": ":class=\"s1\">\\[[^>]*>([^<]*)(?:[^\"]*\"){3}([^\"]*)[^>]*>([^<]*)(?:[^>]*>){4}([^<]*)(?:[^>]*>){3}([^<]*)(?:[^>]*>){2}([^<]*)(?:[^>]*>){2}([^<]*)",
+            "bookUrl": "$2",
+            "kind": "$1,$6,$7",
+            "lastChapter": "$4",
+            "name": "$3"
         },
         "ruleToc": {
-            "chapterList": "class.novel_list.1@dd||class.novel_list.0@tag.dd",
-            "chapterName": "tag.a@text",
-            "chapterUrl": "tag.a@href"
+            "chapterList": "class.novel_list@tag.dd@tag.a",
+            "chapterName": "text",
+            "chapterUrl": "href",
+            "nextTocUrl": "text.下一页@href"
         },
-        "searchUrl": "/search.html,{\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}&searchtype=all\"\n}",
+        "searchUrl": "https:\/\/www.shg.tw\/search.html,{\n  \"charset\": \"utf-8\",\n  \"method\": \"POST\",\n  \"body\": \"searchtype=all&searchkey={{key}}\"\n}",
         "weight": 0
     },
     {
