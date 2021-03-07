@@ -3973,46 +3973,47 @@
         "weight": 0
     },
     {
-        "bookSourceComment": "",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺52书库",
         "bookSourceType": 0,
-        "bookSourceUrl": "https://www.52shuku.vip/",
-        "bookUrlPattern": "",
-        "customOrder": 0,
+        "bookSourceUrl": "https:\/\/www.52shukuw.com",
+        "bookUrlPattern": "https:\/\/www.52shukuw.com\/.*?\/\\d+.html",
+        "customOrder": 270,
         "enabled": true,
         "enabledExplore": true,
-        "exploreUrl": "星际::https://www.52shuku.vip/tuijian/xingjiwen/<,index_{{page}}.html>\n穿书::https://www.52shuku.vip/tuijian/chuanshu/index<,_{{page}}>.html\n重生::https://www.52shuku.vip/chongsheng/<,index_{{page}}.html>\n种田::tuijian/zhongtianwen/<,index_{{page}}.html>\n修仙::https://www.52shuku.vip/zuozhe/xiuxian<,_{{page}}>.html\n网游::wangyou/<,index_{{page}}.html>\n科幻::tuijian/kehuan/<,index_{{page}}.html>\n女配::https://www.52shuku.vip/tuijian/nvpeiwen/<,index_{{page}}.html>\n娱乐圈::https://www.52shuku.vip/tuijian/yulequan/<,index_{{page}}.html>\n美食::https://www.52shuku.vip/tuijian/meishiwen/<,index_{{page}}.html>\n末世::https://www.52shuku.vip/tuijian/moshiwen/<,index_{{page}}.html>\n玄学::tuijian/xuanxue/<,index_{{page}}.html>\n空间::tuijian/kongjianwen/<,index_{{page}}.html>\n系统::tuijian/xitong/<,index_{{page}}.html>\n白月光::tuijian/baiyueguang/<,index_{{page}}.html>\n炮灰::zuozhe/paohui/<,index_{{page}}.html>\n甜宠::tuijian/chongwentianwen/<,index_{{page}}.html>\n虐文::tuijian/nuewen/<,index_{{page}}.html>\n爽文::tuijian/shuangwen/<,index_{{page}}.html>\n女强::tuijian/nvqiangwen/<,index_{{page}}.html>\n百合::gl/<,index_{{page}}.html>\n言情精选::yanqing/<,index_{{page}}.html>\n文学::wenxue/<,index_{{page}}.html>",
-        "header": "",
+        "exploreUrl": "现代都市::https:\/\/www.52shukuw.com\/xiandaidushi\/index<,_{{page}}>.html\n古代架空::https:\/\/www.52shukuw.com\/jiakong\/index<,_{{page}}>.html\n穿越重生::https:\/\/www.52shukuw.com\/chongsheng\/index<,_{{page}}>.html\nBL同人::https:\/\/www.52shukuw.com\/bl\/index<,_{{page}}>.html\nGL百合::https:\/\/www.52shukuw.com\/gl\/index<,_{{page}}>.html\n都市言情::https:\/\/www.52shukuw.com\/yanqing\/index<,_{{page}}>.html\nnull",
         "lastUpdateTime": 0,
         "loginUrl": "",
         "ruleBookInfo": {
-            "intro": "class.article@p.1@text## *",
-            "lastChapter": "class.mulu.-1@tag.a@text",
-            "name": "class.h1@text"
+            "author": "class.bookinfo.1@tex##t##作者：",
+            "coverUrl": "@js:'https:\/\/ss0.bdstatic.com\/70cFvHSh_Q1YnxGkpoWK1HF6hhy\/it\/u=3229367167,1253415831&fm=26&gp=0.jpg'",
+            "intro": "class.infotype infotype_mulu@tag.p@text",
+            "kind": "class.bookinfo.3@text##状态：",
+            "name": "class.art_tit@text##_.*|\\+番外.*"
         },
         "ruleContent": {
-            "content": "class.article-content@html##.*(目录|上一页|下一页|尾页|推荐浏览|52书库).*"
+            "content": "class.book_con fix@tag.p@html",
+            "imageStyle": "0.0"
         },
         "ruleExplore": {
-            "bookList": "class.excerpt",
-            "bookUrl": "tag.h2@tag.a@href",
-            "intro": "tag.span@text## *",
-            "name": "tag.h2@tag.a@text"
+            "coverUrl": "@js:'https:\/\/ss0.bdstatic.com\/70cFvHSh_Q1YnxGkpoWK1HF6hhy\/it\/u=3229367167,1253415831&fm=26&gp=0.jpg'"
         },
         "ruleSearch": {
-            "bookList": "class.excerpt",
-            "bookUrl": "tag.h2@tag.a@href",
-            "intro": "tag.span@text## *",
-            "name": "tag.h2@tag.a@text"
+            "author": "tag.h2@tag.a@text##.*作者：",
+            "bookList": "class.list@li",
+            "bookUrl": "tag.a@href",
+            "coverUrl": "@js:'https:\/\/ss0.bdstatic.com\/70cFvHSh_Q1YnxGkpoWK1HF6hhy\/it\/u=3229367167,1253415831&fm=26&gp=0.jpg'",
+            "intro": "p@text",
+            "lastChapter": "span@text",
+            "name": "tag.h2@tag.a@text##作者：.*|\\+番外"
         },
         "ruleToc": {
-            "chapterList": "class.list clearfix@tag.li",
+            "chapterList": "class.catalog@tag.li",
             "chapterName": "tag.a@text",
             "chapterUrl": "tag.a@href"
         },
-        "searchUrl": "https://www.52shuku.vip/e/search/,{\n  \"method\": \"POST\",\n  \"body\": \"tbname=article&tempid=1&show=title%2Cwriter&keyboard={{key}}\"\n}",
-        "weight": 1
+        "searchUrl": "https:\/\/www.52shukuw.com\/e\/search\/,{\n  \"method\": \"POST\",\n  \"body\": \"tbname=article&tempid=1&show=title%2Cwriter&keyboard={{key}}\"\n}",
+        "weight": 0
     },
     {
         "bookSourceType": "0",
