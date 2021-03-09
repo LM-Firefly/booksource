@@ -1,5 +1,4 @@
-[
-    {
+[{
         "bookSourceComment": "haxc",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺笔趣阁5ibiquge",
@@ -42,7 +41,7 @@
         "searchUrl": "https://m.5ibiquge.com/home/search,{\n\"charset\": \"\",\n\"method\": \"POST\",\n\"body\": \"action=search&q={{key}}\"\n}",
         "weight": 0
     },
-      {
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺笔趣阁②",
@@ -56,54 +55,54 @@
         "header": "",
         "lastUpdateTime": 1611755316323,
         "ruleBookInfo": {
-          "author": "author",
-          "coverUrl": "cover",
-          "init": "<js> \nvar J = org.jsoup.Jsoup.parse(result);\nvar o = selector => String(J.select(selector).text()) ;\nvar og = selector => String(J.select('[property=\"og:' + selector + '\"]').attr('content'));\nvar book = {\n\tname: og('novel:book_name').replace(/(全文|小说|免费阅读|最新章节).*|[(（].*[）)]/g, ''),\n\tauthor: og('novel:author'),\n\tkind: og('novel:category') + ',' + og('novel:status').replace(/中|已/, ''),\n\tlatest: og('novel:latest_chapter_name').replace(/^(正文|VIP章节|最新章节)?(\\s+|_)|[\\(（【].*[求更谢乐发推].*/g, ''),\n\tintro: '　　最近更新:' + og('novel:update_time').replace(/(T|\\s).*/, ' ').replace(/\\//g, '-') + '\\n' + o('#intro').replace(/.*(观看小说|简介)[:：]|各位书友.*/g, '').replace(/\\s+/g, '\\n'),\n\tcover: og('image'),\n\turl: og('novel:read_url'),\n};\nbook;\n</js>",
-          "intro": "intro",
-          "kind": "kind",
-          "lastChapter": "latest",
-          "name": "name",
-          "tocUrl": "url",
-          "wordCount": ""
+            "author": "author",
+            "coverUrl": "cover",
+            "init": "<js> \nvar J = org.jsoup.Jsoup.parse(result);\nvar o = selector => String(J.select(selector).text()) ;\nvar og = selector => String(J.select('[property=\"og:' + selector + '\"]').attr('content'));\nvar book = {\n\tname: og('novel:book_name').replace(/(全文|小说|免费阅读|最新章节).*|[(（].*[）)]/g, ''),\n\tauthor: og('novel:author'),\n\tkind: og('novel:category') + ',' + og('novel:status').replace(/中|已/, ''),\n\tlatest: og('novel:latest_chapter_name').replace(/^(正文|VIP章节|最新章节)?(\\s+|_)|[\\(（【].*[求更谢乐发推].*/g, ''),\n\tintro: '　　最近更新:' + og('novel:update_time').replace(/(T|\\s).*/, ' ').replace(/\\//g, '-') + '\\n' + o('#intro').replace(/.*(观看小说|简介)[:：]|各位书友.*/g, '').replace(/\\s+/g, '\\n'),\n\tcover: og('image'),\n\turl: og('novel:read_url'),\n};\nbook;\n</js>",
+            "intro": "intro",
+            "kind": "kind",
+            "lastChapter": "latest",
+            "name": "name",
+            "tocUrl": "url",
+            "wordCount": ""
         },
         "ruleContent": {
-          "content": "#content@html##一秒记住.*无弹窗.*",
-          "nextContentUrl": "",
-          "sourceRegex": "",
-          "webJs": ""
+            "content": "#content@html##一秒记住.*无弹窗.*",
+            "nextContentUrl": "",
+            "sourceRegex": "",
+            "webJs": ""
         },
         "ruleExplore": {
-          "author": "",
-          "bookList": "",
-          "bookUrl": "",
-          "coverUrl": "",
-          "intro": "",
-          "kind": "",
-          "lastChapter": "",
-          "name": "",
-          "wordCount": ""
+            "author": "",
+            "bookList": "",
+            "bookUrl": "",
+            "coverUrl": "",
+            "intro": "",
+            "kind": "",
+            "lastChapter": "",
+            "name": "",
+            "wordCount": ""
         },
         "ruleSearch": {
-          "author": "author",
-          "bookList": ".result-item\n<js>\nresult.toArray().slice(0, 3).map(el => {\n\tvar url = String(el.select('a:eq(0)').attr('href')).replace(/^\\//, baseUrl.match(/(.+?\\/\\/[^\\/]+\\/)/)[1]);\n\tvar J = org.jsoup.Jsoup.parse(java.ajax(url));\n\tvar o = selector => String(J.select(selector).text());\n\tvar og = selector => String(J.select('[property=\"og:' + selector + '\"]').attr('content'));\n\treturn {\n\t\tname: og('novel:book_name').replace(/(全文|小说|免费阅读|最新章节).*|[(（].*[）)]/g, ''),\n\t\tauthor: og('novel:author'),\n\t\tkind: og('novel:category') + ',' + og('novel:status').replace(/中|已/, ''),\n\t\tlatest: og('novel:latest_chapter_name').replace(/^(正文|VIP章节|最新章节)?(\\s+|_)|[\\(（【].*[求更谢乐发推].*/g, '') + ' • ' + og('novel:update_time').replace(/(T|\\s).*/, ' ').replace(/\\//g, '-'),\n\t\tintro: og('description').replace(/.*(观看小说|简介)[:：]|各位书友.*/g, '').replace(/\\s+/g, ''),\n\t\tcover: og('image'),\n\t\turl: url,\n\t};\n}); \n</js>",
-          "bookUrl": "url",
-          "coverUrl": "cover",
-          "intro": "intro",
-          "kind": "kind",
-          "lastChapter": "latest",
-          "name": "name",
-          "wordCount": ""
+            "author": "author",
+            "bookList": ".result-item\n<js>\nresult.toArray().slice(0, 3).map(el => {\n\tvar url = String(el.select('a:eq(0)').attr('href')).replace(/^\\//, baseUrl.match(/(.+?\\/\\/[^\\/]+\\/)/)[1]);\n\tvar J = org.jsoup.Jsoup.parse(java.ajax(url));\n\tvar o = selector => String(J.select(selector).text());\n\tvar og = selector => String(J.select('[property=\"og:' + selector + '\"]').attr('content'));\n\treturn {\n\t\tname: og('novel:book_name').replace(/(全文|小说|免费阅读|最新章节).*|[(（].*[）)]/g, ''),\n\t\tauthor: og('novel:author'),\n\t\tkind: og('novel:category') + ',' + og('novel:status').replace(/中|已/, ''),\n\t\tlatest: og('novel:latest_chapter_name').replace(/^(正文|VIP章节|最新章节)?(\\s+|_)|[\\(（【].*[求更谢乐发推].*/g, '') + ' • ' + og('novel:update_time').replace(/(T|\\s).*/, ' ').replace(/\\//g, '-'),\n\t\tintro: og('description').replace(/.*(观看小说|简介)[:：]|各位书友.*/g, '').replace(/\\s+/g, ''),\n\t\tcover: og('image'),\n\t\turl: url,\n\t};\n}); \n</js>",
+            "bookUrl": "url",
+            "coverUrl": "cover",
+            "intro": "intro",
+            "kind": "kind",
+            "lastChapter": "latest",
+            "name": "name",
+            "wordCount": ""
         },
         "ruleToc": {
-          "chapterList": "#list dd a",
-          "chapterName": "text##^(正文)?(\\s+|_)|[\\(（【].*[求更谢乐发推].*",
-          "chapterUrl": "href",
-          "nextTocUrl": "",
-          "updateTime": ""
+            "chapterList": "#list dd a",
+            "chapterName": "text##^(正文)?(\\s+|_)|[\\(（【].*[求更谢乐发推].*",
+            "chapterUrl": "href",
+            "nextTocUrl": "",
+            "updateTime": ""
         },
         "searchUrl": "/search.php?q={{key}}",
         "weight": 0
-      },
+    },
     {
         "bookSourceComment": "",
         "bookSourceGroup": "🍺特优",
@@ -1291,9 +1290,9 @@
             "name": "class.cc2.0@tag.a.0@text"
         },
         "ruleToc": {
-          "chapterList": ":\"chapter\"[^\"]+\"([^\"]*)\"[^>]+>([^<]*)",
-          "chapterName": "$2",
-          "chapterUrl": "$1"
+            "chapterList": ":\"chapter\"[^\"]+\"([^\"]*)\"[^>]+>([^<]*)",
+            "chapterName": "$2",
+            "chapterUrl": "$1"
         },
         "searchUrl": "https://qxs.la/s_{{key}}/{{page}}/,{\n\"charset\":\"gbk\"\n}",
         "weight": 0
@@ -1556,7 +1555,7 @@
         "searchUrl": "https://www.piaotian.org/modules/article/search.php?searchkey={{key}}&submit=,{\"charset\":\"gbk\"}",
         "weight": 0
     },
-      {
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺官术网",
@@ -1569,39 +1568,39 @@
         "exploreUrl": "",
         "lastUpdateTime": 1612777312849,
         "ruleBookInfo": {
-          "coverUrl": "id.fmimg@tag.img.0@src",
-          "intro": "id.intro@tag.p.0@text"
+            "coverUrl": "id.fmimg@tag.img.0@src",
+            "intro": "id.intro@tag.p.0@text"
         },
         "ruleContent": {
-          "content": "id.content@textNodes"
+            "content": "id.content@textNodes"
         },
         "ruleExplore": {
-          "author": "",
-          "bookList": "",
-          "bookUrl": "",
-          "coverUrl": "",
-          "kind": "",
-          "lastChapter": "",
-          "name": ""
+            "author": "",
+            "bookList": "",
+            "bookUrl": "",
+            "coverUrl": "",
+            "kind": "",
+            "lastChapter": "",
+            "name": ""
         },
         "ruleSearch": {
-          "author": "class.result-game-item-info-tag.0@tag.span.1@text",
-          "bookList": "class.result-item",
-          "bookUrl": "class.result-item-title.0@tag.a.0@href",
-          "coverUrl": "tag.img.0@src",
-          "intro": "class.result-game-item-desc@text",
-          "kind": "class.result-game-item-info-tag.1@tag.span.1@text&&class.result-game-item-info-tag.2@tag.span.1@text",
-          "lastChapter": "class.result-game-item-info-tag.3@tag.a.0@text",
-          "name": "class.result-item-title.0@tag.a.0@text"
+            "author": "class.result-game-item-info-tag.0@tag.span.1@text",
+            "bookList": "class.result-item",
+            "bookUrl": "class.result-item-title.0@tag.a.0@href",
+            "coverUrl": "tag.img.0@src",
+            "intro": "class.result-game-item-desc@text",
+            "kind": "class.result-game-item-info-tag.1@tag.span.1@text&&class.result-game-item-info-tag.2@tag.span.1@text",
+            "lastChapter": "class.result-game-item-info-tag.3@tag.a.0@text",
+            "name": "class.result-item-title.0@tag.a.0@text"
         },
         "ruleToc": {
-          "chapterList": "id.list@tag.dd",
-          "chapterName": "tag.a@text",
-          "chapterUrl": "tag.a.0@href"
+            "chapterList": "id.list@tag.dd",
+            "chapterName": "tag.a@text",
+            "chapterUrl": "tag.a.0@href"
         },
         "searchUrl": "https://www.biyuwu.cc/search.php?q={{key}}",
         "weight": 0
-      },
+    },
     {
         "bookSourceComment": "",
         "bookSourceGroup": "🍺特优",
@@ -1925,7 +1924,7 @@
         "searchUrl": "https:\/\/www.ztv.la\/search.htm?keyword={{key}}",
         "weight": 0
     },
-      {
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺笔下文学网①",
@@ -1936,34 +1935,34 @@
         "enabledExplore": true,
         "lastUpdateTime": 1610168555602,
         "ruleBookInfo": {
-          "author": "id.info@tag.p.0@a@text",
-          "coverUrl": "id.fmimg@img@src",
-          "intro": "id.intro@text",
-          "lastChapter": "id.intro@tag.p.3@a@text",
-          "name": "id.info@h1@text"
+            "author": "id.info@tag.p.0@a@text",
+            "coverUrl": "id.fmimg@img@src",
+            "intro": "id.intro@text",
+            "lastChapter": "id.intro@tag.p.3@a@text",
+            "name": "id.info@h1@text"
         },
         "ruleContent": {
-          "content": "id.content@html##.*收藏.*最快。"
+            "content": "id.content@html##.*收藏.*最快。"
         },
         "ruleExplore": {},
         "ruleSearch": {
-          "author": "class.book_other.0@tag.span.0@text",
-          "bookList": "id.sitembox@dl",
-          "bookUrl": "h3@a@href",
-          "coverUrl": "dt@a@img@src",
-          "intro": "class.book_des@text",
-          "kind": "class.book_other.0@tag.span.2@text",
-          "lastChapter": "class.book_other.1@a@text",
-          "name": "h3@a@text"
+            "author": "class.book_other.0@tag.span.0@text",
+            "bookList": "id.sitembox@dl",
+            "bookUrl": "h3@a@href",
+            "coverUrl": "dt@a@img@src",
+            "intro": "class.book_des@text",
+            "kind": "class.book_other.0@tag.span.2@text",
+            "lastChapter": "class.book_other.1@a@text",
+            "name": "h3@a@text"
         },
         "ruleToc": {
-          "chapterList": "//*[@id=\"list\"]//dt[2]/following-sibling::dd/a",
-          "chapterName": "text",
-          "chapterUrl": "href"
+            "chapterList": "//*[@id=\"list\"]//dt[2]/following-sibling::dd/a",
+            "chapterName": "text",
+            "chapterUrl": "href"
         },
         "searchUrl": "https://www.bxwxorg.com/search.html,{\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}\"\n}",
         "weight": 0
-      },
+    },
     {
         "bookSourceComment": "",
         "bookSourceGroup": "🍺特优",
@@ -4346,7 +4345,7 @@
         "searchUrl": "https:\/\/51xs.site\/novel\/search.html?keywords={{key}}",
         "weight": 0
     },
-      {
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺奇书网",
@@ -4360,30 +4359,30 @@
         "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko, By Black Prism) Chrome/99.0 Safari/537.36\"\n}",
         "lastUpdateTime": 1610157365195,
         "ruleBookInfo": {
-          "coverUrl": "id.fmimg@tag.img.0@src",
-          "intro": "id.intro@textNodes"
+            "coverUrl": "id.fmimg@tag.img.0@src",
+            "intro": "id.intro@textNodes"
         },
         "ruleContent": {
-          "content": "id.content@textNodes##奇书网 www.qsw.la，最快更新.*?最新章节！"
+            "content": "id.content@textNodes##奇书网 www.qsw.la，最快更新.*?最新章节！"
         },
         "ruleExplore": {},
         "ruleSearch": {
-          "author": "class.s4@text||id.info@tag.a.0@text",
-          "bookList": "class.novelslistss@tag.li||id.maininfo",
-          "bookUrl": "class.s2@tag.a@href",
-          "kind": "class.s1@text",
-          "lastChapter": "class.s3@text||id.info@tag.p.3@tag.a.0@text",
-          "name": "class.s2@text||tag.h1@text",
-          "wordCount": ""
+            "author": "class.s4@text||id.info@tag.a.0@text",
+            "bookList": "class.novelslistss@tag.li||id.maininfo",
+            "bookUrl": "class.s2@tag.a@href",
+            "kind": "class.s1@text",
+            "lastChapter": "class.s3@text||id.info@tag.p.3@tag.a.0@text",
+            "name": "class.s2@text||tag.h1@text",
+            "wordCount": ""
         },
         "ruleToc": {
-          "chapterList": "id.list.0@tag.a",
-          "chapterName": "tag.a@text",
-          "chapterUrl": "tag.a@href"
+            "chapterList": "id.list.0@tag.a",
+            "chapterName": "tag.a@text",
+            "chapterUrl": "tag.a@href"
         },
         "searchUrl": "https://www.qsw.la/modules/article/search.php?searchkey={{key}},{\n  \"charset\": \"gbk\"\n}",
         "weight": 0
-      },
+    },
     {
         "bookSourceComment": "完本\n校对\n搜索间隔10秒",
         "bookSourceGroup": "🍺特优",
@@ -5224,7 +5223,7 @@
         "searchUrl": "\/search\/,{\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}\"\n}",
         "weight": 0
     },
-      {
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺笔趣谷",
@@ -5237,30 +5236,30 @@
         "exploreUrl": "点击榜::http://biqugu.net/top/{{page}}/\n奇幻::http://biqugu.net/qihuan/{{page}}/\n玄幻::http://biqugu.net/xuanhuan/{{page}}/\n言情::http://biqugu.net/yanqing/{{page}}/\n都市::http://biqugu.net/dushi/{{page}}/\n游戏::http://biqugu.net/youxi/{{page}}/\n竞技::http://biqugu.net/jingji/{{page}}/\n武侠::http://biqugu.net/wuxia/{{page}}/\n历史::http://biqugu.net/lishi/{{page}}/\n军事::http://biqugu.net/junshi/{{page}}/\n科幻::http://biqugu.net/kehuan/{{page}}/\n仙侠::http://biqugu.net/xianxia/{{page}}/\n灵异::http://biqugu.net/lingyi/{{page}}/\n女性::http://biqugu.net/nvxing/{{page}}/\n其他::http://biqugu.net/qita/{{page}}/\n更新最近::http://biqugu.net/last<{{page}}>.htm\n最新入库::http://biqugu.net/new/{{page}}/",
         "lastUpdateTime": 1611472468204,
         "ruleBookInfo": {
-          "intro": "class.desc@textNodes##简介：",
-          "lastChapter": "class.f_l t_l w4@a@text"
+            "intro": "class.desc@textNodes##简介：",
+            "lastChapter": "class.f_l t_l w4@a@text"
         },
         "ruleContent": {
-          "content": "tag.h1.0@textNodes&&id.content@textNodes##(第.{1,8}章)\\s*?(\\S*?)\\s*?\\S+?.*?\\1\\2"
+            "content": "tag.h1.0@textNodes&&id.content@textNodes##(第.{1,8}章)\\s*?(\\S*?)\\s*?\\S+?.*?\\1\\2"
         },
         "ruleExplore": {},
         "ruleSearch": {
-          "author": "tag.li.2@tag.a@text",
-          "bookList": "class.list_content",
-          "bookUrl": "tag.li.0@tag.a@href",
-          "kind": "tag.li.3@text",
-          "lastChapter": "tag.li.1@tag.a@text",
-          "name": "tag.li.0@tag.a@text"
+            "author": "tag.li.2@tag.a@text",
+            "bookList": "class.list_content",
+            "bookUrl": "tag.li.0@tag.a@href",
+            "kind": "tag.li.3@text",
+            "lastChapter": "tag.li.1@tag.a@text",
+            "name": "tag.li.0@tag.a@text"
         },
         "ruleToc": {
-          "chapterList": "class.chapter",
-          "chapterName": "tag.a@text",
-          "chapterUrl": "tag.a@href"
+            "chapterList": "class.chapter",
+            "chapterName": "tag.a@text",
+            "chapterUrl": "tag.a@href"
         },
         "searchUrl": "http://biqugu.net/s_{{key}}",
         "weight": 0
-      },
-      {
+    },
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺冰地中文",
@@ -5273,39 +5272,39 @@
         "header": "",
         "lastUpdateTime": 1612777312854,
         "ruleBookInfo": {
-          "author": "##:author\"[^\"]+\"([^\"]*)##$1###",
-          "coverUrl": "##og:image\"[^\"]+\"([^\"]*)##$1###",
-          "intro": "id.intro@tag.p.0@textNodes",
-          "kind": "##:category\"[^\"]+\"([^\"]*)##$1###",
-          "lastChapter": "##_chapter_name\"[^\"]+\"([^\"]*)##$1###",
-          "name": "##:book_name\"[^\"]+\"([^\"]*)##$1###",
-          "tocUrl": "##novel:read_url\"[^\"]+\"([^\"]*)##$1###",
-          "wordCount": ""
+            "author": "##:author\"[^\"]+\"([^\"]*)##$1###",
+            "coverUrl": "##og:image\"[^\"]+\"([^\"]*)##$1###",
+            "intro": "id.intro@tag.p.0@textNodes",
+            "kind": "##:category\"[^\"]+\"([^\"]*)##$1###",
+            "lastChapter": "##_chapter_name\"[^\"]+\"([^\"]*)##$1###",
+            "name": "##:book_name\"[^\"]+\"([^\"]*)##$1###",
+            "tocUrl": "##novel:read_url\"[^\"]+\"([^\"]*)##$1###",
+            "wordCount": ""
         },
         "ruleContent": {
-          "content": "@css:#content>p:not(:last-child)@html"
+            "content": "@css:#content>p:not(:last-child)@html"
         },
         "ruleExplore": {},
         "ruleSearch": {
-          "author": "@css:.book_other:eq(2)>span:eq(0)@text",
-          "bookList": "@css:#sitembox>dl",
-          "bookUrl": "@css:dt>a@href",
-          "coverUrl": "@css:img@src",
-          "intro": "@css:.book_des@textNodes",
-          "kind": "@css:.book_other:eq(2)>span:eq(2)@text",
-          "lastChapter": "##最新章节：[^>]*>([^<]*)<(?:[^>]*){2}> 更新时间：[^>]*>([^<]*)##$1 · $2###",
-          "name": "@css:h3>a@text",
-          "wordCount": "@css:.book_other:eq(2)>span:eq(3)@text"
+            "author": "@css:.book_other:eq(2)>span:eq(0)@text",
+            "bookList": "@css:#sitembox>dl",
+            "bookUrl": "@css:dt>a@href",
+            "coverUrl": "@css:img@src",
+            "intro": "@css:.book_des@textNodes",
+            "kind": "@css:.book_other:eq(2)>span:eq(2)@text",
+            "lastChapter": "##最新章节：[^>]*>([^<]*)<(?:[^>]*){2}> 更新时间：[^>]*>([^<]*)##$1 · $2###",
+            "name": "@css:h3>a@text",
+            "wordCount": "@css:.book_other:eq(2)>span:eq(3)@text"
         },
         "ruleToc": {
-          "chapterList": "@css:#list dd a",
-          "chapterName": "text",
-          "chapterUrl": "href"
+            "chapterList": "@css:#list dd a",
+            "chapterName": "text",
+            "chapterUrl": "href"
         },
         "searchUrl": "/search.html,{\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}\"\n}",
         "weight": 0
-      },
-      {
+    },
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺E小说",
@@ -5317,34 +5316,34 @@
         "enabledExplore": true,
         "lastUpdateTime": 1612777312847,
         "ruleBookInfo": {
-          "author": "class.box_con.0@id.info@tag.p.0@text##作\\s*者：",
-          "coverUrl": "id.fmimg@tag.img.0@src",
-          "intro": "id.intro@tag.p.0@text",
-          "name": "class.box_con.0@id.info@tag.h1.0@text"
+            "author": "class.box_con.0@id.info@tag.p.0@text##作\\s*者：",
+            "coverUrl": "id.fmimg@tag.img.0@src",
+            "intro": "id.intro@tag.p.0@text",
+            "name": "class.box_con.0@id.info@tag.h1.0@text"
         },
         "ruleContent": {
-          "content": "id.content@textNodes"
+            "content": "id.content@textNodes"
         },
         "ruleExplore": {},
         "ruleSearch": {
-          "author": "class.result-game-item-info-tag.0@tag.span.1@text",
-          "bookList": "class.result-item",
-          "bookUrl": "class.result-item-title.0@tag.a.0@href",
-          "coverUrl": "tag.img.0@src",
-          "intro": "class.result-game-item-desc@text",
-          "kind": "class.result-game-item-info-tag.1@tag.span.1@text",
-          "lastChapter": "class.result-game-item-info-tag.3@tag.a.0@text",
-          "name": "class.result-item-title.0@tag.a.0@text"
+            "author": "class.result-game-item-info-tag.0@tag.span.1@text",
+            "bookList": "class.result-item",
+            "bookUrl": "class.result-item-title.0@tag.a.0@href",
+            "coverUrl": "tag.img.0@src",
+            "intro": "class.result-game-item-desc@text",
+            "kind": "class.result-game-item-info-tag.1@tag.span.1@text",
+            "lastChapter": "class.result-game-item-info-tag.3@tag.a.0@text",
+            "name": "class.result-item-title.0@tag.a.0@text"
         },
         "ruleToc": {
-          "chapterList": "id.list@tag.dd",
-          "chapterName": "tag.a@text",
-          "chapterUrl": "tag.a@href"
+            "chapterList": "id.list@tag.dd",
+            "chapterName": "tag.a@text",
+            "chapterUrl": "tag.a@href"
         },
         "searchUrl": "https://www.zwda.com/search.php?q={{key}}",
         "weight": 0
-      },
-      {
+    },
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺飞卢文学",
@@ -5357,39 +5356,39 @@
         "header": "",
         "lastUpdateTime": 1612777312853,
         "ruleBookInfo": {
-          "author": "##:author\"[^\"]+\"([^\"]*)##$1###",
-          "coverUrl": "##og:image\"[^\"]+\"([^\"]*)##$1###",
-          "intro": "id.intro@tag.p.0@textNodes",
-          "kind": "##:category\"[^\"]+\"([^\"]*)##$1###",
-          "lastChapter": "##_chapter_name\"[^\"]+\"([^\"]*)##$1###",
-          "name": "##:book_name\"[^\"]+\"([^\"]*)##$1###",
-          "tocUrl": "##novel:read_url\"[^\"]+\"([^\"]*)##$1###",
-          "wordCount": ""
+            "author": "##:author\"[^\"]+\"([^\"]*)##$1###",
+            "coverUrl": "##og:image\"[^\"]+\"([^\"]*)##$1###",
+            "intro": "id.intro@tag.p.0@textNodes",
+            "kind": "##:category\"[^\"]+\"([^\"]*)##$1###",
+            "lastChapter": "##_chapter_name\"[^\"]+\"([^\"]*)##$1###",
+            "name": "##:book_name\"[^\"]+\"([^\"]*)##$1###",
+            "tocUrl": "##novel:read_url\"[^\"]+\"([^\"]*)##$1###",
+            "wordCount": ""
         },
         "ruleContent": {
-          "content": "@css:#content>p:not(:last-child)@html"
+            "content": "@css:#content>p:not(:last-child)@html"
         },
         "ruleExplore": {},
         "ruleSearch": {
-          "author": "@css:.book_other:eq(2)>span:eq(0)@text",
-          "bookList": "@css:#sitembox>dl",
-          "bookUrl": "@css:dt>a@href",
-          "coverUrl": "@css:img@src",
-          "intro": "@css:.book_des@textNodes",
-          "kind": "@css:.book_other:eq(2)>span:eq(2)@text",
-          "lastChapter": "##最新章节：[^>]*>([^<]*)<(?:[^>]*){2}> 更新时间：[^>]*>([^<]*)##$1 · $2###",
-          "name": "@css:h3>a@text",
-          "wordCount": "@css:.book_other:eq(2)>span:eq(3)@text"
+            "author": "@css:.book_other:eq(2)>span:eq(0)@text",
+            "bookList": "@css:#sitembox>dl",
+            "bookUrl": "@css:dt>a@href",
+            "coverUrl": "@css:img@src",
+            "intro": "@css:.book_des@textNodes",
+            "kind": "@css:.book_other:eq(2)>span:eq(2)@text",
+            "lastChapter": "##最新章节：[^>]*>([^<]*)<(?:[^>]*){2}> 更新时间：[^>]*>([^<]*)##$1 · $2###",
+            "name": "@css:h3>a@text",
+            "wordCount": "@css:.book_other:eq(2)>span:eq(3)@text"
         },
         "ruleToc": {
-          "chapterList": "@css:#list dd a",
-          "chapterName": "text",
-          "chapterUrl": "href"
+            "chapterList": "@css:#list dd a",
+            "chapterName": "text",
+            "chapterUrl": "href"
         },
         "searchUrl": "/search.html,{\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}\"\n}",
         "weight": 0
-      },
-      {
+    },
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺暖糖文学",
@@ -5402,51 +5401,51 @@
         "exploreUrl": "中文经典::/all/order/hits%2Bdesc/id/47.html?page={{page}}\n外国名著::/all/order/hits%2Bdesc/id/44.html?page={{page}}\n影视名著::/all/order/hits%2Bdesc/id/46.html?page={{page}}",
         "lastUpdateTime": 1611068427977,
         "ruleBookInfo": {
-          "author": "",
-          "canReName": "true",
-          "coverUrl": "",
-          "intro": "",
-          "kind": "",
-          "lastChapter": "",
-          "name": "",
-          "tocUrl": "[property=\"og:novel:read_url\"]@content##/novel/##/other/chapters/id/",
-          "wordCount": ""
+            "author": "",
+            "canReName": "true",
+            "coverUrl": "",
+            "intro": "",
+            "kind": "",
+            "lastChapter": "",
+            "name": "",
+            "tocUrl": "[property=\"og:novel:read_url\"]@content##/novel/##/other/chapters/id/",
+            "wordCount": ""
         },
         "ruleContent": {
-          "content": "class.read-content@tag.p@textNodes",
-          "imageStyle": "",
-          "nextContentUrl": "",
-          "replaceRegex": "",
-          "webJs": ""
+            "content": "class.read-content@tag.p@textNodes",
+            "imageStyle": "",
+            "nextContentUrl": "",
+            "replaceRegex": "",
+            "webJs": ""
         },
         "ruleExplore": {
-          "author": "",
-          "bookList": "",
-          "bookUrl": "",
-          "coverUrl": "",
-          "intro": "",
-          "kind": "",
-          "name": ""
+            "author": "",
+            "bookList": "",
+            "bookUrl": "",
+            "coverUrl": "",
+            "intro": "",
+            "kind": "",
+            "name": ""
         },
         "ruleSearch": {
-          "author": "tag.a.2@text",
-          "bookList": "@css:.result ul li",
-          "bookUrl": "tag.a.0@href",
-          "coverUrl": "tag.img@data-src",
-          "intro": "tag.p.-1@textNodes##\\s*.*各位书友.*\\s*",
-          "kind": "tag.span!0@text&&tag.i!0@text##分类|状态|总字数|更新时间|：|\\s.*",
-          "lastChapter": "tag.a.-2@text",
-          "name": "tag.h3@text"
+            "author": "tag.a.2@text",
+            "bookList": "@css:.result ul li",
+            "bookUrl": "tag.a.0@href",
+            "coverUrl": "tag.img@data-src",
+            "intro": "tag.p.-1@textNodes##\\s*.*各位书友.*\\s*",
+            "kind": "tag.span!0@text&&tag.i!0@text##分类|状态|总字数|更新时间|：|\\s.*",
+            "lastChapter": "tag.a.-2@text",
+            "name": "tag.h3@text"
         },
         "ruleToc": {
-          "chapterList": "@css:.fL_con li a",
-          "chapterName": "text",
-          "chapterUrl": "href"
+            "chapterList": "@css:.fL_con li a",
+            "chapterName": "text",
+            "chapterUrl": "href"
         },
         "searchUrl": "/search.html?keyword={{key}}&page={{page}}",
         "weight": 0
-      },
-      {
+    },
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺耐看吧",
@@ -5458,38 +5457,38 @@
         "exploreUrl": "玄幻奇幻::/xuanhuan/{{page}}.html\n武侠仙侠::/wuxia/{{page}}.html\n都市生活::/dushi/{{page}}.html\n历史军事::/lishi/{{page}}.html\n游戏竞技::/youxi/{{page}}.html\n科幻未来::/kehuan/{{page}}.html\n恐怖悬疑::/xuanyi/{{page}}.html\n二の次元::/erciyuan/{{page}}.html\n经典网文::/jingdian/{{page}}.html\n古代言情::/guyan/{{page}}.html\n现代言情::/xianyan/{{page}}.html\n幻想奇缘::/huanqing/{{page}}.html\n青春校园::/qingchun/{{page}}.html\n网络情缘::/wangluo/{{page}}.html\n科幻空间::/mmkehuan/{{page}}.html\n鬼怪灵异::/lingyi/{{page}}.html\n  N次元  ::/Nciyuan/{{page}}.html\n言情美文::/yanqing/{{page}}.html",
         "lastUpdateTime": 1612777312841,
         "ruleBookInfo": {
-          "author": "class.author@text",
-          "coverUrl": "class.detail@tag.img@src",
-          "kind": "tag.a.4@text&&tag.span.0@text",
-          "lastChapter": "class.new@tag.a@text",
-          "name": "class.name@text",
-          "tocUrl": "class.read@tag.li",
-          "wordCount": "tag.span.1@text"
+            "author": "class.author@text",
+            "coverUrl": "class.detail@tag.img@src",
+            "kind": "tag.a.4@text&&tag.span.0@text",
+            "lastChapter": "class.new@tag.a@text",
+            "name": "class.name@text",
+            "tocUrl": "class.read@tag.li",
+            "wordCount": "tag.span.1@text"
         },
         "ruleContent": {
-          "content": "class.content@html##喜欢.*速度最快。"
+            "content": "class.content@html##喜欢.*速度最快。"
         },
         "ruleExplore": {},
         "ruleSearch": {
-          "author": "tag.li.0@class.layui-bg-cyan@text",
-          "bookList": "class.list@tag.li",
-          "bookUrl": "tag.li.0@class.bookname@tag.a@href",
-          "coverUrl": "tag.li.0@tag.img@src",
-          "intro": "tag.li.0@class.intro@text",
-          "kind": "tag.span.0@text",
-          "lastChapter": "tag.li.0@class.data.1@tag.a@text",
-          "name": "tag.li.0@class.bookname@text"
+            "author": "tag.li.0@class.layui-bg-cyan@text",
+            "bookList": "class.list@tag.li",
+            "bookUrl": "tag.li.0@class.bookname@tag.a@href",
+            "coverUrl": "tag.li.0@tag.img@src",
+            "intro": "tag.li.0@class.intro@text",
+            "kind": "tag.span.0@text",
+            "lastChapter": "tag.li.0@class.data.1@tag.a@text",
+            "name": "tag.li.0@class.bookname@text"
         },
         "ruleToc": {
-          "chapterList": "class.read@tag.li",
-          "chapterName": "tag.a@text",
-          "chapterUrl": "tag.a@href",
-          "nextTocUrl": "class.pagelist@tag.a.1@href||class.pagelist@tag.a.0@href"
+            "chapterList": "class.read@tag.li",
+            "chapterName": "tag.a@text",
+            "chapterUrl": "tag.a@href",
+            "nextTocUrl": "class.pagelist@tag.a.1@href||class.pagelist@tag.a.0@href"
         },
         "searchUrl": "https://twotxt.com/search.html,{\"body\":\"searchkey={{key}}\",\"method\":\"POST\"}",
         "weight": 0
-      },
-      {
+    },
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺无错小说网",
@@ -5500,31 +5499,31 @@
         "enabledExplore": false,
         "lastUpdateTime": 1610673867826,
         "ruleBookInfo": {
-          "intro": "id.content@tag.dd.3@tag.p.1@text",
-          "tocUrl": "class.read@href"
+            "intro": "id.content@tag.dd.3@tag.p.1@text",
+            "tocUrl": "class.read@href"
         },
         "ruleContent": {
-          "content": "id.contents@textNodes"
+            "content": "id.contents@textNodes"
         },
         "ruleExplore": {},
         "ruleSearch": {
-          "author": "class.c_value.0@text||class.fl.1@tag.td.1@text",
-          "bookList": "class.c_row||class.booksub",
-          "bookUrl": "class.c_subject@tag.a@href",
-          "coverUrl": "class.fl.0@tag.a@tag.img@src||class.cover@tag.img@src",
-          "kind": "class.c_value.1@text||class.fl.1@tag.td.0@tag.a@text",
-          "lastChapter": "class.c_value.5@tag.a@text||id.content@tag.dd.3@tag.p.5@tag.a@text",
-          "name": "class.c_subject@tag.a@text||id.content@tag.h1@text##全文阅读"
+            "author": "class.c_value.0@text||class.fl.1@tag.td.1@text",
+            "bookList": "class.c_row||class.booksub",
+            "bookUrl": "class.c_subject@tag.a@href",
+            "coverUrl": "class.fl.0@tag.a@tag.img@src||class.cover@tag.img@src",
+            "kind": "class.c_value.1@text||class.fl.1@tag.td.0@tag.a@text",
+            "lastChapter": "class.c_value.5@tag.a@text||id.content@tag.dd.3@tag.p.5@tag.a@text",
+            "name": "class.c_subject@tag.a@text||id.content@tag.h1@text##全文阅读"
         },
         "ruleToc": {
-          "chapterList": "id.list@tag.dd",
-          "chapterName": "tag.a@text",
-          "chapterUrl": "tag.a@href"
+            "chapterList": "id.list@tag.dd",
+            "chapterName": "tag.a@text",
+            "chapterUrl": "tag.a@href"
         },
         "searchUrl": "http://www.xquledu.com/modules/article/search.php?action=search&searchtype=all&searchkey={{key}},{\n  \"charset\": \"gbk\"\n}",
         "weight": 0
-      },
-      {
+    },
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺书快小说",
@@ -5536,29 +5535,29 @@
         "enabledExplore": true,
         "lastUpdateTime": 1610339610879,
         "ruleBookInfo": {
-          "coverUrl": "class.zhutu@tag.img.0@src",
-          "intro": "class.wenzhang@class.p5@text"
+            "coverUrl": "class.zhutu@tag.img.0@src",
+            "intro": "class.wenzhang@class.p5@text"
         },
         "ruleContent": {
-          "content": "class.nr_content@html"
+            "content": "class.nr_content@html"
         },
         "ruleExplore": {},
         "ruleSearch": {
-          "author": "class.p3@text",
-          "bookList": "class.list_ul@tag.li",
-          "bookUrl": "class.p2@tag.a.0@href",
-          "lastChapter": "class.p4@tag.a.0@text",
-          "name": "class.p2@tag.a.0@text"
+            "author": "class.p3@text",
+            "bookList": "class.list_ul@tag.li",
+            "bookUrl": "class.p2@tag.a.0@href",
+            "lastChapter": "class.p4@tag.a.0@text",
+            "name": "class.p2@tag.a.0@text"
         },
         "ruleToc": {
-          "chapterList": "class.list.0@tag.li",
-          "chapterName": "tag.a@text",
-          "chapterUrl": "tag.a@href"
+            "chapterList": "class.list.0@tag.li",
+            "chapterName": "tag.a@text",
+            "chapterUrl": "tag.a@href"
         },
         "searchUrl": "https://www.shukuai.net/search.html?searchkey={{key}}",
         "weight": 0
-      },
-      {
+    },
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺墨斋小说",
@@ -5572,33 +5571,33 @@
         "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.87 Safari/537.36\"\n}",
         "lastUpdateTime": 1610339282231,
         "ruleBookInfo": {
-          "author": "class.info@class.info-xg@tag.span.1@tag.a@text",
-          "coverUrl": "class.detail-body-body-img@img@src",
-          "kind": "class.info@class.info-xg@tag.span.3@tag.a@text##小说",
-          "lastChapter": "class.info@class.info-xg@tag.span.2@tag.a@text",
-          "name": "class.info@tag.h2@text"
+            "author": "class.info@class.info-xg@tag.span.1@tag.a@text",
+            "coverUrl": "class.detail-body-body-img@img@src",
+            "kind": "class.info@class.info-xg@tag.span.3@tag.a@text##小说",
+            "lastChapter": "class.info@class.info-xg@tag.span.2@tag.a@text",
+            "name": "class.info@tag.h2@text"
         },
         "ruleContent": {
-          "content": "class.txt_tcontent@html"
+            "content": "class.txt_tcontent@html"
         },
         "ruleExplore": {},
         "ruleSearch": {
-          "author": "class.newlist-zz@tag.a@text",
-          "bookList": "class.newlist.0@tag.li",
-          "bookUrl": "class.newlist-title@tag.a@href",
-          "kind": "class.newlist-type@tag.a@title",
-          "lastChapter": "class.newlist-zj@tag.a@title",
-          "name": "class.newlist-title@tag.a@text"
+            "author": "class.newlist-zz@tag.a@text",
+            "bookList": "class.newlist.0@tag.li",
+            "bookUrl": "class.newlist-title@tag.a@href",
+            "kind": "class.newlist-type@tag.a@title",
+            "lastChapter": "class.newlist-zj@tag.a@title",
+            "name": "class.newlist-title@tag.a@text"
         },
         "ruleToc": {
-          "chapterList": "class.dirlist.1@tag.li",
-          "chapterName": "a@text",
-          "chapterUrl": "a@href"
+            "chapterList": "class.dirlist.1@tag.li",
+            "chapterName": "a@text",
+            "chapterUrl": "a@href"
         },
         "searchUrl": "https://www.mozhai123.net/modules/article/search.php,{\n  \"charset\": \"gbk\",\n  \"method\": \"POST\",\n  \"body\": \"submit=搜索&searchtype=articlename&searchkey={{key}}&action=login\"\n}",
         "weight": 0
-      },
-      {
+    },
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺新千千看书",
@@ -5610,39 +5609,39 @@
         "enabledExplore": true,
         "lastUpdateTime": 1612014523307,
         "ruleBookInfo": {
-          "author": "//meta[@property=\"og:novel:author\"]/@content",
-          "coverUrl": "//meta[@property=\"og:image\"]/@content",
-          "intro": "//meta[@property=\"og:description\"]/@content",
-          "kind": "//meta[@property=\"og:novel:category\"]/@content",
-          "name": "//meta[@property=\"og:title\"]/@content",
-          "tocUrl": "text.查看目录@href"
+            "author": "//meta[@property=\"og:novel:author\"]/@content",
+            "coverUrl": "//meta[@property=\"og:image\"]/@content",
+            "intro": "//meta[@property=\"og:description\"]/@content",
+            "kind": "//meta[@property=\"og:novel:category\"]/@content",
+            "name": "//meta[@property=\"og:title\"]/@content",
+            "tocUrl": "text.查看目录@href"
         },
         "ruleContent": {
-          "content": "@js:\nvar sourceChars=[\"%uE800\",\"%uE801\",\"%uE802\",\"%uE803\",\"%uE804\",\"%uE805\",\"%uE806\",\"%uE807\",\"%uE808\",\"%uE809\",\"%uE80A\",\"%uE80B\",\"%uE80C\",\"%uE80D\",\"%uE80E\",\"%uE80F\",\"%uE810\",\"%uE811\",\"%uE812\",\"%uE813\",\"%uE814\",\"%uE815\",\"%uE816\",\"%uE817\",\"%uE818\",\"%uE819\",\"%uE81A\",\"%uE81B\",\"%uE81C\",\"%uE81D\",\"%uE81E\",\"%uE81F\",\"%uE820\",\"%uE821\",\"%uE822\",\"%uE823\",\"%uE824\",\"%uE825\",\"%uE826\",\"%uE827\",\"%uE828\",\"%uE829\",\"%uE82A\",\"%uE82B\",\"%uE82C\",\"%uE82D\",\"%uE82E\",\"%uE82F\",\"%uE830\",\"%uE831\",\"%uE832\",\"%uE833\",\"%uE834\",\"%uE835\",\"%uE836\",\"%uE837\",\"%uE838\",\"%uE839\",\"%uE83A\",\"%uE83B\",\"%uE83C\",\"%uE83D\",\"%uE83E\",\"%uE83F\",\"%uE840\",\"%uE841\",\"%uE842\",\"%uE843\",\"%uE844\",\"%uE845\",\"%uE846\",\"%uE847\",\"%uE848\",\"%uE849\",\"%uE84A\",\"%uE84B\",\"%uE84C\",\"%uE84D\",\"%uE84E\",\"%uE84F\",\"%uE850\",\"%uE851\",\"%uE852\",\"%uE853\",\"%uE854\",\"%uE855\",\"%uE856\",\"%uE857\",\"%uE858\",\"%uE859\",\"%uE85A\",\"%uE85B\",\"%uE85C\",\"%uE85D\",\"%uE85E\",\"%uE85F\",\"%uE860\",\"%uE861\",\"%uE862\",\"%uE863\"]\n\nvar displayChars=\"的一是了我不人在他有这个上们来到时大地为子中你说生国年着就那和要她出也得里后自以会家可下而过天去能对小多然于心学么之都好看起发当没成只如事把还用第样道想作种开美总从无情己面最女但现前些所同日手又行意动\";\n\nvar slect=\"i\";\n\nfunction convertChar(str) {\nlet index = sourceChars.indexOf(str)\nif(index != -1) return displayChars[index]\n}\n\nvar doc = org.jsoup.Jsoup.parse(result).select('#txt');\ndoc.select(slect).toArray().forEach(ele=>{\nlet str = escape(ele.text());\nele.text(convertChar(str))\n})\ndoc.select(\"h1\").remove();\ndoc.html()+'❌';",
-          "nextContentUrl": "text.下一章@href",
-          "replaceRegex": "##\\s*❌\\s*|\\s*天才一秒钟.*\\s*|这本小说的最新章节您已经读完了[\\s\\S]+"
+            "content": "@js:\nvar sourceChars=[\"%uE800\",\"%uE801\",\"%uE802\",\"%uE803\",\"%uE804\",\"%uE805\",\"%uE806\",\"%uE807\",\"%uE808\",\"%uE809\",\"%uE80A\",\"%uE80B\",\"%uE80C\",\"%uE80D\",\"%uE80E\",\"%uE80F\",\"%uE810\",\"%uE811\",\"%uE812\",\"%uE813\",\"%uE814\",\"%uE815\",\"%uE816\",\"%uE817\",\"%uE818\",\"%uE819\",\"%uE81A\",\"%uE81B\",\"%uE81C\",\"%uE81D\",\"%uE81E\",\"%uE81F\",\"%uE820\",\"%uE821\",\"%uE822\",\"%uE823\",\"%uE824\",\"%uE825\",\"%uE826\",\"%uE827\",\"%uE828\",\"%uE829\",\"%uE82A\",\"%uE82B\",\"%uE82C\",\"%uE82D\",\"%uE82E\",\"%uE82F\",\"%uE830\",\"%uE831\",\"%uE832\",\"%uE833\",\"%uE834\",\"%uE835\",\"%uE836\",\"%uE837\",\"%uE838\",\"%uE839\",\"%uE83A\",\"%uE83B\",\"%uE83C\",\"%uE83D\",\"%uE83E\",\"%uE83F\",\"%uE840\",\"%uE841\",\"%uE842\",\"%uE843\",\"%uE844\",\"%uE845\",\"%uE846\",\"%uE847\",\"%uE848\",\"%uE849\",\"%uE84A\",\"%uE84B\",\"%uE84C\",\"%uE84D\",\"%uE84E\",\"%uE84F\",\"%uE850\",\"%uE851\",\"%uE852\",\"%uE853\",\"%uE854\",\"%uE855\",\"%uE856\",\"%uE857\",\"%uE858\",\"%uE859\",\"%uE85A\",\"%uE85B\",\"%uE85C\",\"%uE85D\",\"%uE85E\",\"%uE85F\",\"%uE860\",\"%uE861\",\"%uE862\",\"%uE863\"]\n\nvar displayChars=\"的一是了我不人在他有这个上们来到时大地为子中你说生国年着就那和要她出也得里后自以会家可下而过天去能对小多然于心学么之都好看起发当没成只如事把还用第样道想作种开美总从无情己面最女但现前些所同日手又行意动\";\n\nvar slect=\"i\";\n\nfunction convertChar(str) {\nlet index = sourceChars.indexOf(str)\nif(index != -1) return displayChars[index]\n}\n\nvar doc = org.jsoup.Jsoup.parse(result).select('#txt');\ndoc.select(slect).toArray().forEach(ele=>{\nlet str = escape(ele.text());\nele.text(convertChar(str))\n})\ndoc.select(\"h1\").remove();\ndoc.html()+'❌';",
+            "nextContentUrl": "text.下一章@href",
+            "replaceRegex": "##\\s*❌\\s*|\\s*天才一秒钟.*\\s*|这本小说的最新章节您已经读完了[\\s\\S]+"
         },
         "ruleExplore": {},
         "ruleSearch": {
-          "author": "class.author@text",
-          "bookList": "class.library@li",
-          "bookUrl": "tag.a.0@href",
-          "coverUrl": "img@src",
-          "intro": "class.intro@text",
-          "kind": "tag.p.0@tag.a!0@text",
-          "lastChapter": "class.chapter@text",
-          "name": "class.bookname@text"
+            "author": "class.author@text",
+            "bookList": "class.library@li",
+            "bookUrl": "tag.a.0@href",
+            "coverUrl": "img@src",
+            "intro": "class.intro@text",
+            "kind": "tag.p.0@tag.a!0@text",
+            "lastChapter": "class.chapter@text",
+            "name": "class.bookname@text"
         },
         "ruleToc": {
-          "chapterList": "class.read@tag.dl!0@dd@a",
-          "chapterName": "text##更新：.*",
-          "chapterUrl": "href",
-          "updateTime": "text##.*更新："
+            "chapterList": "class.read@tag.dl!0@dd@a",
+            "chapterName": "text##更新：.*",
+            "chapterUrl": "href",
+            "updateTime": "text##.*更新："
         },
         "searchUrl": "/search.html?keyword={{key}}",
         "weight": 0
-      },
-      {
+    },
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺e小说网 xstxt",
@@ -5656,36 +5655,36 @@
         "header": "",
         "lastUpdateTime": 1611454774088,
         "ruleBookInfo": {
-          "author": "id.info@tag.p.2@text##作.*者.",
-          "intro": "id.intro@tag.p.0@text",
-          "kind": "id.info@tag.p.0@text##分类.",
-          "lastChapter": "id.info@tag.a.-1@text",
-          "name": "id.info@tag.h1@text",
-          "wordCount": "id.info@tag.p.-1@text##最后更新."
+            "author": "id.info@tag.p.2@text##作.*者.",
+            "intro": "id.intro@tag.p.0@text",
+            "kind": "id.info@tag.p.0@text##分类.",
+            "lastChapter": "id.info@tag.a.-1@text",
+            "name": "id.info@tag.h1@text",
+            "wordCount": "id.info@tag.p.-1@text##最后更新."
         },
         "ruleContent": {
-          "content": "id.content@html"
+            "content": "id.content@html"
         },
         "ruleExplore": {},
         "ruleSearch": {
-          "author": "class.author@text##作者.",
-          "bookList": "class.bookbox",
-          "bookUrl": "tag.a.0@href",
-          "coverUrl": "tag.img@src",
-          "intro": "tag.p@text",
-          "kind": "class.cat@text##分类.",
-          "lastChapter": "tag.a.-1@text",
-          "name": "tag.a.1@text"
+            "author": "class.author@text##作者.",
+            "bookList": "class.bookbox",
+            "bookUrl": "tag.a.0@href",
+            "coverUrl": "tag.img@src",
+            "intro": "tag.p@text",
+            "kind": "class.cat@text##分类.",
+            "lastChapter": "tag.a.-1@text",
+            "name": "tag.a.1@text"
         },
         "ruleToc": {
-          "chapterList": "class.listmain@tag.dd",
-          "chapterName": "tag.a@text",
-          "chapterUrl": "tag.a@href"
+            "chapterList": "class.listmain@tag.dd",
+            "chapterName": "tag.a@text",
+            "chapterUrl": "tag.a@href"
         },
         "searchUrl": "http://www.xstxt.com/s.php?ie=gbk&q={{key}}",
         "weight": 0
-      },
-      {
+    },
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺云中书库",
@@ -5697,30 +5696,30 @@
         "enabledExplore": true,
         "lastUpdateTime": 1612777312854,
         "ruleBookInfo": {
-          "intro": "tag.p.2@text##简介：",
-          "lastChapter": "//meta[@property=\"og:novel:latest_chapter_name\"]/@content"
+            "intro": "tag.p.2@text##简介：",
+            "lastChapter": "//meta[@property=\"og:novel:latest_chapter_name\"]/@content"
         },
         "ruleContent": {
-          "content": "class.box_box@textNodes"
+            "content": "class.box_box@textNodes"
         },
         "ruleExplore": {},
         "ruleSearch": {
-          "author": "class.state@text##\\s+.*",
-          "bookList": "class.ul_b_list@tag.li||id.box_01_zong",
-          "bookUrl": "tag.a@href",
-          "coverUrl": "class.pic@tag.img@src",
-          "kind": "tag.span.0@text",
-          "name": "tag.h2@tag.a.0@text||tag.apan.0@text"
+            "author": "class.state@text##\\s+.*",
+            "bookList": "class.ul_b_list@tag.li||id.box_01_zong",
+            "bookUrl": "tag.a@href",
+            "coverUrl": "class.pic@tag.img@src",
+            "kind": "tag.span.0@text",
+            "name": "tag.h2@tag.a.0@text||tag.apan.0@text"
         },
         "ruleToc": {
-          "chapterList": "class.list_box@tag.li",
-          "chapterName": "tag.a@text",
-          "chapterUrl": "tag.a@href"
+            "chapterList": "class.list_box@tag.li",
+            "chapterName": "tag.a@text",
+            "chapterUrl": "tag.a@href"
         },
         "searchUrl": "/plus/search.php?kwtype=0&searchtype=搜索&q={{key}},{\n  \"charset\": \"utf-8\"\n}",
         "weight": 0
-      },
-      {
+    },
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺笔趣网",
@@ -5733,36 +5732,36 @@
         "exploreUrl": "",
         "lastUpdateTime": 1610329465597,
         "ruleBookInfo": {
-          "author": "//*[@property='og:novel:author']/@content",
-          "coverUrl": "//*[@property='og:image']/@content",
-          "intro": "class.bookinfo_intro@textNodes##您要是觉得《|》还不错.*",
-          "kind": "//*[@property='og:novel:category']/@content",
-          "lastChapter": "//*[@property='og:novel:latest_chapter_name']/@content",
-          "name": "//*[@property='og:novel:book_name']/@content"
+            "author": "//*[@property='og:novel:author']/@content",
+            "coverUrl": "//*[@property='og:image']/@content",
+            "intro": "class.bookinfo_intro@textNodes##您要是觉得《|》还不错.*",
+            "kind": "//*[@property='og:novel:category']/@content",
+            "lastChapter": "//*[@property='og:novel:latest_chapter_name']/@content",
+            "name": "//*[@property='og:novel:book_name']/@content"
         },
         "ruleContent": {
-          "content": "id.htmlContent@textNodes"
+            "content": "id.htmlContent@textNodes"
         },
         "ruleExplore": {},
         "ruleSearch": {
-          "author": "class.s3@text||class.book_other@tag.span@text",
-          "bookList": "class.toplist@tag.li||class.sitebox@tag.dl",
-          "bookUrl": "class.s1@tag.a@href||tag.h3@tag.a@href",
-          "coverUrl": "class.s1@tag.a@href|tag.h3@tag.a@href@js:var o=result.match(/\\/book\\/(\\d+)/); if(o!=null){'/files/article/image/'+parseInt(o[1]/1000)+'/'+o[1]+'/'+o[1]+'s.jpg';}",
-          "intro": "class.book_des@textNodes",
-          "kind": "class.s5@text||class.uptime@text",
-          "lastChapter": "class.s2@tag.a@text||class.book_other@tag.a@text##正文_",
-          "name": "class.s1@tag.a@text||tag.h3@tag.a@text"
+            "author": "class.s3@text||class.book_other@tag.span@text",
+            "bookList": "class.toplist@tag.li||class.sitebox@tag.dl",
+            "bookUrl": "class.s1@tag.a@href||tag.h3@tag.a@href",
+            "coverUrl": "class.s1@tag.a@href|tag.h3@tag.a@href@js:var o=result.match(/\\/book\\/(\\d+)/); if(o!=null){'/files/article/image/'+parseInt(o[1]/1000)+'/'+o[1]+'/'+o[1]+'s.jpg';}",
+            "intro": "class.book_des@textNodes",
+            "kind": "class.s5@text||class.uptime@text",
+            "lastChapter": "class.s2@tag.a@text||class.book_other@tag.a@text##正文_",
+            "name": "class.s1@tag.a@text||tag.h3@tag.a@text"
         },
         "ruleToc": {
-          "chapterList": "class.book_list@tag.li@tag.a",
-          "chapterName": "text##正文_",
-          "chapterUrl": "href"
+            "chapterList": "class.book_list@tag.li@tag.a",
+            "chapterName": "text##正文_",
+            "chapterUrl": "href"
         },
         "searchUrl": "/modules/article/search.php?searchtype=articlename&searchkey={{key}}",
         "weight": 0
-      },
-      {
+    },
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺衍墨轩",
@@ -5775,32 +5774,32 @@
         "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36\"\n}",
         "lastUpdateTime": 1610157442954,
         "ruleBookInfo": {
-          "coverUrl": "class.cover@img@src",
-          "intro": "class.desc@textNodes",
-          "lastChapter": "class.detail.2@i@text",
-          "tocUrl": "text.章节目录@href"
+            "coverUrl": "class.cover@img@src",
+            "intro": "class.desc@textNodes",
+            "lastChapter": "class.detail.2@i@text",
+            "tocUrl": "text.章节目录@href"
         },
         "ruleContent": {
-          "content": "class.content@textNodes"
+            "content": "class.content@textNodes"
         },
         "ruleExplore": {},
         "ruleSearch": {
-          "author": "class.a2@text",
-          "bookList": "class.lastest@li",
-          "bookUrl": "a@href",
-          "kind": "class.nt@text##\\[|\\]",
-          "lastChapter": "class.c2@a@text",
-          "name": "class.n2@a@text"
+            "author": "class.a2@text",
+            "bookList": "class.lastest@li",
+            "bookUrl": "a@href",
+            "kind": "class.nt@text##\\[|\\]",
+            "lastChapter": "class.c2@a@text",
+            "name": "class.n2@a@text"
         },
         "ruleToc": {
-          "chapterList": "class.mulu@li",
-          "chapterName": "tag.a@text",
-          "chapterUrl": "tag.a@href"
+            "chapterList": "class.mulu@li",
+            "chapterName": "tag.a@text",
+            "chapterUrl": "tag.a@href"
         },
         "searchUrl": "http://www.ymoxuan.org/search.htm?keyword={{key}}",
         "weight": 0
-      },
-      {
+    },
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺笔趣阁⑦",
@@ -5814,29 +5813,29 @@
         "header": "",
         "lastUpdateTime": 1612017941216,
         "ruleBookInfo": {
-          "coverUrl": "[property=\"og:image\"]@content",
-          "intro": "[property=\"og:description\"]@content"
+            "coverUrl": "[property=\"og:image\"]@content",
+            "intro": "[property=\"og:description\"]@content"
         },
         "ruleContent": {
-          "content": "id.content@html"
+            "content": "id.content@html"
         },
         "ruleExplore": {},
         "ruleSearch": {
-          "author": ".s4@text",
-          "bookList": "id.main@li!0",
-          "bookUrl": "tag.a.0@href",
-          "lastChapter": "tag.a.1@text",
-          "name": "tag.a.0@text"
+            "author": ".s4@text",
+            "bookList": "id.main@li!0",
+            "bookUrl": "tag.a.0@href",
+            "lastChapter": "tag.a.1@text",
+            "name": "tag.a.0@text"
         },
         "ruleToc": {
-          "chapterList": "id.list@a",
-          "chapterName": "text",
-          "chapterUrl": "href"
+            "chapterList": "id.list@a",
+            "chapterName": "text",
+            "chapterUrl": "href"
         },
         "searchUrl": "http://www.yingsx.com/cse/search?q={{key}}&s=,{\n  \"charset\": \"utf-8\"\n}",
         "weight": 0
-      },
-      {
+    },
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺大米小说",
@@ -5848,43 +5847,43 @@
         "exploreUrl": "书库全部::/shuku?page={{page}}\n玄幻奇幻::/xuanhuan?page={{page}}\n武侠仙侠::/xianxia?page={{page}}\n都市言情::/dushi?page={{page}}\n历史军事::/lishi?page={{page}}\n游戏竞技::/wangyou?page={{page}}\n科幻灵异::/kehuan?page={{page}}\n其他类型::/qita?page={{page}}\n完本小说::/quanben?page={{page}}",
         "lastUpdateTime": 1612777312844,
         "ruleBookInfo": {
-          "author": "class.booktag@tag.a.0@text",
-          "coverUrl": "class.img-thumbnail@tag.img.0@src",
-          "intro": "id.bookIntro@tag.p.0@text##.*简介：",
-          "kind": "class.booktag@tag.a.1@text&&class.booktag@tag.span.2@text&&class.booktag@tag.span.0@text##字数：",
-          "lastChapter": "class.text-danger@tag.a.0@text",
-          "name": "class.bookTitle@tag.h1@text"
+            "author": "class.booktag@tag.a.0@text",
+            "coverUrl": "class.img-thumbnail@tag.img.0@src",
+            "intro": "id.bookIntro@tag.p.0@text##.*简介：",
+            "kind": "class.booktag@tag.a.1@text&&class.booktag@tag.span.2@text&&class.booktag@tag.span.0@text##字数：",
+            "lastChapter": "class.text-danger@tag.a.0@text",
+            "name": "class.bookTitle@tag.h1@text"
         },
         "ruleContent": {
-          "content": "id.htmlContent@p@html##▧.*▧"
+            "content": "id.htmlContent@p@html##▧.*▧"
         },
         "ruleExplore": {
-          "author": "class.text-muted.1@text",
-          "bookList": "class.mytable@tag.tr!0",
-          "bookUrl": "tag.a.0@href",
-          "kind": "class.hidden-xs.1@text&&class.text-nowrap@text",
-          "lastChapter": "class.text-muted.0@tag.a.0@text",
-          "name": "tag.a.0@text"
+            "author": "class.text-muted.1@text",
+            "bookList": "class.mytable@tag.tr!0",
+            "bookUrl": "tag.a.0@href",
+            "kind": "class.hidden-xs.1@text&&class.text-nowrap@text",
+            "lastChapter": "class.text-muted.0@tag.a.0@text",
+            "name": "tag.a.0@text"
         },
         "ruleSearch": {
-          "author": "class.booktag@tag.a.0@text",
-          "bookList": "class.panel-body@tag.div!0:1",
-          "bookUrl": "tag.a@href",
-          "coverUrl": "class.thumbnail@tag.img.0@src",
-          "intro": "id.bookIntro@tag.p.0@text##.*简介：",
-          "kind": "class.visible-xs@tag.p.0@text##更新时间：",
-          "lastChapter": "class.text-danger@tag.a.0@text",
-          "name": "class.bookTitle@tag.h4@text"
+            "author": "class.booktag@tag.a.0@text",
+            "bookList": "class.panel-body@tag.div!0:1",
+            "bookUrl": "tag.a@href",
+            "coverUrl": "class.thumbnail@tag.img.0@src",
+            "intro": "id.bookIntro@tag.p.0@text##.*简介：",
+            "kind": "class.visible-xs@tag.p.0@text##更新时间：",
+            "lastChapter": "class.text-danger@tag.a.0@text",
+            "name": "class.bookTitle@tag.h4@text"
         },
         "ruleToc": {
-          "chapterList": "class.panel-chapterlist!0@tag.dd@tag.a",
-          "chapterName": "text",
-          "chapterUrl": "href"
+            "chapterList": "class.panel-chapterlist!0@tag.dd@tag.a",
+            "chapterName": "text",
+            "chapterUrl": "href"
         },
         "searchUrl": "/search?keyword={{key}}",
         "weight": 0
-      },
-      {
+    },
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺笔趣阁⑥",
@@ -5896,32 +5895,32 @@
         "enabledExplore": false,
         "lastUpdateTime": 1612012148296,
         "ruleBookInfo": {
-          "author": "class.box_con.0@id.info@tag.p.0@text##作\\s*者：",
-          "coverUrl": "id.fmimg@tag.img.0@src",
-          "name": "class.box_con.0@id.info@tag.h1.0@text"
+            "author": "class.box_con.0@id.info@tag.p.0@text##作\\s*者：",
+            "coverUrl": "id.fmimg@tag.img.0@src",
+            "name": "class.box_con.0@id.info@tag.h1.0@text"
         },
         "ruleContent": {
-          "content": "id.content@textNodes"
+            "content": "id.content@textNodes"
         },
         "ruleExplore": {},
         "ruleSearch": {
-          "author": "class.result-game-item-info-tag.0@tag.span.1@text",
-          "bookList": "class.result-item",
-          "bookUrl": "class.result-item-title.0@tag.a.0@href",
-          "coverUrl": "tag.img.0@src",
-          "intro": "class.result-game-item-desc@text",
-          "lastChapter": "class.result-game-item-info-tag.3@tag.a.0@text",
-          "name": "class.result-item-title.0@tag.a.0@text"
+            "author": "class.result-game-item-info-tag.0@tag.span.1@text",
+            "bookList": "class.result-item",
+            "bookUrl": "class.result-item-title.0@tag.a.0@href",
+            "coverUrl": "tag.img.0@src",
+            "intro": "class.result-game-item-desc@text",
+            "lastChapter": "class.result-game-item-info-tag.3@tag.a.0@text",
+            "name": "class.result-item-title.0@tag.a.0@text"
         },
         "ruleToc": {
-          "chapterList": "id.list@tag.dd",
-          "chapterName": "tag.a@text",
-          "chapterUrl": "tag.a@href"
+            "chapterList": "id.list@tag.dd",
+            "chapterName": "tag.a@text",
+            "chapterUrl": "tag.a@href"
         },
         "searchUrl": "https://www.mibaoge.com/search.php?q={{key}}",
         "weight": 0
-      },
-      {
+    },
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺龙坛书网",
@@ -5934,32 +5933,32 @@
         "lastUpdateTime": 1612777312851,
         "loginUrl": "https://www.ltsw888.com/user/login.php",
         "ruleBookInfo": {
-          "coverUrl": "id.fmimg@tag.img.0@src",
-          "intro": "id.intro@tag.p.0@text##简介："
+            "coverUrl": "id.fmimg@tag.img.0@src",
+            "intro": "id.intro@tag.p.0@text##简介："
         },
         "ruleContent": {
-          "content": "id.content@textNodes"
+            "content": "id.content@textNodes"
         },
         "ruleExplore": {},
         "ruleSearch": {
-          "author": "class.author.0@text",
-          "bookList": "class.bookbox",
-          "bookUrl": "tag.a.0@href",
-          "coverUrl": "tag.img@src",
-          "intro": "text",
-          "kind": "class.cat@text##分类：",
-          "lastChapter": "class.update@tag.a.0@text",
-          "name": "class.bookname@tag.a.0@text"
+            "author": "class.author.0@text",
+            "bookList": "class.bookbox",
+            "bookUrl": "tag.a.0@href",
+            "coverUrl": "tag.img@src",
+            "intro": "text",
+            "kind": "class.cat@text##分类：",
+            "lastChapter": "class.update@tag.a.0@text",
+            "name": "class.bookname@tag.a.0@text"
         },
         "ruleToc": {
-          "chapterList": "class.listmain@tag.dd",
-          "chapterName": "tag.a@text",
-          "chapterUrl": "tag.a@href"
+            "chapterList": "class.listmain@tag.dd",
+            "chapterName": "tag.a@text",
+            "chapterUrl": "tag.a@href"
         },
         "searchUrl": "http://www.ltsw888.com/s.php?ie=gbk&q={{key}}&page={{page}},{\n  \"charset\": \"gbk\"\n}",
         "weight": 0
-      },
-      {
+    },
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺文本豪居网",
@@ -5971,32 +5970,32 @@
         "exploreUrl": "最近更新::http://www.qingaiw.com/gengxin.html\n玄幻科幻::http://www.qingaiw.com/xh/{{page}}/\n都市小说::http://www.qingaiw.com/ds/{{page}}/\n言情小说::http://www.qingaiw.com/yq/{{page}}/\n历史架空::http://www.qingaiw.com/ls/{{page}}/\n网游武侠::http://www.qingaiw.com/yx/{{page}}/\n耽美小说::http://www.qingaiw.com/dm/{{page}}/\n其他类型::http://www.qingaiw.com/qt/{{page}}/",
         "lastUpdateTime": 1610673919941,
         "ruleBookInfo": {
-          "coverUrl": "id.maininfo@id.bookinfo@class.bookleft@id.bookimg@tag.img.0@src",
-          "intro": "id.bookintro@tag.p.2@textNodes",
-          "tocUrl": "id.newlist@class.newrap@tag.strong.0@tag.a.0@href"
+            "coverUrl": "id.maininfo@id.bookinfo@class.bookleft@id.bookimg@tag.img.0@src",
+            "intro": "id.bookintro@tag.p.2@textNodes",
+            "tocUrl": "id.newlist@class.newrap@tag.strong.0@tag.a.0@href"
         },
         "ruleContent": {
-          "content": "id.content@textNodes"
+            "content": "id.content@textNodes"
         },
         "ruleExplore": {},
         "ruleSearch": {
-          "author": "tag.dd.1@tag.span.0@tag.a.0@text||class.odd.1@text||id.maininfo@id.bookinfo@class.bookright@tag.a.0@text",
-          "bookList": "id.sitebox@tag.dl||class.grid searall@tag.tr!0||tag.body",
-          "bookUrl": "tag.dd.0@tag.h3.0@tag.a.0@href||class.odd.0@tag.a.0@href",
-          "coverUrl": "tag.dt.0@tag.a.0@tag.img.0@src||id.maininfo@id.bookinfo@class.bookleft@id.bookimg@tag.img.0@src",
-          "kind": "tag.dd.1@tag.span.1@text||class.even.2@text||id.maininfo@id.bookinfo@class.bookright@tag.span.0@text",
-          "lastChapter": "tag.dd.3@tag.a.0@text||class.even.0@tag.a.0@text||id.newlist@tag.ul.0@tag.li.0@tag.a.0@text",
-          "name": "tag.dd.0@tag.h3.0@tag.a.0@text||class.odd.0@tag.a.0@text||id.maininfo@id.bookinfo@class.bookright@tag.h1.0@text"
+            "author": "tag.dd.1@tag.span.0@tag.a.0@text||class.odd.1@text||id.maininfo@id.bookinfo@class.bookright@tag.a.0@text",
+            "bookList": "id.sitebox@tag.dl||class.grid searall@tag.tr!0||tag.body",
+            "bookUrl": "tag.dd.0@tag.h3.0@tag.a.0@href||class.odd.0@tag.a.0@href",
+            "coverUrl": "tag.dt.0@tag.a.0@tag.img.0@src||id.maininfo@id.bookinfo@class.bookleft@id.bookimg@tag.img.0@src",
+            "kind": "tag.dd.1@tag.span.1@text||class.even.2@text||id.maininfo@id.bookinfo@class.bookright@tag.span.0@text",
+            "lastChapter": "tag.dd.3@tag.a.0@text||class.even.0@tag.a.0@text||id.newlist@tag.ul.0@tag.li.0@tag.a.0@text",
+            "name": "tag.dd.0@tag.h3.0@tag.a.0@text||class.odd.0@tag.a.0@text||id.maininfo@id.bookinfo@class.bookright@tag.h1.0@text"
         },
         "ruleToc": {
-          "chapterList": "id.readerlist@tag.ul@tag.li@tag.a",
-          "chapterName": "text",
-          "chapterUrl": "href"
+            "chapterList": "id.readerlist@tag.ul@tag.li@tag.a",
+            "chapterName": "text",
+            "chapterUrl": "href"
         },
         "searchUrl": "http://www.qingaiw.com/search,{\n  \"charset\": \"gbk\",\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}&searchtype=articlename&page={{page}}\"\n}",
         "weight": 0
-      },
-      {
+    },
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺笔趣阁⑤",
@@ -6008,38 +6007,38 @@
         "exploreUrl": "",
         "lastUpdateTime": 1612017976213,
         "ruleBookInfo": {
-          "intro": "id.intro@textNodes"
+            "intro": "id.intro@textNodes"
         },
         "ruleContent": {
-          "content": "id.content@html"
+            "content": "id.content@html"
         },
         "ruleExplore": {
-          "author": "",
-          "bookList": "",
-          "bookUrl": "",
-          "coverUrl": "",
-          "lastChapter": "",
-          "name": ""
+            "author": "",
+            "bookList": "",
+            "bookUrl": "",
+            "coverUrl": "",
+            "lastChapter": "",
+            "name": ""
         },
         "ruleSearch": {
-          "author": "tag.p.1@tag.span.1@text",
-          "bookList": "class.result-item result-game-item",
-          "bookUrl": "tag.a.1@href",
-          "coverUrl": "img@src",
-          "intro": "class.result-game-item-desc@textNodes",
-          "kind": "tag.p.2@tag.span.1@text",
-          "lastChapter": "tag.a.2@text",
-          "name": "tag.a.1@text"
+            "author": "tag.p.1@tag.span.1@text",
+            "bookList": "class.result-item result-game-item",
+            "bookUrl": "tag.a.1@href",
+            "coverUrl": "img@src",
+            "intro": "class.result-game-item-desc@textNodes",
+            "kind": "tag.p.2@tag.span.1@text",
+            "lastChapter": "tag.a.2@text",
+            "name": "tag.a.1@text"
         },
         "ruleToc": {
-          "chapterList": "id.list@a",
-          "chapterName": "text",
-          "chapterUrl": "href"
+            "chapterList": "id.list@a",
+            "chapterName": "text",
+            "chapterUrl": "href"
         },
         "searchUrl": "https://www.biquduo.com/search.php?q={{key}}",
         "weight": 0
-      },
-      {
+    },
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺笔下文学网②",
@@ -6051,29 +6050,29 @@
         "enabledExplore": true,
         "lastUpdateTime": 1610168560168,
         "ruleBookInfo": {
-          "coverUrl": "class.block_img2@tag.img@src",
-          "intro": "class.intro_info@text"
+            "coverUrl": "class.block_img2@tag.img@src",
+            "intro": "class.intro_info@text"
         },
         "ruleContent": {
-          "content": "id.content@html"
+            "content": "id.content@html"
         },
         "ruleExplore": {},
         "ruleSearch": {
-          "author": "class.s4@tag.a.0@text",
-          "bookList": "class.novelslist2@tag.li!0",
-          "bookUrl": "class.s2@tag.a.0@href",
-          "lastChapter": "class.s3@tag.a.0@text",
-          "name": "class.s2@tag.a.0@text"
+            "author": "class.s4@tag.a.0@text",
+            "bookList": "class.novelslist2@tag.li!0",
+            "bookUrl": "class.s2@tag.a.0@href",
+            "lastChapter": "class.s3@tag.a.0@text",
+            "name": "class.s2@tag.a.0@text"
         },
         "ruleToc": {
-          "chapterList": "id.list@tag.dd!0:1:2:3:4:5:6:7:8",
-          "chapterName": "tag.a@text",
-          "chapterUrl": "tag.a@href"
+            "chapterList": "id.list@tag.dd!0:1:2:3:4:5:6:7:8",
+            "chapterName": "tag.a@text",
+            "chapterUrl": "tag.a@href"
         },
         "searchUrl": "https://www.bixiabook.com/index.php?s=/web/index/search,{\n  \"charset\": \"utf-8\",\n  \"method\": \"POST\",\n  \"body\": \"name={{key}}\"\n}",
         "weight": 0
-      },
-      {
+    },
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺360听书小说",
@@ -6087,56 +6086,56 @@
         "header": "",
         "lastUpdateTime": 1612777312856,
         "ruleBookInfo": {
-          "author": "class.mr30@tag.a@text",
-          "coverUrl": "class.pt-bookdetail@tag.img@src",
-          "init": "",
-          "intro": "class.compulsory-row-three pt-bookdetail-intro@tag.p@text",
-          "kind": "class.pt-crumb@tag.a.1@text",
-          "lastChapter": "class.pt-chapter-cont-detail.0@tag.span.0@text",
-          "name": "class.size24  mr20 novelname@tag.a@text",
-          "tocUrl": "",
-          "wordCount": ""
+            "author": "class.mr30@tag.a@text",
+            "coverUrl": "class.pt-bookdetail@tag.img@src",
+            "init": "",
+            "intro": "class.compulsory-row-three pt-bookdetail-intro@tag.p@text",
+            "kind": "class.pt-crumb@tag.a.1@text",
+            "lastChapter": "class.pt-chapter-cont-detail.0@tag.span.0@text",
+            "name": "class.size24  mr20 novelname@tag.a@text",
+            "tocUrl": "",
+            "wordCount": ""
         },
         "ruleContent": {
-          "content": "class.size16 color5 pt-read-text@html",
-          "nextContentUrl": "",
-          "sourceRegex": "",
-          "webJs": ""
+            "content": "class.size16 color5 pt-read-text@html",
+            "nextContentUrl": "",
+            "sourceRegex": "",
+            "webJs": ""
         },
         "ruleExplore": {
-          "author": "",
-          "bookList": "",
-          "bookUrl": "",
-          "coverUrl": "",
-          "intro": "",
-          "kind": "",
-          "lastChapter": "",
-          "name": "",
-          "wordCount": ""
+            "author": "",
+            "bookList": "",
+            "bookUrl": "",
+            "coverUrl": "",
+            "intro": "",
+            "kind": "",
+            "lastChapter": "",
+            "name": "",
+            "wordCount": ""
         },
         "ruleSearch": {
-          "author": "class.fl color7@tag.span.0@tag.a.0@text",
-          "bookList": "class.pt-rank-detail",
-          "bookUrl": "class.fl mr60@tag.a.0@href",
-          "coverUrl": "class.pt-rank-detail@tag.img.0@src",
-          "intro": "class.compulsory-row fl w100 color5 desc@text",
-          "kind": "class.fl color7@tag.span.2@tag.a.0@text",
-          "lastChapter": "class.fl pt-rank-detail-middle@class.fl lh100@tag.span.0@tag.a.0@text",
-          "name": "class.fl mr60@tag.a.0@text",
-          "wordCount": ""
+            "author": "class.fl color7@tag.span.0@tag.a.0@text",
+            "bookList": "class.pt-rank-detail",
+            "bookUrl": "class.fl mr60@tag.a.0@href",
+            "coverUrl": "class.pt-rank-detail@tag.img.0@src",
+            "intro": "class.compulsory-row fl w100 color5 desc@text",
+            "kind": "class.fl color7@tag.span.2@tag.a.0@text",
+            "lastChapter": "class.fl pt-rank-detail-middle@class.fl lh100@tag.span.0@tag.a.0@text",
+            "name": "class.fl mr60@tag.a.0@text",
+            "wordCount": ""
         },
         "ruleToc": {
-          "chapterList": "class.pt-chapter-cont-detail full@a",
-          "chapterName": "span@text",
-          "chapterUrl": "a@href",
-          "isVip": "",
-          "nextTocUrl": "",
-          "updateTime": ""
+            "chapterList": "class.pt-chapter-cont-detail full@a",
+            "chapterName": "span@text",
+            "chapterUrl": "a@href",
+            "isVip": "",
+            "nextTocUrl": "",
+            "updateTime": ""
         },
         "searchUrl": "https://www.360tingshu.cc/search/result.html?searchkey={{key}}",
         "weight": 0
-      },
-      {
+    },
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺猎文网",
@@ -6148,36 +6147,36 @@
         "enabledExplore": true,
         "lastUpdateTime": 1612777312849,
         "ruleBookInfo": {
-          "author": "//*[@property='og:novel:author']/@content",
-          "coverUrl": "//*[@property='og:image']/@content",
-          "intro": "//*[@id='intro']/p[1]",
-          "kind": "//*[@property='og:novel:category']/@content",
-          "lastChapter": "//*[@property='og:novel:latest_chapter_name']/@content",
-          "name": "//*[@property='og:novel:book_name']/@content"
+            "author": "//*[@property='og:novel:author']/@content",
+            "coverUrl": "//*[@property='og:image']/@content",
+            "intro": "//*[@id='intro']/p[1]",
+            "kind": "//*[@property='og:novel:category']/@content",
+            "lastChapter": "//*[@property='og:novel:latest_chapter_name']/@content",
+            "name": "//*[@property='og:novel:book_name']/@content"
         },
         "ruleContent": {
-          "content": "//*[@id='content']"
+            "content": "//*[@id='content']"
         },
         "ruleExplore": {},
         "ruleSearch": {
-          "author": "class.result-game-item-info-tag.0@tag.span.1@text",
-          "bookList": "class.result-item result-game-item",
-          "bookUrl": "class.result-item-title@tag.a@href",
-          "coverUrl": "class.result-game-item-pic-link-img@src",
-          "intro": "class.result-game-item-desc@text",
-          "kind": "class.result-game-item-info-tag.1@tag.span.1@text",
-          "lastChapter": "class.result-game-item-info-tag-item@text",
-          "name": "class.result-item-title@tag.a@text"
+            "author": "class.result-game-item-info-tag.0@tag.span.1@text",
+            "bookList": "class.result-item result-game-item",
+            "bookUrl": "class.result-item-title@tag.a@href",
+            "coverUrl": "class.result-game-item-pic-link-img@src",
+            "intro": "class.result-game-item-desc@text",
+            "kind": "class.result-game-item-info-tag.1@tag.span.1@text",
+            "lastChapter": "class.result-game-item-info-tag-item@text",
+            "name": "class.result-item-title@tag.a@text"
         },
         "ruleToc": {
-          "chapterList": "//*[@id='list']//dd/a",
-          "chapterName": "//text()",
-          "chapterUrl": "//@href"
+            "chapterList": "//*[@id='list']//dd/a",
+            "chapterName": "//text()",
+            "chapterUrl": "//@href"
         },
         "searchUrl": "https://www.liewen.la/search.php?q={{key}}",
         "weight": 0
-      },
-      {
+    },
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺69中文网",
@@ -6188,31 +6187,31 @@
         "enabledExplore": true,
         "lastUpdateTime": 1612777312856,
         "ruleBookInfo": {
-          "author": "class.item.0@tag.a.0@text",
-          "coverUrl": "class.img_in@tag.img@src",
-          "intro": "id.intro@text",
-          "name": "id.info@tag.h1.0@text"
+            "author": "class.item.0@tag.a.0@text",
+            "coverUrl": "class.img_in@tag.img@src",
+            "intro": "id.intro@text",
+            "name": "id.info@tag.h1.0@text"
         },
         "ruleContent": {
-          "content": "id.content@html"
+            "content": "id.content@html"
         },
         "ruleExplore": {},
         "ruleSearch": {
-          "author": "class.odd.1@text",
-          "bookList": "class.grid@tag.tr!0",
-          "bookUrl": "class.odd.0@tag.a.0@href",
-          "lastChapter": "class.even.0@tag.a.0@text",
-          "name": "class.odd.0@tag.a.0@text"
+            "author": "class.odd.1@text",
+            "bookList": "class.grid@tag.tr!0",
+            "bookUrl": "class.odd.0@tag.a.0@href",
+            "lastChapter": "class.even.0@tag.a.0@text",
+            "name": "class.odd.0@tag.a.0@text"
         },
         "ruleToc": {
-          "chapterList": "class.zjlist@tag.dd@tag.a",
-          "chapterName": "text",
-          "chapterUrl": "href"
+            "chapterList": "class.zjlist@tag.dd@tag.a",
+            "chapterName": "text",
+            "chapterUrl": "href"
         },
         "searchUrl": "https://www.69zww.com/modules/article/search.php?searchkey={{key}},{\n  \"charset\": \"gbk\"\n}",
         "weight": 0
-      },
-      {
+    },
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺饭饭中文",
@@ -6224,34 +6223,34 @@
         "enabledExplore": true,
         "lastUpdateTime": 1610339394379,
         "ruleBookInfo": {
-          "author": "id.info@tag.p.0@a@text",
-          "coverUrl": "id.fmimg@img@src",
-          "intro": "id.intro@text",
-          "name": "id.info@h1@text"
+            "author": "id.info@tag.p.0@a@text",
+            "coverUrl": "id.fmimg@img@src",
+            "intro": "id.intro@text",
+            "name": "id.info@h1@text"
         },
         "ruleContent": {
-          "content": "id.content@html##喜欢.*速度最快。"
+            "content": "id.content@html##喜欢.*速度最快。"
         },
         "ruleExplore": {},
         "ruleSearch": {
-          "author": "class.book_other.0@tag.span.0@text",
-          "bookList": "id.sitembox@dl",
-          "bookUrl": "tag.a.0@href",
-          "coverUrl": "img@src",
-          "intro": "class.book_des@text",
-          "kind": "class.book_other.0@tag.span.2@text",
-          "lastChapter": "class.book_other@a@text",
-          "name": "h3@text"
+            "author": "class.book_other.0@tag.span.0@text",
+            "bookList": "id.sitembox@dl",
+            "bookUrl": "tag.a.0@href",
+            "coverUrl": "img@src",
+            "intro": "class.book_des@text",
+            "kind": "class.book_other.0@tag.span.2@text",
+            "lastChapter": "class.book_other@a@text",
+            "name": "h3@text"
         },
         "ruleToc": {
-          "chapterList": "//*[@id=\"list\"]//dt[2]/following-sibling::dd/a",
-          "chapterName": "text",
-          "chapterUrl": "href"
+            "chapterList": "//*[@id=\"list\"]//dt[2]/following-sibling::dd/a",
+            "chapterName": "text",
+            "chapterUrl": "href"
         },
         "searchUrl": "https://www.fanfanzw.com/search.html,{\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}\"\n}",
         "weight": 0
-      },
-      {
+    },
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺猫看书",
@@ -6263,43 +6262,43 @@
         "exploreUrl": "☆                          榜单数据                      ☆::\n今日更新::/lastupdate/{{page}}/\n上架新书::/postdate/{{page}}/\n月点击榜::/monthvisit/{{page}}/\n总收藏榜::/goodnum/{{page}}/\n新书榜单::/goodnew/{{page}}/\n☆                              分类                          ☆::\n玄幻::/sort/1/{{page}}/\n奇幻::/sort/2/{{page}}/\n武侠::/sort/3/{{page}}/\n都市::/sort/4/{{page}}/\n历史::/sort/5/{{page}}/\n军事::/sort/6/{{page}}/\n悬疑::/sort/7/{{page}}/\n游戏::/sort/8/{{page}}/\n科幻::/sort/9/{{page}}/\n体育::/sort/10/{{page}}/\n官场::/sort/11/{{page}}/\n古言::/sort/12/{{page}}/\n现言::/sort/13/{{page}}/\n幻言::/sort/14/{{page}}/\n仙侠::/sort/15/{{page}}/\n青春::/sort/16/{{page}}/\n穿越::/sort/17/{{page}}/\n女生::/sort/18/{{page}}/\nN次元::/sort/19/{{page}}/\n",
         "lastUpdateTime": 1612777312842,
         "ruleBookInfo": {
-          "author": "id.info@tag.p.0@text",
-          "coverUrl": "id.fmimg@tag.img@src",
-          "intro": "class.introtxt@text##简介：",
-          "kind": "id.info@tag.p.1@text##类 别：|\\(.*\\)",
-          "lastChapter": "id.info@tag.p.4@tag.a@text##nbsp; ",
-          "name": "id.info@tag.h1@text"
+            "author": "id.info@tag.p.0@text",
+            "coverUrl": "id.fmimg@tag.img@src",
+            "intro": "class.introtxt@text##简介：",
+            "kind": "id.info@tag.p.1@text##类 别：|\\(.*\\)",
+            "lastChapter": "id.info@tag.p.4@tag.a@text##nbsp; ",
+            "name": "id.info@tag.h1@text"
         },
         "ruleContent": {
-          "content": "id.content@tag.p@html##手机阅读访问.*书架功能更好用."
+            "content": "id.content@tag.p@html##手机阅读访问.*书架功能更好用."
         },
         "ruleExplore": {
-          "author": "class.info@tag.span.0@text",
-          "bookList": "id.alistbox",
-          "bookUrl": "class.info@tag.h2@tag.a@href",
-          "coverUrl": "class.pic@tag.img@src",
-          "intro": "class.intro@text",
-          "lastChapter": "class.sys@tag.li@tag.a@text",
-          "name": "class.info@tag.h2@tag.a@text"
+            "author": "class.info@tag.span.0@text",
+            "bookList": "id.alistbox",
+            "bookUrl": "class.info@tag.h2@tag.a@href",
+            "coverUrl": "class.pic@tag.img@src",
+            "intro": "class.intro@text",
+            "lastChapter": "class.sys@tag.li@tag.a@text",
+            "name": "class.info@tag.h2@tag.a@text"
         },
         "ruleSearch": {
-          "author": "class.info@tag.span.0@text",
-          "bookList": "id.alistbox",
-          "bookUrl": "class.info@tag.h2@tag.a@href",
-          "coverUrl": "class.pic@tag.img@src",
-          "intro": "class.intro@text",
-          "lastChapter": "class.sys@tag.li@tag.a@text",
-          "name": "class.info@tag.h2@tag.a@text"
+            "author": "class.info@tag.span.0@text",
+            "bookList": "id.alistbox",
+            "bookUrl": "class.info@tag.h2@tag.a@href",
+            "coverUrl": "class.pic@tag.img@src",
+            "intro": "class.intro@text",
+            "lastChapter": "class.sys@tag.li@tag.a@text",
+            "name": "class.info@tag.h2@tag.a@text"
         },
         "ruleToc": {
-          "chapterList": "id.list@tag.dd@tag.a",
-          "chapterName": "text##nbsp; ",
-          "chapterUrl": "href"
+            "chapterList": "id.list@tag.dd@tag.a",
+            "chapterName": "text##nbsp; ",
+            "chapterUrl": "href"
         },
         "searchUrl": "https://www.maokanshu.com/search.html,{\"method\": \"POST\", \"body\": \"s=articlename&searchkey={{key}}\"}",
         "weight": 0
-      },
-      {
+    },
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺69书吧",
@@ -6311,40 +6310,40 @@
         "exploreUrl": "玄幻::https://www.69shu.org/fenlei/1_{{page}}/\n仙侠::/fenlei/2_{{page}}/\n都市::/fenlei/3_{{page}}/\n穿越::/fenlei/4_{{page}}/\n军史::/fenlei/5_{{page}}/\n网游::/fenlei/6_{{page}}/\n科幻::/fenlei/7_{{page}}/\n悬疑::/fenlei/8_{{page}}/\n热门::/fenlei/9_{{page}}/\n全本::/quanben/{{page}}",
         "lastUpdateTime": 1611661990594,
         "ruleBookInfo": {
-          "author": "class.item.0@tag.a.0@text",
-          "coverUrl": "class.pic@tag.img@src",
-          "intro": "class.bookinfo_intro@text",
-          "name": "id.info@tag.h1.0@text"
+            "author": "class.item.0@tag.a.0@text",
+            "coverUrl": "class.pic@tag.img@src",
+            "intro": "class.bookinfo_intro@text",
+            "name": "id.info@tag.h1.0@text"
         },
         "ruleContent": {
-          "content": "id.htmlContent@html##一秒记住【69书吧 www.69shu.org】，更新快，无弹窗，免费读！"
+            "content": "id.htmlContent@html##一秒记住【69书吧 www.69shu.org】，更新快，无弹窗，免费读！"
         },
         "ruleExplore": {
-          "author": "class.s4@text",
-          "bookList": "class.gengxin@tag.li",
-          "bookUrl": "tag.a.0@href",
-          "coverUrl": "tag.a.0@href##.+\\D((\\d+)\\d{3})\\D##https://www.69shu.org/files/article/image/$2/$1/$1s.jpg###",
-          "lastChapter": "tag.a.1@text",
-          "name": "tag.a.0@text",
-          "wordCount": "class.s5@text"
+            "author": "class.s4@text",
+            "bookList": "class.gengxin@tag.li",
+            "bookUrl": "tag.a.0@href",
+            "coverUrl": "tag.a.0@href##.+\\D((\\d+)\\d{3})\\D##https://www.69shu.org/files/article/image/$2/$1/$1s.jpg###",
+            "lastChapter": "tag.a.1@text",
+            "name": "tag.a.0@text",
+            "wordCount": "class.s5@text"
         },
         "ruleSearch": {
-          "author": "class.odd.1@text",
-          "bookList": "tag.tr!0",
-          "bookUrl": "class.odd.0@tag.a.0@href",
-          "coverUrl": "class.odd.0@tag.a@href##.+\\D((\\d+)\\d{3})\\D##https://www.69shu.org/files/article/image/$2/$1/$1s.jpg###",
-          "lastChapter": "class.even.0@tag.a.0@text",
-          "name": "class.odd.0@tag.a.0@text"
+            "author": "class.odd.1@text",
+            "bookList": "tag.tr!0",
+            "bookUrl": "class.odd.0@tag.a.0@href",
+            "coverUrl": "class.odd.0@tag.a@href##.+\\D((\\d+)\\d{3})\\D##https://www.69shu.org/files/article/image/$2/$1/$1s.jpg###",
+            "lastChapter": "class.even.0@tag.a.0@text",
+            "name": "class.odd.0@tag.a.0@text"
         },
         "ruleToc": {
-          "chapterList": "class.chapterlist@tag.li@tag.a",
-          "chapterName": "text",
-          "chapterUrl": "href"
+            "chapterList": "class.chapterlist@tag.li@tag.a",
+            "chapterName": "text",
+            "chapterUrl": "href"
         },
         "searchUrl": "https://www.69shu.org/modules/article/search.php?searchkey={{key}},{\n  \"charset\": \"gbk\"\n}",
         "weight": 0
-      },
-      {
+    },
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺懒人小说",
@@ -6356,33 +6355,33 @@
         "enabledExplore": true,
         "lastUpdateTime": 1611756018160,
         "ruleBookInfo": {
-          "author": "class.book-title@tag.em@text##作\\s*者：",
-          "coverUrl": "class.book-img@tag.img@src",
-          "intro": "tag.p.2@text||class.book-intro@text",
-          "name": "tag.h1.0@text",
-          "tocUrl": "class.book-link@tag.a.1@href"
+            "author": "class.book-title@tag.em@text##作\\s*者：",
+            "coverUrl": "class.book-img@tag.img@src",
+            "intro": "tag.p.2@text||class.book-intro@text",
+            "name": "tag.h1.0@text",
+            "tocUrl": "class.book-link@tag.a.1@href"
         },
         "ruleContent": {
-          "content": "id.BookText@html"
+            "content": "id.BookText@html"
         },
         "ruleExplore": {},
         "ruleSearch": {
-          "author": "tag.p.0@tag.i.0@text",
-          "bookList": "class.item-pic",
-          "bookUrl": "tag.h3.0@tag.a@href",
-          "coverUrl": "tag.img@src",
-          "lastChapter": "tag.p.1@tag.a@text",
-          "name": "tag.h3.0@tag.a@text"
+            "author": "tag.p.0@tag.i.0@text",
+            "bookList": "class.item-pic",
+            "bookUrl": "tag.h3.0@tag.a@href",
+            "coverUrl": "tag.img@src",
+            "lastChapter": "tag.p.1@tag.a@text",
+            "name": "tag.h3.0@tag.a@text"
         },
         "ruleToc": {
-          "chapterList": "class.chapterlist@tag.dd",
-          "chapterName": "tag.a@text",
-          "chapterUrl": "tag.a@href"
+            "chapterList": "class.chapterlist@tag.dd",
+            "chapterName": "tag.a@text",
+            "chapterUrl": "tag.a@href"
         },
         "searchUrl": "https://www.lrxsw.org/modules/article/search.php?searchkey={{key}}&page={{page}},{\n  \"charset\": \"gbk\"\n}",
         "weight": 0
-      },
-      {
+    },
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺微风小说",
@@ -6396,57 +6395,57 @@
         "header": "",
         "lastUpdateTime": 1612013149192,
         "ruleBookInfo": {
-          "author": "author",
-          "coverUrl": "cover",
-          "init": "<js> \nvar J = org.jsoup.Jsoup.parse(result);\nvar o = selector => String(J.select(selector).text()) ;\nvar og = selector => String(J.select('[property=\"og:' + selector + '\"]').attr('content'));\nvar book = {\n\tname: og('novel:book_name'),\n\tauthor: og('novel:author'),\n\tkind: og('novel:category') + ',' + og('novel:status').replace(/中|已/, ''),\n\tlatest: og('novel:latest_chapter_name') + '▪' + og('novel:update_time').replace(/\\//g, '-').match(/-(\\d+-\\d+)/)[1],\n\tintro: o('.wrapper').replace(/(^|[。！？]+[”」）】]?)/g, '$1<br>'),\n\tcover: og('image'),\n\turl: J.select('.tgcj:eq(0)').attr('href'),\n};\nbook;\n</js>",
-          "intro": "intro",
-          "kind": "kind",
-          "lastChapter": "latest",
-          "name": "name",
-          "tocUrl": "url",
-          "wordCount": "wordCount"
+            "author": "author",
+            "coverUrl": "cover",
+            "init": "<js> \nvar J = org.jsoup.Jsoup.parse(result);\nvar o = selector => String(J.select(selector).text()) ;\nvar og = selector => String(J.select('[property=\"og:' + selector + '\"]').attr('content'));\nvar book = {\n\tname: og('novel:book_name'),\n\tauthor: og('novel:author'),\n\tkind: og('novel:category') + ',' + og('novel:status').replace(/中|已/, ''),\n\tlatest: og('novel:latest_chapter_name') + '▪' + og('novel:update_time').replace(/\\//g, '-').match(/-(\\d+-\\d+)/)[1],\n\tintro: o('.wrapper').replace(/(^|[。！？]+[”」）】]?)/g, '$1<br>'),\n\tcover: og('image'),\n\turl: J.select('.tgcj:eq(0)').attr('href'),\n};\nbook;\n</js>",
+            "intro": "intro",
+            "kind": "kind",
+            "lastChapter": "latest",
+            "name": "name",
+            "tocUrl": "url",
+            "wordCount": "wordCount"
         },
         "ruleContent": {
-          "content": "#content p@textNodes",
-          "imageStyle": "",
-          "nextContentUrl": ".jump a:eq(3)@href",
-          "replaceRegex": "##本章.*完[結畢].*",
-          "sourceRegex": "",
-          "webJs": ""
+            "content": "#content p@textNodes",
+            "imageStyle": "",
+            "nextContentUrl": ".jump a:eq(3)@href",
+            "replaceRegex": "##本章.*完[結畢].*",
+            "sourceRegex": "",
+            "webJs": ""
         },
         "ruleExplore": {
-          "author": "",
-          "bookList": "",
-          "bookUrl": "",
-          "coverUrl": "",
-          "intro": "",
-          "kind": "",
-          "lastChapter": "",
-          "name": "",
-          "wordCount": ""
+            "author": "",
+            "bookList": "",
+            "bookUrl": "",
+            "coverUrl": "",
+            "intro": "",
+            "kind": "",
+            "lastChapter": "",
+            "name": "",
+            "wordCount": ""
         },
         "ruleSearch": {
-          "author": "author",
-          "bookList": "#sitembox dl\n<js>\nresult.toArray().slice(0, 3).map(el => {\n\tvar url = String(el.select('a:eq(0)').attr('href')).replace(/^\\//, baseUrl.match(/(.+?\\/\\/[^\\/]+\\/)/)[1]);\n\tvar J = org.jsoup.Jsoup.parse(java.ajax(url));\n\tvar o = selector => String(J.select(selector).text());\n\tvar og = selector => String(J.select('[property=\"og:' + selector + '\"]').attr('content'));\n\treturn {\n\t\tname: og('novel:book_name'),\n\t\tauthor: og('novel:author'),\n\t\tkind: og('novel:category') + ',' + og('novel:status').replace(/中|已/, ''),\n\t\tlatest: og('novel:latest_chapter_name') + '▪' + og('novel:update_time').replace(/\\//g, '-').match(/-(\\d+-\\d+)/)[1],\n\t\tintro: o('.wrapper').replace(/\\s/g, ''),\n\t\tcover: og('image'),\n\t\turl: url,\n\t};\n}); \n</js>",
-          "bookUrl": "url",
-          "coverUrl": "cover",
-          "intro": "intro",
-          "kind": "kind",
-          "lastChapter": "latest",
-          "name": "name",
-          "wordCount": "wordCount"
+            "author": "author",
+            "bookList": "#sitembox dl\n<js>\nresult.toArray().slice(0, 3).map(el => {\n\tvar url = String(el.select('a:eq(0)').attr('href')).replace(/^\\//, baseUrl.match(/(.+?\\/\\/[^\\/]+\\/)/)[1]);\n\tvar J = org.jsoup.Jsoup.parse(java.ajax(url));\n\tvar o = selector => String(J.select(selector).text());\n\tvar og = selector => String(J.select('[property=\"og:' + selector + '\"]').attr('content'));\n\treturn {\n\t\tname: og('novel:book_name'),\n\t\tauthor: og('novel:author'),\n\t\tkind: og('novel:category') + ',' + og('novel:status').replace(/中|已/, ''),\n\t\tlatest: og('novel:latest_chapter_name') + '▪' + og('novel:update_time').replace(/\\//g, '-').match(/-(\\d+-\\d+)/)[1],\n\t\tintro: o('.wrapper').replace(/\\s/g, ''),\n\t\tcover: og('image'),\n\t\turl: url,\n\t};\n}); \n</js>",
+            "bookUrl": "url",
+            "coverUrl": "cover",
+            "intro": "intro",
+            "kind": "kind",
+            "lastChapter": "latest",
+            "name": "name",
+            "wordCount": "wordCount"
         },
         "ruleToc": {
-          "chapterList": "#readerlists ul li",
-          "chapterName": "a@text",
-          "chapterUrl": "a@href",
-          "nextTocUrl": "",
-          "updateTime": "textNodes"
+            "chapterList": "#readerlists ul li",
+            "chapterName": "a@text",
+            "chapterUrl": "a@href",
+            "nextTocUrl": "",
+            "updateTime": "textNodes"
         },
         "searchUrl": "/s.html,{\n  \"method\": \"POST\",\n  \"body\": \"type=articlename&s={{key}}\"\n}",
         "weight": 0
-      },
-      {
+    },
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺云看小说",
@@ -6459,32 +6458,32 @@
         "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Linux; Android 10; M2007J22C Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.101 Mobile Safari/537.36\"\n}",
         "lastUpdateTime": 1612013167157,
         "ruleBookInfo": {
-          "coverUrl": "class.flex-wrp bg-white pt-bookdetail@img@src",
-          "intro": "class.compulsory-row-three pt-book-intro@textNodes",
-          "lastChapter": "class.flex-wrp flex-between pt10 pb10.0@a@text",
-          "tocUrl": "class.w100 mb10 bg-white lh100 pt-chapter@tag.a.-1@href"
+            "coverUrl": "class.flex-wrp bg-white pt-bookdetail@img@src",
+            "intro": "class.compulsory-row-three pt-book-intro@textNodes",
+            "lastChapter": "class.flex-wrp flex-between pt10 pb10.0@a@text",
+            "tocUrl": "class.w100 mb10 bg-white lh100 pt-chapter@tag.a.-1@href"
         },
         "ruleContent": {
-          "content": "id.pt-pop@p@textNodes"
+            "content": "id.pt-pop@p@textNodes"
         },
         "ruleExplore": {},
         "ruleSearch": {
-          "author": "class.size12@a@text##\\[|]",
-          "bookList": "class.pt-recomment-cont||class.flex-wrp pt-popular-item",
-          "bookUrl": "a@href",
-          "coverUrl": "img@src",
-          "kind": "class.pt-recomment-label@text||class.pt-popular-label@text",
-          "name": "class.size14@a@text"
+            "author": "class.size12@a@text##\\[|]",
+            "bookList": "class.pt-recomment-cont||class.flex-wrp pt-popular-item",
+            "bookUrl": "a@href",
+            "coverUrl": "img@src",
+            "kind": "class.pt-recomment-label@text||class.pt-popular-label@text",
+            "name": "class.size14@a@text"
         },
         "ruleToc": {
-          "chapterList": "class.border-b chapter-list@a",
-          "chapterName": "class.flex-wrp.1@text",
-          "chapterUrl": "href"
+            "chapterList": "class.border-b chapter-list@a",
+            "chapterName": "class.flex-wrp.1@text",
+            "chapterUrl": "href"
         },
         "searchUrl": "https://kan.ks666.top/search/result.html?searchkey={{key}}&page={{page}}",
         "weight": 0
-      },
-      {
+    },
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺搜狗阅读",
@@ -6496,31 +6495,31 @@
         "enabledExplore": true,
         "lastUpdateTime": 1612777312852,
         "ruleBookInfo": {
-          "intro": "@js:java.get('Intro')"
+            "intro": "@js:java.get('Intro')"
         },
         "ruleContent": {
-          "content": "detail.content"
+            "content": "detail.content"
         },
         "ruleExplore": {},
         "ruleSearch": {
-          "author": "author",
-          "bookList": ".search-list-note + .list-book-col1 li@js:var O=[\"4 q=D(E.F(/G=([^&=]+)/)[1]);4 k=H I('('+q.5(/\\\\s/g,'').J('').K(l(a,L,i,b){m(i<b.M-1){a.N(b[i]+b[i+1])}9 a},[]).O('|')+')');l f(a){9!k.P(a.5(/\\\\s/g,''))}Q.n().o(0,3).p(6=>{4 c=r=>h(6.7(r).j().u());4 8=c('.2-w');4 d=h(6.7('.2-x-y').R(0).j());m(f(8)&&f(d))9{};4 e=c('.2-S');9{8:8,d:d,z:6.7('.2-z T').A('U')||'V://W.X/Y',Z:6.7('.2-x-y').n().o(1,3).p(B=>h(B.j()).5(/已|中/,'').u()),10:c('.2-11').5('最新章节：',''),e:e.5(/[\\\\s\\\\t]+/g,''),12:'<C>'+e.5(/[\\\\s\\\\t]+/g,'<C>'),13:6.7('.2-w').A('14')}}).15(v=>v.8);\",\"|\",\"split\",\"||book||var|replace|el|select|name|return|||elText|author|intro|isInvalid||String||text|regex|function|if|toArray|slice|map||selector|||trim||title|info|sub|cover|attr|tag|br|decodeURIComponent|baseUrl|match|keyword|new|RegExp|split|reduce|_|length|push|join|test|result|eq|summary|img|src|http|uee|me|bNkEy|tags|last|chapter|Intro|url|href|filter\",\"\",\"fromCharCode\",\"replace\",\"\\\\w+\",\"\\\\b\",\"g\"];eval(function(a,e,t,r,n,i){if(n=function(a){return(a<62?O[4]:n(parseInt(a/62)))+(35<(a%=62)?String[O[5]](a+29):a.toString(36))},!O[4][O[6]](/^/,String)){for(;t--;)i[n(t)]=r[t]||n(t);r=[function(a){return i[a]}],n=function(){return O[7]},t=1}for(;t--;)r[t]&&(a=a[O[6]](new RegExp(O[8]+n(t)+O[8],O[9]),r[t]));return a}(O[0],0,68,O[3][O[2]](O[1]),0,{}));",
-          "bookUrl": "url",
-          "coverUrl": "cover",
-          "intro": "intro@put:{Intro:$.Intro}@js:result.trim()",
-          "kind": "",
-          "lastChapter": "last",
-          "name": "name"
+            "author": "author",
+            "bookList": ".search-list-note + .list-book-col1 li@js:var O=[\"4 q=D(E.F(/G=([^&=]+)/)[1]);4 k=H I('('+q.5(/\\\\s/g,'').J('').K(l(a,L,i,b){m(i<b.M-1){a.N(b[i]+b[i+1])}9 a},[]).O('|')+')');l f(a){9!k.P(a.5(/\\\\s/g,''))}Q.n().o(0,3).p(6=>{4 c=r=>h(6.7(r).j().u());4 8=c('.2-w');4 d=h(6.7('.2-x-y').R(0).j());m(f(8)&&f(d))9{};4 e=c('.2-S');9{8:8,d:d,z:6.7('.2-z T').A('U')||'V://W.X/Y',Z:6.7('.2-x-y').n().o(1,3).p(B=>h(B.j()).5(/已|中/,'').u()),10:c('.2-11').5('最新章节：',''),e:e.5(/[\\\\s\\\\t]+/g,''),12:'<C>'+e.5(/[\\\\s\\\\t]+/g,'<C>'),13:6.7('.2-w').A('14')}}).15(v=>v.8);\",\"|\",\"split\",\"||book||var|replace|el|select|name|return|||elText|author|intro|isInvalid||String||text|regex|function|if|toArray|slice|map||selector|||trim||title|info|sub|cover|attr|tag|br|decodeURIComponent|baseUrl|match|keyword|new|RegExp|split|reduce|_|length|push|join|test|result|eq|summary|img|src|http|uee|me|bNkEy|tags|last|chapter|Intro|url|href|filter\",\"\",\"fromCharCode\",\"replace\",\"\\\\w+\",\"\\\\b\",\"g\"];eval(function(a,e,t,r,n,i){if(n=function(a){return(a<62?O[4]:n(parseInt(a/62)))+(35<(a%=62)?String[O[5]](a+29):a.toString(36))},!O[4][O[6]](/^/,String)){for(;t--;)i[n(t)]=r[t]||n(t);r=[function(a){return i[a]}],n=function(){return O[7]},t=1}for(;t--;)r[t]&&(a=a[O[6]](new RegExp(O[8]+n(t)+O[8],O[9]),r[t]));return a}(O[0],0,68,O[3][O[2]](O[1]),0,{}));",
+            "bookUrl": "url",
+            "coverUrl": "cover",
+            "intro": "intro@put:{Intro:$.Intro}@js:result.trim()",
+            "kind": "",
+            "lastChapter": "last",
+            "name": "name"
         },
         "ruleToc": {
-          "chapterList": ".index-list a",
-          "chapterName": "text",
-          "chapterUrl": "href@js:result.replace(/\\/dd\\//, '/dd/ajax/')"
+            "chapterList": ".index-list a",
+            "chapterName": "text",
+            "chapterUrl": "href@js:result.replace(/\\/dd\\//, '/dd/ajax/')"
         },
         "searchUrl": "/dd/search?keyword={{key}}",
         "weight": 0
-      },
-      {
+    },
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺云阅文学",
@@ -6531,30 +6530,30 @@
         "enabledExplore": true,
         "lastUpdateTime": 1612777312853,
         "ruleBookInfo": {
-          "intro": "class.intro@text"
+            "intro": "class.intro@text"
         },
         "ruleContent": {
-          "content": "id.chapterContent@html"
+            "content": "id.chapterContent@html"
         },
         "ruleExplore": {},
         "ruleSearch": {
-          "author": "tag.td.0@text",
-          "bookList": "class.story",
-          "bookUrl": "class.text@tag.h2@tag.a@href",
-          "coverUrl": "class.img@tag.a@img@src",
-          "kind": "tag.td.1@text##分类：",
-          "lastChapter": "tag.td.3@text",
-          "name": "class.text@tag.h2@tag.a@text"
+            "author": "tag.td.0@text",
+            "bookList": "class.story",
+            "bookUrl": "class.text@tag.h2@tag.a@href",
+            "coverUrl": "class.img@tag.a@img@src",
+            "kind": "tag.td.1@text##分类：",
+            "lastChapter": "tag.td.3@text",
+            "name": "class.text@tag.h2@tag.a@text"
         },
         "ruleToc": {
-          "chapterList": "class.con_sub@tag.ul@tag.li",
-          "chapterName": "tag.a@text",
-          "chapterUrl": "tag.a@href"
+            "chapterList": "class.con_sub@tag.ul@tag.li",
+            "chapterName": "tag.a@text",
+            "chapterUrl": "tag.a@href"
         },
         "searchUrl": "http://www.iyunyue.com/SearchList.aspx?keyword={{key}}=1&ps=10",
         "weight": 0
-      },
-      {
+    },
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺一本读",
@@ -6567,30 +6566,30 @@
         "exploreUrl": "玄幻::http://www.ybdu.me/xuanhuan/\n修真::http://www.ybdu.me/xianxia/\n都市::http://www.ybdu.me/dushi/\n历史::http://www.ybdu.me/lishi/\n网游::http://www.ybdu.me/wangyou/\n科幻::http://www.ybdu.me/kehuan/\n言情::http://www.ybdu.me/yanqing/\n其他::http://www.ybdu.me/qita/\n全本::http://www.ybdu.me/quanben/\n排行榜::http://www.ybdu.me/top/",
         "lastUpdateTime": 1610339319109,
         "ruleBookInfo": {
-          "coverUrl": "id.fmimg@tag.img@src",
-          "intro": "id.intro@text"
+            "coverUrl": "id.fmimg@tag.img@src",
+            "intro": "id.intro@text"
         },
         "ruleContent": {
-          "content": "id.content@html"
+            "content": "id.content@html"
         },
         "ruleExplore": {},
         "ruleSearch": {
-          "author": "class.s4@text",
-          "bookList": "class.novelslist2@tag.li!0||id.newscontent@tag.li",
-          "bookUrl": "class.s2@tag.a@href",
-          "kind": "class.s1@text",
-          "lastChapter": "class.s3@tag.a@text",
-          "name": "class.s2@tag.a@text"
+            "author": "class.s4@text",
+            "bookList": "class.novelslist2@tag.li!0||id.newscontent@tag.li",
+            "bookUrl": "class.s2@tag.a@href",
+            "kind": "class.s1@text",
+            "lastChapter": "class.s3@tag.a@text",
+            "name": "class.s2@tag.a@text"
         },
         "ruleToc": {
-          "chapterList": "id.list@tag.dd",
-          "chapterName": "tag.a@text",
-          "chapterUrl": "tag.a@href"
+            "chapterList": "id.list@tag.dd",
+            "chapterName": "tag.a@text",
+            "chapterUrl": "tag.a@href"
         },
         "searchUrl": "http://www.ybdu.me/SearchBook.aspx?keyword={{key}}",
         "weight": 0
-      },
-      {
+    },
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺秀小说网",
@@ -6601,31 +6600,31 @@
         "enabledExplore": true,
         "lastUpdateTime": 1610339642581,
         "ruleBookInfo": {
-          "author": "id.info@tag.p.0@tag.a.0@text",
-          "coverUrl": "id.fmimg@tag.img.0@src",
-          "intro": "id.intro@text",
-          "name": "id.info@tag.h1.0@text"
+            "author": "id.info@tag.p.0@tag.a.0@text",
+            "coverUrl": "id.fmimg@tag.img.0@src",
+            "intro": "id.intro@text",
+            "name": "id.info@tag.h1.0@text"
         },
         "ruleContent": {
-          "content": "id.content@textNodes##有.*院.*|￥|ps1.*|ps2.*|"
+            "content": "id.content@textNodes##有.*院.*|￥|ps1.*|ps2.*|"
         },
         "ruleExplore": {},
         "ruleSearch": {
-          "author": "class.odd.1@tag.a.0@text",
-          "bookList": "class.grid@tag.tr!0",
-          "bookUrl": "class.odd.0@tag.a.0@href",
-          "lastChapter": "class.odd.2@text",
-          "name": "class.odd.0@tag.a.0@text"
+            "author": "class.odd.1@tag.a.0@text",
+            "bookList": "class.grid@tag.tr!0",
+            "bookUrl": "class.odd.0@tag.a.0@href",
+            "lastChapter": "class.odd.2@text",
+            "name": "class.odd.0@tag.a.0@text"
         },
         "ruleToc": {
-          "chapterList": "id.list@tag.dd",
-          "chapterName": "tag.a@text",
-          "chapterUrl": "tag.a@href"
+            "chapterList": "id.list@tag.dd",
+            "chapterName": "tag.a@text",
+            "chapterUrl": "tag.a@href"
         },
         "searchUrl": "https://www.xiuxs.org/plus/search.php?q={{key}}&searchtype=articlename",
         "weight": 0
-      },
-      {
+    },
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺桐树网",
@@ -6638,41 +6637,41 @@
         "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/82.0.4080.0 Safari/537.36 Edg/82.0.453.0\"\n}",
         "lastUpdateTime": 1612060318317,
         "ruleBookInfo": {
-          "author": "author",
-          "coverUrl": "cover",
-          "init": "<js> \nvar J = org.jsoup.Jsoup.parse(result);\nvar o = selector => String(J.select(selector).text()) ;\nvar og = selector => String(J.select('[property=\"og:' + selector + '\"]').attr('content'));\nvar book = {\n\tname: og('novel:book_name').replace(/(全文|小说|免费阅读|最新章节).*|[(（].*[）)]/g, ''),\n\tauthor: og('novel:author'),\n\tkind: og('novel:category'),\n\tlatest: og('novel:latest_chapter_name').replace(/^(正文|VIP章节|章节目录|最新章节)?(\\s+|_)|[\\(（【].*[求更谢乐发推].*/g, '') + ' • ' + og('novel:update_time').replace(/(T|\\s).*/, ' ').replace(/\\//g, '-'),\n\tintro: '　　最近更新:' + og('novel:update_time').replace(/(T|\\s).*/, ' ').replace(/\\//g, '-') + '\\n' + og('description').replace(/.*(观看小说|简介)[:：]|分享书籍.*|各位书友.*/g, '').replace(/\\s+/g, '\\n'),\n\tcover: og('image'),\n\turl: og('novel:read_url'),\n};\nbook;\n</js>",
-          "intro": "intro",
-          "kind": "kind",
-          "lastChapter": "latest",
-          "name": "name",
-          "tocUrl": "url",
-          "wordCount": ""
+            "author": "author",
+            "coverUrl": "cover",
+            "init": "<js> \nvar J = org.jsoup.Jsoup.parse(result);\nvar o = selector => String(J.select(selector).text()) ;\nvar og = selector => String(J.select('[property=\"og:' + selector + '\"]').attr('content'));\nvar book = {\n\tname: og('novel:book_name').replace(/(全文|小说|免费阅读|最新章节).*|[(（].*[）)]/g, ''),\n\tauthor: og('novel:author'),\n\tkind: og('novel:category'),\n\tlatest: og('novel:latest_chapter_name').replace(/^(正文|VIP章节|章节目录|最新章节)?(\\s+|_)|[\\(（【].*[求更谢乐发推].*/g, '') + ' • ' + og('novel:update_time').replace(/(T|\\s).*/, ' ').replace(/\\//g, '-'),\n\tintro: '　　最近更新:' + og('novel:update_time').replace(/(T|\\s).*/, ' ').replace(/\\//g, '-') + '\\n' + og('description').replace(/.*(观看小说|简介)[:：]|分享书籍.*|各位书友.*/g, '').replace(/\\s+/g, '\\n'),\n\tcover: og('image'),\n\turl: og('novel:read_url'),\n};\nbook;\n</js>",
+            "intro": "intro",
+            "kind": "kind",
+            "lastChapter": "latest",
+            "name": "name",
+            "tocUrl": "url",
+            "wordCount": ""
         },
         "ruleContent": {
-          "content": "#content@html",
-          "nextContentUrl": "text.下一页@href",
-          "replaceRegex": "##(?<=[\\u4e00-\\u9fa5，、])\\n\\s*|[a-zA-Z]+://[^\\s]*"
+            "content": "#content@html",
+            "nextContentUrl": "text.下一页@href",
+            "replaceRegex": "##(?<=[\\u4e00-\\u9fa5，、])\\n\\s*|[a-zA-Z]+://[^\\s]*"
         },
         "ruleExplore": {},
         "ruleSearch": {
-          "author": "author",
-          "bookList": "id.nr\n<js>\nresult.toArray().slice(0, 3).map(el => {\n\tvar url = String(el.select('a:eq(0)').attr('href')).replace(/^\\//, baseUrl.match(/(.+?\\/\\/[^\\/]+\\/)/)[1]);\n\tvar J = org.jsoup.Jsoup.parse(java.ajax(url));\n\tvar o = selector => String(J.select(selector).text());\n\tvar og = selector => String(J.select('[property=\"og:' + selector + '\"]').attr('content'));\n\treturn {\n\t\tname: og('novel:book_name').replace(/(全文|小说|免费阅读|最新章节).*|[(（].*[）)]/g, ''),\n\t\tauthor: og('novel:author'),\n\t\tkind: og('novel:category'),\n\t\tlatest: og('novel:latest_chapter_name').replace(/^(正文|VIP章节|最新章节)?(\\s+|_)|[\\(（【].*[求更谢乐发推].*/g, '') + ' • ' + og('novel:update_time').replace(/(T|\\s).*/, ' ').replace(/\\//g, '-'),\n\t\tintro: og('description').replace(/.*(观看小说|简介)[:：]|各位书友.*/g, '').replace(/\\s+/g, ''),\n\t\tcover: og('image'),\n\t\turl: url,\n\t};\n}); \n</js>",
-          "bookUrl": "url",
-          "coverUrl": "cover",
-          "intro": "intro",
-          "kind": "kind",
-          "lastChapter": "latest",
-          "name": "name",
-          "wordCount": ""
+            "author": "author",
+            "bookList": "id.nr\n<js>\nresult.toArray().slice(0, 3).map(el => {\n\tvar url = String(el.select('a:eq(0)').attr('href')).replace(/^\\//, baseUrl.match(/(.+?\\/\\/[^\\/]+\\/)/)[1]);\n\tvar J = org.jsoup.Jsoup.parse(java.ajax(url));\n\tvar o = selector => String(J.select(selector).text());\n\tvar og = selector => String(J.select('[property=\"og:' + selector + '\"]').attr('content'));\n\treturn {\n\t\tname: og('novel:book_name').replace(/(全文|小说|免费阅读|最新章节).*|[(（].*[）)]/g, ''),\n\t\tauthor: og('novel:author'),\n\t\tkind: og('novel:category'),\n\t\tlatest: og('novel:latest_chapter_name').replace(/^(正文|VIP章节|最新章节)?(\\s+|_)|[\\(（【].*[求更谢乐发推].*/g, '') + ' • ' + og('novel:update_time').replace(/(T|\\s).*/, ' ').replace(/\\//g, '-'),\n\t\tintro: og('description').replace(/.*(观看小说|简介)[:：]|各位书友.*/g, '').replace(/\\s+/g, ''),\n\t\tcover: og('image'),\n\t\turl: url,\n\t};\n}); \n</js>",
+            "bookUrl": "url",
+            "coverUrl": "cover",
+            "intro": "intro",
+            "kind": "kind",
+            "lastChapter": "latest",
+            "name": "name",
+            "wordCount": ""
         },
         "ruleToc": {
-          "chapterList": "#list dd a",
-          "chapterName": "text##[【（](求(评|订阅|[全首][订定]|收藏|月票)|(推荐票|\\d+字)加更|第?[一二三四五六七八九十]{1,3}更).*?[）】]",
-          "chapterUrl": "href"
+            "chapterList": "#list dd a",
+            "chapterName": "text##[【（](求(评|订阅|[全首][订定]|收藏|月票)|(推荐票|\\d+字)加更|第?[一二三四五六七八九十]{1,3}更).*?[）】]",
+            "chapterUrl": "href"
         },
         "searchUrl": "https://www.tongshu.net/modules/article/search.php?searchkey={{key}},{\n  \"charset\": \"gbk\"\n}",
         "weight": 0
-      },
+    },
     {
         "bookSourceComment": "",
         "bookSourceGroup": "🔞特殊",
@@ -8955,7 +8954,7 @@
             "coverUrl": "@json:https://book.mituyuedu.com/book{$.photoPath}",
             "intro": "@json:$.intro##\\s",
             "kind": "@json:$.clsName",
-          "lastChapter": "@json:最近更新时间{$.lastUpdate}",
+            "lastChapter": "@json:最近更新时间{$.lastUpdate}",
             "name": "@json:$.name",
             "wordCount": "@json:$.lastUpdate##\\s.*"
         },
