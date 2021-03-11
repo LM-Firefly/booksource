@@ -10503,6 +10503,54 @@
         "weight": 0
     },
     {
+        "bookSourceComment": "",
+        "bookSourceGroup": "🎨漫画",
+        "bookSourceName": "🎨最漫画",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https:\/\/m.zuimh.com\/",
+        "customOrder": -3631,
+        "enabled": true,
+        "enabledExplore": true,
+        "exploreUrl": "全部::\/list\/?page={{page}}&&玄幻::\/list\/xuanhuan\/?page={{page}}&&都市::\/list\/dushi\/?page={{page}}&&恐怖::\/list\/kongbu\/?page={{page}}&&古风::\/list\/gufeng\/?page={{page}}&&唯美::\/list\/weimei\/?page={{page}}&&治愈::\/list\/zhiyu\/?page={{page}}&&穿越::\/list\/chuanyue\/?page={{page}}&&恋爱::\/list\/lianai\/?page={{page}}&&修真::\/list\/xiuzhen\/?page={{page}}&&后宫::\/list\/hougong\/?page={{page}}&&冒险::\/list\/maoxian\/?page={{page}}&&搞笑::\/list\/gaoxiao\/?page={{page}}&&彩虹::\/list\/caihong\/?page={{page}}&&热血::\/list\/rexue\/?page={{page}}&&暧昧::\/list\/aimei\/?page={{page}}&&少年::\/list\/shaonian\/?page={{page}}&&逆转::\/list\/nizhuan\/?page={{page}}&&奇幻::\/list\/qihuan\/?page={{page}}&&大女主::\/list\/danvzhu\/?page={{page}}&&总裁::\/list\/zongcai\/?page={{page}}&&少女::\/list\/shaonv\/?page={{page}}&&美型::\/list\/meixing\/?page={{page}}&&霸总::\/list\/bazong\/?page={{page}}&&动作::\/list\/dongzuo\/?page={{page}}&&其他::\/list\/qita\/?page={{page}}&&少男::\/list\/shaonan\/?page={{page}}&&生活::\/list\/shenghuo\/?page={{page}}&&科幻::\/list\/kehuan\/?page={{page}}&&漫客栈::\/list\/mankezhan\/?page={{page}}&&悬疑::\/list\/xuanyi\/?page={{page}}&&魔幻::\/list\/mohuan\/?page={{page}}&&战争::\/list\/zhanzheng\/?page={{page}}&&惊奇::\/list\/jingqi\/?page={{page}}&&纯爱::\/list\/chunai\/?page={{page}}&&独家::\/list\/dujia\/?page={{page}}&&爆笑::\/list\/baoxiao\/?page={{page}}&&惊险::\/list\/jingxian\/?page={{page}}&&校园::\/list\/xiaoyuan\/?page={{page}}&&蔷薇::\/list\/qiangwei\/?page={{page}}&&魔法::\/list\/mofa\/?page={{page}}&&青春::\/list\/qingchun\/?page={{page}}&&战斗::\/list\/zhandou\/?page={{page}}&&漫改::\/list\/mangai\/?page={{page}}&&武侠::\/list\/wuxia\/?page={{page}}&&僵尸::\/list\/jiangshi\/?page={{page}}&&励志::\/list\/lizhi\/?page={{page}}&&脑洞::\/list\/naodong\/?page={{page}}&&重生::\/list\/zhongsheng\/?page={{page}}&&剧情::\/list\/juqing\/?page={{page}}&&复仇::\/list\/fuchou\/?page={{page}}&&生化::\/list\/shenghua\/?page={{page}}&&异族::\/list\/yizu\/?page={{page}}&&推理::\/list\/tuili\/?page={{page}}&&震撼::\/list\/zhenhan\/?page={{page}}&&奇闻::\/list\/qiwen\/?page={{page}}&&怪谈::\/list\/guaitan\/?page={{page}}&&修仙::\/list\/xiuxian\/?page={{page}}&&末世::\/list\/moshi\/?page={{page}}&&耽美::\/list\/danmei\/?page={{page}}&&日漫::\/list\/riman\/?page={{page}}&&日常::\/list\/richang\/?page={{page}}&&灵异::\/list\/lingyi\/?page={{page}}&&竞技::\/list\/jingji\/?page={{page}}&&历史::\/list\/lishi\/?page={{page}}&&明星::\/list\/mingxing\/?page={{page}}&&虐心::\/list\/nuexin\/?page={{page}}&&美食::\/list\/meishi\/?page={{page}}&&机甲::\/list\/jijia\/?page={{page}}&&叛逆::\/list\/panni\/?page={{page}}&&宠爱::\/list\/chongai\/?page={{page}}&&幻想::\/list\/huanxiang\/?page={{page}}&&装逼::\/list\/zhuangbi\/?page={{page}}&&运动::\/list\/yundong\/?page={{page}}&&古装::\/list\/guzhuang\/?page={{page}}&&言情::\/list\/yanqing\/?page={{page}}&&游戏::\/list\/youxi\/?page={{page}}&&真人::\/list\/zhenren\/?page={{page}}&&怀旧::\/list\/huaijiu\/?page={{page}}&&情感::\/list\/qinggan\/?page={{page}}&&仙侠::\/list\/xianxia\/?page={{page}}&&神魔::\/list\/shenmo\/?page={{page}}&&偶像::\/list\/ouxiang\/?page={{page}}&&其它::\/list\/qita2\/?page={{page}}&&女尊::\/list\/nvzun\/?page={{page}}&&青年::\/list\/qingnian\/?page={{page}}&&系统::\/list\/xitong\/?page={{page}}&&娱乐圈::\/list\/yulequan\/?page={{page}}&&格斗::\/list\/gedou\/?page={{page}}&&萌系::\/list\/mengxi\/?page={{page}}&&宫斗::\/list\/gongdou\/?page={{page}}&&虐恋::\/list\/nuelian\/?page={{page}}&&社会::\/list\/shehui\/?page={{page}}&&神鬼::\/list\/shengui\/?page={{page}}&&百合::\/list\/baihe\/?page={{page}}&&智斗::\/list\/zhidou\/?page={{page}}&&橘味::\/list\/juwei\/?page={{page}}&&美少女::\/list\/meishaonv\/?page={{page}}&&金手指::\/list\/jinshouzhi\/?page={{page}}&&绅士::\/list\/shenshi\/?page={{page}}&&女强::\/list\/nvqiang\/?page={{page}}&&权谋::\/list\/quanmou\/?page={{page}}&&宅斗::\/list\/zhaidou\/?page={{page}}&&狐仙::\/list\/huxian\/?page={{page}}&&鬼怪::\/list\/guiguai\/?page={{page}}&&死后世界::\/list\/sihoushijie\/?page={{page}}&&宫廷::\/list\/gongting\/?page={{page}}&&体育::\/list\/tiyu\/?page={{page}}&&知音漫客::\/list\/zhiyinmanke\/?page={{page}}&&恶搞::\/list\/egao\/?page={{page}}&&日本::\/list\/riben\/?page={{page}}&&浪漫::\/list\/langman\/?page={{page}}&&节操::\/list\/jiecao\/?page={{page}}&&血腥::\/list\/xuexing\/?page={{page}}&&探案::\/list\/tanan\/?page={{page}}&&爽::\/list\/shuang\/?page={{page}}&&同人::\/list\/tongren\/?page={{page}}&&福利::\/list\/fuli\/?page={{page}}&&御姐::\/list\/yujie\/?page={{page}}&&萝莉::\/list\/luoli\/?page={{page}}&&甜宠::\/list\/tianchong\/?page={{page}}&&少儿::\/list\/shaoer\/?page={{page}}&&豪门::\/list\/haomen\/?page={{page}}&&特工::\/list\/tegong\/?page={{page}}&&美女::\/list\/meinv\/?page={{page}}&&间谍::\/list\/jiandie\/?page={{page}}&&男神::\/list\/nanshen\/?page={{page}}&&悬疑、惊悚::\/list\/xuanyijingsong\/?page={{page}}&&兽耳::\/list\/shouer\/?page={{page}}&&军阀::\/list\/junfa\/?page={{page}}&&民国::\/list\/minguo\/?page={{page}}&&漫画一番::\/list\/manhuayifan\/?page={{page}}&&女王点坑::\/list\/nvwangdiankeng\/?page={{page}}&&喜欢::\/list\/xihuan\/?page={{page}}&&异能::\/list\/yineng\/?page={{page}}&&栏目::\/list\/lanmu\/?page={{page}}&&短篇::\/list\/duanpian\/?page={{page}}&&丧尸::\/list\/sangshi\/?page={{page}}&&改编::\/list\/gaibian\/?page={{page}}&&机战::\/list\/jizhan\/?page={{page}}&&惊悚::\/list\/jingsong\/?page={{page}}&&欢乐向::\/list\/huanlexiang\/?page={{page}}&&爱情::\/list\/aiqing\/?page={{page}}&&四格::\/list\/sige\/?page={{page}}&&轻小说::\/list\/qingxiaoshuo\/?page={{page}}&&架空::\/list\/jiakong\/?page={{page}}&&轻松::\/list\/qingsong\/?page={{page}}&&科技::\/list\/keji\/?page={{page}}&&正能量::\/list\/zhengnengliang\/?page={{page}}&&宅系::\/list\/zhaixi\/?page={{page}}&&职场::\/list\/zhichang\/?page={{page}}&&舰娘::\/list\/jianniang\/?page={{page}}&&性转换::\/list\/xingzhuanhuan\/?page={{page}}&&乡村::\/list\/xiangcun\/?page={{page}}&&正剧::\/list\/zhengju\/?page={{page}}&&纠结::\/list\/jiujie\/?page={{page}}&&AA::\/list\/AA\/?page={{page}}&&异世界::\/list\/yishijie\/?page={{page}}&&日更::\/list\/rigeng\/?page={{page}}&&精品::\/list\/jingpin\/?page={{page}}&&新作::\/list\/xinzuo\/?page={{page}}&&音乐舞蹈::\/list\/yinyuewudao\/?page={{page}}&&宠物::\/list\/chongwu\/?page={{page}}&&温馨::\/list\/wenxin\/?page={{page}}&&段子::\/list\/duanzi\/?page={{page}}&&少女爱情::\/list\/shaonvaiqing\/?page={{page}}&&东方::\/list\/dongfang\/?page={{page}}&&侦探::\/list\/zhentan\/?page={{page}}&&逆袭::\/list\/nixi\/?page={{page}}&&召唤兽::\/list\/zhaohuanshou\/?page={{page}}&&伪娘::\/list\/weiniang\/?page={{page}}&&秀吉::\/list\/xiuji\/?page={{page}}&&吸血::\/list\/xixie\/?page={{page}}&&血族::\/list\/xuezu\/?page={{page}}&&三角恋::\/list\/sanjiaolian\/?page={{page}}&&前世::\/list\/qianshi\/?page={{page}}&&吸血鬼::\/list\/xixiegui\/?page={{page}}&&轮回::\/list\/lunhui\/?page={{page}}&&种田::\/list\/zhongtian\/?page={{page}}&&魔王::\/list\/mowang\/?page={{page}}&&狠西游::\/list\/henxiyou\/?page={{page}}&&西游记::\/list\/xiyouji\/?page={{page}}&&青青树::\/list\/qingqingshu\/?page={{page}}&&宠婚::\/list\/chonghun\/?page={{page}}&&可爱::\/list\/keai\/?page={{page}}&&小僵尸::\/list\/xiaojiangshi\/?page={{page}}&&家庭::\/list\/jiating\/?page={{page}}&&婚姻::\/list\/hunyin\/?page={{page}}&&恋爱生活::\/list\/lianaishenghuo\/?page={{page}}&&感动::\/list\/gandong\/?page={{page}}&&神话::\/list\/shenhua\/?page={{page}}&&未来::\/list\/weilai\/?page={{page}}&&故事漫画::\/list\/gushimanhua\/?page={{page}}&&其他漫画::\/list\/qitamanhua\/?page={{page}}&&爽流::\/list\/shuangliu\/?page={{page}}&&烧脑::\/list\/shaonao\/?page={{page}}&&有妖气::\/list\/youyaoqi\/?page={{page}}&&绘本::\/list\/huiben\/?page={{page}}&&侦探推理::\/list\/zhentantuili\/?page={{page}}&&史诗::\/list\/shishi\/?page={{page}}&&商战::\/list\/shangzhan\/?page={{page}}&&颜艺::\/list\/yanyi\/?page={{page}}&&恐怖悬疑::\/list\/kongbuxuanyi\/?page={{page}}&&内涵::\/list\/neihan\/?page={{page}}&&性转::\/list\/xingzhuan\/?page={{page}}&&高清单行::\/list\/gaoqingdanxing\/?page={{page}}&&墨瞳::\/list\/motong\/?page={{page}}&&漫画::\/list\/manhua\/?page={{page}}&&婚爱::\/list\/hunai\/?page={{page}}&&西方魔幻::\/list\/xifangmohuan\/?page={{page}}&&猎奇::\/list\/lieqi\/?page={{page}}&&致郁::\/list\/zhiyu2\/?page={{page}}&&末日::\/list\/mori\/?page={{page}}&&伦理::\/list\/lunli\/?page={{page}}&&乙女::\/list\/yinv\/?page={{page}}&&神仙::\/list\/shenxian\/?page={{page}}&&怪物::\/list\/guaiwu\/?page={{page}}&&神豪::\/list\/shenhao\/?page={{page}}&&霸总.都市::\/list\/bazongdushi\/?page={{page}}&&妖怪::\/list\/yaoguai\/?page={{page}}&&主仆::\/list\/zhupu\/?page={{page}}&&高甜::\/list\/gaotian\/?page={{page}}&&限制级::\/list\/xianzhiji\/?page={{page}}&&音乐::\/list\/yinyue\/?page={{page}}&&韩漫::\/list\/hanman\/?page={{page}}&&电竞::\/list\/dianjing\/?page={{page}}&&ゆり::\/list\/unknown\/?page={{page}}&&兄弟情::\/list\/xiongdiqing\/?page={{page}}&&暖萌::\/list\/nuanmeng\/?page={{page}}&&豪快::\/list\/haokuai\/?page={{page}}&&幽默::\/list\/youmo\/?page={{page}}&&完结::\/list\/wanjie\/?page={{page}}&&亲情::\/list\/qinqing\/?page={{page}}&&橘系::\/list\/juxi\/?page={{page}}&&",
+        "lastUpdateTime": 1615419963976,
+        "ruleBookInfo": {
+            "author": "class.txtItme.0@text",
+            "intro": "id.full-des@text##介绍:",
+            "lastChapter": "class.chapter-warp.0@tag.ul@tag.li.-2@tag.a@text",
+            "name": "id.comicName@text"
+        },
+        "ruleContent": {
+            "content": "class.image-content@img@html##alt.*\\(\\)",
+            "imageStyle": "FULL",
+            "nextContentUrl": "id.images@tag.a.0@href",
+            "webJs": ""
+        },
+        "ruleExplore": {
+            "author": "class.info@text##作者:",
+            "bookList": "class.list-comic",
+            "bookUrl": "tag.a.0@href",
+            "coverUrl": "img@src",
+            "intro": "id.full-des@text",
+            "name": "class.txtA@text"
+        },
+        "ruleSearch": {
+            "author": "tag.p.0@text",
+            "bookList": "class.itemBox",
+            "bookUrl": "tag.a.0@href",
+            "coverUrl": "img@src",
+            "kind": "tag.p.1@text##\\|##,",
+            "lastChapter": "tag.a.-1@text",
+            "name": "class.title@text"
+        },
+        "ruleToc": {
+            "chapterList": "id.chapter-list-1@li!-1@a||id.chapter-list-2@li!-1@a",
+            "chapterName": "text",
+            "chapterUrl": "href"
+        },
+        "searchUrl": "https:\/\/m.zuimh.com\/search\/?keywords={{key}}",
+        "weight": 0
+    },
+    {
         "bookSourceComment": "error:Timed out waiting for 60000 ms\n",
         "bookSourceGroup": "🎨漫画",
         "bookSourceName": "🎨有妖气",
