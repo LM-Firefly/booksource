@@ -7642,7 +7642,7 @@
         "ruleToc": {
             "chapterList": "<js>last=JSON.parse(java.ajax('http:\/\/app-cdn.jjwxc.net\/androidapi\/chapterList?novelId='+java.get('id'))).chapterlist;\nlast=last[last.length-1];\nlist=JSON.parse(result).chapterlist;\nlist.push(last);\nJSON.stringify(list)\n<\/js>\n$.[*]",
             "chapterName": "$.chaptername\n@js:\nvip='{{$.isvip}}'!='0';\nlock='{{$.islock}}'!='0';\ntype='{{$.chaptertype}}'=='1';\nnum=!type?'{{$.chapterid}}.':'';\nresult=type?'📖'+result+'📖':result;\nv=vip?'◎':'';l=lock?'[锁]':'';\nresult=v+num+result+l;",
-            "chapterUrl": "$.chapterid\n@js:\nvip='{{$.isvip}}'!='0';\ntype='{{$.chaptertype}}'=='1';\nif(!vip){\nif(!type){\nresult='https:\/\/m.jjwxc.net\/book2\/'+java.get('id')+'\/'+result\n}else{result='http:\/\/www.baidu.com?wd='+result}\n}else{result='https:\/\/wap.jjwxc.net\/vip\/'+java.get('id')+'\/'+result}",
+            "chapterUrl": "$.chapterid\n@js:\nvip='{{$.isvip}}'!='0';\ntype='{{$.chaptertype}}'=='1';\nif(!vip){\nif(!type){\nresult='https:\/\/m.jjwxc.net\/book2\/'+java.get('id')+'\/'+result\n}else{result='http:\/\/www.baidu.com?wd='+result}\n}else{result='https:\/\/app-cdn.jjwxc.net\/vip\/'+java.get('id')+'\/'+result}",
             "isVip": "",
             "updateTime": "{{$.chapterdate}}•{{$.chapterintro##^\\s*}}•{{$.pointMeassge}}##^•|•0晋江币|0000-00-00.*"
         },
