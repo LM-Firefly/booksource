@@ -2220,7 +2220,7 @@
             "chapterName": "text",
             "chapterUrl": "href"
         },
-        "searchUrl": "https://www.bxwxorg.com/search.html,{\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}\"\n}",
+        "searchUrl": "/search.html,{\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}&searchtype=all\"\n}",
         "weight": 0
     },
     {
