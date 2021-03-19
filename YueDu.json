@@ -1435,6 +1435,39 @@
         "weight": 0
     },
     {
+        "bookSourceGroup": "🍺特优",
+        "bookSourceName": "🍺新墨坛文学",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https:\/\/www.22mta.cc",
+        "customOrder": 0,
+        "enabled": true,
+        "enabledExplore": true,
+        "lastUpdateTime": 0,
+        "ruleBookInfo": {
+            "coverUrl": "class.book_cover fl@tag.img.@src",
+            "intro": "class.info_con@tag.p@text"
+        },
+        "ruleContent": {
+            "content": "id.chapterContent@tag.p@textNodes"
+        },
+        "ruleExplore": {},
+        "ruleSearch": {
+            "author": "class.rela@tag.a.0@text",
+            "bookList": "class.con@class.search_text",
+            "bookUrl": "tag.a.0@href",
+            "intro": "class.j_info@tag.p@text",
+            "kind": "class.rela@tag.a.1@text",
+            "name": "h2@text"
+        },
+        "ruleToc": {
+            "chapterList": "class.booklist tomeBean@tag.td",
+            "chapterName": "tag.a@text",
+            "chapterUrl": "tag.a@href"
+        },
+        "searchUrl": "https:\/\/www.22mta.cc\/s.php?q={{key}},{\n  \"charset\": \"gbk\"\n}",
+        "weight": 0
+    },
+    {
         "bookSourceComment": "",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺全小说",
