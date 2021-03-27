@@ -104,6 +104,122 @@
         "weight": 0
     },
     {
+        "bookSourceComment": "https://celeter.github.io/SourceGo",
+        "bookSourceGroup": "🍺特优",
+        "bookSourceName": "🍺笔趣阁⑤",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https://www.biquduo.com",
+        "customOrder": 0,
+        "enabled": true,
+        "enabledExplore": true,
+        "exploreUrl": "",
+        "lastUpdateTime": 0,
+        "ruleBookInfo": {
+            "intro": "id.intro@textNodes"
+        },
+        "ruleContent": {
+            "content": "id.content@html"
+        },
+        "ruleExplore": {
+            "author": "",
+            "bookList": "",
+            "bookUrl": "",
+            "coverUrl": "",
+            "lastChapter": "",
+            "name": ""
+        },
+        "ruleSearch": {
+            "author": "tag.p.1@tag.span.1@text",
+            "bookList": "class.result-item result-game-item",
+            "bookUrl": "tag.a.1@href",
+            "coverUrl": "img@src",
+            "intro": "class.result-game-item-desc@textNodes",
+            "kind": "tag.p.2@tag.span.1@text",
+            "lastChapter": "tag.a.2@text",
+            "name": "tag.a.1@text"
+        },
+        "ruleToc": {
+            "chapterList": "id.list@a",
+            "chapterName": "text",
+            "chapterUrl": "href"
+        },
+        "searchUrl": "https://www.biquduo.com/search.php?q={{key}}",
+        "weight": 0
+    },
+    {
+        "bookSourceComment": "https://celeter.github.io/SourceGo",
+        "bookSourceGroup": "🍺特优",
+        "bookSourceName": "🍺笔趣阁⑥",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https://m.mibaoge.com",
+        "bookUrlPattern": "",
+        "customOrder": 0,
+        "enabled": true,
+        "enabledExplore": false,
+        "lastUpdateTime": 0,
+        "ruleBookInfo": {
+            "author": "class.box_con.0@id.info@tag.p.0@text##作\\s*者：",
+            "coverUrl": "id.fmimg@tag.img.0@src",
+            "name": "class.box_con.0@id.info@tag.h1.0@text"
+        },
+        "ruleContent": {
+            "content": "id.content@textNodes"
+        },
+        "ruleExplore": {},
+        "ruleSearch": {
+            "author": "class.result-game-item-info-tag.0@tag.span.1@text",
+            "bookList": "class.result-item",
+            "bookUrl": "class.result-item-title.0@tag.a.0@href",
+            "coverUrl": "tag.img.0@src",
+            "intro": "class.result-game-item-desc@text",
+            "lastChapter": "class.result-game-item-info-tag.3@tag.a.0@text",
+            "name": "class.result-item-title.0@tag.a.0@text"
+        },
+        "ruleToc": {
+            "chapterList": "id.list@tag.dd",
+            "chapterName": "tag.a@text",
+            "chapterUrl": "tag.a@href"
+        },
+        "searchUrl": "https://www.mibaoge.com/search.php?q={{key}}",
+        "weight": 0
+    },
+    {
+        "bookSourceComment": "https://celeter.github.io/SourceGo",
+        "bookSourceGroup": "🍺特优",
+        "bookSourceName": "🍺笔趣阁⑦",
+        "bookSourceType": 0,
+        "bookSourceUrl": "http://www.yingsx.com/",
+        "bookUrlPattern": "",
+        "customOrder": 0,
+        "enabled": true,
+        "enabledExplore": false,
+        "exploreUrl": "",
+        "header": "",
+        "lastUpdateTime": 0,
+        "ruleBookInfo": {
+            "coverUrl": "[property=\"og:image\"]@content",
+            "intro": "[property=\"og:description\"]@content"
+        },
+        "ruleContent": {
+            "content": "id.content@html"
+        },
+        "ruleExplore": {},
+        "ruleSearch": {
+            "author": ".s4@text",
+            "bookList": "id.main@li!0",
+            "bookUrl": "tag.a.0@href",
+            "lastChapter": "tag.a.1@text",
+            "name": "tag.a.0@text"
+        },
+        "ruleToc": {
+            "chapterList": "id.list@a",
+            "chapterName": "text",
+            "chapterUrl": "href"
+        },
+        "searchUrl": "http://www.yingsx.com/cse/search?q={{key}}&s=,{\n  \"charset\": \"utf-8\"\n}",
+        "weight": 0
+    },
+    {
         "bookSourceComment": "",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺笔趣阁mibaoge",
@@ -378,6 +494,137 @@
             "chapterUrl": "href"
         },
         "searchUrl": "\/search?keyword={{key}},{\n  \"charset\": \"utf-8\"\n}",
+        "weight": 0
+    },
+    {
+        "bookSourceComment": "",
+        "bookSourceGroup": "🍺特优",
+        "bookSourceName": "🍺逛笔趣阁小说",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https:\/\/fkxs.net",
+        "bookUrlPattern": "https:\/\/fkxs.net\/book\/\\d+\/",
+        "customOrder": 0,
+        "enabled": true,
+        "enabledExplore": true,
+        "exploreUrl": "玄幻魔法::https:\/\/fkxs.net\/sort\/1\/0\/{{page}}.html\n武侠修真::https:\/\/fkxs.net\/sort\/2\/0\/{{page}}.html\n都市言情::https:\/\/fkxs.net\/sort\/3\/0\/{{page}}.html\n历史军事::https:\/\/fkxs.net\/sort\/4\/0\/{{page}}.html\n侦探推理::https:\/\/fkxs.net\/sort\/5\/0\/{{page}}.html\n网游动漫::https:\/\/fkxs.net\/sort\/6\/0\/{{page}}.html\n科幻小说::https:\/\/fkxs.net\/sort\/7\/0\/{{page}}.html\n恐怖灵异::https:\/\/fkxs.net\/sort\/8\/0\/{{page}}.html\n散文诗词::https:\/\/fkxs.net\/sort\/9\/0\/{{page}}.html\n其他类型::https:\/\/fkxs.net\/sort\/10\/0\/{{page}}.html",
+        "lastUpdateTime": 0,
+        "ruleBookInfo": {
+            "author": "[property=\"og:novel:author\"]@content",
+            "coverUrl": "[property=\"og:image\"]@content",
+            "intro": "[property=\"og:description\"]@content",
+            "kind": "[property=\"og:novel:category\"]@content",
+            "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
+            "name": "[property=\"og:novel:book_name\"]@content",
+            "tocUrl": "id.chapterList@tag.li.-1@a@href"
+        },
+        "ruleContent": {
+            "content": "id.nr@html",
+            "nextContentUrl": "##next_page_ye=\\\"(\\\/book.*page=\\d+)\\\"##$1###",
+            "replaceRegex": "##注意：浏览器.*\\s*|本章由.*免费阅读！|本书由.*转载！|\\(荷花文学网 https:\/\/www.hehua.org\\)|网欢迎广.*阅读。"
+        },
+        "ruleExplore": {
+            "author": "tag.h2@tag.a.1@text",
+            "bookList": "id.bookList@class.list",
+            "bookUrl": "tag.a@href",
+            "coverUrl": "tag.img@src",
+            "intro": "tag.p.0@text",
+            "name": "tag.h2@tag.a.0@text"
+        },
+        "ruleSearch": {
+            "author": "$.authorname",
+            "bookList": "$.Data.search_response.books",
+            "bookUrl": "https:\/\/fkxs.net\/book\/{$.bookid}",
+            "coverUrl": "$.coverurl",
+            "intro": "$.description",
+            "kind": "$.categoryname",
+            "lastChapter": "$.lastchaptername",
+            "name": "$.bookname"
+        },
+        "ruleToc": {
+            "chapterList": "id.chapterlist@class.dtl-cell",
+            "chapterName": "tag.a@text",
+            "chapterUrl": "tag.a@href",
+            "nextTocUrl": "option@value"
+        },
+        "searchUrl": "https:\/\/fkxs.net\/book\/?ajaxMethod=getsearchbooks&page=1&pagesize=10&isvip=-1&cid=-1&sort=0&flag=-1&searchkey={{key}}&site=-1&again=0&range=-1",
+        "weight": 0
+    },
+    {
+        "bookSourceComment": "https://celeter.github.io/SourceGo",
+        "bookSourceGroup": "🍺特优",
+        "bookSourceName": "🍺笔趣谷",
+        "bookSourceType": 0,
+        "bookSourceUrl": "http://biqugu.net",
+        "bookUrlPattern": "",
+        "customOrder": 0,
+        "enabled": true,
+        "enabledExplore": true,
+        "exploreUrl": "点击榜::http://biqugu.net/top/{{page}}/\n奇幻::http://biqugu.net/qihuan/{{page}}/\n玄幻::http://biqugu.net/xuanhuan/{{page}}/\n言情::http://biqugu.net/yanqing/{{page}}/\n都市::http://biqugu.net/dushi/{{page}}/\n游戏::http://biqugu.net/youxi/{{page}}/\n竞技::http://biqugu.net/jingji/{{page}}/\n武侠::http://biqugu.net/wuxia/{{page}}/\n历史::http://biqugu.net/lishi/{{page}}/\n军事::http://biqugu.net/junshi/{{page}}/\n科幻::http://biqugu.net/kehuan/{{page}}/\n仙侠::http://biqugu.net/xianxia/{{page}}/\n灵异::http://biqugu.net/lingyi/{{page}}/\n女性::http://biqugu.net/nvxing/{{page}}/\n其他::http://biqugu.net/qita/{{page}}/\n更新最近::http://biqugu.net/last<{{page}}>.htm\n最新入库::http://biqugu.net/new/{{page}}/",
+        "lastUpdateTime": 0,
+        "ruleBookInfo": {
+            "intro": "class.desc@textNodes##简介：",
+            "lastChapter": "class.f_l t_l w4@a@text"
+        },
+        "ruleContent": {
+            "content": "tag.h1.0@textNodes&&id.content@textNodes##(第.{1,8}章)\\s*?(\\S*?)\\s*?\\S+?.*?\\1\\2"
+        },
+        "ruleExplore": {},
+        "ruleSearch": {
+            "author": "tag.li.2@tag.a@text",
+            "bookList": "class.list_content",
+            "bookUrl": "tag.li.0@tag.a@href",
+            "kind": "tag.li.3@text",
+            "lastChapter": "tag.li.1@tag.a@text",
+            "name": "tag.li.0@tag.a@text"
+        },
+        "ruleToc": {
+            "chapterList": "class.chapter",
+            "chapterName": "tag.a@text",
+            "chapterUrl": "tag.a@href"
+        },
+        "searchUrl": "http://biqugu.net/s_{{key}}",
+        "weight": 0
+    },
+    {
+        "bookSourceComment": "https://celeter.github.io/SourceGo",
+        "bookSourceGroup": "🍺特优",
+        "bookSourceName": "🍺笔趣网",
+        "bookSourceType": 0,
+        "bookSourceUrl": "http://www.biquw.com",
+        "bookUrlPattern": "",
+        "customOrder": 0,
+        "enabled": true,
+        "enabledExplore": true,
+        "exploreUrl": "",
+        "lastUpdateTime": 0,
+        "ruleBookInfo": {
+            "author": "//*[@property='og:novel:author']/@content",
+            "coverUrl": "//*[@property='og:image']/@content",
+            "intro": "class.bookinfo_intro@textNodes##您要是觉得《|》还不错.*",
+            "kind": "//*[@property='og:novel:category']/@content",
+            "lastChapter": "//*[@property='og:novel:latest_chapter_name']/@content",
+            "name": "//*[@property='og:novel:book_name']/@content"
+        },
+        "ruleContent": {
+            "content": "id.htmlContent@textNodes"
+        },
+        "ruleExplore": {},
+        "ruleSearch": {
+            "author": "class.s3@text||class.book_other@tag.span@text",
+            "bookList": "class.toplist@tag.li||class.sitebox@tag.dl",
+            "bookUrl": "class.s1@tag.a@href||tag.h3@tag.a@href",
+            "coverUrl": "class.s1@tag.a@href|tag.h3@tag.a@href@js:var o=result.match(/\\/book\\/(\\d+)/); if(o!=null){'/files/article/image/'+parseInt(o[1]/1000)+'/'+o[1]+'/'+o[1]+'s.jpg';}",
+            "intro": "class.book_des@textNodes",
+            "kind": "class.s5@text||class.uptime@text",
+            "lastChapter": "class.s2@tag.a@text||class.book_other@tag.a@text##正文_",
+            "name": "class.s1@tag.a@text||tag.h3@tag.a@text"
+        },
+        "ruleToc": {
+            "chapterList": "class.book_list@tag.li@tag.a",
+            "chapterName": "text##正文_",
+            "chapterUrl": "href"
+        },
+        "searchUrl": "/modules/article/search.php?searchtype=articlename&searchkey={{key}}",
         "weight": 0
     },
     {
@@ -782,10 +1029,10 @@
         "header": "{\"User-Agent\":\"Mozilla\/5.0 (Linux; Android 6.0; Nexus 5 Build\/MRA58N) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/86.0.4240.198 Mobile Safari\/537.36\",\"Cookie\":\"nxgmnmry=7b35c9b97068158f\"}",
         "searchUrl": "\/search\/,{\"charset\":\"GBK\",\"method\":\"POST\",\"body\":\"q={{key}}\"}",
         "exploreUrl": "",
+        "customOrder": 0,
         "enabled": true,
         "enabledExplore": true,
         "weight": 0,
-        "customOrder": 0,
         "lastUpdateTime": 0,
         "ruleSearch": {
             "bookList": "class.NovelListDiv",
@@ -3319,59 +3566,6 @@
     {
         "bookSourceComment": "",
         "bookSourceGroup": "🍺特优",
-        "bookSourceName": "🍺逛笔趣阁小说",
-        "bookSourceType": 0,
-        "bookSourceUrl": "https:\/\/fkxs.net",
-        "bookUrlPattern": "https:\/\/fkxs.net\/book\/\\d+\/",
-        "customOrder": 0,
-        "enabled": true,
-        "enabledExplore": true,
-        "exploreUrl": "玄幻魔法::https:\/\/fkxs.net\/sort\/1\/0\/{{page}}.html\n武侠修真::https:\/\/fkxs.net\/sort\/2\/0\/{{page}}.html\n都市言情::https:\/\/fkxs.net\/sort\/3\/0\/{{page}}.html\n历史军事::https:\/\/fkxs.net\/sort\/4\/0\/{{page}}.html\n侦探推理::https:\/\/fkxs.net\/sort\/5\/0\/{{page}}.html\n网游动漫::https:\/\/fkxs.net\/sort\/6\/0\/{{page}}.html\n科幻小说::https:\/\/fkxs.net\/sort\/7\/0\/{{page}}.html\n恐怖灵异::https:\/\/fkxs.net\/sort\/8\/0\/{{page}}.html\n散文诗词::https:\/\/fkxs.net\/sort\/9\/0\/{{page}}.html\n其他类型::https:\/\/fkxs.net\/sort\/10\/0\/{{page}}.html",
-        "lastUpdateTime": 0,
-        "ruleBookInfo": {
-            "author": "[property=\"og:novel:author\"]@content",
-            "coverUrl": "[property=\"og:image\"]@content",
-            "intro": "[property=\"og:description\"]@content",
-            "kind": "[property=\"og:novel:category\"]@content",
-            "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
-            "name": "[property=\"og:novel:book_name\"]@content",
-            "tocUrl": "id.chapterList@tag.li.-1@a@href"
-        },
-        "ruleContent": {
-            "content": "id.nr@html",
-            "nextContentUrl": "##next_page_ye=\\\"(\\\/book.*page=\\d+)\\\"##$1###",
-            "replaceRegex": "##注意：浏览器.*\\s*|本章由.*免费阅读！|本书由.*转载！|\\(荷花文学网 https:\/\/www.hehua.org\\)|网欢迎广.*阅读。"
-        },
-        "ruleExplore": {
-            "author": "tag.h2@tag.a.1@text",
-            "bookList": "id.bookList@class.list",
-            "bookUrl": "tag.a@href",
-            "coverUrl": "tag.img@src",
-            "intro": "tag.p.0@text",
-            "name": "tag.h2@tag.a.0@text"
-        },
-        "ruleSearch": {
-            "author": "$.authorname",
-            "bookList": "$.Data.search_response.books",
-            "bookUrl": "https:\/\/fkxs.net\/book\/{$.bookid}",
-            "coverUrl": "$.coverurl",
-            "intro": "$.description",
-            "kind": "$.categoryname",
-            "lastChapter": "$.lastchaptername",
-            "name": "$.bookname"
-        },
-        "ruleToc": {
-            "chapterList": "id.chapterlist@class.dtl-cell",
-            "chapterName": "tag.a@text",
-            "chapterUrl": "tag.a@href",
-            "nextTocUrl": "option@value"
-        },
-        "searchUrl": "https:\/\/fkxs.net\/book\/?ajaxMethod=getsearchbooks&page=1&pagesize=10&isvip=-1&cid=-1&sort=0&flag=-1&searchkey={{key}}&site=-1&again=0&range=-1",
-        "weight": 0
-    },
-    {
-        "bookSourceComment": "",
-        "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺思路文学",
         "bookSourceType": 0,
         "bookSourceUrl": "https:\/\/m.xssilu.com\/",
@@ -5055,10 +5249,10 @@
         "header": "{\"User-Agent\": \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/84.0.4147.105 Safari\/537.36 Edg\/84.0.522.52\"}",
         "searchUrl": "\/modules\/article\/search.php,{\n  \"method\":\"POST\",\n  \"body\":\"searchkey={{key}}\"\n}",
         "exploreUrl": "玄幻::\/list\/1-{{page}}.html\n仙侠::\/list\/2-{{page}}.html\n言情::\/list\/3-{{page}}.html\n历史::\/list\/4-{{page}}.html\n网游::\/list\/5-{{page}}.html\n科幻::\/list\/6-{{page}}.html\n恐怖::\/list\/7-{{page}}.html\n其他::\/list\/8-{{page}}.html",
+        "customOrder": 0,
         "enabled": true,
         "enabledExplore": true,
         "weight": 0,
-        "customOrder": 0,
         "lastUpdateTime": 0,
         "ruleSearch": {
             "bookList": "\/\/table[@id=\"bookcon\"]\/tbody\/tr[position()>1]",
@@ -5678,15 +5872,15 @@
         "bookSourceType": "0",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺D586小说网",
+        "customOrder": 0,
+        "enabled": true,
         "loginUrl": "",
         "bookUrlPattern": "",
         "header": "{\"User-Agent\":\"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/77.0.3865.120 Safari\/537.36\"}",
         "searchUrl": "https:\/\/www.d586.com\/search.html,{\n\"charset\": \"gbk\",\n     \"method\": \"POST\",\n     \"body\": \"searchtype=all&searchkey={{key}}\",\n     \"headers\": {\"User-Agent\":\"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/77.0.3865.120 Safari\/537.36\"},\n     \"webView\": true\n }",
         "exploreUrl": "玄幻奇幻::https:\/\/www.d586.com\/xuanhuan\/\n武侠仙侠::https:\/\/www.d586.com\/wuxia\/\n都市生活::https:\/\/www.d586.com\/dushi\/\n历史军事::https:\/\/www.d586.com\/lishi\/\n游戏竞技::https:\/\/www.d586.com\/youxi\/\n科幻未来::https:\/\/www.d586.com\/kehuan\/\n恐怖悬疑::https:\/\/www.d586.com\/xuanyi\/\n二次元::https:\/\/www.d586.com\/erciyuan\/\n经典网文::https:\/\/www.d586.com\/jingdian\/\n古代言情::https:\/\/www.d586.com\/guyan\/\n现代言情::https:\/\/www.d586.com\/xianyan\/\n幻想奇缘::https:\/\/www.d586.com\/huanqing\/\n青春校园::https:\/\/www.d586.com\/qingchun\/\n网络情缘::https:\/\/www.d586.com\/wangluo\/\n科幻空间::https:\/\/www.d586.com\/mmkehuan\/\n鬼怪灵异::https:\/\/www.d586.com\/lingyi\/\nN次元::https:\/\/www.d586.com\/Nciyuan\/\n言情美文::https:\/\/www.d586.com\/yanqing\/\n",
-        "enabled": true,
         "enabledExplore": true,
         "weight": 0,
-        "customOrder": 0,
         "lastUpdateTime": 0,
         "ruleSearch": {
             "bookList": "id.sitembox@tag.dl",
@@ -5845,6 +6039,7 @@
         "bookSourceType": 0,
         "bookSourceUrl": "https:\/\/www.zxcs.me",
         "bookUrlPattern": "",
+        "customOrder": 0,
         "enabled": true,
         "enabledExplore": true,
         "exploreUrl": "都市::\/sort\/23\/page\/{{page}}\n历史::\/sort\/42\/page\/{{page}}\n军事::\/sort\/43\/page\/{{page}}\n武侠::\/sort\/36\/page\/{{page}}\n\n灵异::\/sort\/41\/page\/{{page}}\n仙侠::\/sort\/37\/page\/{{page}}\n奇幻::\/sort\/38\/page\/{{page}}\n玄幻::\/sort\/39\/page\/{{page}}\n\n科幻::\/sort\/40\/page\/{{page}}\n竞技::\/sort\/44\/page\/{{page}}\n游戏::\/sort\/45\/page\/{{page}}\n次元::\/sort\/55\/page\/{{page}}\n\n\n架空历史::\/tag\/架空历史\/page\/{{page}}\n清史民国::\/tag\/清史民国\/page\/{{page}}\n军事战争::\/tag\/军事战争\/page\/{{page}}\n\n官场沉浮::\/tag\/官场沉浮\/page\/{{page}}\n娱乐明星::\/tag\/娱乐明星\/page\/{{page}}\n\n都市生活::\/tag\/都市生活\/page\/{{page}}\n异术超能::\/tag\/异术超能\/page\/{{page}}\n\n灵异奇谈::\/tag\/灵异奇谈\/page\/{{page}}\n恐怖惊悚::\/tag\/恐怖惊悚\/page\/{{page}}\n悬疑探险::\/tag\/悬疑探险\/page\/{{page}}\n推理侦探::\/tag\/推理侦探\/page\/{{page}}\n\n传统武侠::\/tag\/传统武侠\/page\/{{page}}\n武侠幻想::\/tag\/武侠幻想\/page\/{{page}}\n同人小说::\/tag\/同人小说\/page\/{{page}}\n\n 新 入 库 ::\/map.html",
@@ -6078,15 +6273,15 @@
         "bookSourceType": "0",
         "bookSourceName": "🍺88小说",
         "bookSourceGroup": "🍺特优",
+        "customOrder": 0,
+        "enabled": true,
         "loginUrl": "",
         "bookUrlPattern": "",
         "header": "",
         "searchUrl": "https:\/\/m.88xiaoshuo.com\/so.html,{\n  \"method\": \"POST\",\n  \"body\": \"keyword={{key}}\"\n}",
         "exploreUrl": "",
-        "enabled": true,
         "enabledExplore": false,
         "weight": 0,
-        "customOrder": 0,
         "lastUpdateTime": 0,
         "ruleSearch": {
             "bookList": "class.hot_sale",
@@ -6571,42 +6766,6 @@
             "nextTocUrl": ""
         },
         "searchUrl": "\/search\/,{\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}\"\n}",
-        "weight": 0
-    },
-    {
-        "bookSourceComment": "https://celeter.github.io/SourceGo",
-        "bookSourceGroup": "🍺特优",
-        "bookSourceName": "🍺笔趣谷",
-        "bookSourceType": 0,
-        "bookSourceUrl": "http://biqugu.net",
-        "bookUrlPattern": "",
-        "customOrder": 0,
-        "enabled": true,
-        "enabledExplore": true,
-        "exploreUrl": "点击榜::http://biqugu.net/top/{{page}}/\n奇幻::http://biqugu.net/qihuan/{{page}}/\n玄幻::http://biqugu.net/xuanhuan/{{page}}/\n言情::http://biqugu.net/yanqing/{{page}}/\n都市::http://biqugu.net/dushi/{{page}}/\n游戏::http://biqugu.net/youxi/{{page}}/\n竞技::http://biqugu.net/jingji/{{page}}/\n武侠::http://biqugu.net/wuxia/{{page}}/\n历史::http://biqugu.net/lishi/{{page}}/\n军事::http://biqugu.net/junshi/{{page}}/\n科幻::http://biqugu.net/kehuan/{{page}}/\n仙侠::http://biqugu.net/xianxia/{{page}}/\n灵异::http://biqugu.net/lingyi/{{page}}/\n女性::http://biqugu.net/nvxing/{{page}}/\n其他::http://biqugu.net/qita/{{page}}/\n更新最近::http://biqugu.net/last<{{page}}>.htm\n最新入库::http://biqugu.net/new/{{page}}/",
-        "lastUpdateTime": 0,
-        "ruleBookInfo": {
-            "intro": "class.desc@textNodes##简介：",
-            "lastChapter": "class.f_l t_l w4@a@text"
-        },
-        "ruleContent": {
-            "content": "tag.h1.0@textNodes&&id.content@textNodes##(第.{1,8}章)\\s*?(\\S*?)\\s*?\\S+?.*?\\1\\2"
-        },
-        "ruleExplore": {},
-        "ruleSearch": {
-            "author": "tag.li.2@tag.a@text",
-            "bookList": "class.list_content",
-            "bookUrl": "tag.li.0@tag.a@href",
-            "kind": "tag.li.3@text",
-            "lastChapter": "tag.li.1@tag.a@text",
-            "name": "tag.li.0@tag.a@text"
-        },
-        "ruleToc": {
-            "chapterList": "class.chapter",
-            "chapterName": "tag.a@text",
-            "chapterUrl": "tag.a@href"
-        },
-        "searchUrl": "http://biqugu.net/s_{{key}}",
         "weight": 0
     },
     {
@@ -7167,48 +7326,6 @@
     {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
-        "bookSourceName": "🍺笔趣网",
-        "bookSourceType": 0,
-        "bookSourceUrl": "http://www.biquw.com",
-        "bookUrlPattern": "",
-        "customOrder": 0,
-        "enabled": true,
-        "enabledExplore": true,
-        "exploreUrl": "",
-        "lastUpdateTime": 0,
-        "ruleBookInfo": {
-            "author": "//*[@property='og:novel:author']/@content",
-            "coverUrl": "//*[@property='og:image']/@content",
-            "intro": "class.bookinfo_intro@textNodes##您要是觉得《|》还不错.*",
-            "kind": "//*[@property='og:novel:category']/@content",
-            "lastChapter": "//*[@property='og:novel:latest_chapter_name']/@content",
-            "name": "//*[@property='og:novel:book_name']/@content"
-        },
-        "ruleContent": {
-            "content": "id.htmlContent@textNodes"
-        },
-        "ruleExplore": {},
-        "ruleSearch": {
-            "author": "class.s3@text||class.book_other@tag.span@text",
-            "bookList": "class.toplist@tag.li||class.sitebox@tag.dl",
-            "bookUrl": "class.s1@tag.a@href||tag.h3@tag.a@href",
-            "coverUrl": "class.s1@tag.a@href|tag.h3@tag.a@href@js:var o=result.match(/\\/book\\/(\\d+)/); if(o!=null){'/files/article/image/'+parseInt(o[1]/1000)+'/'+o[1]+'/'+o[1]+'s.jpg';}",
-            "intro": "class.book_des@textNodes",
-            "kind": "class.s5@text||class.uptime@text",
-            "lastChapter": "class.s2@tag.a@text||class.book_other@tag.a@text##正文_",
-            "name": "class.s1@tag.a@text||tag.h3@tag.a@text"
-        },
-        "ruleToc": {
-            "chapterList": "class.book_list@tag.li@tag.a",
-            "chapterName": "text##正文_",
-            "chapterUrl": "href"
-        },
-        "searchUrl": "/modules/article/search.php?searchtype=articlename&searchkey={{key}}",
-        "weight": 0
-    },
-    {
-        "bookSourceComment": "https://celeter.github.io/SourceGo",
-        "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺衍墨轩",
         "bookSourceType": 0,
         "bookSourceUrl": "https://www.yanmoxuan.org",
@@ -7242,42 +7359,6 @@
             "chapterUrl": "tag.a@href"
         },
         "searchUrl": "http://www.ymoxuan.org/search.htm?keyword={{key}}",
-        "weight": 0
-    },
-    {
-        "bookSourceComment": "https://celeter.github.io/SourceGo",
-        "bookSourceGroup": "🍺特优",
-        "bookSourceName": "🍺笔趣阁⑦",
-        "bookSourceType": 0,
-        "bookSourceUrl": "http://www.yingsx.com/",
-        "bookUrlPattern": "",
-        "customOrder": 0,
-        "enabled": true,
-        "enabledExplore": false,
-        "exploreUrl": "",
-        "header": "",
-        "lastUpdateTime": 0,
-        "ruleBookInfo": {
-            "coverUrl": "[property=\"og:image\"]@content",
-            "intro": "[property=\"og:description\"]@content"
-        },
-        "ruleContent": {
-            "content": "id.content@html"
-        },
-        "ruleExplore": {},
-        "ruleSearch": {
-            "author": ".s4@text",
-            "bookList": "id.main@li!0",
-            "bookUrl": "tag.a.0@href",
-            "lastChapter": "tag.a.1@text",
-            "name": "tag.a.0@text"
-        },
-        "ruleToc": {
-            "chapterList": "id.list@a",
-            "chapterName": "text",
-            "chapterUrl": "href"
-        },
-        "searchUrl": "http://www.yingsx.com/cse/search?q={{key}}&s=,{\n  \"charset\": \"utf-8\"\n}",
         "weight": 0
     },
     {
@@ -7326,43 +7407,6 @@
             "chapterUrl": "href"
         },
         "searchUrl": "/search?keyword={{key}}",
-        "weight": 0
-    },
-    {
-        "bookSourceComment": "https://celeter.github.io/SourceGo",
-        "bookSourceGroup": "🍺特优",
-        "bookSourceName": "🍺笔趣阁⑥",
-        "bookSourceType": 0,
-        "bookSourceUrl": "https://m.mibaoge.com",
-        "bookUrlPattern": "",
-        "customOrder": 0,
-        "enabled": true,
-        "enabledExplore": false,
-        "lastUpdateTime": 0,
-        "ruleBookInfo": {
-            "author": "class.box_con.0@id.info@tag.p.0@text##作\\s*者：",
-            "coverUrl": "id.fmimg@tag.img.0@src",
-            "name": "class.box_con.0@id.info@tag.h1.0@text"
-        },
-        "ruleContent": {
-            "content": "id.content@textNodes"
-        },
-        "ruleExplore": {},
-        "ruleSearch": {
-            "author": "class.result-game-item-info-tag.0@tag.span.1@text",
-            "bookList": "class.result-item",
-            "bookUrl": "class.result-item-title.0@tag.a.0@href",
-            "coverUrl": "tag.img.0@src",
-            "intro": "class.result-game-item-desc@text",
-            "lastChapter": "class.result-game-item-info-tag.3@tag.a.0@text",
-            "name": "class.result-item-title.0@tag.a.0@text"
-        },
-        "ruleToc": {
-            "chapterList": "id.list@tag.dd",
-            "chapterName": "tag.a@text",
-            "chapterUrl": "tag.a@href"
-        },
-        "searchUrl": "https://www.mibaoge.com/search.php?q={{key}}",
         "weight": 0
     },
     {
@@ -7438,49 +7482,6 @@
             "chapterUrl": "href"
         },
         "searchUrl": "http://www.qingaiw.com/search,{\n  \"charset\": \"gbk\",\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}&searchtype=articlename&page={{page}}\"\n}",
-        "weight": 0
-    },
-    {
-        "bookSourceComment": "https://celeter.github.io/SourceGo",
-        "bookSourceGroup": "🍺特优",
-        "bookSourceName": "🍺笔趣阁⑤",
-        "bookSourceType": 0,
-        "bookSourceUrl": "https://www.biquduo.com",
-        "customOrder": 0,
-        "enabled": true,
-        "enabledExplore": true,
-        "exploreUrl": "",
-        "lastUpdateTime": 0,
-        "ruleBookInfo": {
-            "intro": "id.intro@textNodes"
-        },
-        "ruleContent": {
-            "content": "id.content@html"
-        },
-        "ruleExplore": {
-            "author": "",
-            "bookList": "",
-            "bookUrl": "",
-            "coverUrl": "",
-            "lastChapter": "",
-            "name": ""
-        },
-        "ruleSearch": {
-            "author": "tag.p.1@tag.span.1@text",
-            "bookList": "class.result-item result-game-item",
-            "bookUrl": "tag.a.1@href",
-            "coverUrl": "img@src",
-            "intro": "class.result-game-item-desc@textNodes",
-            "kind": "tag.p.2@tag.span.1@text",
-            "lastChapter": "tag.a.2@text",
-            "name": "tag.a.1@text"
-        },
-        "ruleToc": {
-            "chapterList": "id.list@a",
-            "chapterName": "text",
-            "chapterUrl": "href"
-        },
-        "searchUrl": "https://www.biquduo.com/search.php?q={{key}}",
         "weight": 0
     },
     {
@@ -10358,6 +10359,7 @@
         "bookSourceName": "🍑耽美小说",
         "bookSourceType": 0,
         "bookSourceUrl": "https:\/\/www.dmxs.org",
+        "customOrder": 0,
         "enabled": true,
         "enabledExplore": true,
         "exploreUrl": "总排行::\/hot\/index<,_{{page}}>.html\n周榜::\/hot_zhou\/index<,_{{page}}>.html\n月榜::\/hot_yue\/index<,_{{page}}>.html\n\n\n♯近代现代♯::\/book\/index<,_{{page}}>.html\nTop100::\/hot4\/index<,_{{page}}>.html\n\n♯古代架空♯::\/gdjk\/index<,_{{page}}>.html\nTop100::\/hot5\/index<,_{{page}}>.html\n\n♯穿越重生♯::\/cycs\/index<,_{{page}}>.html\nTop100::\/hot6\/index<,_{{page}}>.html\n\n♯玄幻灵异♯::\/xhly\/index<,_{{page}}>.html\nTop100::\/hot7\/index<,_{{page}}>.html\n\n♯网游竞技♯::\/wyjj\/index<,_{{page}}>.html\nTop100::\/hot8\/index<,_{{page}}>.html\n\n♯推理悬疑♯::\/tlxy\/index<,_{{page}}>.html\nTop100::\/hot9\/index<,_{{page}}>.html\n\n♯ BL 同人 ♯::\/BLTR\/index<,_{{page}}>.html\nTop100::\/hot10\/index<,_{{page}}>.html\n\n♯ GL 百合 ♯::\/GLBH\/index<,_{{page}}>.html\nTop100::\/hot11\/index<,_{{page}}>.html",
@@ -11778,12 +11780,40 @@
         "enabledExplore": true,
         "exploreUrl": "付费排行::https:\/\/baby.kuwo.cn\/tingshu\/api\/\/page\/boutique\/getBoutiqueData?pt=1&rn=100&version=8.5.6.1&pn={{page}}&kweexVersion=1.0.2\n免费排行::https:\/\/baby.kuwo.cn\/tingshu\/api\/\/page\/boutique\/getBoutiqueData?pt=2&rn=100&version=8.5.6.1&pn={{page}}&kweexVersion=1.0.2\n都市传说::https:\/\/baby.kuwo.cn\/tingshu\/api\/\/filter\/albums?sortType=tsScore&classifyId=42&rn=20&categoryId=2&pn={{page}}&kweexVersion=1.0.2\n玄幻奇幻::https:\/\/baby.kuwo.cn\/tingshu\/api\/\/filter\/albums?sortType=tsScore&classifyId=44&rn=20&categoryId=2&pn={{page}}&kweexVersion=1.0.2\n悬疑推理::https:\/\/baby.kuwo.cn\/tingshu\/api\/\/filter\/albums?sortType=tsScore&classifyId=45&rn=20&categoryId=2&pn={{page}}&kweexVersion=1.0.2\n现代言情::https:\/\/baby.kuwo.cn\/tingshu\/api\/\/filter\/albums?sortType=tsScore&classifyId=41&rn=20&categoryId=2&pn={{page}}&kweexVersion=1.0.2\n武侠仙侠::https:\/\/baby.kuwo.cn\/tingshu\/api\/\/filter\/albums?sortType=tsScore&classifyId=48&rn=20&categoryId=2&pn={{page}}&kweexVersion=1.0.2\n穿越架空::https:\/\/baby.kuwo.cn\/tingshu\/api\/\/filter\/albums?sortType=tsScore&classifyId=52&rn=20&categoryId=2&pn={{page}}&kweexVersion=1.0.2\n经典小说::https:\/\/baby.kuwo.cn\/tingshu\/api\/\/filter\/albums?sortType=tsScore&classifyId=64&rn=20&categoryId=2&pn={{page}}&kweexVersion=1.0.2\n青春校园::https:\/\/baby.kuwo.cn\/tingshu\/api\/\/filter\/albums?sortType=tsScore&classifyId=55&rn=20&categoryId=2&pn={{page}}&kweexVersion=1.0.2\n历史军事::https:\/\/baby.kuwo.cn\/tingshu\/api\/\/filter\/albums?sortType=tsScore&classifyId=56&rn=20&categoryId=2&pn={{page}}&kweexVersion=1.0.2\n科幻竞技::https:\/\/baby.kuwo.cn\/tingshu\/api\/\/filter\/albums?sortType=tsScore&classifyId=57&rn=20&categoryId=2&pn={{page}}&kweexVersion=1.0.2\n古代言情::https:\/\/baby.kuwo.cn\/tingshu\/api\/\/filter\/albums?sortType=tsScore&classifyId=207&rn=20&categoryId=2&pn={{page}}&kweexVersion=1.0.2\n能力提升::https:\/\/baby.kuwo.cn\/tingshu\/api\/\/filter\/albums?sortType=tsScore&classifyId=82&rn=20&categoryId=4&pn={{page}}&kweexVersion=1.0.2\n人文艺术::https:\/\/baby.kuwo.cn\/tingshu\/api\/\/filter\/albums?sortType=tsScore&classifyId=77&rn=20&categoryId=4&pn={{page}}&kweexVersion=1.0.2\n国学文化::https:\/\/baby.kuwo.cn\/tingshu\/api\/\/filter\/albums?sortType=tsScore&classifyId=78&rn=20&categoryId=4&pn={{page}}&kweexVersion=1.0.2\n成功法则::https:\/\/baby.kuwo.cn\/tingshu\/api\/\/filter\/albums?sortType=tsScore&classifyId=79&rn=20&categoryId=4&pn={{page}}&kweexVersion=1.0.2\n外语精通::https:\/\/baby.kuwo.cn\/tingshu\/api\/\/filter\/albums?sortType=tsScore&classifyId=76&rn=20&categoryId=4&pn={{page}}&kweexVersion=1.0.2\n养生健康::https:\/\/baby.kuwo.cn\/tingshu\/api\/\/filter\/albums?sortType=tsScore&classifyId=81&rn=20&categoryId=4&pn={{page}}&kweexVersion=1.0.2\n酷我读书::https:\/\/baby.kuwo.cn\/tingshu\/api\/\/filter\/albums?sortType=tsScore&classifyId=211&rn=20&categoryId=4&pn={{page}}&kweexVersion=1.0.2\n国学经典::https:\/\/baby.kuwo.cn\/tingshu\/api\/\/filter\/albums?sortType=tsScore&classifyId=117&rn=20&categoryId=9&pn={{page}}&kweexVersion=1.0.2\n历史小说::https:\/\/baby.kuwo.cn\/tingshu\/api\/\/filter\/albums?sortType=tsScore&classifyId=181&rn=20&categoryId=9&pn={{page}}&kweexVersion=1.0.2\n纪实档案::https:\/\/baby.kuwo.cn\/tingshu\/api\/\/filter\/albums?sortType=tsScore&classifyId=118&rn=20&categoryId=9&pn={{page}}&kweexVersion=1.0.2\n历史传奇::https:\/\/baby.kuwo.cn\/tingshu\/api\/\/filter\/albums?sortType=tsScore&classifyId=119&rn=20&categoryId=9&pn={{page}}&kweexVersion=1.0.2\n人物传奇::https:\/\/baby.kuwo.cn\/tingshu\/api\/\/filter\/albums?sortType=tsScore&classifyId=120&rn=20&categoryId=9&pn={{page}}&kweexVersion=1.0.2\n文化讲堂::https:\/\/baby.kuwo.cn\/tingshu\/api\/\/filter\/albums?sortType=tsScore&classifyId=121&rn=20&categoryId=9&pn={{page}}&kweexVersion=1.0.2\n百家讲坛::https:\/\/baby.kuwo.cn\/tingshu\/api\/\/filter\/albums?sortType=tsScore&classifyId=212&rn=20&categoryId=9&pn={{page}}&kweexVersion=1.0.2\n",
         "lastUpdateTime": 0,
-        "ruleBookInfo": "{\n  \"intro\": \"info||desc\"\n}",
-        "ruleContent": "{\n  \"content\": \"\",\n  \"nextContentUrl\": \"\"\n}",
-        "ruleExplore": "{\n  \"author\": \"artistName\",\n  \"bookList\": \"$.data.data[*]||$.data..albums\",\n  \"bookUrl\": \"https:\/\/baby.kuwo.cn\/tingshu\/api\/\/data\/album\/songs?albumId={$.albumId}&online=0&kweexVersion=1.0.2\",\n  \"coverUrl\": \"coverImg||img\",\n  \"intro\": \"desc\",\n  \"kind\": \"title\",\n  \"lastChapter\": \"更新至第{$.songTotal}{$.songNum}集\",\n  \"name\": \"albumName||name\"\n}",
-        "ruleSearch": "{\n  \"author\": \"artistName\",\n  \"bookList\": \"$.data.data\",\n  \"bookUrl\": \"https:\/\/baby.kuwo.cn\/tingshu\/api\/\/data\/album\/songs?albumId={$.albumId}&online=0&kweexVersion=1.0.2\",\n  \"coverUrl\": \"coverImg\",\n  \"intro\": \"info\",\n  \"kind\": \"$.tags..datas\",\n  \"lastChapter\": \"更新至第{$.songNum}集&&$.pubDate \",\n  \"name\": \"albumName\",\n  \"wordCount\": \"\"\n}",
-        "ruleToc": "{\n  \"chapterList\": \"$.data\",\n  \"chapterName\": \"name\",\n  \"chapterUrl\": \"https:\/\/antiserver.kuwo.cn\/anti.s?useless=\/resource\/&format=mp3&rid=MUSIC_{$.id}&response=res&type=convert_url&\"\n}",
-        "searchUrl": "https:\/\/baby.kuwo.cn:80\/tingshu\/api\/\/search\/Search?rn=10&type=album&version=8.5.6.1&wd={{key}}&pn={{page}}&kweexVersion=1.0.2"
+        "ruleBookInfo": {
+            "intro": "info||desc"
+        },
+        "ruleContent": {
+            "content": "",
+            "nextContentUrl": ""
+        },
+        "ruleExplore": {
+            "author": "artistName",
+            "bookList": "$.data.data[*]||$.data..albums",
+            "bookUrl": "https:\/\/baby.kuwo.cn\/tingshu\/api\/\/data\/album\/songs?albumId={$.albumId}&online=0&kweexVersion=1.0.2",
+            "coverUrl": "coverImg||img",
+            "intro": "desc",
+            "kind": "title",
+            "lastChapter": "更新至第{$.songTotal}{$.songNum}集",
+            "name": "albumName||name"
+            },
+            "ruleSearch": {
+                "author": "artistName",
+                "bookList": "$.data.data",
+                "bookUrl": "https:\/\/baby.kuwo.cn\/tingshu\/api\/\/data\/album\/songs?albumId={$.albumId}&online=0&kweexVersion=1.0.2",
+                "coverUrl": "coverImg",
+                "intro": "info",
+                "kind": "$.tags..datas",
+                "lastChapter": "更新至第{$.songNum}集&&$.pubDate ",
+                "name": "albumName",
+                "wordCount": ""
+                },
+                "ruleToc": {
+                    "chapterList": "$.data",
+                    "chapterName": "name",
+                    "chapterUrl": "https:\/\/antiserver.kuwo.cn\/anti.s?useless=\/resource\/&format=mp3&rid=MUSIC_{$.id}&response=res&type=convert_url&"
+                },
+                "searchUrl": "https:\/\/baby.kuwo.cn:80\/tingshu\/api\/\/search\/Search?rn=10&type=album&version=8.5.6.1&wd={{key}}&pn={{page}}&kweexVersion=1.0.2"
     },
     {
         "bookSourceComment": "",
@@ -11865,10 +11895,9 @@
         "httpUserAgent": "",
         "serialNumber": 0,
         "weight": 0,
-        "enable": true,
-        "bookUrlPattern": "",
         "customOrder": 0,
         "enabled": true,
+        "bookUrlPattern": "",
         "enabledExplore": true,
         "exploreUrl": "全部风格::\/discover\/playlist\/\n华语::\/discover\/playlist\/?cat=华语\n欧美::\/discover\/playlist\/?cat=欧美\n日语::\/discover\/playlist\/?cat=日语\n韩语::\/discover\/playlist\/?cat=韩语\n粤语::\/discover\/playlist\/?cat=粤语\n小语种::\/discover\/playlist\/?cat=小语种\n流行::\/discover\/playlist\/?cat=流行\n摇滚::\/discover\/playlist\/?cat=摇滚\n民谣::\/discover\/playlist\/?cat=民谣\n电子::\/discover\/playlist\/?cat=电子\n舞曲::\/discover\/playlist\/?cat=舞曲\n说唱::\/discover\/playlist\/?cat=说唱\n轻音乐::\/discover\/playlist\/?cat=轻音乐\n爵士::\/discover\/playlist\/?cat=爵士\n乡村::\/discover\/playlist\/?cat=乡村\nR&B\/Soul::\/discover\/playlist\/?cat=R%26B%2FSoul\n古典::\/discover\/playlist\/?cat=古典\n民族::\/discover\/playlist\/?cat=民族\n英伦::\/discover\/playlist\/?cat=英伦\n金属::\/discover\/playlist\/?cat=金属\n朋克::\/discover\/playlist\/?cat=朋克\n蓝调::\/discover\/playlist\/?cat=蓝调\n雷鬼::\/discover\/playlist\/?cat=雷鬼\n世界音乐::\/discover\/playlist\/?cat=世界音乐\n拉丁::\/discover\/playlist\/?cat=拉丁\n另类\/独立::\/discover\/playlist\/?cat=另类%2F独立\nNew Age::\/discover\/playlist\/?cat=New Age\n古风::\/discover\/playlist\/?cat=古风\n后摇::\/discover\/playlist\/?cat=后摇\nBossa Nova::\/discover\/playlist\/?cat=Bossa Nova\n清晨::\/discover\/playlist\/?cat=清晨\n夜晚::\/discover\/playlist\/?cat=夜晚\n学习::\/discover\/playlist\/?cat=学习\n工作::\/discover\/playlist\/?cat=工作\n午休::\/discover\/playlist\/?cat=午休\n下午茶::\/discover\/playlist\/?cat=下午茶\n地铁::\/discover\/playlist\/?cat=地铁\n驾车::\/discover\/playlist\/?cat=驾车\n运动::\/discover\/playlist\/?cat=运动\n旅行::\/discover\/playlist\/?cat=旅行\n散步::\/discover\/playlist\/?cat=散步\n酒吧::\/discover\/playlist\/?cat=酒吧\n怀旧::\/discover\/playlist\/?cat=怀旧\n清新::\/discover\/playlist\/?cat=清新\n浪漫::\/discover\/playlist\/?cat=浪漫\n性感::\/discover\/playlist\/?cat=性感\n伤感::\/discover\/playlist\/?cat=伤感\n治愈::\/discover\/playlist\/?cat=治愈\n放松::\/discover\/playlist\/?cat=放松\n孤独::\/discover\/playlist\/?cat=孤独\n感动::\/discover\/playlist\/?cat=感动\n兴奋::\/discover\/playlist\/?cat=兴奋\n快乐::\/discover\/playlist\/?cat=快乐\n安静::\/discover\/playlist\/?cat=安静\n思念::\/discover\/playlist\/?cat=思念\n影视原声::\/discover\/playlist\/?cat=影视原声\nACG::\/discover\/playlist\/?cat=ACG\n儿童::\/discover\/playlist\/?cat=儿童\n校园::\/discover\/playlist\/?cat=校园\n游戏::\/discover\/playlist\/?cat=游戏\n70后::\/discover\/playlist\/?cat=70后\n80后::\/discover\/playlist\/?cat=80后\n90后::\/discover\/playlist\/?cat=90后\n网络歌曲::\/discover\/playlist\/?cat=网络歌曲\nKTV::\/discover\/playlist\/?cat=KTV\n经典::\/discover\/playlist\/?cat=经典\n翻唱::\/discover\/playlist\/?cat=翻唱\n吉他::\/discover\/playlist\/?cat=吉他\n钢琴::\/discover\/playlist\/?cat=钢琴\n器乐::\/discover\/playlist\/?cat=器乐\n榜单::\/discover\/playlist\/?cat=榜单\n00后::\/discover\/playlist\/?cat=00后",
         "header": "",
@@ -12324,7 +12353,6 @@
         "httpUserAgent": "",
         "serialNumber": 0,
         "weight": 0,
-        "enable": true,
         "customOrder": 0,
         "enabled": true,
         "enabledExplore": true,
@@ -12379,7 +12407,6 @@
         "httpUserAgent": "",
         "serialNumber": 0,
         "weight": 0,
-        "enable": true,
         "customOrder": 0,
         "enabled": true,
         "enabledExplore": true,
