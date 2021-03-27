@@ -1635,45 +1635,55 @@
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺顶点小说",
         "bookSourceType": 0,
-        "bookSourceUrl": "https://www.ibooktxt.com",
+        "bookSourceUrl": "https:\/\/m.ibooktxt.com",
         "bookUrlPattern": "",
         "customOrder": 0,
         "enabled": true,
         "enabledExplore": true,
-        "exploreUrl": "",
+        "exploreUrl": "玄幻::\/xuanhuan\/\n修真::\/xiuzhen\/\n都市::\/dushi\/\n历史::\/lishi\/\n网游::\/wangyou\/\n科幻::\/kehuan\/\n言情::\/yanqing\/\n其他::\/qita\/\n全本::\/quanben\/",
         "header": "",
         "lastUpdateTime": 0,
         "loginUrl": "",
         "ruleBookInfo": {
-            "author": "id.info@tag.p.0@text##作    者：",
-            "coverUrl": "id.fmimg@tag.img@src",
-            "intro": "id.intro@text",
-            "kind": "class.con_top@tag.a.1@text",
-            "lastChapter": "id.info@tag.p.3@text##最新章节：",
-            "name": "id.info@tag.h3@text",
-            "wordCount": "id.info@tag.p.2@text##最后更新："
+            "author": "class.block@class.block_txt2@tag.p.2@text##作者：",
+            "coverUrl": "class.block_img2@tag.img@src",
+            "init": "class.cover",
+            "intro": "class.intro_info@text",
+            "kind": "class.block@class.block_txt2@tag.p.3@text&&@tag.p.4@text&&@tag.p.5@text##分类：|状态：|更新：",
+            "lastChapter": "class.block@class.block_txt2@tag.p.6@text##作者：",
+            "name": "class.block@class.block_txt2@h2@text"
         },
         "ruleContent": {
-            "content": "id.content@html##《.*》来源："
+            "content": "id.nr1@html||id.nr1@text",
+            "nextContentUrl": "text.下一页@href||text.下一章@href"
         },
-        "ruleExplore": {},
+        "ruleExplore": {
+            "author": "class.bookinfo@class.author@text##作者：",
+            "bookList": "class.bookbox",
+            "bookUrl": "tag.a.0@href",
+            "coverUrl": "class.bookimg@tag.img@src",
+            "intro": "class.bookinfo@class.intro_line@text##简介：",
+            "kind": "",
+            "lastChapter": "class.bookinfo@class.update@text##更新至：",
+            "name": "class.bookinfo@h4@text"
+        },
         "ruleSearch": {
-            "author": "tag.p.1@text##作者：",
-            "bookList": "class.result-item result-game-item",
-            "bookUrl": "tag.h3@tag.a@href",
-            "coverUrl": "tag.img@src",
-            "intro": "tag.p.0@text",
-            "kind": "tag.p.2@text##类型：",
-            "lastChapter": "tag.p.4@text##最新章节：",
-            "name": "tag.h3@text",
-            "wordCount": "tag.p.3@text##更新时间："
+            "author": "class.result-game-item-info@tag.p.0@text##作者：",
+            "bookList": "class.result-list@class.result-item result-game-item",
+            "bookUrl": "tag.a.1@href",
+            "coverUrl": "class.result-game-item-pic@tag.img@src",
+            "intro": "class.result-game-item-detail@tag.p.0@text",
+            "kind": "class.result-game-item-info@tag.p.1@text&&class.result-game-item-info@tag.p.2@text##类型：|更新时间：",
+            "lastChapter": "class.result-game-item-info@tag.p.3@text##最新章节：",
+            "name": "class.result-game-item-detail@tag.h3@text"
         },
         "ruleToc": {
-            "chapterList": "id.list@tag.dd",
+            "chapterList": "class.cover@class.chapter.1@ul@li",
             "chapterName": "tag.a@text",
-            "chapterUrl": "tag.a@href"
+            "chapterUrl": "tag.a@href",
+            "nextTocUrl": "class.listpage@class.right@tag.a@href"
         },
-        "searchUrl": "https://www.ibooktxt.com/search.php?q={{key}}",
+        "searchUrl": "https:\/\/m.ibooktxt.com\/search.php?q={{key}}&p={{page}}",
         "weight": 0
     },
     {
@@ -2282,15 +2292,11 @@
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺天籁小说",
         "bookSourceType": 0,
-        "bookSourceUrl": "https://www.233txt.com",
-        "bookUrlPattern": "",
+        "bookSourceUrl": "https:\/\/www.233txt.com",
         "customOrder": 0,
         "enabled": true,
-        "enabledExplore": true,
-        "exploreUrl": "",
-        "header": "",
+        "enabledExplore": false,
         "lastUpdateTime": 0,
-        "loginUrl": "",
         "ruleBookInfo": {
             "author": "id.info@tag.p.0@text##作    者：",
             "coverUrl": "id.fmimg@tag.img@src",
@@ -2298,29 +2304,30 @@
             "kind": "class.con_top@tag.a.1@text",
             "lastChapter": "id.info@tag.a.-1@text",
             "name": "id.info@tag.h1@text",
-            "wordCount": "id.info@tag.p.2@text##最后更新："
+            "wordCount": "id.info@tag.p.1@textNodes##(状 态：|,)"
         },
         "ruleContent": {
             "content": "id.content@textNodes"
         },
         "ruleExplore": {},
         "ruleSearch": {
-            "author": "class.result-game-item-info.0@tag.p.0@tag.span.1@text",
-            "bookList": "@css:.result-item:lt(20)",
-            "bookUrl": "class.result-item-title result-game-item-title.0@tag.a.0@href",
-            "coverUrl": "class.result-game-item-pic.0@tag.img.0@src",
-            "intro": "class.result-game-item-desc@text",
-            "kind": "class.result-game-item-info.0@tag.p.1@tag.span.1@text",
-            "lastChapter": "class.result-game-item-info.0@tag.p.3@tag.a.0@text",
-            "name": "class.result-item-title result-game-item-title.0@tag.a.0@text",
-            "wordCount": "class.result-game-item-info.0@tag.p.2@tag.span.1@text"
+            "author": "##作者：<\/[\\s\\S]+?<span>([^<]+)<\/##$1###",
+            "bookList": "class.result-game-item",
+            "bookUrl": "h3@a@href",
+            "coverUrl": "img@src",
+            "intro": "tag.p.0@text",
+            "kind": "##类型：<\/[\\s\\S]+?>([^<]+)小说##$1###",
+            "lastChapter": "##更新时间：<\/span>[\\s\\S]+?>([^<]+)<[\\s\\S]+?最新章节：[\\S\\s]+?>([^<]+)<\/##$2•$1###",
+            "name": "h3@text",
+            "wordCount": ""
         },
         "ruleToc": {
-            "chapterList": "id.list@tag.dd",
-            "chapterName": "tag.a@text",
-            "chapterUrl": "tag.a@href"
+            "chapterList": "id.list@a",
+            "chapterName": "text",
+            "chapterUrl": "href",
+            "isVip": ""
         },
-        "searchUrl": "https://www.233txt.com/search.php?q={{key}}",
+        "searchUrl": "\/search.php?q={{key}}&p={{page}}",
         "weight": 0
     },
     {
@@ -7281,47 +7288,32 @@
         "weight": 0
     },
     {
-        "bookSourceComment": "",
+        "bookSourceComment": "由@天天gg提供思路",
         "bookSourceGroup": "💵正版",
         "bookSourceName": "💵九九藏书·出版",
         "bookSourceType": 0,
-        "bookSourceUrl": "https://www.99csw.com",
+        "bookSourceUrl": "https:\/\/www.99csw.com",
         "bookUrlPattern": "",
         "customOrder": 0,
         "enabled": true,
         "enabledExplore": true,
-        "exploreUrl": "排行榜::/top/index.php\n传记回忆::/book/index.php?type=传记回忆&page={{page}}\n英文读本::/book/index.php?type=英文读本&page={{page}}\n杂文随笔::/book/index.php?type=杂文随笔&page={{page}}\n现代小说::/book/index.php?type=现代小说&page={{page}}\n言情小说::/book/index.php?type=言情小说&page={{page}}\n历史小说::/book/index.php?type=历史小说&page={{page}}\n侦探推理::/book/index.php?type=侦探推理&page={{page}}\n惊悚悬疑::/book/index.php?type=惊悚悬疑&page={{page}}\n网络玄幻::/book/index.php?type=网络玄幻&page={{page}}\n寓言童话::/book/index.php?type=寓言童话&page={{page}}\n青春都市::/book/index.php?type=青春都市&page={{page}}\n社会心理::/book/index.php?type=社会心理&page={{page}}\n外国小说::/book/index.php?type=外国小说&page={{page}}\n科幻小说::/book/index.php?type=科幻小说&page={{page}}\n当代小说::/book/index.php?type=当代小说&page={{page}}\n武侠小说::/book/index.php?type=武侠小说&page={{page}}\n纪实报告::/book/index.php?type=纪实报告&page={{page}}\n世界历史::/book/index.php?type=世界历史&page={{page}}\n中国历史::/book/index.php?type=中国历史&page={{page}}\n科普学习::/book/index.php?type=科普学习&page={{page}}\n诗歌戏曲::/book/index.php?type=诗歌戏曲&page={{page}}\n宗教哲学::/book/index.php?type=宗教哲学&page={{page}}\n文学理论::/book/index.php?type=文学理论&page={{page}}\n日语读物::/book/index.php?type=日语读物&page={{page}}\n作品集::/book/index.php?type=作品集&page={{page}}\n国学/古籍::/book/index.php?type=国学%2F古籍&page={{page}}\n战争军事::/book/index.php?type=战争军事&page={{page}}\n政治经济::/book/index.php?type=政治经济&page={{page}}\n古典文学::/book/index.php?type=古典文学&page={{page}}\n官场小说::/book/index.php?type=官场小说&page={{page}}\n轻小说::/book/index.php?type=轻小说&page={{page}}",
+        "exploreUrl": "排行榜单::\/top\/index.php\n传记回忆::\/book\/index.php?type=传记回忆&page={{page}}\n英文读本::\/book\/index.php?type=英文读本&page={{page}}\n杂文随笔::\/book\/index.php?type=杂文随笔&page={{page}}\n现代小说::\/book\/index.php?type=现代小说&page={{page}}\n言情小说::\/book\/index.php?type=言情小说&page={{page}}\n历史小说::\/book\/index.php?type=历史小说&page={{page}}\n侦探推理::\/book\/index.php?type=侦探推理&page={{page}}\n惊悚悬疑::\/book\/index.php?type=惊悚悬疑&page={{page}}\n网络玄幻::\/book\/index.php?type=网络玄幻&page={{page}}\n寓言童话::\/book\/index.php?type=寓言童话&page={{page}}\n青春都市::\/book\/index.php?type=青春都市&page={{page}}\n社会心理::\/book\/index.php?type=社会心理&page={{page}}\n外国小说::\/book\/index.php?type=外国小说&page={{page}}\n科幻小说::\/book\/index.php?type=科幻小说&page={{page}}\n当代小说::\/book\/index.php?type=当代小说&page={{page}}\n武侠小说::\/book\/index.php?type=武侠小说&page={{page}}\n纪实报告::\/book\/index.php?type=纪实报告&page={{page}}\n世界历史::\/book\/index.php?type=世界历史&page={{page}}\n中国历史::\/book\/index.php?type=中国历史&page={{page}}\n科普学习::\/book\/index.php?type=科普学习&page={{page}}\n诗歌戏曲::\/book\/index.php?type=诗歌戏曲&page={{page}}\n宗教哲学::\/book\/index.php?type=宗教哲学&page={{page}}\n文学理论::\/book\/index.php?type=文学理论&page={{page}}\n日语读物::\/book\/index.php?type=日语读物&page={{page}}\n作品合集::\/book\/index.php?type=作品集&page={{page}}\n国学古籍::\/book\/index.php?type=国学%2F古籍&page={{page}}\n战争军事::\/book\/index.php?type=战争军事&page={{page}}\n政治经济::\/book\/index.php?type=政治经济&page={{page}}\n古典文学::\/book\/index.php?type=古典文学&page={{page}}\n官场小说::\/book\/index.php?type=官场小说&page={{page}}\n轻の小说::\/book\/index.php?type=轻小说&page={{page}}",
         "header": "",
         "lastUpdateTime": 0,
         "loginUrl": "",
         "ruleBookInfo": {
             "author": "id.book_info@tag.h4.0@tag.a@text",
             "coverUrl": "id.book_info@tag.img@src",
-            "init": "",
             "intro": "class.intro@tag.p@text",
-            "kind": "",
-            "lastChapter": "",
-            "name": "id.book_info@tag.h2@text",
-            "tocUrl": "",
-            "wordCount": ""
+            "lastChapter": "id.dir@tag.a.-1@text",
+            "name": "id.book_info@tag.h2@text"
         },
         "ruleContent": {
-            "content": "@css:#content > div@text##\\s*(([ｈh].+)?([wｗ]+.)?[９9]+[ｌl][ｉi][ｂb].[ｎn][ｅe][ｔt]|九.?九.{1,5}书.?网?)\\s*",
-            "nextContentUrl": "",
-            "sourceRegex": "",
-            "webJs": ""
+            "content": "<js>\ndoc=org.jsoup.Jsoup.parse(result);\nchapter=doc.select(\".chapter\")?doc.select(\".chapter\"):'';\nchapter?chapter.remove():'';\n\ncontent = {\n    star: 0,\n    childNode: [],\n    childNodes: doc.select(\"#content>div\").toArray(),\n    load: function() {\n        var a = String(java.base64Decode(java.getString('\/\/*[@name=\"client\"]\/@content',false))).split(\/[A-Z]+%\/);\n        var j = 0;\n        for (var i = 0; i < a.length; i++) {\n            if (a[i] < 3) {\n                this.childNode[a[i]] = this.childNodes[i + this.star];\n                j++\n            } else {\n                this.childNode[a[i] - j] = this.childNodes[i + this.star];\n                j=j+2\n            }\n        };\n    }\n}\ncontent.load();\nresult=chapter+content.childNode.join(\"<br>\");<\/js>",
+            "imageStyle": "0",
+            "replaceRegex": "##(?<=。)(([ｈh].+)?([wｗ]+.)?[９9]+[ｌl][ｉi][ｂb].[ｎn][ｅe][ｔt]|九.{0,2}九.{0,2}藏.{0,2}书.{0,2}网|九.{0,2}九.{0,2}藏.{0,2}书|藏.{0,2}书.{0,2}网)|\\s*(([ｈh].+)?([wｗ]+.)?[９9]+[ｌl][ｉi][ｂb].[ｎn][ｅe][ｔt]|九.{0,2}九.{0,2}藏.{0,2}书.{0,2}网|九.{0,2}九.{0,2}藏.{0,2}书|藏.{0,2}书.{0,2}网)\\s*"
         },
-        "ruleExplore": {
-            "author": "",
-            "bookList": "",
-            "bookUrl": "",
-            "coverUrl": "",
-            "intro": "",
-            "kind": "",
-            "lastChapter": "",
-            "name": "",
-            "wordCount": ""
-        },
+        "ruleExplore": {},
         "ruleSearch": {
             "author": "tag.h4.0@tag.a@text",
             "bookList": "class.list_box@tag.li",
@@ -7329,17 +7321,14 @@
             "coverUrl": "tag.a@tag.img@src",
             "intro": "class.intro@text##^\\s+",
             "kind": "tag.h4.1@tag.a@text",
-            "lastChapter": "@css:h4:contains(标签:) a@text##^|\\s+## \\#",
-            "name": "tag.h2@tag.a@text",
-            "wordCount": ""
+            "lastChapter": "",
+            "name": "tag.h2@tag.a@text"
         },
         "ruleToc": {
-            "chapterList": "id.dir@tag.dd",
-            "chapterName": "tag.a@text",
+            "chapterList": "<js>\nlist=java.getElements(\"@@id.dir@children\").toArray();\n\nfor(i in list){\nlist[i]=String(list[i]).replace(\/(<dt>\\s*(?:<a.*?>)*)(.*?)((?:<\\\/a>)*\\s*<\\\/dt>)\/g,'$1📖$2📖$3');\nif(!String(list[i]).match(\/<d[dt]>\\s*<a\/)){\nlist[i]=String(list[i]).replace(\/<dt>\/,'<dt><a href=\"http:\/\/www.baidu.com?wd='+i+'\"><\/a>');\n\n}\n}\nlist.join('')\n<\/js>\n@css:dd,dt",
+            "chapterName": "text",
             "chapterUrl": "tag.a@href",
-            "isVip": "",
-            "nextTocUrl": "",
-            "updateTime": ""
+            "isVip": ""
         },
         "searchUrl": "https://www.99csw.com/book/search.php?type=all&keyword={{key}}&page={{page}}",
         "weight": 0
@@ -7413,36 +7402,38 @@
         "bookSourceGroup": "💵正版",
         "bookSourceName": "💵超星图书·出版",
         "bookSourceType": 0,
-        "bookSourceUrl": "https://yz4.chaoxing.com",
+        "bookSourceUrl": "https:\/\/yz4.chaoxing.com\/",
         "bookUrlPattern": "",
         "customOrder": 0,
         "enabled": true,
         "enabledExplore": true,
-        "exploreUrl": "❀　　　　　　　　　 　　 　推荐　　　　　　 　　　　　　　❀::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=130\"}\n\n❀　　　  　 　文学·世界文学名著  　　　 　　❀::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"/start=0&size=1000&channelId=1000000007\"}\n\n名家名作::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"/start=0&size=1000&channelId=1000000008\"}\n\n流行小说::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"/start=0&size=1000&channelId=1000000010\"}\n\n古典文学::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"/start=0&size=1000&channelId=1000000009\"}\n\n诗歌散文::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"/start=0&size=1000&channelId=1000000033\"}\n\n文学理论::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"/start=0&size=1000&channelId=1000000063\"}\n\n纪实文学::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"/start=0&size=1000&channelId=1000000498\"}\n\n少儿文学::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"/start=0&size=1000&channelId=1000001204\"}\n\n外文原著::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"/start=0&size=1000&channelId=1000000438\"}\n                ::\n\n❀ 　　　　　　　　 历 史·中 国 史　　　　　　　　  ❀::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000057\"}\n\n史学研究::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000072\"}\n\n人物传记::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000066\"}\n\n文物考古::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000069\"}\n\n通俗演绎::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000060\"}\n\n 世 界 史 ::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000001049\"}\n                ::\n\n  ❀  　　　　   　　哲学·中国哲学　　　 　　　  ❀::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000013\"}\n\n西方哲学::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000014\"}\n\n马列哲学::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000015\"}\n\n   宗  教   ::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000393\"}\n\n ❀  　　　　　    　艺 术 · 摄 影　　　  　  　　  ❀ ::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000051\"}\n\n美术书法::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000042\"}\n\n音乐舞蹈::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000045\"}\n\n建筑雕塑::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000048\"}\n\n戏曲戏剧::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000081\"}\n\n电影电视::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000001046\"}\n\n艺术理论::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000075\"}\n\n  ❀　　　　 　　   经管·经济管理　　　　　　  ❀::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000102\"}\n\n投资理财::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000105\"}\n\n金融会计::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000108\"}\n\n成功励志::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000111\"}\n\n创业创新::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000138\"}\n                                          ::\n❀ 　　　　  　  　 政法·政治学 　　    　　　　 ❀::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000414\"}\n\n   法  学  ::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000417\"}\n\n国际关系::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000420\"}\n               ::\n ❀　　　　　　      社科·心理学 　　　　　 　   ❀ ::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000090\"}\n\n 社 会 学 ::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000087\"}\n\n语言文字::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000135\"}\n\n新闻传播::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000435\"}\n\n  ❀ 　　　　  　　军事·军事理论 　　　  　　　❀::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000426\"}\n\n军事技术::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000429\"}\n\n军事百科::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000432\"}\n                ::\n\n  ❀ 　　　　　  　工学·工业技术 　　  　　　　❀::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000026\"}\n\n航空航天::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000027\"}\n\n交通运输::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000030\"}\n\n环境科学::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000031\"}\n\n农业科学::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000032\"}\n\n计算机学::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000036\"}\n                ::\n\n  ❀　　　　　　　　 医药·公共卫生　　　　　　 ❀  ::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000471\"}\n\n基础医学::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000474\"}\n\n 中 医 学 ::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000477\"}\n\n临床医学::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000480\"}\n\n   药  学  ::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000483\"}\n                                         ::\n ❀ 　　　　　  　 教育·高等教育　　　  　　　  ❀::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000399\"}\n\n基础教育::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000402\"}\n\n职业教育::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000405\"}\n\n理论管理::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000408\"}\n\n ❀  　   　　　　　大 众 · 烹 饪 　　   　　　　 ❀ ::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000120\"}\n\n  旅    游  ::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000123\"}\n\n  保    健  ::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000126\"}\n\n  育    儿  ::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000129\"}\n\n  体    育  ::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000001048\"}\n\n 小 人 书 ::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000522\"}\n\n生活百科::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000486\"}\n\n❀　　　　　　 　　理学·科普读物　　　 　　　　❀::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000017\"}\n\n数理化学::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000019\"}\n\n天文地球::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000020\"}\n\n生物科学::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000022\"}\n\n自然科学::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000023\"}\n                                         ::",
+        "exploreUrl": "<js>\nu1='::\/circlemarket\/getBook,{\"method\":\"POST\",\"body\":\"start={{page-1}}&size=25&channelId=';\nu2='\"}';\nlist=[[\"❀超星推荐❀\",130],[\"❀世界名著❀\",1000000007],[\"名家名作\",1000000008],[\"流行小说\",1000000010],[\"古典文学\",1000000009],[\"诗歌散文\",1000000033],[\"文学理论\",1000000063],[\"纪实文学\",1000000498],[\"少儿文学\",1000001204],[\"外文原著\",1000000438],[\"❀中国历史❀\",1000000057],[\"史学研究\",1000000072],[\"人物传记\",1000000066],[\"文物考古\",1000000069],[\"通俗演绎\",1000000060],[\"世界历史\",1000001049],[\"❀中国哲学❀\",1000000013],[\"西方哲学\",1000000014],[\"马列哲学\",1000000015],[\"宗教\",1000000393],[\"❀艺术摄影❀\",1000000051],[\"美术书法\",1000000042],[\"音乐舞蹈\",1000000045],[\"建筑雕塑\",1000000048],[\"戏曲戏剧\",1000000081],[\"电影电视\",1000001046],[\"艺术理论\",1000000075],[\"❀经济管理❀\",1000000102],[\"投资理财\",1000000105],[\"金融会计\",1000000108],[\"成功励志\",1000000111],[\"创业创新\",1000000138],[\"❀政法政治❀\",1000000414],[\"法学\",1000000417],[\"国际关系\",1000000420],[\"❀社科心理❀\",1000000090],[\"社会学\",1000000087],[\"语言文字\",1000000135],[\"新闻传播\",1000000435],[\"❀军事理论❀\",1000000426],[\"军事技术\",1000000429],[\"军事百科\",1000000432],[\"❀工业技术❀\",1000000026],[\"航空航天\",1000000027],[\"交通运输\",1000000030],[\"环境科学\",1000000031],[\"农业科学\",1000000032],[\"计算机学\",1000000036],[\"❀公共卫生❀\",1000000471],[\"基础医学\",1000000474],[\"中医学\",1000000477],[\"临床医学\",1000000480],[\"药学\",1000000483],[\"❀高等教育❀\",1000000399],[\"基础教育\",1000000402],[\"职业教育\",1000000405],[\"理论管理\",1000000408],[\"❀大众烹饪❀\",1000000120],[\"旅游\",1000000123],[\"保健\",1000000126],[\"育儿\",1000000129],[\"体育\",1000001048],[\"小人书\",1000000522],[\"生活百科\",1000000486],[\"❀科普读物❀\",1000000017],[\"数理化学\",1000000019],[\"天文地球\",1000000020],[\"生物科学\",1000000022],[\"自然科学\",1000000023]];\nlist.map(a=>a[0]+u1+a[1]+u2).join(\"&&\").replace(\/❀\/g,\"❀　　　　　❀\")\n<\/js>",
         "header": "",
         "lastUpdateTime": 0,
         "loginUrl": "",
         "ruleBookInfo": {
-            "author": "",
+            "author": "class.artCon@tag.p@text##\\s*编?著",
             "coverUrl": "",
             "init": "",
             "intro": "##[\\s\\S]*##<br>★★★     超星·出版     ★★★<br>★★★   本书暂无简介  ★★★###",
             "kind": "",
-            "lastChapter": "",
-            "name": "",
+            "lastChapter": "class.con@tag.a.-1@text",
+            "name": "tag.h2.0@text",
             "tocUrl": "",
             "wordCount": ""
         },
         "ruleContent": {
-            "content": ".ztArtCon@p@html",
+            "content": "class.ztArtCon@tag.p@html##([\\w，、。！？]{26}[。！？；]+[”’]?)(?=[^\\n]{27})##$1<br>",
+            "imageStyle": "FULL",
             "nextContentUrl": "",
+            "replaceRegex": "",
             "sourceRegex": "",
             "webJs": ""
         },
         "ruleExplore": {
-            "author": "$.author",
-            "bookList": "$.subject[*]",
-            "bookUrl": "https://special.zhexuezj.cn/mobile/mooc/tocourse/{$.course_Id}",
+            "author": "author##\\s*编?著",
+            "bookList": "subject",
+            "bookUrl": "mobileulr",
             "coverUrl": "coverUrl",
             "intro": "",
             "kind": "",
@@ -7451,25 +7442,25 @@
             "wordCount": ""
         },
         "ruleSearch": {
-            "author": "$.author",
+            "author": "author##\\s*编?著",
             "bookList": "$.[*]",
-            "bookUrl": "https://special.zhexuezj.cn/mobile/mooc/tocourse/{$.course_Id}",
+            "bookUrl": "mobileulr",
             "coverUrl": "coverUrl",
             "intro": "",
             "kind": "",
             "lastChapter": "",
-            "name": "$.name",
+            "name": "name",
             "wordCount": ""
         },
         "ruleToc": {
-            "chapterList": ".con@li",
-            "chapterName": "a@text",
-            "chapterUrl": "a@attr",
+            "chapterList": "+class.con@tag.a",
+            "chapterName": "text##^目录$",
+            "chapterUrl": "attr##&name=.+",
             "isVip": "",
             "nextTocUrl": "",
             "updateTime": ""
         },
-        "searchUrl": "https://yz4.chaoxing.com/circlemarket/getsearch,{\n  \"method\": \"POST\",\n  \"body\": \"start=0&size=25&sw={{key}}&channelId=52&\"\n}",
+        "searchUrl": "https:\/\/yz4.chaoxing.com\/circlemarket\/getsearch,{\n  \"method\": \"POST\",\n  \"body\": \"&channelId=52&sw={{key}}&start=0&size=25\"\n}",
         "weight": 0
     },
     {
