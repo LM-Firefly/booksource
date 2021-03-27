@@ -1125,11 +1125,11 @@
         "weight": 0
     },
     {
+        "bookSourceComment": "目录页获取正文页的更新时间和章节字数，加载慢且耗流量，如不需要删除目录页更新时间规则，并且这个更新时间仅是网页爬取文章时间，非文章更新时间",
         "bookSourceGroup": "🍺特优",
-        "bookSourceName": "🍺丹书铁券",
+        "bookSourceName": "🍺丹书铁卷",
         "bookSourceType": 0,
         "bookSourceUrl": "https:\/\/www.dstiejuan.com",
-        "bookUrlPattern": "",
         "customOrder": 0,
         "enabled": true,
         "enabledExplore": true,
@@ -1137,27 +1137,36 @@
         "lastUpdateTime": 0,
         "loginUrl": "",
         "ruleBookInfo": {
-            "intro": "class.intro.0@text",
-            "tocUrl": "class.more@href"
+            "lastChapter": "##最新[^>]+>([^<]+)<\/[^\\(]+?\\(([^\\)]+)\\)<\/##$1•$2###",
+            "tocUrl": "text.阅读目录@href",
+            "wordCount": ""
         },
         "ruleContent": {
-            "content": "id.content@tag.p@text"
+            "content": "id.content@tag.p!0@textNodes"
         },
-        "ruleExplore": {},
+        "ruleExplore": {
+            "author": "",
+            "kind": "",
+            "name": ""
+        },
         "ruleSearch": {
-            "author": "text.作者：@tag.a.0@text||tag.td.3@text||tag.span@text",
-            "bookList": "class.library@tag.li||class.rank zoom@tag.li||class.table@tag.tr||class.block@tag.li",
-            "bookUrl": "tag.td.1@tag.a.0@href||tag.a@href",
+            "author": "##author[^>]+>([^>]+)<##$1###",
+            "bookList": "class.library@li ||class.list@tag.li",
+            "bookUrl": "tag.a.0@href",
             "coverUrl": "tag.img@src",
-            "lastChapter": "class.chapter@tag.a.0@text||tag.td.2@text##最新章节.",
-            "name": "class.bookname.0@text||class.on@tag.a.1@text||tag.td.1@text||tag.a.0@text"
+            "intro": "##intro[^>]+>([^<]+)<##$1###",
+            "kind": "tag.p.0@tag.a.1@text&&class.layui-badge@text",
+            "lastChapter": "##chapter[^>]+>最新章节：([^<]+)<##$1###",
+            "name": "##bookname[^>]+>([^>]+)<##$1### ",
+            "wordCount": "tag.p.0@textNodes##作者：\\n"
         },
         "ruleToc": {
             "chapterList": "class.read@tag.dl.1@tag.dd",
             "chapterName": "tag.a@text",
-            "chapterUrl": "tag.a@href"
+            "chapterUrl": "tag.a@href",
+            "updateTime": "tag.a@href\n<js>result=\"https:\/\/www.dstiejuan.com\"+result;\njava.ajax(result)<\/js>\n##更新：([^<]+)<i[\\s\\S]+?字数：([^<]+)<\/div>##$1 $2###"
         },
-        "searchUrl": "https:\/\/www.dstiejuan.com\/search.html,{\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}\"\n}",
+        "searchUrl": "\/search.html,{\n\"method\": \"POST\",\n\"body\": \"searchkey={{key}}\"\n}",
         "weight": 0
     },
     {
@@ -8624,44 +8633,46 @@
         "weight": 0
     },
     {
-        "bookSourceComment": "error:正文内容为空\n",
+        "bookSourceComment": "封面\/排行",
         "bookSourceGroup": "💵正版",
         "bookSourceName": "💵有毒小说",
         "bookSourceType": 0,
-        "bookSourceUrl": "https://www.youdubook.com",
-        "bookUrlPattern": "",
+        "bookSourceUrl": "https:\/\/www.youdubook.com\/",
+        "bookUrlPattern": ".+\/book_detail\/.+",
         "customOrder": 0,
         "enabled": true,
         "enabledExplore": true,
-        "exploreUrl": "西幻传说::https://www.youdubook.com/booklibrary/index/str/6_0_0_0_0_0_0?page={{page}}\n东方奇幻::https://www.youdubook.com/booklibrary/index/str/3_0_0_0_0_0_0?page={{page}}\n游戏异界::https://www.youdubook.com/booklibrary/index/str/2_0_0_0_0_0_0?page={{page}}\n科幻时空::https://www.youdubook.com/booklibrary/index/str/9_0_0_0_0_0_0?page={{page}}\n都市逸闻::https://www.youdubook.com/booklibrary/index/str/8_0_0_0_0_0_0?page={{page}}\n历史军事::https://www.youdubook.com/booklibrary/index/str/7_0_0_0_0_0_0?page={{page}}\n 克苏鲁 ::https://www.youdubook.com/booklibrary/index/str/10_0_0_0_0_0_0?page={{page}}",
+        "exploreUrl": "西幻传说::\/booklibrary\/index\/str\/6_0_0_0_0_0_0?page={{page}}\n东方奇幻::\/booklibrary\/index\/str\/3_0_0_0_0_0_0?page={{page}}\n游戏异界::\/booklibrary\/index\/str\/2_0_0_0_0_0_0?page={{page}}\n科幻时空::\/booklibrary\/index\/str\/9_0_0_0_0_0_0?page={{page}}\n都市逸闻::\/booklibrary\/index\/str\/8_0_0_0_0_0_0?page={{page}}\n历史军事::\/booklibrary\/index\/str\/7_0_0_0_0_0_0?page={{page}}\n 克苏鲁 ::\/booklibrary\/index\/str\/10_0_0_0_0_0_0?page={{page}}\n 总点击 ::\/booklibrary\/index\/str\/0_3_0_0_0_0_1?page={{page}}",
         "lastUpdateTime": 0,
-        "loginUrl": "https://www.youdubook.com/user/login",
+        "loginUrl": "https:\/\/www.youdubook.com\/user\/login",
         "ruleBookInfo": {
             "intro": "class.synopsisCon@text",
             "kind": "class.label@li@text",
-            "lastChapter": "class.zhangjie@tag.a.0@text##更新.*",
-            "wordCount": "class.Font@tag.span.0@text##$##万字"
+            "lastChapter": "class.title@tag.i@text&&class.zhangjie@tag.span.0@text##更新时间：(\\S+)\\h\\S+\\n##$1▪",
+            "wordCount": "class.Font@tag.span.0@text##$##万"
         },
         "ruleContent": {
-            "content": "id.ChapterContent@html",
+            "content": "id.ChapterContent@tag.p@textNodes",
             "imageStyle": "0",
             "webJs": ""
         },
         "ruleExplore": {},
         "ruleSearch": {
             "author": "class.nickname@text",
-            "bookList": "class.BooklibraryList@tag.ul@tag.li",
+            "bookList": "+class.BooklibraryList@tag.ul@tag.li",
             "bookUrl": "tag.span@tag.a@href",
             "coverUrl": "tag.em@tag.img@data-original",
-            "kind": "class.hit@text&&class.favo@text",
+            "kind": "class.hit@text&&class.favo@text##：",
             "name": "tag.span@tag.a@text"
         },
         "ruleToc": {
-            "chapterList": "class.chapter_list@tag.ul@tag.li",
+            "chapterList": "+class.chapter_list@tag.ul@tag.li",
             "chapterName": "tag.a@text",
-            "chapterUrl": "tag.a@href##$##,{\"webView\":true}"
+            "chapterUrl": "tag.a@href##$##,{\"webView\":true}",
+            "isVip": "class.lock_fill@text",
+            "updateTime": ""
         },
-        "searchUrl": "https://www.youdubook.com/booklibrary/index?keywords={{key}}",
+        "searchUrl": "\/booklibrary\/index?keywords={{key}}",
         "weight": 0
     },
     {
