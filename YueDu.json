@@ -948,6 +948,7 @@
         "weight": 0
     },
     {
+        "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺免费小说之王",
         "bookSourceType": 0,
@@ -956,15 +957,15 @@
         "customOrder": 0,
         "enabled": true,
         "enabledExplore": true,
-        "exploreUrl": "金牌人气::https://reader.browser.miui.com/api/v2/ranking?len=20&page={searchPage}&type=1-golden-total\n新书培养::https://reader.browser.miui.com/api/v2/ranking?len=20&page={searchPage}&type=1-new-total\n热门完结::https://reader.browser.miui.com /api/v2/ranking?len=20&page={searchPage}&type=1-end-total\n搜索风云::https://reader.browser.miui.com/api/v2/ranking?len=20&page={searchPage}&type=1-search-total\n仙侠::https://reader.browser.miui.com/api/v2/book/list?catId=6&page={searchPage}&len=20\n武侠::https://reader.browser.miui.com/api/v2/book/list?catId=5&page={searchPage}&len=20\n玄幻::https://reader.browser.miui.com/api/v2/book/list?catId=3&page={searchPage}&len=20\n奇幻::https://reader.browser.miui.com/api/v2/book/list?catId=4&page={searchPage}&len=20\n科幻::https://reader.browser.miui.com/api/v2/book/list?catId=11&page={searchPage}&len=20\n都市::https://reader.browser.miui.com/api/v2/book/list?catId=7&page={searchPage}&len=20\n历史::https://reader.browser.miui.com/api/v2/book/list?catId=8&page={searchPage}&len=20\n游戏::https://reader.browser.miui.com/api/v2/book/list?catId=12&page={searchPage}&len=20\n竞技::https://reader.browser.miui.com/api/v2/book/list?catId=13&page={searchPage}&len=20\n同人::https://reader.browser.miui.com/api/v2/book/list?catId=143&page={searchPage}&len=20",
-        "header": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4402.0 Safari/537.36",
+        "exploreUrl": "金牌人气榜::https://reader.browser.miui.com/api/v2/ranking?len=10&page={{page}}&type=1-golden-total\n新书培养榜::https://reader.browser.miui.com/api/v2/ranking?len=10&page={{page}}&type=1-new-total\n热门完结榜::https://reader.browser.miui.com /api/v2/ranking?len=10&page={{page}}&type=1-end-total\n搜索风云榜::https://reader.browser.miui.com/api/v2/ranking?len=10&page={{page}}&type=1-search-total\n精品::https://reader.browser.miui.com/api/v2/channels?id=22\n仙侠::https://reader.browser.miui.com/api/v2/book/list?catId=6&page={{page}}&len=10\n武侠::https://reader.browser.miui.com/api/v2/book/list?catId=5&page={{page}}&len=10\n灵异::https://reader.browser.miui.com/api/v2/book/list?catId=10&page={{page}}&len=10\n玄幻::https://reader.browser.miui.com/api/v2/book/list?catId=3&page={{page}}&len=10\n奇幻::https://reader.browser.miui.com/api/v2/book/list?catId=4&page={{page}}&len=10\n科幻::https://reader.browser.miui.com/api/v2/book/list?catId=11&page={{page}}&len=40\n都市::https://reader.browser.miui.com/api/v2/book/list?catId=7&page={{page}}&len=10\n历史::https://reader.browser.miui.com/api/v2/book/list?catId=8&page={{page}}&len=10\n游戏::https://reader.browser.miui.com/api/v2/book/list?catId=12&page={{page}}&len=10\n竞技::https://reader.browser.miui.com/api/v2/book/list?catId=13&page={{page}}&len=10\n同人::https://reader.browser.miui.com/api/v2/book/list?catId=143&page={{page}}&len=10",
+        "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4402.0 Safari/537.36\"\n}",
         "lastUpdateTime": 0,
         "loginUrl": "",
         "ruleBookInfo": {
             "author": "",
             "coverUrl": "",
             "init": "",
-            "intro": "",
+            "intro": "$.description",
             "kind": "",
             "lastChapter": "",
             "name": "",
@@ -989,25 +990,25 @@
             "wordCount": ""
         },
         "ruleSearch": {
-            "author": "author",
-            "bookList": "<js>\nJSON.parse(result).related.map(function(o) {\n    var detail = 'https:\/\/reader.browser.miui.com\/api\/v2\/book\/' + o.id;\n    var J = JSON.parse(java.ajax(detail)).data;\n    return {\n        name: o.title,\n        author: o.author,\n        tags: [J.bookInfo.bookStatus,J.bookInfo.secondCategoryName].join(','),\n        num: J.bookInfo.wordCount + '字',\n        latest: J.lastChapter.chapterName.replace(\/[\\(（].*[求更谢乐发推].*[）\\)]\/,'').replace(\/\\s+\/g, ' ') +  String(java.timeFormat(J.lastChapter.updateTime)).replace(\/(\\d+\\\/\\d+\\\/\\d+).*\/,'（$1）'),\n        cover: o.image,\n        intro: String(o.description).trim(),\n        catalogUrl: '\/api\/v2\/chapter\/list\/' + o.id\n    }\n}).filter(v =>v.name);\n<\/js>",
-            "bookUrl": "catalogUrl",
-            "coverUrl": "image",
-            "intro": "intro",
-            "kind": "tags",
-            "lastChapter": "status",
-            "name": "name",
-            "wordCount": "num"
+          "author": "$.author",
+          "bookList": "$..related[*]||$..list[*]||$..data[*]",
+          "bookUrl": "https://reader.browser.miui.com/api/v2/chapter/list/{{$.id}}{{$.bookId}}",
+          "coverUrl": "{{$.image}}{{$.imgUrl}}{{$.img}}",
+          "intro": "{{$.description}}{{$.des}}",
+          "kind": "$.tags||$.type",
+          "lastChapter": "",
+          "name": "$.title||$.name",
+          "wordCount": "$.status"
         },
         "ruleToc": {
-            "chapterList": "$.data.list",
-            "chapterName": "$.chapterName##[\\(（].*[求更谢乐发推].*[）\\)]",
-            "chapterUrl": "$.chapterId@js:\"http:\/\/reader.browser.miui.com\/api\/v2\/chapter\/content\/\" + baseUrl.match(\/list\\\/(\\d+)\/)[1] + \"\/?chapterId=\"+result+\"&volumeId=1\"",
-            "isVip": "$.price",
-            "nextTocUrl": "",
-            "updateTime": ""
+          "chapterList": "$.data.list",
+          "chapterName": "{{$.volumeTitle}} {{$.chapterName}} ##[\\(（].*[求更谢乐发推].*[）\\)]",
+          "chapterUrl": "{{String(book.bookUrl).replace(/list/,\"content\")}}?chapterId={{$.chapterId}}&volumeId={{$.volumeIndex}}",
+          "isVip": "{{$.free}}",
+          "nextTocUrl": "",
+          "updateTime": ""
         },
-        "searchUrl": "\/search-api\/v2\/novel\/search?query={{key}}&start=0&size=10",
+        "searchUrl": "https://reader.browser.miui.com/search-api/v2/novel/search?query={{key}}&start=0&size=50",
         "weight": 0
     },
     {
@@ -2179,37 +2180,130 @@
         "customOrder": 0,
         "enabled": true,
         "enabledExplore": true,
-        "exploreUrl": "",
-        "header": "",
+        "exploreUrl": "总排行榜::\/topallvisit\/{{page}}.html\n月排行榜::\/topmonthvisit\/{{page}}.html\n周排行榜::\/topweekvisit\/{{page}}.html\n总推荐榜::\/topallvote\/{{page}}.html\n月推荐榜::\/topmonthvote\/{{page}}.html\n周推荐榜::\/topweekvote\/{{page}}.html\n本站推荐::\/toptoptime\/{{page}}.html\n收藏排行::\/topgoodnum\/{{page}}.html\n字数排行::\/topsize\/{{page}}.html\n最近更新::\/toplastupdate\/{{page}}.html\n最新小说::\/toppostdate\/{{page}}.html\n玄幻魔法::\/fenlei1\/{{page}}.html\n武侠修真::\/fenlei2\/{{page}}.html\n都市言情::\/fenlei3\/{{page}}.html\n历史军事::\/fenlei4\/{{page}}.html\n侦探推理::\/fenlei5\/{{page}}.html\n网游动漫::\/fenlei6\/{{page}}.html\n科幻小说::\/fenlei7\/{{page}}.html\n恐怖灵异::\/fenlei8\/{{page}}.html\n其他类型::fenlei9\/{{page}}.html",
+        "header": "{\n\"User-Agent\": \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/80.0.3987.149 Safari\/537.36 Edg\/80.0.361.69\"\n}",
         "lastUpdateTime": 0,
         "loginUrl": "",
         "ruleBookInfo": {
-            "author": "id.info@tag.a.0@text",
+            "init": "",
+            "name": "class.bookTitle@textNodes",
+            "author": "class.bookTitle small a@text",
             "coverUrl": "class.pic@tag.img@src",
             "intro": "class.bookinfo_intro@text",
-            "kind": "class.nav-mbx@tag.a.2@text",
-            "lastChapter": "class.update@tag.a@text##正文 ",
-            "name": "id.info@tag.h1@text##/ .*"
+            "kind": "ol.breadcrumb li:nth-child(2) a@text",
+            "wordCount": "span.hidden-xs@text",
+            "lastChapter": "div.col-md-10 p:nth-child(3) a@text"
         },
         "ruleContent": {
-            "content": "id.htmlContent@html##飘天文学.*最新章节！"
+            "content": "id.htmlContent@html##飘天文学 www.piaotian.org，最快更新|本章未完，点击下一页继续阅读|.*?最新章节！|",
+            "nextContentUrl": "id.linkNext@href",
+            "webJs": "",
+            "sourceRegex": ""
         },
         "ruleExplore": {},
         "ruleSearch": {
-            "author": "tag.td.2@text",
-            "bookList": "class.grid@tag.tr!0",
-            "bookUrl": "tag.a.0@href",
+            "author": "class.text-muted fs-12@text##/ 著",
+            "bookList": "class.col-md-4 col-xs-4 book-coverlist",
+            "bookUrl": "h4 a@href",
             "kind": "tag.td.5@text",
             "lastChapter": "tag.a.1@text",
-            "name": "tag.a.0@text",
+            "name": "h4 a@text",
+            "intro": "class.text-muted fs-12 hidden-xs@text",
+            "coverUrl": "class.thumbnail@src",
             "wordCount": "tag.td.3@text"
         },
         "ruleToc": {
-            "chapterList": "class.chapterlist.1@tag.li",
-            "chapterName": "tag.a@text",
-            "chapterUrl": "tag.a@href"
+            "chapterList": "class.col-md-3",
+            "chapterName": "a@text",
+            "chapterUrl": "a@href",
+            "isVip": "",
+            "updateTime": "",
+            "nextTocUrl": ""
         },
-        "searchUrl": "https://www.piaotian.org/modules/article/search.php?searchkey={{key}}&submit=,{\"charset\":\"gbk\"}",
+        "searchUrl": "https://www.piaotian.org/modules/article/search.php?searchkey={{key}}&page={{page}},{\"charset\": \"gbk\"}",
+        "weight": 0
+    },
+    {
+        "bookSourceComment": "#class.novelslistss\n#id.list\n#id.vontent",
+        "bookSourceGroup": "🍺特优",
+        "bookSourceName": "🍺飘天文学 piaotianzw",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https:\/\/www.piaotianzw.com\/",
+        "bookUrlPattern": ".+\/book_\\d+\/",
+        "customOrder": 0,
+        "enabled": true,
+        "enabledExplore": true,
+        "exploreUrl": "最新入库::https:\/\/www.piaotianzw.com\/top\/postdate\/{{page}}.html\n最近更新::https:\/\/www.piaotianzw.com\/top\/lastupdate\/{{page}}.html",
+        "lastUpdateTime": 1615703941099,
+        "loginUrl": "",
+        "ruleBookInfo": {
+            "author": "$4",
+            "coverUrl": "$2",
+            "init": ":(?=<meta property)(?:([^\"]*)\"){12}(?:([^\"]*)\"){4}(?:([^\"]*)\"){4}(?:([^\"]*)\"){4}(?:([^\"]*)\"){4}(?:([^\"]*)\"){4}(?:([^\"]*)\"){8}(?:([^\"]*?)(?: \\d[^\"]+)?\"){8}(?:([^\"]*)\"){4}",
+            "intro": "$1",
+            "kind": "$3,$7",
+            "lastChapter": "$8▪$9",
+            "name": "$5",
+            "tocUrl": "$6"
+        },
+        "ruleContent": {
+            "content": "id.content@textNodes",
+            "replaceRegex": "##^.+最新章节！\\n"
+        },
+        "ruleExplore": {},
+        "ruleSearch": {
+            "author": "class.s4@text",
+            "bookList": "class.novelslistss@tag.li",
+            "bookUrl": "tag.a.0@href",
+            "coverUrl": "tag.a.0@href##_((\\d+)\\d{3})##\/files\/article\/image\/$2\/$1\/$1s.jpg###",
+            "kind": "class.s1@text",
+            "lastChapter": "class.s5@text&&class.s3@text##(\\h\\S+)?\\n##▪",
+            "name": "class.s2@text"
+        },
+        "ruleToc": {
+            "chapterList": "\/\/div[@id=\"list\"]\/dl\/dt[2]\/following-sibling::dd\/a",
+            "chapterName": "text",
+            "chapterUrl": "href"
+        },
+        "searchUrl": "https:\/\/www.piaotianzw.com\/modules\/article\/search.php?searchkey={{key}},{\"charset\":\"GBK\"}",
+        "weight": 0
+    },
+    {
+        "bookSourceComment": "",
+        "bookSourceGroup": "🍺特优",
+        "bookSourceName": "🍺飘天文学网 piaotian5",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https:\/\/m.piaotian5.com",
+        "customOrder": 0,
+        "enabled": true,
+        "enabledExplore": true,
+        "lastUpdateTime": 1609161586915,
+        "ruleBookInfo": {
+            "intro": "class.book_about@dd@text##最新章节推荐.*",
+            "wordCount": "##字数：(\\d+)##$1###"
+        },
+        "ruleContent": {
+            "content": "id.chaptercontent@html",
+            "nextContentUrl": "text.下一章@href",
+            "replaceRegex": "##\\s*.*?官方APP下载.*\\s*|\\s*.*?\\(第\\d+\/\\d+页\\)\\s*"
+        },
+        "ruleExplore": {},
+        "ruleSearch": {
+            "author": "class.author@text",
+            "bookList": "class.bookbox",
+            "bookUrl": "tag.a.0@href",
+            "coverUrl": "img@src",
+            "kind": "class.cat@text##.*?：",
+            "lastChapter": "class.update@a@text",
+            "name": "h4@text"
+        },
+        "ruleToc": {
+            "chapterList": "class.book_last.-1@dd@a",
+            "chapterName": "text",
+            "chapterUrl": "href",
+            "nextTocUrl": "select@option@value"
+        },
+        "searchUrl": "https:\/\/m.piaotian5.com\/s.php?q={{key}},{\n\"charset\": \"gbk\"\n}",
         "weight": 0
     },
     {
@@ -2401,51 +2495,6 @@
             "chapterUrl": "tag.a@href"
         },
         "searchUrl": "https://www.ymxxs.com/search.htm?keyword={{key}}",
-        "weight": 0
-    },
-    {
-        "bookSourceComment": "#class.novelslistss\n#id.list\n#id.vontent",
-        "bookSourceGroup": "🍺特优",
-        "bookSourceName": "🍺飘天文学",
-        "bookSourceType": 0,
-        "bookSourceUrl": "https:\/\/www.piaotianzw.com\/",
-        "bookUrlPattern": ".+\/book_\\d+\/",
-        "customOrder": 0,
-        "enabled": false,
-        "enabledExplore": true,
-        "exploreUrl": "最新入库::https:\/\/www.piaotianzw.com\/top\/postdate\/{{page}}.html\n最近更新::https:\/\/www.piaotianzw.com\/top\/lastupdate\/{{page}}.html",
-        "lastUpdateTime": 1615703941099,
-        "loginUrl": "",
-        "ruleBookInfo": {
-            "author": "$4",
-            "coverUrl": "$2",
-            "init": ":(?=<meta property)(?:([^\"]*)\"){12}(?:([^\"]*)\"){4}(?:([^\"]*)\"){4}(?:([^\"]*)\"){4}(?:([^\"]*)\"){4}(?:([^\"]*)\"){4}(?:([^\"]*)\"){8}(?:([^\"]*?)(?: \\d[^\"]+)?\"){8}(?:([^\"]*)\"){4}",
-            "intro": "$1",
-            "kind": "$3,$7",
-            "lastChapter": "$8▪$9",
-            "name": "$5",
-            "tocUrl": "$6"
-        },
-        "ruleContent": {
-            "content": "id.content@textNodes",
-            "replaceRegex": "##^.+最新章节！\\n"
-        },
-        "ruleExplore": {},
-        "ruleSearch": {
-            "author": "class.s4@text",
-            "bookList": "class.novelslistss@tag.li",
-            "bookUrl": "tag.a.0@href",
-            "coverUrl": "tag.a.0@href##_((\\d+)\\d{3})##\/files\/article\/image\/$2\/$1\/$1s.jpg###",
-            "kind": "class.s1@text",
-            "lastChapter": "class.s5@text&&class.s3@text##(\\h\\S+)?\\n##▪",
-            "name": "class.s2@text"
-        },
-        "ruleToc": {
-            "chapterList": "\/\/div[@id=\"list\"]\/dl\/dt[2]\/following-sibling::dd\/a",
-            "chapterName": "text",
-            "chapterUrl": "href"
-        },
-        "searchUrl": "https:\/\/www.piaotianzw.com\/modules\/article\/search.php?searchkey={{key}},{\"charset\":\"GBK\"}",
         "weight": 0
     },
     {
@@ -3823,6 +3872,7 @@
         "customOrder": 0,
         "enabled": true,
         "enabledExplore": true,
+        "exploreUrl": "月榜::https://www.kayege.net/ph/month_{{page}}.html\n总榜::/ph/all_{{page}}.html\n全部::/xclass/0/{{page}}.html\n玄幻::/xclass/1/{{page}}.html\n修真::/xclass/2/{{page}}.html\n都市::/xclass/3/{{page}}.html\n穿越::/xclass/4/{{page}}.html\n网游::/xclass/5/{{page}}.html\n科幻::/xclass/6/{{page}}.html\n其他::/xclass/7/{{page}}.html",
         "lastUpdateTime": 1616494321501,
         "ruleBookInfo": {
             "author": "##作者[^>]+>[^>]+>([^<]+)##$1###",
@@ -3855,6 +3905,49 @@
             "chapterUrl": "href"
         },
         "searchUrl": "\/modules\/article\/search.php,{\n\"charset\": \"gbk\",\n\"method\": \"POST\",\n\"body\": \"searchkey={{key}}\"\n}",
+        "weight": 0
+    },
+    {
+        "bookSourceComment": "https://celeter.github.io/SourceGo\n",
+        "bookSourceGroup": "🍺特优",
+        "bookSourceName": "🍺卡夜阁info",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https://m.kayege.info",
+        "bookUrlPattern": "",
+        "customOrder": 0,
+        "enabled": true,
+        "enabledExplore": true,
+        "exploreUrl": "月榜::https://m.kayege.info/ph/month_{{page}}.html\n总榜::/ph/all_{{page}}.html\n全部::/xclass/0/{{page}}.html\n玄幻::/xclass/1/{{page}}.html\n修真::/xclass/2/{{page}}.html\n都市::/xclass/3/{{page}}.html\n穿越::/xclass/4/{{page}}.html\n网游::/xclass/5/{{page}}.html\n科幻::/xclass/6/{{page}}.html\n其他::/xclass/7/{{page}}.html",
+        "lastUpdateTime": 1613559696262,
+        "ruleBookInfo": {
+          "author": "class.author@text##作者：",
+          "coverUrl": "class.synopsisArea_detail@tag.img@src",
+          "intro": "class.review@text",
+          "kind": "class.sort@text##类别：",
+          "lastChapter": "class.directoryArea@tag.p.0@tag.a@text",
+          "name": "class.title@text",
+          "tocUrl": "text.查看完整目录@href"
+        },
+        "ruleContent": {
+          "content": "id.chaptercontent541269856@textNodes||class.Readarea ReadAjax_content@textNodes"
+        },
+        "ruleExplore": {},
+        "ruleSearch": {
+          "author": "tag.p.1@text##.*作者：",
+          "bookList": "@css:div.recommend div.hot_sale",
+          "bookUrl": "tag.a@href",
+          "coverUrl": "tag.a@href##/(\\d+)_(\\d+)/##https://www.kayege.info/files/article/image/$1/$2/$2s.jpg",
+          "intro": "class.review@textNodes##简介：",
+          "kind": "tag.p.1@text##\\|.*|作者：.*",
+          "lastChapter": "tag.p.2@text##.*更新：|简介：.*",
+          "name": "class.title@text"
+        },
+        "ruleToc": {
+          "chapterList": "id.chapterlist@tag.p!0||class.directoryArea@tag.p!0",
+          "chapterName": "tag.a@text",
+          "chapterUrl": "tag.a@href"
+        },
+        "searchUrl": "https://m.kayege.info/s.php?keyword={{key}}&t=1",
         "weight": 0
     },
     {
