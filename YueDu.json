@@ -8006,6 +8006,134 @@
         "weight": 0
     },
     {
+        "bookSourceGroup": "🍺特优",
+        "bookSourceName": "🍺书农小说 qxswk",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https:\/\/m.qxswk.com",
+        "bookUrlPattern": "",
+        "customOrder": 0,
+        "enabled": true,
+        "enabledExplore": false,
+        "exploreUrl": "",
+        "lastUpdateTime": 0,
+        "loginUrl": "",
+        "ruleBookInfo": {
+            "coverUrl": "",
+            "intro": "class.bookCont_content@text",
+            "lastChapter": "",
+            "tocUrl": "https:\/\/m.qxswk.com\/e\/extend\/bookpage\/pages.php?id={{baseUrl.match(\/(\\d+)\/)[1]}}&dz=asc&pageNum=0"
+        },
+        "ruleContent": {
+            "content": "id.conWp@html"
+        },
+        "ruleExplore": {},
+        "ruleSearch": {
+            "author": "class.book-author@text##\\s*\/.*",
+            "bookList": "class.search-wrap-first&&class.search-result-book-item",
+            "bookUrl": "tag.a.0@href",
+            "coverUrl": "tag.img.0@src",
+            "intro": "tag.p@text",
+            "kind": "class.common.3@text",
+            "name": "class.title@text"
+        },
+        "ruleToc": {
+            "chapterList": "$.list[*]",
+            "chapterName": "$.title",
+            "chapterUrl": "$.pic",
+            "nextTocUrl": "<js>\npage=result.match(\/totalPage\":(\\d+)\/)[1];\nlist=[];\nfor(i=1;i<page;i++){\nlist.push(baseUrl.replace(\/pageNum=\\d+\/,'pageNum='+i))\n}\nlist<\/js>"
+        },
+        "searchUrl": "\/e\/search\/index.php,{\n\"method\": \"POST\",\n\"body\":\"tbname=bookname&show=title&tempid=1&keyboard={{key}}\"\n}",
+        "weight": 0
+    },
+    {
+        "bookSourceGroup": "🍺特优",
+        "bookSourceName": "🍺书农小说 snxiaoshuo",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https:\/\/m.snxiaoshuo.com",
+        "customOrder": 0,
+        "enabled": true,
+        "enabledExplore": true,
+        "lastUpdateTime": 0,
+        "ruleBookInfo": {
+            "author": "class.author@tag.a.0@text",
+            "coverUrl": "[property=\"og:image\"]@content",
+            "intro": "[name=\"description\"]@content##.*提供：",
+            "kind": "class.author@tag.a.1@text",
+            "lastChapter": "class@new@tag.text",
+            "name": "class.name@text",
+            "tocUrl": "class.now@tag.a@href",
+            "wordCount": "class.detail@tag.span.1@text"
+        },
+        "ruleContent": {
+            "content": "class.content@tag.p!-1@textNodes"
+        },
+        "ruleExplore": {},
+        "ruleSearch": {
+            "author": "class.data.0@tag.a.0@text",
+            "bookList": "class.list@tag.li",
+            "bookUrl": "tag.a@href",
+            "coverUrl": "tag.img@src",
+            "intro": "class.intro@text",
+            "kind": "class.data@tag.span@text",
+            "lastChapter": "class.data.1@tag.a@text",
+            "name": "tag.a.1@text"
+        },
+        "ruleToc": {
+            "chapterList": "class.read@tag.li@tag.a",
+            "chapterName": "text",
+            "chapterUrl": "href",
+            "nextTocUrl": "class.pagelist@tag.option@value"
+        },
+        "searchUrl": "https:\/\/m.snxiaoshuo.com\/search.html,{\n\"method\": \"POST\",\n\"body\": \"searchkey={{key}}\"\n}",
+        "weight": 0
+    },
+    {
+        "bookSourceComment": "",
+        "bookSourceGroup": "🍺特优",
+        "bookSourceName": "🍺书农小说 yueleshow",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https:\/\/www.yueleshow.com\/",
+        "bookUrlPattern": "",
+        "customOrder": 0,
+        "enabled": false,
+        "enabledExplore": false,
+        "exploreUrl": "",
+        "lastUpdateTime": 1613011914933,
+        "loginUrl": "",
+        "ruleBookInfo": {
+            "author": "[property=\"og:novel:author\"]@content",
+            "coverUrl": "",
+            "intro": "class.bookCont_content@text",
+            "kind": "[property=\"og:novel:category\"]@content&&[property=\"og:novel:status\"]@content",
+            "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
+            "name": "[property=\"og:novel:book_name\"]@content",
+            "tocUrl": "",
+            "wordCount": "[property=\"og:novel:update_time\"]@content##\\h.+"
+        },
+        "ruleContent": {
+            "content": "@css:#htmlContent>p:not(:has(a))@textNodes",
+            "replaceRegex": "##.+\\h作者：\\S{1,5}\\n"
+        },
+        "ruleExplore": {},
+        "ruleSearch": {
+            "author": "tag.a.1@text",
+            "bookList": "class.listbox@tag.ul@tag.li",
+            "bookUrl": "tag.a.0@href##\/\/m\\.qxswk\\.com##\/\/www.yueleshow.com",
+            "coverUrl": "",
+            "intro": "class.u@text",
+            "kind": "",
+            "name": "tag.a.0@text##《(.+?)》##$1###"
+        },
+        "ruleToc": {
+            "chapterList": "class.book_list@tag.ul@tag.a",
+            "chapterName": "text",
+            "chapterUrl": "href",
+            "nextTocUrl": ""
+        },
+        "searchUrl": "\/e\/search\/index.php,{\n\"method\": \"POST\",\n\"body\":\"tbname=bookname&show=title&tempid=1&keyboard={{key}}\"\n}",
+        "weight": 0
+    },
+    {
         "bookSourceComment": "https://celeter.github.io/SourceGo",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺微风小说",
@@ -8246,6 +8374,40 @@
             "chapterUrl": "tag.a@href"
         },
         "searchUrl": "https://www.xiuxs.org/plus/search.php?q={{key}}&searchtype=articlename",
+        "weight": 0
+    },
+    {
+        "bookSourceComment": "HINOTORI",
+        "bookSourceGroup": "🍺特优",
+        "bookSourceName": "🍺维基阅读",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https:\/\/www.wikiyuedu.com",
+        "customOrder": -117553,
+        "enabled": false,
+        "enabledExplore": false,
+        "lastUpdateTime": 1615361591469,
+        "ruleBookInfo": {
+            "coverUrl": "img@src",
+            "intro": "class.m-summary@text",
+            "lastChapter": "class.m-btn@text##最新章节："
+        },
+        "ruleContent": {
+            "content": "id.content@textNodes",
+            "nextContentUrl": "class.m-page@tag.a.-1@href"
+        },
+        "ruleExplore": {},
+        "ruleSearch": {
+            "author": "class.col-xs-4@text",
+            "bookList": "tr!0",
+            "bookUrl": "tag.a.0@href",
+            "name": "tag.a.0@text"
+        },
+        "ruleToc": {
+            "chapterList": "li!0:1@a",
+            "chapterName": "text",
+            "chapterUrl": "href"
+        },
+        "searchUrl": "https:\/\/www.wikiyuedu.com\/e\/search\/result\/?searchid=715,{\n\"method\": \"POST\",\n\"body\":\"tbname=bookname&show=title,writer&tempid=1&keyboard={{key}}\",\n}",
         "weight": 0
     },
     {
