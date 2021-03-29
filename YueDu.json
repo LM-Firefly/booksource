@@ -11496,6 +11496,51 @@
         "weight": 0
     },
     {
+        "bookSourceComment": "正文明文",
+        "bookSourceGroup": "🎨漫画",
+        "bookSourceName": "🎨WebToon",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https:\/\/m.webtoons.com",
+        "bookUrlPattern": "",
+        "customOrder": 0,
+        "enabled": true,
+        "enabledExplore": true,
+        "exploreUrl": "",
+        "header": "{\n  \"User-Agent\": \"Mozilla\/5.0 (Linux; Android 6.0; Nexus 5 Build\/MRA58N) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/75.0.3770.142 Mobile Safari\/537.36\"\n}",
+        "lastUpdateTime": 1610069634430,
+        "loginUrl": "",
+        "ruleBookInfo": {
+            "author": "@css:.author@text",
+            "coverUrl": "@css:#header@style@js:result.match(\/\\((.*?)\\)\/)[1]",
+            "intro": "@css:p.summary > span@text",
+            "kind": "@css:.genre@text",
+            "lastChapter": "@css:#_episodeList li:first-of-type p:first-of-type span@text",
+            "name": "@css:.subj@text"
+        },
+        "ruleContent": {
+            "content": "@js:eval(result.match(\/(var imageList = \\[[\\s\\S]+?\\])\/)[1]);\nhtml='';\nfor(i in imageList){\nhtml+='<img src=\"'+imageList[i].url+'\">'\n}\nhtml",
+            "imageStyle": "FULL",
+            "nextContentUrl": "",
+            "replaceRegex": "",
+            "webJs": ""
+        },
+        "ruleExplore": {},
+        "ruleSearch": {
+            "author": "@css:.author@text",
+            "bookList": "@css:._searchResultList li",
+            "bookUrl": "@css:a@href",
+            "coverUrl": "@css:.pic img@src",
+            "name": "@css:.ellipsis@text"
+        },
+        "ruleToc": {
+            "chapterList": "-id._episodeList@li",
+            "chapterName": "@css:.sub_title@text",
+            "chapterUrl": "@css:a@href"
+        },
+        "searchUrl": "https:\/\/m.webtoons.com\/zh-hant\/search,{\n  \"headers\": \"{Cookie:\\\"locale=zh_TW;\\\",Referer:\\\"https:\/\/us-m.webtoons.com\/zh-hant\/search\\\"}\",\n  \"method\": \"POST\",\n  \"body\": \"searchType=ALL&keyword={{key}}\"\n}",
+        "weight": 0
+    },
+    {
         "bookSourceComment": "感谢关耳小姐姐修改",
         "bookSourceGroup": "🎨漫画",
         "bookSourceName": "🎨动漫之家v3api",
@@ -11593,6 +11638,112 @@
             "chapterUrl": "href"
         },
         "searchUrl": "\/search\/show\/1\/{{key}}\/{{page-1}}.json",
+        "weight": 0
+    },
+    {
+        "bookSourceComment": "且用且珍惜",
+        "bookSourceGroup": "🎨漫画",
+        "bookSourceName": "🎨禁漫天堂",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https:\/\/18comic.bet",
+        "bookUrlPattern": "",
+        "customOrder": 0,
+        "enabled": true,
+        "enabledExplore": true,
+        "exploreUrl": "总排行榜::\/albums?o=mv&page={{page}}\n月排行榜::\/albums?t=m&o=mv&page={{page}}\n周排行榜::\/albums?o=mv&t=w&page={{page}}\n日排行榜::\/albums?o=mv&t=t&page={{page}}\n                                                                                                     ::                                        \n连载更新::\/promotes\/26\n网站推荐::\/promotes\/27\nCG图集::\/albums\/doujin\/sub\/CG?page={{page}}\nCosplay::\/albums\/doujin\/sub\/cosplay?page={{page}}\n全彩::\/search\/photos?search_query=%E5%85%A8%E5%BD%A9&page={{page}}\n重口::\/search\/photos?search_query=%E9%87%8D%E5%8F%A3&page={{page}}\n猎奇::\/search\/photos?search_query=%E7%8D%B5%E5%A5%87&page={{page}}\n口交::\/search\/photos?search_query=%E5%8F%A3%E4%BA%A4&main_tag=0&page={{page}}\n乳汁::\/search\/photos?search_query=%E4%B9%B3%E6%B1%81&main_tag=0&page={{page}}\n骑大车::\/search\/photos?search_query=%E9%AA%91%E5%A4%A7%E8%BD%A6&main_tag=0&page={{page}}\n勇者::\/search\/photos?search_query=%E5%8B%87%E8%80%85&main_tag=0&page={{page}}\n魔物娘::\/search\/photos?search_query=%E9%AD%94%E7%89%A9%E5%A8%98&main_tag=0&page={{page}}\n魅魔::\/search\/photos?search_query=%E9%AD%85%E9%AD%94&page={{page}}\n精灵::\/search\/photos?search_query=%E7%B2%BE%E7%81%B5&main_tag=0&page={{page}}\n触手::\/search\/photos?search_query=%E8%A7%A6%E6%89%8B&main_tag=0&page={{page}}\n阿黑颜::\/search\/photos?search_query=%E9%98%BF%E9%BB%91%E9%A1%8F&page={{page}}\n扶他::\/search\/photos?search_query=%E6%89%B6%E4%BB%96&page={{page}}\n风的工坊::\/search\/photos?search_query=%E9%A2%A8%E7%9A%84%E5%B7%A5%E6%88%BF&page={{page}}\n4K汉化组::\/search\/photos?search_query=4k%E6%BC%A2%E5%8C%96%E7%B5%84&page={{page}}\n\n                                                                                                     ::                                     \n剧情向::\/search\/photos?search_query=%E5%8A%87%E6%83%85%E5%90%91&page={{page}}\n纯爱::\/search\/photos?search_query=%E7%B4%94%E6%84%9B&page={{page}}\n痴女::\/search\/photos?search_query=%E7%99%A1%E5%A5%B3&page={{page}}\n自慰::\/search\/photos?search_query=%E8%87%AA%E6%85%B0&page={{page}}\nBL::\/search\/photos?search_query=YAOI&page={{page}}\n触手:\/search\/photos?search_query=%E8%A7%B8%E6%89%8B&page={{page}}\n魔物::\/search\/photos?search_query=%E9%AD%94%E7%89%A9&page={{page}}\n性转换::\/search\/photos?search_query=%E6%80%A7%E8%BD%89%E6%8F%9B&page={{page}}\n乱伦::\/search\/photos?search_query=%E4%BA%82%E5%80%AB&page={{page}}\n人妻::\/search\/photos?search_query=%E4%BA%BA%E5%A6%BB&page={{page}}\nNTR::\/search\/photos?search_query=NTR&page={{page}}\n校园::\/search\/photos?search_query=%E6%A0%A1%E5%9C%92&page={{page}}\n百合::\/search\/photos?search_query=%E7%99%BE%E5%90%88&page={{page}}\n师生::\/search\/photos?search_query=%E5%B8%AB%E7%94%9F&page={{page}}\n伪娘::\/search\/photos?search_query=%E5%81%BD%E5%A8%98&page={{page}}\n                                                                                                    ::                                     \n萝莉::\/search\/photos?search_query=%E8%98%BF%E8%8E%89&page={{page}}\n御姐::\/search\/photos?search_query=%E5%BE%A1%E5%A7%90&page={{page}}\n熟女::\/search\/photos?search_query=%E7%86%9F%E5%A5%B3&page={{page}}\n正太::\/search\/photos?search_query=%E6%AD%A3%E5%A4%AA&page={{page}}\n巨乳::\/search\/photos?search_query=%E5%B7%A8%E4%B9%B3&page={{page}}\n贫乳::\/search\/photos?search_query=%E8%B2%A7%E4%B9%B3&page={{page}}\n女王::\/search\/photos?search_query=%E5%A5%B3%E7%8E%8B&page={{page}}\n教师::\/search\/photos?search_query=%E6%95%99%E5%B8%AB&page={{page}}\n女仆::\/search\/photos?search_query=%E5%A5%B3%E5%83%95&page={{page}}\n护士::\/search\/photos?search_query=%E8%AD%B7%E5%A3%AB&page={{page}}\n泳装::\/search\/photos?search_query=%E6%B3%B3%E8%A3%9D&page={{page}}\n眼镜::\/search\/photos?search_query=%E7%9C%BC%E9%8F%A1&page={{page}}\n连裤袜::\/search\/photos?search_query=%E9%80%A3%E8%A4%B2%E8%A5%AA&page={{page}}\n其他制服::\/search\/photos?search_query=%E5%85%B6%E4%BB%96%E5%88%B6%E6%9C%8D&page={{page}}\n兔女郎::\/search\/photos?search_query=%E5%85%94%E5%A5%B3%E9%83%8E&page={{page}}\n                                                                                                     ::                                                                                   \n最新A漫::\/albums?o=mr&page={{page}}\n最新韩漫::\/albums\/hanman?o=mr&page={{page}}\n最新美漫::\/albums\/meiman?o=mr&page={{page}}\n最新同人::\/albums\/doujin?o=mr&page={{page}}\n最新短篇::\/albums\/short?o=mr&page={{page}}\n最新其他::\/albums\/another?o=mr&page={{page}}\n最新单行本::\/albums\/single?o=mr&page={{page}}\n                                                                                                    ::                                    \n最热A漫::\/albums?o=mv&page={{page}}\n最热韩漫::\/albums\/hanman?o=mv&page={{page}}\n最热美漫::\/albums\/meiman?o=mv&page={{page}}\n最热同人::\/albums\/doujin?o=mv&page={{page}}\n最热短篇::\/albums\/short?o=mv&page={{page}}\n最热其他::\/albums\/another?o=mv&page={{page}}                                          \n最热单行本::\/albums\/single?o=mv&page={{page}}",
+        "header": " {\n\"User-Agent\": \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/84.0.4147.135 Safari\/537.36\"\n}",
+        "lastUpdateTime": 1605589543240,
+        "loginUrl": "https:\/\/18comic.bet\/login",
+        "ruleBookInfo": {
+            "author": "class.tag-block.3@text",
+            "coverUrl": "class.thumb-overlay.2@tag.img",
+            "intro": "class.p-t-5 p-b-5.7@text",
+            "kind": "class.tag-block.2@text##标签：##",
+            "lastChapter": "<js>\nvar doc = org.jsoup.Jsoup.parse(result);\nvar info = doc.select(\"div.panel-body\").select(\"div.col-xs-6\");\nvar updateTime = String(info).match(\/更新.{15}\/);\nvar page = String(info).match(\/页数.{2,10}\/);\nvar all = updateTime+\"  \"+page+\"P\"\nresult = all\n<\/js>",
+            "name": "class.panel-heading.0@text",
+            "wordCount": ""
+        },
+        "ruleContent": {
+            "content": "@js: \nheader={\"Referer\":baseUrl};\nheaders={\"headers\":JSON.stringify(header)};\nvar list = java.getElements(\"class.row thumb-overlay-albums@tag.img\");\n\nvar clean = String(list).replace(\/(https.*.data-original=\")|(\\sid=.*\")|(<.*alt.*>)\/g,\"\");\n\nresult = clean.replace(\/\\\">\/g,\"&check=app\\\">\")",
+            "imageStyle": "FULL",
+            "replaceRegex": "",
+            "sourceRegex": "",
+            "webJs": ""
+        },
+        "ruleExplore": {
+            "author": "tag.div.-4@text##all##@js:if(baseUrl.match(\/search\/)){result=\"\"}else{result}",
+            "bookList": "class.well well-sm!0",
+            "bookUrl": "tag.a.0@href",
+            "coverUrl": "tag.img@data-original&&tag.img@src@js:if(result.match(\/18comic\\w?\/)){result.replace(\/18comic\\w?\/,\"18comic\")}else{result}",
+            "kind": "tag.div.-3@text##标签:##@js:if(baseUrl.match(\/search\/)){\nresult = \"{{@@tag.div.-4@text}}\";\nresult = result.replace(\/标签:\/,\"\")}else{result}",
+            "lastChapter": "class.video-views pull-left@text@js:\"上架日期:  \"+result",
+            "name": "tag.img@title"
+        },
+        "ruleSearch": {
+            "author": "",
+            "bookList": "class.well well-sm!0",
+            "bookUrl": "tag.a.0@href",
+            "coverUrl": "tag.img@data-original",
+            "kind": "class.title-truncate.1@text##标签:##",
+            "lastChapter": "class.video-views pull-left@text@js:\"上架日期: \"+result",
+            "name": "tag.img@title"
+        },
+        "ruleToc": {
+            "chapterList": "class.btn-toolbar.0@tag.a||class.col btn btn-primary dropdown-toggle reading",
+            "chapterName": "text##@js:result.replace(\/开始阅读\/,\"全1话\")",
+            "chapterUrl": "tag.a@href"
+        },
+        "searchUrl": "\/search\/photos?search_query={{key}}&page={{page}}",
+        "weight": 0
+    },
+    {
+        "bookSourceComment": "",
+        "bookSourceGroup": "🎨漫画",
+        "bookSourceName": "🎨漫漫漫画",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https:\/\/www.manmanapp.com",
+        "bookUrlPattern": "",
+        "customOrder": 0,
+        "enabled": true,
+        "enabledExplore": true,
+        "exploreUrl": "全部::\/comic\/category_{{page}}.html\n兄弟情::\/comic\/category-5_{{page}}.html\n恋爱::\/comic\/category-4_{{page}}.html\n都市::\/comic\/category-18_{{page}}.html\n霸总::\/comic\/category-9_{{page}}.html\n校园::\/comic\/category-8_{{page}}.html\n古风::\/comic\/category-7_{{page}}.html\n搞笑::\/comic\/category-6_{{page}}.html\n暖萌::\/comic\/category-10_{{page}}.html\n日常::\/comic\/category-12_{{page}}.html\n奇幻::\/comic\/category-13_{{page}}.html\n悬疑::\/comic\/category-15_{{page}}.html\n仙侠::\/comic\/category-16_{{page}}.html\n热血::\/comic\/category-17_{{page}}.html\n恐怖::\/comic\/category-19_{{page}}.html\n",
+        "lastUpdateTime": 1610036267717,
+        "ruleBookInfo": {
+            "canReName": "",
+            "coverUrl": "class.pic@img@src",
+            "intro": "class.supplement@text",
+            "kind": "{{book.kind}},{{@@class.type@text}}##类型：",
+            "lastChapter": "class.comic_list@tag.li.0@h4@img@src&&class.comic_list@tag.li.0@h3@text##.*book_ic.*?\\n##🔒",
+            "tocUrl": "https:\/\/www.manmanapp.com\/works\/comic-list-ajax.html,{\n\"method\": \"POST\",\n\"body\": \"id={{java.put('page',1);result=baseUrl.match(\/(\\d+)\\.html\/)[1];java.put('id',result)}}&sort=1&page=1\"}"
+        },
+        "ruleContent": {
+            "content": "class.man_img@html",
+            "imageStyle": "FULL",
+            "nextContentUrl": ""
+        },
+        "ruleExplore": {
+            "intro": "",
+            "kind": "",
+            "lastChapter": ""
+        },
+        "ruleSearch": {
+            "author": "class.subtitle@text",
+            "bookList": "class.classification",
+            "bookUrl": "tag.a.0@href",
+            "coverUrl": "img@src",
+            "intro": "class.text@text",
+            "kind": "❤️{{@@class.supplement@ownText}}",
+            "name": "class.title@text"
+        },
+        "ruleToc": {
+            "chapterList": "$.data",
+            "chapterName": "$.title",
+            "chapterUrl": "https:\/\/www.manmanapp.com\/comic\/detail-{{$.id}}.html",
+            "isVip": "@js:'{{$.is_read}}'=='0'?'1':''",
+            "nextTocUrl": "@js:\ncode='{{$.code}}';\nif(code=='1'){\npage=java.get('page');\npage=parseInt(page)+1;\njava.put('page',page);\nid=java.get('id');\nurl='https:\/\/www.manmanapp.com\/works\/comic-list-ajax.html,';\nbody='id='+id+'&sort=1&page='+page;\npost={\n\"method\": \"POST\",\n\"body\":String(body)\n}\nresult=url+JSON.stringify(post);\n}",
+            "updateTime": "$.publish_time"
+        },
+        "searchUrl": "https:\/\/www.manmanapp.com\/search\/word-{{key}}.html",
         "weight": 0
     },
     {
