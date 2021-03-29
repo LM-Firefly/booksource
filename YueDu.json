@@ -11498,15 +11498,15 @@
     {
         "bookSourceComment": "感谢关耳小姐姐修改",
         "bookSourceGroup": "🎨漫画",
-        "bookSourceName": "🎨动漫之家v3🅰",
+        "bookSourceName": "🎨动漫之家v3api",
         "bookSourceType": 0,
-        "bookSourceUrl": "https://v3api.dmzj.com",
+        "bookSourceUrl": "https:\/\/v3api.dmzj.com",
         "bookUrlPattern": "",
         "customOrder": 0,
         "enabled": true,
         "enabledExplore": true,
-        "exploreUrl": "更新·全部漫画::https://nnv3api.dmzj1.com/latest/100/{{page-1}}.json?channel=Android&version=2.7.019\n更新·原创漫画::https://nnv3api.dmzj1.com/latest/1/{{page-1}}.json?channel=Android&version=2.7.019\n更新·译制漫画::https://nnv3api.dmzj1.com/latest/0/{{page-1}}.json?channel=Android&version=2.7.019\n日·人气排行::https://nnv3api.dmzj1.com/rank/0/0/0/{{page-1}}.json?channel=Android&version=2.7.019\n日·吐槽排行::https://nnv3api.dmzj1.com/rank/0/0/1/{{page-1}}.json?channel=Android&version=2.7.019\n日·订阅排行::https://nnv3api.dmzj1.com/rank/0/0/2/{{page-1}}.json?channel=Android&version=2.7.019\n周·人气排行::https://nnv3api.dmzj1.com/rank/0/1/0/{{page-1}}.json?channel=Android&version=2.7.019\n周·吐槽排行::https://nnv3api.dmzj1.com/rank/0/1/1/{{page-1}}.json?channel=Android&version=2.7.019\n周·订阅排行::https://nnv3api.dmzj1.com/rank/0/1/2/{{page-1}}.json?channel=Android&version=2.7.019\n月·人气排行::https://nnv3api.dmzj1.com/rank/0/2/0/{{page-1}}.json?channel=Android&version=2.7.019\n月·吐槽排行::https://nnv3api.dmzj1.com/rank/0/2/1/{{page-1}}.json?channel=Android&version=2.7.019\n月·订阅排行::https://nnv3api.dmzj1.com/rank/0/2/2/{{page-1}}.json?channel=Android&version=2.7.019\n总·人气排行::https://nnv3api.dmzj1.com/rank/0/3/0/{{page-1}}.json?channel=Android&version=2.7.019\n总·吐槽排行::https://nnv3api.dmzj1.com/rank/0/3/1/{{page-1}}.json?channel=Android&version=2.7.019\n总·订阅排行::https://nnv3api.dmzj1.com/rank/0/3/2/{{page-1}}.json?channel=Android&version=2.7.019\n少年漫画::https://nnv3api.dmzj1.com/classify/3262/0/{{page-1}}.json?channel=Android&version=2.7.019\n少女漫画::https://nnv3api.dmzj1.com/classify/3263/0/{{page-1}}.json?channel=Android&version=2.7.019\n青年漫画::https://nnv3api.dmzj1.com/classify/3264/0/{{page-1}}.json?channel=Android&version=2.7.019\n女青漫画::https://nnv3api.dmzj1.com/classify/13626/0/{{page-1}}.json?channel=Android&version=2.7.019\n国漫::https://nnv3api.dmzj1.com/classify/2308/0/{{page-1}}.json?channel=Android&version=2.7.019\n日本::https://nnv3api.dmzj1.com/classify/2304/0/{{page-1}}.json?channel=Android&version=2.7.019\n韩国::https://nnv3api.dmzj1.com/classify/2305/0/{{page-1}}.json?channel=Android&version=2.7.019\n欧美::https://nnv3api.dmzj1.com/classify/2306/0/{{page-1}}.json?channel=Android&version=2.7.019\n连载::https://nnv3api.dmzj1.com/classify/2309/0/{{page-1}}.json?channel=Android&version=2.7.019\n完结::https://nnv3api.dmzj1.com/classify/2310/0/{{page-1}}.json?channel=Android&version=2.7.019\n冒险::https://nnv3api.dmzj1.com/classify/4/0/{{page-1}}.json?channel=Android&version=2.7.019\n欢乐::https://nnv3api.dmzj1.com/classify/5/0/{{page-1}}.json?channel=Android&version=2.7.019\n格斗::https://nnv3api.dmzj1.com/classify/6/0/{{page-1}}.json?channel=Android&version=2.7.019\n科幻::https://nnv3api.dmzj1.com/classify/7/0/{{page-1}}.json?channel=Android&version=2.7.019\n爱情::https://nnv3api.dmzj1.com/classify/8/0/{{page-1}}.json?channel=Android&version=2.7.019\n侦探::https://nnv3api.dmzj1.com/classify/9/0/{{page-1}}.json?channel=Android&version=2.7.019\n竞技::https://nnv3api.dmzj1.com/classify/10/0/{{page-1}}.json?channel=Android&version=2.7.019\n魔法::https://nnv3api.dmzj1.com/classify/11/0/{{page-1}}.json?channel=Android&version=2.7.019\n神鬼::https://nnv3api.dmzj1.com/classify/12/0/{{page-1}}.json?channel=Android&version=2.7.019\n校园::https://nnv3api.dmzj1.com/classify/13/0/{{page-1}}.json?channel=Android&version=2.7.019\n惊悚::https://nnv3api.dmzj1.com/classify/14/0/{{page-1}}.json?channel=Android&version=2.7.019\n其他::https://nnv3api.dmzj1.com/classify/16/0/{{page-1}}.json?channel=Android&version=2.7.019\n四格::https://nnv3api.dmzj1.com/classify/17/0/{{page-1}}.json?channel=Android&version=2.7.019\n美食::https://nnv3api.dmzj1.com/classify/3327/0/{{page-1}}.json?channel=Android&version=2.7.019\n职场::https://nnv3api.dmzj1.com/classify/3328/0/{{page-1}}.json?channel=Android&version=2.7.019\n百合::https://nnv3api.dmzj1.com/classify/3243/0/{{page-1}}.json?channel=Android&version=2.7.019\n伪娘::https://nnv3api.dmzj1.com/classify/3244/0/{{page-1}}.json?channel=Android&version=2.7.019\n悬疑::https://nnv3api.dmzj1.com/classify/3245/0/{{page-1}}.json?channel=Android&version=2.7.019\n耽美::https://nnv3api.dmzj1.com/classify/3246/0/{{page-1}}.json?channel=Android&version=2.7.019\n热血::https://nnv3api.dmzj1.com/classify/3248/0/{{page-1}}.json?channel=Android&version=2.7.019\n后宫::https://nnv3api.dmzj1.com/classify/3249/0/{{page-1}}.json?channel=Android&version=2.7.019\n萌系::https://nnv3api.dmzj1.com/classify/3252/0/{{page-1}}.json?channel=Android&version=2.7.019\n治愈::https://nnv3api.dmzj1.com/classify/3254/0/{{page-1}}.json?channel=Android&version=2.7.019\n励志::https://nnv3api.dmzj1.com/classify/3255/0/{{page-1}}.json?channel=Android&version=2.7.019\n性转::https://nnv3api.dmzj1.com/classify/4518/0/{{page-1}}.json?channel=Android&version=2.7.019\n东方::https://nnv3api.dmzj1.com/classify/5077/0/{{page-1}}.json?channel=Android&version=2.7.019\n魔幻::https://nnv3api.dmzj1.com/classify/5806/0/{{page-1}}.json?channel=Android&version=2.7.019\n奇幻::https://nnv3api.dmzj1.com/classify/5848/0/{{page-1}}.json?channel=Android&version=2.7.019\n轻改::https://nnv3api.dmzj1.com/classify/6316/0/{{page-1}}.json?channel=Android&version=2.7.019\n颜艺::https://nnv3api.dmzj1.com/classify/6437/0/{{page-1}}.json?channel=Android&version=2.7.019\n搞笑::https://nnv3api.dmzj1.com/classify/7568/0/{{page-1}}.json?channel=Android&version=2.7.019\n仙侠::https://nnv3api.dmzj1.com/classify/7900/0/{{page-1}}.json?channel=Android&version=2.7.019",
-        "lastUpdateTime": 0,
+        "exploreUrl": "更新·全部漫画::https:\/\/nnv3api.dmzj1.com\/latest\/100\/{{page-1}}.json?channel=Android&version=2.7.019\n更新·原创漫画::https:\/\/nnv3api.dmzj1.com\/latest\/1\/{{page-1}}.json?channel=Android&version=2.7.019\n更新·译制漫画::https:\/\/nnv3api.dmzj1.com\/latest\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n日·人气排行::https:\/\/nnv3api.dmzj1.com\/rank\/0\/0\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n日·吐槽排行::https:\/\/nnv3api.dmzj1.com\/rank\/0\/0\/1\/{{page-1}}.json?channel=Android&version=2.7.019\n日·订阅排行::https:\/\/nnv3api.dmzj1.com\/rank\/0\/0\/2\/{{page-1}}.json?channel=Android&version=2.7.019\n周·人气排行::https:\/\/nnv3api.dmzj1.com\/rank\/0\/1\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n周·吐槽排行::https:\/\/nnv3api.dmzj1.com\/rank\/0\/1\/1\/{{page-1}}.json?channel=Android&version=2.7.019\n周·订阅排行::https:\/\/nnv3api.dmzj1.com\/rank\/0\/1\/2\/{{page-1}}.json?channel=Android&version=2.7.019\n月·人气排行::https:\/\/nnv3api.dmzj1.com\/rank\/0\/2\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n月·吐槽排行::https:\/\/nnv3api.dmzj1.com\/rank\/0\/2\/1\/{{page-1}}.json?channel=Android&version=2.7.019\n月·订阅排行::https:\/\/nnv3api.dmzj1.com\/rank\/0\/2\/2\/{{page-1}}.json?channel=Android&version=2.7.019\n总·人气排行::https:\/\/nnv3api.dmzj1.com\/rank\/0\/3\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n总·吐槽排行::https:\/\/nnv3api.dmzj1.com\/rank\/0\/3\/1\/{{page-1}}.json?channel=Android&version=2.7.019\n总·订阅排行::https:\/\/nnv3api.dmzj1.com\/rank\/0\/3\/2\/{{page-1}}.json?channel=Android&version=2.7.019\n少年漫画::https:\/\/nnv3api.dmzj1.com\/classify\/3262\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n少女漫画::https:\/\/nnv3api.dmzj1.com\/classify\/3263\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n青年漫画::https:\/\/nnv3api.dmzj1.com\/classify\/3264\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n女青漫画::https:\/\/nnv3api.dmzj1.com\/classify\/13626\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n国漫::https:\/\/nnv3api.dmzj1.com\/classify\/2308\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n日本::https:\/\/nnv3api.dmzj1.com\/classify\/2304\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n韩国::https:\/\/nnv3api.dmzj1.com\/classify\/2305\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n欧美::https:\/\/nnv3api.dmzj1.com\/classify\/2306\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n连载::https:\/\/nnv3api.dmzj1.com\/classify\/2309\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n完结::https:\/\/nnv3api.dmzj1.com\/classify\/2310\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n冒险::https:\/\/nnv3api.dmzj1.com\/classify\/4\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n欢乐::https:\/\/nnv3api.dmzj1.com\/classify\/5\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n格斗::https:\/\/nnv3api.dmzj1.com\/classify\/6\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n科幻::https:\/\/nnv3api.dmzj1.com\/classify\/7\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n爱情::https:\/\/nnv3api.dmzj1.com\/classify\/8\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n侦探::https:\/\/nnv3api.dmzj1.com\/classify\/9\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n竞技::https:\/\/nnv3api.dmzj1.com\/classify\/10\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n魔法::https:\/\/nnv3api.dmzj1.com\/classify\/11\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n神鬼::https:\/\/nnv3api.dmzj1.com\/classify\/12\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n校园::https:\/\/nnv3api.dmzj1.com\/classify\/13\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n惊悚::https:\/\/nnv3api.dmzj1.com\/classify\/14\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n其他::https:\/\/nnv3api.dmzj1.com\/classify\/16\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n四格::https:\/\/nnv3api.dmzj1.com\/classify\/17\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n美食::https:\/\/nnv3api.dmzj1.com\/classify\/3327\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n职场::https:\/\/nnv3api.dmzj1.com\/classify\/3328\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n百合::https:\/\/nnv3api.dmzj1.com\/classify\/3243\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n伪娘::https:\/\/nnv3api.dmzj1.com\/classify\/3244\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n悬疑::https:\/\/nnv3api.dmzj1.com\/classify\/3245\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n耽美::https:\/\/nnv3api.dmzj1.com\/classify\/3246\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n热血::https:\/\/nnv3api.dmzj1.com\/classify\/3248\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n后宫::https:\/\/nnv3api.dmzj1.com\/classify\/3249\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n萌系::https:\/\/nnv3api.dmzj1.com\/classify\/3252\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n治愈::https:\/\/nnv3api.dmzj1.com\/classify\/3254\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n励志::https:\/\/nnv3api.dmzj1.com\/classify\/3255\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n性转::https:\/\/nnv3api.dmzj1.com\/classify\/4518\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n东方::https:\/\/nnv3api.dmzj1.com\/classify\/5077\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n魔幻::https:\/\/nnv3api.dmzj1.com\/classify\/5806\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n奇幻::https:\/\/nnv3api.dmzj1.com\/classify\/5848\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n轻改::https:\/\/nnv3api.dmzj1.com\/classify\/6316\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n颜艺::https:\/\/nnv3api.dmzj1.com\/classify\/6437\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n搞笑::https:\/\/nnv3api.dmzj1.com\/classify\/7568\/0\/{{page-1}}.json?channel=Android&version=2.7.019\n仙侠::https:\/\/nnv3api.dmzj1.com\/classify\/7900\/0\/{{page-1}}.json?channel=Android&version=2.7.019",
+        "lastUpdateTime": 1611286404369,
         "loginUrl": "",
         "ruleBookInfo": {
             "author": "$.authors..tag_name",
@@ -11524,7 +11524,7 @@
         "ruleSearch": {
             "author": "$.authors",
             "bookList": "$.*",
-            "bookUrl": "https://nnv3api.dmzj1.com/comic/{$.id}{$.comic_id}.json?channel=Android&version=2.7.038",
+            "bookUrl": "https:\/\/nnv3api.dmzj1.com\/comic\/{$.id}{$.comic_id}.json?channel=Android&version=2.7.038",
             "coverUrl": "$.cover\n@js:header={\"Referer\":baseUrl}\nheaders={\"headers\":JSON.stringify(header)}\nresult=result+','+JSON.stringify(headers)",
             "intro": "",
             "kind": "$.types",
@@ -11532,104 +11532,158 @@
             "name": "$.title"
         },
         "ruleToc": {
-            "chapterList": "-<js>\nvar data = result.match(/\"data\":(\\[.*?\\])/)[1];\ndata\n</js>\n$.[*]",
+            "chapterList": "-<js>\nvar data = result.match(\/\"data\":(\\[.*?\\])\/)[1];\ndata\n<\/js>\n$.[*]",
             "chapterName": "$.chapter_title",
-            "chapterUrl": "https://nnv3api.dmzj1.com/chapter/@get:{bid}/{{$.chapter_id}}.json?channel=Android&version=2.7.038"
+            "chapterUrl": "https:\/\/nnv3api.dmzj1.com\/chapter\/@get:{bid}\/{{$.chapter_id}}.json?channel=Android&version=2.7.038"
         },
-        "searchUrl": "https://nnv3api.dmzj1.com/search/show/0/{{key}}/{{page-1}}.json?channel=Android&version=2.7.038",
+        "searchUrl": "https:\/\/nnv3api.dmzj1.com\/search\/show\/0\/{{key}}\/{{page-1}}.json?channel=Android&version=2.7.038",
         "weight": 0
     },
     {
-        "bookSourceComment": "error:Timed out waiting for 60000 ms\n",
+        "bookSourceComment": "",
         "bookSourceGroup": "🎨漫画",
-        "bookSourceName": "🎨武侠漫画",
+        "bookSourceName": "🎨动漫之家 dmzj1",
         "bookSourceType": 0,
-        "bookSourceUrl": "https://wuxiamh.com",
+        "bookSourceUrl": "https:\/\/nnv3api.dmzj1.com",
         "bookUrlPattern": "",
         "customOrder": 0,
         "enabled": true,
         "enabledExplore": true,
-        "exploreUrl": "更新::/update/\n排行::/rank/\n国产漫画::/list/dalu/{{page}}/\n日本漫画::/list/riben/{{page}}/\n其他漫画::/list/qitamanhua/{{page}}/\n热血漫画::/list/rexue/{{page}}/\n恋爱生活::/list/lianaishenghuo/{{page}}/\n爆笑喜剧::/list/baoxiaoxiju/{{page}}/\n侦探推理::/list/zhentantuili/{{page}}/\n科幻魔幻::/list/kehuanmohuan/{{page}}/\n武侠格斗::/list/wuxiagedou/{{page}}/\n百合女性::/list/baihenvxing/{{page}}/\n生活漫画::/list/shenghuomanhua/{{page}}/\n爆笑::/list/baoxiao/{{page}}/\n恋爱::/list/lianai/{{page}}/\n都市::/list/dushi/{{page}}/\n冒险::/list/maoxian/{{page}}/\n架空::/list/jiakong/{{page}}/\n科幻::/list/kehuan/{{page}}/\n古风::/list/gufeng/{{page}}/\n悬疑::/list/xuanyi/{{page}}/\n恐怖::/list/kongbu/{{page}}/\n校园::/list/xiaoyuan/{{page}}/\n搞笑::/list/gaoxiao/{{page}}/\n剧情::/list/juqing/{{page}}/\n后宫::/list/hougong/{{page}}/\n励志::/list/lizhi/{{page}}/\n生活::/list/shenghuo/{{page}}/\n灵异::/list/lingyi/{{page}}/\n防疫::/list/fangyi/{{page}}/\n社会::/list/shehui/{{page}}/\n霸总::/list/bazong/{{page}}/\n动作::/list/dongzuo/{{page}}/\n玄幻::/list/xuanhuan/{{page}}/\n神魔::/list/shenmo/{{page}}/\n吸血::/list/xixie/{{page}}/\n穿越::/list/chuanyue/{{page}}/\n同人::/list/tongren/{{page}}/\n竞技::/list/jingji/{{page}}/\n战争::/list/zhanzheng/{{page}}/\n耽美::/list/danmei/{{page}}/\n蔷薇::/list/qiangwei/{{page}}/\n修真::/list/xiuzhen/{{page}}/\n治愈::/list/zhiyu/{{page}}/\n真人::/list/zhenren/{{page}}/\n魔幻::/list/mohuan/{{page}}/\n小说改编::/list/xiaoshuogaibian/{{page}}/\n历史::/list/lishi/{{page}}/\n武侠::/list/wuxia/{{page}}/\n奇幻::/list/qihuan/{{page}}/\n萝莉::/list/luoli/{{page}}/\n漫改::/list/mangai/{{page}}/\n运动::/list/yundong/{{page}}/\n日更::/list/rigeng/{{page}}/\n游戏::/list/youxi/{{page}}/\n青春::/list/qingchun/{{page}}/\n萌系::/list/mengxi/{{page}}/\n御姐::/list/yujie/{{page}}/\n复仇::/list/fuchou/{{page}}/\n新作::/list/xinzuo/{{page}}/\n精品::/list/jingpin/{{page}}/\n推理::/list/tuili/{{page}}/\n格斗::/list/gedou/{{page}}/\n震撼::/list/zhenhan/{{page}}/\n僵尸::/list/jiangshi/{{page}}/\n恶搞::/list/egao/{{page}}/\n唯美::/list/weimei/{{page}}/\n纯爱::/list/chunai/{{page}}/\n轻松::/list/qingsong/{{page}}/\n宠物::/list/chongwu/{{page}}/\n职场::/list/zhichang/{{page}}/\n未来::/list/weilai/{{page}}/\n异世界::/list/yishijie/{{page}}/\n虐心::/list/nuexin/{{page}}/\n惊奇::/list/jingqi/{{page}}/\n宫廷::/list/gongting/{{page}}/\n爽流::/list/shuangliu/{{page}}/\n逆袭::/list/nixi/{{page}}/\n仙侠::/list/xianxia/{{page}}/\n机甲::/list/jijia/{{page}}/\n美食::/list/meishi/{{page}}/\n脑洞::/list/naodong/{{page}}/\n明星::/list/mingxing/{{page}}/\n惊险::/list/jingxian/{{page}}/\n宫斗::/list/gongdou/{{page}}/\n日常::/list/richang/{{page}}/\n感动::/list/gandong/{{page}}/\n浪漫::/list/langman/{{page}}/\n史诗::/list/shishi/{{page}}/\n家庭::/list/jiating/{{page}}/\n正剧::/list/zhengju/{{page}}/\n段子::/list/duanzi/{{page}}/\n温馨::/list/wenxin/{{page}}/\n乡村::/list/xiangcun/{{page}}/\n高智商::/list/gaozhishang/{{page}}/\n悬疑推理::/list/xuanyituili/{{page}}/\n机智::/list/jizhi/{{page}}/\n召唤兽::/list/zhaohuanshou/{{page}}/\n装逼::/list/zhuangbi/{{page}}/\n战斗::/list/zhandou/{{page}}/\n豪门::/list/haomen/{{page}}/\n异能::/list/yineng/{{page}}/\n神话::/list/shenhua/{{page}}/\n重口味::/list/zhongkouwei/{{page}}/\n血腥::/list/xuexing/{{page}}/\n逗比::/list/doubi/{{page}}/\n丧尸::/list/sangshi/{{page}}/\n娱乐圈::/list/yulequan/{{page}}/\n科技::/list/keji/{{page}}/\n烧脑::/list/shaonao/{{page}}/\n其它::/list/qita/{{page}}/\n末世::/list/moshi/{{page}}/\n体育::/list/tiyu/{{page}}/\n权谋::/list/quanmou/{{page}}/\n商战::/list/shangzhan/{{page}}/\n内涵::/list/neihan/{{page}}/\n欢乐向::/list/huanlexiang/{{page}}/\n爱情::/list/aiqing/{{page}}/\n轻小说::/list/qingxiaoshuo/{{page}}/\n音乐舞蹈::/list/yinyuewudao/{{page}}/\n百合::/list/baihe/{{page}}/\n四格::/list/sige/{{page}}/\n东方::/list/dongfang/{{page}}/\n神鬼::/list/shengui/{{page}}/\n修真恋爱架空::/list/xiuzhenlianaijiakong/{{page}}/\n轻松搞笑::/list/qingsonggaoxiao/{{page}}/\n同人漫画::/list/tongrenmanhua/{{page}}/\n少女爱情::/list/shaonvaiqing/{{page}}/\n彩虹::/list/caihong/{{page}}/\n侦探::/list/zhentan/{{page}}/\n魔法::/list/mofa/{{page}}/\n纠结::/list/jiujie/{{page}}/\n性转换::/list/xingzhuanhuan/{{page}}/\n婚姻::/list/hunyin/{{page}}/\n搞笑喜剧::/list/gaoxiaoxiju/{{page}}/\n伪娘::/list/weiniang/{{page}}/\n其他::/list/qita2/{{page}}/\n宅系::/list/zhaixi/{{page}}/\n战争漫画::/list/zhanzhengmanhua/{{page}}/\n恐怖灵异::/list/kongbulingyi/{{page}}/\n竞技体育::/list/jingjitiyu/{{page}}/\n节操::/list/jiecao/{{page}}/\n耽美人生::/list/danmeirensheng/{{page}}/\n故事漫画::/list/gushimanhua/{{page}}/\n快看漫画::/list/kuaikanmanhua/{{page}}/\n韩国漫画::/list/hanguomanhua/{{page}}/\n少年::/list/shaonian/{{page}}/\n暗黑::/list/anhei/{{page}}/\n青年::/list/qingnian/{{page}}/\n少女::/list/shaonv/{{page}}/\n改编::/list/gaibian/{{page}}/\nAA::/list/AA/{{page}}/\n惊悚::/list/jingsong/{{page}}/\n西方魔幻::/list/xifangmohuan/{{page}}/\n性转::/list/xingzhuan/{{page}}/\n舰娘::/list/jianniang/{{page}}/\n机战::/list/jizhan/{{page}}/\n绘本::/list/huiben/{{page}}/\n恐怖悬疑::/list/kongbuxuanyi/{{page}}/\n正能量::/list/zhengnengliang/{{page}}/\n致郁::/list/zhiyu2/{{page}}/\n秀吉::/list/xiuji/{{page}}/\n总裁::/list/zongcai/{{page}}/\n伦理::/list/lunli/{{page}}/\n橘味::/list/juwei/{{page}}/\n耽美BL::/list/danmeiBL/{{page}}/\n颜艺::/list/yanyi/{{page}}/\n智斗::/list/zhidou/{{page}}/\n高清单行::/list/gaoqingdanxing/{{page}}/\n主仆::/list/zhupu/{{page}}/\n猎奇::/list/lieqi/{{page}}/\n乙女::/list/yinv/{{page}}/\n麦萌::/list/maimeng/{{page}}/\n黑道::/list/heidao/{{page}}/\n热血冒险::/list/rexuemaoxian/{{page}}/\n儿童::/list/ertong/{{page}}/\n投稿::/list/tougao/{{page}}/\n漫画岛::/list/manhuadao/{{page}}/\n热血动作::/list/rexuedongzuo/{{page}}/\nmhuaquan::/list/mhuaquan/{{page}}/\n动画::/list/donghua/{{page}}/\n四格多格::/list/sigeduoge/{{page}}/\n逆转::/list/nizhuan/{{page}}/\n重生::/list/zhongsheng/{{page}}/\n古装::/list/guzhuang/{{page}}/\n宅斗::/list/zhaidou/{{page}}/\n偶像::/list/ouxiang/{{page}}/\n暧昧::/list/aimei/{{page}}/\n幻想::/list/huanxiang/{{page}}/\n奇闻::/list/qiwen/{{page}}/\n异族::/list/yizu/{{page}}/\n独家::/list/dujia/{{page}}/\n血族::/list/xuezu/{{page}}/\n女强::/list/nvqiang/{{page}}/\n美型::/list/meixing/{{page}}/\n言情::/list/yanqing/{{page}}/\n种田::/list/zhongtian/{{page}}/\n狐仙::/list/huxian/{{page}}/\n悬疑惊悚::/list/xuanyijingsong/{{page}}/\n兽耳::/list/shouer/{{page}}/\n鬼怪::/list/guiguai/{{page}}/\n少儿::/list/shaoer/{{page}}/\n小僵尸::/list/xiaojiangshi/{{page}}/\n狠西游::/list/henxiyou/{{page}}/\n西游记::/list/xiyouji/{{page}}/\n青青树::/list/qingqingshu/{{page}}/\n病娇::/list/bingjiao/{{page}}/\n甜宠::/list/tianchong/{{page}}/\n男神::/list/nanshen/{{page}}/\n大女主::/list/danvzhu/{{page}}/\n叛逆::/list/panni/{{page}}/\n怪谈::/list/guaitan/{{page}}/\n生化::/list/shenghua/{{page}}/\n宠爱::/list/chongai/{{page}}/\n探案::/list/tanan/{{page}}/\n魔王::/list/mowang/{{page}}/\n福利::/list/fuli/{{page}}/\n怀旧::/list/huaijiu/{{page}}/\n情感::/list/qinggan/{{page}}/\n绅士::/list/shenshi/{{page}}/\n死后世界::/list/sihoushijie/{{page}}/\n美少女::/list/meishaonv/{{page}}/\n墨瞳::/list/motong/{{page}}/\n日漫::/list/riman/{{page}}/\n末日::/list/mori/{{page}}/\n系统::/list/xitong/{{page}}/\n修仙::/list/xiuxian/{{page}}/\n神仙::/list/shenxian/{{page}}/\n怪物::/list/guaiwu/{{page}}/\n神豪::/list/shenhao/{{page}}/\n虐恋::/list/nuelian/{{page}}/\n霸总都市::/list/bazongdushi/{{page}}/\n妖怪::/list/yaoguai/{{page}}/\n高甜::/list/gaotian/{{page}}/\n完结::/list/wanjie/{{page}}/\nA::/list/a/{{page}}/\nB::/list/b/{{page}}/\nC::/list/c/{{page}}/\nD::/list/d/{{page}}/\nE::/list/e/{{page}}/\nF::/list/f/{{page}}/\nG::/list/g/{{page}}/\nH::/list/h/{{page}}/\nI::/list/i/{{page}}/\nJ::/list/j/{{page}}/\nK::/list/k/{{page}}/\nL::/list/l/{{page}}/\nM::/list/m/{{page}}/\nN::/list/n/{{page}}/\nO::/list/o/{{page}}/\nP::/list/p/{{page}}/\nQ::/list/q/{{page}}/\nR::/list/r/{{page}}/\nS::/list/s/{{page}}/\nT::/list/t/{{page}}/\nU::/list/u/{{page}}/\nV::/list/v/{{page}}/\nW::/list/w/{{page}}/\nX::/list/x/{{page}}/\nY::/list/y/{{page}}/\nZ::/list/z/{{page}}/\n其他::/list/1/{{page}}/",
-        "header": "",
-        "lastUpdateTime": 0,
+        "exploreUrl": "最新::\/novel\/recentUpdate\/{{page-1}}.json\n人气::\/novel\/rank\/0\/0\/{{page-1}}.json\n订阅::\/novel\/rank\/1\/0\/{{page-1}}.json\n全部::\/novel\/0\/0\/0\/{{page-1}}.json\n恐怖::\/novel\/2\/0\/1\/{{page-1}}.json\n科幻::\/novel\/4\/0\/1\/{{page-1}}.json\n侦探::\/novel\/6\/0\/1\/{{page-1}}.json\n爱情::\/novel\/8\/0\/1\/{{page-1}}.json\n校园::\/novel\/12\/0\/1\/{{page-1}}.json\n神鬼::\/novel\/14\/0\/1\/{{page-1}}.json\n魔法::\/novel\/16\/0\/1\/{{page-1}}.json\n冒险::\/novel\/20\/0\/1\/{{page-1}}.json\n其他::\/novel\/25\/0\/1\/{{page-1}}.json\n搞笑::\/novel\/40\/0\/1\/{{page-1}}.json\n格斗::\/novel\/47\/0\/1\/{{page-1}}.json\n机战::\/novel\/1264\/0\/1\/{{page-1}}.json\n仙侠::\/novel\/1265\/0\/1\/{{page-1}}.json\n都市::\/novel\/1266\/0\/1\/{{page-1}}.json\n历史::\/novel\/1267\/0\/1\/{{page-1}}.json\n战争::\/novel\/1268\/0\/1\/{{page-1}}.json\n治愈::\/novel\/1269\/0\/1\/{{page-1}}.json\n励志::\/novel\/1270\/0\/1\/{{page-1}}.json\n后宫::\/novel\/1271\/0\/1\/{{page-1}}.json\n百合::\/novel\/1272\/0\/1\/{{page-1}}.json\n纯爱::\/novel\/1273\/0\/1\/{{page-1}}.json\n异界::\/novel\/1274\/0\/1\/{{page-1}}.json\n异能::\/novel\/1275\/0\/1\/{{page-1}}.json\n穿越::\/novel\/1276\/0\/1\/{{page-1}}.json\n奇幻::\/novel\/1321\/0\/1\/{{page-1}}.json",
+        "lastUpdateTime": 1611240735007,
         "loginUrl": "",
         "ruleBookInfo": {
-            "author": "class.left.3@text",
-            "coverUrl": "class.img@tag.mip-img@src",
-            "intro": "class.txtDesc@text##简介.|介绍.",
-            "kind": "class.left.5@text&&class.left.7@text",
-            "lastChapter": "class.left.1@text",
-            "name": "class.title@tag.h1@text##漫画"
+            "author": "$.authors@js:java.put('author',result)",
+            "canReName": "true",
+            "coverUrl": "$.cover",
+            "intro": "$.introduction\n<js>result=\"  \"+result;<\/js>",
+            "kind": "$.types",
+            "lastChapter": "$.last_update_chapter_name",
+            "name": "$.name@js:java.put('sm',result)",
+            "tocUrl": "$.id@js:\"https:\/\/nnv3api.dmzj1.com\/novel\/chapter\/\"+result+\".json\""
         },
         "ruleContent": {
-            "content": "@js:var m=result.match(/src=\"([^\"]+)0.webp/)[1];\nvar list=[];\nvar n=60;\nfor(i=0;i<n;i++){list.push('<img src=\"'+m+i+'.webp\"/')};\nlist.push('<img src=\"'+m+n+'.webp\"/>');\nlist.join('>')\n",
-            "imageStyle": "FULL"
+            "content": "@js:result.replace(\/&&[a-z]{4,};\/ig,\"\")\nif((\/\\.google\\.cn\/).test(baseUrl)){\ndecodeURIComponent(baseUrl.replace(\/^.+[&?]text=\/, ''))}",
+            "imageStyle": "FULL",
+            "replaceRegex": "##^[^\\n]*\\n"
         },
-        "ruleExplore": {},
+        "ruleExplore": {
+            "author": "$.authors",
+            "bookList": "$.[*]",
+            "bookUrl": "\/novel\/{$.id}.json",
+            "coverUrl": "$.cover",
+            "intro": "$.last_update_time\n<js>\ndate= new Date(parseInt(result)*1000).toLocaleString();\n<\/js>##G.*",
+            "kind": "$.types",
+            "lastChapter": "{$.last_update_volume_name} \n{$.last_update_chapter_name}",
+            "name": "$.name"
+        },
         "ruleSearch": {
-            "author": "tag.p.0@text",
+            "author": "$.authors",
+            "bookList": "$.[*]\n<js>\nvar opts = {\n  pattern: \/\\\/show\\\/1\\\/([^\\\/]+)\\\/\/,\n  name: '$.title',\n  author: '$.authors'\n};\n\n\/\/删除糢糊匹配的搜索结果，然后按书名长度排序。依赖于baseUrl、result变量。\n\/\/return Array\n\/\/opts Object: 参数，包含以下key：\n\/\/target List<Object>(result): 要过滤列表。\n\/\/pattern RegExp: 匹配searchKey的正则表达式。\n\/\/name String: 书名规则。\n\/\/author String: 作者规则。\n\/\/charset String('UTF-8'): 编码方式。\n\/\/sorting Boolean(true): 是否重新排序。\n\nfunction searchFilter(opts){\n  result = opts.target === undefined ? result : opts.target;\n  opts.charset = opts.charset === undefined ? 'UTF-8' : opts.charset;\n  opts.sorting = opts.sorting === undefined ? true : !!opts.sorting;\n  function getText(ele, rule){\n    java.setContent(ele);\n    return String(java.getString(rule));\n  }\n  try {\n    var kw = (baseUrl.match(opts.pattern) || ['',''])[1];\n    kw = Packages.java.net.URLDecoder.decode(kw, opts.charset);\n    result = result.toArray().filter(e => getText(e, opts.name).includes(kw) || getText(e, opts.author).includes(kw));\n    return opts.sorting ? result.sort((a, b) => getText(a, opts.name).length - getText(b, opts.name).length) : result;\n  } catch(e) {\n    return result;\n  }\n}\n\nsearchFilter(opts);\n<\/js>",
+            "bookUrl": "$.id@js:\"https:\/\/nnv3api.dmzj1.com:443\/novel\/\"+result+\".json\"",
+            "coverUrl": "$.cover",
+            "intro": "",
+            "kind": "$.types",
+            "lastChapter": "$.last_name||$.last_update_volume_name",
+            "name": "$.title||$.name"
+        },
+        "ruleToc": {
+            "chapterList": "+<js>\n\/\/二级目录，Json\nvar jdoc = JSON.parse(result);\nvar chUrl = 'https:\/\/nnv3api.dmzj1.com\/novel\/download\/@get:{ID}_';\nvar volUrl = 'https:\/\/translate.google.cn\/#view=home&op=translate&sl=zh-CN&tl=en&text=';\nvar list = [];\n\/\/显示卷名\nvar opts = {\n  showVolName: false\n};\n\nsm=java.get('sm');\nauthor=java.get('author');\n\nfunction format(title){\n  return title.trim().replace(\/^(\\d+)(?![\\s\\d卷部章节回.])\/, '$1 ').replace(\/\\s+\/g, \"\\x20\\x20\");\n}\n\njdoc.forEach((vol,idx) => {\n  var chs = vol.chapters.map(ch => ({\n    text: (opts.showVolName ? '🍈[' + format(vol.volume_name) + ']🍈' : (ch.IsVip === '1' ? '💰' : '').padStart(3, \"\\u2000\")) + format(ch.chapter_name),\n    href: chUrl+vol.volume_id+'_'+ch.chapter_id+'.txt',\n    name: format(ch.chapter_name)\n  }));\n\n  var volInfo =author+\"：\\n\"+sm+'\\\\'+ format(vol.volume_name)+ '\\n目录(' + chs.length + \")：\\n\";\n  volInfo += chs.slice(0,30).map(v => v.name).join(\"\\n\");\n  volInfo += chs.length > 30 ? \"\\n……\" : '';\n\n  list.push({\n    text: '♦[' + format(vol.volume_name) + ']♦',\n    href: volUrl + encodeURIComponent(volInfo)\n});\n  list = list.concat(chs);\n});\n\nresult = list;\n<\/js>",
+            "chapterName": "text",
+            "chapterUrl": "href"
+        },
+        "searchUrl": "\/search\/show\/1\/{{key}}\/{{page-1}}.json",
+        "weight": 0
+    },
+    {
+        "bookSourceComment": "",
+        "bookSourceUrl": "https:\/\/m.wuxiamh.com\/",
+        "bookSourceType": "0",
+        "bookSourceGroup": "🎨漫画",
+        "bookSourceName": "🎨武侠漫画",
+        "bookUrlPattern": "",
+        "customOrder": 0,
+        "enabled": true,
+        "enabledExplore": true,
+        "searchUrl": "\/search\/?keywords={{key}}&page={{page}}",
+        "exploreUrl": "更新::\/update\/\n排行::\/rank\/\n国产漫画::\/list\/dalu\/{{page}}\/\n日本漫画::\/list\/riben\/{{page}}\/\n其他漫画::\/list\/qitamanhua\/{{page}}\/\n热血漫画::\/list\/rexue\/{{page}}\/\n恋爱生活::\/list\/lianaishenghuo\/{{page}}\/\n爆笑喜剧::\/list\/baoxiaoxiju\/{{page}}\/\n侦探推理::\/list\/zhentantuili\/{{page}}\/\n科幻魔幻::\/list\/kehuanmohuan\/{{page}}\/\n武侠格斗::\/list\/wuxiagedou\/{{page}}\/\n百合女性::\/list\/baihenvxing\/{{page}}\/\n生活漫画::\/list\/shenghuomanhua\/{{page}}\/\n爆笑::\/list\/baoxiao\/{{page}}\/\n恋爱::\/list\/lianai\/{{page}}\/\n都市::\/list\/dushi\/{{page}}\/\n冒险::\/list\/maoxian\/{{page}}\/\n架空::\/list\/jiakong\/{{page}}\/\n科幻::\/list\/kehuan\/{{page}}\/\n古风::\/list\/gufeng\/{{page}}\/\n悬疑::\/list\/xuanyi\/{{page}}\/\n恐怖::\/list\/kongbu\/{{page}}\/\n校园::\/list\/xiaoyuan\/{{page}}\/\n搞笑::\/list\/gaoxiao\/{{page}}\/\n剧情::\/list\/juqing\/{{page}}\/\n后宫::\/list\/hougong\/{{page}}\/\n励志::\/list\/lizhi\/{{page}}\/\n生活::\/list\/shenghuo\/{{page}}\/\n灵异::\/list\/lingyi\/{{page}}\/\n防疫::\/list\/fangyi\/{{page}}\/\n社会::\/list\/shehui\/{{page}}\/\n霸总::\/list\/bazong\/{{page}}\/\n动作::\/list\/dongzuo\/{{page}}\/\n玄幻::\/list\/xuanhuan\/{{page}}\/\n神魔::\/list\/shenmo\/{{page}}\/\n吸血::\/list\/xixie\/{{page}}\/\n穿越::\/list\/chuanyue\/{{page}}\/\n同人::\/list\/tongren\/{{page}}\/\n竞技::\/list\/jingji\/{{page}}\/\n战争::\/list\/zhanzheng\/{{page}}\/\n耽美::\/list\/danmei\/{{page}}\/\n蔷薇::\/list\/qiangwei\/{{page}}\/\n修真::\/list\/xiuzhen\/{{page}}\/\n治愈::\/list\/zhiyu\/{{page}}\/\n真人::\/list\/zhenren\/{{page}}\/\n魔幻::\/list\/mohuan\/{{page}}\/\n小说改编::\/list\/xiaoshuogaibian\/{{page}}\/\n历史::\/list\/lishi\/{{page}}\/\n武侠::\/list\/wuxia\/{{page}}\/\n奇幻::\/list\/qihuan\/{{page}}\/\n萝莉::\/list\/luoli\/{{page}}\/\n漫改::\/list\/mangai\/{{page}}\/\n运动::\/list\/yundong\/{{page}}\/\n日更::\/list\/rigeng\/{{page}}\/\n游戏::\/list\/youxi\/{{page}}\/\n青春::\/list\/qingchun\/{{page}}\/\n萌系::\/list\/mengxi\/{{page}}\/\n御姐::\/list\/yujie\/{{page}}\/\n复仇::\/list\/fuchou\/{{page}}\/\n新作::\/list\/xinzuo\/{{page}}\/\n精品::\/list\/jingpin\/{{page}}\/\n推理::\/list\/tuili\/{{page}}\/\n格斗::\/list\/gedou\/{{page}}\/\n震撼::\/list\/zhenhan\/{{page}}\/\n僵尸::\/list\/jiangshi\/{{page}}\/\n恶搞::\/list\/egao\/{{page}}\/\n唯美::\/list\/weimei\/{{page}}\/\n纯爱::\/list\/chunai\/{{page}}\/\n轻松::\/list\/qingsong\/{{page}}\/\n宠物::\/list\/chongwu\/{{page}}\/\n职场::\/list\/zhichang\/{{page}}\/\n未来::\/list\/weilai\/{{page}}\/\n异世界::\/list\/yishijie\/{{page}}\/\n虐心::\/list\/nuexin\/{{page}}\/\n惊奇::\/list\/jingqi\/{{page}}\/\n宫廷::\/list\/gongting\/{{page}}\/\n爽流::\/list\/shuangliu\/{{page}}\/\n逆袭::\/list\/nixi\/{{page}}\/\n仙侠::\/list\/xianxia\/{{page}}\/\n机甲::\/list\/jijia\/{{page}}\/\n美食::\/list\/meishi\/{{page}}\/\n脑洞::\/list\/naodong\/{{page}}\/\n明星::\/list\/mingxing\/{{page}}\/\n惊险::\/list\/jingxian\/{{page}}\/\n宫斗::\/list\/gongdou\/{{page}}\/\n日常::\/list\/richang\/{{page}}\/\n感动::\/list\/gandong\/{{page}}\/\n浪漫::\/list\/langman\/{{page}}\/\n史诗::\/list\/shishi\/{{page}}\/\n家庭::\/list\/jiating\/{{page}}\/\n正剧::\/list\/zhengju\/{{page}}\/\n段子::\/list\/duanzi\/{{page}}\/\n温馨::\/list\/wenxin\/{{page}}\/\n乡村::\/list\/xiangcun\/{{page}}\/\n高智商::\/list\/gaozhishang\/{{page}}\/\n悬疑推理::\/list\/xuanyituili\/{{page}}\/\n机智::\/list\/jizhi\/{{page}}\/\n召唤兽::\/list\/zhaohuanshou\/{{page}}\/\n装逼::\/list\/zhuangbi\/{{page}}\/\n战斗::\/list\/zhandou\/{{page}}\/\n豪门::\/list\/haomen\/{{page}}\/\n异能::\/list\/yineng\/{{page}}\/\n神话::\/list\/shenhua\/{{page}}\/\n重口味::\/list\/zhongkouwei\/{{page}}\/\n血腥::\/list\/xuexing\/{{page}}\/\n逗比::\/list\/doubi\/{{page}}\/\n丧尸::\/list\/sangshi\/{{page}}\/\n娱乐圈::\/list\/yulequan\/{{page}}\/\n科技::\/list\/keji\/{{page}}\/\n烧脑::\/list\/shaonao\/{{page}}\/\n其它::\/list\/qita\/{{page}}\/\n末世::\/list\/moshi\/{{page}}\/\n体育::\/list\/tiyu\/{{page}}\/\n权谋::\/list\/quanmou\/{{page}}\/\n商战::\/list\/shangzhan\/{{page}}\/\n内涵::\/list\/neihan\/{{page}}\/\n欢乐向::\/list\/huanlexiang\/{{page}}\/\n爱情::\/list\/aiqing\/{{page}}\/\n轻小说::\/list\/qingxiaoshuo\/{{page}}\/\n音乐舞蹈::\/list\/yinyuewudao\/{{page}}\/\n百合::\/list\/baihe\/{{page}}\/\n四格::\/list\/sige\/{{page}}\/\n东方::\/list\/dongfang\/{{page}}\/\n神鬼::\/list\/shengui\/{{page}}\/\n修真恋爱架空::\/list\/xiuzhenlianaijiakong\/{{page}}\/\n轻松搞笑::\/list\/qingsonggaoxiao\/{{page}}\/\n同人漫画::\/list\/tongrenmanhua\/{{page}}\/\n少女爱情::\/list\/shaonvaiqing\/{{page}}\/\n彩虹::\/list\/caihong\/{{page}}\/\n侦探::\/list\/zhentan\/{{page}}\/\n魔法::\/list\/mofa\/{{page}}\/\n纠结::\/list\/jiujie\/{{page}}\/\n性转换::\/list\/xingzhuanhuan\/{{page}}\/\n婚姻::\/list\/hunyin\/{{page}}\/\n搞笑喜剧::\/list\/gaoxiaoxiju\/{{page}}\/\n伪娘::\/list\/weiniang\/{{page}}\/\n其他::\/list\/qita2\/{{page}}\/\n宅系::\/list\/zhaixi\/{{page}}\/\n战争漫画::\/list\/zhanzhengmanhua\/{{page}}\/\n恐怖灵异::\/list\/kongbulingyi\/{{page}}\/\n竞技体育::\/list\/jingjitiyu\/{{page}}\/\n节操::\/list\/jiecao\/{{page}}\/\n耽美人生::\/list\/danmeirensheng\/{{page}}\/\n故事漫画::\/list\/gushimanhua\/{{page}}\/\n快看漫画::\/list\/kuaikanmanhua\/{{page}}\/\n韩国漫画::\/list\/hanguomanhua\/{{page}}\/\n少年::\/list\/shaonian\/{{page}}\/\n暗黑::\/list\/anhei\/{{page}}\/\n青年::\/list\/qingnian\/{{page}}\/\n少女::\/list\/shaonv\/{{page}}\/\n改编::\/list\/gaibian\/{{page}}\/\nAA::\/list\/AA\/{{page}}\/\n惊悚::\/list\/jingsong\/{{page}}\/\n西方魔幻::\/list\/xifangmohuan\/{{page}}\/\n性转::\/list\/xingzhuan\/{{page}}\/\n舰娘::\/list\/jianniang\/{{page}}\/\n机战::\/list\/jizhan\/{{page}}\/\n绘本::\/list\/huiben\/{{page}}\/\n恐怖悬疑::\/list\/kongbuxuanyi\/{{page}}\/\n正能量::\/list\/zhengnengliang\/{{page}}\/\n致郁::\/list\/zhiyu2\/{{page}}\/\n秀吉::\/list\/xiuji\/{{page}}\/\n总裁::\/list\/zongcai\/{{page}}\/\n伦理::\/list\/lunli\/{{page}}\/\n橘味::\/list\/juwei\/{{page}}\/\n耽美BL::\/list\/danmeiBL\/{{page}}\/\n颜艺::\/list\/yanyi\/{{page}}\/\n智斗::\/list\/zhidou\/{{page}}\/\n高清单行::\/list\/gaoqingdanxing\/{{page}}\/\n主仆::\/list\/zhupu\/{{page}}\/\n猎奇::\/list\/lieqi\/{{page}}\/\n乙女::\/list\/yinv\/{{page}}\/\n麦萌::\/list\/maimeng\/{{page}}\/\n黑道::\/list\/heidao\/{{page}}\/\n热血冒险::\/list\/rexuemaoxian\/{{page}}\/\n儿童::\/list\/ertong\/{{page}}\/\n投稿::\/list\/tougao\/{{page}}\/\n漫画岛::\/list\/manhuadao\/{{page}}\/\n热血动作::\/list\/rexuedongzuo\/{{page}}\/\nmhuaquan::\/list\/mhuaquan\/{{page}}\/\n动画::\/list\/donghua\/{{page}}\/\n四格多格::\/list\/sigeduoge\/{{page}}\/\n逆转::\/list\/nizhuan\/{{page}}\/\n重生::\/list\/zhongsheng\/{{page}}\/\n古装::\/list\/guzhuang\/{{page}}\/\n宅斗::\/list\/zhaidou\/{{page}}\/\n偶像::\/list\/ouxiang\/{{page}}\/\n暧昧::\/list\/aimei\/{{page}}\/\n幻想::\/list\/huanxiang\/{{page}}\/\n奇闻::\/list\/qiwen\/{{page}}\/\n异族::\/list\/yizu\/{{page}}\/\n独家::\/list\/dujia\/{{page}}\/\n血族::\/list\/xuezu\/{{page}}\/\n女强::\/list\/nvqiang\/{{page}}\/\n美型::\/list\/meixing\/{{page}}\/\n言情::\/list\/yanqing\/{{page}}\/\n种田::\/list\/zhongtian\/{{page}}\/\n狐仙::\/list\/huxian\/{{page}}\/\n悬疑惊悚::\/list\/xuanyijingsong\/{{page}}\/\n兽耳::\/list\/shouer\/{{page}}\/\n鬼怪::\/list\/guiguai\/{{page}}\/\n少儿::\/list\/shaoer\/{{page}}\/\n小僵尸::\/list\/xiaojiangshi\/{{page}}\/\n狠西游::\/list\/henxiyou\/{{page}}\/\n西游记::\/list\/xiyouji\/{{page}}\/\n青青树::\/list\/qingqingshu\/{{page}}\/\n病娇::\/list\/bingjiao\/{{page}}\/\n甜宠::\/list\/tianchong\/{{page}}\/\n男神::\/list\/nanshen\/{{page}}\/\n大女主::\/list\/danvzhu\/{{page}}\/\n叛逆::\/list\/panni\/{{page}}\/\n怪谈::\/list\/guaitan\/{{page}}\/\n生化::\/list\/shenghua\/{{page}}\/\n宠爱::\/list\/chongai\/{{page}}\/\n探案::\/list\/tanan\/{{page}}\/\n魔王::\/list\/mowang\/{{page}}\/\n福利::\/list\/fuli\/{{page}}\/\n怀旧::\/list\/huaijiu\/{{page}}\/\n情感::\/list\/qinggan\/{{page}}\/\n绅士::\/list\/shenshi\/{{page}}\/\n死后世界::\/list\/sihoushijie\/{{page}}\/\n美少女::\/list\/meishaonv\/{{page}}\/\n墨瞳::\/list\/motong\/{{page}}\/\n日漫::\/list\/riman\/{{page}}\/\n末日::\/list\/mori\/{{page}}\/\n系统::\/list\/xitong\/{{page}}\/\n修仙::\/list\/xiuxian\/{{page}}\/\n神仙::\/list\/shenxian\/{{page}}\/\n怪物::\/list\/guaiwu\/{{page}}\/\n神豪::\/list\/shenhao\/{{page}}\/\n虐恋::\/list\/nuelian\/{{page}}\/\n霸总都市::\/list\/bazongdushi\/{{page}}\/\n妖怪::\/list\/yaoguai\/{{page}}\/\n高甜::\/list\/gaotian\/{{page}}\/\n完结::\/list\/wanjie\/{{page}}\/\nA::\/list\/a\/{{page}}\/\nB::\/list\/b\/{{page}}\/\nC::\/list\/c\/{{page}}\/\nD::\/list\/d\/{{page}}\/\nE::\/list\/e\/{{page}}\/\nF::\/list\/f\/{{page}}\/\nG::\/list\/g\/{{page}}\/\nH::\/list\/h\/{{page}}\/\nI::\/list\/i\/{{page}}\/\nJ::\/list\/j\/{{page}}\/\nK::\/list\/k\/{{page}}\/\nL::\/list\/l\/{{page}}\/\nM::\/list\/m\/{{page}}\/\nN::\/list\/n\/{{page}}\/\nO::\/list\/o\/{{page}}\/\nP::\/list\/p\/{{page}}\/\nQ::\/list\/q\/{{page}}\/\nR::\/list\/r\/{{page}}\/\nS::\/list\/s\/{{page}}\/\nT::\/list\/t\/{{page}}\/\nU::\/list\/u\/{{page}}\/\nV::\/list\/v\/{{page}}\/\nW::\/list\/w\/{{page}}\/\nX::\/list\/x\/{{page}}\/\nY::\/list\/y\/{{page}}\/\nZ::\/list\/z\/{{page}}\/\n其他::\/list\/1\/{{page}}\/",
+        "weight": 0,
+        "loginUrl": "",
+        "header": "",
+        "lastUpdateTime": 0,
+        "ruleSearch": {
             "bookList": "class.itemBox||class.list-comic",
-            "bookUrl": "tag.a.1@href",
-            "coverUrl": "tag.mip-img@src",
+            "name": "tag.a.1@text",
+            "author": "tag.p.0@text",
             "kind": "tag.p.1@text&&tag.p.2@text##\\s.*",
             "lastChapter": "class.coll@tag.a@text||class.info@tag.a@text",
-            "name": "tag.a.1@text"
+            "coverUrl": "tag.mip-img@src",
+            "bookUrl": "tag.a.1@href"
+        },
+        "ruleExplore": {},
+        "ruleBookInfo": {
+            "name": "class.title@tag.h1@text##漫画",
+            "author": "class.left.3@text",
+            "kind": "class.left.5@text&&class.left.7@text",
+            "lastChapter": "class.left.1@text",
+            "intro": "class.txtDesc@text##简介.|介绍.",
+            "coverUrl": "class.img@tag.mip-img@src"
         },
         "ruleToc": {
             "chapterList": "-id.chapter-list-1@tag.li",
             "chapterName": "tag.span@text",
             "chapterUrl": "tag.a@href"
         },
-        "searchUrl": "/search/?keywords={{key}}&page={{page}}",
-        "weight": 0
+        "ruleContent": {
+            "content": "@js:var m=result.match(\/src=\"([^\"]+)0.webp\/)[1];\nvar list=[];\nvar n=60;\nfor(i=0;i<n;i++){list.push('<img src=\"'+m+i+'.webp\"\/')};\nlist.push('<img src=\"'+m+n+'.webp\"\/>');\nlist.join('>')\n",
+            "imageStyle": "FULL"
+        }
     },
     {
         "bookSourceComment": "error:Timed out waiting for 60000 ms\n",
         "bookSourceGroup": "🎨漫画",
-        "bookSourceName": "🎨土豪漫画",
+        "bookSourceName": "🎨土豪漫画网",
         "bookSourceType": 0,
-        "bookSourceUrl": "https://tuhao456.com",
+        "bookSourceUrl": "https:\/\/tuhao456.com",
         "bookUrlPattern": "",
         "customOrder": 0,
         "enabled": true,
         "enabledExplore": true,
-        "exploreUrl": "全部::/sort/<,{{page}}.html>\n连载::/sort/s0/<,{{page}}.html>\n完结::/sort/s1/<,{{page}}.html>\n热血::/sort/t1/<,{{page}}.html>\n机战::/sort/t2/<,{{page}}.html>\n运动::/sort/t3/<,{{page}}.html>\n推理::/sort/t4/<,{{page}}.html>\n冒险::/sort/t5/<,{{page}}.html>\n搞笑::/sort/t8/<,{{page}}.html>\n战争::/sort/t9/<,{{page}}.html>\n神魔::/sort/t10/<,{{page}}.html>\n忍者::/sort/t11/<,{{page}}.html>\n竞技::/sort/t12/<,{{page}}.html>\n悬疑::/sort/t13/<,{{page}}.html>\n社会::/sort/t14/<,{{page}}.html>\n恋爱::/sort/t15/<,{{page}}.html>\n宠物::/sort/t16/<,{{page}}.html>\n吸血::/sort/t17/<,{{page}}.html>\n萝莉::/sort/t18/<,{{page}}.html>\n后宫::/sort/t19/<,{{page}}.html>\n御姐::/sort/t20/<,{{page}}.html>\n霸总::/sort/t21/<,{{page}}.html>\n玄幻::/sort/t22/<,{{page}}.html>\n古风::/sort/t23/<,{{page}}.html>\n历史::/sort/t24/<,{{page}}.html>\n漫改::/sort/t25/<,{{page}}.html>\n游戏::/sort/t26/<,{{page}}.html>\n穿越::/sort/t27/<,{{page}}.html>\n恐怖::/sort/t28/<,{{page}}.html>\n真人::/sort/t29/<,{{page}}.html>\n科幻::/sort/t30/<,{{page}}.html>\n都市::/sort/t31/<,{{page}}.html>\n武侠::/sort/t32/<,{{page}}.html>\n修真::/sort/t33/<,{{page}}.html>\n生活::/sort/t34/<,{{page}}.html>\n动作::/sort/t35/<,{{page}}.html>",
-        "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; WOW64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4402.0 Safari/537.36\"\n}",
+        "exploreUrl": "全部::https:\/\/tuhao456.com\/sort\/<,{{page}}.html>\n连载::https:\/\/tuhao456.com\/sort\/s0\/<,{{page}}.html>\n完结::https:\/\/tuhao456.com\/sort\/s1\/<,{{page}}.html>\n热血::https:\/\/tuhao456.com\/sort\/t1\/<,{{page}}.html>\n机战::https:\/\/tuhao456.com\/sort\/t2\/<,{{page}}.html>\n运动::https:\/\/tuhao456.com\/sort\/t3\/<,{{page}}.html>\n推理::https:\/\/tuhao456.com\/sort\/t4\/<,{{page}}.html>\n冒险::https:\/\/tuhao456.com\/sort\/t5\/<,{{page}}.html>\n搞笑::https:\/\/tuhao456.com\/sort\/t8\/<,{{page}}.html>\n战争::https:\/\/tuhao456.com\/sort\/t9\/<,{{page}}.html>\n神魔::https:\/\/tuhao456.com\/sort\/t10\/<,{{page}}.html>\n忍者::https:\/\/tuhao456.com\/sort\/t11\/<,{{page}}.html>\n竞技::https:\/\/tuhao456.com\/sort\/t12\/<,{{page}}.html>\n悬疑::https:\/\/tuhao456.com\/sort\/t13\/<,{{page}}.html>\n社会::https:\/\/tuhao456.com\/sort\/t14\/<,{{page}}.html>\n恋爱::https:\/\/tuhao456.com\/sort\/t15\/<,{{page}}.html>\n宠物::https:\/\/tuhao456.com\/sort\/t16\/<,{{page}}.html>\n吸血::https:\/\/tuhao456.com\/sort\/t17\/<,{{page}}.html>\n萝莉::https:\/\/tuhao456.com\/sort\/t18\/<,{{page}}.html>\n后宫::https:\/\/tuhao456.com\/sort\/t19\/<,{{page}}.html>\n御姐::https:\/\/tuhao456.com\/sort\/t20\/<,{{page}}.html>\n霸总::https:\/\/tuhao456.com\/sort\/t21\/<,{{page}}.html>\n玄幻::https:\/\/tuhao456.com\/sort\/t22\/<,{{page}}.html>\n古风::https:\/\/tuhao456.com\/sort\/t23\/<,{{page}}.html>\n历史::https:\/\/tuhao456.com\/sort\/t24\/<,{{page}}.html>\n漫改::https:\/\/tuhao456.com\/sort\/t25\/<,{{page}}.html>\n游戏::https:\/\/tuhao456.com\/sort\/t26\/<,{{page}}.html>\n穿越::https:\/\/tuhao456.com\/sort\/t27\/<,{{page}}.html>\n恐怖::https:\/\/tuhao456.com\/sort\/t28\/<,{{page}}.html>\n真人::https:\/\/tuhao456.com\/sort\/t29\/<,{{page}}.html>\n科幻::https:\/\/tuhao456.com\/sort\/t30\/<,{{page}}.html>\n都市::https:\/\/tuhao456.com\/sort\/t31\/<,{{page}}.html>\n武侠::https:\/\/tuhao456.com\/sort\/t32\/<,{{page}}.html>\n修真::https:\/\/tuhao456.com\/sort\/t33\/<,{{page}}.html>\n生活::https:\/\/tuhao456.com\/sort\/t34\/<,{{page}}.html>\n动作::https:\/\/tuhao456.com\/sort\/t35\/<,{{page}}.html>\n",
+        "header": "{\n  \"User-Agent\": \"Mozilla\/5.0 (Windows NT 10.0; WOW64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/75.0.3770.100 Safari\/537.36\"\n}",
         "lastUpdateTime": 0,
         "loginUrl": "",
         "ruleBookInfo": {
             "author": "class.cy_xinxi.0@tag.span.0@text",
             "coverUrl": "class.cy_info_cover@tag.img@src",
             "intro": "id.comic-description@text",
-            "kind": "class.cy_xinxi.1@tag.a@text&&class.cy_zhangjie_top@tag.font@text",
-            "lastChapter": "class.cy_zhangjie_top@tag.a.0@text",
-            "name": "class.cy_title@tag.h1@text",
-            "wordCount": "class.hasread ift-fire@text"
+            "kind": "class.cy_xinxi.1@tag.span.1@tag.a@text",
+            "lastChapter": "class.cy_zhangjie_top@class.red@text",
+            "name": "class.cy_title@text",
+            "wordCount": "class.cy_zhangjie@tag.font@text"
         },
         "ruleContent": {
-            "content": "class.btmBtnBox@html##option##img@js:result.replace(/value/g,\"src\")",
+            "content": "class.btmBtnBox@html##option##img@js:result.replace(\/value\/g,\"src\")",
             "imageStyle": "FULL",
-            "nextContentUrl": "",
             "replaceRegex": "##第\\d+页.*|上一章节",
             "sourceRegex": ""
         },
         "ruleExplore": {},
         "ruleSearch": {
             "bookList": "class.cy_list_mh@tag.ul",
-            "bookUrl": "tag.a.1@href",
-            "coverUrl": "tag.img@src",
-            "intro": "class.info@text##简介.",
-            "kind": "tag.a.2@text&&class.biaoqian@tag.a@text",
-            "lastChapter": "tag.span.0@text",
-            "name": "tag.a.1@text"
+            "bookUrl": "tag.a.0@href",
+            "coverUrl": "class.pic@tag.img@src",
+            "intro": "class.info@text",
+            "kind": "class.biaoqian@tag.a@text",
+            "lastChapter": "class.updata@tag.a@text",
+            "name": "class.title@text"
         },
         "ruleToc": {
             "chapterList": "-class.cy_plist@tag.li",
             "chapterName": "tag.a@text",
-            "chapterUrl": "tag.a@href##$##,{\"webView\":true}",
-            "isVip": ""
+            "chapterUrl": "tag.a@href##$##,{\"webView\":true}"
         },
-        "searchUrl": "/sort/?key={{key}}",
+        "searchUrl": "https:\/\/tuhao456.com\/sort\/?key={{key}}",
         "weight": 0
     },
     {
@@ -11637,14 +11691,14 @@
         "bookSourceGroup": "🎨漫画",
         "bookSourceName": "🎨皮皮漫画",
         "bookSourceType": 0,
-        "bookSourceUrl": "https://www.ppmh.cc",
+        "bookSourceUrl": "https:\/\/www.ppmh.cc",
         "bookUrlPattern": "",
         "customOrder": 0,
         "enabled": true,
         "enabledExplore": true,
-        "exploreUrl": "全部::https://www.ppmh.cc/booklist/?page={{page}}\n校园::/booklist?page={{page}}&tag=校园\n搞笑::/booklist?page={{page}}&tag=搞笑\n后宫::/booklist?page={{page}}&tag=后宫\n生活::/booklist?page={{page}}&tag=生活\n恋爱::/booklist?page={{page}}&tag=恋爱\n霸总::/booklist?page={{page}}&tag=霸总\n玄幻::/booklist?page={{page}}&tag=玄幻\n热血::/booklist?page={{page}}&tag=热血\n科幻::/booklist?page={{page}}&tag=科幻\n竞技::/booklist?page={{page}}&tag=竞技\n灵异::/booklist?page={{page}}&tag=灵异\n冒险::/booklist?page={{page}}&tag=冒险\n古风::/booklist?page={{page}}&tag=古风\n同人::/booklist?page={{page}}&tag=同人\n真人::/booklist?page={{page}}&tag=真人\n悬疑::/booklist?page={{page}}&tag=悬疑\n架空::/booklist?page={{page}}&tag=架空\n穿越::/booklist?page={{page}}&tag=穿越\n动作::/booklist?page={{page}}&tag=动作\n耽美::/booklist?page={{page}}&tag=耽美\n战争::/booklist?page={{page}}&tag=战争\n恐怖::/booklist?page={{page}}&tag=恐怖\n励志::/booklist?page={{page}}&tag=励志\n修真::/booklist?page={{page}}&tag=修真\n百合::/booklist?page={{page}}&tag=百合\n官商::/booklist?page={{page}}&tag=官商\n重生::/booklist?page={{page}}&tag=重生\n女主::/booklist?page={{page}}&tag=女主",
+        "exploreUrl": "全部::https:\/\/www.ppmh.cc\/booklist\/?page={{page}}\n校园::\/booklist?page={{page}}&tag=校园\n搞笑::\/booklist?page={{page}}&tag=搞笑\n后宫::\/booklist?page={{page}}&tag=后宫\n生活::\/booklist?page={{page}}&tag=生活\n恋爱::\/booklist?page={{page}}&tag=恋爱\n霸总::\/booklist?page={{page}}&tag=霸总\n玄幻::\/booklist?page={{page}}&tag=玄幻\n热血::\/booklist?page={{page}}&tag=热血\n科幻::\/booklist?page={{page}}&tag=科幻\n竞技::\/booklist?page={{page}}&tag=竞技\n灵异::\/booklist?page={{page}}&tag=灵异\n冒险::\/booklist?page={{page}}&tag=冒险\n古风::\/booklist?page={{page}}&tag=古风\n同人::\/booklist?page={{page}}&tag=同人\n真人::\/booklist?page={{page}}&tag=真人\n悬疑::\/booklist?page={{page}}&tag=悬疑\n架空::\/booklist?page={{page}}&tag=架空\n穿越::\/booklist?page={{page}}&tag=穿越\n动作::\/booklist?page={{page}}&tag=动作\n耽美::\/booklist?page={{page}}&tag=耽美\n战争::\/booklist?page={{page}}&tag=战争\n恐怖::\/booklist?page={{page}}&tag=恐怖\n励志::\/booklist?page={{page}}&tag=励志\n修真::\/booklist?page={{page}}&tag=修真\n百合::\/booklist?page={{page}}&tag=百合\n官商::\/booklist?page={{page}}&tag=官商\n重生::\/booklist?page={{page}}&tag=重生\n女主::\/booklist?page={{page}}&tag=女主",
         "header": "{\n  \"User-Agent\": \"Mobile\"\n}",
-        "lastUpdateTime": 0,
+        "lastUpdateTime": 1604910919056,
         "loginUrl": "",
         "ruleBookInfo": {
             "author": "class.detail-main-info-author.1@a@text",
@@ -11655,7 +11709,7 @@
             "name": "class.detail-main-info-title@text"
         },
         "ruleContent": {
-            "content": "id.cp_img@img!-1@html##src.*\\\"\n@js:result.replace(/data-original/g,\"src\")",
+            "content": "id.cp_img@img!-1@html",
             "imageStyle": "FULL"
         },
         "ruleExplore": {},
@@ -11672,7 +11726,7 @@
             "chapterName": "text",
             "chapterUrl": "tag.a@href"
         },
-        "searchUrl": "https://www.ppmh.cc/search?keyword={{key}}&page={{page}}",
+        "searchUrl": "https:\/\/www.ppmh.cc\/search?keyword={{key}}&page={{page}}",
         "weight": 0
     },
     {
@@ -11723,12 +11777,12 @@
         "bookSourceGroup": "🎨漫画",
         "bookSourceName": "🎨奇妙漫画",
         "bookSourceType": 0,
-        "bookSourceUrl": "https://www.qimiaomh.com",
+        "bookSourceUrl": "https:\/\/www.qimiaomh.com",
         "customOrder": 0,
         "enabled": true,
         "enabledExplore": true,
-        "exploreUrl": "全部::/list-1------updatetime--{{page}}.html\n热血::/list-1-7-----updatetime--{{page}}.html\n恋爱::/list-1-8-----updatetime--{{page}}.html\n青春::/list-1-9-----updatetime--{{page}}.html\n彩虹::/list-1-10-----updatetime--{{page}}.html\n冒险::/list-1-11-----updatetime--{{page}}.html\n后宫::/list-1-12-----updatetime--{{page}}.html\n悬疑::/list-1-13-----updatetime--{{page}}.html\n玄幻::/list-1-14-----updatetime--{{page}}.html\n穿越::/list-1-16-----updatetime--{{page}}.html\n都市::/list-1-17-----updatetime--{{page}}.html\n腹黑::/list-1-18-----updatetime--{{page}}.html\n爆笑::/list-1-19-----updatetime--{{page}}.html\n少年::/list-1-20-----updatetime--{{page}}.html\n奇幻::/list-1-21-----updatetime--{{page}}.html\n古风::/list-1-22-----updatetime--{{page}}.html\n妖恋::/list-1-23-----updatetime--{{page}}.html\n元气::/list-1-24-----updatetime--{{page}}.html\n治愈::/list-1-25-----updatetime--{{page}}.html\n励志::/list-1-26-----updatetime--{{page}}.html\n日常::/list-1-27-----updatetime--{{page}}.html\n百合::/list-1-28-----updatetime--{{page}}.html",
-        "lastUpdateTime": 0,
+        "exploreUrl": "全部::\/list-1------updatetime--{{page}}.html\n热血::\/list-1-7-----updatetime--{{page}}.html\n恋爱::\/list-1-8-----updatetime--{{page}}.html\n青春::\/list-1-9-----updatetime--{{page}}.html\n彩虹::\/list-1-10-----updatetime--{{page}}.html\n冒险::\/list-1-11-----updatetime--{{page}}.html\n后宫::\/list-1-12-----updatetime--{{page}}.html\n悬疑::\/list-1-13-----updatetime--{{page}}.html\n玄幻::\/list-1-14-----updatetime--{{page}}.html\n穿越::\/list-1-16-----updatetime--{{page}}.html\n都市::\/list-1-17-----updatetime--{{page}}.html\n腹黑::\/list-1-18-----updatetime--{{page}}.html\n爆笑::\/list-1-19-----updatetime--{{page}}.html\n少年::\/list-1-20-----updatetime--{{page}}.html\n奇幻::\/list-1-21-----updatetime--{{page}}.html\n古风::\/list-1-22-----updatetime--{{page}}.html\n妖恋::\/list-1-23-----updatetime--{{page}}.html\n元气::\/list-1-24-----updatetime--{{page}}.html\n治愈::\/list-1-25-----updatetime--{{page}}.html\n励志::\/list-1-26-----updatetime--{{page}}.html\n日常::\/list-1-27-----updatetime--{{page}}.html\n百合::\/list-1-28-----updatetime--{{page}}.html",
+        "lastUpdateTime": 1610253910673,
         "ruleBookInfo": {
             "author": "class.author@ownText",
             "coverUrl": "class.ctdbLeft@img@src",
@@ -11753,7 +11807,7 @@
             "chapterName": "text",
             "chapterUrl": "href##$##,{\"webView\":true}"
         },
-        "searchUrl": "https://www.qimiaomh.com/action/Search?keyword={{key}}",
+        "searchUrl": "https:\/\/www.qimiaomh.com\/action\/Search?keyword={{key}}",
         "weight": 0
     },
     {
@@ -11761,15 +11815,15 @@
         "bookSourceGroup": "🎨漫画",
         "bookSourceName": "🎨奇漫屋",
         "bookSourceType": 0,
-        "bookSourceUrl": "https://qiman6.com",
+        "bookSourceUrl": "http:\/\/qiman6.com",
         "customOrder": 0,
         "enabled": true,
         "enabledExplore": true,
-        "exploreUrl": "冒险热血::{{page-1==0?'/sort/1-1.html':'/ajaxf/sort/?page_num=1&type=1'}}\n武侠格斗::{{page-1==0?'/sort/2-1.html':'/ajaxf/sort/?page_num=1&type=2'}}\n科幻魔幻::{{page-1==0?'/sort/3-1.html':'/ajaxf/sort/?page_num=1&type=3'}}\n侦探推理::{{page-1==0?'/sort/4-1.html':'/ajaxf/sort/?page_num=1&type=4'}}\n耽美爱情::{{page-1==0?'/sort/5-1.html':'/ajaxf/sort/?page_num=1&type=5'}}\n生活漫画::{{page-1==0?'/sort/6-1.html':'/ajaxf/sort/?page_num=1&type=6'}}\n推荐漫画::{{page-1==0?'/sort/11-1.html':'/ajaxf/sort/?page_num=1&type=11'}}\n完结::{{page-1==0?'/sort/12-1.html':'/ajaxf/sort/?page_num=1&type=12'}}\n连载中::{{page-1==0?'/sort/13-1.html':'/ajaxf/sort/?page_num=1&type=13'}}",
-        "lastUpdateTime": 0,
+        "exploreUrl": "冒险热血::{{page-1==0?'\/sort\/1-1.html':'\/ajaxf\/sort\/?page_num=1&type=1'}}\n武侠格斗::{{page-1==0?'\/sort\/2-1.html':'\/ajaxf\/sort\/?page_num=1&type=2'}}\n科幻魔幻::{{page-1==0?'\/sort\/3-1.html':'\/ajaxf\/sort\/?page_num=1&type=3'}}\n侦探推理::{{page-1==0?'\/sort\/4-1.html':'\/ajaxf\/sort\/?page_num=1&type=4'}}\n耽美爱情::{{page-1==0?'\/sort\/5-1.html':'\/ajaxf\/sort\/?page_num=1&type=5'}}\n生活漫画::{{page-1==0?'\/sort\/6-1.html':'\/ajaxf\/sort\/?page_num=1&type=6'}}\n推荐漫画::{{page-1==0?'\/sort\/11-1.html':'\/ajaxf\/sort\/?page_num=1&type=11'}}\n完结::{{page-1==0?'\/sort\/12-1.html':'\/ajaxf\/sort\/?page_num=1&type=12'}}\n连载中::{{page-1==0?'\/sort\/13-1.html':'\/ajaxf\/sort\/?page_num=1&type=13'}}",
+        "lastUpdateTime": 1610255083992,
         "ruleBookInfo": {
             "intro": "class.comic-intro@text",
-            "tocUrl": "https://qiman6.com/bookchapter/,{\n\"method\": \"POST\",\n\"body\": \"id={{java.put('id',baseUrl.match(/(\\d+)\\/$/)[1]);}}&id2=1\"\n}"
+            "tocUrl": "http:\/\/qiman6.com\/bookchapter\/,{\n\"method\": \"POST\",\n\"body\": \"id={{java.put('id',baseUrl.match(\/(\\d+)\\\/$\/)[1]);}}&id2=1\"\n}"
         },
         "ruleContent": {
             "content": "class.lazy@html",
@@ -11798,10 +11852,10 @@
         "ruleToc": {
             "chapterList": "-$.[*]",
             "chapterName": "$.name",
-            "chapterUrl": "https://qiman6.com/@get:{id}/{{$.id}}.html,{\n\"webView\":true\n}",
+            "chapterUrl": "http:\/\/qiman6.com\/@get:{id}\/{{$.id}}.html,{\n\"webView\":true\n}",
             "isVip": ""
         },
-        "searchUrl": "https://qiman6.com/spotlight/?keyword={{key}}",
+        "searchUrl": "http:\/\/qiman6.com\/spotlight\/?keyword={{key}}",
         "weight": 0
     },
     {
@@ -11846,62 +11900,6 @@
     {
         "bookSourceComment": "",
         "bookSourceGroup": "🎨漫画",
-        "bookSourceName": "🎨动漫之家",
-        "bookSourceType": 0,
-        "bookSourceUrl": "https://nnv3api.dmzj1.com",
-        "bookUrlPattern": "",
-        "customOrder": 0,
-        "enabled": true,
-        "enabledExplore": true,
-        "exploreUrl": "最新::/novel/recentUpdate/{{page-1}}.json\n人气::/novel/rank/0/0/{{page-1}}.json\n订阅::/novel/rank/1/0/{{page-1}}.json\n全部::/novel/0/0/0/{{page-1}}.json\n恐怖::/novel/2/0/1/{{page-1}}.json\n科幻::/novel/4/0/1/{{page-1}}.json\n侦探::/novel/6/0/1/{{page-1}}.json\n爱情::/novel/8/0/1/{{page-1}}.json\n校园::/novel/12/0/1/{{page-1}}.json\n神鬼::/novel/14/0/1/{{page-1}}.json\n魔法::/novel/16/0/1/{{page-1}}.json\n冒险::/novel/20/0/1/{{page-1}}.json\n其他::/novel/25/0/1/{{page-1}}.json\n搞笑::/novel/40/0/1/{{page-1}}.json\n格斗::/novel/47/0/1/{{page-1}}.json\n机战::/novel/1264/0/1/{{page-1}}.json\n仙侠::/novel/1265/0/1/{{page-1}}.json\n都市::/novel/1266/0/1/{{page-1}}.json\n历史::/novel/1267/0/1/{{page-1}}.json\n战争::/novel/1268/0/1/{{page-1}}.json\n治愈::/novel/1269/0/1/{{page-1}}.json\n励志::/novel/1270/0/1/{{page-1}}.json\n后宫::/novel/1271/0/1/{{page-1}}.json\n百合::/novel/1272/0/1/{{page-1}}.json\n纯爱::/novel/1273/0/1/{{page-1}}.json\n异界::/novel/1274/0/1/{{page-1}}.json\n异能::/novel/1275/0/1/{{page-1}}.json\n穿越::/novel/1276/0/1/{{page-1}}.json\n奇幻::/novel/1321/0/1/{{page-1}}.json",
-        "lastUpdateTime": 0,
-        "loginUrl": "",
-        "ruleBookInfo": {
-            "author": "$.authors@js:java.put('author',result)",
-            "canReName": "true",
-            "coverUrl": "$.cover",
-            "intro": "$.introduction\n<js>result=\"  \"+result;</js>",
-            "kind": "$.types",
-            "lastChapter": "$.last_update_chapter_name",
-            "name": "$.name@js:java.put('sm',result)",
-            "tocUrl": "$.id@js:\"https://nnv3api.dmzj1.com/novel/chapter/\"+result+\".json\""
-        },
-        "ruleContent": {
-            "content": "@js:result.replace(/&&[a-z]{4,};/ig,\"\")\nif((/\\.google\\.cn/).test(baseUrl)){\ndecodeURIComponent(baseUrl.replace(/^.+[&?]text=/, ''))}",
-            "imageStyle": "FULL",
-            "replaceRegex": "##^[^\\n]*\\n"
-        },
-        "ruleExplore": {
-            "author": "$.authors",
-            "bookList": "$.[*]",
-            "bookUrl": "/novel/{$.id}.json",
-            "coverUrl": "$.cover",
-            "intro": "$.last_update_time\n<js>\ndate= new Date(parseInt(result)*1000).toLocaleString();\n</js>##G.*",
-            "kind": "$.types",
-            "lastChapter": "{$.last_update_volume_name} \n{$.last_update_chapter_name}",
-            "name": "$.name"
-        },
-        "ruleSearch": {
-            "author": "$.authors",
-            "bookList": "$.[*]\n<js>\nvar opts = {\n  pattern: /\\/show\\/1\\/([^\\/]+)\\//,\n  name: '$.title',\n  author: '$.authors'\n};\n\n//删除糢糊匹配的搜索结果，然后按书名长度排序。依赖于baseUrl、result变量。\n//return Array\n//opts Object: 参数，包含以下key：\n//target List<Object>(result): 要过滤列表。\n//pattern RegExp: 匹配searchKey的正则表达式。\n//name String: 书名规则。\n//author String: 作者规则。\n//charset String('UTF-8'): 编码方式。\n//sorting Boolean(true): 是否重新排序。\n\nfunction searchFilter(opts){\n  result = opts.target === undefined ? result : opts.target;\n  opts.charset = opts.charset === undefined ? 'UTF-8' : opts.charset;\n  opts.sorting = opts.sorting === undefined ? true : !!opts.sorting;\n  function getText(ele, rule){\n    java.setContent(ele);\n    return String(java.getString(rule));\n  }\n  try {\n    var kw = (baseUrl.match(opts.pattern) || ['',''])[1];\n    kw = Packages.java.net.URLDecoder.decode(kw, opts.charset);\n    result = result.toArray().filter(e => getText(e, opts.name).includes(kw) || getText(e, opts.author).includes(kw));\n    return opts.sorting ? result.sort((a, b) => getText(a, opts.name).length - getText(b, opts.name).length) : result;\n  } catch(e) {\n    return result;\n  }\n}\n\nsearchFilter(opts);\n</js>",
-            "bookUrl": "$.id@js:\"https://nnv3api.dmzj1.com:443/novel/\"+result+\".json\"",
-            "coverUrl": "$.cover",
-            "intro": "",
-            "kind": "$.types",
-            "lastChapter": "$.last_name||$.last_update_volume_name",
-            "name": "$.title||$.name"
-        },
-        "ruleToc": {
-            "chapterList": "+<js>\n//二级目录，Json\nvar jdoc = JSON.parse(result);\nvar chUrl = 'https://nnv3api.dmzj1.com/novel/download/@get:{ID}_';\nvar volUrl = 'https://translate.google.cn/#view=home&op=translate&sl=zh-CN&tl=en&text=';\nvar list = [];\n//显示卷名\nvar opts = {\n  showVolName: false\n};\n\nsm=java.get('sm');\nauthor=java.get('author');\n\nfunction format(title){\n  return title.trim().replace(/^(\\d+)(?![\\s\\d卷部章节回.])/, '$1 ').replace(/\\s+/g, \"\\x20\\x20\");\n}\n\njdoc.forEach((vol,idx) => {\n  var chs = vol.chapters.map(ch => ({\n    text: (opts.showVolName ? '🍈[' + format(vol.volume_name) + ']🍈' : (ch.IsVip === '1' ? '💰' : '').padStart(3, \"\\u2000\")) + format(ch.chapter_name),\n    href: chUrl+vol.volume_id+'_'+ch.chapter_id+'.txt',\n    name: format(ch.chapter_name)\n  }));\n\n  var volInfo =author+\"：\\n\"+sm+'\\\\'+ format(vol.volume_name)+ '\\n目录(' + chs.length + \")：\\n\";\n  volInfo += chs.slice(0,30).map(v => v.name).join(\"\\n\");\n  volInfo += chs.length > 30 ? \"\\n……\" : '';\n\n  list.push({\n    text: '♦[' + format(vol.volume_name) + ']♦',\n    href: volUrl + encodeURIComponent(volInfo)\n});\n  list = list.concat(chs);\n});\n\nresult = list;\n</js>",
-            "chapterName": "text",
-            "chapterUrl": "href"
-        },
-        "searchUrl": "/search/show/1/{{key}}/{{page-1}}.json",
-        "weight": 0
-    },
-    {
-        "bookSourceComment": "",
-        "bookSourceGroup": "🎨漫画",
         "bookSourceName": "🎨黑白漫话",
         "bookSourceType": 0,
         "bookSourceUrl": "https://heibaimanhua.com",
@@ -11933,6 +11931,49 @@
             "chapterUrl": "\"\""
         },
         "searchUrl": "https://heibaimanhua.com/page/{{page}}?s={{key}}",
+        "weight": 0
+    },
+    {
+        "bookSourceComment": "haxc",
+        "bookSourceGroup": "🎨漫画",
+        "bookSourceName": "🎨看漫画啦",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https:\/\/kanmanhuala.com",
+        "bookUrlPattern": "",
+        "customOrder": 0,
+        "enabled": true,
+        "enabledExplore": true,
+        "exploreUrl": "排行::https:\/\/kanmanhuala.com\/rank\/<,page={{page}}>\n全部::https:\/\/kanmanhuala.com\/booklist\/?page={{page}}\n连载中::https:\/\/kanmanhuala.com\/booklist\/?tag=%E5%85%A8%E9%83%A8&area=-1&end=0&page={{page}}\n已完结::https:\/\/kanmanhuala.com\/booklist\/?tag=%E5%85%A8%E9%83%A8&area=-1&end=1&page={{page}}\n国漫::https:\/\/kanmanhuala.com\/booklist\/?tag=%E5%85%A8%E9%83%A8&area=1&end=-1&page={{page}}\n日韩::https:\/\/kanmanhuala.com\/booklist\/?tag=%E5%85%A8%E9%83%A8&area=2&end=-1&page={{page}}\n日常::https:\/\/kanmanhuala.com\/booklist?tag=%E6%97%A5%E5%B8%B8&page={{page}}\n腹黑::https:\/\/kanmanhuala.com\/booklist?tag=%E8%85%B9%E9%BB%91&page={{page}}\n都市::https:\/\/kanmanhuala.com\/booklist?tag=%E9%83%BD%E5%B8%82&page={{page}}\n穿越::https:\/\/kanmanhuala.com\/booklist?tag=%E7%A9%BF%E8%B6%8A&page={{page}}\n烧脑::https:\/\/kanmanhuala.com\/booklist?tag=%E7%83%A7%E8%84%91&page={{page}}\n治愈::https:\/\/kanmanhuala.com\/booklist?tag=%E6%B2%BB%E6%84%88&page={{page}}\n萌系::https:\/\/kanmanhuala.com\/booklist?tag=%E8%90%8C%E7%B3%BB&page={{page}}\n古风::https:\/\/kanmanhuala.com\/booklist?tag=%E5%8F%A4%E9%A3%8E&page={{page}}\n玄幻::https:\/\/kanmanhuala.com\/booklist?tag=%E7%8E%84%E5%B9%BB&page={{page}}\n猎奇::https:\/\/kanmanhuala.com\/booklist?tag=%E7%8C%8E%E5%A5%87&page={{page}}\n奇幻::https:\/\/kanmanhuala.com\/booklist?tag=%E5%A5%87%E5%B9%BB&page={{page}}\n搞笑::https:\/\/kanmanhuala.com\/booklist?tag=%E6%90%9E%E7%AC%91&page={{page}}\n推理::https:\/\/kanmanhuala.com\/booklist?tag=%E6%8E%A8%E7%90%86&page={{page}}\n悬疑::https:\/\/kanmanhuala.com\/booklist?tag=%E6%82%AC%E7%96%91&page={{page}}\n武侠::https:\/\/kanmanhuala.com\/booklist?tag=%E6%AD%A6%E4%BE%A0&page={{page}}\n仙侠::https:\/\/kanmanhuala.com\/booklist?tag=%E4%BB%99%E4%BE%A0&page={{page}}\n后宫::https:\/\/kanmanhuala.com\/booklist?tag=%E5%90%8E%E5%AE%AB&page={{page}}\n冒险::https:\/\/kanmanhuala.com\/booklist?tag=%E5%86%92%E9%99%A9&page={{page}}\n彩虹::https:\/\/kanmanhuala.com\/booklist?tag=%E5%BD%A9%E8%99%B9&page={{page}}\n百合::https:\/\/kanmanhuala.com\/booklist?tag=%E7%99%BE%E5%90%88&page={{page}}\n校园::https:\/\/kanmanhuala.com\/booklist?tag=%E6%A0%A1%E5%9B%AD&page={{page}}\n恋爱::https:\/\/kanmanhuala.com\/booklist?tag=%E6%81%8B%E7%88%B1&page={{page}}\n热血::https:\/\/kanmanhuala.com\/booklist?tag=%E7%83%AD%E8%A1%80&page={{page}}",
+        "header": "{\n  \"User-Agent\": \"Mobile\"\n}",
+        "lastUpdateTime": 1606822873633,
+        "loginUrl": "",
+        "ruleBookInfo": {
+            "author": "class.detail-main-info-author.1@text",
+            "coverUrl": "class.lazy@data-original",
+            "intro": "class.detail-desc@text",
+            "kind": "class.detail-main-info-class@tag.span@text",
+            "lastChapter": "id.detail-list-select@tag.li.0@text",
+            "name": "class.normal-top-title@text"
+        },
+        "ruleContent": {
+            "content": "id.cp_img@img@data-original@js:\nvar options = {\n\"headers\": {\"Referer\": baseUrl}\n}\nlist=result.split(\"\\n\");\nhtml='';\nfor(i in list){\nhtml+='<img src=\"'+list[i]+\",\"+JSON.stringify(options)+'\">'\n}\nhtml",
+            "imageStyle": "FULL"
+        },
+        "ruleExplore": {},
+        "ruleSearch": {
+            "author": "tag.span.0@text##作者：",
+            "bookList": "class.book-list@tag.li||class.rank-list@tag.a||class.manga-list-2@tag.li",
+            "bookUrl": "tag.a.0@href",
+            "coverUrl": "tag.img@data-original",
+            "lastChapter": "tag.span.-1@text||class.manga-list-2-tip@text",
+            "name": "tag.p.0@text"
+        },
+        "ruleToc": {
+            "chapterList": "id.detail-list-select@li",
+            "chapterName": "tag.a@text",
+            "chapterUrl": "tag.a@href"
+        },
+        "searchUrl": "https:\/\/kanmanhuala.com\/search?keyword={{key}}&page={{page}}",
         "weight": 0
     },
     {
@@ -11977,42 +12018,59 @@
         "weight": 0
     },
     {
-        "bookSourceComment": "",
+        "bookSourceComment": "且用且珍惜，页数为目录读取快些，另一种太卡，就没写\n\n可用virtual hosts更改hosts实现免root直连",
         "bookSourceGroup": "🎨漫画",
-        "bookSourceName": "🎨绅士漫画网",
+        "bookSourceName": "🎨绅士漫画",
         "bookSourceType": 0,
-        "bookSourceUrl": "https://ssmh.cc",
+        "bookSourceUrl": "https:\/\/www.wnacg.com",
         "bookUrlPattern": "",
         "customOrder": 0,
         "enabled": true,
         "enabledExplore": true,
-        "exploreUrl": "全部::https://ssmh.cc/booklist?tag=全部&area=-1&end=-1&page={{page}}\n连载::https://ssmh.cc/booklist?tag=全部&area=-1&end=0&page={{page}}\n完结::https://ssmh.cc/booklist?tag=全部&area=-1&end=1&page={{page}}\n玄幻::https://ssmh.cc/booklist?tag=玄幻&area=-1&end=-1&page={{page}}\n伦理::https://ssmh.cc/booklist?tag=伦理&area=-1&end=-1&page={{page}}\n校园::https://ssmh.cc/booklist?tag=校园&area=-1&end=-1&page={{page}}\n搞笑::https://ssmh.cc/booklist?tag=搞笑&area=-1&end=-1&page={{page}}\n后宫::https://ssmh.cc/booklist?tag=后宫&area=-1&end=-1&page={{page}}\n生活::https://ssmh.cc/booklist?tag=生活&area=-1&end=-1&page={{page}}\n霸总::https://ssmh.cc/booklist?tag=霸总&area=-1&end=-1&page={{page}}\n恋爱::https://ssmh.cc/booklist?tag=恋爱&area=-1&end=-1&page={{page}}\n科幻::https://ssmh.cc/booklist?tag=科幻&area=-1&end=-1&page={{page}}\n热血::https://ssmh.cc/booklist?tag=热血&area=-1&end=-1&page={{page}}\n竞技::https://ssmh.cc/booklist?tag=竞技&area=-1&end=-1&page={{page}}\n战争::https://ssmh.cc/booklist?tag=战争&area=-1&end=-1&page={{page}}\n励志::https://ssmh.cc/booklist?tag=励志&area=-1&end=-1&page={{page}}\n恐怖::https://ssmh.cc/booklist?tag=恐怖&area=-1&end=-1&page={{page}}\n百合::https://ssmh.cc/booklist?tag=百合&area=-1&end=-1&page={{page}}\n修真::https://ssmh.cc/booklist?tag=修真&area=-1&end=-1&page={{page}}\nnull",
-        "lastUpdateTime": 0,
-        "loginUrl": "",
+        "exploreUrl": "首页::\/albums-index-page-{{page}}.html\n风的工坊::\/albums-index-page-{{page}}-sname-風的工房.html\n4k汉化组::\/albums-index-page-{{page}}-sname-4K漢化組.html\nCG画集::\/albums-index-page-{{page}}-cate-2.html\nCosplay::\/albums-index-page-{{page}}-cate-3.html\n                                                                                                     ::                                    \n同人志[日语]::\/albums-index-page-{{page}}-cate-12.html\n杂志&短篇[日语]::\/albums-index-page-{{page}}-cate-14.html\n单行本[日语]::\/albums-index-page-{{page}}-cate-13.html\n                                                                                                     ::                                    \n同人志[汉化]::\/albums-index-page-{{page}}-cate-1.html\n杂志&短篇[汉化]::\/albums-index-page-{{page}}-cate-10.html\n单行本[汉化]::\/albums-index-page-{{page}}-cate-9.html\n",
+        "header": " {\n\"User-Agent\": \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/84.0.4147.135 Safari\/537.36\"\n}",
+        "lastUpdateTime": 1603882871627,
+        "loginUrl": "https:\/\/www.wnacg.com\/users-login.html",
         "ruleBookInfo": {
-            "author": "class.subtitle@text##作者：",
-            "coverUrl": "class.banner_border_bg@tag.img@src",
-            "intro": "class.content@text",
-            "kind": "class.tip.1@tag.a@text",
-            "name": "class.info@tag.h1@text"
+            "author": "class.asTBcell uwuinfo@tag.p@text",
+            "coverUrl": "class.asTBcell uwconn@tag.img@src",
+            "intro": "class.asTBcell uwconn@tag.p@html",
+            "kind": "class.asTBcell uwconn@tag.label.0@text",
+            "lastChapter": "class.asTBcell uwconn@tag.label.1@text",
+            "name": "",
+            "tocUrl": "",
+            "wordCount": "class.asTBcell uwconn@tag.label.1@text"
         },
         "ruleContent": {
-            "content": ":_S001_bIwT0M342j/8ezYZRvcySmHy79w0CSDsIkKT9C4hxZiJY8ZRB75hJe9qthMacCYC\n"
+            "content": "id.picarea@html##<img.*src.{4}##<img src=\"",
+            "imageStyle": "FULL",
+            "nextContentUrl": "",
+            "replaceRegex": "",
+            "sourceRegex": ""
         },
-        "ruleExplore": {},
+        "ruleExplore": {
+            "bookList": "class.gallary_wrap@class.li gallary_item",
+            "bookUrl": "tag.a@href",
+            "coverUrl": "tag.img@data-original",
+            "intro": "class.info_col@text",
+            "name": "class.title@tag.a@text"
+        },
         "ruleSearch": {
-            "bookList": "class.mh-list@tag.li",
-            "bookUrl": "tag.a.0@href",
-            "coverUrl": "tag.a.0@html@js:result.match(/.*?(http.*?)\\).*?/)[1]",
-            "lastChapter": "class.chapter@tag.a@text",
-            "name": "class.title@text"
+            "bookList": "class.gallary_wrap@class.li gallary_item",
+            "bookUrl": "tag.a@href",
+            "coverUrl": "tag.img@data-original",
+            "intro": "class.info_col@text",
+            "name": "class.title@tag.a@text"
         },
         "ruleToc": {
-            "chapterList": "id.detail-list-select@tag.li",
-            "chapterName": "tag.a@text",
-            "chapterUrl": "tag.a@href"
+            "chapterList": "class.cc@li",
+            "chapterName": "class.info@class.name tb@text",
+            "chapterUrl": "class.pic_box tb@tag.a@href",
+            "isVip": "",
+            "nextTocUrl": "class.f_left paginator@class.next@tag.a@href",
+            "updateTime": "class.info@class.info_col@text"
         },
-        "searchUrl": "https://ssmh.cc/search/?keyword={{key}}",
+        "searchUrl": "\/albums-index-page-{{page}}-sname-{{key}}.html",
         "weight": 0
     },
     {
@@ -12025,7 +12083,7 @@
         "enabled": true,
         "enabledExplore": true,
         "exploreUrl": "全部::\/list\/?page={{page}}&&玄幻::\/list\/xuanhuan\/?page={{page}}&&都市::\/list\/dushi\/?page={{page}}&&恐怖::\/list\/kongbu\/?page={{page}}&&古风::\/list\/gufeng\/?page={{page}}&&唯美::\/list\/weimei\/?page={{page}}&&治愈::\/list\/zhiyu\/?page={{page}}&&穿越::\/list\/chuanyue\/?page={{page}}&&恋爱::\/list\/lianai\/?page={{page}}&&修真::\/list\/xiuzhen\/?page={{page}}&&后宫::\/list\/hougong\/?page={{page}}&&冒险::\/list\/maoxian\/?page={{page}}&&搞笑::\/list\/gaoxiao\/?page={{page}}&&彩虹::\/list\/caihong\/?page={{page}}&&热血::\/list\/rexue\/?page={{page}}&&暧昧::\/list\/aimei\/?page={{page}}&&少年::\/list\/shaonian\/?page={{page}}&&逆转::\/list\/nizhuan\/?page={{page}}&&奇幻::\/list\/qihuan\/?page={{page}}&&大女主::\/list\/danvzhu\/?page={{page}}&&总裁::\/list\/zongcai\/?page={{page}}&&少女::\/list\/shaonv\/?page={{page}}&&美型::\/list\/meixing\/?page={{page}}&&霸总::\/list\/bazong\/?page={{page}}&&动作::\/list\/dongzuo\/?page={{page}}&&其他::\/list\/qita\/?page={{page}}&&少男::\/list\/shaonan\/?page={{page}}&&生活::\/list\/shenghuo\/?page={{page}}&&科幻::\/list\/kehuan\/?page={{page}}&&漫客栈::\/list\/mankezhan\/?page={{page}}&&悬疑::\/list\/xuanyi\/?page={{page}}&&魔幻::\/list\/mohuan\/?page={{page}}&&战争::\/list\/zhanzheng\/?page={{page}}&&惊奇::\/list\/jingqi\/?page={{page}}&&纯爱::\/list\/chunai\/?page={{page}}&&独家::\/list\/dujia\/?page={{page}}&&爆笑::\/list\/baoxiao\/?page={{page}}&&惊险::\/list\/jingxian\/?page={{page}}&&校园::\/list\/xiaoyuan\/?page={{page}}&&蔷薇::\/list\/qiangwei\/?page={{page}}&&魔法::\/list\/mofa\/?page={{page}}&&青春::\/list\/qingchun\/?page={{page}}&&战斗::\/list\/zhandou\/?page={{page}}&&漫改::\/list\/mangai\/?page={{page}}&&武侠::\/list\/wuxia\/?page={{page}}&&僵尸::\/list\/jiangshi\/?page={{page}}&&励志::\/list\/lizhi\/?page={{page}}&&脑洞::\/list\/naodong\/?page={{page}}&&重生::\/list\/zhongsheng\/?page={{page}}&&剧情::\/list\/juqing\/?page={{page}}&&复仇::\/list\/fuchou\/?page={{page}}&&生化::\/list\/shenghua\/?page={{page}}&&异族::\/list\/yizu\/?page={{page}}&&推理::\/list\/tuili\/?page={{page}}&&震撼::\/list\/zhenhan\/?page={{page}}&&奇闻::\/list\/qiwen\/?page={{page}}&&怪谈::\/list\/guaitan\/?page={{page}}&&修仙::\/list\/xiuxian\/?page={{page}}&&末世::\/list\/moshi\/?page={{page}}&&耽美::\/list\/danmei\/?page={{page}}&&日漫::\/list\/riman\/?page={{page}}&&日常::\/list\/richang\/?page={{page}}&&灵异::\/list\/lingyi\/?page={{page}}&&竞技::\/list\/jingji\/?page={{page}}&&历史::\/list\/lishi\/?page={{page}}&&明星::\/list\/mingxing\/?page={{page}}&&虐心::\/list\/nuexin\/?page={{page}}&&美食::\/list\/meishi\/?page={{page}}&&机甲::\/list\/jijia\/?page={{page}}&&叛逆::\/list\/panni\/?page={{page}}&&宠爱::\/list\/chongai\/?page={{page}}&&幻想::\/list\/huanxiang\/?page={{page}}&&装逼::\/list\/zhuangbi\/?page={{page}}&&运动::\/list\/yundong\/?page={{page}}&&古装::\/list\/guzhuang\/?page={{page}}&&言情::\/list\/yanqing\/?page={{page}}&&游戏::\/list\/youxi\/?page={{page}}&&真人::\/list\/zhenren\/?page={{page}}&&怀旧::\/list\/huaijiu\/?page={{page}}&&情感::\/list\/qinggan\/?page={{page}}&&仙侠::\/list\/xianxia\/?page={{page}}&&神魔::\/list\/shenmo\/?page={{page}}&&偶像::\/list\/ouxiang\/?page={{page}}&&其它::\/list\/qita2\/?page={{page}}&&女尊::\/list\/nvzun\/?page={{page}}&&青年::\/list\/qingnian\/?page={{page}}&&系统::\/list\/xitong\/?page={{page}}&&娱乐圈::\/list\/yulequan\/?page={{page}}&&格斗::\/list\/gedou\/?page={{page}}&&萌系::\/list\/mengxi\/?page={{page}}&&宫斗::\/list\/gongdou\/?page={{page}}&&虐恋::\/list\/nuelian\/?page={{page}}&&社会::\/list\/shehui\/?page={{page}}&&神鬼::\/list\/shengui\/?page={{page}}&&百合::\/list\/baihe\/?page={{page}}&&智斗::\/list\/zhidou\/?page={{page}}&&橘味::\/list\/juwei\/?page={{page}}&&美少女::\/list\/meishaonv\/?page={{page}}&&金手指::\/list\/jinshouzhi\/?page={{page}}&&绅士::\/list\/shenshi\/?page={{page}}&&女强::\/list\/nvqiang\/?page={{page}}&&权谋::\/list\/quanmou\/?page={{page}}&&宅斗::\/list\/zhaidou\/?page={{page}}&&狐仙::\/list\/huxian\/?page={{page}}&&鬼怪::\/list\/guiguai\/?page={{page}}&&死后世界::\/list\/sihoushijie\/?page={{page}}&&宫廷::\/list\/gongting\/?page={{page}}&&体育::\/list\/tiyu\/?page={{page}}&&知音漫客::\/list\/zhiyinmanke\/?page={{page}}&&恶搞::\/list\/egao\/?page={{page}}&&日本::\/list\/riben\/?page={{page}}&&浪漫::\/list\/langman\/?page={{page}}&&节操::\/list\/jiecao\/?page={{page}}&&血腥::\/list\/xuexing\/?page={{page}}&&探案::\/list\/tanan\/?page={{page}}&&爽::\/list\/shuang\/?page={{page}}&&同人::\/list\/tongren\/?page={{page}}&&福利::\/list\/fuli\/?page={{page}}&&御姐::\/list\/yujie\/?page={{page}}&&萝莉::\/list\/luoli\/?page={{page}}&&甜宠::\/list\/tianchong\/?page={{page}}&&少儿::\/list\/shaoer\/?page={{page}}&&豪门::\/list\/haomen\/?page={{page}}&&特工::\/list\/tegong\/?page={{page}}&&美女::\/list\/meinv\/?page={{page}}&&间谍::\/list\/jiandie\/?page={{page}}&&男神::\/list\/nanshen\/?page={{page}}&&悬疑、惊悚::\/list\/xuanyijingsong\/?page={{page}}&&兽耳::\/list\/shouer\/?page={{page}}&&军阀::\/list\/junfa\/?page={{page}}&&民国::\/list\/minguo\/?page={{page}}&&漫画一番::\/list\/manhuayifan\/?page={{page}}&&女王点坑::\/list\/nvwangdiankeng\/?page={{page}}&&喜欢::\/list\/xihuan\/?page={{page}}&&异能::\/list\/yineng\/?page={{page}}&&栏目::\/list\/lanmu\/?page={{page}}&&短篇::\/list\/duanpian\/?page={{page}}&&丧尸::\/list\/sangshi\/?page={{page}}&&改编::\/list\/gaibian\/?page={{page}}&&机战::\/list\/jizhan\/?page={{page}}&&惊悚::\/list\/jingsong\/?page={{page}}&&欢乐向::\/list\/huanlexiang\/?page={{page}}&&爱情::\/list\/aiqing\/?page={{page}}&&四格::\/list\/sige\/?page={{page}}&&轻小说::\/list\/qingxiaoshuo\/?page={{page}}&&架空::\/list\/jiakong\/?page={{page}}&&轻松::\/list\/qingsong\/?page={{page}}&&科技::\/list\/keji\/?page={{page}}&&正能量::\/list\/zhengnengliang\/?page={{page}}&&宅系::\/list\/zhaixi\/?page={{page}}&&职场::\/list\/zhichang\/?page={{page}}&&舰娘::\/list\/jianniang\/?page={{page}}&&性转换::\/list\/xingzhuanhuan\/?page={{page}}&&乡村::\/list\/xiangcun\/?page={{page}}&&正剧::\/list\/zhengju\/?page={{page}}&&纠结::\/list\/jiujie\/?page={{page}}&&AA::\/list\/AA\/?page={{page}}&&异世界::\/list\/yishijie\/?page={{page}}&&日更::\/list\/rigeng\/?page={{page}}&&精品::\/list\/jingpin\/?page={{page}}&&新作::\/list\/xinzuo\/?page={{page}}&&音乐舞蹈::\/list\/yinyuewudao\/?page={{page}}&&宠物::\/list\/chongwu\/?page={{page}}&&温馨::\/list\/wenxin\/?page={{page}}&&段子::\/list\/duanzi\/?page={{page}}&&少女爱情::\/list\/shaonvaiqing\/?page={{page}}&&东方::\/list\/dongfang\/?page={{page}}&&侦探::\/list\/zhentan\/?page={{page}}&&逆袭::\/list\/nixi\/?page={{page}}&&召唤兽::\/list\/zhaohuanshou\/?page={{page}}&&伪娘::\/list\/weiniang\/?page={{page}}&&秀吉::\/list\/xiuji\/?page={{page}}&&吸血::\/list\/xixie\/?page={{page}}&&血族::\/list\/xuezu\/?page={{page}}&&三角恋::\/list\/sanjiaolian\/?page={{page}}&&前世::\/list\/qianshi\/?page={{page}}&&吸血鬼::\/list\/xixiegui\/?page={{page}}&&轮回::\/list\/lunhui\/?page={{page}}&&种田::\/list\/zhongtian\/?page={{page}}&&魔王::\/list\/mowang\/?page={{page}}&&狠西游::\/list\/henxiyou\/?page={{page}}&&西游记::\/list\/xiyouji\/?page={{page}}&&青青树::\/list\/qingqingshu\/?page={{page}}&&宠婚::\/list\/chonghun\/?page={{page}}&&可爱::\/list\/keai\/?page={{page}}&&小僵尸::\/list\/xiaojiangshi\/?page={{page}}&&家庭::\/list\/jiating\/?page={{page}}&&婚姻::\/list\/hunyin\/?page={{page}}&&恋爱生活::\/list\/lianaishenghuo\/?page={{page}}&&感动::\/list\/gandong\/?page={{page}}&&神话::\/list\/shenhua\/?page={{page}}&&未来::\/list\/weilai\/?page={{page}}&&故事漫画::\/list\/gushimanhua\/?page={{page}}&&其他漫画::\/list\/qitamanhua\/?page={{page}}&&爽流::\/list\/shuangliu\/?page={{page}}&&烧脑::\/list\/shaonao\/?page={{page}}&&有妖气::\/list\/youyaoqi\/?page={{page}}&&绘本::\/list\/huiben\/?page={{page}}&&侦探推理::\/list\/zhentantuili\/?page={{page}}&&史诗::\/list\/shishi\/?page={{page}}&&商战::\/list\/shangzhan\/?page={{page}}&&颜艺::\/list\/yanyi\/?page={{page}}&&恐怖悬疑::\/list\/kongbuxuanyi\/?page={{page}}&&内涵::\/list\/neihan\/?page={{page}}&&性转::\/list\/xingzhuan\/?page={{page}}&&高清单行::\/list\/gaoqingdanxing\/?page={{page}}&&墨瞳::\/list\/motong\/?page={{page}}&&漫画::\/list\/manhua\/?page={{page}}&&婚爱::\/list\/hunai\/?page={{page}}&&西方魔幻::\/list\/xifangmohuan\/?page={{page}}&&猎奇::\/list\/lieqi\/?page={{page}}&&致郁::\/list\/zhiyu2\/?page={{page}}&&末日::\/list\/mori\/?page={{page}}&&伦理::\/list\/lunli\/?page={{page}}&&乙女::\/list\/yinv\/?page={{page}}&&神仙::\/list\/shenxian\/?page={{page}}&&怪物::\/list\/guaiwu\/?page={{page}}&&神豪::\/list\/shenhao\/?page={{page}}&&霸总.都市::\/list\/bazongdushi\/?page={{page}}&&妖怪::\/list\/yaoguai\/?page={{page}}&&主仆::\/list\/zhupu\/?page={{page}}&&高甜::\/list\/gaotian\/?page={{page}}&&限制级::\/list\/xianzhiji\/?page={{page}}&&音乐::\/list\/yinyue\/?page={{page}}&&韩漫::\/list\/hanman\/?page={{page}}&&电竞::\/list\/dianjing\/?page={{page}}&&ゆり::\/list\/unknown\/?page={{page}}&&兄弟情::\/list\/xiongdiqing\/?page={{page}}&&暖萌::\/list\/nuanmeng\/?page={{page}}&&豪快::\/list\/haokuai\/?page={{page}}&&幽默::\/list\/youmo\/?page={{page}}&&完结::\/list\/wanjie\/?page={{page}}&&亲情::\/list\/qinqing\/?page={{page}}&&橘系::\/list\/juxi\/?page={{page}}&&",
-        "lastUpdateTime": 0,
+        "lastUpdateTime": 1615419963976,
         "ruleBookInfo": {
             "author": "class.txtItme.0@text",
             "intro": "id.full-des@text##介绍:",
@@ -12064,45 +12122,47 @@
         "weight": 0
     },
     {
-        "bookSourceComment": "error:Timed out waiting for 60000 ms\n",
+        "bookSourceComment": "",
         "bookSourceGroup": "🎨漫画",
         "bookSourceName": "🎨有妖气",
         "bookSourceType": 0,
-        "bookSourceUrl": "https://app.u17.com",
+        "bookSourceUrl": "http:\/\/app.u17.com",
+        "bookUrlPattern": "",
         "customOrder": 0,
         "enabled": true,
         "enabledExplore": true,
-        "exploreUrl": "全部::https://app.u17.com/v3/appV3_3/android/phone/list/conditionScreenlists?page={{page}}&&\n搞笑::https://app.u17.com/v3/appV3_3/android/phone/list/conditionScreenlists?¶ms=theme%3A1&page={{page}}&&\n魔幻::https://app.u17.com/v3/appV3_3/android/phone/list/conditionScreenlists?¶ms=theme%3A2&page={{page}}&&\n生活::https://app.u17.com/v3/appV3_3/android/phone/list/conditionScreenlists?¶ms=theme%3A3&page={{page}}&&\n恋爱::https://app.u17.com/v3/appV3_3/android/phone/list/conditionScreenlists?¶ms=theme%3A4&page={{page}}&&\n动作::https://app.u17.com/v3/appV3_3/android/phone/list/conditionScreenlists?¶ms=theme%3A5&page={{page}}&&\n科幻::https://app.u17.com/v3/appV3_3/android/phone/list/conditionScreenlists?¶ms=theme%3A6&page={{page}}&&\n战争::https://app.u17.com/v3/appV3_3/android/phone/list/conditionScreenlists?¶ms=theme%3A7&page={{page}}&&\n体育::https://app.u17.com/v3/appV3_3/android/phone/list/conditionScreenlists?¶ms=theme%3A8&page={{page}}&&\n推理::https://app.u17.com/v3/appV3_3/android/phone/list/conditionScreenlists?¶ms=theme%3A9&page={{page}}&&\n惊奇::https://app.u17.com/v3/appV3_3/android/phone/list/conditionScreenlists?¶ms=theme%3A11&page={{page}}&&\n同人::https://app.u17.com/v3/appV3_3/android/phone/list/conditionScreenlists?¶ms=theme%3A12&page={{page}}&&\n少年::https://app.u17.com/v3/appV3_3/android/phone/list/conditionScreenlists?params=cate%3A1&page= {{page}} &&\n少女::https://app.u17.com/v3/appV3_3/android/phone/list/conditionScreenlists?params=cate%3A2&page={{page}}&&\n纯爱::https://app.u17.com/v3/appV3_3/android/phone/list/conditionScreenlists?params=theme%3A10&page= {{page}}&&\nVIP::https://app.u17.com/v3/appV3_3/android/phone/list/conditionScreenlists?params=topic%3A14&page= {{page}}&&\n订阅::https://app.u17.com/v3/appV3_3/android/phone/list/conditionScreenlists?params=topic%3A12&page={{page}}&&\n免费::https://app.u17.com/v3/appV3_3/android/phone/list/conditionScreenlists?params=vip%3A5&page={{page}}&&\n新作::https://app.u17.com/v3/appV3_3/android/phone/list/conditionScreenlists?params=vip%3A2&page={{page}}&&\n连载::https://app.u17.com/v3/appV3_3/android/phone/list/conditionScreenlists?params=serial%3A1&page= {{page}} &&\n完结::https://app.u17.com/v3/appV3_3/android/phone/list/conditionScreenlists?params=serial%3A2&page={{page}}",
-        "lastUpdateTime": 0,
+        "exploreUrl": "全部::http:\/\/app.u17.com\/v3\/appV3_3\/android\/phone\/list\/conditionScreenlists?page={{page}}\n搞笑::http:\/\/app.u17.com\/v3\/appV3_3\/android\/phone\/list\/conditionScreenlists?¶ms=theme%3A1&page={{page}}\n魔幻::http:\/\/app.u17.com\/v3\/appV3_3\/android\/phone\/list\/conditionScreenlists?¶ms=theme%3A2&page={{page}}\n生活::http:\/\/app.u17.com\/v3\/appV3_3\/android\/phone\/list\/conditionScreenlists?¶ms=theme%3A3&page={{page}}\n恋爱::http:\/\/app.u17.com\/v3\/appV3_3\/android\/phone\/list\/conditionScreenlists?¶ms=theme%3A4&page={{page}}\n动作::http:\/\/app.u17.com\/v3\/appV3_3\/android\/phone\/list\/conditionScreenlists?¶ms=theme%3A5&page={{page}}\n科幻::http:\/\/app.u17.com\/v3\/appV3_3\/android\/phone\/list\/conditionScreenlists?¶ms=theme%3A6&page={{page}}\n战争::http:\/\/app.u17.com\/v3\/appV3_3\/android\/phone\/list\/conditionScreenlists?¶ms=theme%3A7&page={{page}}\n体育::http:\/\/app.u17.com\/v3\/appV3_3\/android\/phone\/list\/conditionScreenlists?¶ms=theme%3A8&page={{page}}\n推理::http:\/\/app.u17.com\/v3\/appV3_3\/android\/phone\/list\/conditionScreenlists?¶ms=theme%3A9&page={{page}}\n惊奇::http:\/\/app.u17.com\/v3\/appV3_3\/android\/phone\/list\/conditionScreenlists?¶ms=theme%3A11&page={{page}}\n同人::http:\/\/app.u17.com\/v3\/appV3_3\/android\/phone\/list\/conditionScreenlists?¶ms=theme%3A12&page={{page}}\n少年::http:\/\/app.u17.com\/v3\/appV3_3\/android\/phone\/list\/conditionScreenlists?params=cate%3A1&page= {{page}} \n少女::http:\/\/app.u17.com\/v3\/appV3_3\/android\/phone\/list\/conditionScreenlists?params=cate%3A2&page={{page}}\n纯爱::http:\/\/app.u17.com\/v3\/appV3_3\/android\/phone\/list\/conditionScreenlists?params=theme%3A10&page= {{page}}\nVIP::http:\/\/app.u17.com\/v3\/appV3_3\/android\/phone\/list\/conditionScreenlists?params=topic%3A14&page= {{page}}\n订阅::http:\/\/app.u17.com\/v3\/appV3_3\/android\/phone\/list\/conditionScreenlists?params=topic%3A12&page={{page}}\n免费::http:\/\/app.u17.com\/v3\/appV3_3\/android\/phone\/list\/conditionScreenlists?params=vip%3A5&page={{page}}\n新作::http:\/\/app.u17.com\/v3\/appV3_3\/android\/phone\/list\/conditionScreenlists?params=vip%3A2&page={{page}}\n连载::http:\/\/app.u17.com\/v3\/appV3_3\/android\/phone\/list\/conditionScreenlists?params=serial%3A1&page= {{page}} \n完结::http:\/\/app.u17.com\/v3\/appV3_3\/android\/phone\/list\/conditionScreenlists?params=serial%3A2&page={{page}}",
+        "lastUpdateTime": 1614076900220,
         "loginUrl": "",
         "ruleBookInfo": {
+            "author": "$..author.name",
             "intro": "@JSon:$..description",
             "kind": "@JSon:$..theme_ids.*",
-            "lastChapter": ""
+            "lastChapter": "",
+            "name": "$.data.returnData.comic.name"
         },
         "ruleContent": {
-            "content": "@JSon:$..image_list.*.images[0].img50\n@js:String(result.replace(/\\n/,\"\").replace(/https/g,\"<img src=\\\"https\").replace(/\\.webp/g,\"\\.webp\\\"/>\").replace(/\\.jpg/g,\"\\.jpg\\\"/>\"));",
+            "content": "@JSon:$..location||$..img50||$..img05@js:String(result.replace(\/http.*?\\.webp\/g,\"\").replace(\/\\n\/,\"\").replace(\/https\/g,'<img src=\\\"https').replace(\/\\.gif\/g,'\\.gif\\\"\/>').replace(\/\\.png\/g,'\\.png\\\"\/>').replace(\/\\.jpg\/g,'\\.jpg\\\"\/>'))",
             "imageStyle": "FULL",
-            "replaceRegex": "",
-            "sourceRegex": ""
+            "nextContentUrl": "",
+            "replaceRegex": ""
         },
         "ruleExplore": {},
         "ruleSearch": {
             "author": "@JSon:$.author",
             "bookList": "@JSon:$..comics.*",
-            "bookUrl": "@JSon:$.comicId&&$.comic_id@js:'https://app.u17.com/v3/appV3_3/android/phone/comic/detail_static_new?&comicid='+result",
+            "bookUrl": "@JSon:$.comicId&&$.comic_id@js:'http:\/\/app.u17.com\/v3\/appV3_3\/android\/phone\/comic\/detail_static_new?&comicid='+result",
             "coverUrl": "@JSon:$.cover",
-            "intro": "@JSon:$..description",
             "kind": "@JSon:$.tags",
             "lastChapter": "@JSon:$.passChapterNum",
             "name": "@JSon:$.name"
         },
         "ruleToc": {
-            "chapterList": "@JSon:$..chapter_list.*",
+            "chapterList": "$.data.returnData.chapter_list.*",
             "chapterName": "@JSon:$.name",
-            "chapterUrl": "https://app.u17.com/v3/appV3_3/android/phone/comic/chapterNew?chapter_id={$.chapter_id}"
+            "chapterUrl": "http:\/\/app.u17.com\/v3\/appV3_3\/android\/phone\/comic\/chapterNew?chapter_id={$.chapter_id}"
         },
-        "searchUrl": "https://app.u17.com/v3/appV3_3/android/phone/search/searchResult?q={{key}}&page={{page}}",
+        "searchUrl": "http:\/\/app.u17.com\/v3\/appV3_3\/android\/phone\/search\/searchResult?q={{key}}&page={{page}}",
         "weight": 0
     },
     {
@@ -12629,60 +12689,6 @@
             "chapterList": "tag.h2",
             "chapterName": "text"
         },
-        "weight": 0
-    },
-    {
-        "bookSourceComment": "",
-        "bookSourceGroup": "📖轻文",
-        "bookSourceName": "📖萌文库",
-        "bookSourceType": 0,
-        "bookSourceUrl": "https://xs.kdays.net",
-        "bookUrlPattern": "",
-        "customOrder": 0,
-        "enabled": true,
-        "enabledExplore": true,
-        "exploreUrl": "不限::/list/all?type=0&order=update_time&orderBy=DESC&fword=all&size=-1&status=-1&apply=0&page={{page}}\n热血::/list/all?type=1&order=update_time&orderBy=DESC&fword=all&size=-1&status=-1&apply=0&page={{page}}\n冒险::/list/all?type=2&order=update_time&orderBy=DESC&fword=all&size=-1&status=-1&apply=0&page={{page}}\n运动::/list/all?type=3&order=update_time&orderBy=DESC&fword=all&size=-1&status=-1&apply=0&page={{page}}\n魔幻::/list/all?type=4&order=update_time&orderBy=DESC&fword=all&size=-1&status=-1&apply=0&page={{page}}\n武侠::/list/all?type=5&order=update_time&orderBy=DESC&fword=all&size=-1&status=-1&apply=0&page={{page}}\n校园::/list/all?type=6&order=update_time&orderBy=DESC&fword=all&size=-1&status=-1&apply=0&page={{page}}\n耽美::/list/all?type=7&order=update_time&orderBy=DESC&fword=all&size=-1&status=-1&apply=0&page={{page}}\n治愈::/list/all?type=8&order=update_time&orderBy=DESC&fword=all&size=-1&status=-1&apply=0&page={{page}}\n推理::/list/all?type=9&order=update_time&orderBy=DESC&fword=all&size=-1&status=-1&apply=0&page={{page}}\n惊悚::/list/all?type=10&order=update_time&orderBy=DESC&fword=all&size=-1&status=-1&apply=0&page={{page}}\n科幻::/list/all?type=11&order=update_time&orderBy=DESC&fword=all&size=-1&status=-1&apply=0&page={{page}}\n社会::/list/all?type=12&order=update_time&orderBy=DESC&fword=all&size=-1&status=-1&apply=0&page={{page}}\nGAL::/list/all?type=13&order=update_time&orderBy=DESC&fword=all&size=-1&status=-1&apply=0&page={{page}}\n动画化::/list/all?type=14&order=update_time&orderBy=DESC&fword=all&size=-1&status=-1&apply=0&page={{page}}",
-        "lastUpdateTime": 0,
-        "ruleBookInfo": {
-            "author": "class.info-side@class.items@tag.li.2@a@text&&\nclass.info-side@class.items@tag.li.3@text",
-            "coverUrl": "class.col-sm-3.0@img@src",
-            "intro": "class.info-side@tag.blockquote@html\n<js>\nresult=String(result).replace(/([\\u4e00-\\u9fa5]|。|！|？|……)\\s/g,'$1\\n');\nresult='  '+result;\n</js>",
-            "kind": "class.status text-muted@text&&\nclass.info-side@class.items@tag.li.0@text\n##.*\\(|\\)",
-            "lastChapter": "class.info-side@class.last-chapter@a@text##最新章节: ",
-            "name": "class.info-side@h2@text\n@js:java.put('sm',result)",
-            "tocUrl": "class.btn btn-primary read-btn@href",
-            "wordCount": "class.status text-muted@text## 字.*"
-        },
-        "ruleContent": {
-            "content": "<js>\nlet c=java.getString(\"class.col-sm-12@tag.article@html\",false);\nif(baseUrl.match(/kdays.net/)){\nresult=c\n}else{\nresult=baseUrl.match(/text=(.*)/)[1]\n}\n</js>"
-        },
-        "ruleExplore": {
-            "author": "class.author@text##作者:",
-            "bookList": "class.book-list@class.book",
-            "bookUrl": "class.detail@h3@a@href",
-            "coverUrl": "class.cover-side@tag.img@src",
-            "intro": "tag.blockquote@html##.*简介.|\\s",
-            "kind": "class.detail@tag.p.0@text&&\nclass.keywords@text##.*字 / ",
-            "lastChapter": "class.new-vol@text##最新:  ",
-            "name": "class.detail@h3@a@text",
-            "wordCount": "class.detail@tag.p.0@text##.*点击 / | 字.*"
-        },
-        "ruleSearch": {
-            "author": "class.detail@tag.p.1@text",
-            "bookList": "class.book-list@class.book",
-            "bookUrl": "class.detail@h3@a@href",
-            "coverUrl": "class.cover-side@tag.img@src",
-            "kind": "class.detail@tag.p.0@text&&\nclass.detail@class.keywords@text##.*字 / ",
-            "lastChapter": "class.detail@tag.p.2@text##最新:  ",
-            "name": "class.detail@h3@a@text",
-            "wordCount": "class.detail@tag.p.0@text##.*点击 / | 字.*"
-        },
-        "ruleToc": {
-            "chapterList": "<js>\n//获取卷名\njm=java.getStringList(\"div[class= col-sm-10 info-side] h2@ownText\").toArray();\n//获取书名\nsm=java.getString(\"class.col-sm-12 text-center@h1@text\",false);\n\n//获取分卷\nsub=java.getElements(\"div[class= col-sm-10 info-side] ul\").toArray();\n\nfor(var i=0;i<sub.length;i++){\n\n//插入卷名\nsub[i]=String(sub[i].html()).replace(/e=\"/g,'e=\"'+\"☆\"+jm[i]+\"☆\");\n\n//按卷分块\nsub[i]='<li><a href=\"https://translate.google.cn/#view=home&op=translate&sl=zh-CN&tl=en&text='+sm+'/'+jm[i]+'\" title=\"★'+jm[i]+'★\"></a></li>'+sub[i]}\n\n//合并结果\nsub=sub.join(\"\");\n</js>a",
-            "chapterName": "title",
-            "chapterUrl": "href"
-        },
-        "searchUrl": "/search/all?page={{page}}&w={{key}}&type=all",
         "weight": 0
     },
     {
