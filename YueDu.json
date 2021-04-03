@@ -7954,49 +7954,44 @@
         "enabled": true,
         "enabledExplore": true,
         "exploreUrl": "全部::\/weekvisit_0_0_{{page}}.htm\n玄幻魔法::weekvisit_1_0_{{page}}.htm\n修真武侠::weekvisit_2_0_{{page}}.htm\n言情小说::weekvisit_3_0_{{page}}.htm\n历史军事::weekvisit_4_0_{{page}}.htm\n游戏竞技::weekvisit_5_0_{{page}}.htm\n科幻空间::weekvisit_6_0_{{page}}.htm\n悬疑惊悚::weekvisit_7_0_{{page}}.htm\n同人小说::weekvisit_8_0_{{page}}.htm\n都市小说::weekvisit_9_0_{{page}}.htm\n官场职场::weekvisit_10_0_{{page}}.htm\n穿越时空::weekvisit_11_0_{{page}}.htm\n青春校园::weekvisit_12_0_{{page}}.htm\n新书::\/newhot_0_0_{{page}}.htm",
+        "header": "{\n  \"User-Agent\": \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/91.0.4466.2 Safari\/537.36\"\n}",
         "lastUpdateTime": 0,
+        "loginUrl": "",
         "ruleBookInfo": {
-            "author": "class.item.0@tag.a.0@text",
-            "coverUrl": "class.pic@tag.img@src",
-            "intro": "class.bookinfo_intro@text",
-            "name": "id.info@tag.h1.0@text",
-            "tocUrl": "@js:\nresult = baseUrl.replace(\/\\\/txt|\\.htm\/gi,'');",
-            "wordCount": "\/\/*[@class=\"booknav2\"]\/p[3]\/text()"
+            "author": "@css:[property=og:novel:author]@content",
+            "canReName": "true",
+            "coverUrl": "@css:[property=og:image]@content",
+            "intro": "@css:div.navtxt p:first-child@textNodes",
+            "kind": "@css:[property=og:novel:category],[property=og:novel:status],[property=og:novel:update_time]@content",
+            "lastChapter": "@css:[property=og:novel:latest_chapter_name]@content",
+            "name": "@css:[property=\"og:novel:book_name\"]@content",
+            "tocUrl": "@css:[property=og:novel:read_url]@content##txt\\\/|\\.htm",
+            "wordCount": ""
         },
         "ruleContent": {
-            "content": ".txtnav@html"
+            "content": "@css:div.txtnav@textNodes",
+            "replaceRegex": "##\\s*({{book.durChapterTitle}}|[(（]本章完[)）])\\s*"
         },
         "ruleExplore": {
-            "author": "class.s4@text",
-            "bookList": "class.gengxin@tag.li",
-            "bookUrl": ""
+            "bookList": "",
+            "lastChapter": "",
+            "name": ""
         },
         "ruleSearch": {
-            "author": "class.labelbox@tag.label.0@text",
-            "bookList": ".newbox li",
-            "bookUrl": "tag.a.0@href",
-            "coverUrl": "tag.a.0@href@js:\nvar i = result.match(\/txt\\\/(\\d{2})\/)[1];\nvar ii = result.match(\/txt\\\/(\\d+)\/)[1];\nresult =  'https:\/\/www.69shu.com\/files\/article\/image\/'+i+'\/'+ii+'\/'+ii+'s.jpg';",
-            "intro": ".ellipsis_2@text",
-            "kind": "class.labelbox@tag.label.1@text",
-            "lastChapter": ".zxzj p@text##最近章节",
-            "name": ".newnav h3@text",
-            "wordCount": "class.labelbox@tag.label.2@text"
-        },
-        "ruleSearch": {
-            "author": "class.labelbox@tag.label.0@text",
-            "bookList": ".newbox li",
-            "bookUrl": "tag.a.0@href",
-            "coverUrl": "img@src",
-            "intro": ".ellipsis_2@text",
-            "kind": "class.labelbox@tag.label.1@text",
-            "lastChapter": ".zxzj@\/\/p\/text()",
-            "name": ".newnav h3@text",
+            "author": "@css:label:first-child@text",
+            "bookList": "@css:div.newbox li",
+            "bookUrl": "@css:a:first-child@href",
+            "coverUrl": "@css:img@data-src",
+            "intro": "@css:ol@textNodes",
+            "kind": "@css:div.labelbox label:nth-child(n+2),div.zxzj span:nth-child(2)@text",
+            "lastChapter": "@css:div.zxzj p@ownText",
+            "name": "@css:h3@text",
             "wordCount": "class.labelbox@tag.label.2@text"
         },
         "ruleToc": {
-            "chapterList": "id.catalog@li",
-            "chapterName": "a@text",
-            "chapterUrl": "a@href"
+            "chapterList": "@css:div#catalog a",
+            "chapterName": "text",
+            "chapterUrl": "href"
         },
         "searchUrl": "\/modules\/article\/search.php,{\n\"charset\": \"gbk\",\n\"method\": \"POST\",\n\"body\": \"searchkey={{key}}&searchtype=all\"\n}",
         "weight": 0
