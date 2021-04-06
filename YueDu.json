@@ -466,7 +466,7 @@
         "bookUrlPattern": "https:\/\/www.biquge.info\/\\d+_\\d+\/",
         "customOrder": 0,
         "enabled": true,
-        "enabledExplore": false,
+        "enabledExplore": true,
         "exploreUrl": "玄幻小说::\/list\/1_{{page}}.html\n修真小说::\/list\/2_{{page}}.html\n都市小说::\/list\/3_{{page}}.html\n穿越小说::\/list\/4_{{page}}.html\n网游小说::\/list\/5_{{page}}.html\n科幻小说::\/list\/6_{{page}}.html",
         "header": "{\n  \"User-Agent\": \"Mozilla\/5.0 (Windows NT 10.0; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/47.0.2526.73 Safari\/537.36\"\n}",
         "lastUpdateTime": 1617710093339,
