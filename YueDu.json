@@ -1834,6 +1834,47 @@
         "weight": 0
     },
     {
+        "bookSourceComment": "",
+        "bookSourceGroup": "🍺特优",
+        "bookSourceName": "🍺爱 书 网",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https://www.22ff.org",
+        "bookUrlPattern": "",
+        "customOrder": 0,
+        "enabled": true,
+        "enabledExplore": false,
+        "exploreUrl": "",
+        "header": "",
+        "lastUpdateTime": 1614840184269,
+        "loginUrl": "",
+        "ruleBookInfo": {
+          "author": "class.tc.0@text",
+          "coverUrl": "tag.img.1@src",
+          "intro": "class.fw@tag.tr.3@text",
+          "kind": "class.tc.1@text",
+          "lastChapter": "class.fw@tag.tr.1@tag.a@text&&class.tc.2@text##..\\:.*|正文.",
+          "name": "class.tname@text"
+        },
+        "ruleContent": {
+          "content": "id.chapter_content@html"
+        },
+        "ruleExplore": {},
+        "ruleSearch": {
+          "author": "tag.a.3@text",
+          "bookList": "class.neirong@tag.ul!0",
+          "bookUrl": "tag.a.0@href",
+          "lastChapter": "tag.a.2@text&&class.neirong3@text##..\\:.*",
+          "name": "tag.a.0@text"
+        },
+        "ruleToc": {
+          "chapterList": "class.clc",
+          "chapterName": "tag.a@text",
+          "chapterUrl": "tag.a@href"
+        },
+        "searchUrl": "https://www.22ff.org/s_{{key}},{\"charset\":\"gbk\"}",
+        "weight": 0
+    },
+    {
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺2K中文",
         "bookSourceType": 0,
@@ -1925,6 +1966,91 @@
             "nextTocUrl": "class.pt-dir-sel@ul@tag.li.-1@a@href##page=(\\d+)\\&##$1###\n@js:\nvar list=[];\nfor(var i=2;i<=result[0];i++)\n{list.push(baseUrl+\"?page=\"+i+\"&sort=asc\");}\nlist\n\/\/java.log(n)"
         },
         "searchUrl": "https:\/\/m.30syy.com\/search.html?saerhkey={{key}}",
+        "weight": 0
+    },
+    {
+        "bookSourceComment": "",
+        "bookSourceGroup": "🍺特优",
+        "bookSourceName": "🍺3Z中文网",
+        "bookSourceType": 0,
+        "bookSourceUrl": "http://www.530p.com",
+        "bookUrlPattern": "",
+        "customOrder": 0,
+        "enabled": true,
+        "enabledExplore": false,
+        "exploreUrl": "",
+        "header": "{\n  \"User-Agent\": \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/91.0.4466.2 Safari\/537.36\"\n}",
+        "lastUpdateTime": 1614841055186,
+        "loginUrl": "",
+        "ruleBookInfo": {
+          "author": "class.tc.0@text",
+          "coverUrl": "tag.img.1@src",
+          "intro": "class.ffw@tag.tr.3@text",
+          "kind": "class.tc.1@text",
+          "lastChapter": "class.ffw@tag.tr.1@text&&class.tc.-1@text##..\\:.*",
+          "name": "class.tna@text"
+        },
+        "ruleContent": {
+          "content": "id.cp_content@textNodes##无弹窗小说.*|"
+        },
+        "ruleExplore": {},
+        "ruleSearch": {
+          "author": "class.conter4.0@text",
+          "bookList": "class.conter@tag.ul!0",
+          "bookUrl": "class.conter1.0@tag.a.0@href",
+          "lastChapter": "class.conter2.0@text&&class.conter3@text##..\\:.*",
+          "name": "class.conter1.0@tag.a.0@text"
+        },
+        "ruleToc": {
+          "chapterList": "class.conter@tag.a",
+          "chapterName": "text",
+          "chapterUrl": "href"
+        },
+        "searchUrl": "http://www.530p.com/s/{{key}}",
+        "weight": 0
+    },
+    {
+        "bookSourceComment": "",
+        "bookSourceGroup": "🍺特优",
+        "bookSourceName": "🍺NB中文网",
+        "bookSourceType": 0,
+        "bookSourceUrl": "http://www.nbw.la",
+        "bookUrlPattern": "",
+        "customOrder": 0,
+        "enabled": true,
+        "enabledExplore": true,
+        "exploreUrl": "",
+        "header": "",
+        "lastUpdateTime": 1614653694414,
+        "loginUrl": "",
+        "ruleBookInfo": {
+          "author": "class.list-group.0@tag.h1@text##.*作者.",
+          "coverUrl": "class.col-xs-2@tag.img@src",
+          "intro": "id.shot@text",
+          "kind": "class.list-group.0@tag.a.0@text##类别.",
+          "lastChapter": "class.list-group.0@tag.li.-2@tag.a@text&&class.list-group.0@tag.li.3@text##更新时间.|..\\:.*",
+          "name": "class.list-group.0@tag.h1@text##作者.*",
+          "tocUrl": "class.list-group.0@tag.li.-1@tag.a.0@href"
+        },
+        "ruleContent": {
+          "content": "id.txtContent@html",
+          "replaceRegex": "##请记住本书首发.*"
+        },
+        "ruleExplore": {},
+        "ruleSearch": {
+          "author": "class.col-xs-2.0@text",
+          "bookList": "id.novel-list@tag.li!0",
+          "bookUrl": "tag.a.0@href",
+          "kind": "class.tag-blue@text",
+          "lastChapter": "tag.a.1@text&&class.time@text##..\\:.*",
+          "name": "tag.a.0@text"
+        },
+        "ruleToc": {
+          "chapterList": "id.chapters-list@tag.li!0",
+          "chapterName": "tag.a@text",
+          "chapterUrl": "tag.a@href"
+        },
+        "searchUrl": "http://www.nbw.la/search.htm?keyword={{key}}",
         "weight": 0
     },
     {
@@ -2430,38 +2556,35 @@
         "enabledExplore": true,
         "exploreUrl": "",
         "header": "{\n  \"User-Agent\": \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/91.0.4466.2 Safari\/537.36\"\n}",
-        "lastUpdateTime": 0,
+        "lastUpdateTime": 1614838328026,
         "loginUrl": "",
         "ruleBookInfo": {
-            "author": "class.detail.0@tag.a.0@text",
-            "coverUrl": "class.cover@tag.img@src",
-            "intro": "class.desc@text&&class.info@tag.p.4@text##.*内容简介.",
-            "kind": "class.detail.0@tag.a.1@text",
-            "lastChapter": "class.detail.2@tag.a@text",
-            "name": "class.line@text",
-            "tocUrl": "class.operate clearfix@tag.a.2@href",
-            "wordCount": "class.detail.1@tag.i@text"
+          "author": "class.detail.0@tag.a.0@text",
+          "coverUrl": "class.cover@tag.img@src",
+          "intro": "class.desc@text##.*内容简介.",
+          "kind": "class.detail.0@tag.a.1@text",
+          "lastChapter": "class.detail.2@tag.a@text&&class.detail.1@tag.i@text##..\\:.*",
+          "name": "class.info@tag.h1@text",
+          "tocUrl": "[property=\"og:novel:read_url\"]@content"
         },
         "ruleContent": {
-            "content": "id.content@html##请记住本书.*",
-            "replaceRegex": ""
+            "content": "id.content@html##请记住本书.*"
         },
         "ruleExplore": {},
         "ruleSearch": {
-            "author": "class.a2@text",
-            "bookList": "class.lastest@tag.li!0",
-            "bookUrl": "class.n2@tag.a@href",
-            "kind": "class.nt@text",
-            "lastChapter": "class.c2@text",
-            "name": "class.n2@text",
-            "wordCount": "class.t@text"
+          "author": "class.a2@text",
+          "bookList": "@css:.lastest li:has(span):has(a)",
+          "bookUrl": "tag.a.0@href",
+          "kind": "class.nt@text",
+          "lastChapter": "class.c2@text&&class.t@text##..\\:.*",
+          "name": "class.n2@text"
         },
         "ruleToc": {
-            "chapterList": "class.mulu@tag.li!0:1:2:3:4:5:6:7:8",
-            "chapterName": "tag.a@text",
-            "chapterUrl": "tag.a@href"
+          "chapterList": "class.mulu@tag.li!0:1:2:3:4:5:6:7:8:9:10:11",
+          "chapterName": "tag.a@text",
+          "chapterUrl": "tag.a@href"
         },
-        "searchUrl": "https://www.meegoq.com/search.htm?keyword={{key}}&pn={{page}}",
+        "searchUrl": "/search.htm?keyword={{key}}&pn={{page}}",
         "weight": 0
     },
     {
@@ -2623,7 +2746,7 @@
     {
         "bookSourceComment": "",
         "bookSourceGroup": "🍺特优",
-        "bookSourceName": "🍺奇奇小说",
+        "bookSourceName": "🍺奇奇小说 477zw",
         "bookSourceType": 0,
         "bookSourceUrl": "https://www.477zw.com",
         "bookUrlPattern": "",
@@ -2659,6 +2782,49 @@
             "chapterUrl": "tag.a@href"
         },
         "searchUrl": "https://www.477zw.com/search.php?keyword={{key}}&page={{page}}",
+        "weight": 0
+    },
+    {
+        "bookSourceComment": "",
+        "bookSourceGroup": "🍺特优",
+        "bookSourceName": "🍺奇奇小说 qq717",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https://www.qq717.com",
+        "bookUrlPattern": "",
+        "customOrder": 0,
+        "enabled": true,
+        "enabledExplore": false,
+        "exploreUrl": "",
+        "header": "",
+        "lastUpdateTime": 1614839424027,
+        "loginUrl": "",
+        "ruleBookInfo": {
+          "author": "id.info@tag.p.0@text##作\\s*者：",
+          "coverUrl": "id.fmimg@tag.img@src",
+          "intro": "id.intro@tag.p.0@text||tag.p.0@text",
+          "kind": "class.con_top@tag.a.1@text",
+          "lastChapter": "id.info@tag.a.-1@text&&id.info@tag.p.-2@text##最后更新.|..\\:.*",
+          "name": "tag.h3.0@text"
+        },
+        "ruleContent": {
+          "content": "id.content@textNodes##奇奇小说全网.*com|更新最.*com\\/|哽噺.*com|www.*com"
+        },
+        "ruleExplore": {},
+        "ruleSearch": {
+          "author": "tag.span.1@text",
+          "bookList": "class.result-list gameblock-result-list@tag.div",
+          "bookUrl": "tag.h3.0@tag.a@href",
+          "coverUrl": "tag.img.0@src",
+          "kind": "tag.span.3@text",
+          "lastChapter": "tag.p.4@tag.a@text",
+          "name": "tag.h3.0@tag.a@text"
+        },
+        "ruleToc": {
+          "chapterList": "id.list@tag.dd",
+          "chapterName": "tag.a@text",
+          "chapterUrl": "tag.a@href"
+        },
+        "searchUrl": "https://www.qq717.com/search.php?keyword={{key}}&page={{page}}",
         "weight": 0
     },
     {
@@ -2708,6 +2874,51 @@
         "bookSourceComment": "",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺顶点小说",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https://www.ibooktxt.com",
+        "bookUrlPattern": "",
+        "customOrder": 0,
+        "enabled": true,
+        "enabledExplore": true,
+        "exploreUrl": "玄幻::\/xuanhuan\/\n修真::\/xiuzhen\/\n都市::\/dushi\/\n历史::\/lishi\/\n网游::\/wangyou\/\n科幻::\/kehuan\/\n言情::\/yanqing\/\n其他::\/qita\/\n全本::\/quanben\/",
+        "header": "{\n  \"User-Agent\": \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/91.0.4466.2 Safari\/537.36\"\n}",
+        "lastUpdateTime": 1614567078196,
+        "loginUrl": "",
+        "ruleBookInfo": {
+          "author": "id.info@tag.p.0@text##作.*者.",
+          "coverUrl": "tag.img@src",
+          "intro": "id.intro@text",
+          "kind": "class.con_top@tag.a.1@text",
+          "lastChapter": "id.info@tag.a.-1@text",
+          "name": "id.info@tag.h1@text",
+          "wordCount": "id.info@tag.p.2@text##最后更新.|..\\:.*"
+        },
+        "ruleContent": {
+          "content": "id.content@html"
+        },
+        "ruleExplore": {},
+        "ruleSearch": {
+          "author": "tag.p.1@text##作者.",
+          "bookList": "class.result-item result-game-item",
+          "bookUrl": "tag.a.0@href",
+          "coverUrl": "tag.img@src",
+          "intro": "tag.p.0@text",
+          "kind": "tag.p.2@text##类型.",
+          "lastChapter": "tag.a.-1@text&&tag.p.3@text##更新时间.|..\\:.*",
+          "name": "tag.a.1@text"
+        },
+        "ruleToc": {
+          "chapterList": "id.list@tag.dd",
+          "chapterName": "tag.a@text",
+          "chapterUrl": "tag.a@href"
+        },
+        "searchUrl": "https://www.ibooktxt.com/search.php?q={{key}}",
+        "weight": 0
+    },
+    {
+        "bookSourceComment": "",
+        "bookSourceGroup": "🍺特优",
+        "bookSourceName": "🍺顶点小说m",
         "bookSourceType": 0,
         "bookSourceUrl": "https:\/\/m.ibooktxt.com",
         "bookUrlPattern": "",
@@ -2958,41 +3169,45 @@
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺小 说 旗",
         "bookSourceType": 0,
-        "bookSourceUrl": "https://www.xs7.co",
+        "bookSourceUrl": "https://www.xs7.co/",
         "bookUrlPattern": "",
         "customOrder": 0,
         "enabled": true,
-        "enabledExplore": true,
+        "enabledExplore": false,
         "exploreUrl": "",
         "header": "{\n  \"User-Agent\": \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/91.0.4466.2 Safari\/537.36\"\n}",
-        "lastUpdateTime": 0,
+        "lastUpdateTime": 1614839606856,
         "loginUrl": "",
         "ruleBookInfo": {
-            "author": "[property=\"og:novel:author\"]@content",
-            "coverUrl": "[property=\"og:image\"]@content",
-            "intro": "[property=\"og:description\"]@content",
-            "lastChapter": "class.infot.1@tag.a@text##正文卷 ",
-            "name": "[property=\"og:novel:book_name\"]@content"
+          "author": "h1@a@text",
+          "coverUrl": "class.img_in@tag.img@src",
+          "intro": "id.intro@text",
+          "kind": "class.nav-mbx@tag.a.-1@text&&class.blue.1@text",
+          "lastChapter": "class.update@text##最新章节.|正文卷 |正文 |章节目录|\\(|..\\:.*",
+          "name": "h1@text## / .*",
+          "wordCount": "class.blue.0@text"
         },
         "ruleContent": {
-            "content": "id.content@textNodes##一秒记住.*免费阅读！"
+            "content": "id.content@textNodes##一秒记住.*免费阅读！",
+            "replaceRegex": "##小说旗.*最新章节！"
         },
         "ruleExplore": {},
         "ruleSearch": {
-            "author": "tag.span.0@text##作者：",
-            "bookList": "id.alistbox",
-            "bookUrl": "tag.h2@a@href",
-            "coverUrl": "tag.img@src",
-            "intro": "class.intro@textNodes",
-            "lastChapter": "tag.a.2@text",
-            "name": "tag.h2@text"
+          "author": "tag.td.2@text##作者：",
+          "bookList": "tbody@tr!0",
+          "bookUrl": "a@href",
+          "coverUrl": "tag.a.0@href<js>\nvar id = result.match(/(\\d+)\\/?$/)[1];\nvar iid = parseInt(id/1000);\n'https://www.xs7.co/files/article/image/'+iid+'/'+id+'/'+id+'s.jpg';\n</js>",
+          "kind": "tag.td.5@text",
+          "lastChapter": "tag.a.1@text&&tag.td.4@text",
+          "name": "tag.a.0@text",
+          "wordCount": "tag.td.3@text"
         },
         "ruleToc": {
-            "chapterList": "tag.td@a",
-            "chapterName": "text",
-            "chapterUrl": "href"
+          "chapterList": "class.zjlist@dd",
+          "chapterName": "tag.a@text",
+          "chapterUrl": "tag.a@href"
         },
-        "searchUrl": "https://www.xs7.co/modules/article/search.php,{\n  \"charset\": \"gbk\",\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}\"\n}",
+        "searchUrl": "https://www.xs7.co/modules/article/search.php?searchkey={{key}}&submit=%CB%D1%CB%F7&page={{page}},{\n  \"charset\": \"gbk\"\n}",
         "weight": 0
     },
     {
@@ -3286,38 +3501,38 @@
         "bookUrlPattern": "",
         "customOrder": 0,
         "enabled": true,
-        "enabledExplore": true,
+        "enabledExplore": false,
         "exploreUrl": "",
         "header": "{\n  \"User-Agent\": \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/91.0.4466.2 Safari\/537.36\"\n}",
-        "lastUpdateTime": 0,
+        "lastUpdateTime": 1614841294342,
         "loginUrl": "",
         "ruleBookInfo": {
-            "author": "class.detail pt20@tag.a.0@text",
-            "coverUrl": "class.cover@tag.img@src",
-            "intro": "class.info@tag.p.3@textNodes",
-            "kind": "class.detail pt20@tag.a.1@text",
-            "lastChapter": "class.detail.2@tag.a@text",
-            "name": "class.line@text",
-            "tocUrl": "class.operate@tag.a.2@href",
-            "wordCount": "class.info@tag.p.1@tag.i@text"
+          "author": "class.detail pt20@tag.a.0@text",
+          "coverUrl": "class.cover@tag.img@src",
+          "intro": "class.info@tag.p.3@textNodes",
+          "kind": "class.detail pt20@tag.a.1@text",
+          "lastChapter": "class.detail.2@tag.a@text&&class.detail.1@tag.i@text##..\\:.*",
+          "name": "class.line@text",
+          "tocUrl": "class.operate@tag.a.2@href",
+          "wordCount": "class.info@tag.p.1@tag.i@text"
         },
         "ruleContent": {
-            "content": "class.content@textNodes"
+          "content": "class.content@textNodes"
         },
         "ruleExplore": {},
         "ruleSearch": {
-            "author": "class.a2@tag.a@text",
-            "bookList": "class.lastest@tag.li!0",
-            "bookUrl": "class.n2@tag.a@href",
-            "kind": "class.nt@text",
-            "lastChapter": "class.c2@tag.a@text",
-            "name": "class.n2@tag.a@text",
-            "wordCount": "class.t@text"
+          "author": "class.a2@tag.a@text",
+          "bookList": "class.lastest@tag.li!0",
+          "bookUrl": "class.n2@tag.a@href",
+          "kind": "class.nt@text",
+          "lastChapter": "class.c2@tag.a@text&&class.t@text##..\\:.*",
+          "name": "class.n2@tag.a@text",
+          "wordCount": "class.t@text"
         },
         "ruleToc": {
-            "chapterList": "class.col3!0:1:2:3:4:5:6:7:8",
-            "chapterName": "tag.a@text",
-            "chapterUrl": "tag.a@href"
+          "chapterList": "class.col3!0:1:2:3:4:5:6:7:8",
+          "chapterName": "tag.a@text",
+          "chapterUrl": "tag.a@href"
         },
         "searchUrl": "https://www.ymxxs.com/search.htm?keyword={{key}}",
         "weight": 0
@@ -3377,42 +3592,42 @@
         "enabledExplore": true,
         "exploreUrl": "玄幻::/fenlei/1_{{page}}/\n修真::/fenlei/2_{{page}}/\n都市::/fenlei/3_{{page}}/\n言情::/fenlei/4_{{page}}/\n历史::/fenlei/5_{{page}}/\n网游::/fenlei/6_{{page}}/\n科幻::/fenlei/7_{{page}}/\n恐怖::/fenlei/8_{{page}}/\n完本::/quanben/{{page}}",
         "header": "{\n  \"User-Agent\": \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/91.0.4466.2 Safari\/537.36\"\n}",
-        "lastUpdateTime": 0,
+        "lastUpdateTime": 1614841561265,
         "loginUrl": "",
         "ruleBookInfo": {
-            "author": "[property=\"og:novel:author\"]@content",
-            "coverUrl": "[property=\"og:image\"]@content",
-            "intro": "[property=\"og:description\"]@content",
-            "kind": "[property=\"og:novel:category\"]@content&&[property=\"og:novel:status\"]@content&&[property=\"og:novel:update_time\"]@content##小说|\\s.*",
-            "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
-            "name": "[property=\"og:novel:book_name\"]@content"
+          "author": "[property=\"og:novel:author\"]@content",
+          "coverUrl": "[property=\"og:image\"]@content",
+          "intro": "[property=\"og:description\"]@content",
+          "kind": "[property=\"og:novel:category\"]@content&&[property=\"og:novel:status\"]@content&&[property=\"og:novel:update_time\"]@content##小说|\\s.*",
+          "lastChapter": "class.update@text##最新章节.|正文|\\(|..\\:.*",
+          "name": "[property=\"og:novel:book_name\"]@content"
         },
         "ruleContent": {
-            "content": "id.content@html##落秋中文网.*最新章节！"
+          "content": "id.content@html##落秋中文网.*最新章节！"
         },
         "ruleExplore": {
-            "author": "class.sp_4@text",
-            "bookList": "id.mm_14@tag.li!0",
-            "bookUrl": "class.sp_2@tag.a@href",
-            "coverUrl": "tag.a.0@href##.+\\D((\\d+)\\d{3})\\D##https://www.lqbook.com/files/article/image/$2/$1/$1s.jpg###",
-            "kind": "class.sp_6@text",
-            "lastChapter": "class.sp_3@text",
-            "name": "class.sp_2@text"
+          "author": "class.sp_4@text",
+          "bookList": "id.mm_14@tag.li!0",
+          "bookUrl": "class.sp_2@tag.a@href",
+          "coverUrl": "tag.a.0@href##.+\\D((\\d+)\\d{3})\\D##https://www.lqbook.com/files/article/image/$2/$1/$1s.jpg###",
+          "kind": "class.sp_6@text",
+          "lastChapter": "class.sp_3@text",
+          "name": "class.sp_2@text"
         },
         "ruleSearch": {
-            "author": "class.odd.1@text",
-            "bookList": "class.grid@tag.tr!0",
-            "bookUrl": "class.odd.0@tag.a@href",
-            "coverUrl": "tag.a.0@href##.+\\D((\\d+)\\d{3})\\D##https://www.lqbook.com/files/article/image/$2/$1/$1s.jpg###",
-            "kind": "class.odd.2@text&&class.even.2@text",
-            "lastChapter": "class.even.0@text##正文.",
-            "name": "class.odd.0@text",
-            "wordCount": "class.even.1@text"
+          "author": "class.odd.1@text",
+          "bookList": "class.grid@tag.tr!0",
+          "bookUrl": "class.odd.0@tag.a@href",
+          "coverUrl": "tag.a.0@href##.+\\D((\\d+)\\d{3})\\D##https://www.lqbook.com/files/article/image/$2/$1/$1s.jpg###",
+          "kind": "class.even.2@text",
+          "lastChapter": "class.even.0@text&&class.odd.2@text&&##正文.",
+          "name": "class.odd.0@text",
+          "wordCount": "class.even.1@text"
         },
         "ruleToc": {
-            "chapterList": "class.zjlist@tag.dd",
-            "chapterName": "tag.a@text",
-            "chapterUrl": "tag.a@href"
+          "chapterList": "class.zjlist@tag.dd",
+          "chapterName": "tag.a@text",
+          "chapterUrl": "tag.a@href"
         },
         "searchUrl": "/modules/article/search.php,{\n  \"charset\": \"gbk\",\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}&submit={{key}}&page={{page}}\"\n}",
         "weight": 0
@@ -3459,6 +3674,48 @@
             "nextTocUrl": "text.下一页@href"
         },
         "searchUrl": "https:\/\/www.shg.tw\/search.html,{\n  \"charset\": \"utf-8\",\n  \"method\": \"POST\",\n  \"body\": \"searchtype=all&searchkey={{key}}\"\n}",
+        "weight": 0
+    },
+    {
+        "bookSourceComment": "",
+        "bookSourceGroup": "🍺特优",
+        "bookSourceName": "🍺书 海 阁",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https://www.xinshuhaige.org",
+        "bookUrlPattern": "",
+        "customOrder": 0,
+        "enabled": true,
+        "enabledExplore": true,
+        "exploreUrl": "都市::\/dushi\/{{page}}.html\n现言::\/yanqing\/{{page}}.html\n古言::\/guyan\/{{page}}.html\n青春::\/qingchun\/{{page}}.html\n玄幻::\/xuanhuan\/{{page}}.html\n武侠::\/wuxia\/{{page}}.html\n悬疑::\/xuanyi\/{{page}}.html\n历史::\/lishi\/{{page}}.html\n游戏::\/youxi\/{{page}}.html\n科幻::\/kehuan\/{{page}}.html\n二次元::\/erciyuan\/{{page}}.html\n新书::\/xinshu\/{{page}}.html\n最新章节::\/lastupdate\/{{page}}.html\n日点击榜::\/dayvisit\/{{page}}.html\n周点击榜::\/weekvisit\/{{page}}.html\n月点击榜::\/monthvisit\/{{page}}.html\n总点击榜::\/allvisit\/{{page}}.html\n总收藏榜::\/goodnum\/{{page}}.html\n总字数榜::\/size\/{{page}}.html\n强推榜::\/toptime\/{{page}}.html\n新书榜::\/goodnew\/{{page}}.html",
+        "header": "",
+        "lastUpdateTime": 1614841735031,
+        "loginUrl": "",
+        "ruleBookInfo": {
+          "author": "tag.h6.0@tag.a@text",
+          "coverUrl": "class.book_cover@img@src",
+          "intro": "id.intro@text##Tags：",
+          "kind": "class.nowplace@tag.a.1@text",
+          "lastChapter": "h5.0@tag.a@text&&h5.1@text##更新时间.|..\\:.*",
+          "name": "class.xiaoshuo@tag.h1@text"
+        },
+        "ruleContent": {
+          "content": "class.content@html##.*最新章节地址[\\s\\S]+|因未知原因.*?找到回家的路！|您可以在.*?查找最新章节！"
+        },
+        "ruleExplore": {},
+        "ruleSearch": {
+          "author": "class.s4@text",
+          "bookList": "class.novelslist2@li!0",
+          "bookUrl": "tag.a.1@href",
+          "kind": "class.s1@a@text",
+          "lastChapter": "class.s3@a@text&&class.s5@text",
+          "name": "class.s2@text"
+        },
+        "ruleToc": {
+          "chapterList": "class.novel_list.1@dd||class.novel_list.0@dd",
+          "chapterName": "tag.a@text",
+          "chapterUrl": "tag.a@href"
+        },
+        "searchUrl": "/search.html,{\n  \"method\": \"POST\",\n  \"body\": \"searchtype=all&searchkey={{key}}\"\n}",
         "weight": 0
     },
     {
@@ -3973,31 +4230,35 @@
         "bookUrlPattern": "",
         "customOrder": 0,
         "enabled": true,
-        "enabledExplore": true,
-        "lastUpdateTime": 0,
+        "enabledExplore": false,
+        "exploreUrl": "",
+        "header": "",
+        "lastUpdateTime": 1614838961618,
         "loginUrl": "",
         "ruleBookInfo": {
-            "author": "class.detail.0@tag.i.0@tag.a@text",
-            "coverUrl": "class.cover@tag.img@src",
-            "intro": "class.desc@text##.*简介：",
-            "name": "class.line.0@tag.h1@text"
+          "author": "class.detail.0@tag.i.0@tag.a@text",
+          "coverUrl": "class.cover@tag.img@src",
+          "intro": "class.desc@text##.*简介：",
+          "kind": "class.detail.0@tag.i.1@tag.a@text",
+          "lastChapter": "class.detail.2@tag.a@text&&class.detail.1@tag.i@text##..\\:.*",
+          "name": "class.line.0@tag.h1@text"
         },
         "ruleContent": {
-            "content": "class.content@textNodes"
+          "content": "class.content@textNodes"
         },
         "ruleExplore": {},
         "ruleSearch": {
-            "author": "class.a2@tag.a@text",
-            "bookList": "class.left@tag.li!0",
-            "bookUrl": "class.n2@tag.a@href",
-            "kind": "class.nt@text",
-            "lastChapter": "class.c2@tag.a@text",
-            "name": "class.n2@tag.a@text"
+          "author": "class.a2@tag.a@text",
+          "bookList": "class.left@tag.li!0",
+          "bookUrl": "class.n2@tag.a@href",
+          "kind": "class.nt@text",
+          "lastChapter": "class.c2@tag.a@text&&class.t@text##..\\:.*",
+          "name": "class.n2@tag.a@text"
         },
         "ruleToc": {
-            "chapterList": "class.col3!0:1:2:3:4:5:6:7:8",
-            "chapterName": "tag.a@text",
-            "chapterUrl": "tag.a@href"
+          "chapterList": "class.col3!0:1:2:3:4:5:6:7:8",
+          "chapterName": "tag.a@text",
+          "chapterUrl": "tag.a@href"
         },
         "searchUrl": "https://www.ixs.cc/search.htm?keyword={{key}}",
         "weight": 0
@@ -9360,65 +9621,63 @@
         "bookSourceGroup": "💵正版",
         "bookSourceName": "💵超星图书·出版",
         "bookSourceType": 0,
-        "bookSourceUrl": "https:\/\/yz4.chaoxing.com\/",
+        "bookSourceUrl": "https://yz4.chaoxing.com",
         "bookUrlPattern": "",
         "customOrder": 0,
         "enabled": true,
         "enabledExplore": true,
-        "exploreUrl": "<js>\nu1='::\/circlemarket\/getBook,{\"method\":\"POST\",\"body\":\"start={{page-1}}&size=25&channelId=';\nu2='\"}';\nlist=[[\"❀超星推荐❀\",130],[\"❀世界名著❀\",1000000007],[\"名家名作\",1000000008],[\"流行小说\",1000000010],[\"古典文学\",1000000009],[\"诗歌散文\",1000000033],[\"文学理论\",1000000063],[\"纪实文学\",1000000498],[\"少儿文学\",1000001204],[\"外文原著\",1000000438],[\"❀中国历史❀\",1000000057],[\"史学研究\",1000000072],[\"人物传记\",1000000066],[\"文物考古\",1000000069],[\"通俗演绎\",1000000060],[\"世界历史\",1000001049],[\"❀中国哲学❀\",1000000013],[\"西方哲学\",1000000014],[\"马列哲学\",1000000015],[\"宗教\",1000000393],[\"❀艺术摄影❀\",1000000051],[\"美术书法\",1000000042],[\"音乐舞蹈\",1000000045],[\"建筑雕塑\",1000000048],[\"戏曲戏剧\",1000000081],[\"电影电视\",1000001046],[\"艺术理论\",1000000075],[\"❀经济管理❀\",1000000102],[\"投资理财\",1000000105],[\"金融会计\",1000000108],[\"成功励志\",1000000111],[\"创业创新\",1000000138],[\"❀政法政治❀\",1000000414],[\"法学\",1000000417],[\"国际关系\",1000000420],[\"❀社科心理❀\",1000000090],[\"社会学\",1000000087],[\"语言文字\",1000000135],[\"新闻传播\",1000000435],[\"❀军事理论❀\",1000000426],[\"军事技术\",1000000429],[\"军事百科\",1000000432],[\"❀工业技术❀\",1000000026],[\"航空航天\",1000000027],[\"交通运输\",1000000030],[\"环境科学\",1000000031],[\"农业科学\",1000000032],[\"计算机学\",1000000036],[\"❀公共卫生❀\",1000000471],[\"基础医学\",1000000474],[\"中医学\",1000000477],[\"临床医学\",1000000480],[\"药学\",1000000483],[\"❀高等教育❀\",1000000399],[\"基础教育\",1000000402],[\"职业教育\",1000000405],[\"理论管理\",1000000408],[\"❀大众烹饪❀\",1000000120],[\"旅游\",1000000123],[\"保健\",1000000126],[\"育儿\",1000000129],[\"体育\",1000001048],[\"小人书\",1000000522],[\"生活百科\",1000000486],[\"❀科普读物❀\",1000000017],[\"数理化学\",1000000019],[\"天文地球\",1000000020],[\"生物科学\",1000000022],[\"自然科学\",1000000023]];\nlist.map(a=>a[0]+u1+a[1]+u2).join(\"&&\").replace(\/❀\/g,\"❀　　　　　❀\")\n<\/js>",
+        "exploreUrl": "❀　　　　　　　　　 　　 　推荐　　　　　　 　　　　　　　❀::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=130\"}\n\n❀　　　  　 　文学·世界文学名著  　　　 　　❀::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"/start=0&size=1000&channelId=1000000007\"}\n\n名家名作::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"/start=0&size=1000&channelId=1000000008\"}\n\n流行小说::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"/start=0&size=1000&channelId=1000000010\"}\n\n古典文学::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"/start=0&size=1000&channelId=1000000009\"}\n\n诗歌散文::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"/start=0&size=1000&channelId=1000000033\"}\n\n文学理论::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"/start=0&size=1000&channelId=1000000063\"}\n\n纪实文学::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"/start=0&size=1000&channelId=1000000498\"}\n\n少儿文学::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"/start=0&size=1000&channelId=1000001204\"}\n\n外文原著::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"/start=0&size=1000&channelId=1000000438\"}\n                ::\n\n❀ 　　　　　　　　 历 史·中 国 史　　　　　　　　  ❀::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000057\"}\n\n史学研究::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000072\"}\n\n人物传记::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000066\"}\n\n文物考古::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000069\"}\n\n通俗演绎::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000060\"}\n\n 世 界 史 ::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000001049\"}\n                ::\n\n  ❀  　　　　   　　哲学·中国哲学　　　 　　　  ❀::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000013\"}\n\n西方哲学::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000014\"}\n\n马列哲学::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000015\"}\n\n   宗  教   ::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000393\"}\n\n ❀  　　　　　    　艺 术 · 摄 影　　　  　  　　  ❀ ::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000051\"}\n\n美术书法::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000042\"}\n\n音乐舞蹈::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000045\"}\n\n建筑雕塑::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000048\"}\n\n戏曲戏剧::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000081\"}\n\n电影电视::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000001046\"}\n\n艺术理论::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000075\"}\n\n  ❀　　　　 　　   经管·经济管理　　　　　　  ❀::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000102\"}\n\n投资理财::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000105\"}\n\n金融会计::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000108\"}\n\n成功励志::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000111\"}\n\n创业创新::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000138\"}\n                                          ::\n❀ 　　　　  　  　 政法·政治学 　　    　　　　 ❀::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000414\"}\n\n   法  学  ::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000417\"}\n\n国际关系::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000420\"}\n               ::\n ❀　　　　　　      社科·心理学 　　　　　 　   ❀ ::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000090\"}\n\n 社 会 学 ::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000087\"}\n\n语言文字::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000135\"}\n\n新闻传播::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000435\"}\n\n  ❀ 　　　　  　　军事·军事理论 　　　  　　　❀::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000426\"}\n\n军事技术::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000429\"}\n\n军事百科::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000432\"}\n                ::\n\n  ❀ 　　　　　  　工学·工业技术 　　  　　　　❀::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000026\"}\n\n航空航天::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000027\"}\n\n交通运输::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000030\"}\n\n环境科学::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000031\"}\n\n农业科学::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000032\"}\n\n计算机学::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000036\"}\n                ::\n\n  ❀　　　　　　　　 医药·公共卫生　　　　　　 ❀  ::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000471\"}\n\n基础医学::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000474\"}\n\n 中 医 学 ::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000477\"}\n\n临床医学::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000480\"}\n\n   药  学  ::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000483\"}\n                                         ::\n ❀ 　　　　　  　 教育·高等教育　　　  　　　  ❀::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000399\"}\n\n基础教育::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000402\"}\n\n职业教育::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000405\"}\n\n理论管理::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000408\"}\n\n ❀  　   　　　　　大 众 · 烹 饪 　　   　　　　 ❀ ::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000120\"}\n\n  旅    游  ::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000123\"}\n\n  保    健  ::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000126\"}\n\n  育    儿  ::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000129\"}\n\n  体    育  ::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000001048\"}\n\n 小 人 书 ::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000522\"}\n\n生活百科::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000486\"}\n\n❀　　　　　　 　　理学·科普读物　　　 　　　　❀::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000017\"}\n\n数理化学::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000019\"}\n\n天文地球::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000020\"}\n\n生物科学::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000022\"}\n\n自然科学::https://yz4.chaoxing.com/circlemarket/getBook,{\"method\": \"POST\",\"body\": \"start=0&size=1000&channelId=1000000023\"}\n                                         ::",
         "header": "{\n  \"User-Agent\": \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/91.0.4466.2 Safari\/537.36\"\n}",
-        "lastUpdateTime": 0,
+        "lastUpdateTime": 1601042282441,
         "loginUrl": "",
         "ruleBookInfo": {
-            "author": "class.artCon@tag.p@text##\\s*编?著",
-            "coverUrl": "",
-            "init": "",
-            "intro": "##[\\s\\S]*##<br>★★★     超星·出版     ★★★<br>★★★   本书暂无简介  ★★★###",
-            "kind": "",
-            "lastChapter": "class.con@tag.a.-1@text",
-            "name": "tag.h2.0@text",
-            "tocUrl": "",
-            "wordCount": ""
+          "author": "",
+          "coverUrl": "",
+          "init": "",
+          "intro": "##[\\s\\S]*##<br>★★★     超星·出版     ★★★<br>★★★   本书暂无简介  ★★★###",
+          "kind": "",
+          "lastChapter": "",
+          "name": "",
+          "tocUrl": "",
+          "wordCount": ""
         },
         "ruleContent": {
-            "content": "class.ztArtCon@tag.p@html##([\\w，、。！？]{26}[。！？；]+[”’]?)(?=[^\\n]{27})##$1<br>",
-            "imageStyle": "FULL",
-            "nextContentUrl": "",
-            "replaceRegex": "",
-            "sourceRegex": "",
-            "webJs": ""
+          "content": ".ztArtCon@p@html",
+          "nextContentUrl": "",
+          "sourceRegex": "",
+          "webJs": ""
         },
         "ruleExplore": {
-            "author": "author##\\s*编?著",
-            "bookList": "subject",
-            "bookUrl": "mobileulr",
-            "coverUrl": "coverUrl",
-            "intro": "",
-            "kind": "",
-            "lastChapter": "",
-            "name": "name",
-            "wordCount": ""
+          "author": "$.author",
+          "bookList": "$.subject[*]",
+          "bookUrl": "https://special.zhexuezj.cn/mobile/mooc/tocourse/{$.course_Id}",
+          "coverUrl": "coverUrl",
+          "intro": "",
+          "kind": "",
+          "lastChapter": "",
+          "name": "name",
+          "wordCount": ""
         },
         "ruleSearch": {
-            "author": "author##\\s*编?著",
-            "bookList": "$.[*]",
-            "bookUrl": "mobileulr",
-            "coverUrl": "coverUrl",
-            "intro": "",
-            "kind": "",
-            "lastChapter": "",
-            "name": "name",
-            "wordCount": ""
+          "author": "$.author",
+          "bookList": "$.[*]",
+          "bookUrl": "https://special.zhexuezj.cn/mobile/mooc/tocourse/{$.course_Id}",
+          "coverUrl": "coverUrl",
+          "intro": "",
+          "kind": "",
+          "lastChapter": "",
+          "name": "$.name",
+          "wordCount": ""
         },
         "ruleToc": {
-            "chapterList": "+class.con@tag.a",
-            "chapterName": "text##^目录$",
-            "chapterUrl": "attr##&name=.+",
-            "isVip": "",
-            "nextTocUrl": "",
-            "updateTime": ""
+          "chapterList": ".con@li",
+          "chapterName": "a@text",
+          "chapterUrl": "a@attr",
+          "isVip": "",
+          "nextTocUrl": "",
+          "updateTime": ""
         },
-        "searchUrl": "https:\/\/yz4.chaoxing.com\/circlemarket\/getsearch,{\n  \"method\": \"POST\",\n  \"body\": \"&channelId=52&sw={{key}}&start=0&size=25\"\n}",
+        "searchUrl": "https://yz4.chaoxing.com/circlemarket/getsearch,{\n  \"method\": \"POST\",\n  \"body\": \"start=0&size=25&sw={{key}}&channelId=52&\"\n}",
         "weight": 0
     },
     {
