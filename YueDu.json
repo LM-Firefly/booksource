@@ -12439,6 +12439,44 @@
     },
     {
         "bookSourceGroup": "🍑耽美",
+        "bookSourceName": "🍑腐国度",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https:\/\/www.fuguodoo.com",
+        "bookUrlPattern": "",
+        "customOrder": 0,
+        "enabled": true,
+        "enabledExplore": true,
+        "exploreUrl": "",
+        "lastUpdateTime": 0,
+        "loginUrl": "https:\/\/m.fuguodoo.com\/login.php",
+        "ruleBookInfo": {
+            "author": "id.info@tag.p.0@text##作\\s*者：",
+            "intro": "id.intro@tag.p@text",
+            "kind": "class.con_top@tag.a.1@text",
+            "lastChapter": "id.list@tag.dd-1@tag.a@text",
+            "name": "tag.h1@text"
+        },
+        "ruleContent": {
+            "content": "id.content@html"
+        },
+        "ruleExplore": {},
+        "ruleSearch": {
+            "author": "class.odd.1@text",
+            "bookList": "class.grid@tag.tr!0",
+            "bookUrl": "class.odd.0@tag.a@href",
+            "lastChapter": "class.even.0@tag.a.0@text",
+            "name": "class.odd.0@tag.a.0@text"
+        },
+        "ruleToc": {
+            "chapterList": "tag.dd@tag.a",
+            "chapterName": "text",
+            "chapterUrl": "href"
+        },
+        "searchUrl": "https:\/\/www.fuguodoo.com\/modules\/article\/search.php?searchkey={{key}},{\n  \"charset\": \"gbk\"\n}",
+        "weight": 0
+    },
+    {
+        "bookSourceGroup": "🍑耽美",
         "bookSourceName": "🍑腐书网",
         "bookSourceType": 0,
         "bookSourceUrl": "https:\/\/m.fubooks.org",
