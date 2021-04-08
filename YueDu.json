@@ -3851,6 +3851,43 @@
     {
         "bookSourceComment": "",
         "bookSourceGroup": "🍺特优",
+        "bookSourceName": "🍺笔下文学 bxwx.io",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https:\/\/www.bxwx.io",
+        "bookUrlPattern": "",
+        "customOrder": 0,
+        "enabled": true,
+        "enabledExplore": false,
+        "lastUpdateTime": 1617846640733,
+        "loginUrl": "",
+        "ruleBookInfo": {
+            "author": "class.info@tag.p.1@tag.a.0@text",
+            "coverUrl": "tag.img@src",
+            "intro": "class.intro@text",
+            "name": "class.info@tag.p.0@tag.strong@text"
+        },
+        "ruleContent": {
+            "content": "id.content@html"
+        },
+        "ruleExplore": {},
+        "ruleSearch": {
+            "author": "class.s4@text",
+            "bookList": "class.novelslistss@tag.li",
+            "bookUrl": "class.s2@tag.a.0@href",
+            "lastChapter": "class.s3@tag.a.0@text",
+            "name": "class.s2@tag.a.0@text"
+        },
+        "ruleToc": {
+            "chapterList": "id.list@tag.dd!:0:1:2:3:4:5:6:7:8:9:10:11",
+            "chapterName": "tag.a@text",
+            "chapterUrl": "tag.a@href"
+        },
+        "searchUrl": "https:\/\/www.bxwx.io\/modules\/article\/search.php?searchtype=articlename&searchkey={{key}},{\n  \"charset\": \"gbk\"\n}",
+        "weight": 0
+    },
+    {
+        "bookSourceComment": "",
+        "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺笔下文学org",
         "bookSourceType": 0,
         "bookSourceUrl": "https://www.bxwxorg.com",
@@ -11643,6 +11680,228 @@
     {
         "bookSourceComment": "",
         "bookSourceGroup": "🍑耽美",
+        "bookSourceName": "🍑BL鲤鱼乡",
+        "bookSourceType": 0,
+        "bookSourceUrl": "http:\/\/m.blliyuw.com",
+        "bookUrlPattern": "",
+        "customOrder": 0,
+        "enabled": true,
+        "enabledExplore": true,
+        "exploreUrl": "现代都市::\/xiandaidushi\/list_{{page}}_{{page}}.html\n古代架空::\/gudaijiakong\/list_2_{{page}}.html\n穿越重生::\/chuanyuechongsheng\/list_3_{{page}}.html\n玄幻灵异::\/xuanhuanlingyi\/list_4_{{page}}.html\n推理悬疑::\/tuilixuanyi\/list_5_{{page}}.html\n网游竞技::\/wangyoujingji\/list_6_{{page}}.html\nＢＬ同人::\/tongren\/list_7_{{page}}.html\nＧＬ百合::\/baihe\/list_8_{{page}}.html\nnull",
+        "lastUpdateTime": 1612491780664,
+        "loginUrl": "",
+        "ruleBookInfo": {},
+        "ruleContent": {
+            "content": "class.blcont@html"
+        },
+        "ruleExplore": {},
+        "ruleSearch": {
+            "author": "tag.a.0@text##.*作者：|.*by：|（.*）|.*BY：|.*By：",
+            "bookList": "class.p_newslist@li||class.listw@ul@li",
+            "bookUrl": "tag.a.0@href",
+            "intro": "tag.p.0@text",
+            "kind": "tag.p.1@tag.a.1@text",
+            "name": "tag.a@text##作者[^（]+|by[^（]+|By[^（]+|BY[^（]+"
+        },
+        "ruleToc": {
+            "chapterList": "class.pagelist@tag.li!0:1:-1@a",
+            "chapterName": "text",
+            "chapterUrl": "href"
+        },
+        "searchUrl": "http:\/\/m.blliyuw.com\/search.php?q={{key}}&Submit=%CB%D1+%CB%F7,{\n\"charset\": \"gbk\"\n}",
+        "weight": 0
+    },
+    {
+        "bookSourceGroup": "🍑耽美",
+        "bookSourceName": "🍑鲤鱼乡123",
+        "bookSourceType": 0,
+        "bookSourceUrl": "http:\/\/www.liyuxiang123.com",
+        "bookUrlPattern": "",
+        "customOrder": 0,
+        "enabled": true,
+        "enabledExplore": true,
+        "exploreUrl": "近代现代::http:\/\/www.liyuxiang123.com\/sort1\/{{page}}\/\n古代架空::http:\/\/www.liyuxiang123.com\/sort2\/{{page}}\/\n穿越重生::http:\/\/www.liyuxiang123.com\/sort3\/{{page}}\/\n玄幻灵异::http:\/\/www.liyuxiang123.com\/sort4\/{{page}}\/\n推理悬疑::http:\/\/www.liyuxiang123.com\/sort5\/{{page}}\/\n网游竞技::http:\/\/www.liyuxiang123.com\/sort6\/{{page}}\/\nBL同人::http:\/\/www.liyuxiang123.com\/sort7\/{{page}}\/\nGL::http:\/\/www.liyuxiang123.com\/sort8\/{{page}}\/\nnull",
+        "lastUpdateTime": 0,
+        "loginUrl": "",
+        "ruleBookInfo": {
+            "author": "class.infotitle@tag.a@text",
+            "coverUrl": "class.img_in@tag.img@scr",
+            "intro": "id.aboutbook@text",
+            "kind": "id.srcbox@tag.a.1@text",
+            "name": "class.infotitle@tag.h1@text"
+        },
+        "ruleContent": {
+            "content": "id.content@textNodes##鲤鱼乡.*",
+            "imageStyle": "0.0"
+        },
+        "ruleExplore": {
+            "author": "class.title@tag.span@text",
+            "bookList": "@css:#alistbox",
+            "bookUrl": "class.title@tag.h2@tag.a@href",
+            "coverUrl": "class.pic@tag.img@src",
+            "intro": "class.intro@text",
+            "name": "class.title@tag.h2@text##\\《|\\》"
+        },
+        "ruleSearch": {
+            "author": "tag.td.2@text",
+            "bookList": "class.searchxx@tag.tr!0",
+            "bookUrl": "tag.td.0@tag.a@href",
+            "kind": "tag.td.5@text",
+            "lastChapter": "tag.td.4@text",
+            "name": "tag.td.0@tag.a@text"
+        },
+        "ruleToc": {
+            "chapterList": "id.box@tag.dd",
+            "chapterName": "tag.a@text",
+            "chapterUrl": "tag.a@href"
+        },
+        "searchUrl": "http:\/\/www.liyuxiang123.com\/modules\/article\/search.php?searchtype=articlename&searchkey={{key}}&page={{page}},{\n  \"charset\": \"gbk\"\n}",
+        "weight": 0
+    },
+    {
+        "bookSourceGroup": "🍑耽美",
+        "bookSourceName": "🍑BL文库",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https:\/\/www.blwenku.net",
+        "bookUrlPattern": "",
+        "customOrder": 0,
+        "enabled": true,
+        "enabledExplore": true,
+        "exploreUrl": "玄幻奇幻::https:\/\/www.blwenku.net\/xuanhuan\/{{page}}.html\n都市言情::https:\/\/www.blwenku.net\/dushi\/{{page}}.html\n军事历史::https:\/\/www.blwenku.net\/chuanyue\/{{page}}.html\n科幻灵异::https:\/\/www.blwenku.net\/kehuan\/{{page}}.html\n游戏竞技::https:\/\/www.blwenku.net\/wangyou\/{{page}}.html\nBL同人::https:\/\/www.blwenku.net\/tongren\/{{page}}.html\nGL百合::https:\/\/www.blwenku.net\/baihe\/{{page}}.html\nnull",
+        "lastUpdateTime": 0,
+        "loginUrl": "",
+        "ruleBookInfo": {
+            "author": "\/\/meta[@property=\"og:novel:author\"]\/@content",
+            "coverUrl": "\/\/meta[@property=\"og:image\"]\/@content",
+            "intro": "\/\/meta[@property=\"og:description\"]\/@content",
+            "kind": "\/\/meta[@property=\"og:novel:category\"]\/@content",
+            "lastChapter": "\/\/meta[@property=\"og:novel:latest_chapter_name\"]\/@content",
+            "name": "\/\/meta[@property=\"og:novel:book_name\"]\/@content"
+        },
+        "ruleContent": {
+            "content": "<js>\nnum=result.match(\/_17mb_content\\((\\d+),(\\d+),(\\d+)\\)\/);\naid=num[1];cid=num[2];page=num[3];\nreferer=baseUrl;\nbody=\"aid=\"+aid+\"&cid=\"+cid+\"&page=\"+page;\nheader={\n\"referer\":String(referer),\n\"Content-type\":\"application\/x-www-form-urlencoded\"\n}\noption={\n\"method\":\"POST\",\n\"body\":String(body),\n\"headers\":JSON.stringify(header)\n}\nurl=\"https:\/\/www.blwenku.tv\/content.php,\"+JSON.stringify(option);\nresult=java.ajax(url)\n<\/js>",
+            "imageStyle": "0.0",
+            "nextContentUrl": "text.下一页@href",
+            "webJs": ""
+        },
+        "ruleExplore": {
+            "author": "class.pp@tag.p.0@text##作者：",
+            "bookList": "\/\/*[@class=\"tt\"]",
+            "bookUrl": "\/\/h3\/a\/@href",
+            "coverUrl": "\/\/span\/a\/img\/@src",
+            "intro": "\/\/*[@class=\"pp\"]\/p[2]\/text()",
+            "name": "tag.h3@a@text##\\+番外"
+        },
+        "ruleSearch": {
+            "author": "\/\/td[3]\/p\/text()",
+            "bookList": "tag.tbody@tag.tr!0",
+            "bookUrl": "\/\/td[1]\/\/a\/@href",
+            "kind": "\/\/td[6]\/p\/text()",
+            "lastChapter": "\/\/td[2]\/\/a\/text()",
+            "name": "tag.td.0@a@text##\\+番外"
+        },
+        "ruleToc": {
+            "chapterList": "+@js:\na=org.jsoup.Jsoup.parse(result).select('.ml_list>ul>li>a').toArray().map(x=>({n:x.text(),u:x.attr('href')}));\nfor (var i=0;i<a.length;i++){\nif((parseInt(i)+1)%6==0){\npage=parseInt(a[i-1].u.match(\/(\\d+)\\.html\/)[1]);\na[i].u=page+1+\".html\"}\n};\na",
+            "chapterName": "n",
+            "chapterUrl": "u"
+        },
+        "searchUrl": "https:\/\/www.blwenku.tv\/search.php,{\n  \"charset\": \"gbk\",\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}\"\n}",
+        "weight": 0
+    },
+    {
+        "bookSourceGroup": "🍑耽美",
+        "bookSourceName": "🍑BL文库m",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https:\/\/m.blwenku.tv",
+        "bookUrlPattern": "",
+        "customOrder": 0,
+        "enabled": true,
+        "enabledExplore": true,
+        "exploreUrl": "玄幻仙侠::\/sort\/1_{{page}}\/\n都市言情::\/sort\/2_{{page}}\/\n军事历史::\/sort\/3_{{page}}\/\n科幻灵异::\/sort\/4-{{page}}\/\n游戏竞技::\/sort\/5_{{page}}\/\nBL同人::\/sort\/6_{{page}}\/\nGL百合::\/sort\/7_{{page}}\/",
+        "header": "{\n  \"User-Agent\": \"Mozilla\/5.0 (Linux; U; Android 8.0.0; zh-cn; MIX 2 Build\/OPR1.170623.027) AppleWebKit\/533.1 (KHTML, like Gecko) Version\/4.0 Mobile Safari\/533.1\"\n}",
+        "lastUpdateTime": 0,
+        "loginUrl": "",
+        "ruleBookInfo": {
+            "author": "\/\/meta[@property=\"og:novel:author\"]\/@content",
+            "coverUrl": "\/\/meta[@property=\"og:image\"]\/@content",
+            "intro": "[property=\"og:description\"]@content",
+            "kind": "\/\/meta[@property=\"og:novel:category\"]\/@content",
+            "lastChapter": "\/\/meta[@property=\"og:novel:latest_chapter_name\"]\/@content",
+            "name": "\/\/meta[@property=\"og:novel:book_name\"]\/@content",
+            "tocUrl": "class.gochapter@tag.a@href"
+        },
+        "ruleContent": {
+            "content": "@js:\nfunction _17mb_content(aid,cid,page){\nlet url=\"https:\/\/m.blwenku.tv\/content.php,\",\nbody=\"aid=\"+aid+\"&cid=\"+cid+\"&page=\"+page,\noptions={\"method\":\"POST\",\"body\":body,\"headers\":{\"referer\":baseUrl}};\nreturn java.ajax(url+JSON.stringify(options));\n}\n\neval(result.match(\/(_17mb_content\\(.+?\\))\/)[1]);\n",
+            "nextContentUrl": "text.下一页@href"
+        },
+        "ruleExplore": {
+            "author": "class.author@tag.p.0@text##作者：",
+            "bookList": "class.article",
+            "bookUrl": "tag.h6@tag.a@href",
+            "coverUrl": "tag.img@src",
+            "intro": "class.simple@text",
+            "name": "tag.h6@text"
+        },
+        "ruleSearch": {
+            "author": "class.author@text",
+            "bookList": "class.sone",
+            "bookUrl": "tag.a@href",
+            "coverUrl": "tag.a.0@href<js>\nvar id = result.match(\/(\\d+)\\\/?$\/)[1];\nvar iid = parseInt(id\/1000);\n'https:\/\/fm.blwenku.tv\/'+iid+'\/'+id+'\/'+id+'s.jpg';\n<\/js>",
+            "kind": "",
+            "lastChapter": "",
+            "name": "tag.a.0@text"
+        },
+        "ruleToc": {
+            "chapterList": "class.chapters@li@a",
+            "chapterName": "text",
+            "chapterUrl": "href",
+            "nextTocUrl": "text.下一页@href"
+        },
+        "searchUrl": "\/s.php,{\n\"charset\": \"gbk\",\n\"method\": \"POST\",\n\"body\": \"type=articlename&s={{key}}\"\n}",
+        "weight": 0
+    },
+    {
+        "bookSourceGroup": "🍑耽美",
+        "bookSourceName": "🍑大美书网",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https:\/\/wap.dmshuwang.org",
+        "bookUrlPattern": "",
+        "customOrder": 0,
+        "enabled": true,
+        "enabledExplore": true,
+        "exploreUrl": "穿越重生::\/chuanyuechongsheng\/index<,_{{page}}>.html\n玄幻网游::\/xuanhuanwangyou\/index<,_{{page}}>.html\n现代都市::\/xiandaixiaoshuo\/index<,_{{page}}>.html\n古代架空::\/gudaixiaoshuo\/index<,_{{page}}>.html\n同人BL::\/tongrenxiaoshuo\/index<,_{{page}}>.html\n百合GL::\/baihexiaoshuo\/index<,_{{page}}>.html\n重生专题::\/chshwzt\/index<,_{{page}}>.html\n穿越专题::\/chywzt\/index<,_{{page}}>.html\n修真专题::\/xzhwzt\/index<,_{{page}}>.html\n兽人专题::\/shrwzt\/index<,_{{page}}>.html\n末世专题::\/mshwzt\/index<,_{{page}}>.html\n本站推荐::\/best\/index<,_{{page}}>.html\nnull",
+        "lastUpdateTime": 0,
+        "loginUrl": "",
+        "ruleBookInfo": {
+            "intro": "class.nrxs@tag.div@textNodes"
+        },
+        "ruleContent": {
+            "content": "class.nrxs@tag.div@html",
+            "imageStyle": "0.0"
+        },
+        "ruleExplore": {
+            "author": "tag.a@text##.*——|.*\/",
+            "bookList": "class.article-list@tag.li",
+            "bookUrl": "tag.a@href",
+            "name": "tag.a@text##——.*|\\[.*|（.*|\/.*"
+        },
+        "ruleSearch": {
+            "author": "text##.*——",
+            "bookList": "class.article-list@tag.li@tag.a",
+            "bookUrl": "href",
+            "name": "text##——.*|（.*）"
+        },
+        "ruleToc": {
+            "chapterList": "+<js>\nvar n=result.match(\/<b>1<\\\/b>\\\/<b>(\\d+)<\\\/b>\/)[1];\nvar list=[{k:'第1页',v:baseUrl}];\nfor(var i=2;i<=n;i++){\nlist.push({k:'第'+i+'页',v:baseUrl.replace(\/\\.html\/,'_'+i+'.html')});\n}\nlist\n<\/js>",
+            "chapterName": "k",
+            "chapterUrl": "v"
+        },
+        "searchUrl": "https:\/\/wap.dmshuwang.org\/search\/index.php,{\n  \"charset\": \"gbk\",\n  \"method\": \"POST\",\n  \"body\": \"keyboard={{key}}&show=title&tempid=2&tbname=article&x=0&y=0\"\n}",
+        "weight": 0
+    },
+    {
+        "bookSourceComment": "",
+        "bookSourceGroup": "🍑耽美",
         "bookSourceName": "🍑新世纪小说",
         "bookSourceType": 0,
         "bookSourceUrl": "https:\/\/www.2100xs.com",
@@ -11760,6 +12019,93 @@
             "chapterUrl": "href"
         },
         "searchUrl": "\/e\/search\/index.php,{\n\"charset\": \"gbk\",\n\"method\": \"POST\",\n\"body\": \"keyboard={{key}}&show=title&classid=0\"\n}",
+        "weight": 0
+    },
+    {
+        "bookSourceGroup": "🍑耽美",
+        "bookSourceName": "🍑耽美书包",
+        "bookSourceType": 0,
+        "bookSourceUrl": "http:\/\/www.shubao1.cc",
+        "customOrder": 0,
+        "enabled": true,
+        "enabledExplore": true,
+        "exploreUrl": "总点击榜::\/novel\/allvisit.html\n月点击榜::\/novel\/monthvisit.html\n周点击榜::\/novel\/weekvisit.html\n总推荐榜::\/novel\/allvote.html\n月推荐榜::\/novel\/monthvote.html\n周推荐榜::\/novel\/weekvote.html\n总收藏榜::\/novel\/marknum.html\n总字数榜::\/novel\/fontsize.html\n评分人数::\/novel\/starnum.html\n打赏人数::\/novel\/rewardnum.html\n新书入库::\/novel\/postdate.html\n最近更新::\/novel\/lastupdate.html\n重生耽美::\/chongsheng\/{{page}}.html\n古代耽美::\/guyan\/{{page}}.html\n耽美宠文::\/chongwen\/{{page}}.html\n经典耽美::\/qingchun\/{{page}}.html\n虐心耽美::\/niexin\/{{page}}.html\n校园耽美::\/xiaoyuan\/{{page}}.html\n强强耽美::\/qiangqiang\/{{page}}.html\n言情总裁::\/yanqing\/{{page}}.html",
+        "lastUpdateTime": 0,
+        "ruleBookInfo": {
+            "author": "[property=\"og:novel:author\"]@content",
+            "coverUrl": "[property=\"og:image\"]@content",
+            "intro": "[property=\"og:description\"]@content",
+            "kind": "[property=\"og:novel:category\"]@content&&[property=\"og:novel:status\"]@content&&[property=\"og:novel:update_time\"]@content##\\s.*",
+            "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
+            "name": "[property=\"og:novel:book_name\"]@content",
+            "tocUrl": "class.lb@tag.a@href"
+        },
+        "ruleContent": {
+            "content": "id.content@tag.p@text"
+        },
+        "ruleExplore": {
+            "author": "class.s4@text||tag.span.-1@text",
+            "bookList": "class.l@tag.li||class.novelslist2@tag.li!0",
+            "bookUrl": "tag.a.0@href",
+            "kind": "class.s1@text&&class.s6@text&&tag.span.4@text##\\s.*",
+            "lastChapter": "class.s3@text",
+            "name": "class.s2@text##\\《|\\》"
+        },
+        "ruleSearch": {
+            "author": "tag.span.1@text##.*\/",
+            "bookList": "class.ss_box",
+            "bookUrl": "tag.a.1@href",
+            "coverUrl": "tag.img@src",
+            "intro": "tag.p@text",
+            "kind": "tag.span.-1@text##\\（|\\s.*",
+            "lastChapter": "tag.a.-1@text",
+            "name": "tag.a.1@text"
+        },
+        "ruleToc": {
+            "chapterList": "id.list.1@tag.dd",
+            "chapterName": "tag.a@text",
+            "chapterUrl": "tag.a@href"
+        },
+        "searchUrl": "\/book.php?action=search&searchtype=novelname&searchkey={{key}}&page={{page}},{\n  \"charset\": \"gbk\"\n}",
+        "weight": 0
+    },
+    {
+        "bookSourceComment": "",
+        "bookSourceGroup": "🍑耽美",
+        "bookSourceName": "🍑美文书屋",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https:\/\/www.meiwensw.com",
+        "bookUrlPattern": "",
+        "customOrder": 0,
+        "enabled": true,
+        "enabledExplore": false,
+        "lastUpdateTime": 0,
+        "loginUrl": "",
+        "ruleBookInfo": {
+            "lastChapter": "class.upd@tag.a.0@text"
+        },
+        "ruleContent": {
+            "content": "class.contentbox@textNodes##本书籍由.*版权归原作者所有\n|本书籍仅供学习交流之用，请在下载后24小时内自行删除|.*小说下载网（）|=================",
+            "imageStyle": "0.0",
+            "nextContentUrl": "text.下一章@href"
+        },
+        "ruleExplore": {},
+        "ruleSearch": {
+            "author": "class.infos@tag.a@text",
+            "bookList": "class.so new<js>\nif((String(result).match(\/没有找到你要的内容\/g))!=null){result=null}else{result}<\/js>",
+            "bookUrl": "tag.h2@tag.a@href",
+            "coverUrl": "class.pic@tag.img@src",
+            "intro": "class.infos@tag.p@text",
+            "kind": "class.infos@tag.span.3@text##类别：",
+            "lastChapter": "class.infos@tag.span.2@text##状态：",
+            "name": "tag.h2@tag.a@text"
+        },
+        "ruleToc": {
+            "chapterList": "class.book_list@tag.li@tag.a",
+            "chapterName": "text",
+            "chapterUrl": "href"
+        },
+        "searchUrl": "https:\/\/www.meiwensw.com\/plus\/search.php?kwtype=0&searchtype=&q={{key}},{\n  \"charset\": \"gbk\"\n}",
         "weight": 0
     },
     {
