@@ -10419,23 +10419,27 @@
         "bookSourceGroup": "💵正版",
         "bookSourceName": "💵息壤中文",
         "bookSourceType": 0,
-        "bookSourceUrl": "https://www.xrzww.com",
+        "bookSourceUrl": "https:\/\/pre-api.xrzww.com",
+        "bookUrlPattern": "\/api\/detail\/.+",
         "customOrder": 0,
         "enabled": true,
         "enabledExplore": true,
         "exploreUrl": "热销::https://pre-api.xrzww.com:443/api/hotSaleListNew?page={{page}}&pageSize=20&novel_sex=1&type=1\n字数::https://pre-api.xrzww.com:443/api/wordnumListNew?page={{page}}&pageSize=20&novel_sex=1&type=1\n更新::https://pre-api.xrzww.com:443/api/wordsListNew?page={{page}}&pageSize=20&novel_sex=1&type=1\n玄幻::https://pre-api.xrzww.com:443/api/getTypeNovel?novel_process=&novel_sell=&novel_sign_id=&time_type=&word_type=&second_type=1&page={{page}}&novel_sex=1&type_id=&pageSize=20&order=novel_wordnumber+&order_type=desc&tag=\n仙侠::https://pre-api.xrzww.com:443/api/getTypeNovel?novel_process=&novel_sell=&novel_sign_id=&time_type=&word_type=&second_type=2&page={{page}}&novel_sex=1&type_id=&pageSize=20&order=novel_wordnumber+&order_type=desc&tag=\n都市::https://pre-api.xrzww.com:443/api/getTypeNovel?novel_process=&novel_sell=&novel_sign_id=&time_type=&word_type=&second_type=3&page={{page}}&novel_sex=1&type_id=&pageSize=20&order=novel_wordnumber+&order_type=desc&tag=\n历史::https://pre-api.xrzww.com:443/api/getTypeNovel?novel_process=&novel_sell=&novel_sign_id=&time_type=&word_type=&second_type=4&page={{page}}&novel_sex=1&type_id=&pageSize=20&order=novel_wordnumber+&order_type=desc&tag=\n科幻::https://pre-api.xrzww.com:443/api/getTypeNovel?novel_process=&novel_sell=&novel_sign_id=&time_type=&word_type=&second_type=5&page={{page}}&novel_sex=1&type_id=&pageSize=20&order=novel_wordnumber+&order_type=desc&tag=\n奇幻::https://pre-api.xrzww.com:443/api/getTypeNovel?novel_process=&novel_sell=&novel_sign_id=&time_type=&word_type=&second_type=6&page={{page}}&novel_sex=1&type_id=&pageSize=20&order=novel_wordnumber+&order_type=desc&tag=\n军事::https://pre-api.xrzww.com:443/api/getTypeNovel?novel_process=&novel_sell=&novel_sign_id=&time_type=&word_type=&second_type=7&page={{page}}&novel_sex=1&type_id=&pageSize=20&order=novel_wordnumber+&order_type=desc&tag=\n悬疑::https://pre-api.xrzww.com:443/api/getTypeNovel?novel_process=&novel_sell=&novel_sign_id=&time_type=&word_type=&second_type=11&page={{page}}&novel_sex=1&type_id=&pageSize=20&order=novel_wordnumber+&order_type=desc&tag=\n轻文::https://pre-api.xrzww.com:443/api/getTypeNovel?novel_process=&novel_sell=&novel_sign_id=&time_type=&word_type=&second_type=9&page={{page}}&novel_sex=1&type_id=&pageSize=20&order=novel_wordnumber+&order_type=desc&tag=\n体育::https://pre-api.xrzww.com:443/api/getTypeNovel?novel_process=&novel_sell=&novel_sign_id=&time_type=&word_type=&second_type=12&page={{page}}&novel_sex=1&type_id=&pageSize=20&order=novel_wordnumber+&order_type=desc&tag=\n游戏::https://pre-api.xrzww.com:443/api/getTypeNovel?novel_process=&novel_sell=&novel_sign_id=&time_type=&word_type=&second_type=13&page={{page}}&novel_sex=1&type_id=&pageSize=20&order=novel_wordnumber+&order_type=desc&tag=\n武侠::https://pre-api.xrzww.com:443/api/getTypeNovel?novel_process=&novel_sell=&novel_sign_id=&time_type=&word_type=&second_type=14&page={{page}}&novel_sex=1&type_id=&pageSize=20&order=novel_wordnumber+&order_type=desc&tag=\n现言::https://pre-api.xrzww.com:443/api/getTypeNovel?novel_process=&novel_sell=&novel_sign_id=&time_type=&word_type=&second_type=77&page={{page}}&novel_sex=2&type_id=&pageSize=20&order=novel_wordnumber+&order_type=desc&tag=\n古言::https://pre-api.xrzww.com:443/api/getTypeNovel?novel_process=&novel_sell=&novel_sign_id=&time_type=&word_type=&second_type=80&page={{page}}&novel_sex=2&type_id=&pageSize=20&order=novel_wordnumber+&order_type=desc&tag=\n幻言::https://pre-api.xrzww.com:443/api/getTypeNovel?novel_process=&novel_sell=&novel_sign_id=&time_type=&word_type=&second_type=81&page={{page}}&novel_sex=2&type_id=&pageSize=20&order=novel_wordnumber+&order_type=desc&tag=\n纯爱::https://pre-api.xrzww.com:443/api/getTypeNovel?novel_process=&novel_sell=&novel_sign_id=&time_type=&word_type=&second_type=82&page={{page}}&novel_sex=2&type_id=&pageSize=20&order=novel_wordnumber+&order_type=desc&tag=\n无CP::https://pre-api.xrzww.com:443/api/getTypeNovel?novel_process=&novel_sell=&novel_sign_id=&time_type=&word_type=&second_type=83&page={{page}}&novel_sex=2&type_id=&pageSize=20&order=novel_wordnumber+&order_type=desc&tag=",
-        "lastUpdateTime": 0,
+        "lastUpdateTime": 1613683856510,
+        "loginUrl": "https:\/\/h5.xrzww.com\/#\/pages\/login\/login",
         "ruleBookInfo": {
-            "author": "$.data.novel_author",
-            "coverUrl": "$.data.novel_cover@js:'https://oss.xrzww.com'+result",
-            "intro": "$.data.novel_info||$.message",
+            "author": "novel_author",
+            "coverUrl": "https:\/\/oss.xrzww.com{{$.novel_cover}}",
+            "init": "data",
+            "intro": "<br>{{$.novel_info}}",
             "kind": "{{$.message}}{{$.data.type_name}} {{$.data.second_typename}}##ok",
             "lastChapter": "$.data.novel_newcname",
-            "name": "$.data.novel_name",
-            "tocUrl": "https://pre-api.xrzww.com:443/api/directoryList?nid={{$.data.novel_id}}&orderBy=0"
+            "name": "novel_name",
+            "tocUrl": "\/api\/directoryList?nid={{$.novel_id}}&orderBy=0",
+            "wordCount": "novel_wordnumber"
         },
         "ruleContent": {
-            "content": "$.data.content"
+            "content": "data.content"
         },
         "ruleExplore": {
             "author": "$.novel_author",
@@ -10448,17 +10452,23 @@
             "wordCount": "novel_wordnumber"
         },
         "ruleSearch": {
-            "author": "h3@text##.*?-(.*?)-.*##$1###",
-            "bookList": "tag.article\n@js:\nlist=result.toArray();\nlist1=[];\nfor(i in list){\nif(list[i].select('h3').text().indexOf(java.get('key'))>-1){\nlist1.push(list[i])\n}\n}\nlist1.map(x=>x)",
-            "bookUrl": "tag.a.0@href\n<js>java.ajax(result)</js>\n##window.location.replace\\(\"([^\"]+)\"\\);##$1###<js>var id=result.match(/nid=(\\d+)/)[1];\n'https://pre-api.xrzww.com:443/api/webNovelDetail?novel_id='+id</js>",
-            "name": "h3@text##(.*?)-.*##$1###"
+            "author": "novel_author",
+            "bookList": "data.data",
+            "bookUrl": "\/api\/detail?novel_id={{$.novel_id}}",
+            "coverUrl": "https:\/\/oss.xrzww.com{{$.novel_cover}}",
+            "intro": "novel_info",
+            "kind": "type_name",
+            "lastChapter": "novel_newcname",
+            "name": "novel_name",
+            "wordCount": "novel_wordnumber"
         },
         "ruleToc": {
-            "chapterList": "$..data.*",
-            "chapterName": "$.chapter_name",
-            "chapterUrl": "@json:https://pre-api.xrzww.com:443/api/readNew?nid={{$.chapter_nid}}&vid={{$.chapter_vid}}&chapter_id={{$.chapter_id}}&chapter_order={{$.chapter_order}}"
+            "chapterList": "data.data",
+            "chapterName": "chapter_name",
+            "chapterUrl": "\/api\/readNew?nid={{$.chapter_nid}}&vid={{$.chapter_vid}}&chapter_id={{$.chapter_id}}&chapter_order={{$.chapter_order}}",
+            "isVip": "chapter_ispay"
         },
-        "searchUrl": "https://baidu.com/from=1022560v/ssid=0/s?pn={{page*10-10}}&word={{key}} site:xrzww.com@js:java.put('key',key);result\n",
+        "searchUrl": "\/api\/search?page={{page}}&type=1&keyword={{key}}",
         "weight": 0
     },
     {
