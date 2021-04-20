@@ -5673,25 +5673,26 @@
         "weight": 0
     },
     {
+        "bookSourceComment": "",
         "bookSourceGroup": "🍺特优",
         "bookSourceName": "🍺歪歪小说",
         "bookSourceType": 0,
-        "bookSourceUrl": "https:\/\/www.99xiyue.com\/index.html",
+        "bookSourceUrl": "https:\/\/www.99xiyue.com",
         "customOrder": 0,
         "enabled": true,
         "enabledExplore": true,
-        "exploreUrl": "点击日榜::https:\/\/www.99xiyue.com\/other\/tpl\/rank_hits\/order\/hits_day.html\n点击周榜::https:\/\/www.99xiyue.com\/other\/tpl\/rank_hits\/order\/hits_week.html\n点击月榜::https:\/\/www.99xiyue.com\/other\/tpl\/rank_hits\/order\/hits_month.html\n点击总榜::https:\/\/www.99xiyue.com\/other\/tpl\/rank_hits\/order\/hits.html\n新书榜::https:\/\/www.99xiyue.com\/other\/tpl\/rank_hits\/newbook\/1.html\n完结榜::https:\/\/www.99xiyue.com\/other\/tpl\/rank_hits\/over\/1.html",
+        "exploreUrl": "奇幻::https:\/\/www.99xiyue.com\/hu\/18.html?page={{page}}&&武侠::https:\/\/www.99xiyue.com\/hu\/19.html?page={{page}}&&历史::https:\/\/www.99xiyue.com\/hu\/20.html?page={{page}}&&都市::https:\/\/www.99xiyue.com\/hu\/21.html?page={{page}}&&科幻::https:\/\/www.99xiyue.com\/hu\/22.html?page={{page}}&&悬疑::https:\/\/www.99xiyue.com\/hu\/23.html?page={{page}}&&游戏::https:\/\/www.99xiyue.com\/hu\/34.html?page={{page}}&&其他::https:\/\/www.99xiyue.com\/hu\/35.html?page={{page}}&&",
         "header": "{\n  \"User-Agent\": \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/91.0.4466.2 Safari\/537.36\"\n}",
-        "lastUpdateTime": 0,
+        "lastUpdateTime": 1613121622688,
         "loginUrl": "",
         "ruleBookInfo": {
             "author": "@css:a.author.fl@text",
             "coverUrl": "@css:div.pic.fl>span>img@src",
             "intro": "@css:p.brief_text@text",
             "kind": "@css: div.tags.clearfixer>a:nth-child(2)>span@text",
-            "lastChapter": "@css:span.chaptername.fl>a@text##最近更新",
-            "name": "@css:span.name.fl@text",
-            "tocUrl": "@js:if(result.match(\/全部章节\/)){\nresult=result.match(\/href=\"([^\"]+)\">全部章节\/)[1]\n}else{result=baseUrl}",
+            "lastChapter": "\/\/*[@class=\"chaptername fl\"]\/a\/text()##最近更新",
+            "name": "\/\/*[@class=\"name fl\"]\/text()",
+            "tocUrl": "text.全部章节@href",
             "wordCount": "@css:div.hits>span:nth-child(2)@text"
         },
         "ruleContent": {
@@ -5703,33 +5704,35 @@
             "webJs": ""
         },
         "ruleExplore": {
-            "author": "@css:dd>p:nth-child(2)>a:nth-child(1)@text",
-            "bookList": "@css:div.secd-rank-list.rank dl",
-            "bookUrl": "@css:a.bigpic-book-name@href",
-            "coverUrl": "@css:img.lazyimg@data-original",
-            "intro": "@css:p.big-book-info@text",
-            "kind": "@css:dd>p:nth-child(2)>a:nth-child(2)@text",
-            "lastChapter": "@css:dd>p:nth-child(4)>a@text##最近更新",
-            "name": "\/\/*[@class=\"bigpic-book-name\"]\/text()"
+            "author": "class.x-book__info--author@p@text||tag.a.2@text",
+            "bookList": "@css:div.listboxw dl||div.x-book",
+            "bookUrl": "tag.a.0@href",
+            "coverUrl": "img@src",
+            "intro": "class.x-book__info--chapter@p@text||tag.p.1@textNodes",
+            "kind": "tag.a.3@text",
+            "lastChapter": "",
+            "name": "class.x-book__info--name@p@text||tag.a.1@text",
+            "wordCount": "p:has(a)@text##.*\\|"
         },
         "ruleSearch": {
-            "author": "@css:dd>p:eq(1)>a:eq(0)@text",
-            "bookList": "@css:div.secd-rank-list dl",
-            "bookUrl": "@css:a.bigpic-book-name@href",
-            "coverUrl": "@css:dt>a>img@data-original",
-            "intro": "@css:p.big-book-info@text",
-            "kind": "@css:dd>p:nth-child(2)>a:nth-child(2)@text",
-            "lastChapter": "@css:a.red@text##最近更新",
-            "name": "@css:a.bigpic-book-name@text",
-            "wordCount": "@css:span.clicknum>em:nth-child(1)@text"
+            "author": "\/\/dd\/p[1]\/a[1]\/text()",
+            "bookList": "\/\/*[@class=\"secd-rank-list\"]\/dl",
+            "bookUrl": "\/\/*[@class=\"bigpic-book-name\"]\/@href",
+            "coverUrl": "\/\/dt\/a\/img\/@data-original",
+            "intro": "\/\/*[@class=\"big-book-info\"]\/text()",
+            "kind": "\/\/dd\/p[1]\/a[2]\/text()",
+            "lastChapter": "\/\/*[@class=\"red\"]\/text()##最近更新\\s+",
+            "name": "\/\/*[@class=\"bigpic-book-name\"]\/text()##\\[|\\]",
+            "wordCount": "\/\/*[@class=\"clicknum\"]\/em[1]\/text()"
         },
         "ruleToc": {
-            "chapterList": "class.cate-list@li@a||class.panel-chapterlist@dd@a",
-            "chapterName": "class.chapter_name@text||text",
+            "chapterList": "\/\/*[@class=\"cate-list\"]\/ul\/li\/a||\/\/*[@class=\"col-md-3\"]\/a",
+            "chapterName": "text##\\d+-\\d+",
             "chapterUrl": "href",
+            "nextTocUrl": "",
             "updateTime": "class.date@text"
         },
-        "searchUrl": "https:\/\/www.99xiyue.com\/search.html?keyword={{key}}&page={{page}}",
+        "searchUrl": "\/search.html?keyword={{key}}&page={{page}}",
         "weight": 0
     },
     {
