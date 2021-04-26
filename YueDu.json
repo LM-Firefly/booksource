@@ -810,7 +810,7 @@
     "bookSourceType": 0,
     "bookSourceUrl": "https://www.ikankan100.com/",
     "bookUrlPattern": "",
-    "customOrder": -847,
+    "customOrder": 0,
     "enabled": true,
     "enabledExplore": true,
     "exploreUrl": "推荐榜::/top/vote.html\n总点击榜::/top/allvisit.html\n月点击榜::/top/monthvisit.html\n周点击榜::/top/weekvisit.html\n日点击榜::/top/dayvisit.html\n收藏榜::/top/mark.html\n评分榜::/top/star_score.html\n百度热搜榜::/top/baidu.html\n追书热度榜::/top/zhuishu.html\n书旗热搜榜::/top/shuqi.html\n掌阅热销榜::/top/zhangyue.html\n起点月票榜::/top/qidian.html\n17K鲜花榜::/top/17k.html",
