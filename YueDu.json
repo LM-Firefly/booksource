@@ -1269,7 +1269,7 @@
       "chapterName": "text",
       "chapterUrl": "href"
     },
-    "searchUrl": "https://sou.xanbhx.com/search?siteid=qula&q={{key}}",
+    "searchUrl": "https://www.jx.la/ar.php?keyWord={{key}}",
     "weight": 0
   },
   {
@@ -3711,6 +3711,7 @@
     "weight": 0
   },
   {
+    "bookSourceComment": "",
     "bookSourceGroup": "🍺特优",
     "bookSourceName": "🍺手打吧",
     "bookSourceType": 0,
@@ -3720,19 +3721,19 @@
     "enabled": true,
     "enabledExplore": true,
     "exploreUrl": "玄幻奇幻::/xuanhuan/{{page}}.html\n武侠仙侠::/wuxia/{{page}}.html\n都市生活::/dushi/{{page}}.html\n历史军事::/lishi/{{page}}.html\n游戏竞技::/youxi/{{page}}.html\n科幻未来::/kehuan/{{page}}.html\n恐怖悬疑::/xuanyi/{{page}}.html\n二次元::/erciyuan/{{page}}.html\n经典短篇::/jingdian/{{page}}.html\n古代言情::/guyan/{{page}}.html\n现代言情::/xianyan/{{page}}.html\n幻想奇缘::/huanqing/{{page}}.html\n浪漫青春::/qingchun/{{page}}.html\n网络情缘::/mmyouxi/{{page}}.html\n科幻空间::/mmkehuan/{{page}}.html\n鬼怪灵异::/lingyi/{{page}}.html\nN次元::/Nciyuan/{{page}}.html\n言情美文::/yanqing/{{page}}.html",
-    "header": "",
-    "lastUpdateTime": 0,
+    "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4466.2 Safari/537.36\"\n}",
+    "lastUpdateTime": 1619614927879,
     "loginUrl": "",
     "ruleBookInfo": {
-      "author": "",
-      "coverUrl": "",
-      "init": "",
+      "author": "author",
+      "coverUrl": "cover",
+      "init": "@js:\n(function(){\n    let doc = org.jsoup.Jsoup.parse(result)\n    let og = (selector) => doc.select('[property=\"og:' + selector + '\"]').attr('content')\n    return {\n        name: og('novel:book_name'),\n        author: og('novel:author'),\n        kind: og('novel:category'),\n        latest: og('novel:latest_chapter_name')+' · '+String(doc.select('.top span:nth-child(4)').textNodes().get(0)),\n        cover: og('image'),\n        wordCount: String(doc.select('.top span:nth-child(2)').text()).replace(/全文字数：/,'').replace(/万字/,'000'),\n        intro: og('description'),\n        url:og('novel:read_url')\n    }\n})()",
       "intro": "class.intro@text",
-      "kind": "",
-      "lastChapter": "",
-      "name": "",
-      "tocUrl": "",
-      "wordCount": ""
+      "kind": "kind",
+      "lastChapter": "latest",
+      "name": "name",
+      "tocUrl": "url",
+      "wordCount": "wordCount"
     },
     "ruleContent": {
       "content": "id.content@html##为了方便下次阅读.*|喜欢.*请大家收藏.*",
@@ -3746,7 +3747,6 @@
       "bookUrl": "tag.a.0@href",
       "coverUrl": "tag.img@src",
       "intro": "class.intro@text",
-      "kind": "",
       "lastChapter": "class.sya@a@text",
       "name": "tag.a.1@text",
       "wordCount": ""
@@ -3757,10 +3757,10 @@
       "bookUrl": "tag.a.1@href",
       "coverUrl": "tag.a.0@tag.img@src",
       "intro": "class.intro@text",
-      "kind": "",
+      "kind": "kind",
       "lastChapter": ".sys@a@text##最新更新：|[\\(（].*[求更谢乐发推].*[）\\)]",
       "name": "tag.a.1@text",
-      "wordCount": ""
+      "wordCount": "wordCount"
     },
     "ruleToc": {
       "chapterList": "tag.dl@tag.dd",
@@ -3770,7 +3770,7 @@
       "nextTocUrl": "",
       "updateTime": ""
     },
-    "searchUrl": "/search.html,{\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}\"\n}",
+    "searchUrl": "/search.html,{\"method\":\"POST\",\"body\": \"searchkey={{key}}\"}",
     "weight": 0
   },
   {
@@ -5098,7 +5098,7 @@
     "enabled": true,
     "enabledExplore": true,
     "exploreUrl": "玄幻魔法::https://m.xunsilu.com/sort/1_{{page}}/\n武侠修真::https://m.xunsilu.com/sort/2_{{page}}/\n都市言情::https://m.xunsilu.com/sort/3_{{page}}/\n历史军事::https://m.xunsilu.com/sort/4_{{page}}/\n侦探推理::https://m.xunsilu.com/sort/5_{{page}}/\n网游动漫::https://m.xunsilu.com/sort/6_{{page}}/\n科幻小说::https://m.xunsilu.com/sort/7_{{page}}/\n恐怖灵异::https://m.xunsilu.com/sort/8_{{page}}/\n散文诗词::https://m.xunsilu.com/sort/9_{{page}}/\n其他类型::https://m.xunsilu.com/sort/10_{{page}}/",
-    "lastUpdateTime": 1619273629519,
+    "lastUpdateTime": 1619564836128,
     "ruleBookInfo": {
       "author": "class.article@tag.li.1@text",
       "coverUrl": "img@src",
@@ -5108,7 +5108,7 @@
       "name": "class.article@tag.li.0@text"
     },
     "ruleContent": {
-      "content": "class.content@textNodes##，精彩小说无弹窗免费阅读！|♂丝♂路♂文♂学♂网.*",
+      "content": "class.content@html##为了尽量少触发广告，大家可以试着点击手机屏幕靠上的地方滑动。|如果使用百.*手机自带浏览器观看|.*li style.*|.*>|本章未完，请点击.*|，精彩小说无弹窗免费阅读！|♂丝♂路♂文♂学♂网.*|手机：.*|class\\S{7}",
       "nextContentUrl": "text.下一页@href"
     },
     "ruleExplore": {
@@ -5187,6 +5187,8 @@
     "customOrder": 0,
     "enabled": true,
     "enabledExplore": true,
+    "exploreUrl": "玄幻小说::https://m.ranwen.la/xuanhuan/\n修真小说::https://m.ranwen.la/xiuzhen/\n都市小说::https://m.ranwen.la/dushi/\n历史小说::https://m.ranwen.la/lishi/\n网游小说::https://m.ranwen.la/wangyou/\n科幻小说::https://m.ranwen.la/kehuan/\n浪漫青春::https://m.ranwen.la/qingchun/\n言情小说::https://m.ranwen.la/yanqing/\n同人次元::https://m.ranwen.la/ciyuan/\n全本小说::https://m.ranwen.la/quanben/",
+    "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Linux; Android 10; Redmi Note 8 Pro Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.101 Mobile Safari/537.36\"\n}",
     "lastUpdateTime": 1606327654282,
     "ruleBookInfo": {
       "author": "id.info@tag.p.0@text##作 者：",
@@ -5282,22 +5284,24 @@
     "bookSourceName": "🍺一起品",
     "bookSourceType": 0,
     "bookSourceUrl": "https://www.17pxs.com",
+    "bookUrlPattern": "",
     "customOrder": 0,
     "enabled": true,
     "enabledExplore": true,
     "exploreUrl": "总点击榜::/paihang/allvisit_{{page}}.html\n月点击榜::/paihang/monthvisit_{{page}}.html\n周点击榜::/paihang/weekvisit_{{page}}.html\n总推荐榜::/paihang/allvote_{{page}}.html\n月推荐榜::/paihang/monthvote_{{page}}.html\n周推荐榜::/paihang/weekvote_{{page}}.html\n总收藏榜::/paihang/goodnum_{{page}}.html\n总字数榜::/paihang/size_{{page}}.html\n最新入库::/paihang/postdate_{{page}}.html\n最近更新::/paihang/lastupdate_{{page}}.html\n玄幻::/xuanhuan/{{page}}.html\n仙侠::/xianxia/{{page}}.html\n都市::/dushi/{{page}}.html\n军史::/junshi/{{page}}.html\n网游::/wangyou/{{page}}.html\n科幻::/kehuan/{{page}}.html\n恐怖::/kongbu/{{page}}.html\n其他::/qita/{{page}}.html",
-    "lastUpdateTime": 0,
+    "lastUpdateTime": 1619483646903,
+    "loginUrl": "",
     "ruleBookInfo": {
       "author": "class.bq@tag.a@text",
-      "coverUrl": "class.pic@tag.img@src",
-      "intro": "class.jj@textNodes",
+      "coverUrl": "class.pic@tag.img.0@src",
+      "intro": "class.introduce@class.jj@textNodes",
       "kind": "class.bq@tag.span.0@text&&class.bq@tag.span.2@text##.*：|\\s.*",
       "lastChapter": "class.lastchapter@tag.a@text",
       "name": "tag.h1@text"
     },
     "ruleContent": {
-      "content": "id.articlecontent@textNodes",
-      "imageStyle": "0",
+      "content": "class.articlecontent@textNodes",
+      "imageStyle": "FULL",
       "replaceRegex": "##.*一起品小说.*|手机版访问.*|最新网址.*"
     },
     "ruleExplore": {
@@ -5312,21 +5316,21 @@
       "wordCount": "tag.td.3@text"
     },
     "ruleSearch": {
-      "author": "tag.td.2@text",
-      "bookList": "tbody@tag.tr!0",
-      "bookUrl": "tag.a.0@href",
-      "coverUrl": "tag.a.0@href##.+\\D((\\d+)\\d{3})\\D##https://www.17pxs.com/files/article/image/$2/$1/$1s.jpg###",
-      "kind": "tag.td.4@text&&tag.td.5@text",
-      "lastChapter": "tag.td.1@text",
-      "name": "tag.td.0@text",
+      "author": "class.odd.1@text||class.catalog@tag.p.1@tag.span.1@tag.a.0@text",
+      "bookList": "class.grid@tag.tr!0||class.main",
+      "bookUrl": "class.odd.0@tag.a.0@href",
+      "coverUrl": "class.catalog@class.pic@tag.img.0@src",
+      "kind": "class.even.2@text||class.catalog@tag.p.1@tag.span.2@text##状态：",
+      "lastChapter": "class.even.0@tag.a.0@text||class.ml_content@tag.ul.0@tag.li.0@tag.a.0@text",
+      "name": "class.odd.0@tag.a.0@text||class.catalog@tag.h1.0@text",
       "wordCount": "tag.td.3@text"
     },
     "ruleToc": {
-      "chapterList": "class.ml_list@tag.li@tag.a",
+      "chapterList": "class.ml_list@tag.ul@tag.li@tag.a",
       "chapterName": "text",
       "chapterUrl": "href"
     },
-    "searchUrl": "/modules/article/search.php,{\n  \"charset\": \"gbk\",\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}&page={{page}}\"\n}",
+    "searchUrl": "https://www.17pxs.com/modules/article/search.php,{\n  \"charset\": \"gbk\",\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}&submit=点击搜索\"\n}",
     "weight": 0
   },
   {
