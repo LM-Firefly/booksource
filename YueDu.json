@@ -2695,51 +2695,59 @@
     "bookSourceComment": "",
     "bookSourceGroup": "🍺特优",
     "bookSourceName": "🍺九桃小说org",
-    "bookSourceType": 0,
-    "bookSourceUrl": "https://m.9txs.org",
+    "bookSourceType": "0",
+    "bookSourceUrl": "https:\/\/www.9txs.org",
+    "bookUrlPattern": "",
     "customOrder": 0,
     "enabled": true,
     "enabledExplore": true,
-    "exploreUrl": "【全部分类】/sort/library/{{page}}.html\n玄幻奇幻::/sort/xuanhuan/{{page}}.html\n武侠修真::/sort/wuxia/{{page}}.html\n都市生活::/sort/dushi/{{page}}.html\n历史军事::/sort/lishi/{{page}}.html\n游戏竞技::/sort/youxi/{{page}}.html\n科幻未来::/sort/kehuan/{{page}}.html\n悬疑灵异::/sort/xuanyi/{{page}}.html\n二次元::/sort/erciyuan/{{page}}.html\n经典短篇::/sort/jingdian/{{page}}.html\n古代言情::/sort/gudai/{{page}}.html\n现代言情::/sort/xiandai/{{page}}.html\n幻想奇缘::/sort/huanxiang/{{page}}.html\n浪漫青春::/sort/qingchun/{{page}}.html\n网络情缘::/sort/wangluo/{{page}}.html\n科幻空间::/sort/kongjian/{{page}}.html\n恐怖灵异::/sort/lingyi/{{page}}.html\nN次元::/sort/tongren/{{page}}.html\n言情美文::/sort/yanqing/{{page}}.html\n其他类型::/sort/qita/{{page}}.html",
-    "lastUpdateTime": 1614222846456,
+    "exploreUrl": "全部 • 全::\/library\/0_0_0_{{page}}.html\n全部 • 连::\/library\/0_0_1_{{page}}.html\n全部 • 完::\/library\/0_0_2_{{page}}.html\n\n总点击榜 • 全::https:\/\/www.9txs.org\/library\/allvisit_0_0_{{page}}.html\n总点击榜 • 连::https:\/\/www.9txs.org\/library\/allvisit_0_1_{{page}}.html\n总点击榜 • 完::https:\/\/www.9txs.org\/library\/allvisit_0_2_{{page}}.html\n\n月点击榜 • 全::https:\/\/www.9txs.org\/library\/monthvisit_0_0_{{page}}.html\n月点击榜 • 连::https:\/\/www.9txs.org\/library\/monthvisit_0_1_{{page}}.html\n月点击榜 • 完::https:\/\/www.9txs.org\/library\/monthvisit_0_2_{{page}}.html\n\n周点击榜 • 全::https:\/\/www.9txs.org\/library\/weekvisit_0_0_{{page}}.html\n周点击榜 • 连::https:\/\/www.9txs.org\/library\/weekvisit_0_1_{{page}}.html\n周点击榜 • 完::https:\/\/www.9txs.org\/library\/weekvisit_0_2_{{page}}.html\n\n日点击榜 • 全::https:\/\/www.9txs.org\/library\/dayvisit_0_0_{{page}}.html\n日点击榜 • 连::https:\/\/www.9txs.org\/library\/dayvisit_0_1_{{page}}.html\n日点击榜 • 完::https:\/\/www.9txs.org\/library\/dayvisit_0_2_{{page}}.html\n\n总推荐榜 • 全::https:\/\/www.9txs.org\/library\/allvote_0_0_{{page}}.html\n总推荐榜 • 连::https:\/\/www.9txs.org\/library\/allvote_0_1_{{page}}.html\n总推荐榜 • 完::https:\/\/www.9txs.org\/library\/allvote_0_2_{{page}}.html\n\n月推荐榜 • 全::https:\/\/www.9txs.org\/library\/monthvote_0_0_{{page}}.html\n月推荐榜 • 连::https:\/\/www.9txs.org\/library\/monthvote_0_1_{{page}}.html\n月推荐榜 • 完::https:\/\/www.9txs.org\/library\/monthvote_0_2_{{page}}.html\n\n周推荐榜 • 全::https:\/\/www.9txs.org\/library\/weekvote_0_0_{{page}}.html\n周推荐榜 • 连::https:\/\/www.9txs.org\/library\/weekvote_0_1_{{page}}.html\n周推荐榜 • 完::https:\/\/www.9txs.org\/library\/weekvote_0_2_{{page}}.html\n\n日推荐榜 • 全::https:\/\/www.9txs.org\/library\/dayvote_0_0_{{page}}.html\n日推荐榜 • 连::https:\/\/www.9txs.org\/library\/dayvote_0_1_{{page}}.html\n日推荐榜 • 完::https:\/\/www.9txs.org\/library\/dayvote_0_2_{{page}}.html\n\n总收藏榜 • 全::\/library\/goodnum_0_0_{{page}}.html\n总收藏榜 • 连::\/library\/goodnum_0_1_{{page}}.html\n总收藏榜 • 完::\/library\/goodnum_0_2_{{page}}.html\n\n总字数榜 • 全::https:\/\/www.9txs.org\/library\/size_0_0_{{page}}.html\n总字数榜 • 连::https:\/\/www.9txs.org\/library\/size_0_1_{{page}}.html\n总字数榜 • 完::https:\/\/www.9txs.org\/library\/size_0_2_{{page}}.html\n\n最新入库 • 全::https:\/\/www.9txs.org\/library\/postdate_0_0_{{page}}.html\n最新入库 • 连::https:\/\/www.9txs.org\/library\/postdate_0_1_{{page}}.html\n最新入库 • 完::https:\/\/www.9txs.org\/library\/postdate_0_2_{{page}}.html\n\n玄幻奇幻 • 全::\/library\/0_1_0_{{page}}.html\n玄幻奇幻 • 连::\/library\/0_1_1_{{page}}.html\n玄幻奇幻 • 完::\/library\/0_1_2_{{page}}.html\n\n武侠修真 • 全::\/library\/0_2_0_{{page}}.html\n武侠修真 • 连::\/library\/0_2_1_{{page}}.html\n武侠修真 • 完::\/library\/0_2_2_{{page}}.html\n\n都市生活 • 全::\/library\/0_3_0_{{page}}.html\n都市生活 • 连::\/library\/0_3_1_{{page}}.html\n都市生活 • 完::\/library\/0_3_2_{{page}}.html\n\n历史军事 • 全::\/library\/0_4_0_{{page}}.html\n历史军事 • 连::\/library\/0_4_1_{{page}}.html\n历史军事 • 完::\/library\/0_4_2_{{page}}.html\n\n游戏竞技 • 全::\/library\/0_5_0_{{page}}.html\n游戏竞技 • 连::\/library\/0_5_1_{{page}}.html\n游戏竞技 • 完::\/library\/0_5_2_{{page}}.html\n\n科幻未来 • 全::\/library\/0_6_0_{{page}}.html\n科幻未来 • 连::\/library\/0_6_1_{{page}}.html\n科幻未来 • 完::\/library\/0_6_2_{{page}}.html\n\n悬疑灵异 • 全::\/library\/0_7_0_{{page}}.html\n悬疑灵异 • 连::\/library\/0_7_1_{{page}}.html\n悬疑灵异 • 完::\/library\/0_7_2_{{page}}.html\n\n二  次  元 • 全::\/library\/0_8_0_{{page}}.html\n二  次  元 • 连::\/library\/0_8_1_{{page}}.html\n二  次  元 • 完::\/library\/0_8_2_{{page}}.html\n\n经典短篇 • 全::\/library\/0_9_0_{{page}}.html\n经典短篇 • 连::\/library\/0_9_1_{{page}}.html\n经典短篇 • 完::\/library\/0_9_2_{{page}}.html\n\n古代言情 • 全::\/library\/0_10_0_{{page}}.html\n古代言情 • 连::\/library\/0_10_1_{{page}}.html\n古代言情 • 完::\/library\/0_10_2_{{page}}.html\n\n现代言情 • 全::\/library\/0_11_0_{{page}}.html\n现代言情 • 连::\/library\/0_11_1_{{page}}.html\n现代言情 • 完::\/library\/0_11_2_{{page}}.html\n\n幻想奇缘 • 全::\/library\/0_12_0_{{page}}.html\n幻想奇缘 • 连::\/library\/0_12_1_{{page}}.html\n幻想奇缘 • 完::\/library\/0_12_2_{{page}}.html\n\n浪漫青春 • 全::\/library\/0_13_0_{{page}}.html\n浪漫青春 • 连::\/library\/0_13_1_{{page}}.html\n浪漫青春 • 完::\/library\/0_13_2_{{page}}.html\n\n网络情缘 • 全::\/library\/0_14_0_{{page}}.html\n网络情缘 • 连::\/library\/0_14_1_{{page}}.html\n网络情缘 • 完::\/library\/0_14_2_{{page}}.html\n\n科幻空间 • 全::\/library\/0_15_0_{{page}}.html\n科幻空间 • 连::\/library\/0_15_1_{{page}}.html\n科幻空间 • 完::\/library\/0_15_2_{{page}}.html\n\n恐怖灵异 • 全::\/library\/0_16_0_{{page}}.html\n恐怖灵异 • 连::\/library\/0_16_1_{{page}}.html\n恐怖灵异 • 完::\/library\/0_16_2_{{page}}.html\n\nN   次  元 • 全::\/library\/0_17_0_{{page}}.html\nN   次  元 • 连::\/library\/0_17_1_{{page}}.html\nN   次  元 • 完::\/library\/0_17_2_{{page}}.html\n\n言情美文 • 全::\/library\/0_18_0_{{page}}.html\n言情美文 • 连::\/library\/0_18_1_{{page}}.html\n言情美文 • 完::\/library\/0_18_2_{{page}}.html\n\n其他类型 • 全::\/library\/0_19_0_{{page}}.html\n其他类型 • 连::\/library\/0_19_1_{{page}}.html\n其他类型 • 完::\/library\/0_19_2_{{page}}.html",
+    "header": "",
+    "lastUpdateTime": 1622367503712,
+    "loginUrl": "",
     "ruleBookInfo": {
-      "author": "tag.p.1@text",
-      "intro": "",
-      "kind": "class.line@tag.a@text",
-      "lastChapter": "class.chapter@text##最新：",
-      "name": "class.booktitle@text",
-      "tocUrl": "text.查看目录@href",
-      "wordCount": "tag.span.1@text"
+        "author": "@css:.detail > p:nth-child(3) > a:nth-child(1)@text",
+        "coverUrl": "@css:.detail > a > img@src",
+        "intro": "@css:.content > p@html",
+        "lastChapter": "@css:.detail > p:nth-child(6) > a@text",
+        "name": "@css:.detail > h1@text",
+        "tocUrl": "@css:.detail > p.action > a:nth-child(1)@href",
+        "wordCount": "@css:.detail > p:nth-child(3)@text@js:result+'字'##.*字数."
     },
     "ruleContent": {
-      "content": "class.content@tag.p!0@html",
-      "imageStyle": "FULL",
-      "replaceRegex": "##您可以.*"
+        "content": "@css:#content>p:not(:first-child)@html",
+        "imageStyle": "FULL",
+        "replaceRegex": "##您可以.*"
     },
     "ruleExplore": {
-      "author": "tag.p.1@textNodes",
-      "bookList": "class.list@li",
-      "bookUrl": "tag.a@href",
-      "coverUrl": "tag.img@src",
-      "intro": "tag.p.2@text",
-      "name": "tag.p.0@text"
+        "author": "@css:.author@text",
+        "bookList": "@css:.library>li",
+        "bookUrl": "@css:.bookname@href",
+        "coverUrl": "@css:img@src",
+        "intro": "@css:p:eq(4)@html",
+        "kind": "@css:p>a:eq(2)@text&&span@text",
+        "lastChapter": "@css:.chapter@text##最新章节.",
+        "name": "@css:.bookname@text",
+        "wordCount": "@css:p:eq(3)@text@js:result+'字'##.*\\|"
     },
     "ruleSearch": {
-      "author": "tag.p.1@textNodes",
-      "bookList": "class.list@tag.li",
-      "bookUrl": "tag.a@href",
-      "coverUrl": "tag.img@src",
-      "intro": "class.intro@text",
-      "kind": "tag.span@text",
-      "name": "class.bookname@text"
+        "author": "@css:.author@text",
+        "bookList": "@css:.library>li",
+        "bookUrl": "@css:.bookname@href",
+        "coverUrl": "@css:img@src",
+        "intro": "@css:p:eq(4)@html",
+        "kind": "@css:p>a:eq(2)@text&&span@text",
+        "lastChapter": "@css:.chapter@text##最新章节.",
+        "name": "@css:.bookname@text",
+        "wordCount": "@css:p:eq(3)@text##.*\\|"
     },
     "ruleToc": {
-      "chapterList": "class.read@tag.li",
-      "chapterName": "tag.a@text",
-      "chapterUrl": "tag.a@href",
-      "nextTocUrl": "text.下一页@href"
+        "chapterList": "@css:.read > dl:not(:first-child) > dd > a",
+        "chapterName": "text",
+        "chapterUrl": "href",
+        "nextTocUrl": "text.下一页@href"
     },
-    "searchUrl": "https://so.9txs.org/m/,{\n\"charset\": \"UTF-8\",\n\"method\": \"POST\",\n\"body\": \"searchkey={{key}}\"\n}",
+    "searchUrl": "https:\/\/so.9txs.org\/www\/,{\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}\"\n}",
     "weight": 0
   },
   {
@@ -5696,6 +5704,45 @@
       "chapterUrl": "href"
     },
     "searchUrl": "/search.php?q={{key}}&p={{page}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "haxc",
+    "bookSourceGroup": "🍺特优",
+    "bookSourceName": "🍺八一中文APP",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https:\/\/api.81zwapp.com",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledExplore": true,
+    "exploreUrl": "男频人气::https:\/\/api.mianhuatangxs.cn\/static\/ranking\/1\/1\/popularity.json\n男频新书::https:\/\/api.mianhuatangxs.cn\/static\/ranking\/1\/1\/new.json\n男频推荐::https:\/\/api.mianhuatangxs.cn\/static\/ranking\/1\/1\/reco.json\n男频收藏::https:\/\/api.mianhuatangxs.cn\/static\/ranking\/1\/1\/collect.json\n男频好评::https:\/\/api.mianhuatangxs.cn\/static\/ranking\/1\/1\/praise.json\n男频热搜::https:\/\/api.mianhuatangxs.cn\/static\/ranking\/1\/1\/hotsearch.json\n男频完结::https:\/\/api.mianhuatangxs.cn\/static\/ranking\/1\/1\/finish.json\n玄幻热门::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/13\/hot\/{{page}}.json\n玄幻新书::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/13\/new\/{{page}}.json\n玄幻好评::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/13\/praise\/{{page}}.json\n玄幻完结::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/13\/finish\/{{page}}.json\n奇幻热门::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/17\/hot\/{{page}}.json\n奇幻新书::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/17\/new\/{{page}}.json\n奇幻好评::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/17\/praise\/{{page}}.json\n奇幻完结::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/17\/finish\/{{page}}.json\n武侠热门::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/10\/hot\/{{page}}.json\n武侠新书::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/10\/new\/{{page}}.json\n武侠好评::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/10\/praise\/{{page}}.json\n武侠完结::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/10\/finish\/{{page}}.json\n仙侠热门::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/18\/hot\/{{page}}.json\n仙侠新书::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/18\/new\/{{page}}.json\n仙侠好评::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/18\/praise\/{{page}}.json\n仙侠完结::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/18\/finish\/{{page}}.json\n都市热门::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/12\/hot\/{{page}}.json\n都市新书::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/12\/new\/{{page}}.json\n都市好评::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/12\/praise\/{{page}}.json\n都市完结::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/12\/finish\/{{page}}.json\n历史热门::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/15\/hot\/{{page}}.json\n历史新书::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/15\/new\/{{page}}.json\n历史好评::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/15\/praise\/{{page}}.json\n历史完结::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/15\/finish\/{{page}}.json\n军事热门::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/19\/hot\/{{page}}.json\n军事新书::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/19\/new\/{{page}}.json\n军事好评::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/19\/praise\/{{page}}.json\n军事完结::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/19\/finish\/{{page}}.json\n游戏热门::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/11\/hot\/{{page}}.json\n游戏新书::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/11\/new\/{{page}}.json\n游戏好评::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/11\/praise\/{{page}}.json\n游戏完结::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/11\/finish\/{{page}}.json\n体育热门::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/20\/hot\/{{page}}.json\n体育新书::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/20\/new\/{{page}}.json\n体育好评::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/20\/praise\/{{page}}.json\n体育完结::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/20\/finish\/{{page}}.json\n科幻热门::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/21\/hot\/{{page}}.json\n科幻新书::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/21\/new\/{{page}}.json\n科幻好评::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/21\/praise\/{{page}}.json\n科幻完结::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/21\/finish\/{{page}}.json\n灵异热门::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/22\/hot\/{{page}}.json\n灵异新书::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/22\/new\/{{page}}.json\n灵异好评::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/22\/praise\/{{page}}.json\n灵异完结::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/22\/finish\/{{page}}.json\n其它热门::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/16\/hot\/{{page}}.json\n其它新书::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/16\/new\/{{page}}.json\n其它好评::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/16\/praise\/{{page}}.json\n其它完结::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/16\/finish\/{{page}}.json\n女频人气::https:\/\/api.mianhuatangxs.cn\/static\/ranking\/1\/2\/popularity.json\n女频新书::https:\/\/api.mianhuatangxs.cn\/static\/ranking\/1\/2\/new.json\n女频推荐::https:\/\/api.mianhuatangxs.cn\/static\/ranking\/1\/2\/reco.json\n女频收藏::https:\/\/api.mianhuatangxs.cn\/static\/ranking\/1\/2\/collect.json\n女频好评::https:\/\/api.mianhuatangxs.cn\/static\/ranking\/1\/2\/praise.json\n女频热搜::https:\/\/api.mianhuatangxs.cn\/static\/ranking\/1\/2\/hotsearch.json\n女频完结::https:\/\/api.mianhuatangxs.cn\/static\/ranking\/1\/2\/finish.json\n古言热门::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/8\/hot\/{{page}}.json\n古言新书::https:\/\/api.mianhuatangxs.cn\/static\/book\/category\/1\/8\/new\/{{page}}.json\n古言好评::https:\/\/api.mianhuatangxs.cn\/static\/book\/cat",
+    "lastUpdateTime": 1622105901172,
+    "ruleBookInfo": {
+        "author": "@get:{author}",
+        "lastChapter": "",
+        "name": "@get:{name}"
+    },
+    "ruleContent": {
+        "content": "all"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+        "author": "$.author@put:{author:$.author}",
+        "bookList": "$.data.list||$.data[*]",
+        "bookUrl": "<js>\nvar bid=parseInt(java.getString('$.bookId'));\nif(!bid>0){\nbid=parseInt(java.getString('$.id'));\n}\njava.put(\"bid\",bid);\nvar subpath=parseInt((1999+bid)\/2000);\nvar url=\"http:\/\/statics.rungean.com\/static\/book\/zip\/\"+subpath+\"\/\"+bid+\".zip\";\nresult=url;<\/js>",
+        "coverUrl": "$.picture",
+        "intro": "$.intro",
+        "kind": "$.categoryName&&$.bookStatus",
+        "lastChapter": "$.chapterName@put:{update:$.chapterName}",
+        "name": "$.name@put:{name:$.name}",
+        "wordCount": "$.wordNum"
+    },
+    "ruleToc": {
+        "chapterList": "<js>\nvar javaImport = new JavaImporter();\njavaImport.importPackage(\n    Packages.java.lang,\n    Packages.java.lang.reflect,\n    Packages.java.io,\n    Packages.org.jsoup,\n    Packages.java.util,\n    Packages.java.util.zip\n);\n\nwith(javaImport){\nfunction getZipContent(url){\nvar res=ByteArrayOutputStream();\nvar map= HashMap()\nmap.put(\"Content-Type\",\"application\/zip\");\nvar v1=java.get(url,map).bodyAsBytes()\n\/\/java.log(v1)\nvar bis=ByteArrayInputStream(v1);\nvar zis=ZipInputStream(bis);\nvar entry=null;\n while((entry= zis.getNextEntry())!=null){\n      if(entry.getName()==\"chapter.json\"){\n        var buffer= Array.newInstance(Byte.TYPE, 1024);\n        var length;\n        while ((length = zis.read(buffer)) != -1) {\n                res.write(buffer, 0, length);\n              }\n        zis.closeEntry();\n        \n         \n     }else{}\n }\nreturn res.toString();\n\n\n\n}\n}\n\/\/java.log(\"SSSS\"+baseUrl)\nresult=getZipContent(baseUrl)\n\/\/java.log(result);\n<\/js>$.data[*]",
+        "chapterName": "$.name",
+        "chapterUrl": "$.content_url"
+    },
+    "searchUrl": "https:\/\/api.81zwapp.com\/api\/v1\/novelsearch?content={{key}}&pageIndex={{page}}&pageSize=20&type=1",
     "weight": 0
   },
   {
@@ -9077,63 +9124,44 @@
     "bookSourceGroup": "🍺特优",
     "bookSourceName": "🍺书趣阁",
     "bookSourceType": "0",
-    "bookSourceUrl": "http://www.shuquge.com",
+    "bookSourceUrl": "https://www.shuquge.com",
     "bookUrlPattern": "",
     "customOrder": 0,
     "enabled": true,
     "enabledExplore": false,
     "exploreUrl": "",
     "header": "",
-    "lastUpdateTime": 0,
+    "lastUpdateTime": 1622381923924,
     "loginUrl": "",
     "ruleBookInfo": {
       "author": "class.small@tag.span.0@text##作者：",
       "coverUrl": "class.cover@tag.img@src",
-      "init": "",
-      "intro": "class.intro@text",
+      "intro": "class.intro@text##简介：",
       "kind": "class.small@tag.span.1@text##分类：",
-      "lastChapter": "class.listmain@tag.a.0@text",
-      "name": "class.info@tag.h2@text",
-      "tocUrl": "",
+      "lastChapter": "class.small@tag.span.5@text",
+      "name": "class.cover@tag.img@alt",
       "wordCount": "class.small@tag.span.3@text##字数："
     },
     "ruleContent": {
-      "content": "id.content@html",
-      "nextContentUrl": "",
-      "sourceRegex": "",
-      "webJs": ""
+      "content": "id.content@textNodes"
     },
     "ruleExplore": {
-      "author": "",
-      "bookList": "",
-      "bookUrl": "",
-      "coverUrl": "",
-      "intro": "",
-      "kind": "",
-      "lastChapter": "",
-      "name": "",
-      "wordCount": ""
+      "name": "\ntag.span.1@tag.a@text"
     },
     "ruleSearch": {
-      "author": "class.author.0@text##作者：",
-      "bookList": "class.bookbox",
+      "author": "class.author@text##作者：",
+      "bookList": "class.bookcase@class.bookbox",
       "bookUrl": "class.bookname@tag.a@href",
-      "coverUrl": "",
-      "intro": "",
       "kind": "class.cat@text##分类：",
       "lastChapter": "class.update@tag.a@text",
-      "name": "class.bookname@text",
-      "wordCount": ""
+      "name": "class.bookname@tag.a@text"
     },
     "ruleToc": {
-      "chapterList": "class.listmain@tag.dd!0:1:2:3:4:5:6:7:8:9:10:11",
+      "chapterList": "class.listmain@tag.dd",
       "chapterName": "tag.a@text",
-      "chapterUrl": "tag.a@href",
-      "isVip": "",
-      "nextTocUrl": "",
-      "updateTime": ""
+      "chapterUrl": "tag.a@href"
     },
-    "searchUrl": "/search.php,{\n  \"charset\": \"utf-8\",\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}\"\n}",
+    "searchUrl": "https://www.shuquge.com/search.php,{\n\"method\":\"post\",\n\"body\":\"searchkey={{key}}\"\n}",
     "weight": 0
   },
   {
