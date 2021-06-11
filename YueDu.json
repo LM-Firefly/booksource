@@ -16563,6 +16563,50 @@
   {
     "bookSourceComment": "",
     "bookSourceGroup": "🔞特殊",
+    "bookSourceName": "🔞肉漫屋",
+    "bookSourceType": "0",
+    "bookSourceUrl": "https://rouman5.com/home",
+    "bookUrlPattern": "",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledExplore": true,
+    "exploreUrl": "正妹::https://rouman5.com/books?tag=正妹&page={{page}}\n恋爱::https://rouman5.com/books?tag=恋爱&page={{page}}\n出版漫画::https://rouman5.com/books?tag=出版漫画&page={{page}}\n肉慾::https://rouman5.com/books?tag=肉慾&page={{page}}\n浪漫::https://rouman5.com/books?tag=浪漫&page={{page}}\n大尺度::https://rouman5.com/books?tag=大尺度&page={{page}}\n巨乳::https://rouman5.com/books?tag=巨乳&page={{page}}\n有夫之婦::https://rouman5.com/books?tag=有夫之婦&page={{page}}\n女大生::https://rouman5.com/books?tag=女大生&page={{page}}\n狗血劇::https://rouman5.com/books?tag=狗血劇&page={{page}}\n同居::https://rouman5.com/books?tag=同居&page={{page}}\n好友::https://rouman5.com/books?tag=好友&page={{page}}\n調教::https://rouman5.com/books?tag=調教&page={{page}}\n动作::https://rouman5.com/books?tag=动作&page={{page}}\n後宮::https://rouman5.com/books?tag=後宮&page={{page}}\n搞笑::https://rouman5.com/books?tag=搞笑&page={{page}}",
+    "header": "{\"User-Agent\":\"Mozilla/5.0 (Linux; Android 10.0.0;  XXX Pro Build/GAMER) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36\",\"Cookie\":\"device=phone\"}",
+    "lastUpdateTime": 1623219601985,
+    "loginUrl": "",
+    "ruleBookInfo": {
+      "name": "tag.h5.0@text",
+      "author": "tag.p.0@text",
+      "intro": "tag.p.3@text",
+      "coverUrl": "class.row.1.img@src"
+    },
+    "ruleContent": {
+      "content": "class.container.1@img[class^='id_comicImage']@html",
+      "imageStyle": "FULL"
+    },
+    "ruleExplore": {
+      "bookList": "ul[class^='books_listArea']@tag.li",
+      "name": "tag.span.0@text",
+      "coverUrl": "tag.div.3@data-src",
+      "bookUrl": "tag.a@href"
+    },
+    "ruleSearch": {
+      "bookList": "ul[class^='search_listArea']@tag.li",
+      "name": "tag.span.0@text",
+      "coverUrl": "tag.div.3@data-src",
+      "bookUrl": "tag.a@href"
+    },
+    "ruleToc": {
+      "chapterList": "div[class^='bookid_chapter']",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href"
+    },
+    "searchUrl": "search?term={{key}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "🔞特殊",
     "bookSourceName": "🔞乡村小说网",
     "bookSourceType": 0,
     "bookSourceUrl": "https://www.xiangcun2018.com",
