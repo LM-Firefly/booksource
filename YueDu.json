@@ -1366,7 +1366,7 @@
   {
     "bookSourceComment": "",
     "bookSourceGroup": "🍺特优",
-    "bookSourceName": "🍺八一中文",
+    "bookSourceName": "🍺八一中文co",
     "bookSourceType": 0,
     "bookSourceUrl": "https://www.81zw.co",
     "customOrder": 0,
@@ -1415,7 +1415,7 @@
   {
     "bookSourceComment": "酷安",
     "bookSourceGroup": "🍺特优",
-    "bookSourceName": "🍺八一中文",
+    "bookSourceName": "🍺八一中文com",
     "bookSourceType": 0,
     "bookSourceUrl": "https://www.81zw.com",
     "customOrder": 0,
@@ -3147,6 +3147,55 @@
       "nextTocUrl": "option@value"
     },
     "searchUrl": "/search/,{\"method\":\"POST\",\"body\":\"searchkey={{key}}&searchtype=all&submit=\"}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "🍺特优",
+    "bookSourceName": "🍺第一版主",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.diyibanzhu55.com/",
+    "bookUrlPattern": "",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledExplore": true,
+    "exploreUrl": "最后更新::https://www.diyibanzhu55.com/wap.php?action=shuku&uid=0&totalresult=10000&pageno={{page}}\n总人气::https://www.diyibanzhu55.com/wap.php?action=shuku&uid=0&order=1&totalresult=10000&pageno={{page}}\n月人气::https://www.diyibanzhu55.com/wap.php?action=shuku&uid=0&order=2&totalresult=10000&pageno={{page}}\n最近更新::https://www.diyibanzhu55.com/wap.php?action=shuku&uid=0&order=3&totalresult=10000&pageno={{page}}\n字数::https://www.diyibanzhu55.com/wap.php?action=shuku&uid=0&order=4&totalresult=10000&pageno={{page}}",
+    "lastUpdateTime": 1621485842866,
+    "loginUrl": "",
+    "ruleBookInfo": {
+      "author": "",
+      "coverUrl": "class.left@img@src",
+      "intro": "class.mod book-intro@class.bd@text",
+      "name": "tag.h1@text",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "class.page-content font-large@tag.p@html\n<js>\nm=[];n=[];\nfunction x(a,b){m.push(a);n.push(b)}\n// 逐条添加：\nx(/#正则#/gi,\"文本\");\nx(/#8247008998#/gi,\"爱\");\nx(/#5173233476#/gi,\"版\");\nx(/#7878905481#/gi,\"帮\");\nx(/#3667137920#/gi,\"棒\");\nx(/#4349120135#/gi,\"暴\");\nx(/#9797056523#/gi,\"本\");\nx(/#6784088046#/gi,\"逼\");\nx(/#8758964684#/gi,\"婊\");\nx(/#7311936419#/gi,\"勃\");\nx(/#5501513484#/gi,\"操\");\nx(/#4943994004#/gi,\"插\");\nx(/#5446519585#/gi,\"潮\");\nx(/#4170693027#/gi,\"处\");\nx(/#5517023326#/gi,\"唇\");\nx(/#1953174985#/gi,\"弹\");\nx(/#2675444858#/gi,\"蛋\");\nx(/#3676441587#/gi,\"党\");\nx(/#1496325574#/gi,\"荡\");\nx(/#7899463393#/gi,\"嫡\");\nx(/#3895445644#/gi,\"地\");\nx(/#7295178020#/gi,\"弟\");\nx(/#3905760042#/gi,\"第\");\nx(/#0202874557#/gi,\"丁\");\nx(/#8017672929#/gi,\"洞\");\nx(/#2148904445#/gi,\"毒\");\nx(/#7786369046#/gi,\"杜\");\nx(/#9657643660#/gi,\"发\");\nx(/#8346015658#/gi,\"方\");\nx(/#3153916982#/gi,\"粉\");\nx(/#0807461894#/gi,\"缝\");\nx(/#8119898181#/gi,\"腐\");\nx(/#3971098668#/gi,\"妇\");\nx(/#8459951684#/gi,\"干\");\nx(/#0789398274#/gi,\"肛\");\nx(/#2916324381#/gi,\"高\");\nx(/#4569858916#/gi,\"搞\");\nx(/#6311160639#/gi,\"宫\");\nx(/#7064510937#/gi,\"共\");\nx(/#3518226592#/gi,\"狗\");\nx(/#7030349900#/gi,\"官\");\nx(/#3842218199#/gi,\"龟\");\nx(/#8486962699#/gi,\"棍\");\nx(/#9444591550#/gi,\"国\");\nx(/#4379667200#/gi,\"含\");\nx(/#1126051464#/gi,\"胡\");\nx(/#8718960437#/gi,\"回\");\nx(/#1506385010#/gi,\"秽\");\nx(/#3786584842#/gi,\"鸡\");\nx(/#9868351775#/gi,\"挤\");\nx(/#8773645769#/gi,\"记\");\nx(/#4041728566#/gi,\"纪\");\nx(/#1626229877#/gi,\"妓\");\nx(/#8454739888#/gi,\"奸\");\nx(/#0729464162#/gi,\"件\");\nx(/#9759390533#/gi,\"贱\");\nx(/#4775983677#/gi,\"交\");\nx(/#0340718987#/gi,\"介\");\nx(/#8397503017#/gi,\"锦\");\nx(/#9482618471#/gi,\"茎\");\nx(/#2745625503#/gi,\"精\");\nx(/#0576679304#/gi,\"九\");\nx(/#5689761260#/gi,\"菊\");\nx(/#5496584850#/gi,\"具\");\nx(/#7534108581#/gi,\"撅\");\nx(/#6993564252#/gi,\"可\");\nx(/#5903645317#/gi,\"坑\");\nx(/#5914241439#/gi,\"凌\");\nx(/#3433832344#/gi,\"流\");\nx(/#2357320059#/gi,\"漏\");\nx(/#4218414855#/gi,\"撸\");\nx(/#2030729116#/gi,\"露\");\nx(/#8195235627#/gi,\"乱\");\nx(/#5706244512#/gi,\"伦\");\nx(/#3266768309#/gi,\"轮\");\nx(/#0247561914#/gi,\"裸\");\nx(/#2160718429#/gi,\"妈\");\nx(/#5573725197#/gi,\"麻\");\nx(/#5955184793#/gi,\"马\");\nx(/#7171411291#/gi,\"氓\");\nx(/#9680818487#/gi,\"美\");\nx(/#7632391480#/gi,\"咪\");\nx(/#5035176533#/gi,\"蜜\");\nx(/#5743212573#/gi,\"灭\");\nx(/#1230023285#/gi,\"末\");\nx(/#9943089806#/gi,\"母\");\nx(/#1864316878#/gi,\"奶\");\nx(/#7604462516#/gi,\"内\");\nx(/#4568964425#/gi,\"嫩\");\nx(/#6411384507#/gi,\"能\");\nx(/#7314422028#/gi,\"尿\");\nx(/#9718281829#/gi,\"奴\");\nx(/#4628291063#/gi,\"虐\");\nx(/#2778833583#/gi,\"炮\");\nx(/#3328707821#/gi,\"鹏\");\nx(/#0060757313#/gi,\"屁\");\nx(/#2668133356#/gi,\"剖\");\nx(/#4977920402#/gi,\"枪\");\nx(/#8907183270#/gi,\"亲\");\nx(/#2449892866#/gi,\"情\");\nx(/#2241982057#/gi,\"任\");\nx(/#2251650596#/gi,\"日\");\nx(/#1888809889#/gi,\"肉\");\nx(/#5365573860#/gi,\"乳\");\nx(/#8005845717#/gi,\"辱\");\nx(/#9943533894#/gi,\"骚\");\nx(/#0765498108#/gi,\"色\");\nx(/#7793217641#/gi,\"杀\");\nx(/#9042162060#/gi,\"舌\");\nx(/#1535634095#/gi,\"射\");\nx(/#4500298318#/gi,\"呻\");\nx(/#3793879818#/gi,\"尸\");\nx(/#0144234373#/gi,\"失\");\nx(/#9689810696#/gi,\"湿\");\nx(/#9877199087#/gi,\"时\");\nx(/#9598549168#/gi,\"兽\");\nx(/#7683257219#/gi,\"熟\");\nx(/#4017431404#/gi,\"水\");\nx(/#4609278554#/gi,\"丝\");\nx(/#8552497507#/gi,\"死\");\nx(/#8474015608#/gi,\"送\");\nx(/#1749552104#/gi,\"酸\");\nx(/#1627350865#/gi,\"随\");\nx(/#5528291961#/gi,\"台\");\nx(/#9341906945#/gi,\"涛\");\nx(/#7246880967#/gi,\"舔\");\nx(/#8309982129#/gi,\"童\");\nx(/#4567380734#/gi,\"偷\");\nx(/#1049855378#/gi,\"腿\");\nx(/#1625724760#/gi,\"吞\");\nx(/#9399933894#/gi,\"臀\");\nx(/#9236095932#/gi,\"亡\");\nx(/#5419965393#/gi,\"温\");\nx(/#9878786485#/gi,\"吸\");\nx(/#4105273333#/gi,\"席\");\nx(/#5291646282#/gi,\"箱\");\nx(/#7270970908#/gi,\"效\");\nx(/#0466456810#/gi,\"性\");\nx(/#6984754122#/gi,\"胸\");\nx(/#4554371796#/gi,\"穴\");\nx(/#0774938793#/gi,\"学\");\nx(/#7621575446#/gi,\"血\");\nx(/#7197622699#/gi,\"摇\");\nx(/#1327132510#/gi,\"药\");\nx(/#4102008941#/gi,\"一\");\nx(/#0674289590#/gi,\"义\");\nx(/#8558460634#/gi,\"意\");\nx(/#6102197073#/gi,\"阴\");\nx(/#4872073810#/gi,\"吟\");\nx(/#6748412863#/gi,\"淫\");\nx(/#1063759559#/gi,\"硬\");\nx(/#8975088566#/gi,\"邮\");\nx(/#6535163761#/gi,\"幼\");\nx(/#2318314138#/gi,\"欲\");\nx(/#3198485127#/gi,\"宰\");\nx(/#8989017315#/gi,\"泽\");\nx(/#7083046647#/gi,\"炸\");\nx(/#7170405414#/gi,\"站\");\nx(/#8254441222#/gi,\"找\");\nx(/#0655379354#/gi,\"址\");\nx(/#0035153388#/gi,\"指\");\nx(/#6588031743#/gi,\"中\");\nx(/#6864960755#/gi,\"主\");\nx(/#9067469197#/gi,\"住\");\nx(/#1092698796#/gi,\"足\");\nx(/#7970472880#/gi,\"做\");\nresult=result.replace(/(<img .+?toimg\\/data\\/([^\\.]+)[^>]+>)/g,\"#$2#\").replace(/([\\u4e00-\\u9fa5])(<br>){2}/g,\"$1\");\nfor(i in n){result=result.replace(m[i],n[i])}\n</js>",
+      "nextContentUrl": "//*[@class=\"curr\"]/following-sibling::a[1]/@href"
+    },
+    "ruleExplore": {
+      "author": "class.author@text",
+      "bookList": "class.container@class.book-all-list@class.bd@class.right",
+      "bookUrl": "class.name@href",
+      "lastChapter": "class.update@tag.a.0@text",
+      "name": "class.name@text",
+      "wordCount": "class.words@text"
+    },
+    "ruleSearch": {
+      "author": "class.info.0@text",
+      "bookList": ".column-2",
+      "bookUrl": "tag.a.0@href",
+      "lastChapter": "tag.a.1@text",
+      "name": "tag.a.0@text",
+      "wordCount": "class.right@tag.p.1@tag.span@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.chapter-list.1@class.list@tag.li||class.chapter-list.0@class.list@tag.li",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href",
+      "nextTocUrl": "option@value"
+    },
+    "searchUrl": "https://www.diyibanzhu55.com/wap.php?action=search,{\n  \"body\": \"objectType=2&wd={{key}}\",\n  \"method\": \"POST\"\n}",
     "weight": 0
   },
   {
