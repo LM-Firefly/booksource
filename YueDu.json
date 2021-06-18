@@ -10551,7 +10551,7 @@
     "enabledExplore": true,
     "exploreUrl": "全部::https://m.imitui.com/list/<,?page={{page}}>\n排行::https://m.imitui.com/rank/<,?page={{page}}>\n已完结::https://m.imitui.com/list/wanjie/<,?page={{page}}>\n连载中::https://m.imitui.com/list/lianzai/<,?page={{page}}>\n热血::https://m.imitui.com/list/rexue/<,?page={{page}}>\n玄幻::https://m.imitui.com/list/xuanhuan/<,?page={{page}}>\n修真::https://m.imitui.com/list/xiuzhen/<,?page={{page}}>\n古风::https://m.imitui.com/list/gufeng/<,?page={{page}}>\n恋爱::https://m.imitui.com/list/lianai/<,?page={{page}}>\n穿越::https://m.imitui.com/list/chuanyue/<,?page={{page}}>\n都市::https://m.imitui.com/list/dushi/<,?page={{page}}>\n霸总::https://m.imitui.com/list/bazong/<,?page={{page}}>\n悬疑::https://m.imitui.com/list/xuanyi/<,?page={{page}}>\n搞笑::https://m.imitui.com/list/gaoxiao/<,?page={{page}}>\n奇幻::https://m.imitui.com/list/qihuan/<,?page={{page}}>\n总裁::https://m.imitui.com/list/zongcai/<,?page={{page}}>\n日常::https://m.imitui.com/list/richang/<,?page={{page}}>\n冒险::https://m.imitui.com/list/maoxian/<,?page={{page}}>\n科幻::https://m.imitui.com/list/kehuan/<,?page={{page}}>\n纯爱::https://m.imitui.com/list/chunai/<,?page={{page}}>\n魔幻::https://m.imitui.com/list/mohuan/<,?page={{page}}>\n战争::https://m.imitui.com/list/zhanzheng/<,?page={{page}}>\n蔷薇::https://m.imitui.com/list/qiangwei/<,?page={{page}}>\n武侠::https://m.imitui.com/list/wuxia/<,?page={{page}}>\n生活::https://m.imitui.com/list/shenghuo/<,?page={{page}}>\n动作::https://m.imitui.com/list/dongzuo/<,?page={{page}}>\n后宫::https://m.imitui.com/list/hougong/<,?page={{page}}>\n游戏::https://m.imitui.com/list/youxi/<,?page={{page}}>\n恐怖::https://m.imitui.com/list/kongbu/<,?page={{page}}>\n漫改::https://m.imitui.com/list/mangai/<,?page={{page}}>\n真人::https://m.imitui.com/list/zhenren/<,?page={{page}}>\n校园::https://m.imitui.com/list/xiaoyuan/<,?page={{page}}>\n剧情::https://m.imitui.com/list/juqing/<,?page={{page}}>\n儿童漫画::https://m.imitui.com/list/ertong/<,?page={{page}}>\n少年漫画::https://m.imitui.com/list/shaonian/<,?page={{page}}>\n少女漫画::https://m.imitui.com/list/shaonv/<,?page={{page}}>\n青年漫画::https://m.imitui.com/list/qingnian/<,?page={{page}}>\n日本::https://m.imitui.com/list/riben/<,?page={{page}}>\n大陆::https://m.imitui.com/list/dalu/<,?page={{page}}>\n香港::https://m.imitui.com/list/hongkong/<,?page={{page}}>\n台湾::https://m.imitui.com/list/taiwan/<,?page={{page}}>\n欧美::https://m.imitui.com/list/oumei/<,?page={{page}}>\n韩国::https://m.imitui.com/list/hanguo/<,?page={{page}}>\n其他::https://m.imitui.com/list/qita/<,?page={{page}}>",
     "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Linux; Android 8.1.0; JKM-AL00b Build/HUAWEIJKM-AL00b; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/044807 Mobile Safari/537.36\"\n}",
-    "lastUpdateTime": 1615447905050,
+    "lastUpdateTime": 1623324790628,
     "loginUrl": "",
     "ruleBookInfo": {
       "author": "class.sub_r@tag.p.0@text",
@@ -10563,8 +10563,9 @@
       "wordCount": "class.date@text"
     },
     "ruleContent": {
-      "content": "@js:\nimgl=eval(result.match(/var chapterImages = (\\[[\\s\\S]+?\\])/)[1]);\nhost=result.match(/var chapterImageHost = \"([^\"]*)\";/)[1].replace(/\\\\/g,'');\nhtml='';\nfunction get7ImageUrl(image) {\nif (image.match(/^(http?)/i)) {\n        return image\n    } else if (image.match(/^(\\/|images?)/i)) {\n        return host + image\n    }\n}\nfor(i in imgl){\nif(host){\nurl=get7ImageUrl(imgl[i]);\n}else{\nurl=host+imgl[i]\n}\nhtml+='<img src=\"'+url+'\">\\n'\n}\nhtml",
-      "imageStyle": "FULL"
+      "content": "class.image-content@img@src@js:\nheader={\"Referer\":baseUrl};\nheaders={\"headers\":JSON.stringify(header)};\nresult.split(\"\\n\").map(x=>'<img src=\\\"'+x+','+JSON.stringify(headers)+'\\\">').join(\"\\n\")",
+      "imageStyle": "FULL",
+      "nextContentUrl": "text.下一页@href"
     },
     "ruleExplore": {},
     "ruleSearch": {
@@ -10578,8 +10579,8 @@
     },
     "ruleToc": {
       "chapterList": "id.chapter-list-1@tag.li!-1",
-      "chapterName": "text",
-      "chapterUrl": "tag.a@href##m\\.##www\\."
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href"
     },
     "searchUrl": "https://m.imitui.com/search/?keywords={{key}}&page={{page}}",
     "weight": 0
@@ -15234,6 +15235,46 @@
   {
     "bookSourceComment": "",
     "bookSourceGroup": "🍑耽美",
+    "bookSourceName": "🍑腐国度 fuguodu3",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://m.fuguodu3.com/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledExplore": true,
+    "header": "",
+    "lastUpdateTime": 1623997628826,
+    "ruleBookInfo": {
+      "author": "class.infotype@tag.p.0@text",
+      "coverUrl": "class.infohead@class.pic@tag.img@src",
+      "intro": "class.intro@tag.p@text",
+      "kind": "class.infotype@tag.p.1@text##类型：",
+      "lastChapter": "class.infotype@tag.p.3@tag.a@text",
+      "name": "class.infohead@class.cataloginfo@tag.h3@text",
+      "tocUrl": "class.gochapter@tag.a@href"
+    },
+    "ruleContent": {
+      "content": "class.novelcontent@textNodes",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "tag.a.1@text",
+      "bookList": "class.sone",
+      "bookUrl": "tag.a.0@href",
+      "name": "tag.a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.chapters@tag.li",
+      "chapterName": "text",
+      "chapterUrl": "tag.a@href",
+      "nextTocUrl": "text.下一页@href"
+    },
+    "searchUrl": "/s.php,{\n\"charset\": \"gbk\",\n\"method\": \"POST\",\n\"body\": \"s={{key}}&type=articlename\",\n\"headers\": {\"User-Agent\": \"\"}\n\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "🍑耽美",
     "bookSourceName": "🍑腐女gv网",
     "bookSourceType": 0,
     "bookSourceUrl": "https://www.wpdpw.com",
@@ -15524,6 +15565,38 @@
       "nextTocUrl": "text.下一页@href"
     },
     "searchUrl": "/search.html,{\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}\"\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "🍑耽美",
+    "bookSourceName": "🍑鲤鱼乡",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https:\/\/liyuxiang.me",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledExplore": true,
+    "exploreUrl": "都市::\/books\/city\/<,index_{{page}}.html>&&架空::\/books\/history\/<,index_{{page}}.html>&&穿越::\/books\/through\/<,index_{{page}}.html>&&同人::\/books\/bl\/<,index_{{page}}.html>&&百合::\/books\/gl\/<,index_{{page}}.html>&&网游::\/books\/games\/<,index_{{page}}.html>&&灵异::\/books\/ghost\/<,index_{{page}}.html>&&老书::\/books\/old\/<,index_{{page}}.html>&&",
+    "lastUpdateTime": 1624009503130,
+    "ruleBookInfo": {},
+    "ruleContent": {
+        "content": "class.single-content@textNodes"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+        "author": "h2@text##.*[—byBY:：]+",
+        "bookList": "article",
+        "bookUrl": "h2 a@href",
+        "intro": ".archive-content@text",
+        "kind": ".comment a@text||.date@text",
+        "name": "h2@text##——.*"
+    },
+    "ruleToc": {
+        "chapterList": "<js>var ur = String(baseUrl);\nvar list=[];\n\nlist.push({n:'第'+1+'页',\nu:ur});\nif(result.match(\/尾页\/)){\n    p=result.match(\/_(\\d+)\\.html\">尾页\/)[1];\n        for(i=2;i<=p;i++){\n             list.push({n:'第'+i+'页',\nu:ur.replace('.html','')+'_'+i+'.html'})}}else list.push({n:'空',u:''});\nlist<\/js>",
+        "chapterName": "n",
+        "chapterUrl": "u"
+    },
+    "searchUrl": "https:\/\/liyuxiang.me\/e\/search\/index.php,{\n\"charset\": \"\",\n\"method\": \"POST\",\n\"body\": \"show=title,\nnewstext&keyboard={{key}}&page={{page}}\",\n\"headers\": {\"User-Agent\": \"\"}\n}",
     "weight": 0
   },
   {
