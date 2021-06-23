@@ -7528,7 +7528,7 @@
     "weight": 0
   },
   {
-    "bookSourceComment": "",
+    "bookSourceComment": "酷安",
     "bookSourceGroup": "🍺特优",
     "bookSourceName": "🍺无错小说",
     "bookSourceType": 0,
@@ -7539,39 +7539,57 @@
     "enabledExplore": true,
     "exploreUrl": "",
     "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4466.2 Safari/537.36\"\n}",
-    "lastUpdateTime": 0,
     "loginUrl": "",
     "ruleBookInfo": {
       "author": "id.info@tag.a.0@text",
       "canReName": "true",
       "coverUrl": "id.fmimg@tag.img@src",
-      "intro": "id.intro@tag.p!-1@textNodes",
-      "kind": "[property=\"og:novel:status\"]@content",
+      "init": "",
+      "intro": "[property=og:description]@content",
+      "kind": "[property=og:novel:category],[property=og:novel:status],[property=og:novel:update_time]@content##\\s.*",
       "lastChapter": "id.info@tag.a.-1@text",
-      "name": "id.info@tag.h1@text"
+      "name": "id.info@tag.h1@text",
+      "tocUrl": "",
+      "wordCount": ""
     },
     "ruleContent": {
-      "content": "class.showtxt@textNodes##天才.*net|《.*》来源.*net|章节错误.*请耐心等待。|转载请注明.*net",
-      "replaceRegex": "##.*read8.org.*"
+      "content": "#content@html##天才.*net|《.*》来源.*net|章节错误.*请耐心等待。|转载请注明.*net",
+      "nextContentUrl": "",
+      "replaceRegex": "##.*read8.org.*\\s*(天才一秒记住|转载请注明|章节错误|《{{book.name}}》来源).*\\s*",
+      "sourceRegex": "",
+      "webJs": ""
     },
-    "ruleExplore": {},
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "",
+      "lastChapter": "",
+      "name": "",
+      "wordCount": ""
+    },
     "ruleSearch": {
-      "author": "class.author@text",
-      "bookList": "class.bookbox",
-      "bookUrl": "class.bookname@tag.a@href",
-      "coverUrl": "tag.img@src",
+      "author": "span.s4@text",
+      "bookList": ".novelslist2 li:has(a):lt(11)",
+      "bookUrl": "a@href",
+      "coverUrl": "span.s2 a@href##dushu/(\\d+)/(\\d+)/##files/article/image/$1/$2/$2s.jpg",
       "intro": "class.bookinfo@tag.p@text",
-      "lastChapter": "class.update@tag.a@text",
-      "name": "class.bookname@tag.a@text",
+      "kind": "",
+      "lastChapter": "span.s3@text",
+      "name": "span.s2@text",
       "wordCount": "class.s6@text"
     },
     "ruleToc": {
-      "chapterList": "class.listmain@tag.dd!0:1:2:3:4:5@tag.a",
+      "chapterList": "#list a",
       "chapterName": "text",
       "chapterUrl": "href",
-      "nextTocUrl": ""
+      "isVip": "",
+      "nextTocUrl": "",
+      "updateTime": ""
     },
-    "searchUrl": "/s.php,{\n\"charset\": \"gbk\",\n\"method\": \"POST\",\n\"body\": \"q={{key}}\"\n}",
+    "searchUrl": "/index.php?s=/web/index/search,{\n  \"charset\": \"utf-8\",\n  \"method\": \"POST\",\n  \"body\": \"name={{key}}\"\n  }",
     "weight": 0
   },
   {
@@ -8045,50 +8063,44 @@
   {
     "bookSourceComment": "",
     "bookSourceGroup": "🍺特优",
-    "bookSourceName": "🍺新笔趣阁 xbqgs",
+    "bookSourceName": "🍺新笔趣阁 xbiquge.la",
     "bookSourceType": 0,
-    "bookSourceUrl": "https://www.xbqgs.com",
-    "bookUrlPattern": "",
+    "bookSourceUrl": "https://www.xbiquge.la",
     "customOrder": 0,
     "enabled": true,
-    "enabledExplore": false,
-    "lastUpdateTime": 0,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻小说::https://www.xbiquge.la/fenlei/1_{{page}}.html\n修真小说::https://www.xbiquge.la/fenlei/2_{{page}}.html\n都市小说::https://www.xbiquge.la/fenlei/3_{{page}}.html\n穿越小说::https://www.xbiquge.la/fenlei/4_{{page}}.html\n网游小说::https://www.xbiquge.la/fenlei/5_{{page}}.html\n科幻小说::https://www.xbiquge.la/fenlei/6_{{page}}.html",
+    "lastUpdateTime": 1624436466144,
     "ruleBookInfo": {
-      "author": "class.booktitle cf@tag.p.0@text",
+      "author": "id.info@tag.p.0@text##作    者：",
       "coverUrl": "id.fmimg@tag.img@src",
-      "init": "",
-      "intro": "id.intro@text",
-      "kind": "class.con_top cf@href",
-      "name": "tag.h1@text"
+      "intro": "id.intro@tag.p.1@text",
+      "lastChapter": "id.info@tag.p.3@title",
+      "name": "id.info@tag.h1.0@text"
     },
     "ruleContent": {
-      "content": "id.content@text"
+      "content": "id.content@textNodes"
     },
     "ruleExplore": {
-      "author": "",
-      "bookList": "",
-      "bookUrl": "",
-      "coverUrl": "",
-      "intro": "",
-      "kind": "",
-      "name": ""
+      "author": "tag.span.2@text",
+      "bookList": "class.l@tag.ul@tag.li",
+      "bookUrl": "tag.span.0@tag.a@href",
+      "lastChapter": "tag.span.1@tag.a@text",
+      "name": "tag.span.0@tag.a@text"
     },
     "ruleSearch": {
-      "author": "",
-      "bookList": "",
-      "bookUrl": "class.item-cover@tag.a.0@href",
-      "coverUrl": "class.item-cover@tag.img@src",
-      "intro": "",
-      "kind": "",
-      "lastChapter": "",
-      "name": "class.item-cover@tag.a.0@text"
+      "author": "class.even.1@text",
+      "bookList": "class.grid@tag.tbody@tag.tr!0",
+      "bookUrl": "class.even.0@tag.a@href",
+      "lastChapter": "class.odd.0@tag.a@text",
+      "name": "class.even.0@tag.a@text"
     },
     "ruleToc": {
-      "chapterList": "id.list@id.newchapter@tag.dd",
-      "chapterName": "text",
-      "chapterUrl": "href"
+      "chapterList": "id.list@tag.dd",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href"
     },
-    "searchUrl": "/search?keyword={{key}},{\n  \"charset\": \"utf-8\"\n}",
+    "searchUrl": "https://www.xbiquge.la/modules/article/waps.php?searchkey={{key}}",
     "weight": 0
   },
   {
@@ -13360,40 +13372,42 @@
     "bookSourceGroup": "💵正版",
     "bookSourceName": "💵飞卢小说",
     "bookSourceType": 0,
-    "bookSourceUrl": "https://wap.faloo.com",
-    "bookUrlPattern": ".+/book/.+",
+    "bookSourceUrl": "https:\/\/wap.faloo.com",
+    "bookUrlPattern": "",
     "customOrder": 0,
     "enabled": true,
     "enabledExplore": true,
-    "exploreUrl": "月票榜::/bookrank4index.aspx?k=yuepiao\n新书PK::/bookrank4index.aspx?k=newbookpk\n热销榜::/bookrank4index.aspx?k=24h\n打赏榜::/bookrank4index.aspx?k=dashang\n总点击::/bookrank4index.aspx?k=zongdianji\n鲜花榜::/bookrank4index.aspx?k=xianhua\n收藏榜::/bookrank4index.aspx?k=shoucangbang\n更新狂::/bookrank4index.aspx?k=zishubang\n完本榜::/bookrank4index.aspx?k=wangbenbang\n同人榜::/bookrank4index.aspx?k=danmei\n都市榜::/bookrank4index.aspx?k=dushi\n玄幻榜::/bookrank4index.aspx?k=xuanhuan\n军事榜::/bookrank4index.aspx?k=lishi\n网游榜::/bookrank4index.aspx?k=wangyou\n灵异榜::/bookrank4index.aspx?k=kongbu\n武侠榜::/bookrank4index.aspx?k=wuxia\n女生榜::/bookrank4index.aspx?k=nvsheng\n校园榜::/bookrank4index.aspx?k=xiaoyuan\n轻小说榜::/bookrank4index.aspx?k=qingxiaoshuo\n小说书库::/category/0/0/1/{{page}}.html\nVIP 小说::/cvip/0/0/1/{{page}}.html\n免费小说::/mianfei/0/0/1/{{page}}.html\n最新免费::/mianfei/0/0/0/{{page}}.html\n完本小说::/finish/0/0/1/{{page}}.html\n包月小说::/baoyue/0/0/1/{{page}}.html\n新书入库::/newbook/0/0/1/{{page}}.html\n同人小说::/category/44/0/1/{{page}}.html\n玄幻奇幻::/category/1/0/1/{{page}}.html\n武侠仙侠::/category/6/0/1/{{page}}.html\n都市言情::/category/4/0/1/{{page}}.html\n青春校园::/category/7/0/1/{{page}}.html\n军事历史::/category/3/0/1/{{page}}.html\n科幻网游::/category/2/0/1/{{page}}.html\n恐怖灵异::/category/5/0/1/{{page}}.html\n 轻 小说 ::/category/97/0/1/{{page}}.html\n女生小说::/category/54/0/1/{{page}}.html\n短篇其他::/category/9/0/1/{{page}}.html\n异世大陆::/category/1/28/1/{{page}}.html\n神话传说::/category/1/50/1/{{page}}.html\n东方玄幻::/category/1/29/1/{{page}}.html\n转世重生::/category/1/30/1/{{page}}.html\n王朝争霸::/category/1/31/1/{{page}}.html\n上古神话::/category/1/56/1/{{page}}.html\n变身情缘::/category/1/32/1/{{page}}.html\n穿越附身::/category/1/81/1/{{page}}.html\n传统武侠::/category/6/26/1/{{page}}.html\n武侠修真::/category/6/25/1/{{page}}.html\n浪子异侠::/category/6/27/1/{{page}}.html\n古典仙侠::/category/6/78/1/{{page}}.html\n星际修真::/category/6/79/1/{{page}}.html\n现代修真::/category/6/80/1/{{page}}.html\n动漫同人::/category/44/69/1/{{page}}.html\n小说同人::/category/44/53/1/{{page}}.html\n影视同人::/category/44/52/1/{{page}}.html\n浪漫言情::/category/4/13/1/{{page}}.html\n都市生活::/category/4/14/1/{{page}}.html\n都市异能::/category/4/45/1/{{page}}.html\n商海沉浮::/category/4/15/1/{{page}}.html\n宦海风云::/category/4/17/1/{{page}}.html\n职场生涯::/category/4/16/1/{{page}}.html\n豪门恩怨::/category/4/18/1/{{page}}.html\n菁菁校园::/category/7/10/1/{{page}}.html\n校园言情::/category/7/11/1/{{page}}.html\n另类校园::/category/7/12/1/{{page}}.html\n贵爵童话::/category/7/90/1/{{page}}.html\n魔法校园::/category/7/55/1/{{page}}.html\n校园同人::/category/7/89/1/{{page}}.html\n穿越时空::/category/3/71/1/{{page}}.html\n架空历史::/category/3/19/1/{{page}}.html\n历史传记::/category/3/72/1/{{page}}.html\n三国梦想::/category/3/73/1/{{page}}.html\n人文历史::/category/3/74/1/{{page}}.html\n现代战争::/category/3/20/1/{{page}}.html\n战争幻想::/category/3/76/1/{{page}}.html\n特种军旅::/category/3/21/1/{{page}}.html\n虚拟网游::/category/2/33/1/{{page}}.html\n电子竞技::/category/2/70/1/{{page}}.html\n足球运动::/category/2/36/1/{{page}}.html\n篮球运动::/category/2/35/1/{{page}}.html\n其它竞技::/category/2/34/1/{{page}}.html\n恐怖惊悚::/category/5/24/1/{{page}}.html\n推理悬念::/category/5/22/1/{{page}}.html\n灵异鬼怪::/category/5/23/1/{{page}}.html\n神秘时空::/category/5/65/1/{{page}}.html\n 轻 幻想 ::/category/97/98/1/{{page}}.html\n 重 幻想 ::/category/97/99/1/{{page}}.html\n 日常 类 ::/category/97/100/1/{{page}}.html\n穿越附身::/category/54/91/1/{{page}}.html\n都市言情::/category/54/92/1/{{page}}.html\n女尊天下::/category/54/93/1/{{page}}.html\n架空历史::/category/54/94/1/{{page}}.html\n豪门恩怨::/category/54/95/1/{{page}}.html\n重生异能::/category/54/96/1/{{page}}.html\n古典言情::/category/54/48/1/{{page}}.html\n历史演义::/category/9/47/1/{{page}}.html\n散文诗词::/category/9/58/1/{{page}}.html\n休闲美文::/category/9/59/1/{{page}}.html\n杂文笔记::/category/9/41/1/{{page}}.html\n短篇小说::/category/9/42/1/{{page}}.html\n改编剧本::/category/9/63/1/{{page}}.html\n其他类型::/category/9/43/1/{{page}}.html",
-    "lastUpdateTime": 0,
-    "loginUrl": "https://u.faloo.com/wap/login.aspx",
+    "exploreUrl": "月票榜::https:\/\/wap.faloo.com\/bookrank4index.aspx?k=yuepiao\n新书PK::https:\/\/wap.faloo.com\/bookrank4index.aspx?k=newbookpk\n热销榜::https:\/\/wap.faloo.com\/bookrank4index.aspx?k=24h\n打赏榜::https:\/\/wap.faloo.com\/bookrank4index.aspx?k=dashang\n总点击::https:\/\/wap.faloo.com\/bookrank4index.aspx?k=zongdianji\n鲜花榜::https:\/\/wap.faloo.com\/bookrank4index.aspx?k=xianhua\n收藏榜::https:\/\/wap.faloo.com\/bookrank4index.aspx?k=shoucangbang\n更新狂::https:\/\/wap.faloo.com\/bookrank4index.aspx?k=zishubang\n完本榜::https:\/\/wap.faloo.com\/bookrank4index.aspx?k=wangbenbang\n同人榜::https:\/\/wap.faloo.com\/bookrank4index.aspx?k=danmei\n都市榜::https:\/\/wap.faloo.com\/bookrank4index.aspx?k=dushi\n玄幻榜::https:\/\/wap.faloo.com\/bookrank4index.aspx?k=xuanhuan\n军事榜::https:\/\/wap.faloo.com\/bookrank4index.aspx?k=lishi\n网游榜::https:\/\/wap.faloo.com\/bookrank4index.aspx?k=wangyou\n灵异榜::https:\/\/wap.faloo.com\/bookrank4index.aspx?k=kongbu\n武侠榜::https:\/\/wap.faloo.com\/bookrank4index.aspx?k=wuxia\n女生榜::https:\/\/wap.faloo.com\/bookrank4index.aspx?k=nvsheng\n校园榜::https:\/\/wap.faloo.com\/bookrank4index.aspx?k=xiaoyuan\n轻小说榜::https:\/\/wap.faloo.com\/bookrank4index.aspx?k=qingxiaoshuo\n小说书库::https:\/\/wap.faloo.com\/category\/0\/0\/1\/{{page}}.html\nVIP小说::https:\/\/wap.faloo.com\/cvip\/0\/0\/1\/{{page}}.html\n免费小说::https:\/\/wap.faloo.com\/mianfei\/0\/0\/1\/{{page}}.html\n完本小说::https:\/\/wap.faloo.com\/finish\/0\/0\/1\/{{page}}.html\n包月小说::https:\/\/wap.faloo.com\/baoyue\/0\/0\/1\/{{page}}.html\n新书入库::https:\/\/wap.faloo.com\/newbook\/0\/0\/1\/{{page}}.html\n同人小说::https:\/\/wap.faloo.com\/category\/44\/0\/1\/{{page}}.html\n玄幻奇幻::https:\/\/wap.faloo.com\/category\/1\/0\/1\/{{page}}.html\n武侠仙侠::https:\/\/wap.faloo.com\/category\/6\/0\/1\/{{page}}.html\n都市言情::https:\/\/wap.faloo.com\/category\/4\/0\/1\/{{page}}.html\n青春校园::https:\/\/wap.faloo.com\/category\/7\/0\/1\/{{page}}.html\n军事历史::https:\/\/wap.faloo.com\/category\/3\/0\/1\/{{page}}.html\n科幻网游::https:\/\/wap.faloo.com\/category\/2\/0\/1\/{{page}}.html\n恐怖灵异::https:\/\/wap.faloo.com\/category\/5\/0\/1\/{{page}}.html\n轻小说::https:\/\/wap.faloo.com\/category\/97\/0\/1\/{{page}}.html\n女生小说::https:\/\/wap.faloo.com\/category\/54\/0\/1\/{{page}}.html\n短篇其他::https:\/\/wap.faloo.com\/category\/9\/0\/1\/{{page}}.html\n异世大陆::https:\/\/wap.faloo.com\/category\/1\/28\/1\/{{page}}.html\n神话传说::https:\/\/wap.faloo.com\/category\/1\/50\/1\/{{page}}.html\n东方玄幻::https:\/\/wap.faloo.com\/category\/1\/29\/1\/{{page}}.html\n转世重生::https:\/\/wap.faloo.com\/category\/1\/30\/1\/{{page}}.html\n王朝争霸::https:\/\/wap.faloo.com\/category\/1\/31\/1\/{{page}}.html\n上古神话::https:\/\/wap.faloo.com\/category\/1\/56\/1\/{{page}}.html\n变身情缘::https:\/\/wap.faloo.com\/category\/1\/32\/1\/{{page}}.html\n穿越附身::https:\/\/wap.faloo.com\/category\/1\/81\/1\/{{page}}.html\n传统武侠::https:\/\/wap.faloo.com\/category\/6\/26\/1\/{{page}}.html\n武侠修真::https:\/\/wap.faloo.com\/category\/6\/25\/1\/{{page}}.html\n浪子异侠::https:\/\/wap.faloo.com\/category\/6\/27\/1\/{{page}}.html\n古典仙侠::https:\/\/wap.faloo.com\/category\/6\/78\/1\/{{page}}.html\n星际修真::https:\/\/wap.faloo.com\/category\/6\/79\/1\/{{page}}.html\n现代修真::https:\/\/wap.faloo.com\/category\/6\/80\/1\/{{page}}.html\n动漫同人::https:\/\/wap.faloo.com\/category\/44\/69\/1\/{{page}}.html\n小说同人::https:\/\/wap.faloo.com\/category\/44\/53\/1\/{{page}}.html\n影视同人::https:\/\/wap.faloo.com\/category\/44\/52\/1\/{{page}}.html\n浪漫言情::https:\/\/wap.faloo.com\/category\/4\/13\/1\/{{page}}.html\n都市生活::https:\/\/wap.faloo.com\/category\/4\/14\/1\/{{page}}.html\n都市异能::https:\/\/wap.faloo.com\/category\/4\/45\/1\/{{page}}.html\n商海沉浮::https:\/\/wap.faloo.com\/category\/4\/15\/1\/{{page}}.html\n宦海风云::https:\/\/wap.faloo.com\/category\/4\/17\/1\/{{page}}.html\n职场生涯::https:\/\/wap.faloo.com\/category\/4\/16\/1\/{{page}}.html\n豪门恩怨::https:\/\/wap.faloo.com\/category\/4\/18\/1\/{{page}}.html\n菁菁校园::https:\/\/wap.faloo.com\/category\/7\/10\/1\/{{page}}.html\n校园言情::https:\/\/wap.faloo.com\/category\/7\/11\/1\/{{page}}.html\n另类校园::https:\/\/wap.faloo.com\/category\/7\/12\/1\/{{page}}.html\n贵爵童话::https:\/\/wap.faloo.com\/category\/7\/90\/1\/{{page}}.html\n魔法校园::https:\/\/wap.faloo.com\/category\/7\/55\/1\/{{page}}.html\n校园同人::https:\/\/wap.faloo.com\/category\/7\/89\/1\/{{page}}.html\n穿越时空::https:\/\/wap.faloo.com\/category\/3\/71\/1\/{{page}}.html\n架空历史::https:\/\/wap.faloo.com\/category\/3\/19\/1\/{{page}}.html\n历史传记::https:\/\/wap.faloo.com\/category\/3\/72\/1\/{{page}}.html\n三国梦想::https:\/\/wap.faloo.com\/category\/3\/73\/1\/{{page}}.html\n人文历史::https:\/\/wap.faloo.com\/category\/3\/74\/1\/{{page}}.html\n现代战争::https:\/\/wap.faloo.com\/category\/3\/20\/1\/{{page}}.html\n战争幻想::https:\/\/wap.faloo.com\/category\/3\/76\/1\/{{page}}.html\n特种军旅::https:\/\/wap.faloo.com\/category\/3\/21\/1\/{{page}}.html\n虚拟网游::https:\/\/wap.faloo.com\/category\/2\/33\/1\/{{page}}.html\n电子竞技::https:\/\/wap.faloo.com\/category\/2\/70\/1\/{{page}}.html\n足球运动::https:\/\/wap.faloo.com\/category\/2\/36\/1\/{{page}}.html\n篮球运动::https:\/\/wap.faloo.com\/category\/2\/35\/1\/{{page}}.html\n其它竞技::https:\/\/wap.faloo.com\/category\/2\/34\/1\/{{page}}.html\n恐怖惊悚::https:\/\/wap.faloo.com\/category\/5\/24\/1\/{{page}}.html\n推理悬念::https:\/\/wap.faloo.com\/category\/5\/22\/1\/{{page}}.html\n灵异鬼怪::https:\/\/wap.faloo.com\/category\/5\/23\/1\/{{page}}.html\n神秘时空::https:\/\/wap.faloo.com\/category\/5\/65\/1\/{{page}}.html\n轻幻想::https:\/\/wap.faloo.com\/category\/97\/98\/1\/{{page}}.html\n重幻想::https:\/\/wap.faloo.com\/category\/97\/99\/1\/{{page}}.html\n日常类::https:\/\/wap.faloo.com\/category\/97\/100\/1\/{{page}}.html\n穿越附身::https:\/\/wap.faloo.com\/category\/54\/91\/1\/{{page}}.html\n都市言情::https:\/\/wap.faloo.com\/category\/54\/92\/1\/{{page}}.html\n女尊天下::https:\/\/wap.faloo.com\/category\/54\/93\/1\/{{page}}.html\n架空历史::https:\/\/wap.faloo.com\/category\/54\/94\/1\/{{page}}.html\n豪门恩怨::https:\/\/wap.faloo.com\/category\/54\/95\/1\/{{page}}.html\n重生异能::https:\/\/wap.faloo.com\/category\/54\/96\/1\/{{page}}.html\n古典言情::https:\/\/wap.faloo.com\/category\/54\/48\/1\/{{page}}.html\n历史演义::https:\/\/wap.faloo.com\/category\/9\/47\/1\/{{page}}.html\n散文诗词::https:\/\/wap.faloo.com\/category\/9\/58\/1\/{{page}}.html\n休闲美文::https:\/\/wap.faloo.com\/category\/9\/59\/1\/{{page}}.html\n杂文笔记::https:\/\/wap.faloo.com\/category\/9\/41\/1\/{{page}}.html\n短篇小说::https:\/\/wap.faloo.com\/category\/9\/42\/1\/{{page}}.html\n改编剧本::https:\/\/wap.faloo.com\/category\/9\/63\/1\/{{page}}.html\n其他::https:\/\/wap.faloo.com\/category\/9\/43\/1\/{{page}}.html",
+    "lastUpdateTime": 1624358205603,
+    "loginUrl": "https:\/\/u.faloo.com\/wap\/login.aspx",
     "ruleBookInfo": {
-      "lastChapter": "class.update@tag.span@text",
-      "name": "",
-      "tocUrl": "##<a\\shref=\"([^\"]*)\">完整目录##$1###"
+        "coverUrl": "class.pic@img@src",
+        "intro": "id.novel_intro@p@textNodes",
+        "kind": "[property=\"og:novel:category\"]@content&&[property=\"og:novel:status\"]@content",
+        "lastChapter": "class.newNode@text",
+        "tocUrl": "class.fp_btn1 textHide.0@href##.*vol\/(\\d+).html##https:\/\/wap.faloo.com\/book\/list\/$1\/2\/1\/1.html"
     },
     "ruleContent": {
-      "content": "id.content@tag.p@text##本书来自.*|ps：.*|\\<!--|春节看书.*\\！|立即抢充.*\\)|\\-->|活动.*注册!|本书由飞卢.*|清明节充值.*|用飞卢.*试听|兼职赚大钱|活动.*注册!|本书由飞卢.*|<a href=.*|五一看书.*|用飞卢听书.*|",
-      "imageStyle": "0"
+        "content": "class.nodeContent@p@html##本书来自.*|ps：.*|\\<!--|春节看书.*\\！|立即抢充.*\\)|\\-->|用飞卢.*试听|兼职赚大钱|活动.*注册!|本书由飞卢.*|<a href=.*|五一看书.*|用飞卢听书.*|"
     },
     "ruleExplore": {},
     "ruleSearch": {
-      "author": "class.show_author@tag.a@text",
-      "bookList": "class.book_vessel",
-      "bookUrl": "class.show_title2@tag.a@href##book##booklist",
-      "coverUrl": "tag.img.0@src",
-      "intro": "class.show_desc2@tag.p@text",
-      "kind": "class.show_foot@textNodes",
-      "name": "class.show_title2@tag.a@text",
-      "wordCount": "class.show_foot@tag.span.0@text"
+        "author": "class.show_author@a@text",
+        "bookList": "class.book_vessel",
+        "bookUrl": "class.show_title2@a@href",
+        "coverUrl": "img@src",
+        "intro": "class.show_desc2@p@html",
+        "kind": "class.show_foot@textNodes&&class.show_foot@span@text",
+        "name": "class.show_title2@a@text",
+        "wordCount": "class.show_foot@tag.span.0@text"
     },
     "ruleToc": {
-      "chapterList": "id.chapterlist@tag.li",
-      "chapterName": "tag.a@text##V##🔒",
-      "chapterUrl": "tag.a@href"
+        "chapterList": "class.chapter_list@li@a",
+        "chapterName": "text##V##🔒",
+        "chapterUrl": "href",
+        "nextTocUrl": "text.下一页@href"
     },
-    "searchUrl": "/category/0/0/1/{{page}}.html?k={{key}},{\n  \"charset\": \"gb2312\"\n}",
+    "searchUrl": "https:\/\/wap.faloo.com\/category\/0\/0\/1\/{{page}}.html?k={{key}},{\n  \"charset\": \"gb2312\"\n}",
     "weight": 0
   },
   {
@@ -15572,31 +15586,31 @@
     "bookSourceGroup": "🍑耽美",
     "bookSourceName": "🍑鲤鱼乡",
     "bookSourceType": 0,
-    "bookSourceUrl": "https:\/\/liyuxiang.me",
+    "bookSourceUrl": "https://liyuxiang.me",
     "customOrder": 0,
     "enabled": true,
     "enabledExplore": true,
-    "exploreUrl": "都市::\/books\/city\/<,index_{{page}}.html>&&架空::\/books\/history\/<,index_{{page}}.html>&&穿越::\/books\/through\/<,index_{{page}}.html>&&同人::\/books\/bl\/<,index_{{page}}.html>&&百合::\/books\/gl\/<,index_{{page}}.html>&&网游::\/books\/games\/<,index_{{page}}.html>&&灵异::\/books\/ghost\/<,index_{{page}}.html>&&老书::\/books\/old\/<,index_{{page}}.html>&&",
+    "exploreUrl": "都市::/books/city/<,index_{{page}}.html>&&架空::/books/history/<,index_{{page}}.html>&&穿越::/books/through/<,index_{{page}}.html>&&同人::/books/bl/<,index_{{page}}.html>&&百合::/books/gl/<,index_{{page}}.html>&&网游::/books/games/<,index_{{page}}.html>&&灵异::/books/ghost/<,index_{{page}}.html>&&老书::/books/old/<,index_{{page}}.html>&&",
     "lastUpdateTime": 1624009503130,
     "ruleBookInfo": {},
     "ruleContent": {
-        "content": "class.single-content@textNodes"
+      "content": "class.single-content@textNodes"
     },
     "ruleExplore": {},
     "ruleSearch": {
-        "author": "h2@text##.*[—byBY:：]+",
-        "bookList": "article",
-        "bookUrl": "h2 a@href",
-        "intro": ".archive-content@text",
-        "kind": ".comment a@text||.date@text",
-        "name": "h2@text##——.*"
+      "author": "h2@text##.*[—byBY:：]+",
+      "bookList": "article",
+      "bookUrl": "h2 a@href",
+      "intro": ".archive-content@text",
+      "kind": ".comment a@text||.date@text",
+      "name": "h2@text##——.*"
     },
     "ruleToc": {
-        "chapterList": "<js>var ur = String(baseUrl);\nvar list=[];\n\nlist.push({n:'第'+1+'页',\nu:ur});\nif(result.match(\/尾页\/)){\n    p=result.match(\/_(\\d+)\\.html\">尾页\/)[1];\n        for(i=2;i<=p;i++){\n             list.push({n:'第'+i+'页',\nu:ur.replace('.html','')+'_'+i+'.html'})}}else list.push({n:'空',u:''});\nlist<\/js>",
-        "chapterName": "n",
-        "chapterUrl": "u"
+      "chapterList": "<js>var ur = String(baseUrl);\nvar list=[];\n\nlist.push({n:'第'+1+'页',\nu:ur});\nif(result.match(/尾页/)){\n    p=result.match(/_(\\d+)\\.html\">尾页/)[1];\n        for(i=2;i<=p;i++){\n             list.push({n:'第'+i+'页',\nu:ur.replace('.html','')+'_'+i+'.html'})}}else list.push({n:'空',u:''});\nlist</js>",
+      "chapterName": "n",
+      "chapterUrl": "u"
     },
-    "searchUrl": "https:\/\/liyuxiang.me\/e\/search\/index.php,{\n\"charset\": \"\",\n\"method\": \"POST\",\n\"body\": \"show=title,\nnewstext&keyboard={{key}}&page={{page}}\",\n\"headers\": {\"User-Agent\": \"\"}\n}",
+    "searchUrl": "https://liyuxiang.me/e/search/index.php,{\n\"charset\": \"\",\n\"method\": \"POST\",\n\"body\": \"show=title,\nnewstext&keyboard={{key}}&page={{page}}\",\n\"headers\": {\"User-Agent\": \"\"}\n}",
     "weight": 0
   },
   {
@@ -16738,44 +16752,46 @@
     "bookSourceComment": "",
     "bookSourceGroup": "🔞特殊",
     "bookSourceName": "🔞肉漫屋",
-    "bookSourceType": "0",
-    "bookSourceUrl": "https://rouman5.com/home",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://rouman5.com",
     "bookUrlPattern": "",
     "customOrder": 0,
     "enabled": true,
     "enabledExplore": true,
-    "exploreUrl": "正妹::https://rouman5.com/books?tag=正妹&page={{page}}\n恋爱::https://rouman5.com/books?tag=恋爱&page={{page}}\n出版漫画::https://rouman5.com/books?tag=出版漫画&page={{page}}\n肉慾::https://rouman5.com/books?tag=肉慾&page={{page}}\n浪漫::https://rouman5.com/books?tag=浪漫&page={{page}}\n大尺度::https://rouman5.com/books?tag=大尺度&page={{page}}\n巨乳::https://rouman5.com/books?tag=巨乳&page={{page}}\n有夫之婦::https://rouman5.com/books?tag=有夫之婦&page={{page}}\n女大生::https://rouman5.com/books?tag=女大生&page={{page}}\n狗血劇::https://rouman5.com/books?tag=狗血劇&page={{page}}\n同居::https://rouman5.com/books?tag=同居&page={{page}}\n好友::https://rouman5.com/books?tag=好友&page={{page}}\n調教::https://rouman5.com/books?tag=調教&page={{page}}\n动作::https://rouman5.com/books?tag=动作&page={{page}}\n後宮::https://rouman5.com/books?tag=後宮&page={{page}}\n搞笑::https://rouman5.com/books?tag=搞笑&page={{page}}",
+    "exploreUrl": "连载中::https://rouman5.com/books?continued=true&page={{page-1}}\n已完结::https://rouman5.com/books?continued=false&page={{page-1}}\n\n正妹::https://rouman5.com/books?tag=正妹&page={{page-1}}\n恋爱::https://rouman5.com/books?tag=恋爱&page={{page-1}}\n出版漫画::https://rouman5.com/books?tag=出版漫画&page={{page-1}}\n肉慾::https://rouman5.com/books?tag=肉慾&page={{page-1}}\n浪漫::https://rouman5.com/books?tag=浪漫&page={{page-1}}\n大尺度::https://rouman5.com/books?tag=大尺度&page={{page-1}}\n巨乳::https://rouman5.com/books?tag=巨乳&page={{page-1}}\n有夫之婦::https://rouman5.com/books?tag=有夫之婦&page={{page-1}}\n女大生::https://rouman5.com/books?tag=女大生&page={{page1}}\n狗血劇::https://rouman5.com/books?tag=狗血劇&page={{page1}}\n同居::https://rouman5.com/books?tag=同居&page={{page-1}}\n好友::https://rouman5.com/books?tag=好友&page={{page-1}}\n調教::https://rouman5.com/books?tag=調教&page={{page1}}\n动作::https://rouman5.com/books?tag=动作&page={{page-1}}\n後宮::https://rouman5.com/books?tag=後宮&page={{page-1}}\n搞笑::https://rouman5.com/books?tag=搞笑&page={{page-1}}\n\nhttps://rouman5.com/_next/data/p5HfJEnLu90IdPo0eyosK/books.json?tag=正妹&p={{page}}",
     "header": "{\"User-Agent\":\"Mozilla/5.0 (Linux; Android 10.0.0;  XXX Pro Build/GAMER) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36\",\"Cookie\":\"device=phone\"}",
-    "lastUpdateTime": 1623219601985,
+    "lastUpdateTime": 1624353938866,
     "loginUrl": "",
     "ruleBookInfo": {
-      "name": "tag.h5.0@text",
-      "author": "tag.p.0@text",
-      "intro": "tag.p.3@text",
-      "coverUrl": "class.row.1.img@src"
+      "author": "class.bookid_bookInfo__Gdq3I@tag.p.0@text",
+      "coverUrl": "class.img-thumbnail@src",
+      "intro": "class.bookid_bookInfo__Gdq3I@tag.p.3@text##簡介: ||敘述：",
+      "kind": "class.bookid_bookInfo__Gdq3I@tag.b@text",
+      "lastChapter": "class.bookid_chapterBox__CRrx9@tag.div.-1@tag.a@text",
+      "name": "tag.h5.0@text"
     },
     "ruleContent": {
-      "content": "class.container.1@img[class^='id_comicImage']@html",
+      "content": "$.chapter.images.[*]src@js:\nvar options = {\n\"headers\": {\"Referer\": baseUrl}\n}\nlist=result.split(\"\\n\");\nhtml='';\nfor(i in list){\nhtml+='<img src=\"'+list[i]+'\">\\n'\n}\nhtml",
       "imageStyle": "FULL"
     },
     "ruleExplore": {
       "bookList": "ul[class^='books_listArea']@tag.li",
-      "name": "tag.span.0@text",
+      "bookUrl": "tag.a@href",
       "coverUrl": "tag.div.3@data-src",
-      "bookUrl": "tag.a@href"
+      "name": "tag.span.0@text"
     },
     "ruleSearch": {
-      "bookList": "ul[class^='search_listArea']@tag.li",
-      "name": "tag.span.0@text",
-      "coverUrl": "tag.div.3@data-src",
-      "bookUrl": "tag.a@href"
+      "bookList": "ul@li",
+      "bookUrl": "tag.a@href",
+      "coverUrl": "class.comicBox_thumbImg__1aomD.0@data-src",
+      "name": "tag.span.0@text"
     },
     "ruleToc": {
-      "chapterList": "div[class^='bookid_chapter']",
-      "chapterName": "tag.a@text",
-      "chapterUrl": "tag.a@href"
+      "chapterList": "class.bookid_chapterBox__CRrx9@div@a",
+      "chapterName": "text",
+      "chapterUrl": "tag.a@href##\\/books\\/##\\/api\\/books\\/"
     },
-    "searchUrl": "search?term={{key}}",
+    "searchUrl": "https://rouman5.com/search?term={{key}}",
     "weight": 0
   },
   {
