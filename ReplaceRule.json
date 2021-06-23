@@ -1,7 +1,7 @@
 [
   {
     "group": "星号",
-    "id": 1,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "#01 整理✳️星号",
@@ -12,7 +12,7 @@
   },
   {
     "group": "星号",
-    "id": 2,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "#02 标记✳️敏感词",
@@ -23,7 +23,7 @@
   },
   {
     "group": "星号",
-    "id": 3,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "#03 修复✳️拼音",
@@ -34,7 +34,7 @@
   },
   {
     "group": "星号",
-    "id": 4,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "#04 修复✳️星号",
@@ -45,7 +45,7 @@
   },
   {
     "group": "星号",
-    "id": 5,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "#05 还原✳️误标记",
@@ -56,7 +56,7 @@
   },
   {
     "group": "转换",
-    "id": 6,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "#06 标点♦️空 格",
@@ -67,7 +67,7 @@
   },
   {
     "group": "转换",
-    "id": 7,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "#07 标点♦️••• •••",
@@ -78,7 +78,7 @@
   },
   {
     "group": "转换",
-    "id": 8,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "#08 标点♦️ ━━",
@@ -89,7 +89,7 @@
   },
   {
     "group": "转换",
-    "id": 9,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "#09 标点♦️    ╸ ",
@@ -100,7 +100,7 @@
   },
   {
     "group": "转换",
-    "id": 10,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "#10 标点♦️ ＂＂",
@@ -111,7 +111,7 @@
   },
   {
     "group": "转换",
-    "id": 11,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "#11 标点♦️「 」",
@@ -122,7 +122,7 @@
   },
   {
     "group": "转换",
-    "id": 12,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "#12 标点♦️【 】",
@@ -133,7 +133,7 @@
   },
   {
     "group": "转换",
-    "id": 13,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "#13 标点♦️（ ）",
@@ -144,7 +144,7 @@
   },
   {
     "group": "净化",
-    "id": 14,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "#14 净化✳️网址",
@@ -155,7 +155,7 @@
   },
   {
     "group": "净化",
-    "id": 15,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "#15 净化✳️标点",
@@ -166,7 +166,7 @@
   },
   {
     "group": "净化",
-    "id": 16,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "#16 净化✳️短语",
@@ -177,7 +177,7 @@
   },
   {
     "group": "净化",
-    "id": 17,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "#17 净化✳️段落",
@@ -188,7 +188,7 @@
   },
   {
     "group": "净化",
-    "id": 18,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "#18 净化✳️杂项",
@@ -199,7 +199,7 @@
   },
   {
     "group": "可选",
-    "id": 19,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "#19【英式名】",
@@ -210,7 +210,7 @@
   },
   {
     "group": "可选",
-    "id": 20,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "#20【叠音词】",
@@ -221,7 +221,7 @@
   },
   {
     "group": "可选",
-    "id": 21,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "#21【　？　】",
@@ -232,7 +232,7 @@
   },
   {
     "group": "可选",
-    "id": 22,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "#22【　！　】",
@@ -243,7 +243,7 @@
   },
   {
     "group": "可选",
-    "id": 23,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "#23【　•••　】",
@@ -254,7 +254,7 @@
   },
   {
     "group": "可选",
-    "id": 24,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "#24【　。　】",
@@ -265,7 +265,7 @@
   },
   {
     "group": "可选",
-    "id": 25,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "#25 分割⚡长段",
@@ -276,7 +276,7 @@
   },
   {
     "group": "可选",
-    "id": 26,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "#26 分割⚡长句",
@@ -287,7 +287,7 @@
   },
   {
     "group": "冗余",
-    "id": 38,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "冗余：网址",
@@ -298,7 +298,7 @@
   },
   {
     "group": "和谐",
-    "id": 43,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "yīnjīng/阴茎",
@@ -308,7 +308,7 @@
   },
   {
     "group": "和谐",
-    "id": 44,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "yang/阳",
@@ -318,7 +318,7 @@
   },
   {
     "group": "和谐",
-    "id": 45,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "rou/肉",
@@ -328,7 +328,7 @@
   },
   {
     "group": "和谐",
-    "id": 46,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "gui/龟",
@@ -338,7 +338,7 @@
   },
   {
     "group": "和谐",
-    "id": 47,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "cao/操",
@@ -349,7 +349,7 @@
   },
   {
     "group": "和谐",
-    "id": 48,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "ru/乳",
@@ -359,7 +359,7 @@
   },
   {
     "group": "和谐",
-    "id": 49,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "nai/奶",
@@ -369,7 +369,7 @@
   },
   {
     "group": "和谐",
-    "id": 50,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "\\*\\*/鸡",
@@ -379,7 +379,7 @@
   },
   {
     "group": "和谐",
-    "id": 51,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "Jing/精",
@@ -390,7 +390,7 @@
   },
   {
     "group": "和谐",
-    "id": 52,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "She/射",
@@ -401,7 +401,7 @@
   },
   {
     "group": "和谐",
-    "id": 53,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "Bi/屄",
@@ -412,7 +412,7 @@
   },
   {
     "group": "和谐",
-    "id": 57,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "zuo/做",
@@ -423,7 +423,7 @@
   },
   {
     "group": "和谐",
-    "id": 58,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "di/蒂",
@@ -434,7 +434,7 @@
   },
   {
     "group": "和谐",
-    "id": 59,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "chu/处",
@@ -445,7 +445,7 @@
   },
   {
     "group": "和谐",
-    "id": 60,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "kou/口",
@@ -456,7 +456,7 @@
   },
   {
     "group": "和谐",
-    "id": 63,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "bi/逼",
@@ -467,7 +467,7 @@
   },
   {
     "group": "和谐",
-    "id": 64,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "jian/贱",
@@ -478,7 +478,7 @@
   },
   {
     "group": "和谐",
-    "id": 67,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "jian/奸",
@@ -489,7 +489,7 @@
   },
   {
     "group": "和谐",
-    "id": 142,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "wang/望",
@@ -500,7 +500,7 @@
   },
   {
     "group": "和谐",
-    "id": 143,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "qun/群",
@@ -511,7 +511,7 @@
   },
   {
     "group": "和谐",
-    "id": 144,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "shalu/杀戮",
@@ -522,7 +522,7 @@
   },
   {
     "group": "和谐",
-    "id": 145,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "bi/屄",
@@ -533,7 +533,7 @@
   },
   {
     "group": "和谐",
-    "id": 146,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "shen/伸",
@@ -544,7 +544,7 @@
   },
   {
     "group": "合集",
-    "id": 147,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "去除重复段落",
@@ -555,7 +555,7 @@
   },
   {
     "group": "和谐",
-    "id": 149,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "ai/爱",
@@ -566,7 +566,7 @@
   },
   {
     "group": "和谐",
-    "id": 152,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "*/道",
@@ -577,7 +577,7 @@
   },
   {
     "group": "和谐",
-    "id": 330,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "jb/鸡巴",
@@ -588,7 +588,7 @@
   },
   {
     "group": "和谐",
-    "id": 574,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "🔃 八九 / **",
@@ -599,7 +599,7 @@
   },
   {
     "group": "和谐",
-    "id": 575,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "🔃 川普 / **",
@@ -610,7 +610,7 @@
   },
   {
     "group": "和谐",
-    "id": 576,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "🔃 大法 / **",
@@ -621,7 +621,7 @@
   },
   {
     "group": "和谐",
-    "id": 577,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "🔃 查尔斯 / **",
@@ -632,7 +632,7 @@
   },
   {
     "group": "和谐",
-    "id": 578,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "🔃 赤裸 / **",
@@ -643,7 +643,7 @@
   },
   {
     "group": "和谐",
-    "id": 579,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "🔃 婊 / biao",
@@ -654,7 +654,7 @@
   },
   {
     "group": "和谐",
-    "id": 581,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "🔃 奸 / jian",
@@ -665,7 +665,7 @@
   },
   {
     "group": "和谐",
-    "id": 582,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "🔃 裸 / luo",
@@ -676,7 +676,7 @@
   },
   {
     "group": "和谐",
-    "id": 583,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "🔃 弄 / nong",
@@ -687,7 +687,7 @@
   },
   {
     "group": "和谐",
-    "id": 584,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "🔃 骚 / sao",
@@ -698,7 +698,7 @@
   },
   {
     "group": "和谐",
-    "id": 585,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "🔃 诱 / you",
@@ -709,7 +709,7 @@
   },
   {
     "group": "和谐",
-    "id": 586,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "🔃 性 / xing",
@@ -720,7 +720,7 @@
   },
   {
     "group": "和谐",
-    "id": 587,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "🔃 欲 / yu",
@@ -731,7 +731,7 @@
   },
   {
     "group": "和谐",
-    "id": 624,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "🔃 穴内 / **",
@@ -742,7 +742,7 @@
   },
   {
     "group": "和谐",
-    "id": 629,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "🔃 国军 / **",
@@ -753,7 +753,7 @@
   },
   {
     "group": "和谐",
-    "id": 630,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "🔃 西藏 / **",
@@ -763,7 +763,7 @@
     "scope": ""
   },
   {
-    "id": 657,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "修正：多音字（仅听书勾选）",
@@ -774,7 +774,7 @@
   },
   {
     "group": "作者有话",
-    "id": 1588208276407,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "感谢灌溉",
@@ -785,7 +785,7 @@
   },
   {
     "group": "晋江",
-    "id": 1593805905643,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "【2】简化",
@@ -796,7 +796,7 @@
   },
   {
     "group": "晋江",
-    "id": 1593807367242,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "【2】礼物",
@@ -807,7 +807,7 @@
   },
   {
     "group": "晋江",
-    "id": 1593807631253,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "【2】感谢",
@@ -818,7 +818,7 @@
   },
   {
     "group": "段落",
-    "id": 1596082394486,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "章节分页",
@@ -829,7 +829,7 @@
   },
   {
     "group": "和谐",
-    "id": 1596591502356,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "yin/淫",
@@ -840,7 +840,7 @@
   },
   {
     "group": "和谐",
-    "id": 1596614060547,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "zhuo/灼",
@@ -851,7 +851,7 @@
   },
   {
     "group": "作者有话",
-    "id": 1599134417946,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "※※※※",
@@ -862,7 +862,7 @@
   },
   {
     "group": "和谐",
-    "id": 1599134754735,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "gan/干",
@@ -873,7 +873,7 @@
   },
   {
     "group": "和谐",
-    "id": 1599134888539,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "dàng/荡",
@@ -884,7 +884,7 @@
   },
   {
     "group": "和谐",
-    "id": 1599483168975,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "bào/暴",
@@ -895,7 +895,7 @@
   },
   {
     "group": "和谐",
-    "id": 1599483461338,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "jīng/精",
@@ -906,7 +906,7 @@
   },
   {
     "group": "和谐",
-    "id": 1599483913810,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "qiáng/强",
@@ -917,7 +917,7 @@
   },
   {
     "group": "和谐",
-    "id": 1599637576804,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "yu/欲",
@@ -927,8 +927,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599637718104,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "亻本/体",
@@ -938,8 +938,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599637756973,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "月要/腰",
@@ -949,8 +949,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599637804114,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "氵闰/润",
@@ -960,8 +960,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599637892136,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "氵骨/滑",
@@ -971,8 +971,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599637935214,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "氵夜/液",
@@ -982,8 +982,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599637973783,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "侵Ru/侵入",
@@ -993,8 +993,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599638217512,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "亻乍/作",
@@ -1004,8 +1004,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599638258308,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "口勿/吻",
@@ -1015,8 +1015,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599638351046,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "氵宣/渲",
@@ -1026,8 +1026,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599638374287,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "氵世/泄",
@@ -1037,8 +1037,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599638394142,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "里予/野",
@@ -1048,8 +1048,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599638418159,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "扌支/技",
@@ -1059,8 +1059,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599638433520,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "犭王/狂",
@@ -1070,8 +1070,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599638450141,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "犭孟/猛",
@@ -1081,8 +1081,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599638755950,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "扌氐/抵",
@@ -1092,8 +1092,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599638769885,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "口乞/吃",
@@ -1103,8 +1103,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599638787540,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "扌童/撞",
@@ -1114,8 +1114,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599638808752,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "销云鬼/销魂",
@@ -1125,8 +1125,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599640179437,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "扌莫/摸",
@@ -1136,8 +1136,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599641330075,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "月退/腿",
@@ -1147,8 +1147,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599641346583,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "口觜/嘴",
@@ -1158,8 +1158,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599641523469,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "月几肉/肌肉",
@@ -1169,8 +1169,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599641538189,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "亻则/侧",
@@ -1180,8 +1180,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599641571601,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "tun肉/臀肉",
@@ -1191,8 +1191,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599642180272,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "口及/吸",
@@ -1202,8 +1202,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599642271508,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "身寸/射",
@@ -1213,8 +1213,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599644645841,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "gan/干",
@@ -1224,8 +1224,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599645503742,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "足曾/蹭",
@@ -1235,8 +1235,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599645520597,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "扌柔/揉",
@@ -1246,8 +1246,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599645537191,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "扌圼/捏",
@@ -1257,8 +1257,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599649298544,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "qing/情",
@@ -1268,8 +1268,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599651278552,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "石更/硬",
@@ -1279,8 +1279,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599652499697,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "车欠/软",
@@ -1290,8 +1290,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599652610692,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "扌安/按",
@@ -1301,8 +1301,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599652642984,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "扌包/抱",
@@ -1312,8 +1312,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599654128533,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "月匈/胸",
@@ -1323,8 +1323,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599654214427,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "氵罙/深",
@@ -1334,8 +1334,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599654232213,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "扌立/拉",
@@ -1345,8 +1345,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599654343548,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "口允/吮",
@@ -1356,8 +1356,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599654683581,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "丁页/顶",
@@ -1367,8 +1367,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599655410948,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "火包/炮",
@@ -1378,8 +1378,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599657582196,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "jian/奸",
@@ -1389,8 +1389,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599660367970,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "舌忝/舔",
@@ -1400,8 +1400,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599660486151,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "孛力/勃",
@@ -1411,8 +1411,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599660505330,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "又戈/戏",
@@ -1422,8 +1422,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599663720220,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "弓长/张",
@@ -1433,8 +1433,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599663736307,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "扌广/扩",
@@ -1444,8 +1444,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599663757769,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "chuang/床",
@@ -1455,8 +1455,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599663823382,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "忄夬/快",
@@ -1466,8 +1466,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599663888819,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "耳止/耻",
@@ -1477,8 +1477,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599667077222,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "马蚤/骚",
@@ -1488,8 +1488,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599672423195,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "木艮/根",
@@ -1499,8 +1499,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599672994526,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "前列月泉/前列腺",
@@ -1510,8 +1510,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1599673964373,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "亻肖/俏",
@@ -1522,7 +1522,7 @@
   },
   {
     "group": "作者有话",
-    "id": 1599923464934,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "段落删除",
@@ -1533,7 +1533,7 @@
   },
   {
     "group": "作者有话",
-    "id": 1599923949229,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "感谢**的地雷",
@@ -1544,7 +1544,7 @@
   },
   {
     "group": "和谐",
-    "id": 1600136048203,
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "壁角",
@@ -1555,7 +1555,7 @@
   },
   {
     "group": "和谐",
-    "id": 1600175849971,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "jing/精",
@@ -1565,8 +1565,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1600177136452,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "发l情",
@@ -1576,8 +1576,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1600178772934,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "强l暴",
@@ -1587,8 +1587,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1600182684818,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "情l欲",
@@ -1598,8 +1598,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1600182710087,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "调l情",
@@ -1609,8 +1609,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1600214770913,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "蹂l躏",
@@ -1621,7 +1621,7 @@
   },
   {
     "group": "和谐",
-    "id": 1600442215552,
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "qiāng/枪",
@@ -1632,7 +1632,7 @@
   },
   {
     "group": "排版",
-    "id": 1600754253402,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "排版：拆分长句子①",
@@ -1643,7 +1643,7 @@
   },
   {
     "group": "排版",
-    "id": 1600754314103,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "排版：拆分长段落",
@@ -1654,7 +1654,7 @@
   },
   {
     "group": "冗余",
-    "id": 1600754764554,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "冗余：广告",
@@ -1664,8 +1664,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1600907199008,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "qín_shòu",
@@ -1675,8 +1675,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1600911752417,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "tǐ/体",
@@ -1686,19 +1686,19 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1600912845859,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
-    "isRegex": false,
-    "name": "fēng_liú",
+    "isRegex": true,
+    "name": "fengliu/风流",
     "order": 0,
-    "pattern": "fēng_liú",
+    "pattern": "((fēng_liú)|(?i)(风|f(e|ē)ng)(l[i|í]u)(?=[倜]))",
     "replacement": "风流",
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1600913547521,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "jìn_guǒ",
@@ -1708,8 +1708,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1600924543835,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "yòu_nǚ",
@@ -1719,8 +1719,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1600926445955,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "nuè_liàn",
@@ -1730,8 +1730,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1600926460699,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "shí_bā_jìn",
@@ -1741,8 +1741,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1600930458482,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "làn_jiāo",
@@ -1753,7 +1753,7 @@
   },
   {
     "group": "和谐",
-    "id": 1600947600847,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "6/陆",
@@ -1763,8 +1763,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1601130796033,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "大6",
@@ -1774,8 +1774,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1601183777758,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "jq/奸情",
@@ -1785,8 +1785,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1601617128119,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "qiang/枪",
@@ -1796,8 +1796,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1601624229485,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "欲火",
@@ -1807,19 +1807,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1601635128315,
-    "isEnabled": true,
-    "isRegex": false,
-    "name": "你是天才，一秒记住：三千五中文网，网址",
-    "order": 0,
-    "pattern": "你是天才，一秒记住：三千五中文网，网址",
-    "replacement": "",
-    "scope": ""
-  },
-  {
-    "group": "",
-    "id": 1601669809696,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "se/色",
@@ -1829,8 +1818,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1601670830691,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "猎艳",
@@ -1841,7 +1830,7 @@
   },
   {
     "group": "冗余",
-    "id": 1601907038716,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "分卷阅读",
@@ -1851,8 +1840,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1601942533184,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "sai/塞",
@@ -1863,7 +1852,7 @@
   },
   {
     "group": "冗余",
-    "id": 1601952369617,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "您可以在百度里搜索 查找最新章节！",
@@ -1874,7 +1863,7 @@
   },
   {
     "group": "冗余",
-    "id": 1602035837556,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "重复目录",
@@ -1884,8 +1873,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1602633240198,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "拔吊无情/拔屌无情",
@@ -1895,19 +1884,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1603002604033,
-    "isEnabled": true,
-    "isRegex": false,
-    "name": "&nb",
-    "order": 0,
-    "pattern": "&nb",
-    "replacement": "",
-    "scope": ""
-  },
-  {
     "group": "和谐",
-    "id": 1603602550448,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "口申口今/呻吟",
@@ -1917,8 +1895,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1604211183278,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "meifu/美妇",
@@ -1928,19 +1906,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1604211243296,
-    "isEnabled": true,
-    "isRegex": true,
-    "name": "fengliu/风流",
-    "order": 0,
-    "pattern": "(?i)(风|f(e|ē)ng)(l[i|í]u)(?=[倜])",
-    "replacement": "风流",
-    "scope": ""
-  },
-  {
-    "group": "",
-    "id": 1604212958906,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "风sao/风骚",
@@ -1951,7 +1918,7 @@
   },
   {
     "group": "和谐",
-    "id": 1604213588715,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "shen/身",
@@ -1961,8 +1928,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1604214062906,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "chunxiao/春宵",
@@ -1972,8 +1939,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1604230445682,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "mingqi/名器",
@@ -1984,7 +1951,7 @@
   },
   {
     "group": "和谐",
-    "id": 1604239578705,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "ji/妓",
@@ -1995,7 +1962,7 @@
   },
   {
     "group": "和谐",
-    "id": 1604666852982,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "yin/阴",
@@ -2006,7 +1973,7 @@
   },
   {
     "group": "和谐",
-    "id": 1604667100123,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "ri/日",
@@ -2016,8 +1983,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1605429023828,
+    "group": "和谐",
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "shizongle/失踪了",
@@ -2028,7 +1995,7 @@
   },
   {
     "group": "和谐",
-    "id": 1605485255769,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "tang/躺",
@@ -2039,7 +2006,7 @@
   },
   {
     "group": "和谐",
-    "id": 1605521122331,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "she/社",
@@ -2050,7 +2017,7 @@
   },
   {
     "group": "和谐",
-    "id": 1605604511784,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "chou/抽",
@@ -2060,19 +2027,8 @@
     "scope": ""
   },
   {
-    "group": "",
-    "id": 1605858214613,
-    "isEnabled": true,
-    "isRegex": true,
-    "name": "咪咪阅读",
-    "order": 0,
-    "pattern": "(.*咪咪阅读.*\\n)",
-    "replacement": "",
-    "scope": ""
-  },
-  {
     "group": "和谐",
-    "id": 1605871219705,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "xie/邪",
@@ -2083,7 +2039,7 @@
   },
   {
     "group": "和谐",
-    "id": 1606002895420,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "du/毒",
@@ -2094,7 +2050,7 @@
   },
   {
     "group": "和谐",
-    "id": 1607951006915,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "兽",
@@ -2105,7 +2061,7 @@
   },
   {
     "group": "和谐",
-    "id": 1607951276420,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "□□/分身",
@@ -2116,7 +2072,7 @@
   },
   {
     "group": "净化",
-    "id": 592,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "净化：求月票",
@@ -2127,7 +2083,7 @@
   },
   {
     "group": "净化",
-    "id": 597,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "净化：本地书籍epub",
@@ -2138,7 +2094,7 @@
   },
   {
     "group": "净化",
-    "id": 598,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "净化：HTML标签<div>",
@@ -2149,7 +2105,7 @@
   },
   {
     "group": "净化",
-    "id": 606,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "排版：拆分长段落",
@@ -2160,7 +2116,7 @@
   },
   {
     "group": "净化",
-    "id": 617,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "标记段落：净化 ன",
@@ -2171,7 +2127,7 @@
   },
   {
     "group": "净化",
-    "id": 671,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "净化：ன ண இ ⚑ ",
@@ -2182,7 +2138,7 @@
   },
   {
     "group": "和谐",
-    "id": 1596746952422,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "jj/鸡鸡",
@@ -2193,7 +2149,7 @@
   },
   {
     "group": "段落",
-    "id": 1599313226980,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "删除分节阅读",
@@ -2204,7 +2160,7 @@
   },
   {
     "group": "和谐",
-    "id": 1599559613967,
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "拔X无情",
@@ -2215,7 +2171,7 @@
   },
   {
     "group": "和谐",
-    "id": 1599613683118,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "qj/强奸",
@@ -2226,7 +2182,7 @@
   },
   {
     "group": "和谐",
-    "id": 1599636194668,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "ZF/政府",
@@ -2237,7 +2193,7 @@
   },
   {
     "group": "和谐",
-    "id": 1599636896744,
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "she尖/舌尖",
@@ -2248,7 +2204,7 @@
   },
   {
     "group": "和谐",
-    "id": 1599636961084,
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "做爱",
@@ -2259,7 +2215,7 @@
   },
   {
     "group": "和谐",
-    "id": 1599636990314,
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "米且/粗",
@@ -2270,7 +2226,7 @@
   },
   {
     "group": "和谐",
-    "id": 1599637114924,
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "口土氵夜/唾液",
@@ -2281,7 +2237,7 @@
   },
   {
     "group": "和谐",
-    "id": 1599637172896,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "口耑/喘",
@@ -2292,7 +2248,7 @@
   },
   {
     "group": "和谐",
-    "id": 1599637203859,
+    "id": 0,
     "isEnabled": true,
     "isRegex": true,
     "name": "忄生/性",
@@ -2303,7 +2259,7 @@
   },
   {
     "group": "和谐",
-    "id": 1599637359136,
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "耳又悦/取悦",
@@ -2314,7 +2270,7 @@
   },
   {
     "group": "和谐",
-    "id": 1599637429645,
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "弓虽势/强势",
@@ -2325,7 +2281,7 @@
   },
   {
     "group": "和谐",
-    "id": 1599637480596,
+    "id": 0,
     "isEnabled": true,
     "isRegex": false,
     "name": "扌京/掠",
