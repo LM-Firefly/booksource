@@ -28848,7 +28848,7 @@
     "searchUrl": "@js:\nif(\/^##\/.test(key)){\n\tresult = \"https:\/\/android.jjwxc.net\/androidapi\/search?versionCode=191&keyword={{key}}&type=1&page={{page}}&searchType=8&sortMode=DESC\"\n\t}else{\n\t\tresult = 'http:\/\/www.jjwxc.net\/bookbase.php?searchkeywords={{key}}&page={{page}},{\"charset\": \"gbk\"}'\n\t\t}",
     "variableComment": "1、书籍变量（当前书）\n填写 [去章节序号] —— 去除章节序号\n填写[章节名]  ——  变为第xx章 章节名\n\n填写 [目录简介【符号】] —— 章节简介放到目录列表，正文不出现 符号：跟章节名连接时中间的符号，如 目录简介【 】，中间将为空格\n\n填写 [评论+评论数量]——如 评论50  则可以显示50条评论，数量必填\n\n填写 [开启购买\/关闭购买]  —— 如 开启购买 则会开启自动购买下五章【确认以后点右上角三点刷新才会生效，使用完毕后最好删除，避免重复请求】\n\n2、源变量（所有书）\n同书籍变量",
     "weight": 0
-  }，
+  },
   {
     "bookSourceComment": "",
     "bookSourceGroup": "💵 正版",
