@@ -6369,16 +6369,17 @@
     "lastUpdateTime": 1696084581153,
     "respondTime": 2729,
     "ruleBookInfo": {
-      "author": ".info@span@text##.*\\s",
-      "coverUrl": ".bookimg@img@src",
-      "intro": ".intro@textNodes##(^|[。！？]+[”」）】]?)##$1<br>",
+      "author": "class.info@p.0@span@text##文 \/ ",
+      "coverUrl": "a > img@src",
+      "intro": "class.intro@text## 飞速中文网.*",
       "kind": ".info@p.1@text##.*：|\\s..:.*",
-      "lastChapter": ".intro@a@text##正文卷.|正文.|VIP卷.|默认卷.|卷_|VIP章节.|免费章节.|章节目录.|最新章节.|[\\(（【].*?[求更票谢乐发订合补加架字修Kk].*?[】）\\)]",
-      "name": ".info@a.0@text",
+      "lastChapter": "p:nth-child(10) > a@text##正文卷.|正文.|VIP卷.|默认卷.|卷_|VIP章节.|免费章节.|章节目录.|最新章节.|[\\(（【].*?[求更票谢乐发订合补加架字修Kk].*?[】）\\)]",
+      "name": "p:nth-child(2) > a@text",
       "wordCount": ".info@p.-1@text##.*字数.|\\s总推.*"
     },
     "ruleContent": {
-      "content": "id.content@p!0:-1:-2@html"
+      "content": "id.content@html##飞速中文.com 中文域名一键直达|最快更新.*|手机请访问.*",
+      "nextContentUrl": ""
     },
     "ruleExplore": {
       "author": "li.4@text",
@@ -6392,22 +6393,23 @@
     "ruleReview": {},
     "ruleSearch": {
       "author": "div.1@ownText##\\[\\s|\\s\\|.*",
-      "bookList": "div.book",
-      "bookUrl": "a.0@href",
+      "bookList": "class.listbox@class.clearfix",
+      "bookUrl": "id.CListTitle.0@tag.a@href",
+      "checkKeyWord": "我的",
       "coverUrl": "",
-      "intro": "div.-1@text",
-      "kind": "a.1:2@text&&div.1@ownText##.*\\|\\s|\\s]|\\s更新|小说",
-      "lastChapter": "a.3@text##正文卷.|正文.|VIP卷.|默认卷.|卷_|VIP章节.|免费章节.|章节目录.|最新章节.|[\\(（【].*?[求更票谢乐发订合补加架字修Kk].*?[】）\\)]",
-      "name": "a.0@text",
+      "intro": "id.CListText@text",
+      "kind": "id.CListTitle.0@tag.a.2@text##.*\\|\\s|\\s]|\\s更新|小说",
+      "lastChapter": "id.CListTitle.0@tag.a.3@text##正文卷.|正文.|VIP卷.|默认卷.|卷_|VIP章节.|免费章节.|章节目录.|最新章节.|[\\(（【].*?[求更票谢乐发订合补加架字修Kk].*?[】）\\)]",
+      "name": "id.CListTitle.0@tag.a@tag.b@text",
       "wordCount": ""
     },
     "ruleToc": {
-      "chapterList": ".chapterlist@li@a",
+      "chapterList": "class.chapterlist@class.clearfix@tag.li",
       "chapterName": "text####正文卷.|正文.|VIP卷.|默认卷.|卷_|VIP章节.|免费章节.|章节目录.|最新章节.|[\\(（【].*?[求更票谢乐发订合补加架字修Kk].*?[】）\\)]",
-      "chapterUrl": "href",
+      "chapterUrl": "tag.a.0@href",
       "updateTime": "title"
     },
-    "searchUrl": "/book/search.aspx?SearchKey={{key}}&SearchClass=1&SeaButton=,{\n  \"charset\": \"gb2312\",\n  \"method\": \"get\"\n}",
+    "searchUrl": "\/book\/search.aspx?SearchKey={{key}}&SearchClass=1&SeaButton=,{\"charset\": \"gbk\"}",
     "weight": 0
   },
   {
@@ -8247,50 +8249,52 @@
     "weight": 0
   },
   {
-    "bookSourceComment": "By~江湖",
+    "bookSourceComment": "HINOTORI改：添加请求头，修复乱码",
     "bookSourceGroup": "🍺 特优",
     "bookSourceName": "🍺 键盘小说网",
     "bookSourceType": 0,
-    "bookSourceUrl": "https://www.janpn.com/",
+    "bookSourceUrl": "http:\/\/www.janpn.info",
     "customOrder": 0,
     "enabled": true,
     "enabledCookieJar": true,
     "enabledExplore": true,
-    "exploreUrl": "玄幻奇幻::/xuanhuanqihuan/list-1-{{page}}.html\n武侠修真::/wuxiaxiuzhen/list-2-{{page}}.html\n现代都市::/xiandaidushi/list-3-{{page}}.html\n历史军事::/lishijunshi/list-4-{{page}}.html\n游戏竞技::/youxijingji/list-5-{{page}}.html\n科幻灵异::/kehuanlingyi/list-6-{{page}}.html\n女生言情::/nvshengyanqing/list-7-{{page}}.html\n其他类型::/qitaleixing/list-8-{{page}}.html",
-    "lastUpdateTime": 1655555192495,
-    "loginUrl": "",
+    "exploreUrl": "玄幻::\/xuanhuanqihuan\/list-1-{{page}}.html\r\n修真::\/wuxiaxiuzhen\/list-2-{{page}}.html\r\n都市::\/xiandaidushi\/list-3-{{page}}.html\r\n军史::\/lishijunshi\/list-4-{{page}}.html\r\n网游::\/youxijingji\/list-5-{{page}}.html\r\n科幻::\/kehuanlingyi\/list-6-{{page}}.html\r\n言情::\/nvshengyanqing\/list-7-{{page}}.html\r\n其他::\/qitaleixing\/list-8-{{page}}.html",
+    "header": "{\n  \"User-Agent\": \"Mozilla\/5.0 (Linux; Android 10; PAHM00 Build\/QKQ1.191008.001; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/77.0.3865.92 Mobile Safari\/537.36\"\n}",
+    "lastUpdateTime": 1713773162164,
     "respondTime": 180000,
     "ruleBookInfo": {
-      "author": ".col-md-12@p.0@text##by|著",
-      "init": "",
-      "intro": "p.bookIntro@text",
-      "kind": "h3@text&&.col-md-12 p.1@text@js:\nlet tag = []\nfor(let i in result){tag.push(String(result[i]))}\nif(!tag[0].startsWith(\"《\")){\n  tag[0] = tag[0].replace(/小说.*/,\"\")\n  tag[1] = tag[1].replace(/更新时间：/,\"\")\n  tag\n}else{\n\ttag[1].replace(/更新时间：/,\"\")\n\t}",
-      "lastChapter": "i.fa-refresh + a@text",
-      "name": "h3@text##.*《|》.*",
-      "tocUrl": "",
-      "wordCount": ""
+        "author": "class.col-md-12@tag.p.0@text##by|\\s著",
+        "coverUrl": "",
+        "intro": "\/\/*[@name='description']\/@content",
+        "kind": "class.col-md-12@tag.p.1@text##更新时间：",
+        "name": "class.breadcrumb@textNodes##>",
+        "tocUrl": "class.btn btn-primary@href"
     },
     "ruleContent": {
-      "content": "id.htmlContent@html",
-      "nextContentUrl": "text.下一页@href"
+        "content": "id.htmlContent@html"
     },
     "ruleExplore": {
-      "bookList": ""
+        "author": "",
+        "bookList": "class.list@a",
+        "bookUrl": "a@href",
+        "lastChapter": "class.glyphicon glyphicon-bullhorn@text",
+        "name": "a@title"
     },
+    "ruleReview": {},
     "ruleSearch": {
-      "author": "class.shop-info.1@text##\\[著\\]",
-      "bookList": "class.list@a",
-      "bookUrl": "href@js:\nlet href = String(result)\ntry{\nif(!href.match(/www/)){\n\t  \"/book/\"+ href.match(/\\/\\/(.*)\\.janpn/)[1] + \".html\"\n\t}\n\t}\n\tcatch(e){href}\n",
-      "checkKeyWord": "偷香高手",
-      "lastChapter": "class.shop-info.2@span@text",
-      "name": "class.shop-info.0@b@text##《|》"
+        "author": "class.shop-info!0:2@text##\\[.*$",
+        "bookList": "class.list@a",
+        "bookUrl": "a@href",
+        "coverUrl": "",
+        "lastChapter": "class.glyphicon glyphicon-bullhorn@text",
+        "name": "a@title"
     },
     "ruleToc": {
-      "chapterList": "ul.panel-chapterlist a",
-      "chapterName": "text",
-      "chapterUrl": "href"
+        "chapterList": "class.panel-body panel-chapterlist@li",
+        "chapterName": "a@text",
+        "chapterUrl": "a@href"
     },
-    "searchUrl": "/search.php?q={{key}}&s=15947871991047423724",
+    "searchUrl": "http:\/\/www.janpn.info\/search.php?q={{key}}",
     "weight": 0
   },
   {
@@ -10531,6 +10535,62 @@
       "chapterUrl": "tag.a@href"
     },
     "searchUrl": "https://www.00ksw.com/search.php,{\n\"charset\": \"gbk\",\n\"method\": \"POST\",\n\"body\": \"keyword={{key}}\"\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "🍺 特优",
+    "bookSourceName": "🍺 零点小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https:\/\/www.lingdxsw.org",
+    "bookUrlPattern": "",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻 ::\/list\/1-{{page}}.html\n仙侠 ::\/list\/2-{{page}}.html\n言情 ::\/list\/3-{{page}}.html\n历史 ::\/list\/4-{{page}}.html\n网游 ::\/list\/5-{{page}}.html\n科幻 ::\/list\/6-{{page}}.html\n恐怖 ::\/list\/7-{{page}}.html\n其他 ::\/list\/8-{{page}}.html\n总排行榜::\/book\/allvisit-{{page}}.html\n本周排行榜::\/book\/weekvisit-{{page}}.html\n当月排行榜::\/book\/monthvisit-{{page}}.html\n总推荐榜::\/book\/allvote-{{page}}.html\n本周推荐榜::\/book\/weekvote-{{page}}.html\n当月推荐榜::\/book\/monthvote-{{page}}.html",
+    "header": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/123.0.0.0 Safari\/537.36",
+    "lastUpdateTime": 1713780666816,
+    "respondTime": 180022,
+    "ruleBookInfo": {
+        "author": "@get:{a}",
+        "coverUrl": "@get:{c}",
+        "init": "@put:{n:\"[property$=book_name]@content\",\na:\"[property$=author]@content\",\nk:\"[property~=category|status|update_time]@content\",\nl:\"[property$=latest_chapter_name]@content\",\ni:\"[property$=description]@content\",\nc:\"[property$=image]@content\"}",
+        "intro": "@get:{i}",
+        "kind": "@get:{k}",
+        "lastChapter": "@get:{l}",
+        "name": "@get:{n}",
+        "wordCount": ".blue:nth-child(3)"
+    },
+    "ruleContent": {
+        "content": "id.htmlContent@html##本章未完，点击下一页继续阅读|(.*\/.*)",
+        "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": {
+        "author": "a.2@text",
+        "bookList": ".media||.article li",
+        "bookUrl": "a@href",
+        "coverUrl": "img@src",
+        "kind": "0",
+        "name": "h4@text||a@text"
+    },
+    "ruleReview": {},
+    "ruleSearch": {
+        "author": "tag.li.2@text",
+        "bookList": "class.mySearch@ul",
+        "bookUrl": "tag.li.0@tag.a@href",
+        "checkKeyWord": "我的",
+        "kind": "",
+        "lastChapter": "tag.li.1@tag.a@text",
+        "name": "tag.li.0@tag.a@text",
+        "wordCount": "tag.li.3@text##大小："
+    },
+    "ruleToc": {
+        "chapterList": "class.panel-body panel-chapterlist.1@dd",
+        "chapterName": "a.0@text",
+        "chapterUrl": "a.0@href"
+    },
+    "searchUrl": "\/modules\/article\/search.php?searchkey={{key}},{\"charset\": \"gbk\"}",
     "weight": 0
   },
   {
@@ -19488,18 +19548,20 @@
     "weight": 0
   },
   {
-    "bookSourceComment": "来自boavine（boavine@163.com）\n自用",
+    "bookSourceComment": "来自boavine（boavine@163.com）\n自用\n频繁搜索会导致访问访问频率过高要反反复复输验证码\n可通过代理使用或换ip解决\n点击登录输入验证码有一定概率恢复",
     "bookSourceGroup": "🍺 特优",
     "bookSourceName": "🍺 西瓜书屋",
     "bookSourceType": 0,
     "bookSourceUrl": "https:\/\/www.xiguasw.com",
+    "concurrentRate": "1\/10000",
     "customOrder": 0,
     "enabled": true,
     "enabledCookieJar": true,
     "enabledExplore": true,
-    "exploreUrl": "都市小说::\/dushixiaoshuo\/\n青春小说::\/qingchunxiaoshuo\/\n悬疑小说::\/xuanyixiaoshuo\/\n游戏竞技::\/youxijingji\/\n科幻小说::\/kehuanxiaoshuo\/\n架空历史::\/jiakonglishi\/\n东方玄幻::\/dongfangxuanhuan\/\n更新作品::\/shuku\/\n全本作品::\/quanben.html\n热门作品::\/top.html\n我的书架::\/user\/",
-    "header": "{\"referer\": \"{{source.getKey()}}\/\",\n\"x-requested-with\": \"mark.via\",\n\"accept-language\": \"zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7\",\n\"user-agent\": \"Mozilla\/5.0 (Linux; Android 10; PACM00 Build\/QP1A.190711.020) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/108.0.5359.79 Mobile Safari\/537.36\"}",
-    "lastUpdateTime": 0,
+    "exploreUrl": "都市小说::https:\/\/www.xiguasw.com\/shuku\/0_0_0_{{page}}_0_3_0.html\n青春小说::https:\/\/www.xiguasw.com\/shuku\/0_0_0_{{page}}_0_4_0.html\n悬疑小说::https:\/\/www.xiguasw.com\/shuku\/0_0_0_{{page}}_0_5_0.html\n游戏竞技::https:\/\/www.xiguasw.com\/shuku\/0_0_0_{{page}}_0_6_0.html\n科幻小说::https:\/\/www.xiguasw.com\/shuku\/0_0_0_{{page}}_0_7_0.html\n架空历史::https:\/\/www.xiguasw.com\/shuku\/0_0_0_{{page}}_0_8_0.html\n东方玄幻::https:\/\/www.xiguasw.com\/shuku\/0_0_0_{{page}}_0_9_0.html\n更新作品::https:\/\/www.xiguasw.com\/shuku\/0_0_0_{{page}}_0_0_0.html\n全本作品::https:\/\/www.xiguasw.com\/shuku\/0_2_0_{{page}}_0_0_0.html\n热门作品::https:\/\/www.xiguasw.com\/shuku\/0_0_3_{{page}}_0_0_0.html\n我的书架::\/user\/",
+    "header": "{\n\"User-Agent\": \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/114.0.0.0 Safari\/537.36 Edg\/114.0.1788.0\"\n}",
+    "lastUpdateTime": 1713882771828,
+    "loginCheckJs": "",
     "loginUrl": "https:\/\/www.xiguasw.com\/user\/login.html",
     "respondTime": 180000,
     "ruleBookInfo": {
@@ -19515,10 +19577,19 @@
         "content": "<js>\nurl=\"https:\"+result.match(\/initTxt\\(\"([^\"]+)\",\"[^\"]+\"\\)\/)[1];\nr=String(java.ajax(url).match(\/_txt_call\\(([\\s\\S]+\\})\\)\/)[1]);\nvar r = eval('(' + r + ')');\n\t\t\t\tif(r.content!=null){\t\t\t\t\n      var e = r.replace;\n\t\t\t\tfor (var n in e) {\n\t\t\t\t\tvar i = new RegExp(e[n], \"ig\");\n\t\t\t\t\tr.content = r.content.replace(i, n)\n\t\t\t\t}\n\t\t\t\tresult=r.content\n\t\t\t\t\t}else{result=\"章节加载失败，或者容正在手打中，请【收藏本站】稍访问或者联系管理员更新~\"}\n<\/js>",
         "imageDecode": "@js:ava.base64Decode()"
     },
-    "ruleExplore": {},
+    "ruleExplore": {
+        "author": "dl@dt@span@text||class.s4@text||class.s5@text",
+        "bookList": "<js>\n\/\/java.log(result);\nif(result.match(\/请输入验证码继续访问\/)){\n  while (String(result).includes(\"请输入验证码\")) {\n    java.longToast(\"请输入验证码！反复输入无效可点击登录在弹窗里验证或使用魔法\");\n    url=baseUrl+\"?_waform\";\n    imgurl = \"https:\/\/www.xiguasw.com\"+java.getString(\"img@src\");\n    verify = java.getVerificationCode(imgurl);\n    body = `__input=${verify}`;\n    rurl = url+JSON.stringify({\n  \"body\": body,\n  \"headers\": {\n    \"referer\": \"https:\/\/www.xiguasw.com\/\"\n  },\n  \"method\": \"POST\"\n})\n    java.log(rurl);\n    Packages.java.lang.Thread.sleep(3000);\n    result = rurl;\n   \/\/ java.log(result);\n  }\n} result;\n<\/js>\nclass.item&&class.r@tag.li&&class.l@tag.li",
+        "bookUrl": "dl@dt@a@href||class.s2@a@href",
+        "coverUrl": "",
+        "intro": "dl@dd@text||",
+        "kind": "class.s1@text##\\[(.+)\\]##$1",
+        "lastChapter": "class.s3@text",
+        "name": "dl@dt@a@text||class.s2@text"
+    },
     "ruleSearch": {
         "author": "class.s4@text",
-        "bookList": "id.newscontent@ul@tag.li",
+        "bookList": "tag.li",
         "bookUrl": "class.s2@a@href",
         "checkKeyWord": "",
         "kind": "class.s1@text##\\[(.+)\\]##$1",
@@ -19532,7 +19603,7 @@
         "nextTocUrl": "class.pages@a.-1@href",
         "preUpdateJs": ""
     },
-    "searchUrl": "\/search\/8g.html,{\n\"method\": \"POST\",\n\"body\": \"keyword={{key}}\"\n}",
+    "searchUrl": "\/search\/8g9.html,{\n\"method\": \"POST\",\n\"body\": \"keyword={{key}}\"\n}\n@js:java.put('key',key);result;",
     "weight": 0
   },
   {
