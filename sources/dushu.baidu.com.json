@@ -1,0 +1,61 @@
+{
+    "name": "百度小说",
+    "url": "dushu.baidu.com",
+    "version": 100,
+    "search": {
+        "url": "https://dushu.baidu.com/api/getSearchResultData?query=${key}",
+        "list": "$..novelList[*]",
+        "name": "$.title",
+        "author": "$.author",
+        "summary": "$.description",
+        "cover": "$.cover",
+        "detail": "https://boxnovel.baidu.com/boxnovel/wiseapi/getBookInfo?bookid=${$.bookId}"
+    },
+    "detail": {
+        "summary": "$..summary",
+        "status": "$..book_status",
+        "category": "$..category_name@replace->_-> ",
+        "words": "$..word_sum",
+        "update": "$.data.update_time",
+        "lastChapter": "$..last_chapter_title",
+        "catalog": ""
+    },
+    "rank": [
+        {
+            "title": "男频热门榜",
+            "url": "https://dushu.baidu.com/api/getRankDetailData?page=${page}&count=10&query=%E7%94%B7%E7%94%9F%E7%83%AD%E6%A6%9C&channel=%E7%94%B7%E9%A2%91",
+            "page": 1,
+            "size": 10
+        },
+        {
+            "title": "玄幻热门榜",
+            "url": "https://dushu.baidu.com/api/getRankDetailData?page=${page}&count=10&query=%E7%8E%84%E5%B9%BB%E7%83%AD%E9%97%A8%E6%A6%9C&cate=%E7%8E%84%E5%B9%BB",
+            "page": 1,
+            "size": 10
+        },
+        {
+            "title": "都市热门榜",
+            "url": "https://dushu.baidu.com/api/getRankDetailData?page=${page}&count=10&query=%E9%83%BD%E5%B8%82%E7%83%AD%E9%97%A8%E6%A6%9C&cate=%E9%83%BD%E5%B8%82",
+            "page": 1,
+            "size": 10
+        },
+        {
+            "title": "女频热门榜",
+            "url": "https://dushu.baidu.com/api/getRankDetailData?page=${page}&count=10&query=%E5%A5%B3%E7%94%9F%E7%83%AD%E6%A6%9C&channel=%E5%A5%B3%E9%A2%91",
+            "page": 1,
+            "size": 10
+        },
+        {
+            "title": "古代言情榜",
+            "url": "https://dushu.baidu.com/api/getRankDetailData?page=${page}&count=10&query=%E5%8F%A4%E4%BB%A3%E8%A8%80%E6%83%85%E6%A6%9C&cate=%E5%8F%A4%E4%BB%A3%E8%A8%80%E6%83%85",
+            "page": 1,
+            "size": 10
+        },
+        {
+            "title": "现代言情榜",
+            "url": "https://dushu.baidu.com/api/getRankDetailData?page=${page}&count=10&query=%E7%8E%B0%E4%BB%A3%E8%A8%80%E6%83%85%E6%A6%9C&cate=%E7%8E%B0%E4%BB%A3%E8%A8%80%E6%83%85",
+            "page": 1,
+            "size": 10
+        }
+    ]
+}

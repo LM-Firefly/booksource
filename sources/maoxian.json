@@ -1,0 +1,28 @@
+{
+  "name": "毛线手机阅读",
+  "url": "wap.kanmaoxian.com",
+  "version": 100,
+  "search": {
+    "url": "https://wap.kanmaoxian.com/s.php@post->submit=&type=articlename&s=${key}",
+    "charset": "gbk",
+    "list": "ul > li",
+    "name": "a.blue",
+    "author": "a:nth-child(3)",
+    "detail": "a.blue"
+  },
+  "detail": {
+    "cover": "#xinxi > div.xsfm > img",
+    "summary": "#xinxi > div.jianjie.bk",
+    "lastChapter": "#xinxi > div.xx > ul > li:nth-child(4) > a",
+    "name": "#xinxi > div.xx > ul > li:nth-child(1)",
+    "catalog": "body > div:nth-child(3) > section.zxjz.fk > div.gengduo > a"
+  },
+  "catalog": {
+    "list": "#zjlb > ul > li",
+    "name": "a",
+    "chapter": "a"
+  },
+  "chapter": {
+    "content": "#nr"
+  }
+}

@@ -1,0 +1,36 @@
+{
+    "name": "读一读免费阅读",
+    "url": "du1du.org",
+    "version": 101,
+    "search": {
+        "url": "http://du1du.org/search.htm?keyword=${key}",
+        "charset": "utf-8",
+        "list": "#novel-list > ul > li.list-group-item.clearfix:nth-child(n+2)",
+        "name": ".col-xs-3 > a",
+        "author": ".col-xs-2:nth-child(4)",
+        "cover": "",
+        "detail": ".col-xs-3>a"
+    },
+    "detail": {
+        "name": "meta[property=og:novel:book_name]@attr->content",
+        "author": "meta[property=og:novel:author]@attr->content",
+        "cover": "meta[property=og:image]@attr->content",
+        "summary": "#all",
+        "status": "li.col-xs-4:nth-child(3)",
+        "update": "li.col-xs-4:nth-child(4)@replace->更新时间：->",
+        "lastChapter": "meta[property=og:novel:latest_chapter_name]@attr->content",
+        "catalog": "li.col-xs-12.list-group-item.no-border.tac > a.btn.btn-danger"
+    },
+    "catalog": {
+        "list": "#chapters-list > li:nth-child(n+2)",
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": "#txtContent",
+        "filter": ["@script"]
+    },
+    "auth": {
+        "header": "User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36"
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "name": "百合会漫画",
+    "url": "m.yamibo.com",
+    "version": 101,
+    "search": {
+        "url": "https://m.yamibo.com/api/search-manga?k=${key}&page=1",
+        "list": "$.lists[*]",
+        "name": "$.workTitle",
+        "author": "$.author",
+        "cover": "$.cover",
+        "summary": "$.workIntro",
+        "detail": "https://www.yamibo.com/manga/${$.workId}"
+    },
+    "detail": {
+        "status": ".col-md-9 > p:nth-child(2)@match->(?<=作品状态：).+",
+        "update": ".col-md-9 > p:nth-child(10)@match->(?<=更新时间：：).+",
+        "lastChapter": ".work-nChpt@match->(?<=最新：).+"
+    },
+    "catalog": {
+        "list": ".panel-body > div.col-md-12 > div",
+        "name": "div > a",
+        "chapter": "div > a"
+    },
+    "chapter": {
+        "content": ".thumbnail",
+        "page": ".next > a:matches(下一页)"
+    },
+    "auth": {
+        "login": "https://www.yamibo.com/user/login",
+        "cookie": "www.yamibo.com",
+        "verify": "https://www.yamibo.com/my",
+        "logged": ".btn-danger@equal->申请身份验证",
+        "vip": "h5@equal->当前是付费章节，需要订阅后才能继续阅读"
+    },
+    "rank": [
+        {
+            "title":"条漫",
+            "url": "https://m.yamibo.com/manga/work-list?wt=条漫&page=${page}",
+            "page": 1
+        },
+        {
+            "title":"四格",
+            "url": "https://m.yamibo.com/manga/work-list?wt=四格&page=${page}",
+            "page": 1
+        },
+        {
+            "title":"绘本",
+            "url": "https://m.yamibo.com/manga/work-list?wt=绘本&page=${page}",
+            "page": 1
+        },
+        {
+            "title":"杂志",
+            "url": "https://m.yamibo.com/manga/work-list?wt=杂志&page=${page}",
+            "page": 1
+        },
+        {
+            "title":"合志",
+            "url": "https://m.yamibo.com/manga/work-list?wt=合志&page=${page}",
+            "page": 1
+        },        
+        {
+            "title":"翻页漫画",
+            "url": "https://m.yamibo.com/manga/work-list?wt=翻页漫画&page=${page}",
+            "page": 1
+        }
+    ]
+}

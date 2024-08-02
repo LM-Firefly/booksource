@@ -1,0 +1,33 @@
+{
+    "name": "书书网",
+    "url": "www.xiaoshuodaquan.com",
+    "version": 100,
+    "search": {
+        "url": "https://www.xiaoshuodaquan.com/bookso.php?kw=${key}",
+		"charset": "gbk",
+        "list": ".listconl>ul>li",
+        "name": ".width369>a:nth-child(1)",
+        "author": ".width111>a",
+        "cover": "",
+        "detail": ".width369>a:nth-child(1)"
+    },
+    "detail": {
+        "name": "h1",
+        "author": ".black>a",
+        "cover": ".con_limg>img",
+        "summary": ".r_cons",
+        "status": ".con_lwrap>span@attr->class@equal->ywjico",
+        "update": "",
+        "lastChapter": ".lastrecord>strong>a",
+        "catalog": ".r_tools>a:nth-child(2)"
+    },
+    "catalog": {
+        "list": ".clearfix>ul>li",
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": "#content",
+        "filter": ["@div", "@script"]
+    }
+}

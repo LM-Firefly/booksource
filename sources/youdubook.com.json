@@ -1,0 +1,77 @@
+{
+    "name": "有毒小说",
+    "url": "youdubook.com",
+    "version": 101,
+    "search": {
+        "url": "https://www.youdubook.com/booklibrary/index/str/0_0_0_0_0_0_0_${key}",
+        "list": ".BooklibraryList > ul > li:not(li.clear-x):not(li.clear)",
+        "name": "span > a",
+        "author": ".nickname",
+        "cover": "em > img@attr->data-original",
+        "detail": "span > a"
+    },
+    "detail": {
+        "status": "li.a",
+        "summary": ".synopsisCon",
+        "category": ".label > ul > li:nth-child(n+3)",
+        "words": ".Font@match->.+(?=字)",
+        "update": ".title > i@match->(?<=更新时间：).+",
+        "lastChapter": ".zhangjie > a > span:nth-child(1)",
+        "catalog": ""
+    },
+    "catalog": {
+        "list": ".chapter_list > ul > li",
+        "name": "a",
+        "chapter": "a@replace->readchapter/->booklibrary/membersinglechapter?chapter_id="
+    },
+    "chapter": {
+        "content": "$.data.show_content[*].content@decrypt->base64"
+    },
+    "auth": {
+        "login": "https://www.youdubook.com/user/login",
+        "header": "x-requested-with: XMLHttpRequest",
+        "cookie": "www.youdubook.com",
+        "verify": "saveMemberInfo",
+        "logged": "saveMemberInfo",
+        "vip": "$.msg@euqalNot->获取成功!",
+        "buy": "$.msg@equal->获取成功!",
+        "profile": "https://www.youdubook.com/user/favobook"
+    },
+    "rank": [
+        {
+            "title":"西幻传说",
+            "url": "https://www.youdubook.com/booklibrary/index/str/6_0_0_0_0_0_0?page=${page}",
+            "page": 1
+        },
+        {
+            "title":"东方仙侠",
+            "url": "https://www.youdubook.com/booklibrary/index/str/3_0_0_0_0_0_0?page=${page}",
+            "page": 1
+        },
+        {
+            "title":"游戏动漫",
+            "url": "https://www.youdubook.com/booklibrary/index/str/2_0_0_0_0_0_0?page=${page}",
+            "page": 1
+        },
+        {
+            "title":"科幻时空",
+            "url": "https://www.youdubook.com/booklibrary/index/str/9_0_0_0_0_0_0?page=${page}",
+            "page": 1
+        },
+        {
+            "title":"都市逸闻",
+            "url": "https://www.youdubook.com/booklibrary/index/str/8_0_0_0_0_0_0?page=${page}",
+            "page": 1
+        },
+        {
+            "title":"军事历史",
+            "url": "https://www.youdubook.com/booklibrary/index/str/7_0_0_0_0_0_0?page=${page}",
+            "page": 1
+        },
+        {
+            "title":"诡秘悬疑",
+            "url": "https://www.youdubook.com/booklibrary/index/str/10_0_0_0_0_0_0?page=${page}",
+            "page": 1
+        }
+    ]
+}

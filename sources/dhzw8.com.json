@@ -1,0 +1,33 @@
+{
+    "name": "大海中文网",
+    "url": "www.dhzw8.com",
+    "version": 100,
+    "search": {
+        "url": "https://www.dhzw8.com/modules/article/search.php@post->searchkey=${key}",
+        "charset": "gbk",
+        "list": "div.l > ul > li",
+        "name": ".s2",
+        "author": ".s4",
+        "cover": "",
+        "summary": "",
+        "detail": ".s2 > a"
+    },
+    "detail": {
+        "name": "div.infotitle > h1",
+        "author": "div.infotitle > i:nth-child(2)",
+        "cover": "#fmimg > img",
+        "summary": ".intro",
+        "status": "div.infotitle > i:nth-child(4)",
+        "update": "",
+        "lastChapter": "div.bookurl > a",
+        "catalog": ""
+    },
+    "catalog": {
+        "list": "#list > dl > dd",
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": "#BookText"
+    }
+}

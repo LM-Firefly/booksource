@@ -1,0 +1,33 @@
+{
+    "name": "稻草人书屋",
+    "url": "www.daocaorenshuwu.com",
+    "version": 103,
+    "search": {
+        "url": "https://www.daocaorenshuwu.com/plus/search.php?q=${key}",
+        "list": "tbody > tr",
+        "name": "a@attr->title",
+        "author": "td:nth-child(2)",
+        "detail": "a"
+    },
+    "detail": {
+        "name": "meta[property=og:novel:book_name]@attr->content",
+        "author": "meta[property=og:novel:author]@attr->content",
+        "cover": "meta[property=og:image]@attr->content",
+        "summary": "meta[property=og:description]@attr->content",
+        "status": "meta[property=og:novel:status]@attr->content",
+        "update": "meta[property=og:novel:update_time]@attr->content",
+        "lastChapter": "meta[property=og:novel:latest_chapter_name]@attr->content"
+    },
+    "catalog": {
+        "list": "#all-chapter > div > div > div > div > a",
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": "#cont-text",
+        "filter": [
+            "#cont-text > style@match->(?<=.).+(?=\\{)"
+        ],
+        "page": "a:matches(下一页)"
+    }
+}

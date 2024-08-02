@@ -1,0 +1,149 @@
+{
+    "name": "百合会",
+    "url": "www.yamibo.com",
+    "version": 101,
+    "search": {
+        "url": "https://m.yamibo.com/api/search-novel?k=${key}",
+        "list": "$.lists[*]",
+        "name": "$.workTitle",
+        "author": "$.author",
+        "cover": "$.cover",
+        "summary": "$.workIntro",
+        "detail": "https://m.yamibo.com/novel/${$.workId}"
+    },
+    "detail": {
+        "status": "div:nth-child(8) > div:nth-child(2) > div:nth-child(2)@match->(?<=作品状态：).+",
+        "update": "div:nth-child(8) > div:nth-child(4) > div:nth-child(1)@match->(?<=更新时间：).+",
+        "lastChapter": ".work-nChpt@match->(?<=最新：).+"
+    },
+    "catalog": {
+        "list": ".modal-content > a",
+        "name": ".weui-cell__bd > p",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": "#content > p"
+    },
+    "rank": [
+        {
+            "title":"校园",
+            "url": "https://m.yamibo.com/novel/work-list?wt=校园&page=${page}",
+            "page": 1          
+        },        
+        {
+            "title":"都市",
+            "url": "https://m.yamibo.com/novel/work-list?wt=都市&page=${page}",
+            "page": 1          
+        },
+        {
+            "title":"玄幻",
+            "url": "https://m.yamibo.com/novel/work-list?wt=玄幻&page=${page}",
+            "page": 1
+        },
+        {
+            "title":"悬疑",
+            "url": "https://m.yamibo.com/novel/work-list?wt=悬疑&page=${page}",
+            "page": 1
+        },
+        {
+            "title":"宫廷",
+            "url": "https://m.yamibo.com/novel/work-list?wt=宫廷&page=${page}",
+            "page": 1          
+        },        
+        {
+            "title":"穿越",
+            "url": "https://m.yamibo.com/novel/work-list?wt=穿越&page=${page}",
+            "page": 1          
+        },
+        {
+            "title":"重生",
+            "url": "https://m.yamibo.com/novel/work-list?wt=重生&page=${page}",
+            "page": 1
+        },
+        {
+            "title":"悬疑",
+            "url": "https://m.yamibo.com/novel/work-list?wt=悬疑&page=${page}",
+            "page": 1
+        },
+        {
+            "title":"搞笑",
+            "url": "https://m.yamibo.com/novel/work-list?wt=搞笑&page=${page}",
+            "page": 1
+        },        
+        {
+            "title":"科幻",
+            "url": "https://m.yamibo.com/novel/work-list?wt=科幻&page=${page}",
+            "page": 1          
+        },
+        {
+            "title":"历史",
+            "url": "https://m.yamibo.com/novel/work-list?wt=历史&page=${page}",
+            "page": 1
+        },
+        {
+            "title":"奇幻",
+            "url": "https://m.yamibo.com/novel/work-list?wt=奇幻&page=${page}",
+            "page": 1
+        },
+        {
+            "title":"种田",
+            "url": "https://m.yamibo.com/novel/work-list?wt=种田&page=${page}",
+            "page": 1          
+        },        
+        {
+            "title":"现代",
+            "url": "https://m.yamibo.com/novel/work-list?wt=现代&page=${page}",
+            "page": 1          
+        },
+        {
+            "title":"古代",
+            "url": "https://m.yamibo.com/novel/work-list?wt=古代&page=${page}",
+            "page": 1
+        },
+        {
+            "title":"短篇",
+            "url": "https://m.yamibo.com/novel/work-list?wt=短篇&page=${page}",
+            "page": 1
+        },
+        {
+            "title":"征文",
+            "url": "https://m.yamibo.com/novel/work-list?wt=征文&page=${page}",
+            "page": 1
+        },
+        {
+            "title":"红组",
+            "url": "https://m.yamibo.com/novel/work-list?wt=红组&page=${page}",
+            "page": 1
+        },
+        {
+            "title":"白组",
+            "url": "https://m.yamibo.com/novel/work-list?wt=白组&page=${page}",
+            "page": 1          
+        },        
+        {
+            "title":"BE",
+            "url": "https://m.yamibo.com/novel/work-list?wt=BE&page=${page}",
+            "page": 1          
+        },
+        {
+            "title":"HE",
+            "url": "https://m.yamibo.com/novel/work-list?wt=HE&page=${page}",
+            "page": 1
+        },
+        {
+            "title":"正剧",
+            "url": "https://m.yamibo.com/novel/work-list?wt=正剧&page=${page}",
+            "page": 1
+        },
+        {
+            "title":"娱乐圈",
+            "url": "https://m.yamibo.com/novel/work-list?wt=娱乐圈&page=${page}",
+            "page": 1
+        },
+        {
+            "title":"2019征文",
+            "url": "https://m.yamibo.com/novel/work-list?wt=2019征文&page=${page}",
+            "page": 1
+        }        
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "name": "百书斋",
+    "url": "baishuzhai.com",
+    "version": 101,
+    "search": {
+        "url": "https://baishuzhai.com/searchbook.php?keyword=${key}",
+        "charset": "UTF-8",
+        "list": ".novelslist2>ul>li:nth-child(n+2)",
+        "name": ".s2>a",
+        "author": "li:nth-child(n+2)>.s4@match->(?<=作 者：).+",
+        "detail":".s2>a"
+    },
+    "detail": {
+        "cover":"#fmimg>img",
+        "author":"#info>p:nth-child(2)@match->(?<=作 者：).+",
+        "update": "#info>p:nth-child(4)@match->(?<=最后更新：).+",
+        "lastChapter": "#info>p:nth-child(5)>a",
+        "summary":"#intro"
+        },
+    "catalog": {
+        "list": "#list>dl>dd:nth-child(n+15)",
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": "#content"
+    }
+}

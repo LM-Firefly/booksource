@@ -1,0 +1,91 @@
+{
+    "name": "中国记忆力训练网",
+    "url": "jiyili.net",
+    "remarks": "该网站30秒内只能搜索1次资源",
+    "version": 100,
+    "search": {
+        "url": "http://book.jiyili.net/modules/article/search.php@post->searchtype=articlename&searchkey=${key}",
+	"charset": "gbk",
+        "list": "tr:nth-child(n+2)",
+        "name": "td:nth-child(1)",
+        "author": "td:nth-child(3)",
+        "detail": "td:nth-child(1) > a"
+    },
+    "detail": {
+        "summary": "p:nth-child(4) > span",
+        "catalog": "h1 > p > a"
+    },
+    "catalog": {
+        "list": ".novel_volume > div > ul > li",
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": ".novel_content"
+    },
+    "rank": [
+        {
+            "title":"记忆方法",
+            "url": "http://book.jiyili.net/modules/article/articlelist.php?class=1&page=${page}",
+            "page": 1,
+            "list":".movList3 > ul > li",
+            "name": "h3",
+            "cover": "a > img",
+            "detail": "h3 > a"            
+        },
+        {
+            "title":"思维导图",
+            "url": "http://book.jiyili.net/modules/article/articlelist.php?class=2&page=${page}",
+            "page": 1,
+            "list":".movList3 > ul > li",
+            "name": "h3",
+            "cover": "a > img",
+            "detail": "h3 > a"    
+        },
+        {
+            "title":"快速阅读",
+            "url": "http://book.jiyili.net/modules/article/articlelist.php?class=3",
+            "page": 1,
+            "list":".movList3 > ul > li",
+            "name": "h3",
+            "cover": "a > img",
+            "detail": "h3 > a"
+        },
+        {
+            "title":"大脑开发",
+            "url": "http://book.jiyili.net/modules/article/articlelist.php?class=4&page=${page}",
+            "page": 1,
+            "list":".movList3 > ul > li",
+            "name": "h3",
+            "cover": "a > img",
+            "detail": "h3 > a"    
+        },
+        {
+            "title":"亲子教育",
+            "url": "http://book.jiyili.net/modules/article/articlelist.php?class=5&page=${page}",
+            "page": 1,
+            "list":".movList3 > ul > li",
+            "name": "h3",
+            "cover": "a > img",
+            "detail": "h3 > a"    
+        },
+        {
+            "title":"成功励志",
+            "url": "http://book.jiyili.net/modules/article/articlelist.php?class=6&page=${page}",
+            "page": 1,
+            "list":".movList3 > ul > li",
+            "name": "h3",
+            "cover": "a > img",
+            "detail": "h3 > a"
+        },
+        {
+            "title":"其他书籍",
+            "url": "http://book.jiyili.net/modules/article/articlelist.php?class=7&page=${page}",
+            "page": 1,
+            "list":".movList3 > ul > li",
+            "name": "h3",
+            "cover": "a > img",
+            "detail": "h3 > a"    
+        }
+    ]
+}

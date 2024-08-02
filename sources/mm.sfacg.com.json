@@ -1,0 +1,42 @@
+{
+    "name": "SF漫画",
+    "url": "mm.sfacg.com",
+    "version": 100,
+    "search": {
+        "url": "https://api.sfacg.com/search/comics/result?q=${key}&expand=novels,comics,albums,chatnovelstags,typeName,authorName,intro,latestchaptitle,latestchapintro,tags,sysTags&sort=hot&page=0&size=12&systagids=",
+        "list": "$.data.comics",
+        "name": "$.comicName",
+        "author": "$.expand.authorName",
+        "cover": "$.comicCover",
+        "detail": "https://api.sfacg.com/comics/${$.comicId}?expand=typeName,intro,markCount,authorName,authorIntro,fav,bigComicCover,bigBgBanner,ticket,tags,originalauthor,authoravatar,discount,discountExpireDate,totalNeedFireMoney,originTotalNeedFireMoney"
+    },
+    "detail": {
+        "status": "$.data.isFinished@equal->false",
+        "summary": "$.data.expand.intro",
+        "category": "$.data.expand.tags",
+        "update": "$.data.lastUpdateTime@match->.+(?=T)",
+        "lastChapter": "$.data.latestChapterTitle",
+        "catalog": "https://api.sfacg.com/comics/${$.data.comicId}/chaps?expand=needFireMoney,originNeedFireMoney,chapcover"
+    },
+    "catalog": {
+        "list": "$.data[*]",
+        "orderBy": 1,
+        "name": "$.chapterTitle",
+        "chapter": "https://api.sfacg.com/comics/${$.comicId}/chappics/${$.pathName}?autoOrder=true"
+    },
+    "chapter": {
+        "content": "$.data@replace->https://coldpic.sfacg.com-><img src=https://coldpic.sfacg.com@replace->jpg\\?->jpg>",
+        "purify": ["w=\\d+&h=\\d+"]
+        
+    },
+    "auth": {
+        "login": "https://m.sfacg.com/login",
+        "header":"authorization: Basic YW5kcm9pZHVzZXI6MWEjJDUxLXl0Njk7KkFjdkBxeHE=",
+        "cookie": "sfacg.com",
+        "verify": "session_PC",
+        "logged": "session_PC",
+        "vip": "$.status.msg@equal->请支持作者的辛勤创作,VIP章节必须购买后才可阅读",
+        "buy": "$.status.httpCode@equal->200",
+        "profile": "https://m.sfacg.com/my/"
+    }
+}

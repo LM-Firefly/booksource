@@ -1,0 +1,24 @@
+{
+  "name": "亲亲小说",
+  "url": "www.770xs.com",
+  "version": 100,
+  "search": {
+    "url": "http://www.770xs.com/book.php?action=search&searchtype=novelname&searchkey=${key}",
+    "charset": "gbk",
+    "list": "#right_cont > div.ss_box",
+    "name": "span.sp_name > a",
+    "detail": "span.sp_name > a"
+  },
+  "detail": {
+    "name": "#info > h1"
+  },
+  "catalog": {
+    "list": "#list > dl > dd",
+    "orderBy": 0,
+    "name": "a",
+    "chapter": "a"
+  },
+  "chapter": {
+    "content": "#content > p"
+  }
+}

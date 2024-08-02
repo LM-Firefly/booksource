@@ -1,0 +1,34 @@
+{
+    "name": "米趣小说",
+    "url": "www.meegoq.com",
+    "version": 101,
+    "search": {
+        "url": "https://www.meegoq.com/search.htm?keyword=${key}",
+        "charset": "utf-8",
+        "list": ".lastest > ul > li",
+        "name": ".n2 > a",
+        "author": ".a2",
+        "cover": "",
+        "summary": "",
+        "detail": ".n2 > a"
+    },
+    "detail": {
+        "name": "meta[property=og:title]@attr->content",
+        "author": "meta[property=og:novel:author]@attr->content",
+        "cover": "meta[property=og:image]@attr->content",
+        "summary": "meta[property=og:description]@attr->content",
+        "status": "meta[property=og:novel:status]@attr->content",
+        "update": "meta[property=og:novel:update_time]@attr->content",
+        "lastChapter": "meta[property=og:novel:latest_chapter_name]@attr->content",
+        "catalog": ".btn.btn-info:nth-child(3)"
+    },
+    "catalog": {
+        "list": ".col3:gt(9)",
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": "#content",
+        "purify": ["(【本章节首发).*?(请记住网址】)","(天才一秒记住).+?(阅读网址：)","(本书来自).+?(.html)","(.思.路.客).+?(无弹窗！)","(ＷｗＷ).+?(ＣＯＭ)","【】|小说ＷｗＷ\\．⒉|\\?㈠|≠|\\.dt\\.com|手机用户请访问m\\.|read_conten"]
+    }
+}
