@@ -2702,6 +2702,63 @@
     "weight": 0
   },
   {
+    "bookSourceComment": "",
+    "bookSourceGroup": "🍺 特优",
+    "bookSourceName": "🍺 笔趣阁 tpyyc.com",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.tpyyc.com",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": false,
+    "exploreUrl": "",
+    "header": "{\n\"User-Agent\":\"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\",\"referer\":\"{{baseUrl}}\",\n}",
+    "lastUpdateTime": "1738716813072",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "intro": "[property=\"og:description\"]@content",
+      "kind": "[property=\"og:novel:category\"]@content",
+      "lastChapter": "[property=\"og:novel:lastest_chapter_name\"]@content",
+      "name": "[property=\"og:title\"]@content",
+      "tocUrl": "",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "#article@html",
+      "nextContentUrl": ""
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "",
+      "intro": "",
+      "name": "",
+      "wordCount": ""
+    },
+    "ruleSearch": {
+      "author": ".s4@text",
+      "bookList": ".search-list li!0",
+      "bookUrl": ".s2 a@href",
+      "coverUrl": "",
+      "intro": "",
+      "kind": ".s1@text",
+      "lastChapter": ".s3@text",
+      "name": ".s2 a@text",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": "dl dd",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href",
+      "isPay": "",
+      "nextTocUrl": ""
+    },
+    "searchUrl": "{{cookie.removeCookie(source.getKey())}}/search/?searchkey={{key}}",
+    "weight": 0
+  },
+  {
     "bookSourceComment": "20231212自动获取搜索地址\nBy_zhbyjm7783\n基础源By:楠枫",
     "bookSourceGroup": "🍺 特优",
     "bookSourceName": "🍺 笔趣阁 vvbiquge.cc",
@@ -5357,6 +5414,60 @@
     "weight": 0
   },
   {
+    "bookSourceComment": "搜索过快容易宕机\nhttps://5088b.bi14.cc",
+    "bookSourceGroup": "🍺 特优",
+    "bookSourceName": "🍺 番茄小说 fqxs123.com",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.fqxs123.com",
+    "bookUrlPattern": "https?://m.fqxs123.com/book/\\d+/",
+    "concurrentRate": "5/1000",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻::/xuanhuan/<,{{page}}.html>\n武侠::/wuxia/<,{{page}}.html>\n都市::/dushi/<,{{page}}.html>\n历史::/lishi/<,{{page}}.html>\n网游::/wangyou/<,{{page}}.html>\n科幻::/kehuan/<,{{page}}.html>\n女生::/mm/<,{{page}}.html>\n全本::/finish/<,{{page}}.html>",
+    "header": "{ \"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "jsLib": "番茄小说123 = function () {\n\tconst { source } = this\n\tlet ss = source.getVariable()\n\tlet su = ss == \"\" ? source.getKey() : ss\n\treturn su.split(\"/\")[2]\n}",
+    "lastUpdateTime": "1738288220080",
+    "loginCheckJs": "java.log(result.url())\n\nif (java.key || /\\/book\\/\\d+\\/$/.test(result.url())) {\n\tss = source.getVariable()\n\tsu = ss == \"\" ? source.getKey() : ss\n\turl = String(result.url()).replace(/\\b\\/.+/, \"\")\n\tif (su != url) {\n\t\tsource.setVariable(url)\n\t\tif (key) {\n\t\tjava.initUrl()\n\t\tresult = java.getStrResponse()\n\t\t}\n\t}\n}\nresult",
+    "loginUrl": "https://m.fqxs123.com/login.html",
+    "respondTime": 7481,
+    "ruleBookInfo": {
+      "author": "text.作者@text",
+      "coverUrl": "[property$=image]@content",
+      "init": "@js:\nif (baseUrl != java.redirectUrl) {\n\t//重定向 重新设置书籍地址\n\tjava.setBaseUrl(java.redirectUrl)\n\t//java.getBook().bookUrl = java.redirectUrl\n\tbook.bookUrl = java.redirectUrl\n}\nresult;",
+      "intro": "[property$=description]@content",
+      "kind": "[property~=category|status|update_time]@content",
+      "lastChapter": "[property$=latest_chapter_name]@content",
+      "name": "class.name@text",
+      "tocUrl": "/userverify/{{String(baseUrl.match(/book\\/\\d+/))}}/list.html",
+      "wordCount": "class.dd_box.1@span.1@text##字数："
+    },
+    "ruleContent": {
+      "content": "#chaptercontent@html",
+      "nextContentUrl": "text.下一@href",
+      "replaceRegex": "##请收藏.*https.*|.*请关闭畅读或阅读模式.*|请记住本书首发.*|[\\【|「]看书.*|.*领现金红包.*|.*本章由于字数太少.*"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "span@text",
+      "bookList": "class.item",
+      "bookUrl": "a.1@href@js:`//{\\{番茄小说123()}}${result}`",
+      "checkKeyWord": "剑来",
+      "coverUrl": "img@src",
+      "intro": "dd@text",
+      "kind": "0",
+      "name": "a.1@text"
+    },
+    "ruleToc": {
+      "chapterList": "dl@dd!0",
+      "chapterName": "a@text##请假_.*",
+      "chapterUrl": "a@href"
+    },
+    "searchUrl": "{{source.getVariable()}}/s?q={{key}},{\n  \"webView\": true\n}",
+    "weight": 0
+  },
+  {
     "bookSourceComment": "//by Zero World\n//另类修复，套娃版本，只要正文和搜索、番茄小说官网不炸理论上可以一直用。\n//防炸系列",
     "bookSourceGroup": "🍺 特优",
     "bookSourceName": "🍺 番茄小说 snssdk",
@@ -7145,6 +7256,57 @@
       "chapterUrl": "a@href"
     },
     "searchUrl": "http://www.janpn.info/search.php?q={{key}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "//2025.02.05\n//by 天天的鸟蛋蛋 \n//正文 webView by 关耳 正文 解密by==  by水镜绘纱\n//发现 by 另一个书友圈\n// 设置书源变量 默认为0 0是调用解密\n//1是webView加载 下面的代码勿动\ncontent = java.getElement(\"@@class.content\");\nscript = result.match(/\\<script\\>var c=\"[\\s\\S]+?defer=\"defer\"\\>\\<\\/script\\>/)[0];\nscript = content+script;\n\nresult = java.webView(script,\"http://www.xinjianpan.com\",\"\")",
+    "bookSourceGroup": "🍺 特优",
+    "bookSourceName": "🍺 键盘小说网 xinjianpan.com",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.xinjianpan.com",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "[\n  {\n    \"title\": \"🌊 热门 🌊\",\n    \"url\": \"\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 1\n    }\n  },\n  {\n    \"title\": \"周点击\",\n    \"url\": \"/rank/weekvisit/?page={{page}}\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.25\n    }\n  },\n  {\n    \"title\": \"月点击\",\n    \"url\": \"/rank/monthvisit/?page={{page}}\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.25\n    }\n  },\n  {\n    \"title\": \"总点击\",\n    \"url\": \"/rank/allvisit/?page={{page}}\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.25\n    }\n  },\n  {\n    \"title\": \"🌊 分类 🌊\",\n    \"url\": \"\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 1\n    }\n  },\n  {\n    \"title\": \"玄幻\",\n    \"url\": \"/sort/xuanhuan-{{page}}.html\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"仙侠\",\n    \"url\": \"/sort/xianxia-{{page}}.html\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"都市\",\n    \"url\": \"/sort/dushi-{{page}}.html\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"历史\",\n    \"url\": \"/sort/lishi-{{page}}.html\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"网游\",\n    \"url\": \"/sort/wangyou-{{page}}.html\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"科幻\",\n    \"url\": \"/sort/kehuan-{{page}}.html\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"灵异\",\n    \"url\": \"/sort/lingyi-{{page}}.html\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"言情\",\n    \"url\": \"/sort/yanqing-{{page}}.html\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"其他\",\n    \"url\": \"/sort/qita-{{page}}.html\",\n    \"style\": {\n      \"layout_flexGrow\": -1,\n      \"layout_flexBasisPercent\": 0.205\n    }\n  },\n  {\n    \"title\": \"全本\",\n    \"url\": \"/quanben/sort/{{page}}.html\",\n    \"style\": {\n      \"layout_flexGrow\": -1,\n      \"layout_flexBasisPercent\": 0.205\n    }\n  }\n]",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; U; Android 14; zh-cn; M2102K1AC Build/UKQ1.231207.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/109.0.5414.118 Mobile Safari/537.36 MQQBrowser/10.1.0\"}",
+    "lastUpdateTime": "1738854811604",
+    "respondTime": 19937,
+    "ruleBookInfo": {
+      "author": "[property$=author]@content",
+      "coverUrl": "[property$=image]@content",
+      "intro": "[property$=description]@content",
+      "kind": "[property~=status|update_time|category]@content",
+      "lastChapter": "[property$=latest_chapter_name]@content",
+      "name": "[property$=book_name]@content",
+      "tocUrl": "text.更多章节@href"
+    },
+    "ruleContent": {
+      "content": "<js>\nz = source.getVariable().split(\",\");\nif(!(parseInt(z[0])>0)){\n  let regex = /var c=\"([^\"]*)\"/;\nlet dd = result.match(regex)[1]\n\nlet j = java.base64Decode(dd);\n  //java.log(j)\n  jja=String(j).replace(/^[^-]*-/,\"-\")\n  if(/=/.test(jja)){jj=jja.replace(/=[^=]*$/,\"\");}else{jj=jja.replace(/_[^_]*$/,\"\");}\n  \nm=jj.replace(/-/g,\"PHA+\").replace(/_/g,\"8L3A+\");\nn=java.getString(\"@@#chaptercontent@p@html\");\nn+\tjava.base64Decode(m)\n\n  \n}else if(parseInt(z[0])){\n  src=eval(String(source.bookSourceComment))\nresult=java.getString(\"id.chaptercontent@html\",src)\nresult\n}\n\n</js>\n",
+      "nextContentUrl": "##onclick=\"location.href='([^\"]+_\\d+.html)'\">下一章</a>##$1###",
+      "replaceRegex": "##天才一秒记住【.*】地址.*|.*退出阅读模式即可，谢谢！|小说推荐：.*",
+      "title": "",
+      "webJs": ""
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "dd@a@text",
+      "bookList": "dl:nth-child(n+1)",
+      "bookUrl": "dt@a@href",
+      "checkKeyWord": "斗破苍穹",
+      "coverUrl": "img@data-src",
+      "intro": "dd.0@text",
+      "kind": "dd@span.0:-1@text",
+      "name": "dt@a@text",
+      "wordCount": "dd@span.1@text"
+    },
+    "ruleToc": {
+      "chapterList": ".all@ul@li@a",
+      "chapterName": "text",
+      "chapterUrl": "onclick##.*\\'(.*)\\'##$1###",
+      "nextTocUrl": "option@value"
+    },
+    "searchUrl": "/search/?searchkey={{key}}",
     "weight": 0
   },
   {
@@ -12133,6 +12295,39 @@
       "chapterUrl": "href"
     },
     "searchUrl": "/e/search/index.php,{\n  \"charset\": \"gb2312\",\n  \"method\": \"POST\",\n  \"body\": \"keyboard={{key}}&show=title&classid=0\"\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "🍺 特优",
+    "bookSourceName": "🍺 全本小说网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.quanben.io",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻::/c/xuanhuan_{{page}}.html\n都市::/c/dushi_{{page}}.html\n言情::/c/yanqing_{{page}}.html\n穿越::/c/chuanyue_{{page}}.html\n青春::/c/qingchun_{{page}}.html\n仙侠::/c/xianxia_{{page}}.html\n灵异::/c/lingyi_{{page}}.html\n悬疑::/c/xuanyi_{{page}}.html\n历史::/c/lishi_{{page}}.html\n军事::/c/junshi_{{page}}.html\n游戏::/c/youxi_{{page}}.html\n竞技::/c/jingji_{{page}}.html\n科幻::/c/kehuan_{{page}}.html\n职场::/c/zhichang_{{page}}.html\n官场::/c/guanchang_{{page}}.html\n现言::/c/xianyan_{{page}}.html\n耽美::/c/danmei_{{page}}.html\n其它::/c/qita_{{page}}.html",
+    "lastUpdateTime": "1738721183770",
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "#content p@text"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "[itemprop=\"author\"]@text",
+      "bookList": ".box .list2",
+      "bookUrl": "h3 a@href##$##list.html",
+      "coverUrl": "img@src",
+      "intro": "[itemprop=\"description\"]@text",
+      "name": "h3 a@text"
+    },
+    "ruleToc": {
+      "chapterList": "@js:\nfunction load_more(book){\n  return `/index.php?c=book&a=list.jsonp&callback=${callback}&book_id=${book}&b=${base64(callback)}`\n}\n\nfunction base64(_str){var staticchars=\"PXhw7UT1B0a9kQDKZsjIASmOezxYG4CHo5Jyfg2b8FLpEvRr3WtVnlqMidu6cN\";var encodechars=\"\";for(var i=0;i<_str.length;i++){var num0=staticchars.indexOf(_str[i]);if(num0==-1){var code=_str[i]}else{var code=staticchars[(num0+3)%62]}var num1=parseInt(Math.random()*62,10);var num2=parseInt(Math.random()*62,10);encodechars+=staticchars[num1]+code+staticchars[num2]}return encodechars}\n\nconst callback = result.match(/var callback='(.*?)'/)?.[1]\nconst more = result.match(/\"(load_more\\(.*?\\))\"/)?.[1]\nlet url = eval(more)\nurl = source.getKey() + url + \",\" + JSON.stringify({headers:{\n\t \"User-Agent\": \"Mozilla/5.0 (iPhone; CPU iPhone OS 16_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.4 Mobile/15E148 Safari/604.1\",\n  \"Referer\": baseUrl\n}})\nlet html = java.ajax(url)\nhtml = html.match(/\\((\\{.*\\})\\)/)?.[1]\nhtml = JSON.parse(html).content\nlet list = java.getElements(\".list3\")\njava.setContent(html)\nlet moreList = java.getElement(\".list3\")\nlist = Array.from(list).map(String)\nmoreList = String(moreList)\nlist.splice(1, 0, moreList)\njava.setContent(list.join(\"\"))\n java.getElements(\"li\")",
+      "chapterName": "span@text",
+      "chapterUrl": "a@href"
+    },
+    "searchUrl": "/index.php?c=book&a=search&keywords={{key}}",
     "weight": 0
   },
   {
