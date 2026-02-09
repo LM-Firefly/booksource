@@ -7529,6 +7529,61 @@
     "weight": 0
   },
   {
+    "bookSourceComment": "\n\n搜索间隔60秒\n备用域名：\nhttps://m.oldtimeswx.cc\nhttps://www.oldtimeswx.cc\nhttps://www.oldtimesxs.cc\nhttps://www.oldtimescc.com\nhttps://www.lanrenyuhai.com",
+    "bookSourceGroup": "🍺 特优",
+    "bookSourceName": "🍺 旧时光文学",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.oldtimeswx.cc/",
+    "bookUrlPattern": "https://m.oldtimeswx.cc/go/\\d+/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"玄幻小说\",\"url\":\"https://m.oldtimeswx.cc/xuanhuan<,-{{page}}>.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"仙侠小说\",\"url\":\"https://m.oldtimeswx.cc/xianxia<,-{{page}}>.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"都市小说\",\"url\":\"https://m.oldtimeswx.cc/dushi<,-{{page}}>.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"军史小说\",\"url\":\"https://m.oldtimeswx.cc/junshi<,-{{page}}>.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"网游小说\",\"url\":\"https://m.oldtimeswx.cc/wangyou<,-{{page}}>.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"科幻小说\",\"url\":\"https://m.oldtimeswx.cc/kehuan<,-{{page}}>.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"灵异小说\",\"url\":\"https://m.oldtimeswx.cc/lingyi<,-{{page}}>.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"言情小说\",\"url\":\"https://m.oldtimeswx.cc/yanqing<,-{{page}}>.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"其他小说\",\"url\":\"https://m.oldtimeswx.cc/qita<,-{{page}}>.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}}]",
+    "header": "{\n\"Referer\": \"{{baseUrl}}\"\n}",
+    "lastUpdateTime": 1690856071596,
+    "respondTime": 10782,
+    "ruleBookInfo": {
+      "author": "class.red.0@text",
+      "coverUrl": "img@src",
+      "intro": "class.bookintro@textNodes",
+      "kind": "class.red.1@text&&class.booktime@text\n##更新时间：",
+      "lastChapter": "class.bookchapter@text##章节目录 ",
+      "name": "h1@text",
+      "wordCount": "class.booktag@span.0@text"
+    },
+    "ruleContent": {
+      "content": "class.readcontent@html##AD4",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "##本章未完.*继续阅读"
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "",
+      "name": ""
+    },
+    "ruleSearch": {
+      "author": ".author.0@text",
+      "bookList": ".bookbox",
+      "bookUrl": "h4@a@href",
+      "checkKeyWord": "寒山",
+      "coverUrl": "@js:\"/modules/article/images/nocover.jpg\"",
+      "intro": ".update@text##简介：",
+      "kind": "0",
+      "lastChapter": ".cat@a@text",
+      "name": "h4@a@text",
+      "wordCount": ".author.1@text##字数："
+    },
+    "ruleToc": {
+      "chapterList": "id.list-chapterAll@dd",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href"
+    },
+    "searchUrl": "https://m.oldtimeswx.cc/modules/article/search.php,{\n  \"body\": \"sosonkey={{key}}&action=login&submit=\",\n  \"charset\": \"GBK\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  },
+  {
     "bookSourceComment": "搜索有30秒限制\n同类网站https://www.6gxs.net/\n发现可用，搜索有问题，哪个大佬有空帮忙调一下",
     "bookSourceGroup": "🍺 特优",
     "bookSourceName": "🍺 卡夜阁",
