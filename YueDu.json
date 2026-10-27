@@ -1,6 +1,6 @@
 [
   {
-    "bookSourceComment": "25.6.20\n正文解密-夜泽川",
+    "bookSourceComment": "25.6.20\n正文解密-夜泽川\n26.10.27 完善(YueDu-Firefly)：正文翻页仅跟随同章递增续页 _N.html（末页\"下一页\"回指目录页，防误抓/防越界回绕串页）；解密失败兜底改取整块 .word_read 剥 script，不再只取首段；目录翻页精确取分页 select 的 option 列表；replaceRegex 清理\"本章未完\"提示行；发现页结构同搜索页，ruleExplore 留空复用搜索规则",
     "bookSourceGroup": "🍺 特优",
     "bookSourceName": "🍺 00小说网",
     "bookSourceType": 0,
@@ -10,7 +10,7 @@
     "enabledCookieJar": true,
     "enabledExplore": true,
     "exploreUrl": "@js:\n\nvar sort=[],\npush=(title,surl,size)=>sort.push({\n    title: title,\n    url: surl,\n    style: {\n      layout_flexGrow: 1,\n      layout_flexBasisPercent: size,\n     }\n  });\n\n\nvar kind=[\"༺ˇ»`ʚ最近更新ɞ´«ˇ༻\",\"玄幻\",\n\"重生\",\"都市\",\"军史\",\n\"网游\",\"科幻\",\"灵异\",\n\"言情\",\"其他\"];\nkind.map((title,i)=>{\n\tlink=`list/${i}/{{page}}/`;\n\tif(i==0){\n\t\tsize=1\n\t\t}else{size=0.25}\n\tpush(title,link,size)\n\t});\n\n\n\n\n\nJSON.stringify(sort);",
-    "lastUpdateTime": 1750423153845,
+    "lastUpdateTime": 1793095348292,
     "respondTime": 180000,
     "ruleBookInfo": {
       "author": "[property$=author]@content",
@@ -21,8 +21,9 @@
       "name": "[property$=book_name]@content"
     },
     "ruleContent": {
-      "content": "<js>\nvar bes = result.match(/PHA\\+[A-Za-z0-9+\\/]+={0,2}/g);\n//java.log(String(bes))\nif (!bes) {\n    var ml = java.webView(null,baseUrl,null);\n    var txt = java.getString(\".word_read@p@text\",ml);\n    java.toast(\"正文解密失败，转为webView动态加载。\");\n} else {\nvar result = [];\nfor (var i = 0; i < bes.length; i++) {\n    var bsej = java.base64Decode(bes[i]);\n    var txtt = String(bsej);\n    result.push(txtt);\n      }\n\tvar txt = result.join('\\n');\n}\ntxt;\n</js>",
-      "nextContentUrl": "#linkNext@href"
+      "content": "<js>\nvar bes = String(result).match(/PHA\\+[A-Za-z0-9+\\/]+={0,2}/g);\nvar txt;\nif (!bes) {\n    try {\n        var ml = java.webView(null, baseUrl, null);\n        txt = String(java.getString(\".word_read@html\", ml) || '').replace(/<script[\\s\\S]*?<\\/script>/g, '');\n    } catch (e) {\n        txt = '';\n    }\n    java.longToast(\"正文解密失败，已转为webView动态加载。\");\n} else {\n    var out = [];\n    for (var i = 0; i < bes.length; i++) {\n        try {\n            out.push(String(java.base64Decode(bes[i])));\n        } catch (e) { }\n    }\n    txt = out.join('\\n');\n}\ntxt;\n</js>",
+      "nextContentUrl": "@js:\n(function(){var m=String(result||'').match(/<a[^>]*id=\"linkNext\"[^>]*href=\"([^\"]+)\"/);var u=m?m[1]:'';var cm=String(baseUrl||'').match(/(\\d+)(?:_(\\d+))?\\.html$/);var nm=u.match(/(\\d+)(?:_(\\d+))?\\.html$/);if(!cm||!nm||cm[1]!=nm[1])return '';return parseInt(nm[2]||'0',10)>parseInt(cm[2]||'0',10)?u:'';})()",
+      "replaceRegex": "##本章未完.*"
     },
     "ruleExplore": {},
     "ruleSearch": {
@@ -39,76 +40,18 @@
       "chapterList": "dl.panel-chapterlist@dd@a",
       "chapterName": "text",
       "chapterUrl": "href",
-      "nextTocUrl": "option@value||text.下一页@href"
+      "nextTocUrl": "select@option@value"
     },
     "searchUrl": "{{url=source.getKey();cookie.removeCookie(url)}}search.html,{\n  \"body\": \"s={{key}}\",\n  \"method\": \"POST\"\n}",
     "weight": 0
   },
   {
-    "bookSourceComment": "    提醒：阅读要用最新版，可以像网页那样自动过验证。。有低概率会出现人类验证界面需要手动点一下了，网站问题。。\n    提醒：切换ip这个网站就要重新验证，所以不要频繁切换网络。。",
-    "bookSourceGroup": "🍺 特优",
-    "bookSourceName": "🍺 147小说网",
-    "bookSourceType": 0,
-    "bookSourceUrl": "https://m.147xs.org/",
-    "bookUrlPattern": "",
-    "customOrder": 0,
-    "enabled": true,
-    "enabledCookieJar": false,
-    "enabledExplore": true,
-    "exploreUrl": "[{\"title\":\"玄幻小说\",\"url\":\"https://m.147xs.org/sort/1/\",\"style\":{\"layout_flexGrow\":0.25}},{\"title\":\"修真小说\",\"url\":\"https://m.147xs.org/sort/2/\",\"style\":{\"layout_flexGrow\":0.25}},{\"title\":\"都市小说\",\"url\":\"https://m.147xs.org/sort/3/\",\"style\":{\"layout_flexGrow\":0.25}},{\"title\":\"穿越小说\",\"url\":\"https://m.147xs.org/sort/4/\",\"style\":{\"layout_flexGrow\":0.25}},{\"title\":\"网游小说\",\"url\":\"https://m.147xs.org/sort/5/\",\"style\":{\"layout_flexGrow\":0.25}},{\"title\":\"科幻小说\",\"url\":\"https://m.147xs.org/sort/6/\",\"style\":{\"layout_flexGrow\":0.25}},{\"title\":\"次元小说\",\"url\":\"https://m.147xs.org/sort/7/\",\"style\":{\"layout_flexGrow\":0.25}},{\"title\":\"综合言情\",\"url\":\"https://m.147xs.org/sort/8/\",\"style\":{\"layout_flexGrow\":0.25}},{\"title\":\"浪漫青春\",\"url\":\"https://m.147xs.org/sort/9/\",\"style\":{\"layout_flexGrow\":0.25}},{\"title\":\"现代言情\",\"url\":\"https://m.147xs.org/sort/10/\",\"style\":{\"layout_flexGrow\":0.25}},{\"title\":\"古代言情\",\"url\":\"https://m.147xs.org/sort/11/\",\"style\":{\"layout_flexGrow\":0.25}},{\"title\":\"幻想言情\",\"url\":\"https://m.147xs.org/sort/12/\",\"style\":{\"layout_flexGrow\":0.25}},{\"title\":\"完本小说\",\"url\":\"https://m.147xs.org/wanben/\",\"style\":{\"layout_flexGrow\":0,\"layout_flexBasisPercent\":0.29}}]",
-    "header": "",
-    "lastUpdateTime": 1774234300799,
-    "loginUrl": "",
-    "respondTime": 23725,
-    "ruleBookInfo": {
-      "author": "id.info@tag.p.0@text##作 者：",
-      "coverUrl": "id.fmimg@img@src",
-      "init": "",
-      "intro": "id.intro@text",
-      "kind": "[property=og:novel:update_time]@content&&\n[property=og:novel:category]@content&&\n[property=og:novel:status]@content",
-      "lastChapter": "id.info@tag.p.3@a@text##免费章节 |正文卷 |正文 |VIP章节 ",
-      "name": "id.info@h1@text"
-    },
-    "ruleContent": {
-      "content": "id.content@html",
-      "replaceRegex": "##.*换源App.*"
-    },
-    "ruleExplore": {
-      "author": "class.author@text",
-      "bookList": "class.hot_sale",
-      "bookUrl": "tag.a.0@href@js:'https://www.147xs.org'+result",
-      "coverUrl": "img@data-original",
-      "intro": "class.review@text",
-      "kind": "",
-      "lastChapter": "",
-      "name": "class.title@text"
-    },
-    "ruleSearch": {
-      "author": "p.0@text##作者：",
-      "bookList": "<js>\nif(result.match(/Just a moment/)){\ncookie.removeCookie(source.bookSourceUrl)\nvar x=java.get(\"url\")\njava.startBrowserAwait(x,\"验证\")\nresult=java.ajax(x)\n\t}\n\tresult\n</js>\n.user-bookcase@dl",
-      "bookUrl": "a.0@href##m\\.##www\\.",
-      "checkKeyWord": "",
-      "coverUrl": "",
-      "intro": "",
-      "kind": "{{@@a.0@text##\\[(.*?)\\]##$1##}}\n{{@@p.-1@text##更新：}}",
-      "lastChapter": "a.1@text",
-      "name": "a.0@text##\\[.*?\\]",
-      "wordCount": ""
-    },
-    "ruleToc": {
-      "chapterList": "id.list@tag.dd",
-      "chapterName": "tag.a@text",
-      "chapterUrl": "tag.a@href"
-    },
-    "searchUrl": "@js:\njava.put(\"url\",String(source.bookSourceUrl+\"search.php?keyword=\"+key+\",\"+JSON.stringify({\n\t\t\"headers\":{\n  \"User-Agent\": \"Mozilla/5.0 (Linux; U; Android 10; zh-cn; MI CC 11)  AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.127 Mobile Safari/537.36 XiaoMi/MiuiBrowser/18.1.8 swan-mibrowser\"\n}})))",
-    "weight": 0
-  },
-  {
-    "bookSourceComment": "",
+    "bookSourceComment": "28看书网 https://www.28ksw.com\n2026-10-27 完善：\n详情 /xiaoshuo/{id}/（og:novel 元数据）；目录 /book/{id}/，select#indexselect 分页；正文 /book/{id}/{cid}[_n].html 章内「下一页」分页\n站内搜索已停用、sososhu 搜索需登录 → 搜索失败时可用「添加网址」粘贴详情页地址，或走发现页",
     "bookSourceGroup": "🍺 特优",
     "bookSourceName": "🍺 28看书",
     "bookSourceType": 0,
-    "bookSourceUrl": "https://www.28lu.net/",
+    "bookSourceUrl": "https://www.28ksw.com/",
+    "bookUrlPattern": "https?://www\\.28ksw\\.com/xiaoshuo/\\d+/",
     "customOrder": 0,
     "enabled": true,
     "enabledCookieJar": true,
@@ -117,6 +60,7 @@
     "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 10; PACM00 Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.79 Mobile Safari/537.36\"}",
     "lastUpdateTime": 1734181661156,
     "loginCheckJs": "",
+    "loginUrl": "https://www.sososhu.com/?action=login",
     "respondTime": 180000,
     "ruleBookInfo": {
       "author": "[property$=author]@content",
@@ -124,15 +68,15 @@
       "init": "",
       "intro": "[property$=description]@content",
       "kind": "[property~=status|ategory|update_time]@content",
-      "lastChapter": "[property$=lastest_chapter_name]@content",
+      "lastChapter": "[property$=latest_chapter_name]@content||[property$=lastest_chapter_name]@content",
       "name": "[property$=book_name]@content",
       "tocUrl": "text.章节目录@href",
       "wordCount": "h2@span.0@text"
     },
     "ruleContent": {
-      "content": "id.chaptercontent@p!0:-1@html",
+      "content": "id.chaptercontent@p@html",
       "nextContentUrl": "text.下一页@href",
-      "replaceRegex": "##一秒记住，精彩无弹窗免费！|本章未完，请点击下一页继续阅读！"
+      "replaceRegex": "##一秒记住[^\\n]*|本章未完[^\\n]*|《[^》]*》转载请[^\\n]*|题名：[^\\n]*|作者：[^\\n]*|Tag列表：[^\\n]*|文案：[^\\n]*|(?:^|\\n)- [^\\n]*"
     },
     "ruleExplore": {
       "author": ".book-list-1-author@text## / 文",
@@ -145,7 +89,7 @@
     },
     "ruleSearch": {
       "author": "span@text",
-      "bookList": "<js>\nif (result.match(/阅读云/)) {\n   u = baseUrl.split(',')[0]\n   cookie.removeCookie(u)\n   // java.startBrowserAwait(u, \"验证\")\n   java.webView(null, u, \"document.cookie\")\n   ck = cookie.getCookie(u)\n   head = JSON.stringify({ headers: { 'Cookie': ck } })\n   url = u + \",\" + head\n   result = java.ajax(url)\n}\nresult\n</js>\n.item",
+      "bookList": "<js>\nif (result.match(/阅读云|需要登录/)) {\n   u = baseUrl.split(',')[0]\n   cookie.removeCookie(u)\n   java.webView(null, result.match(/需要登录/) ? \"https://www.sososhu.com/?action=login\" : u, \"document.cookie\")\n   ck = cookie.getCookie(u)\n   head = JSON.stringify({ headers: { 'Cookie': ck } })\n   result = java.ajax(u + \",\" + head)\n}\nresult\n</js>\n.item",
       "bookUrl": "a@href",
       "coverUrl": "img@src",
       "intro": "dd@text",
@@ -156,41 +100,41 @@
       "chapterList": ".am-list@li a",
       "chapterName": "text",
       "chapterUrl": "href",
-      "nextTocUrl": "option@value"
+      "nextTocUrl": "@js:\nvar out=[],seen={};\nvar os=org.jsoup.Jsoup.parse(result).select('#indexselect option');\nfor(var i=0;i<os.size();i++){var v=os.get(i).attr('value');if(v&&!seen[v]){seen[v]=1;out.push(v);}}\nout;"
     },
-    "searchUrl": "https://www.sososhu.com/?q={{key}}&site=28lu",
+    "searchUrl": "https://www.sososhu.com/?s={{key}}&web=28lu&page={{page}}",
     "weight": 0
   },
   {
-    "bookSourceComment": "//2025.1.3 ◎夜泽川◎\n//同站一堆",
+    "bookSourceComment": "//2025.1.3 ◎夜泽川◎\n//同站一堆\n26.10.27 完善(YueDu-Firefly)：搜索迁移 rrssk.com（POST ?action=search + 每日轮换签名，动态抽取 signJs 参数自适应）；结果 .book-card 解析，bookUrl 由 ?action=go 的 base64 解码真实详情页；目录 loadChapterPage 改 AES-256-CBC 加密 data 参数（key/iv 逆向自站点脚本）；正文翻页仅跟随同章递增续页 {id}-{cid}-{n}.html 防串章（末页下一页指向真下一章）；wordCount class.t_c 失效移除；发现 /list-N-{{page}}/ 分页验证有效",
     "bookSourceGroup": "🍺 特优",
     "bookSourceName": "🍺 2k小说",
     "bookSourceType": 0,
     "bookSourceUrl": "https://www.kkxsz.com",
+    "bookUrlPattern": "https?://www\\.kkxsz\\.com/book/[^/]+\\.html",
     "customOrder": 0,
     "enabled": true,
     "enabledCookieJar": true,
     "enabledExplore": true,
     "exploreUrl": "@js: var result = []\nvar push = (title, url, size) => result.push({\n  title: title,\n  url: url,\n  style: {\n    layout_flexGrow: 1,\n    layout_flexBasisPercent: size\n  }\n})\npush(\"全部分类\",null,1);\ntg = java.ajax(source.key);\ntag = org.jsoup.Jsoup.parse(tg).select('a[href^=/list]');\ntag.forEach(fl => {\n  nam = fl.text()\n  ul = String(fl.attr('href')).replace(/\\/$/,\"-{{page}}/\");\npush(nam,ul,0.25);\n})\nJSON.stringify(result);",
     "header": "",
-    "lastUpdateTime": 1743230888763,
+    "lastUpdateTime": 1793095348292,
     "respondTime": 180000,
     "ruleBookInfo": {
       "author": "@get:{a}",
       "coverUrl": "@get:{i}",
-      "init": "@put:{n:\"[property$=book_name]@content\",\na:\"[property$=author]@content\",\nt:\"[property~=category|status]@content\",\nl:\"[property$=latest_chapter_name]@content\",\ni:\"[property$=image]@content\",\no:\"[property$=description]@content\",\ng:\"[property$=update_time]@content\",\nz:\"class.t_c.2@text##字数：\"\n}",
+      "init": "@put:{n:\"[property$=book_name]@content\",\na:\"[property$=author]@content\",\nt:\"[property~=category|status]@content\",\nl:\"[property$=latest_chapter_name]@content\",\ni:\"[property$=image]@content\",\no:\"[property$=description]@content\",\ng:\"[property$=update_time]@content\"\n}",
       "intro": "@get:{o}",
       "kind": "@get:{t}",
       "lastChapter": "@get:{l}◎@get:{g}",
       "name": "@get:{n}",
-      "tocUrl": "@js: var id = baseUrl.match(/book\\/(.*?)\\.html/)[1];\njava.put(\"id\",id);\nvar pages = java.getStringList(\"option@value\",java.ajax(baseUrl));\njava.put(\"page\",pages.length);\nresult = source.key + \"/index.php?action=loadChapterPage\" + \",\" + JSON.stringify({\n  \"body\": `id=${id}&page=1`,\n  \"method\": \"POST\"\n});",
-      "wordCount": "@get:{z}"
+      "tocUrl": "@js:\n(function(){\nvar id=(String(baseUrl).match(/\\/book\\/([^\\/]+?)\\.html/)||[])[1];\nif(!id)return '';\njava.put('id',id);\nvar doc=String(java.ajax(baseUrl)||'');\nvar pages=java.getStringList('select@option@value',doc);\njava.put('page',pages?pages.length:1);\nvar data=java.createSymmetricCrypto('AES/CBC/PKCS7Padding','D3oXBE3hyE6jsopAMi3cjxGrj1aiQ0XU','8718632090042823').encryptBase64(java.strToBytes(JSON.stringify({id:id,page:1})));\n'https://www.kkxsz.com/index.php?action=loadChapterPage,'+JSON.stringify({method:'POST',body:'data='+data,headers:{Referer:String(baseUrl)}});\n})()"
     },
     "ruleContent": {
       "content": "#content@html||.content@html",
       "imageStyle": "",
-      "nextContentUrl": "[class~=pageDown|btnGray]@href",
-      "replaceRegex": "##.*{{source.key}}.*|\\n+.*章节错误,点此举报.*\\n+|\\(https?.*\\/book\\/.*\\)|.*首发域名.*"
+      "nextContentUrl": "@js:\n(function(){var m=String(result||'').match(/<a[^>]*class=\"[^\"]*(?:pageDown|btnGray)[^\"]*\"[^>]*href=\"([^\"]+)\"/)||String(result||'').match(/<a[^>]*href=\"([^\"]+)\"[^>]*class=\"[^\"]*(?:pageDown|btnGray)[^\"]*\"/);var u=m?(m[1]||''):'';var cm=String(baseUrl||'').match(/\\/([^\\/]+?)-(\\d+)(?:-(\\d+))?\\.html$/);var nm=u.match(/\\/([^\\/]+?)-(\\d+)-(\\d+)\\.html$/);if(!cm||!nm||cm[1]!=nm[1]||cm[2]!=nm[2])return '';return parseInt(nm[3],10)>parseInt(cm[3]||'1',10)?u:'';})()",
+      "replaceRegex": "##.*kkxsz\\.com.*|.*章节错误,点此举报.*|.*首发域名.*"
     },
     "ruleExplore": {
       "author": ".author@text",
@@ -202,22 +146,23 @@
       "name": ".name a@text"
     },
     "ruleSearch": {
-      "author": "a[href~=author][0]@text",
-      "bookList": ".list > ul > li",
-      "bookUrl": "a.0@href",
-      "coverUrl": "img@src",
-      "intro": ".intro@text",
-      "kind": ".info a[href~=list]@text",
-      "lastChapter": ".infoM2@a.-1@text",
-      "name": ".name@text"
+      "author": "$.author",
+      "bookList": "<js>\n(function(){\nvar out=[];\ntry{\nvar doc=org.jsoup.Jsoup.parse(String(result||''));\nvar cards=doc.select('.book-card');\nfor(var i=0;i<cards.size();i++){\nvar c=cards.get(i);\nvar oc=String(c.attr('onclick')||'');\nvar bu='';\nvar m=oc.match(/[?&]t=([^&'\"\\s]+)/);\nif(m){try{bu=String(java.base64Decode(decodeURIComponent(m[1])));}catch(e){bu='';}}\nvar metas=c.select('.book-card__meta-item');\nout.push({\nname:String(c.select('.book-card__title').first().text()),\nauthor:metas.size()>0?String(metas.get(0).text()).replace(/^.*?：/,''):'',\nkind:String(c.select('.book-tag').first().text()),\nintro:String(c.select('.book-card__desc').text()),\ncoverUrl:String(c.select('img').first().attr('src')),\nlastChapter:String(c.select('.book-card__update').text()).replace(/^更新：/,''),\nbookUrl:bu\n});\n}\n}catch(e){}\nJSON.stringify(out);\n})()\n</js>\n$[*]",
+      "bookUrl": "$.bookUrl",
+      "checkKeyWord": "我的模拟长生路",
+      "coverUrl": "$.coverUrl",
+      "intro": "$.intro",
+      "kind": "$.kind",
+      "lastChapter": "$.lastChapter",
+      "name": "$.name"
     },
     "ruleToc": {
       "chapterList": "$.data",
       "chapterName": "$.chaptername",
       "chapterUrl": "$.chapterurl",
-      "nextTocUrl": "@js: result = []\nid = java.get(\"id\");\npages = java.get(\"page\");\nfor (let i = 2 ; i <= pages ; i++) {\noption = source.key + \"/index.php?action=loadChapterPage\" + \",\" + JSON.stringify({\n  \"body\": `id=${id}&page=${i}`,\n  \"method\": \"POST\"\n});\nresult.push(option);\n}\nresult;"
+      "nextTocUrl": "@js: result = []\nid = java.get('id');\npages = java.get('page');\nfor (let i = 2 ; i <= pages ; i++) {\ndata = java.createSymmetricCrypto('AES/CBC/PKCS7Padding','D3oXBE3hyE6jsopAMi3cjxGrj1aiQ0XU','8718632090042823').encryptBase64(java.strToBytes(JSON.stringify({id:id,page:i})));\noption = source.key + \"/index.php?action=loadChapterPage\" + \",\" + JSON.stringify({\n  \"body\": `data=${data}`,\n  \"method\": \"POST\",\n  \"headers\": {\"Referer\": source.key + \"/book/\" + id + \".html\"}\n});\nresult.push(option);\n}\nresult;"
     },
-    "searchUrl": "@js: \nvar url = java.ajax(source.key).match(/window\\.location\\.href=\\'([^']+)/)[1];\njava.log(url);\ncookie.removeCookie(url);\nvar kku = url.replace(/\\/\\?.*$/,\"\");\njava.log(kku);\nvar ckk = java.get(url,{});\nvar ck = cookie.getCookie(url);\njava.log(ck);\nvar result = kku + \"/keywords-{{key}}-{{page}}.html\" + \",\" + JSON.stringify({\n\t\"headers\":{\"Cookie\":ck}\n});\nresult;",
+    "searchUrl": "@js:\n(function(){\nvar enc=function(x){return encodeURIComponent(x).replace(/[!'()*]/g,function(c){return '%'+c.charCodeAt(0).toString(16).toUpperCase();});};\nvar home=String(java.ajax('https://www.rrssk.com/00FR.html')||'');\nvar tm=home.match(/name=\"_t\" value=\"([^\"]+)\"/);\nif(!tm)return '';\nvar t=tm[1];\nvar sm=home.match(/src=\"(\\/\\?action=signJs[^\"]+)\"/);\nvar sjs=sm?String(java.ajax('https://www.rrssk.com'+sm[1])||''):'';\nvar p1=sjs.match(/var t2=(\\d+),a8=(\\d+),r=(\\d+)/);\nvar t2=p1?parseInt(p1[1],10):29241,a8=p1?parseInt(p1[2],10):28564,r=p1?parseInt(p1[3],10):38070;\nvar p2=sjs.match(/s9<(\\d+);s9\\+\\+/);\nvar rounds=p2?parseInt(p2[1],10):32393;\nvar s=enc(String(key));\nvar u4=7,i;\nfor(i=0;i<s.length;i+=2){\nu4=((u4*31)^(s.charCodeAt(i)*t2))>>>0;\nif(i+1<s.length){u4=((u4*31)^(s.charCodeAt(i+1)*a8))>>>0;}\nu4=(u4+t.charCodeAt((i>>1)%t.length)+r)>>>0;\n}\nvar ts=Math.floor(Date.now()/1000);\nu4=(u4^ts)>>>0;\nfor(i=0;i<rounds;i++){u4=((u4<<5)+u4)>>>0;}\nvar a=parseInt(('00000000'+u4.toString(16)).slice(-8),16);\na=(a^220)>>>0;\nvar sig=('00000000'+a.toString(16)).slice(-8);\n'https://www.rrssk.com/?action=search,'+JSON.stringify({method:'POST',body:'keyword='+s+'&_t='+t+'&_ts='+ts+'&_s='+sig,headers:{Referer:'https://www.rrssk.com/00FR.html'}});\n})()",
     "weight": 0
   },
   {
