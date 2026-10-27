@@ -7390,48 +7390,53 @@
     "weight": 0
   },
   {
-    "bookSourceComment": "by天天的鸟蛋蛋",
+    "bookSourceComment": "by天天的鸟蛋蛋｜2026-10-27 适配新版站点\n1.搜索改 POST /search.html（s=关键词）：旧 GET /search/ 接口已 404\n2.站点有 JS PoW 挑战（_xsv cookie）：若响应提示「正在打开页面」验证，用内置浏览器打开一次站点首页即可通过（cookie 24h 有效），HTTP 直连实测可正常抓取\n3.目录分页 /book/{id}/{n}/（20章/页）：越界页会回绕到第1页，nextTocUrl 按标题「第x页/共y页」防无限循环\n4.章内分页 {chapterId}_{n}.html：nextContentUrl 仅跟随同章续页（_数字.html），末页「下一章」指向下一章时不跟随，杜绝串章\n5.正文清洗：删「《书名》第x章（第x/y页）」残留行与「本章未完，点击下一页继续阅读。」\n6.发现：8 榜单 + 3 完本榜 + 9 分类",
     "bookSourceGroup": "🍺 特优",
     "bookSourceName": "🍺 九九读小说",
     "bookSourceType": 0,
     "bookSourceUrl": "https://www.99duxiaoshuo.com",
+    "bookUrlPattern": "https?://www\\.99duxiaoshuo\\.com/book/\\d+/?",
     "customOrder": 0,
     "enabled": true,
     "enabledCookieJar": true,
     "enabledExplore": true,
-    "exploreUrl": "完本::/quanben/sort/{{page}}/\n排行::/top.html\n收藏::/rank.html",
-    "lastUpdateTime": "1736832541288",
+    "exploreUrl": "月排行::/monthvisit_0_0_0_{{page}}.html\n周排行::/weekvisit_0_0_0_{{page}}.html\n总排行::/allvisit_0_0_0_{{page}}.html\n月推荐::/monthvote_0_0_0_{{page}}.html\n总推荐::/allvote_0_0_0_{{page}}.html\n总收藏::/goodnum_0_0_0_{{page}}.html\n最新入库::/postdate_0_0_0_{{page}}.html\n最新更新::/lastupdate_0_0_0_{{page}}.html\n完本月榜::/monthvisit_0_0_2_{{page}}.html\n完本周榜::/weekvisit_0_0_2_{{page}}.html\n完本总榜::/allvisit_0_0_2_{{page}}.html\n玄幻奇幻::/list/1/{{page}}.html\n修真武侠::/list/2/{{page}}.html\n都市情感::/list/3/{{page}}.html\n历史军事::/list/4/{{page}}.html\n网游竞技::/list/5/{{page}}.html\n科幻冒险::/list/6/{{page}}.html\n浪漫言情::/list/7/{{page}}.html\n耽美同人::/list/8/{{page}}.html\n其他类型::/list/9/{{page}}.html",
+    "header": "{\"User-Agent\":\"Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36\"}",
+    "lastUpdateTime": "1793090058309",
     "respondTime": 180000,
     "ruleBookInfo": {
       "author": "[property$=author]@content",
       "coverUrl": "[property$=image]@content",
       "intro": "[property$=description]@content",
-      "kind": "[property~=category|status|update_time]@content",
+      "kind": "[property~=category]@content&&[property~=status]@content&&[property~=update_time]@content",
       "lastChapter": "[property$=latest_chapter_name]@content",
       "name": "[property$=book_name]@content"
     },
     "ruleContent": {
-      "content": ".content@html||#content@html",
-      "nextContentUrl": "text.下一页@href",
-      "replaceRegex": "##{{chapter.title}}|（本章未完，请点击下一页继续阅读）| \\(第.*页\\)|九九读小说网.*{{book.name}}!"
+      "content": "#novelcontent@html||.novelcontent@html",
+      "nextContentUrl": "@js:\n(function(){\nvar m=String(result).match(/<a\\b[^>]*class=\\\"p4\\\"[^>]*>/);\nif(!m)return '';\nvar hm=m[0].match(/href=\\\"([^\\\"]+)\\\"/);\nif(!hm)return '';\nvar u=hm[1];\nreturn /_\\d+\\.html$/.test(u)?u:'';\n})()",
+      "replaceRegex": "##《[^》]+》.*（第\\d+/\\d+页）|本章未完，点击下一页继续阅读。|（第\\d+/\\d+页）",
+      "title": "h2@text##（第\\d+/\\d+页）"
     },
-    "ruleExplore": {},
+    "ruleExplore": {
+      "author": "span@text",
+      "bookList": ".article .block li",
+      "bookUrl": "a@href",
+      "name": "a@text"
+    },
     "ruleSearch": {
-      "author": ".s4@text",
-      "bookList": ".txt-list > li:nth-child(n+2)",
-      "bookUrl": ".s2 > a@href",
-      "coverUrl": "",
-      "kind": ".s1@text&&.s5@text",
-      "lastChapter": ".s3 > a@text",
-      "name": ".s2 > a@text"
+      "author": "span@text",
+      "bookList": ".article .block li",
+      "bookUrl": "a@href",
+      "name": "a@text"
     },
     "ruleToc": {
-      "chapterList": ".section-box:nth-child(4) li:nth-child(n+1) > a",
+      "chapterList": "//div[@class='info_chapters'][contains(p[@class='p1'],'》目录')]//ul[@class='p2']/li/a",
       "chapterName": "text",
       "chapterUrl": "href",
-      "nextTocUrl": "option@value"
+      "nextTocUrl": "@js:\n(function(){\nvar s=String(result);\nvar zm=s.match(/id=\\\"zoneMore\\\"[\\s\\S]{0,300}?href=\\\"([^\\\"]+)\\\"/);\nif(zm)return zm[1];\nvar t=s.match(/目录\\s*[（(]第(\\d+)页\\/共(\\d+)页[）)]/);\nif(t){\nvar cur=parseInt(t[1],10),total=parseInt(t[2],10);\nif(cur<total){\nvar m=String(baseUrl).match(/^(.*?\\/book\\/\\d+\\/)(?:\\d+\\/)?$/);\nif(m)return m[1]+cur+'/';\n}\n}\nreturn '';\n})()"
     },
-    "searchUrl": "{{url=source.getKey();cookie.removeCookie(url)}}\nhttps://www.99duxiaoshuo.com/search/?searchkey={{key}}",
+    "searchUrl": "/search.html,{\n  \"method\": \"post\",\n  \"body\": \"s={{java.encodeURI(key)}}\"\n}",
     "weight": 0
   },
   {
