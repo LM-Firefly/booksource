@@ -1306,6 +1306,55 @@
     "weight": 0
   },
   {
+    "bookSourceComment": "UU看书 www.uukan.org（原思兔小说）。搜索 \/search\/{关键字}.html，详情 \/book\/{书ID}.html，目录 \/chapter\/{书ID}\/1.html 分 3 页每页 500 章，正文容器 div#content。",
+    "bookSourceGroup": "🍺 特优",
+    "bookSourceName": "🍺 UU看书 uukan.org",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https:\/\/www.uukan.org",
+    "bookUrlPattern": "https?:\/\/(www[.])?uukan[.]org\/book\/[\\w]+\\.html",
+    "customButton": false,
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": false,
+    "eventListener": false,
+    "lastUpdateTime": "1794189596956",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "class.booktag@tag.a.0@text",
+      "coverUrl": "class.bookcover@tag.img@src",
+      "intro": "class.bookintro@text",
+      "kind": "class.breadcrumb@tag.li.1@tag.a@text",
+      "lastChapter": "class.bookchapter@text",
+      "name": "class.booktitle@text",
+      "tocUrl": "@js:\n(() => {\n    var h = java.getString('class.bookchapter@href');\n    var m = h.match(\/\\\/chapter\\\/([^\\\/]+)\\\/\/);\n    return m ? '\/chapter\/' + m[1] + '\/1.html' : '';\n})()",
+      "wordCount": "class.booktag@tag.span.0@text"
+    },
+    "ruleContent": {
+      "content": "id.content@html",
+      "title": "class.read@tag.h1@text"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "class.author.0@text##作者：",
+      "bookList": "class.bookbox",
+      "bookUrl": "class.bookname@tag.a@href",
+      "intro": "class.update@text##简介：",
+      "kind": "class.breadcrumb@tag.li.1@tag.a@text",
+      "lastChapter": "class.cat@tag.a@text",
+      "name": "class.bookname@tag.a@text",
+      "wordCount": "class.author.1@text##字数："
+    },
+    "ruleToc": {
+      "chapterList": "id.allchapter@tag.a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "text.下一页@href"
+    },
+    "searchUrl": "\/search\/{{key}}.html",
+    "weight": 0
+  },
+  {
     "bookSourceComment": "UU 看书章节更新比较快，内容繁体需要转换，最好也开着梯子。",
     "bookSourceGroup": "🍺 特优",
     "bookSourceName": "🍺 UU看书 uukanshu.cc",
@@ -1638,6 +1687,68 @@
     "weight": 0
   },
   {
+    "bookSourceComment": "\/\/ 261108 修复：站点改版为笔趣阁Bootstrap模板；搜索改 POST \/searchNN.html（form action 动态取）；\n\/\/ 域名 www.ijjxs.org 被宝塔WAF图形验证码拦截(首次访问即拦, Secure Cookie 与仅HTTP站点冲突)，\n\/\/ 默认线路用源站裸IP 177.5.49.192 直连免验证；登录面板可切换线路\/测速\/检查登录状态。\n\/\/ 本站搜索\/详情\/目录\/正文无需账号，\/bookcase\/ 书架功能才需登录，故不写账号登录UI。\n\/\/ ★站点搜索限频是「会话级配额」：HTTP日志实锤 200+alert(\"搜索间隔: 30 秒\")，隔 2 分钟仍被拒，\n\/\/   清 Cookie 换新会话立即成功（与 xsbook 同型）。searchUrl 的 URL 选项 js（请求前置JS环境）每次搜索前清线路域 Cookie 自愈\n\/\/   （★{{}} 内联 JS 环境不注入 cookie 绑定，调用抛 ReferenceError 被 try\/catch 吞掉=静默失效；\n\/\/   必须放 URL 选项 js 字段=请求前置JS环境。注意 removeCookie 作用于本次请求的会话Cookie栈，\n\/\/   使本次请求不携带旧键；持久层 Cookie 与响应 Set-Cookie 不受影响）；\n\/\/   不主动探测搜索频率、不连发验证，避免触发风控。loginCheckJs 对限频页给出提示。\n\/\/ 兼容 LegadoTeam(gedoor) 与 legado-E(Luoyacheng)：列表返回 java.util.ArrayList；字段名\/返回类型两版一致。\n\/\/ ★261108 二次修复「换路线失败」：jsLib 函数编译期捕获 source 快照会冻结，面板 source.put 写入后规则仍读旧值；\n\/\/   ★三环境键空间实锤：{{}} 内联JS(AnalyzeUrl.evalJS) 里 source.get 实时、java.get 恒空、cookie 未绑定；\n\/\/   eval_js 环境 java.get\/source.get 互通；jsLib 函数编译期捕获 source 快照会冻结。\n\/\/   ⇒ 正解=所有入口 {{}} 内联 IIFE 直接用 source.get('ijLine') 实时取，不经过 jsLib 函数；\n\/\/     面板按钮 action 用 source.put 写入同一键空间；清 Cookie 仍走 URL 选项 js。\n\/\/ ★261108 三次修复「触发人机验证应弹验证码」：loginCheckJs 检测宝塔WAF页 → 抓 \/get_btwaf_captcha_base64 真图\n\/\/   → java.getVerificationCode(data:image\/png;base64,真图) 弹窗让用户填 → \/Verification_auth_btwaf 提交\n\/\/   → 成功后从 result.raw().request() 取 method\/body\/headers 原样重放 → new StrResponse(url,body) 返回，搜索继续。\n\/\/   探针实锤 loginCheckJs 环境有 key\/page\/result.raw().request()\/java.getVerificationCode\/cookie；1px透明PNG探针不能当图用。\n\/\/ ★261108 四次修复「填码后没继续搜索」：HTTP日志实锤 验证成功(status:true)→重放 POST \/search7e.html 得 404。\n\/\/   根因=同一A记录按Host分发两套站：域名过盾后是「久久小说网」模板(GET \/search\/?searchkey= + .item + #booktxt)，\n\/\/   裸IP是「笔趣阁」模板(POST \/search7e.html + #bookcon)。且过盾票是短时\/IP会话，必须验证后立刻重放。\n\/\/   修法=loginCheckJs 按Host分派重放接口(域名用GET \/search\/、裸IP原样POST)，不再回填原请求头(避免重复头)；\n\/\/   ruleSearch\/ruleExplore\/详情\/正文\/目录全部改双模板兼容。\n\/\/ ★261108 五次修复「目录排序错误·最新章节排前面」：域名侧 #list 是单个 dl，\n\/\/   dt[0]=最新章节(9条倒序) + dt[1]=全部章节目录(277条正序) + 末尾又重复最新9条。\n\/\/   原兜底 doc.select('dl') 全收 → 最新章节置顶。修法=从「全部章节目录」dt 锚点之后取所有数字章节 a、\n\/\/   按 href 去重保先出现；裸IP侧仍用「a最多的 ul.list-charts」段。\n\/\/ ★261108 六次修复「域名侧作者有多余内容」：域名 .btm = 作者 + <em>字数<\/em> + <em>日期<\/em>，\n\/\/   原 .btm@text 把字数\/日期一起吞了(如「墨染江山 94万字 11-08」)。\n\/\/   修法=.btm@a.0@text(分类\/排行作者在a里)||.btm@ownText(首页作者是纯文本,ownText排除em子节点)||td.2@a@text(裸IP表格)。\n\/\/   补充：裸IP .media 卡片作者是 .book_author（不是 .btm\/td.2），author 组合末尾追加 .book_author a@text 兜底。",
+    "bookSourceGroup": "🍺 特优",
+    "bookSourceName": "🍺 爱久久小说 ijjxs.org",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http:\/\/www.ijjxs.org\/",
+    "bookUrlPattern": "https?:\/\/(?:www\\.)?ijjxs\\.org\/\\d+_\\d+\/?|https?:\/\/177\\.5\\.49\\.192\/\\d+_\\d+\/?",
+    "customButton": false,
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "eventListener": false,
+    "exploreUrl": "[{\"title\": \"全部小说\", \"url\": \"{{(function(){var L='';try{L=String(source.get('ijLine')||'')}catch(e){}if(!L||L==='null'||L==='undefined'||L.indexOf('http')!==0)L='http:\/\/177.5.49.192';return L.replace(\/\\\\\/+$\/,'')})()}}\/class\/{{page}}\/\", \"style\": {\"layout_flexGrow\": 1, \"layout_flexBasisPercent\": 0.2}}, {\"title\": \"玄幻\", \"url\": \"{{(function(){var L='';try{L=String(source.get('ijLine')||'')}catch(e){}if(!L||L==='null'||L==='undefined'||L.indexOf('http')!==0)L='http:\/\/177.5.49.192';return L.replace(\/\\\\\/+$\/,'')})()}}\/class\/xuanhuan\/{{page}}\/\", \"style\": {\"layout_flexGrow\": 1, \"layout_flexBasisPercent\": 0.2}}, {\"title\": \"仙侠\", \"url\": \"{{(function(){var L='';try{L=String(source.get('ijLine')||'')}catch(e){}if(!L||L==='null'||L==='undefined'||L.indexOf('http')!==0)L='http:\/\/177.5.49.192';return L.replace(\/\\\\\/+$\/,'')})()}}\/class\/xianxia\/{{page}}\/\", \"style\": {\"layout_flexGrow\": 1, \"layout_flexBasisPercent\": 0.2}}, {\"title\": \"都市\", \"url\": \"{{(function(){var L='';try{L=String(source.get('ijLine')||'')}catch(e){}if(!L||L==='null'||L==='undefined'||L.indexOf('http')!==0)L='http:\/\/177.5.49.192';return L.replace(\/\\\\\/+$\/,'')})()}}\/class\/dushi\/{{page}}\/\", \"style\": {\"layout_flexGrow\": 1, \"layout_flexBasisPercent\": 0.2}}, {\"title\": \"历史\", \"url\": \"{{(function(){var L='';try{L=String(source.get('ijLine')||'')}catch(e){}if(!L||L==='null'||L==='undefined'||L.indexOf('http')!==0)L='http:\/\/177.5.49.192';return L.replace(\/\\\\\/+$\/,'')})()}}\/class\/lishi\/{{page}}\/\", \"style\": {\"layout_flexGrow\": 1, \"layout_flexBasisPercent\": 0.2}}, {\"title\": \"网游\", \"url\": \"{{(function(){var L='';try{L=String(source.get('ijLine')||'')}catch(e){}if(!L||L==='null'||L==='undefined'||L.indexOf('http')!==0)L='http:\/\/177.5.49.192';return L.replace(\/\\\\\/+$\/,'')})()}}\/class\/wangyou\/{{page}}\/\", \"style\": {\"layout_flexGrow\": 1, \"layout_flexBasisPercent\": 0.2}}, {\"title\": \"科幻\", \"url\": \"{{(function(){var L='';try{L=String(source.get('ijLine')||'')}catch(e){}if(!L||L==='null'||L==='undefined'||L.indexOf('http')!==0)L='http:\/\/177.5.49.192';return L.replace(\/\\\\\/+$\/,'')})()}}\/class\/kehuan\/{{page}}\/\", \"style\": {\"layout_flexGrow\": 1, \"layout_flexBasisPercent\": 0.2}}, {\"title\": \"女生\", \"url\": \"{{(function(){var L='';try{L=String(source.get('ijLine')||'')}catch(e){}if(!L||L==='null'||L==='undefined'||L.indexOf('http')!==0)L='http:\/\/177.5.49.192';return L.replace(\/\\\\\/+$\/,'')})()}}\/class\/nvsheng\/{{page}}\/\", \"style\": {\"layout_flexGrow\": 1, \"layout_flexBasisPercent\": 0.2}}, {\"title\": \"其他\", \"url\": \"{{(function(){var L='';try{L=String(source.get('ijLine')||'')}catch(e){}if(!L||L==='null'||L==='undefined'||L.indexOf('http')!==0)L='http:\/\/177.5.49.192';return L.replace(\/\\\\\/+$\/,'')})()}}\/class\/qita\/{{page}}\/\", \"style\": {\"layout_flexGrow\": 1, \"layout_flexBasisPercent\": 0.2}}, {\"title\": \"全本\", \"url\": \"{{(function(){var L='';try{L=String(source.get('ijLine')||'')}catch(e){}if(!L||L==='null'||L==='undefined'||L.indexOf('http')!==0)L='http:\/\/177.5.49.192';return L.replace(\/\\\\\/+$\/,'')})()}}\/quanben\/class\/{{page}}\/\", \"style\": {\"layout_flexGrow\": 1, \"layout_flexBasisPercent\": 0.2}}, {\"title\": \"总排行\", \"url\": \"{{(function(){var L='';try{L=String(source.get('ijLine')||'')}catch(e){}if(!L||L==='null'||L==='undefined'||L.indexOf('http')!==0)L='http:\/\/177.5.49.192';return L.replace(\/\\\\\/+$\/,'')})()}}\/rank\/allvisit\/\", \"style\": {\"layout_flexGrow\": 1, \"layout_flexBasisPercent\": 0.2}}, {\"title\": \"月排行\", \"url\": \"{{(function(){var L='';try{L=String(source.get('ijLine')||'')}catch(e){}if(!L||L==='null'||L==='undefined'||L.indexOf('http')!==0)L='http:\/\/177.5.49.192';return L.replace(\/\\\\\/+$\/,'')})()}}\/rank\/monthvisit\/\", \"style\": {\"layout_flexGrow\": 1, \"layout_flexBasisPercent\": 0.2}}, {\"title\": \"周排行\", \"url\": \"{{(function(){var L='';try{L=String(source.get('ijLine')||'')}catch(e){}if(!L||L==='null'||L==='undefined'||L.indexOf('http')!==0)L='http:\/\/177.5.49.192';return L.replace(\/\\\\\/+$\/,'')})()}}\/rank\/weekvisit\/\", \"style\": {\"layout_flexGrow\": 1, \"layout_flexBasisPercent\": 0.2}}]",
+    "header": "{\"User-Agent\": \"Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/120.0.0.0 Mobile Safari\/537.36\", \"Accept\": \"text\/html,application\/xhtml+xml,application\/xml;q=0.9,*\/*;q=0.8\", \"Accept-Language\": \"zh-CN,zh;q=0.9\"}",
+    "jsLib": "function IJ_base(){\n var L='';\n \/\/ ★java.get 在规则\/内联 JS 环境读的是实时值；jsLib 函数编译期捕获的 source 快照会冻结\n try{ L=String(source.get('ijLine')||''); }catch(e){}\n if(!L||L==='null'||L==='undefined'||L.indexOf('http')!==0) L='http:\/\/177.5.49.192';\n return L.replace(\/\\\/+$\/,'');\n}\nfunction IJ_action(){\n var L=IJ_base();\n try{\n  var h=String(java.ajax(L+'\/'));\n  var m=h.match(\/action=['\"](\\\/search[^'\"]*\\.html)['\"]\/);\n  if(m) return L+m[1];\n }catch(e){}\n return L+'\/search7e.html';\n}\nfunction IJ_cookieJs(){\n return \"try{cookie.removeCookie('\"+IJ_base()+\"\/')}catch(e){}\";\n}",
+    "lastUpdateTime": "1794116839698",
+    "loginCheckJs": "(function(){\n var R=result;\n try{\n  var b=String(R.body()||'');\n  var waf=b.indexOf('宝塔防火墙')>=0||b.indexOf('Verification_auth_btwaf')>=0||b.indexOf('请输入验证码')>=0;\n  if(!waf){\n   if(b.indexOf('搜索间隔: 30 秒')>=0) java.toast('久久小说：站点搜索间隔 30 秒，已自动清会话重试；若仍出现请稍后再搜');\n   return R;\n  }\n  var u=String(R.url());\n  var root=u.replace(\/^(https?:\\\/\\\/[^\\\/]+).*$\/,'$1');\n  java.toast('久久小说：① 触发宝塔人机验证，正在获取验证码图片…');\n  var capUrl=root+'\/get_btwaf_captcha_base64?captcha='+Date.now();\n  var capRaw=String(java.ajax(capUrl));\n  var cap='';\n  try{ var cj=JSON.parse(capRaw); if(cj&&cj.msg) cap=String(cj.msg); }catch(e){}\n  if(!cap||cap.indexOf('iVBOR')<0){ java.toast('久久小说：✗ 验证码图片获取失败，请稍后重试或切换线路'); return R; }\n  var code='';\n  try{ code=String(java.getVerificationCode('data:image\/png;base64,'+cap)||'').replace(\/^\\s+|\\s+$\/g,''); }\n  catch(e){ java.toast('久久小说：✗ 验证码弹窗失败：'+e); return R; }\n  if(!code){ java.toast('久久小说：✗ 已取消验证码输入，本次搜索终止'); return R; }\n  java.toast('久久小说：② 已收到验证码，正在提交校验…');\n  var vUrl=root+'\/Verification_auth_btwaf?captcha='+encodeURIComponent(code);\n  var vRaw=String(java.ajax(vUrl));\n  var ok=false;\n  try{ var vj=JSON.parse(vRaw); ok=!!(vj&&vj.status); }catch(e){ ok=vRaw.indexOf('true')>=0; }\n  if(!ok){ java.toast('久久小说：✗ 验证码错误或已过期，请重新搜索再试'); return R; }\n  java.toast('久久小说：③ 验证通过，正在继续本次搜索…');\n\n  \/\/ ★按 Host 分派重放接口：域名过盾后是「久久小说网」模板(GET \/search\/?searchkey=)，\n  \/\/   裸IP是「笔趣阁」模板(POST \/search7e.html)。验证成功后的放行窗口很短，必须立刻重放。\n  var isDomain=root.indexOf('ijjxs.org')>=0;\n  var kw='';\n  try{ kw=String(key||''); }catch(e){}\n  if(!kw){\n   try{\n    var rb0=R.raw().request().body();\n    if(rb0){ var B0=new Packages.okio.Buffer(); rb0.writeTo(B0);\n     var m=String(B0.readUtf8()).match(\/searchkey=([^&]*)\/); if(m) kw=decodeURIComponent(m[1]); }\n   }catch(e){}\n  }\n  var replayUrl='', replay='';\n  if(isDomain){\n   \/\/ 域名侧：搜索\/发现\/详情\/正文全部用 GET 路径；这里只重放「本次被拦的请求」对应的域名侧等价 URL\n   var path=u.slice(root.length);\n   if(path.indexOf('\/search')===0){\n    replayUrl=root+'\/search\/?searchkey='+encodeURIComponent(kw);\n   }else if(path.indexOf('\/class')===0||path.indexOf('\/rank')===0||path.indexOf('\/quanben')===0){\n    replayUrl=root+path;   \/\/ 分类\/排行\/全本路径两侧同名\n   }else{\n    replayUrl=root+path;   \/\/ 详情\/章节路径两侧同名\n   }\n   try{ replay=String(java.ajax(replayUrl)); }\n   catch(e){ java.toast('久久小说：✗ 过盾后重放失败：'+e); return R; }\n  }else{\n   \/\/ 裸IP侧：原样重放（method+body），但不回填全部原请求头，避免重复 Connection\/Keep-Alive\/Cookie\n   var req=R.raw().request();\n   var method=String(req.method()||'GET');\n   replayUrl=String(req.url());\n   var body='';\n   try{\n    var rb=req.body();\n    if(rb){ var B=new Packages.okio.Buffer(); rb.writeTo(B); body=String(B.readUtf8()); }\n   }catch(e){}\n   var opt={method:method};\n   if(body) opt.body=body;\n   try{ replay=String(java.ajax(replayUrl+','+JSON.stringify(opt))); }\n   catch(e){ java.toast('久久小说：✗ 过盾后重放失败：'+e); return R; }\n  }\n  if(replay.indexOf('宝塔防火墙')>=0||replay.indexOf('请输入验证码')>=0){\n   java.toast('久久小说：⚠ 验证已提交但页面仍被拦截，请在浏览器过盾后再搜，或切到裸IP线路');\n   return R;\n  }\n  if(replay.indexOf('404 Not Found')>=0){\n   java.toast('久久小说：⚠ 过盾成功但重放地址不存在（'+replayUrl+'），请切到裸IP线路');\n   return R;\n  }\n  try{\n   var NR=new Packages.io.legado.app.help.http.StrResponse(replayUrl,replay);\n   return NR;\n  }catch(e){\n   java.toast('久久小说：✗ 响应重建失败：'+e);\n   return R;\n  }\n }catch(e){\n  try{ java.toast('久久小说：✗ 人机验证处理异常：'+e); }catch(e2){}\n  return R;\n }\n})()",
+    "loginUi": "[{\"name\": \"发布页\", \"type\": \"text\", \"viewName\": \"'发布页地址'\"}, {\"name\": \"应用\", \"type\": \"button\", \"action\": \"IJ_pub(java,result)\"}, {\"name\": \"🧭 一键获取网址路线\", \"type\": \"button\", \"action\": \"IJ_toast(java,'开始获取路线');IJ_fetch(java)\"}, {\"name\": \"⏱ 测试延时\", \"type\": \"button\", \"action\": \"IJ_toast(java,'开始测速');IJ_speed(java)\"}, {\"name\": \"🔍 检查登录状态\", \"type\": \"button\", \"action\": \"IJ_check(java)\"}, {\"name\": \"线路1\", \"type\": \"button\", \"action\": \"IJ_switch(java,1)\", \"viewName\": \"IJ_btn(source,1)\"}, {\"name\": \"线路2\", \"type\": \"button\", \"action\": \"IJ_switch(java,2)\", \"viewName\": \"IJ_btn(source,2)\"}, {\"name\": \"线路3\", \"type\": \"button\", \"action\": \"IJ_switch(java,3)\", \"viewName\": \"IJ_btn(source,3)\"}, {\"name\": \"线路4\", \"type\": \"button\", \"action\": \"IJ_switch(java,4)\", \"viewName\": \"IJ_btn(source,4)\"}, {\"name\": \"线路5\", \"type\": \"button\", \"action\": \"IJ_switch(java,5)\", \"viewName\": \"IJ_btn(source,5)\"}, {\"name\": \"线路6\", \"type\": \"button\", \"action\": \"IJ_switch(java,6)\", \"viewName\": \"IJ_btn(source,6)\"}, {\"name\": \"🌐 打开当前线路\", \"type\": \"button\", \"action\": \"java.startBrowser(IJ_line(java)+'\/', '久久小说')\"}]",
+    "loginUrl": "function login(){return 'ok';}\nfunction IJ_toast(jv,s){try{jv.toast(s)}catch(e){}try{jv.longToast(s)}catch(e){}}\nfunction IJ_gv(jv,k,d){\n var v='';try{v=String(jv.get(k)||'')}catch(e){}\n if(!v||v==='null'||v==='undefined')v=d||'';return v;\n}\nfunction IJ_line(jv){\n var v=IJ_gv(jv,'ijLine','');\n if(!v||v.indexOf('http')!==0)v='http:\/\/177.5.49.192';\n return v.replace(\/\\\/+$\/,'');\n}\nfunction IJ_btn(jv,n){\n var list=IJ_gv(jv,'ijLines','').split('|'),i=Number(n)-1;\n if(i<0||i>=list.length||!list[i])return '━━ 线路'+n+' 未获取 ━━';\n var cur=IJ_line(jv),mark=(list[i]===cur)?'▶ ':'　 ';\n var d=IJ_gv(jv,'ijDelay'+n,'');if(d)mark+=d+' ';\n return mark+list[i].replace(\/^https?:\\\/\\\/\/,'').replace(\/\\\/+$\/,'');\n}\nfunction IJ_reUi(jv){try{jv.reLoginView(false)}catch(e){try{jv.reUiView(false)}catch(e2){}}}\nfunction IJ_apply(jv){\n var v=IJ_gv(jv,'ijPub','').replace(\/^\\s+|\\s+$\/g,'');\n if(!v)return '';\n if(v.indexOf('http')!==0)v='http:\/\/'+v;\n v=v.replace(\/\\\/+$\/,'');\n var pool=IJ_gv(jv,'ijLines','');\n if(pool.split('|').indexOf(v)<0)pool=(pool?pool+'|':'')+v;\n jv.put('ijLines',pool);jv.put('ijLine',v);\n return v;\n}\nfunction IJ_fetch(jv){\n IJ_toast(jv,'① 正在从发布页\/输入框获取网址路线…');\n var pub=IJ_gv(jv,'ijPub','').replace(\/^\\s+|\\s+$\/g,'');\n var found=[];\n if(pub){\n  if(pub.indexOf('http')!==0)pub='http:\/\/'+pub;\n  try{\n   var h=String(jv.ajax(pub));\n   IJ_toast(jv,'② 已打开发布页，正在解析页面中的网址…');\n   var re=\/https?:\\\/\\\/[a-z0-9.\\-]+(?:\\\/[^\\s\"'<>]*)?\/gi,m;\n   while((m=re.exec(h))!==null){\n    var u=m[0].replace(\/\\\/+$\/,'');\n    var host=u.replace(\/^https?:\\\/\\\/\/,'').split('\/')[0];\n    if(\/^(www\\.)?(w3\\.org|cloudflare|cloudfront|google|baidu|alicdn|qq|weibo|cnzz|51\\.la|doubleclick|gstatic|bootstrapcdn|jquery|jsdelivr|unpkg)\\b\/i.test(host))continue;\n    if(found.indexOf(u)<0)found.push(u);\n   }\n  }catch(e){IJ_toast(jv,'发布页读取失败：'+e);}\n }else{\n  IJ_toast(jv,'② 未填发布页，改用内置线路池：域名 + 裸IP直连');\n }\n var defs=['http:\/\/www.ijjxs.org','http:\/\/177.5.49.192'];\n for(var i=0;i<defs.length;i++)if(found.indexOf(defs[i])<0)found.push(defs[i]);\n jv.put('ijLines',found.join('|'));\n IJ_toast(jv,'③ 获取完成，共 '+found.length+' 条路线；点「⏱ 测试延时」测速');\n IJ_reUi(jv);\n return found.join('|');\n}\nfunction IJ_body(x){\n try{ if(x&&x.body) return String(x.body()); }catch(e){}\n return String(x||'');\n}\nfunction IJ_speed(jv){\n IJ_toast(jv,'① 开始测速（并发，跳过全局限速）…');\n var list=IJ_gv(jv,'ijLines','').split('|'),clean=[];\n for(var z=0;z<list.length;z++)if(list[z])clean.push(list[z].replace(\/\\\/+$\/,''));\n if(!clean.length){IJ_toast(jv,'✗ 线路池为空，请先点「🧭 一键获取网址路线」');return '';}\n var urls=[];\n for(var i=0;i<clean.length;i++)urls.push(clean[i]+'\/');\n var res=[],t0=Date.now(),done=false;\n try{\n  var rs=jv.ajaxAll(urls,true);\n  for(var k=0;k<clean.length;k++){\n   var rr=null;try{rr=rs.get(k)}catch(e){}\n   var s=IJ_body(rr);\n   var ok=s.length>5000&&s.indexOf('Exception')<0&&s.indexOf('宝塔防火墙')<0;\n   var ct='';\n   try{if(rr&&rr.callTime)ct=String(rr.callTime())+'ms';}catch(e){}\n   if(!ok)ct='超时\/验证';\n   if(!ct)ct=ok?'可达':'超时\/验证';\n   jv.put('ijDelay'+(k+1),ct);\n   res.push(clean[k]+'='+ct);\n  }\n  done=true;\n }catch(e){IJ_toast(jv,'并发测速不可用，改串行：'+e);}\n if(!done){\n  for(var q=0;q<clean.length;q++){\n   var st=Date.now(),ok2=false;\n   try{\n    var s2=String(jv.ajax(clean[q]+'\/,'+JSON.stringify({timeout:8000})));\n    ok2=s2.length>5000&&s2.indexOf('宝塔防火墙')<0&&s2.indexOf('Exception')<0;\n   }catch(e2){}\n   var ct2=ok2?(Date.now()-st)+'ms':'超时\/验证';\n   jv.put('ijDelay'+(q+1),ct2);res.push(clean[q]+'='+ct2);\n  }\n }\n IJ_toast(jv,'② 测速完成（总 '+(Date.now()-t0)+'ms）：'+res.join(' , ')+'；点各线路按钮即时切换');\n IJ_reUi(jv);\n return res.join('|');\n}\nfunction IJ_switch(jv,n){\n IJ_toast(jv,'① 正在切换到线路 '+n+' …');\n var list=IJ_gv(jv,'ijLines','').split('|'),i=Number(n)-1;\n if(i<0||i>=list.length||!list[i]){IJ_toast(jv,'✗ 线路 '+n+' 不存在，请先获取路线');return '';}\n var v=list[i].replace(\/\\\/+$\/,'');\n jv.put('ijLine',v);\n IJ_toast(jv,'② 已切换：'+v+'（下一次搜索\/发现\/目录即时生效）');\n IJ_reUi(jv);\n return v;\n}\nfunction IJ_check(jv){\n IJ_toast(jv,'① 正在检查线路连通性与登录状态…');\n var base=IJ_line(jv),s='';\n try{s=String(jv.ajax(base+'\/'))}catch(e){s='ERR '+e;}\n var waf=s.indexOf('宝塔防火墙')>=0||s.indexOf('请输入验证码')>=0;\n var real=s.indexOf('笔趣阁')>=0&&s.length>5000;\n var logged=s.indexOf('退出登录')>=0||s.indexOf('ss_username')>=0;\n var tip=waf?'⚠ 当前线路被宝塔人机验证拦截（建议切到裸IP线路或浏览器过盾）':(real?'✓ 线路连通，返回真实页面':'✗ 线路异常：'+s.slice(0,60));\n IJ_toast(jv,'② '+tip+' ｜ 账号登录：'+(logged?'已登录':'未登录（本站搜索\/阅读\/正文无需登录，书架功能才需要账号）'));\n try{jv.put('ijStatus',tip)}catch(e){}\n IJ_reUi(jv);\n return tip;\n}\nfunction IJ_pub(jv,r){\n var v='';\n try{v=String(r.get('发布页')||'')}catch(e){}\n try{if(!v)v=String(r['发布页']||'')}catch(e){}\n if(!v){IJ_toast(jv,'✗ 请先填发布页地址');return '';}\n jv.put('ijPub',v);\n var a=IJ_apply(jv);\n IJ_toast(jv,'③ 已应用发布页网址：'+a+'；点「🧭 一键获取网址路线」拉取全部路线');\n IJ_reUi(jv);\n return a;\n}",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".info2 h3 a@text||[property=\"og:novel:author\"]@content",
+      "coverUrl": ".info1 img@src||[property=\"og:image\"]@content",
+      "intro": ".info2 div p@text||[property=\"og:description\"]@content",
+      "kind": ".info3 p.0@text||[property~=category|status|update_time]@content",
+      "lastChapter": ".info3 p.2 a@text||[property=\"og:novel:lastest_chapter_name\"]@content",
+      "name": ".info2 h1@text||[property=\"og:novel:book_name\"]@content"
+    },
+    "ruleContent": {
+      "content": ".content-body@p@html||#booktxt@p@html||#booktxt@html",
+      "nextContentUrl": "#next_url@href||text.下一页@href",
+      "replaceRegex": "##本章未完[^<]*|<center>[\\s\\S]*?<\/center>|最近转码严重.*退出阅读模式。谢谢|<script[\\s\\S]*?<\/script>"
+    },
+    "ruleExplore": {
+      "author": ".btm@a.0@text||.btm@ownText||td.2@a@text||.book_author a@text||.book_author@text",
+      "bookList": ".item||.media||#bookcon tr:gt(0)",
+      "bookUrl": ".image@a.0@href||h4.book-title a@href||td.1@a@href",
+      "coverUrl": "img@data-original||img@src",
+      "intro": "dd@text||p.book-intro-index@text||td.3@text",
+      "kind": "class.blue.visible-xs@text||td.4@text",
+      "name": "dt@a@text||h4.book-title a@text||td.1@a@text",
+      "wordCount": "class.orange.visible-xs@text"
+    },
+    "ruleSearch": {
+      "author": ".btm@a.0@text||.btm@ownText||td.2@a@text||.book_author a@text||.book_author@text",
+      "bookList": ".item||#bookcon tr:gt(0)",
+      "bookUrl": ".image@a.0@href||a.0@href||td.1@a@href",
+      "coverUrl": "img@data-original||img@src",
+      "intro": "dd@text||td.3@text",
+      "kind": "class.blue.visible-xs@text||td.4@text",
+      "name": "dt@a@text||td.1@a@text",
+      "wordCount": "class.orange.visible-xs@text"
+    },
+    "ruleToc": {
+      "chapterList": "@js:\n(function(){\n var raw=String(result||'');\n var out=[];\n try{\n  var doc=Packages.org.jsoup.Jsoup.parse(raw);\n  var cand=null;\n  \/\/ A) 裸IP「笔趣阁」模板：多个 ul.list-charts，选章节链接最多的段（全部章节段）\n  var uls=doc.select('ul.list-charts');\n  var best=0;\n  for(var i=0;i<uls.size();i++){\n   var n=uls.get(i).select('a[href*=.html]').size();\n   if(n>best){best=n;cand=uls.get(i);}\n  }\n  \/\/ B) 域名「久久小说网」模板：单个 dl，dt[0]=最新章节(倒序9) \/ dt[1]=全部章节目录(正序)\n  \/\/    必须从「全部章节目录」dt 之后开始取，避免最新章节排到最前；末尾还会重复最新9条 → 按 href 去重\n  if(!cand || best<20){\n   var dls=doc.select('dl');\n   for(var d=0;d<dls.size();d++){\n    var dl=dls.get(d);\n    var dts=dl.select('dt');\n    var anchor=null;\n    for(var t=0;t<dts.size();t++){\n     if(dts.get(t).text().indexOf('全部章节目录')>=0){anchor=dts.get(t);break;}\n    }\n    if(anchor){\n     var kids=dl.children();\n     var start=kids.indexOf(anchor);\n     \/\/ 收集 anchor 之后所有带数字章节 href 的 a（含 dt[2] 之后的 hc 段，仍正序）\n     var tmp=[];\n     for(var q=start+1;q<kids.size();q++){\n      var e=kids.get(q);\n      var as=e.tagName()==='a'?[e]:e.select('a');\n      for(var z=0;z<as.length;z++){\n       var a=as[z],h=a.attr('href')||'',tx=a.text()||'';\n       if(\/\\\/\\d+_\\d+\\\/\\d+\\.html\/.test(h))tmp.push(JSON.stringify({n:tx,u:h}));\n      }\n     }\n     if(tmp.length>best){best=tmp.length;cand={_items:tmp};}\n    }\n   }\n  }\n  if(cand){\n   var items=[];\n   if(cand._items){ items=cand._items; }\n   else{\n    var as2=cand.select('a');\n    for(var j=0;j<as2.size();j++){\n     var a2=as2.get(j),h2=a2.attr('href')||'',t2=a2.text()||'';\n     if(!\/\\\/\\d+_\\d+\\\/\\d+\\.html\/.test(h2))continue;\n     items.push(JSON.stringify({n:t2,u:h2}));\n    }\n   }\n   \/\/ 按 href 去重（保先出现）：域名侧末尾会重复最新9条，裸IP侧各段互不重叠\n   var seen={};\n   for(var k=0;k<items.length;k++){\n    var o=JSON.parse(items[k]);\n    if(seen[o.u])continue;seen[o.u]=1;\n    out.push(items[k]);\n   }\n  }\n }catch(e){}\n var list=new Packages.java.util.ArrayList();\n for(var m=0;m<out.length;m++)list.add(out[m]);\n return list;\n})()",
+      "chapterName": "$.n",
+      "chapterUrl": "$.u"
+    },
+    "searchUrl": "{{(function(){var L='';try{L=String(source.get('ijLine')||'')}catch(e){}if(!L||L==='null'||L==='undefined'||L.indexOf('http')!==0)L='http:\/\/177.5.49.192';L=L.replace(\/\\\/+$\/,'');try{var h=String(java.ajax(L+'\/'));var m=h.match(\/action=['\"](\\\/search[^'\"]*\\.html)['\"]\/);if(m)return L+m[1]}catch(e){}return L+'\/search7e.html'})()}},{\"method\":\"POST\",\"body\":\"searchkey={{key}}\",\"headers\":{\"Content-Type\":\"application\/x-www-form-urlencoded\",\"Referer\":\"{{(function(){var L='';try{L=String(source.get('ijLine')||'')}catch(e){}if(!L||L==='null'||L==='undefined'||L.indexOf('http')!==0)L='http:\/\/177.5.49.192';return L.replace(\/\\\/+$\/,'')})()}}\/\"},\"js\":\"{{(function(){var L='';try{L=String(source.get('ijLine')||'')}catch(e){}if(!L||L==='null'||L==='undefined'||L.indexOf('http')!==0)L='http:\/\/177.5.49.192';return \"try{cookie.removeCookie('\"+L.replace(\/\\\/+$\/,'')+\"\/')}catch(e){}\"})()}}\"}",
+    "weight": 0
+  },
+  {
     "bookSourceComment": "主站：https://www.aiqu999.com（似乎是一个会自动跳转可用链接的链接）\n备用网址：\n  - www.aiqu654.com\n  - www.aqxsw222.com\n  - www.727txt.com\n  - www.27txt.La\n  - www.527txt.com\n网站给出的防迷路网址：www.272txt.com",
     "bookSourceGroup": "🍺 特优",
     "bookSourceName": "🍺 爱去小说",
@@ -1888,26 +1999,26 @@
     "bookSourceGroup": "🍺 特优",
     "bookSourceName": "🍺 爱下电子书",
     "bookSourceType": 0,
-    "bookSourceUrl": "https://ixdzs8.com",
-    "bookUrlPattern": "https://ixdzs8\\.com/read/\\d+/?",
+    "bookSourceUrl": "https:\/\/ixdzs8.com",
+    "bookUrlPattern": "https:\/\/ixdzs8\\.com\/read\/\\d+\/?",
     "customButton": false,
     "customOrder": 0,
     "enabled": true,
     "enabledCookieJar": true,
     "enabledExplore": true,
     "eventListener": false,
-    "exploreUrl": "最近更新::/new/?page={{page}}\n完结小说::/end/?page={{page}}\n日榜::/hot/day/?page={{page}}\n月榜::/hot/month/?page={{page}}\n总榜::/hot/?page={{page}}\n玄幻奇幻::/sort/1/index-0-0-0-{{page}}.html\n武侠小说::/sort/10/index-0-0-0-{{page}}.html\n修真仙侠::/sort/2/index-0-0-0-{{page}}.html\n都市青春::/sort/3/index-0-0-0-{{page}}.html\n军事历史::/sort/4/index-0-0-0-{{page}}.html\n网游竞技::/sort/5/index-0-0-0-{{page}}.html\n科幻灵异::/sort/6/index-0-0-0-{{page}}.html\n言情穿越::/sort/7/index-0-0-0-{{page}}.html\n耽美同人::/sort/8/index-0-0-0-{{page}}.html\n台言古言::/sort/9/index-0-0-0-{{page}}.html\n其他小说::/sort/0/index-0-0-0-{{page}}.html",
-    "header": "{\"User-Agent\":\"Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Mobile Safari/537.36\"}",
-    "lastUpdateTime": 1788330412645,
+    "exploreUrl": "最近更新::\/new\/?page={{page}}\n完结小说::\/end\/?page={{page}}\n日榜::\/hot\/day\/?page={{page}}\n月榜::\/hot\/month\/?page={{page}}\n总榜::\/hot\/?page={{page}}\n玄幻奇幻::\/sort\/1\/index-0-0-0-{{page}}.html\n武侠小说::\/sort\/10\/index-0-0-0-{{page}}.html\n修真仙侠::\/sort\/2\/index-0-0-0-{{page}}.html\n都市青春::\/sort\/3\/index-0-0-0-{{page}}.html\n军事历史::\/sort\/4\/index-0-0-0-{{page}}.html\n网游竞技::\/sort\/5\/index-0-0-0-{{page}}.html\n科幻灵异::\/sort\/6\/index-0-0-0-{{page}}.html\n言情穿越::\/sort\/7\/index-0-0-0-{{page}}.html\n耽美同人::\/sort\/8\/index-0-0-0-{{page}}.html\n台言古言::\/sort\/9\/index-0-0-0-{{page}}.html\n其他小说::\/sort\/0\/index-0-0-0-{{page}}.html",
+    "header": "{\"User-Agent\":\"Mozilla\/5.0 (Linux; Android 13; Pixel 7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/127.0.0.0 Mobile Safari\/537.36\"}",
+    "lastUpdateTime": "1794896392329",
     "respondTime": 180000,
     "ruleBookInfo": {
-      "name": ".n-text h1@text",
       "author": ".bauthor a@text",
       "intro": "#intro@text",
-      "kind": ".tags a@text"
+      "kind": ".tags a@text",
+      "name": ".n-text h1@text"
     },
     "ruleContent": {
-      "content": "@js:\nvar tokenMatch = src.match(/token\\s*=\\s*\"([^\"]+)\"/);\nvar html = src;\nif (tokenMatch) {\n    var token = tokenMatch[1];\n    var tourl = baseUrl + \"?challenge=\" + encodeURIComponent(token);\n    html = java.ajax(tourl);\n}\nvar section = html.match(/<section[^>]*>\\s*([\\s\\S]*?)\\s*<\\/section>/i);\nif (!section) {\n    \"\";\n} else {\n    var text = section[1]\n        .replace(/<br\\s*\\/?>/gi, \"\\n\")\n        .replace(/<\\/p>\\s*<p[^>]*>/gi, \"\\n\")\n        .replace(/<\\/?p[^>]*>/gi, \"\")\n        .trim();\n    text;\n}"
+      "content": "@js:\nvar tokenMatch = src.match(\/token\\s*=\\s*\"([^\"]+)\"\/);\nvar html = src;\nif (tokenMatch) {\n    var token = tokenMatch[1];\n    var tourl = baseUrl + \"?challenge=\" + encodeURIComponent(token);\n    html = java.ajax(tourl);\n}\nvar section = html.match(\/<section[^>]*>\\s*([\\s\\S]*?)\\s*<\\\/section>\/i);\nif (!section) {\n    \"\";\n} else {\n    var text = section[1]\n        .replace(\/<br\\s*\\\/?>\/gi, \"\\n\")\n        .replace(\/<\\\/p>\\s*<p[^>]*>\/gi, \"\\n\")\n        .replace(\/<\\\/?p[^>]*>\/gi, \"\")\n        .trim();\n    text;\n}"
     },
     "ruleExplore": {
       "author": ".bauthor a@text",
@@ -1924,7 +2035,7 @@
       "author": ".bauthor a@text",
       "bookList": ".u-list li",
       "bookUrl": "a@href",
-      "coverUrl": "img@src\n@js:\nif (result == \"https://img22.ixdzs.com/nopic2.jpg\") {\n    null;\n} else {\n    result;\n}",
+      "coverUrl": "img@src\n@js:\nif (result == \"https:\/\/img22.ixdzs.com\/nopic2.jpg\") {\n    null;\n} else {\n    result;\n}",
       "intro": ".l-p2@text",
       "kind": ".lz@text",
       "lastChapter": ".l-chapter@text",
@@ -1932,12 +2043,12 @@
       "wordCount": ".size@text"
     },
     "ruleToc": {
-      "chapterList": "@js:\nvar bidMatch = baseUrl.match(/read\\/(\\d+)/);\nif (!bidMatch) {\n    [];\n} else {\n    var bid = bidMatch[1];\n    var resp = java.post(source.getKey() + \"/novel/clist/\", \"bid=\" + bid, {});\n    var json = JSON.parse(resp.body()).data;\n    var result = [];\n    var volume = \"\";\n    for (var i = 0; i < json.length; i++) {\n        var item = json[i];\n        if (item.ctype === \"1\") {\n            volume = item.title;\n            continue;\n        }\n        item.url = source.getKey() + \"/read/\" + bid + \"/p\" + item.ordernum + \".html\";\n        item.volume = volume;\n        result.push(item);\n    }\n    result;\n}",
+      "chapterList": "@js:\nvar bid = \"\";\nvar mm = baseUrl.match(\/read\\\/(\\d+)\/);\nif (mm) bid = mm[1];\nvar result = [];\nif (bid) {\n    var key = source.getKey();\n    try {\n        var resp = java.post(key + \"\/novel\/clist\/\", \"bid=\" + bid, {\"X-Requested-With\": \"XMLHttpRequest\", \"Content-Type\": \"application\/x-www-form-urlencoded\"});\n        var body = String(resp.body());\n        if (body.indexOf(\"\\\"data\\\"\") > -1) {\n            var json = JSON.parse(body);\n            var data = json.data;\n            if (data && data.length > 0) {\n                var volume = \"\";\n                for (var i = 0; i < data.length; i++) {\n                    var item = data[i];\n                    if (String(item.ctype) == \"1\") {\n                        volume = item.title;\n                        continue;\n                    }\n                    result.push({title: item.title, url: key + \"\/read\/\" + bid + \"\/p\" + item.ordernum + \".html\", volume: volume});\n                }\n            }\n        }\n    } catch (e) {}\n    if (result.length == 0) {\n        var html = \"\";\n        try {\n            html = String(java.post(key + \"\/novel\/html\", \"bid=\" + bid, {\"X-Requested-With\": \"XMLHttpRequest\"}).body());\n        } catch (e2) {}\n        if (!html || html.indexOf(\"p1.html\") == -1) {\n            try {\n                html = String(java.ajax(key + \"\/read\/\" + bid + \"\/\"));\n            } catch (e3) {}\n        }\n        var reg = \/<a href=\"\\\/read\\\/\\d+\\\/p(\\d+)\\.html\"[^>]*>([^<]*)<\\\/a>\/g;\n        var seen = {};\n        var found = [];\n        var r;\n        while ((r = reg.exec(html)) != null) {\n            var num = parseInt(r[1], 10);\n            if (!num || seen[num] == 1) continue;\n            seen[num] = 1;\n            found.push({num: num, title: r[2], url: key + \"\/read\/\" + bid + \"\/p\" + num + \".html\"});\n        }\n        found.sort(function(a, b) { return a.num - b.num; });\n        for (var j = 0; j < found.length; j++) {\n            result.push({title: found[j].title, url: found[j].url, volume: \"\"});\n        }\n    }\n}\nresult;",
       "chapterName": "title",
       "chapterUrl": "url",
       "updateTime": "volume"
     },
-    "searchUrl": "/bsearch?q={{key}}&page={{page}}",
+    "searchUrl": "\/bsearch?q={{key}}&page={{page}}",
     "weight": 0
   },
   {
@@ -3947,6 +4058,56 @@
       "chapterUrl": "https://wechat.idejian.com/api/wechat{{$.url##.html}}"
     },
     "searchUrl": "https://www.idejian.com/search?keyword={{key}}&page={{page}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "注意：本站仅支持按书名搜索（搜作者名无结果）。",
+    "bookSourceGroup": "🍺 特优",
+    "bookSourceName": "🍺 得奇小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https:\/\/www.deqixss.com",
+    "concurrentRate": "500",
+    "customButton": false,
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "eventListener": false,
+    "exploreUrl": "@js:\nconst list = []\nconst push = (title, url, size) => list.push({\n  title,\n  url,\n  style: {\n  \t layout_flexGrow: 1,\n  \t layout_flexBasisPercent: size||0.29\n  }\n});\n\nconst cats = \"全部::0\\n玄幻小说::1\\n都市小说::2\\n仙侠小说::3\\n历史小说::4\\n科幻小说::5\\n诸天无限::6\\n悬疑小说::7\\n体育小说::8\\n游戏小说::9\\n综合其他::10\"\nconst ranks = \"总点击榜::allvisit\\n月点击榜::monthvisit\\n周点击榜::weekvisit\\n日点击榜::dayvisit\\n总推荐榜::allvote\\n月推荐榜::monthvote\\n周推荐榜::weekvote\\n日推荐榜::dayvote\\n总月票榜::allvipvote\\n本月票榜::monthvipvote\\n前月票榜::previpvote\\n周月票榜::weekvipvote\\n日月票榜::dayvipvote\\n总鲜花榜::allflower\\n月鲜花榜::monthflower\\n周鲜花榜::weekflower\\n日鲜花榜::dayflower\\n总鸡蛋榜::allegg\\n月鸡蛋榜::monthegg\\n周鸡蛋榜::weekegg\\n日鸡蛋榜::dayegg\\n总销售榜::allsale\\n月销售榜::monthsale\\n周销售榜::weeksale\\n日销售榜::daysale\\n月勤更榜::monthwords\\n周勤更榜::weekwords\\n日勤更榜::daywords\\n最近更新::lastupdate\\n最新入库::postdate\\n最新上架::signtime\\n收藏榜::goodnum\\n字数榜::words\\n编辑推荐::toptime\\n新书榜::newhot\"\n\npush(\"书库\",\"\",1)\ncats.split(\"\\n\").forEach(cat => {\n\t let [title, id] = cat.split(\"::\")\n\t push(title, `\/sort\/${id}\/{{page}}.html`)\n})\npush(\"排行 - 全本\",\"\",1)\nranks.split(\"\\n\").forEach(rank => {\n\t let [title, rk] = rank.split(\"::\")\n\t push(title, `\/modules\/article\/toplist.php?order=allvisit&fullflag=${rk}&page={{page}}`)\n})\n\nJSON.stringify(list)",
+    "jsLib": "function towan(e) {\n    if(!e) return;\n    if (e < 1e4) {\n        return e + \"字\";\n    } else {\n        return (e \/ 1e4).toFixed(1) + \"万字\";\n    }\n}",
+    "lastUpdateTime": "1794731346667",
+    "respondTime": 12532,
+    "ruleBookInfo": {
+      "author": "[property$=author]@content",
+      "coverUrl": "[property$=image]@content",
+      "intro": "[property$=description]@content",
+      "kind": "[property$=category]@content&&\n[property$=status]@content&&\n[property$=update_time]@content",
+      "lastChapter": "[property$=latest_chapter_name]@content",
+      "name": "[property$=book_name]@content",
+      "wordCount": "<js>\nlet size = result?.match(\/towan\\('\\d+'\\)\/)?.[0];\neval(size || \"\")\n<\/js>"
+    },
+    "ruleContent": {
+      "content": "<js>\nlet [, aid, cid] = baseUrl.match(\/\\\/books\\\/(\\d+)\\\/(\\d+)\\.html\/);\nlet url = `https:\/\/www.deqixss.com\/scripts\/chapter.js.php?aid=${aid}&cid=${cid}&referrer=${baseUrl}`;\nlet tokenHtml = java.ajax(url);\neval(String(tokenHtml));\n\nlet params = {\n  aid,\n  cid,\n  token: chapterToken,\r\n  timestamp,\r\n  nonce\n};\nlet paramStr =\tObject.entries(params)\n    .map(x=>x.join(\"=\")).join(\"&\");\nlet headers = {\n\t \"Referer\": baseUrl,\n\t \"Accept\":\t\"text\/plain, *\/*; q=0.01\",\n  \"X-Requested-With\": \"XMLHttpRequest\"\n}\nurl = \"https:\/\/www.deqixss.com\/modules\/article\/ajax2.php?\"+paramStr+\",\"+JSON.stringify({\n\t headers\n})\n\njava.ajax(url)\n<\/js>\n$..content||$.message",
+      "replaceRegex": "@js:\nconst FILTER_RULES = [\n  \/更新不易.+?看最新章节！\/g,\n  \/更新不易.+?看最新无错章节！\/g, \n  \/更新不易.+?最新小说章节！\/g,\n  \/速.?读.?谷\/g, \n  \/本章节未完.+?请订阅\/g,\n  '当&前@章#节$内%容^不&完*整！要~查!看-完_整|章;节)请(退&出%阅#读|模*式！',\n  \n]\n\nfor(let reg of FILTER_RULES){\n\t result = result.replace(reg, \"\")\n}\nresult;"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": ".author.0@text##作者：",
+      "bookList": ".bookbox",
+      "bookUrl": ".bookname a@href",
+      "coverUrl": ".bookname a@href@js:\nlet id = result.match(\/\\\/(\\d+)\\\/$\/)[1];\nlet sid = parseInt(id \/ 1000);\n`\/files\/article\/image\/${sid}\/${id}\/${id}s.jpg`",
+      "intro": ".update@textNodes",
+      "lastChapter": ".cat a@text",
+      "name": ".bookname a@text",
+      "wordCount": "\/\/script\/text()@js:\nif(result){\n\t eval(result)\n}"
+    },
+    "ruleToc": {
+      "chapterList": "#list-chapterAll dd a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": ".next@href"
+    },
+    "searchUrl": "https:\/\/www.deqixss.com\/modules\/article\/search.php,{\n  \"body\": \"searchkey={{key}}&action=login\",\n  \"method\": \"POST\"\n}",
     "weight": 0
   },
   {
@@ -9981,12 +10142,12 @@
     "weight": 0
   },
   {
-    "bookSourceComment": "作者：纳兰容若 // 需手动过CF验证",
+    "bookSourceComment": "基于书源2修复：详情目录、目录规则、正文接口改用新站结构；保留线路切换与搜索验证。正文 API 使用当前章节域名，适配镜像切换。",
     "bookSourceGroup": "🍺 特优",
     "bookSourceName": "🍺 霹雳书屋",
     "bookSourceType": 0,
-    "bookSourceUrl": "https://www.pilishuwu.com",
-    "bookUrlPattern": ".*pilishuwu\\.com/\\d+/\\d+/info\\.html.*",
+    "bookSourceUrl": "https:\/\/www.pilishuwu.com",
+    "bookUrlPattern": "https?:\/\/[^\/]+\/\\d+\/\\d+\/info\\.html",
     "concurrentRate": "1000",
     "customButton": false,
     "customOrder": 0,
@@ -9994,51 +10155,58 @@
     "enabledCookieJar": true,
     "enabledExplore": true,
     "eventListener": false,
-    "exploreUrl": "[{\"title\":\"全部小说\",\"url\":\"/0/list/1.html\"},{\"title\":\"男频小说\",\"url\":\"/1/list/1.html\"},{\"title\":\"女频小说\",\"url\":\"/2/list/1.html\"},{\"title\":\"电子图书\",\"url\":\"/3/list/1.html\"},{\"title\":\"无CP小说\",\"url\":\"/4/list/1.html\"},{\"title\":\"纯爱小说\",\"url\":\"/5/list/1.html\"}]",
-    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36\", \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8\", \"Accept-Language\": \"zh-CN,zh;q=0.9,en;q=0.8\", \"Referer\": \"https://www.pilishuwu.com/\"}",
-    "lastUpdateTime": 1789827498772,
-    "loginCheckJs": "",
-    "loginUi": "[\n  {\n    \"name\": \"🌐 打开浏览器完成验证\",\n    \"type\": \"button\",\n    \"action\": \"openBrowser()\",\n    \"style\": {\"layout_flexGrow\": 1, \"layout_flexBasisPercent\": 1}\n  },\n  {\n    \"name\": \"🍪 查看Cookie状态\",\n    \"type\": \"button\",\n    \"action\": \"checkCookie()\",\n    \"style\": {\"layout_flexGrow\": 1, \"layout_flexBasisPercent\": 0.5}\n  },\n  {\n    \"name\": \"🗑️ 清除Cookie\",\n    \"type\": \"button\",\n    \"action\": \"clearCookie()\",\n    \"style\": {\"layout_flexGrow\": 1, \"layout_flexBasisPercent\": 0.5}\n  }\n]",
-    "loginUrl": "openBrowser = () => {\n    java.startBrowser('https://www.pilishuwu.com', '请完成安全验证，通过后返回阅读即可');\n}\n\ncheckCookie = () => {\n    var c = java.getCookie('https://www.pilishuwu.com');\n    if (c && c.indexOf('cf_clearance') !== -1) {\n        java.toast('✅ 已检测到 cf_clearance Cookie');\n    } else {\n        java.toast('❌ 未检测到 cf_clearance Cookie');\n    }\n}\n\nclearCookie = () => {\n    java.clearCookie('https://www.pilishuwu.com');\n    java.toast('🗑️ Cookie 已清除');\n}",
-    "respondTime": 91700,
+    "exploreScreen": "",
+    "exploreUrl": "[{\"title\":\"全部小说\",\"url\":\"{{host.call(this)}}\/0\/list\/{{page==1?'1':'0_0_0_0_0_0_0_'+page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1},\"webView\":true},{\"title\":\"男频小说\",\"url\":\"{{host.call(this)}}\/1\/list\/{{page==1?'1':'0_0_0_0_0_0_0_'+page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1},\"webView\":true},{\"title\":\"女频小说\",\"url\":\"{{host.call(this)}}\/2\/list\/{{page==1?'1':'0_0_0_0_0_0_0_'+page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1},\"webView\":true},{\"title\":\"电子图书\",\"url\":\"{{host.call(this)}}\/3\/list\/{{page==1?'1':'0_0_0_0_0_0_0_'+page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1},\"webView\":true},{\"title\":\"无CP小说\",\"url\":\"{{host.call(this)}}\/4\/list\/{{page==1?'1':'0_0_0_0_0_0_0_'+page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.3,\"layout_flexGrow\":1},\"webView\":true},{\"title\":\"纯爱小说\",\"url\":\"{{host.call(this)}}\/5\/list\/{{page==1?'1':'0_0_0_0_0_0_0_'+page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1},\"webView\":true},{\"title\":\"百合小说\",\"url\":\"{{host.call(this)}}\/6\/list\/{{page==1?'1':'0_0_0_0_0_0_0_'+page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1},\"webView\":true},{\"title\":\"轻小说\",\"url\":\"{{host.call(this)}}\/8\/list\/{{page==1?'1':'0_0_0_0_0_0_0_'+page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1},\"webView\":true},{\"title\":\"最新入库\",\"url\":\"{{host.call(this)}}\/top\/list\/0\/1\/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1},\"webView\":true},{\"title\":\"全部点击\",\"url\":\"{{host.call(this)}}\/top\/list\/0\/2\/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1},\"webView\":true},{\"title\":\"本年点击\",\"url\":\"{{host.call(this)}}\/top\/list\/0\/3\/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1},\"webView\":true},{\"title\":\"本月点击\",\"url\":\"{{host.call(this)}}\/top\/list\/0\/4\/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1},\"webView\":true},{\"title\":\"本周点击\",\"url\":\"{{host.call(this)}}\/top\/list\/0\/5\/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1},\"webView\":true},{\"title\":\"本日点击\",\"url\":\"{{host.call(this)}}\/top\/list\/0\/6\/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1},\"webView\":true}]",
+    "header": "@js:\nvar h = host.call(this);\nJSON.stringify({\n  \"User-Agent\": java.getWebViewUA(),\n  \"Accept\": \"text\/html,application\/xhtml+xml,application\/xml;q=0.9,*\/*;q=0.8\",\n  \"Accept-Language\": \"zh-CN,zh;q=0.9,en;q=0.8\",\n  \"Referer\": h + \"\/\"\n})\n",
+    "jsLib": "function host(){\n  var src=this.source;\n  var m=src?src.getLoginInfoMap():null;\n  var h=(m&&m[\"线路\"])||\"https:\/\/www.pili45.com\";\n  if(String(h).indexOf(\"http\")!=0){\n    if(String(h).indexOf(\"pilibook\")>=0) h=\"https:\/\/www.pilibook.net\";\n    else if(String(h).indexOf(\"pilishuwu\")>=0) h=\"https:\/\/www.pilishuwu.com\";\n    else h=\"https:\/\/www.pili45.com\";\n  }\n  return String(h).replace(\/\\\/$\/,\"\");\n}",
+    "lastUpdateTime": "1793975442494",
+    "loginCheckJs": "var resultUrl = result.url();\nvar resultCode = result.code();\nvar resultBoDy = String(result.body()||\"\");\nif (\/Just a moment|Checking your browser|_cf_|cf-browser-verification|challenge-platform\/i.test(resultBoDy) && resultCode >= 403) {\n  java.longToast(\"请完成人机验证后点右上角对勾\");\n  cookie.removeCookie(baseUrl);\n  result = java.startBrowserAwait(resultUrl, \"Cloudflare验证\", false);\n}\nresult;",
+    "loginUi": "[{\"name\":\"线路\",\"type\":\"select\",\"chars\":[\"https:\/\/www.pilishuwu.com\",\"https:\/\/www.pilibook.net\",\"https:\/\/www.pili45.com\"],\"default\":\"https:\/\/www.pili45.com\"}]",
+    "loginUrl": "@js:\nfunction login(){\n  var m=source.getLoginInfoMap()||{};\n  source.putLoginInfo(JSON.stringify(m));\n  java.toast(\"已切换线路：\"+host.call(this));\n}\n",
+    "respondTime": 130012,
     "ruleBookInfo": {
-      "author": "div.book-info-status a[href*=author]@text || p.book-status@text",
-      "coverUrl": "div.book-cover img@src || img.book-cover@src",
-      "intro": "div.book-intro@text || p.book-intro@text",
-      "kind": "a.book-fenlei@text || span.book-fenlei@text",
-      "lastChapter": "a.book-newest@text",
-      "name": "h1@text || h2.book-title@text",
-      "tocUrl": "@js:baseUrl.replace(/info\\.html.*$/, 'menu/1.html')"
+      "author": ".custom-info-box p.1@text##作者：||div.book-info-status a[href*=author]@text||p.book-status@text",
+      "coverUrl": ".custom-cover-img@src||img.0@src||div.book-cover img@src||img.book-cover@src",
+      "intro": "标签：{{@@.custom-tags a@text##\\s##,}}\n简介：{{@@.custom-intro@text}}",
+      "kind": ".custom-tags a@text##\\s##,||.custom-info-box p.2@text##分类：||a.book-fenlei@text||span.book-fenlei@text",
+      "lastChapter": ".custom-latest-chapter a@text||.custom-latest-chapter@text||a.book-newest@text",
+      "name": ".custom-book-name@text||p.custom-book-name@text||h1@text||h2.book-title@text",
+      "tocUrl": "text.章节目录@href||@js:baseUrl.replace(\/info\\.html.*$\/, 'menu\/1.html')"
     },
     "ruleContent": {
-      "content": "@js:\nvar html = result;\nvar cid = '';\nvar m1 = html.match(/data-chapter-id=\"(\\d+)\"/);\nif (m1) cid = m1[1];\nif (!cid) {\n  var m2 = html.match(/id:\\s*'(\\d+)'/);\n  if (m2) cid = m2[1];\n}\nvar content = '';\nif (cid) {\n  var apiUrl = source.key + '/wmcms/ajax/index.php?action=novel.getchapter&cid=' + cid + '&format=1';\n  var res = java.ajax(apiUrl);\n  try {\n    var json = JSON.parse(res);\n    if (json.code == 200 && json.data && json.data.chapter) {\n      var ch = json.data.chapter;\n      if (ch.chapter_isvip == '0' && ch.content && ch.content.length > 0) {\n        var lines = [];\n        for (var i = 0; i < ch.content.length; i++) lines.push(String(ch.content[i]));\n        content = lines.join('\\n');\n      } else if (ch.chapter_isvip != '0') {\n        content = '【VIP章节，需订阅后阅读】';\n      } else {\n        content = '【本章内容为空】';\n      }\n    } else {\n      content = '【接口返回异常 code=' + json.code + '】';\n    }\n  } catch(e) {\n    content = '【JSON解析失败: ' + e + '】';\n  }\n} else {\n  content = '【未能提取章节ID】';\n}\nresult = content;\nresult;",
-      "nextContentUrl": "#readLoadNext a:last-child@href"
+      "content": "@js:\nvar html = String(result || '');\nvar cid = '';\nvar m1 = html.match(\/data-chapter-id=\"(\\d+)\"\/);\nif (m1) cid = m1[1];\nif (!cid) {\n  var m2 = html.match(\/id:\\s*'(\\d+)'\/);\n  if (m2) cid = m2[1];\n}\nvar content = '';\nif (cid) {\n  var om = baseUrl.match(\/^https?:\\\/\\\/[^\\\/]+\/);\n  var origin = om ? om[0] : source.key;\n  var apiUrl = origin + '\/wmcms\/ajax\/index.php?action=novel.getchapter&cid=' + cid + '&format=1';\n  var res = java.ajax(apiUrl);\n  try {\n    var json = JSON.parse(res);\n    if (json.code == 200 && json.data && json.data.chapter) {\n      var ch = json.data.chapter;\n      if (String(ch.chapter_isvip) == '0' && ch.content && ch.content.length > 0) {\n        var lines = [];\n        for (var i = 0; i < ch.content.length; i++) lines.push(String(ch.content[i]));\n        content = lines.join('\\n');\n      } else if (String(ch.chapter_isvip) != '0') {\n        content = '【VIP章节，需订阅后阅读】';\n      } else {\n        content = '【本章内容为空】';\n      }\n    } else {\n      content = '【接口返回异常 code=' + json.code + '】';\n    }\n  } catch(e) {\n    content = '【JSON解析失败: ' + e + '】';\n  }\n} else {\n  content = '【未能提取章节ID】';\n}\nresult = content;\nresult;",
+      "nextContentUrl": "#readLoadNext a:last-child@href",
+      "title": "#chapterTitle@text"
     },
     "ruleExplore": {
-      "author": "span.book-status@text",
-      "bookList": "div.x-book",
-      "bookUrl": "div.x-book__coverbox a@href",
-      "coverUrl": "img.x-book__cover@src",
-      "intro": "p.x-book__intro@text",
-      "kind": "span.book-fenlei@text",
-      "name": "p.x-book__info--name@text"
+      "author": "p.x-book__info--author@tag.span.0@text||.x-info__author span@text||span.book-status@text",
+      "bookList": ".x-library__books .x-book||.x-rank__book||div.x-book",
+      "bookUrl": "a@href",
+      "coverUrl": "img@data-src||img@src||img.x-book__cover@src",
+      "intro": ".x-book__info--chapter@text||.x-info__intro@text||p.x-book__intro@text",
+      "kind": "span.red@text||.x-info__author@ownText||span.book-fenlei@text",
+      "name": ".x-book__info--name@text||.x-info__name@text||p.x-book__info--name@text",
+      "wordCount": ".word-convert@text"
     },
     "ruleSearch": {
-      "author": "span.book-status@text",
-      "bookList": "div.x-book",
-      "bookUrl": "div.x-book__coverbox a@href",
-      "checkKeyWord": "我的",
-      "coverUrl": "img.x-book__cover@src",
-      "intro": "p.x-book__intro@text",
-      "kind": "span.book-fenlei@text",
-      "name": "p.x-book__info--name@text"
+      "author": ".book-status@text||p.x-book__info--author@tag.span.0@text||span.book-status@text",
+      "bookList": "@js:\nfunction books(){var a=java.getElements('.x-library__books .x-book');if(a&&a.size()>0)return a;return java.getElements('.x-book');}\nvar c=books();\nif(c&&c.size()>0){c;}else{\nvar s=String(result||'');\nvar need=s.indexOf('验证码')>=0 && s.indexOf('请稍候')<0 && s.indexOf('Just a moment')<0 && s.indexOf('搜索结果')<0;\nif(need){\njava.longToast('请完成搜索验证后点右上角对勾');\nvar resp=java.startBrowserAwait(java.get('url'),'搜索验证');\nvar html='';try{html=String(resp.body());}catch(e){html=String(resp);}\njava.setContent(html);\nc=books();\n}\nc;\n}",
+      "bookUrl": ".x-book__coverbox a@href",
+      "checkKeyWord": "系统",
+      "coverUrl": "img@data-src||img@src||img.x-book__cover@src",
+      "intro": ".x-book__intro@text||.x-book__info--chapter@text||p.x-book__intro@text",
+      "kind": ".book-fenlei@text||span.red@text||span.book-fenlei@text",
+      "name": ".x-book__info--name@text||p.x-book__info--name@text",
+      "wordCount": ".word-convert@text"
     },
     "ruleToc": {
-      "chapterList": "li.chapter",
-      "chapterName": "a span@text",
-      "chapterUrl": "a@href"
+      "chapterList": "ol#chapterListContainer li.custom-chapter-item || #chapterListContainer li.custom-chapter-item",
+      "chapterName": "a span@text || a@text",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "a:contains(下一页)@href || a:contains(下页)@href"
     },
-    "searchUrl": "https://www.pilishuwu.com/module/search/search.php?module=novel&key={{key}}",
+    "searchUrl": "@js:\nvar k = java.encodeURI(key);\nvar h = host.call(this);\nvar url = page > 1\n  ? (h + \"\/search\/0\/\" + k + \"\/\" + page + \".html\")\n  : (h + \"\/module\/search\/search.php?key=\" + k + \"&module=novel&type=0\");\njava.put(\"url\", url);\nvar waitJs = \"(()=>{var b=document.querySelectorAll('.x-book');if(b.length)return document.documentElement.outerHTML;var t=document.title||'';var h=document.body?document.body.innerHTML:'';if(h.indexOf('验证码')>=0&&t.indexOf('请稍候')<0&&t.indexOf('Just a moment')<0)return document.documentElement.outerHTML;return null;})()\";\nurl + ',' + JSON.stringify({webView:true, webJs:waitJs, webViewDelayTime:1500});\n",
+    "variableComment": "登录UI「线路」：主站 pilishuwu.com \/ 镜像 pilibook.net \/ 镜像 pili45.com。默认 pili45.com。目录\/详情\/正文已按新站结构修复。",
     "weight": 0
   },
   {
@@ -12206,6 +12374,66 @@
       "nextTocUrl": "text.下一页@href||class.listpage@span.-1@href"
     },
     "searchUrl": "/s.php,{\n  \"body\": \"keyword={{key}}&t=1\",\n  \"charset\": \"UTF-8\",\n  \"headers\": {\n    \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36\"\n  },\n  \"method\": \"POST\",\n  \"retry\": 2,\n  \"webView\": false\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "🍺 特优",
+    "bookSourceName": "🍺 书海阁",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https:\/\/book.washai.net",
+    "bookUrlPattern": "https?:\/\/book\\.washai\\.net\/book\/\\d+\\.html",
+    "customButton": false,
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "eventListener": false,
+    "exploreUrl": "[{\"title\":\"✨ 书海阁 ✨\",\"url\":\"https:\/\/book.washai.net\/book\/bookclass.html\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_wrapBefore\":true,\"layout_alignSelf\":\"center\"}},{\"title\":\"全部作品\",\"url\":\"https:\/\/book.washai.net\/book\/bookclass.html?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.45}},{\"title\":\"排行榜\",\"url\":\"https:\/\/book.washai.net\/book\/book_ranking.html\",\"style\":{\"layout_flexBasisPercent\":0.45}},{\"title\":\"✣ 排行榜 ✣\",\"url\":\"https:\/\/book.washai.net\/book\/book_ranking.html\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_wrapBefore\":true,\"layout_alignSelf\":\"center\"}},{\"title\":\"人气榜\",\"url\":\"https:\/\/book.washai.net\/book\/book_ranking.html?type=0\",\"style\":{\"layout_flexBasisPercent\":0.32}},{\"title\":\"新书榜\",\"url\":\"https:\/\/book.washai.net\/book\/book_ranking.html?type=1\",\"style\":{\"layout_flexBasisPercent\":0.32}},{\"title\":\"更新榜\",\"url\":\"https:\/\/book.washai.net\/book\/book_ranking.html?type=2\",\"style\":{\"layout_flexBasisPercent\":0.32}},{\"title\":\"评论榜\",\"url\":\"https:\/\/book.washai.net\/book\/book_ranking.html?type=3\",\"style\":{\"layout_flexBasisPercent\":0.32}},{\"title\":\"✣ 分类 ✣\",\"url\":\"https:\/\/book.washai.net\/book\/bookclass.html\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_wrapBefore\":true,\"layout_alignSelf\":\"center\"}},{\"title\":\"玄幻奇幻\",\"url\":\"https:\/\/book.washai.net\/book\/bookclass.html?c=1&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.32}},{\"title\":\"武侠仙侠\",\"url\":\"https:\/\/book.washai.net\/book\/bookclass.html?c=2&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.32}},{\"title\":\"都市言情\",\"url\":\"https:\/\/book.washai.net\/book\/bookclass.html?c=3&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.32}},{\"title\":\"历史军事\",\"url\":\"https:\/\/book.washai.net\/book\/bookclass.html?c=4&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.32}},{\"title\":\"科幻灵异\",\"url\":\"https:\/\/book.washai.net\/book\/bookclass.html?c=5&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.32}},{\"title\":\"网游竞技\",\"url\":\"https:\/\/book.washai.net\/book\/bookclass.html?c=6&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.32}},{\"title\":\"女生频道\",\"url\":\"https:\/\/book.washai.net\/book\/bookclass.html?c=7&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.32}},{\"title\":\"次元同人\",\"url\":\"https:\/\/book.washai.net\/book\/bookclass.html?c=8&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.32}}]",
+    "header": "{\"User-Agent\":\"Mozilla\/5.0 (Linux; Android 13) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/120.0.0.0 Mobile Safari\/537.36\"}",
+    "lastUpdateTime": "1794895513872",
+    "respondTime": 8830,
+    "ruleBookInfo": {
+      "author": "#bookAuthor@text",
+      "coverUrl": "#bookCoverImg@src",
+      "intro": "#bookDesc@text",
+      "kind": "#bookCatBadge@text",
+      "lastChapter": "#lastIndexLink@text",
+      "name": "#bookName@text",
+      "tocUrl": "#allIndexLink@href",
+      "wordCount": "#bookWordCount@text"
+    },
+    "ruleContent": {
+      "content": "class.readChapterAppendBody@html"
+    },
+    "ruleExplore": {
+      "author": "@css:.classBookAuthor a, .rankCardAuthor a@text",
+      "bookList": "@css:article.classBookCard, article.rankCard",
+      "bookUrl": "@css:.classBookTitle a, .rankCardTitle a@href",
+      "coverUrl": "@css:.classBookCover img, .rankCardCover img@src",
+      "intro": "@css:.classBookDesc, .rankCardDesc@text",
+      "kind": "@css:.classCoverCat, .rankCoverCat@text",
+      "lastChapter": ".classBookChapter a@text",
+      "name": "@css:.classBookTitle a, .rankCardTitle a@text",
+      "wordCount": "@css:.classBookMeta, .rankCardMeta@text"
+    },
+    "ruleSearch": {
+      "author": ".classBookAuthor a@text",
+      "bookList": "article.classBookCard",
+      "bookUrl": ".classBookTitle a@href",
+      "coverUrl": ".classBookCover img@src",
+      "intro": ".classBookDesc@text",
+      "kind": ".classCoverCat@text",
+      "lastChapter": ".classBookChapter a@text",
+      "name": ".classBookTitle a@text",
+      "wordCount": ".classBookMeta@text"
+    },
+    "ruleToc": {
+      "chapterList": "#bookIndexList li a",
+      "chapterName": "text##\\s*\\[免费\\]\\s*",
+      "chapterUrl": "href",
+      "nextTocUrl": "@js:(function(){var u=String(baseUrl);var m=u.match(\/indexList(?:-|\\\/)(\\d+)(?:\\\/(\\d+))?\\.html\/);if(!m){return '';}var bid=m[1];var cur=m[2]?parseInt(m[2],10):1;var s=String((typeof src!=='undefined'&&src)?src:String(result));var n=(s.match(\/data-index-id=\/g)||[]).length;if(n<100){return '';}return 'https:\/\/book.washai.net\/book\/indexList\/'+bid+'\/'+(cur+1)+'.html';})()"
+    },
+    "searchUrl": "https:\/\/book.washai.net\/book\/bookclass.html?k={{key}}&page={{page}}",
     "weight": 0
   },
   {
