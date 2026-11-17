@@ -863,12 +863,12 @@
     "weight": 0
   },
   {
-    "bookSourceComment": "",
+    "bookSourceComment": "26.10.28 完善(YueDu-Firefly)：纯结构适配（未提取内容）。站点仍为 wmcms/book-coverlist 模板：搜索卡片与 POST /search searchkey 表单实测一致（原规则大体仍效）；详情改 og:novel meta（原 caption-bookinfo/bookmore 已不存在）；目录改 panel-chapterlist 双块 js 去重（最新块 12 章为目录子集，原单规则会重复），nextTocUrl 改 /xiaoshuo/{slug}/{n}/ 递增（原 option@value 无 select 已失效）；正文 AES x() 解密模式实测仍在，next_page 改为 $(",
     "bookSourceGroup": "🍺 特优",
     "bookSourceName": "🍺 800小说网",
     "bookSourceType": 0,
     "bookSourceUrl": "https://www.texasreadyblog.net#xsw8093",
-    "bookUrlPattern": "",
+    "bookUrlPattern": "https?://(www\\.)?texasreadyblog\\.net/du_[a-z0-9]+/?",
     "customOrder": 0,
     "enabled": true,
     "enabledCookieJar": true,
@@ -876,24 +876,26 @@
     "exploreUrl": "",
     "header": "{\n    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',\"Cookie\":\"0\",\"Origin\":\"https://www.texasreadyblog.net\",\"Referer\":\"https://www.texasreadyblog.net/\"\n}",
     "jsLib": "",
-    "lastUpdateTime": 1724580654847,
+    "lastUpdateTime": 1794918971566,
     "loginUrl": "",
     "respondTime": 10987,
     "ruleBookInfo": {
-      "author": ".caption-bookinfo@p.0@a@title",
-      "coverUrl": ".thumbnail@href",
+      "author": "[property$=author]@content||[property$='og:novel:author']@content",
+      "coverUrl": "[property$=image]@content||img.thumbnail@src",
       "init": "",
-      "intro": "",
-      "kind": ".caption-bookinfo@span@textNodes",
-      "lastChapter": "p[class^=lastchapter-]@a@title||p[^lastchapter-]@a@title",
-      "name": "h1@text",
-      "tocUrl": ".bookmore@a.1@href",
+      "intro": "[property$=description]@content||#bookIntro@text",
+      "kind": "[property~=category|status]@content",
+      "lastChapter": "[property$=latest_chapter_name]@content||[property$=lastest_chapter_name]@content",
+      "name": "[property$=book_name]@content||h1@text",
+      "tocUrl": "",
+      "updateTime": "[property$=update_time]@content",
       "wordCount": ""
     },
     "ruleContent": {
-      "content": "#chaptercontent@html##看后求收藏.*.再看更方便|本章未完.*.退出阅读模式即可，谢谢！|更多内容.*.请稍候|本站只支持手机浏览器访问.*.其他浏览器阅读！##\n@js:\nvar data = src.match(/\\$\\('#booktxthtml'\\).html\\(x\\((.+)\\)\\)/)[1].replace(/\"|'/g,'').split(\",\")\n\nresult + java.createSymmetricCrypto(\n\"AES/CBC/ZeroPadding\",\n`${data[1].replace(/^\\s+|\\s+$/g,\"\")}`,\n`${data[2].replace(/^\\s+|\\s+$/g,\"\").slice(0,16)}`\n).decryptStr(`${data[0]}`)",
-      "nextContentUrl": "text.下一页@text\n@js:\nnext=((src.match(/const next_page+( = |=)+(\"(.+)\"|'(.+)')/)||[])[2]||'').replace(/\"|'/g,'')\nif(next.includes(\"_\")){\nresult = next\n}else{\nresult = ''\n}\nresult",
-      "replaceRegex": "##.*{{book.name}}.*|.*{{book.author}}.*|.*{{chapter.title}}.*|本章未完.*"
+      "content": "#chaptercontent@html##看后求收藏.*.再看更方便|本章未完.*.退出阅读模式即可，谢谢！|更多内容.*.请稍候|本站只支持手机浏览器访问.*.其他浏览器阅读！##\n@js:\nvar data = src.match(/\\$\\('#booktxthtml'\\)\\.html\\(x\\((.+)\\)\\)/)[1].replace(/\"|'/g,'').split(\",\")\n\nresult + java.createSymmetricCrypto(\n\"AES/CBC/ZeroPadding\",\n`${data[1].replace(/^\\s+|\\s+$/g,\"\")}`,\n`${data[2].replace(/^\\s+|\\s+$/g,\"\").slice(0,16)}`\n).decryptStr(`${data[0]}`)",
+      "imageStyle": "0",
+      "nextContentUrl": "#next_url@href<js>(function(){var u=String(result||'');if(u.indexOf('_')>=0){result=u;}else{result='';}})()</js>",
+      "replaceRegex": "##看后求收藏.*.再看更方便|本章未完.*.退出阅读模式即可，谢谢！|更多内容.*.请稍候|本站只支持手机浏览器访问.*.其他浏览器阅读！|texasreadyblog\\.net"
     },
     "ruleExplore": {
       "author": "",
@@ -906,19 +908,20 @@
     "ruleSearch": {
       "author": ".author@text",
       "bookList": ".book-coverlist",
-      "bookUrl": "h4@a@href",
+      "bookUrl": "h4.name a@href||a.cover@href",
       "checkKeyWord": "三国之我的霸业在三国",
-      "coverUrl": "img@src",
+      "coverUrl": "img.thumbnail@data-src||img.thumbnail@src",
       "intro": ".intro@text",
-      "kind": ".status .label@text",
+      "kind": ".status@text",
       "lastChapter": "",
-      "name": "h4@a@title"
+      "name": "h4.name a@title||h4.name a@text"
     },
     "ruleToc": {
-      "chapterList": ".panel-chapterlist@dd@a",
-      "chapterName": "text",
-      "chapterUrl": "href",
-      "nextTocUrl": "option@value"
+      "chapterList": "<js>(function(){var html=String(result||'');var out=[];var seen={};var re=/<a[^>]+href=\"([^\"]+)\"[^>]*>([^<]*)</g;var m;var blocks=html.split('panel-chapterlist');for(var i=1;i<blocks.length;i++){var seg=blocks[i].split('</dl>')[0]||'';re.lastIndex=0;while((m=re.exec(seg))!==null){if(!seen[m[1]]){seen[m[1]]=1;out.push({name:m[2],bookUrl:m[1]});}}}return JSON.stringify(out);})()</js>$[*]",
+      "chapterName": "$.name##正文卷.|正文.|VIP卷.|默认卷.|卷_|VIP章节.|免费章节.|章节目录.|最新章节.",
+      "chapterUrl": "$.bookUrl",
+      "isVolume": "",
+      "nextTocUrl": "<js>(function(){var b=String(baseUrl||'');var m=b.match(/\\/xiaoshuo\\/[^/]+\\/(\\d+)\\/$/);if(!m)return '';var n=parseInt(m[1],10)+1;var h=String(result||'');var cand=b.replace(/\\/xiaoshuo\\/([^/]+)\\/\\d+\\/$/,'/xiaoshuo/$1/'+n+'/');return h.indexOf('/'+n+'/')>=0?cand:'';})()</js>"
     },
     "searchUrl": "@js:\nvar su=source.getKey()\nvar htmlUrl=java.get(su,{}).headers('Location')\njava.log(`重定向：${htmlUrl[0]}`)\nvar posturl=htmlUrl[0]?htmlUrl[0]:(su.includes(\"#\")?su.match(/([^\\#]+)\\#/)[1]:su)\nposturl = posturl.slice(-1)=='/'?posturl.slice(0,-1):posturl\ncookie.removeCookie(posturl)\njava.log(`请求：${posturl}`)\n\nck=cookie.getCookie(posturl);\n\ncookie.setCookie(posturl,String(ck).replace(/search_delay=.*/,\"\"));\n\nso=posturl+\"/search,\"+JSON.stringify({\n  \"body\": \"searchkey=\"+key,\n  \"method\": \"POST\"\n});\njava.put(\"url\",String(so))\nso",
     "weight": 0
